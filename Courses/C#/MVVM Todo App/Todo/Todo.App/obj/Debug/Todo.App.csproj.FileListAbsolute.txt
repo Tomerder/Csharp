@@ -1,0 +1,102 @@
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\bin\Debug\Todo.App.exe.config
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\bin\Debug\Todo.App.exe
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\bin\Debug\Todo.App.pdb
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App.csprojResolveAssemblyReference.cache
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Category\EditCategoryView.g.cs
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Main\MainView.g.cs
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\TodoItem\EditTodoItemView.g.cs
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Test.g.cs
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\App.g.cs
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App_MarkupCompile.cache
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App_MarkupCompile.lref
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Category\EditCategoryView.baml
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Main\MainView.baml
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\TodoItem\EditTodoItemView.baml
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Test.baml
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App.g.resources
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App.Properties.Resources.resources
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App.csproj.GenerateResource.Cache
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App.exe
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App.pdb
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\bin\Debug\Toolkit.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\bin\Debug\Toolkit.pdb
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\App.baml
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\TodoItem\DtEditTodoItem.baml
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Main\DtMain.baml
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Shell\ShellView.g.cs
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Shell\ShellView.baml
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Shell\DtShell.baml
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\bin\Debug\MaterialDesignColors.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\bin\Debug\MaterialDesignColors.pdb
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Category\DtCategory.baml
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Main\CategoryView.g.cs
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Main\CategoryView.baml
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Category\ItemView.g.cs
+D:\Projects\Samples\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Category\ItemView.baml
+D:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\MVVM Todo App\Todo\Todo.App\bin\Debug\Todo.App.exe.config
+D:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App.exe
+D:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App.pdb
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\MVVM Todo App\Todo\Todo.App\bin\Debug\Todo.App.exe.config
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App.exe
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App.pdb
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\bin\Debug\Todo.App.exe.config
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App.exe
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App.pdb
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\bin\Debug\Todo.App.exe
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\bin\Debug\Todo.App.pdb
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\bin\Debug\MaterialDesignColors.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\bin\Debug\Toolkit.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\bin\Debug\Toolkit.pdb
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\bin\Debug\MaterialDesignColors.pdb
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App.csprojResolveAssemblyReference.cache
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Test.baml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Category\EditCategoryView.g.cs
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Category\ItemView.g.cs
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Main\CategoryView.g.cs
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Main\MainView.g.cs
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Shell\ShellView.g.cs
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\TodoItem\EditTodoItemView.g.cs
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Test.g.cs
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\App.g.cs
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App_MarkupCompile.cache
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App_MarkupCompile.lref
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\App.baml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Category\DtCategory.baml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Category\EditCategoryView.baml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Category\ItemView.baml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Main\CategoryView.baml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Main\DtMain.baml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Main\MainView.baml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Shell\DtShell.baml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\Shell\ShellView.baml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\TodoItem\DtEditTodoItem.baml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Modules\TodoItem\EditTodoItemView.baml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App.g.resources
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App.Properties.Resources.resources
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Todo.App\obj\Debug\Todo.App.csproj.GenerateResource.Cache

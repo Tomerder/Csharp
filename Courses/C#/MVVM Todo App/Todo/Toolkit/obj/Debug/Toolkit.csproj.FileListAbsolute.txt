@@ -1,0 +1,86 @@
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\Toolkit.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\Toolkit.pdb
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\obj\Debug\Toolkit_MarkupCompile.cache
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\obj\Debug\Toolkit_MarkupCompile.lref
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\obj\Debug\Themes\Generic.baml
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\obj\Debug\Toolkit.g.resources
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\obj\Debug\Toolkit.Properties.Resources.resources
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\obj\Debug\Toolkit.csproj.GenerateResource.Cache
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\obj\Debug\Toolkit.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\obj\Debug\Toolkit.pdb
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\System.Windows.Interactivity.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\Projects\Samples\MVVM Todo App\Todo\Toolkit\obj\Debug\Toolkit.csprojResolveAssemblyReference.cache
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\Toolkit.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\Toolkit.pdb
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\obj\Debug\Toolkit.csprojResolveAssemblyReference.cache
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\obj\Debug\Toolkit_MarkupCompile.cache
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\obj\Debug\Toolkit_MarkupCompile.lref
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\obj\Debug\Themes\Generic.baml
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\obj\Debug\Toolkit.g.resources
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\obj\Debug\Toolkit.Properties.Resources.resources
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\obj\Debug\Toolkit.csproj.GenerateResource.Cache
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\obj\Debug\Toolkit.dll
+C:\Users\hari\Dropbox\Applicolors\Customers\Act - John Bryce\Courses\201705 - Elbit - Advanced WPF\Shared\MVVM Todo App\Todo\Toolkit\obj\Debug\Toolkit.pdb

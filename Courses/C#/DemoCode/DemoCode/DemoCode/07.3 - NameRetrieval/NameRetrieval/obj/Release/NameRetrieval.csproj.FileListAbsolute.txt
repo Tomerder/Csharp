@@ -1,0 +1,6 @@
+C:\Users\DP27813\Desktop\C#\DemoCode\DemoCode\DemoCode\07.3 - NameRetrieval\NameRetrieval\bin\Release\RawNames.txt
+C:\Users\DP27813\Desktop\C#\DemoCode\DemoCode\DemoCode\07.3 - NameRetrieval\NameRetrieval\bin\Release\NameRetrieval.exe
+C:\Users\DP27813\Desktop\C#\DemoCode\DemoCode\DemoCode\07.3 - NameRetrieval\NameRetrieval\bin\Release\NameRetrieval.pdb
+C:\Users\DP27813\Desktop\C#\DemoCode\DemoCode\DemoCode\07.3 - NameRetrieval\NameRetrieval\obj\Release\NameRetrieval.csprojResolveAssemblyReference.cache
+C:\Users\DP27813\Desktop\C#\DemoCode\DemoCode\DemoCode\07.3 - NameRetrieval\NameRetrieval\obj\Release\NameRetrieval.exe
+C:\Users\DP27813\Desktop\C#\DemoCode\DemoCode\DemoCode\07.3 - NameRetrieval\NameRetrieval\obj\Release\NameRetrieval.pdb

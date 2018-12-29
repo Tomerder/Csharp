@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatInterfaces", "FormatInterfaces\FormatInterfaces.csproj", "{EDB72D4E-FEBB-4799-A5CD-8910900AD4ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDB72D4E-FEBB-4799-A5CD-8910900AD4ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDB72D4E-FEBB-4799-A5CD-8910900AD4ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDB72D4E-FEBB-4799-A5CD-8910900AD4ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDB72D4E-FEBB-4799-A5CD-8910900AD4ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

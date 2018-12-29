@@ -1,0 +1,13 @@
+﻿<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Todo.App.Modules.TodoItem"
+    >
+    <local:EditTodoItemVm
+        x:Key="dt.EditTodoItemVm"
+        Uid="2"
+        DisplayName="Buy New (!) Milk"
+        Notes="In the cold section of the super marker, dont forget to check expiration date"
+        Priority="Attention"
+        />
+</ResourceDictionary>

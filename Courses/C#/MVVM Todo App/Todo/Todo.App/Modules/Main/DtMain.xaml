@@ -1,0 +1,19 @@
+﻿<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Todo.App.Modules.Main">
+    <local:MainVm x:Key="dt.MainVm">
+        <local:MainVm.Categories>
+            <local:CategoryVm Uid="1" DisplayName="Shopping" Color="Red" ItemsCount="4"/>
+            <local:CategoryVm Uid="2" DisplayName="Work" Color="Purple" ItemsCount="3"/>
+            <local:CategoryVm Uid="3" DisplayName="Fun" Color="Green" ItemsCount="10"/>
+        </local:MainVm.Categories>
+    </local:MainVm>
+
+    <local:CategoryVm x:Key="dt.Main.CategoryVm"
+                      Color="Purple" DisplayName="Shopping" Uid="12"
+                      ItemsCount="13"
+                      />
+
+
+</ResourceDictionary>

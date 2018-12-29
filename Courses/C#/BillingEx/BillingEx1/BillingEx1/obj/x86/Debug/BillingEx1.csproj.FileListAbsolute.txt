@@ -1,0 +1,4 @@
+C:\Users\DP27813\Desktop\C#\BillingEx\BillingEx1\BillingEx1\bin\Debug\BillingEx1.exe
+C:\Users\DP27813\Desktop\C#\BillingEx\BillingEx1\BillingEx1\bin\Debug\BillingEx1.pdb
+C:\Users\DP27813\Desktop\C#\BillingEx\BillingEx1\BillingEx1\obj\x86\Debug\BillingEx1.exe
+C:\Users\DP27813\Desktop\C#\BillingEx\BillingEx1\BillingEx1\obj\x86\Debug\BillingEx1.pdb

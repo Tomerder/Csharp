@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shape", "Rectangle\Shape.csproj", "{DA6562B7-DBCD-4051-87B4-6D982EBAED8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA6562B7-DBCD-4051-87B4-6D982EBAED8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA6562B7-DBCD-4051-87B4-6D982EBAED8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA6562B7-DBCD-4051-87B4-6D982EBAED8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA6562B7-DBCD-4051-87B4-6D982EBAED8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
