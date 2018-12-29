@@ -1,0 +1,13 @@
+C:\temp\50483\Lesson3\Module5\Code\Slide1\Slide1\obj\x86\Debug\Slide5.exe
+C:\temp\50483\Lesson3\Module5\Code\Slide1\Slide1\obj\x86\Debug\Slide5.pdb
+C:\temp\50483\Lesson3\Module5\Code\Slide1\Slide1\bin\Debug\Slide5.exe
+C:\temp\50483\Lesson3\Module5\Code\Slide1\Slide1\bin\Debug\Slide5.pdb
+C:\temp\50483\Lesson3\Module5\Code\Slide1\Slide1\obj\x86\Debug\Slide1.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson3\Module5\Code\Slide1\Slide1\obj\x86\Debug\Slide5.exe
+C:\Amir\Lesson3\Module5\Code\Slide1\Slide1\obj\x86\Debug\Slide5.pdb
+C:\Amir\Lesson3\Module5\Code\Slide1\Slide1\bin\Debug\Slide5.exe
+C:\Amir\Lesson3\Module5\Code\Slide1\Slide1\bin\Debug\Slide5.pdb
+C:\Amir\Lesson3\Module5\Code\Slide1\Slide1\obj\x86\Debug\Slide1.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide1\Slide1\obj\x86\Debug\Slide5.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide1\Slide1\obj\x86\Debug\Slide5.pdb
+C:\Amir\Lesson3\Module5\Code\Slide1\Slide1\obj\x86\Debug\Slide1.csproj.CoreCompileInputs.cache

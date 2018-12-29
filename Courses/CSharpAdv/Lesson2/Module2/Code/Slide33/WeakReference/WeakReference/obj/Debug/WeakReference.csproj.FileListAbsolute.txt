@@ -1,0 +1,23 @@
+C:\Amir\Studies\Teach\Sela\50150B\1-030215\ToStudents\Module5\Code\Slide40\05.3 - WeakReference\WeakReference\bin\Debug\WeakReference.exe
+C:\Amir\Studies\Teach\Sela\50150B\1-030215\ToStudents\Module5\Code\Slide40\05.3 - WeakReference\WeakReference\bin\Debug\WeakReference.pdb
+C:\Amir\Studies\Teach\Sela\50150B\1-030215\ToStudents\Module5\Code\Slide40\05.3 - WeakReference\WeakReference\obj\Debug\WeakReference.exe
+C:\Amir\Studies\Teach\Sela\50150B\1-030215\ToStudents\Module5\Code\Slide40\05.3 - WeakReference\WeakReference\obj\Debug\WeakReference.pdb
+C:\Amir\Studies\Teach\Sela\50150B\1-030215\ToStudents\Module5\Code\Slide40\05.3 - WeakReference\WeakReference\obj\Debug\WeakReference.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50150B\1-150315\ToStudents\Module5\Code\Slide40\05.3 - WeakReference\WeakReference\obj\Debug\WeakReference.exe
+C:\courses\Ishai\50150B\1-150315\ToStudents\Module5\Code\Slide40\05.3 - WeakReference\WeakReference\obj\Debug\WeakReference.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module2\Code\Slide33\WeakReference\WeakReference\obj\Debug\WeakReference.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module2\Code\Slide33\WeakReference\WeakReference\obj\Debug\WeakReference.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module2\Code\Slide33\WeakReference\WeakReference\obj\Debug\WeakReference.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module2\Code\Slide33\WeakReference\WeakReference\obj\Debug\WeakReference.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module2\Code\Slide33\WeakReference\WeakReference\bin\Debug\WeakReference.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module2\Code\Slide33\WeakReference\WeakReference\bin\Debug\WeakReference.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module2\Code\Slide33\WeakReference\WeakReference\obj\Debug\WeakReference.csprojResolveAssemblyReference.cache
+C:\temp\50483\2-151112\ToStudents\Module2\Code\Slide33\WeakReference\WeakReference\obj\Debug\WeakReference.exe
+C:\temp\50483\2-151112\ToStudents\Module2\Code\Slide33\WeakReference\WeakReference\obj\Debug\WeakReference.pdb
+C:\courses\Ishai\50483A\3\ToStudents\Module2\Code\Slide33\WeakReference\WeakReference\obj\Debug\WeakReference.exe
+C:\courses\Ishai\50483A\3\ToStudents\Module2\Code\Slide33\WeakReference\WeakReference\obj\Debug\WeakReference.pdb
+C:\Amir\Lesson2\Module2\Code\Slide33\WeakReference\WeakReference\obj\Debug\WeakReference.exe
+C:\Amir\Lesson2\Module2\Code\Slide33\WeakReference\WeakReference\obj\Debug\WeakReference.pdb
+C:\Amir\Lesson2\Module2\Code\Slide33\WeakReference\WeakReference\bin\Debug\WeakReference.exe
+C:\Amir\Lesson2\Module2\Code\Slide33\WeakReference\WeakReference\bin\Debug\WeakReference.pdb
+C:\Amir\Lesson2\Module2\Code\Slide33\WeakReference\WeakReference\obj\Debug\WeakReference.csprojResolveAssemblyReference.cache

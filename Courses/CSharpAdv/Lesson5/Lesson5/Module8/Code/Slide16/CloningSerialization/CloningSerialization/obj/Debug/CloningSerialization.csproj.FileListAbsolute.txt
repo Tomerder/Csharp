@@ -1,0 +1,9 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide16\CloningSerialization\CloningSerialization\bin\Debug\CloningSerialization.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide16\CloningSerialization\CloningSerialization\bin\Debug\CloningSerialization.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide16\CloningSerialization\CloningSerialization\bin\Debug\CloningSerialization.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide16\CloningSerialization\CloningSerialization\obj\Debug\CloningSerialization.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide16\CloningSerialization\CloningSerialization\obj\Debug\CloningSerialization.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide16\CloningSerialization\CloningSerialization\obj\Debug\CloningSerialization.pdb
+C:\courses\Ishai\50483A\3\ToStudents\Module8\Code\Slide16\CloningSerialization\CloningSerialization\bin\Debug\CloningSerialization.exe.config
+C:\courses\Ishai\50483A\3\ToStudents\Module8\Code\Slide16\CloningSerialization\CloningSerialization\obj\Debug\CloningSerialization.exe
+C:\courses\Ishai\50483A\3\ToStudents\Module8\Code\Slide16\CloningSerialization\CloningSerialization\obj\Debug\CloningSerialization.pdb

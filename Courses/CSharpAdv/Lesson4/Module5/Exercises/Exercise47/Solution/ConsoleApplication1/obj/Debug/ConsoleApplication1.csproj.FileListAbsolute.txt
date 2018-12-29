@@ -1,0 +1,16 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise4\Solution\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise4\Solution\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise4\Solution\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise4\Solution\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise4\Solution\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise4\Solution\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Exercises\Exercise47\Solution\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Exercises\Exercise47\Solution\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Exercises\Exercise47\Solution\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Amir\Lesson4\Module5\Exercises\Exercise47\Solution\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Amir\Lesson4\Module5\Exercises\Exercise47\Solution\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Amir\Lesson4\Module5\Exercises\Exercise47\Solution\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Amir\Lesson4\Module5\Exercises\Exercise47\Solution\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson4\Module5\Exercises\Exercise47\Solution\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson4\Module5\Exercises\Exercise47\Solution\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Amir\Lesson4\Module5\Exercises\Exercise47\Solution\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

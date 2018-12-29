@@ -1,0 +1,14 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide29\InterruptAndAbort\InterruptExample\bin\Debug\InterruptExample.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide29\InterruptAndAbort\InterruptExample\bin\Debug\InterruptExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide29\InterruptAndAbort\InterruptExample\bin\Debug\InterruptExample.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide29\InterruptAndAbort\InterruptExample\obj\Debug\InterruptExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide29\InterruptAndAbort\InterruptExample\obj\Debug\InterruptExample.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide29\InterruptAndAbort\InterruptExample\bin\Debug\InterruptExample.exe.config
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide29\InterruptAndAbort\InterruptExample\obj\Debug\InterruptExample.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide29\InterruptAndAbort\InterruptExample\obj\Debug\InterruptExample.pdb
+C:\Amir\Lesson3\Module5\Code\Slide29\InterruptAndAbort\InterruptExample\bin\Debug\InterruptExample.exe.config
+C:\Amir\Lesson3\Module5\Code\Slide29\InterruptAndAbort\InterruptExample\bin\Debug\InterruptExample.exe
+C:\Amir\Lesson3\Module5\Code\Slide29\InterruptAndAbort\InterruptExample\bin\Debug\InterruptExample.pdb
+C:\Amir\Lesson3\Module5\Code\Slide29\InterruptAndAbort\InterruptExample\obj\Debug\InterruptExample.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson3\Module5\Code\Slide29\InterruptAndAbort\InterruptExample\obj\Debug\InterruptExample.exe
+C:\Amir\Lesson3\Module5\Code\Slide29\InterruptAndAbort\InterruptExample\obj\Debug\InterruptExample.pdb

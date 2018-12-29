@@ -1,0 +1,39 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly CliDll, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Interface CliDll.I1: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+  Methods:
+    c(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    d(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    f(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    h(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface CliDll.I2: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+  Methods:
+    f(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    i(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface CliDll.I3: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+  Methods:
+    i(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    j(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class CliDll.R: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    CliDll.I1
+    CliDll.I2
+    CliDll.I3
+  Methods:
+    c(): PrivateScope, Public, Virtual, HideBySig
+    d(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    f(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    g(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    x(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    y(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    z(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask

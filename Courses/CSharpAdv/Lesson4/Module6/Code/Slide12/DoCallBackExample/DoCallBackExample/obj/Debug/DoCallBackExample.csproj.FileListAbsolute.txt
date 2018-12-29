@@ -1,0 +1,16 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Code\Slide12\DoCallBackExample\DoCallBackExample\bin\Debug\DoCallBackExample.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Code\Slide12\DoCallBackExample\DoCallBackExample\bin\Debug\DoCallBackExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Code\Slide12\DoCallBackExample\DoCallBackExample\bin\Debug\DoCallBackExample.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Code\Slide12\DoCallBackExample\DoCallBackExample\obj\Debug\DoCallBackExample.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Code\Slide12\DoCallBackExample\DoCallBackExample\obj\Debug\DoCallBackExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Code\Slide12\DoCallBackExample\DoCallBackExample\obj\Debug\DoCallBackExample.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module6\Code\Slide12\DoCallBackExample\DoCallBackExample\bin\Debug\DoCallBackExample.exe.config
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module6\Code\Slide12\DoCallBackExample\DoCallBackExample\obj\Debug\DoCallBackExample.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module6\Code\Slide12\DoCallBackExample\DoCallBackExample\obj\Debug\DoCallBackExample.pdb
+C:\Amir\Lesson4\Module6\Code\Slide12\DoCallBackExample\DoCallBackExample\bin\Debug\DoCallBackExample.exe.config
+C:\Amir\Lesson4\Module6\Code\Slide12\DoCallBackExample\DoCallBackExample\bin\Debug\DoCallBackExample.exe
+C:\Amir\Lesson4\Module6\Code\Slide12\DoCallBackExample\DoCallBackExample\bin\Debug\DoCallBackExample.pdb
+C:\Amir\Lesson4\Module6\Code\Slide12\DoCallBackExample\DoCallBackExample\obj\Debug\DoCallBackExample.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson4\Module6\Code\Slide12\DoCallBackExample\DoCallBackExample\obj\Debug\DoCallBackExample.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson4\Module6\Code\Slide12\DoCallBackExample\DoCallBackExample\obj\Debug\DoCallBackExample.exe
+C:\Amir\Lesson4\Module6\Code\Slide12\DoCallBackExample\DoCallBackExample\obj\Debug\DoCallBackExample.pdb

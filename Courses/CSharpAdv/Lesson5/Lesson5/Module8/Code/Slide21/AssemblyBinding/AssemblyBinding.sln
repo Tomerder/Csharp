@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin", "Plugin\Plugin.csproj", "{D2F704B0-2384-42DD-B53D-306A6D919071}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainHost", "MainHost\MainHost.csproj", "{BA030539-8A71-4548-A0C8-B955B0674C16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2F704B0-2384-42DD-B53D-306A6D919071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2F704B0-2384-42DD-B53D-306A6D919071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2F704B0-2384-42DD-B53D-306A6D919071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2F704B0-2384-42DD-B53D-306A6D919071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA030539-8A71-4548-A0C8-B955B0674C16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA030539-8A71-4548-A0C8-B955B0674C16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA030539-8A71-4548-A0C8-B955B0674C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA030539-8A71-4548-A0C8-B955B0674C16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

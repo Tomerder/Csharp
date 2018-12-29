@@ -1,0 +1,15 @@
+C:\courses\Ishai\50150B\2-150504\ToStudents\Lessons\Lesson6\Module26\Code\Slide13\Example5\MoreTpl\MoreTpl\obj\x86\Debug\Slide13.exe
+C:\courses\Ishai\50150B\2-150504\ToStudents\Lessons\Lesson6\Module26\Code\Slide13\Example5\MoreTpl\MoreTpl\obj\x86\Debug\Slide13.pdb
+C:\courses\Ishai\50150B\2-150504\ToStudents\Lessons\Lesson6\Module26\Code\Slide13\Example5\MoreTpl\MoreTpl\bin\Debug\Slide13.exe
+C:\courses\Ishai\50150B\2-150504\ToStudents\Lessons\Lesson6\Module26\Code\Slide13\Example5\MoreTpl\MoreTpl\bin\Debug\Slide13.pdb
+C:\courses\Ishai\50150B\2-150504\ToStudents\Lessons\Lesson6\Module26\Code\Slide13\Example5\MoreTpl\MoreTpl\obj\x86\Debug\MoreTpl.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide60\Example5\MoreTpl\MoreTpl\obj\x86\Debug\Slide13.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide60\Example5\MoreTpl\MoreTpl\obj\x86\Debug\Slide13.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide48\Example3\MoreTpl\MoreTpl\obj\x86\Debug\Slide13.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide48\Example3\MoreTpl\MoreTpl\obj\x86\Debug\Slide13.pdb
+C:\Amir\Lesson4\Module5\Code\Slide48\Example3\MoreTpl\MoreTpl\bin\Debug\Slide13.exe
+C:\Amir\Lesson4\Module5\Code\Slide48\Example3\MoreTpl\MoreTpl\bin\Debug\Slide13.pdb
+C:\Amir\Lesson4\Module5\Code\Slide48\Example3\MoreTpl\MoreTpl\obj\x86\Debug\MoreTpl.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson4\Module5\Code\Slide48\Example3\MoreTpl\MoreTpl\obj\x86\Debug\MoreTpl.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson4\Module5\Code\Slide48\Example3\MoreTpl\MoreTpl\obj\x86\Debug\Slide13.exe
+C:\Amir\Lesson4\Module5\Code\Slide48\Example3\MoreTpl\MoreTpl\obj\x86\Debug\Slide13.pdb

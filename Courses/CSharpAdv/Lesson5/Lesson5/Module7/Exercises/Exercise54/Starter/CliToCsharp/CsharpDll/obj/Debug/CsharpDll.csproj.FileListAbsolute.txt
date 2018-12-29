@@ -1,0 +1,5 @@
+C:\temp\Elbit-50483\Lesson5\Module7\Exercises\Exercise54\Starter\CliToCsharp\CsharpDll\bin\Debug\CsharpDll.dll
+C:\temp\Elbit-50483\Lesson5\Module7\Exercises\Exercise54\Starter\CliToCsharp\CsharpDll\bin\Debug\CsharpDll.pdb
+C:\temp\Elbit-50483\Lesson5\Module7\Exercises\Exercise54\Starter\CliToCsharp\CsharpDll\obj\Debug\CsharpDll.csprojResolveAssemblyReference.cache
+C:\temp\Elbit-50483\Lesson5\Module7\Exercises\Exercise54\Starter\CliToCsharp\CsharpDll\obj\Debug\CsharpDll.dll
+C:\temp\Elbit-50483\Lesson5\Module7\Exercises\Exercise54\Starter\CliToCsharp\CsharpDll\obj\Debug\CsharpDll.pdb

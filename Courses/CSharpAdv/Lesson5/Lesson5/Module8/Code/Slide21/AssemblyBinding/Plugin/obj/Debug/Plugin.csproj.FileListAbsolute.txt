@@ -1,0 +1,16 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide21\AssemblyBinding\Plugin\bin\Debug\Plugin.dll
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide21\AssemblyBinding\Plugin\bin\Debug\Plugin.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide21\AssemblyBinding\Plugin\obj\Debug\Plugin.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide21\AssemblyBinding\Plugin\obj\Debug\Plugin.dll
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide21\AssemblyBinding\Plugin\obj\Debug\Plugin.pdb
+C:\courses\Ishai\50483A\3\ToStudents\Module8\Code\Slide21\AssemblyBinding\Plugin\bin\Debug\Plugin.dll
+C:\courses\Ishai\50483A\3\ToStudents\Module8\Code\Slide21\AssemblyBinding\Plugin\bin\Debug\Plugin.pdb
+C:\courses\Ishai\50483A\3\ToStudents\Module8\Code\Slide21\AssemblyBinding\Plugin\obj\Debug\Plugin.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\3\ToStudents\Module8\Code\Slide21\AssemblyBinding\Plugin\obj\Debug\Plugin.dll
+C:\courses\Ishai\50483A\3\ToStudents\Module8\Code\Slide21\AssemblyBinding\Plugin\obj\Debug\Plugin.pdb
+C:\temp\Elbit-50483\Lesson5\Module8\Code\Slide21\AssemblyBinding\Plugin\bin\Debug\Plugin.dll
+C:\temp\Elbit-50483\Lesson5\Module8\Code\Slide21\AssemblyBinding\Plugin\bin\Debug\Plugin.pdb
+C:\temp\Elbit-50483\Lesson5\Module8\Code\Slide21\AssemblyBinding\Plugin\obj\Debug\Plugin.csprojResolveAssemblyReference.cache
+C:\temp\Elbit-50483\Lesson5\Module8\Code\Slide21\AssemblyBinding\Plugin\obj\Debug\Plugin.csproj.CoreCompileInputs.cache
+C:\temp\Elbit-50483\Lesson5\Module8\Code\Slide21\AssemblyBinding\Plugin\obj\Debug\Plugin.dll
+C:\temp\Elbit-50483\Lesson5\Module8\Code\Slide21\AssemblyBinding\Plugin\obj\Debug\Plugin.pdb

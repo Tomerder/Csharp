@@ -1,0 +1,22 @@
+C:\Amir\Studies\Teach\nessCollege\MCPD11\10266A\Module5\תרגיל בית 2\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+C:\Amir\Studies\Teach\nessCollege\MCPD11\10266A\Module5\תרגיל בית 2\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+C:\Amir\Studies\Teach\nessCollege\MCPD11\10266A\Module5\תרגיל בית 2\ConsoleApplication2\ConsoleApplication2\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Amir\Studies\Teach\nessCollege\MCPD11\10266A\Module5\תרגיל בית 2\ConsoleApplication2\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.exe
+C:\Amir\Studies\Teach\nessCollege\MCPD11\10266A\Module5\תרגיל בית 2\ConsoleApplication2\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.pdb
+C:\Amir\Studies\Teach\nessCollege\תל אביב\MCPD1\10266A\Module5\תרגיל בית 2\ConsoleApplication2\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.exe
+C:\Amir\Studies\Teach\nessCollege\תל אביב\MCPD1\10266A\Module5\תרגיל בית 2\ConsoleApplication2\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.pdb
+C:\Amir\Studies\Teach\nessCollege\תל אביב\MCSD2\10266A\Module5\תרגיל בית 2\ConsoleApplication2\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.exe
+C:\Amir\Studies\Teach\nessCollege\תל אביב\MCSD2\10266A\Module5\תרגיל בית 2\ConsoleApplication2\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.pdb
+H:\13.12.14\Amir\Studies\Teach\nessCollege\תל אביב\MCSD2\10266A\Module5\תרגיל בית 2\ConsoleApplication2\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.exe
+H:\13.12.14\Amir\Studies\Teach\nessCollege\תל אביב\MCSD2\10266A\Module5\תרגיל בית 2\ConsoleApplication2\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module3\Exercises\Exercise2\Solution\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module3\Exercises\Exercise2\Solution\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module3\Exercises\Exercise2\Solution\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module3\Exercises\Exercise2\Solution\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module3\Exercises\Exercise2\Solution\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module3\Exercises\Exercise2\Solution\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module3\Exercises\Exercise2\Solution\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.pdb
+C:\courses\Ishai\50483A\3\ToStudents\Module3\Exercises\Exercise2\Solution\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.exe
+C:\courses\Ishai\50483A\3\ToStudents\Module3\Exercises\Exercise2\Solution\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.pdb
+C:\Amir\Lesson2\Module3\Exercises\Exercise2\Solution\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.exe
+C:\Amir\Lesson2\Module3\Exercises\Exercise2\Solution\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.pdb

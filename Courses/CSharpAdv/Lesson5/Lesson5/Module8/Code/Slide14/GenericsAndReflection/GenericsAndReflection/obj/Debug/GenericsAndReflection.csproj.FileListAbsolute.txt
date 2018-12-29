@@ -1,0 +1,16 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide14\GenericsAndReflection\GenericsAndReflection\bin\Debug\GenericsAndReflection.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide14\GenericsAndReflection\GenericsAndReflection\obj\Debug\GenericsAndReflection.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide14\GenericsAndReflection\GenericsAndReflection\bin\Debug\GenericsAndReflection.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide14\GenericsAndReflection\GenericsAndReflection\bin\Debug\GenericsAndReflection.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide14\GenericsAndReflection\GenericsAndReflection\obj\Debug\GenericsAndReflection.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide14\GenericsAndReflection\GenericsAndReflection\obj\Debug\GenericsAndReflection.pdb
+C:\courses\Ishai\50483A\3\ToStudents\Module8\Code\Slide14\GenericsAndReflection\GenericsAndReflection\bin\Debug\GenericsAndReflection.exe.config
+C:\courses\Ishai\50483A\3\ToStudents\Module8\Code\Slide14\GenericsAndReflection\GenericsAndReflection\obj\Debug\GenericsAndReflection.exe
+C:\courses\Ishai\50483A\3\ToStudents\Module8\Code\Slide14\GenericsAndReflection\GenericsAndReflection\obj\Debug\GenericsAndReflection.pdb
+C:\temp\Elbit-50483\Lesson5\Module8\Code\Slide14\GenericsAndReflection\GenericsAndReflection\bin\Debug\GenericsAndReflection.exe.config
+C:\temp\Elbit-50483\Lesson5\Module8\Code\Slide14\GenericsAndReflection\GenericsAndReflection\bin\Debug\GenericsAndReflection.exe
+C:\temp\Elbit-50483\Lesson5\Module8\Code\Slide14\GenericsAndReflection\GenericsAndReflection\bin\Debug\GenericsAndReflection.pdb
+C:\temp\Elbit-50483\Lesson5\Module8\Code\Slide14\GenericsAndReflection\GenericsAndReflection\obj\Debug\GenericsAndReflection.csprojResolveAssemblyReference.cache
+C:\temp\Elbit-50483\Lesson5\Module8\Code\Slide14\GenericsAndReflection\GenericsAndReflection\obj\Debug\GenericsAndReflection.csproj.CoreCompileInputs.cache
+C:\temp\Elbit-50483\Lesson5\Module8\Code\Slide14\GenericsAndReflection\GenericsAndReflection\obj\Debug\GenericsAndReflection.exe
+C:\temp\Elbit-50483\Lesson5\Module8\Code\Slide14\GenericsAndReflection\GenericsAndReflection\obj\Debug\GenericsAndReflection.pdb

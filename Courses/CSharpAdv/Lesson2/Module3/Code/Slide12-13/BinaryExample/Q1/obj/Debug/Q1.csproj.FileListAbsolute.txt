@@ -1,0 +1,6 @@
+C:\Amir\Lesson2\Module3\Code\Slide12-13\BinaryExample\Q1\bin\Debug\Q1.exe.config
+C:\Amir\Lesson2\Module3\Code\Slide12-13\BinaryExample\Q1\bin\Debug\Q1.exe
+C:\Amir\Lesson2\Module3\Code\Slide12-13\BinaryExample\Q1\bin\Debug\Q1.pdb
+C:\Amir\Lesson2\Module3\Code\Slide12-13\BinaryExample\Q1\obj\Debug\Q1.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson2\Module3\Code\Slide12-13\BinaryExample\Q1\obj\Debug\Q1.exe
+C:\Amir\Lesson2\Module3\Code\Slide12-13\BinaryExample\Q1\obj\Debug\Q1.pdb

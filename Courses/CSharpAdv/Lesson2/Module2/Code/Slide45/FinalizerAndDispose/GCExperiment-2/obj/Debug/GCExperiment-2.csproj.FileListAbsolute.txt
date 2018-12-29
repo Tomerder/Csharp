@@ -1,0 +1,19 @@
+C:\Amir\Studies\Teach\Sela\50150B\1-030215\ToStudents\Module5\Code\Slide29-32\05.2 - GCExperiment-2\GCExperiment-2\bin\Debug\GCExperiment-2.exe
+C:\Amir\Studies\Teach\Sela\50150B\1-030215\ToStudents\Module5\Code\Slide29-32\05.2 - GCExperiment-2\GCExperiment-2\bin\Debug\GCExperiment-2.pdb
+C:\Amir\Studies\Teach\Sela\50150B\1-030215\ToStudents\Module5\Code\Slide29-32\05.2 - GCExperiment-2\GCExperiment-2\obj\Debug\GCExperiment-2.exe
+C:\Amir\Studies\Teach\Sela\50150B\1-030215\ToStudents\Module5\Code\Slide29-32\05.2 - GCExperiment-2\GCExperiment-2\obj\Debug\GCExperiment-2.pdb
+C:\courses\Ishai\50150B\1-150315\ToStudents\Module5\Code\Slide29-32\05.2 - GCExperiment-2\GCExperiment-2\obj\Debug\GCExperiment-2.exe
+C:\courses\Ishai\50150B\1-150315\ToStudents\Module5\Code\Slide29-32\05.2 - GCExperiment-2\GCExperiment-2\obj\Debug\GCExperiment-2.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module2\Code\Slide45\FinalizerAndDispose\GCExperiment-2\obj\Debug\GCExperiment-2.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module2\Code\Slide45\FinalizerAndDispose\GCExperiment-2\obj\Debug\GCExperiment-2.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module2\Code\Slide45\FinalizerAndDispose\GCExperiment-2\obj\Debug\GCExperiment-2.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module2\Code\Slide45\FinalizerAndDispose\GCExperiment-2\obj\Debug\GCExperiment-2.pdb
+C:\temp\50483\2-151112\ToStudents\Module2\Code\Slide45\FinalizerAndDispose\GCExperiment-2\obj\Debug\GCExperiment-2.exe
+C:\temp\50483\2-151112\ToStudents\Module2\Code\Slide45\FinalizerAndDispose\GCExperiment-2\obj\Debug\GCExperiment-2.pdb
+C:\courses\Ishai\50483A\3\ToStudents\Module2\Code\Slide45\FinalizerAndDispose\GCExperiment-2\obj\Debug\GCExperiment-2.exe
+C:\courses\Ishai\50483A\3\ToStudents\Module2\Code\Slide45\FinalizerAndDispose\GCExperiment-2\obj\Debug\GCExperiment-2.pdb
+C:\Amir\Lesson2\Module2\Code\Slide45\FinalizerAndDispose\GCExperiment-2\obj\Debug\GCExperiment-2.exe
+C:\Amir\Lesson2\Module2\Code\Slide45\FinalizerAndDispose\GCExperiment-2\obj\Debug\GCExperiment-2.pdb
+C:\Amir\Lesson2\Module2\Code\Slide45\FinalizerAndDispose\GCExperiment-2\bin\Debug\GCExperiment-2.exe
+C:\Amir\Lesson2\Module2\Code\Slide45\FinalizerAndDispose\GCExperiment-2\bin\Debug\GCExperiment-2.pdb
+C:\Amir\Lesson2\Module2\Code\Slide45\FinalizerAndDispose\GCExperiment-2\obj\Debug\GCExperiment-2.csprojResolveAssemblyReference.cache

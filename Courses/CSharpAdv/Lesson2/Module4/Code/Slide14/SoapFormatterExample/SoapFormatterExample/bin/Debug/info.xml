@@ -1,0 +1,9 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:FooRTDefault id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/SoapFormatterExample/SoapFormatterExample%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_id>1</_id>
+<_name id="ref-3">John</_name>
+<_pass id="ref-4">1234</_pass>
+</a1:FooRTDefault>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

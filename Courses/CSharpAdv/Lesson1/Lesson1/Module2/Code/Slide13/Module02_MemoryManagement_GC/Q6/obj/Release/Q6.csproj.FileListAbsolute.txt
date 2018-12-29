@@ -1,0 +1,6 @@
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\Q6\bin\Release\Q6.exe.config
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\Q6\bin\Release\Q6.exe
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\Q6\bin\Release\Q6.pdb
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\Q6\obj\Release\Q6.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\Q6\obj\Release\Q6.exe
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\Q6\obj\Release\Q6.pdb

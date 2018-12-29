@@ -1,0 +1,6 @@
+c:\users\hadraha.training\documents\visual studio 2015\Projects\testEx\testEx\bin\Debug\testEx.exe.config
+c:\users\hadraha.training\documents\visual studio 2015\Projects\testEx\testEx\bin\Debug\testEx.exe
+c:\users\hadraha.training\documents\visual studio 2015\Projects\testEx\testEx\bin\Debug\testEx.pdb
+c:\users\hadraha.training\documents\visual studio 2015\Projects\testEx\testEx\obj\Debug\testEx.csprojResolveAssemblyReference.cache
+c:\users\hadraha.training\documents\visual studio 2015\Projects\testEx\testEx\obj\Debug\testEx.exe
+c:\users\hadraha.training\documents\visual studio 2015\Projects\testEx\testEx\obj\Debug\testEx.pdb

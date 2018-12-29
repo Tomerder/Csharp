@@ -1,0 +1,7 @@
+C:\Users\hadraha.TRAINING\source\repos\TPL\TPL\bin\Debug\TPL.exe.config
+C:\Users\hadraha.TRAINING\source\repos\TPL\TPL\bin\Debug\TPL.exe
+C:\Users\hadraha.TRAINING\source\repos\TPL\TPL\bin\Debug\TPL.pdb
+C:\Users\hadraha.TRAINING\source\repos\TPL\TPL\obj\Debug\TPL.csprojResolveAssemblyReference.cache
+C:\Users\hadraha.TRAINING\source\repos\TPL\TPL\obj\Debug\TPL.csproj.CoreCompileInputs.cache
+C:\Users\hadraha.TRAINING\source\repos\TPL\TPL\obj\Debug\TPL.exe
+C:\Users\hadraha.TRAINING\source\repos\TPL\TPL\obj\Debug\TPL.pdb

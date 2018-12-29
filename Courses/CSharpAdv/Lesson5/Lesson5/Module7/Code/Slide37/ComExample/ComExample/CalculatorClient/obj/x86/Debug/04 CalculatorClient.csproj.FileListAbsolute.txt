@@ -1,0 +1,25 @@
+C:\courses\Ishai\50483A\original\V2.1\Demos\Module07_Interop\CalculatorClient\obj\x86\Debug\04 CalculatorClient.csproj.ResolveComReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide37\ComExample\Module07_Interop\CalculatorClient\obj\x86\Debug\Interop.SimpleCOMCalculatorLib.dll
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide37\ComExample\Module07_Interop\CalculatorClient\obj\x86\Debug\04 CalculatorClient.csproj.ResolveComReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide37\ComExample\Module07_Interop\CalculatorClient\bin\x86\Debug\CalculatorClient.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide37\ComExample\Module07_Interop\CalculatorClient\bin\x86\Debug\CalculatorClient.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide37\ComExample\Module07_Interop\CalculatorClient\bin\x86\Debug\Interop.SimpleCOMCalculatorLib.dll
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide37\ComExample\Module07_Interop\CalculatorClient\obj\x86\Debug\04 CalculatorClient.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide37\ComExample\Module07_Interop\CalculatorClient\obj\x86\Debug\CalculatorClient.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide37\ComExample\Module07_Interop\CalculatorClient\obj\x86\Debug\CalculatorClient.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide37\ComExample\ComExample\CalculatorClient\obj\x86\Debug\Interop.SimpleCOMCalculatorLib.dll
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide37\ComExample\ComExample\CalculatorClient\obj\x86\Debug\04 CalculatorClient.csproj.ResolveComReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide37\ComExample\ComExample\CalculatorClient\obj\x86\Debug\CalculatorClient.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide37\ComExample\ComExample\CalculatorClient\obj\x86\Debug\CalculatorClient.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide37\ComExample\ComExample\CalculatorClient\bin\x86\Debug\CalculatorClient.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide37\ComExample\ComExample\CalculatorClient\bin\x86\Debug\CalculatorClient.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide37\ComExample\ComExample\CalculatorClient\bin\x86\Debug\Interop.SimpleCOMCalculatorLib.dll
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide37\ComExample\ComExample\CalculatorClient\obj\x86\Debug\04 CalculatorClient.csprojResolveAssemblyReference.cache
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide37\ComExample\ComExample\CalculatorClient\obj\x86\Debug\04 CalculatorClient.csproj.ResolveComReference.cache
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide37\ComExample\ComExample\CalculatorClient\obj\x86\Debug\CalculatorClient.exe
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide37\ComExample\ComExample\CalculatorClient\obj\x86\Debug\CalculatorClient.pdb
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide37\ComExample\ComExample\CalculatorClient\bin\x86\Debug\CalculatorClient.exe
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide37\ComExample\ComExample\CalculatorClient\bin\x86\Debug\CalculatorClient.pdb
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide37\ComExample\ComExample\CalculatorClient\bin\x86\Debug\Interop.SimpleCOMCalculatorLib.dll
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide37\ComExample\ComExample\CalculatorClient\obj\x86\Debug\04 CalculatorClient.csprojResolveAssemblyReference.cache
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide37\ComExample\ComExample\CalculatorClient\obj\x86\Debug\Interop.SimpleCOMCalculatorLib.dll

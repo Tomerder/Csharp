@@ -1,0 +1,28 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly CliDll, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Struct CliDllNamespace.Complex: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double Theta 'get set' : 
+    Double R   'get set' : 
+    Double Imaginary 'get set' : 
+    Double Real 'get set' : 
+  Methods:
+    get_Real(): PrivateScope, Public, HideBySig, SpecialName
+    set_Real(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Imaginary(): PrivateScope, Public, HideBySig, SpecialName
+    set_Imaginary(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_R(): PrivateScope, Public, HideBySig, SpecialName
+    set_R(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Theta(): PrivateScope, Public, HideBySig, SpecialName
+    set_Theta(Double): PrivateScope, Public, HideBySig, SpecialName

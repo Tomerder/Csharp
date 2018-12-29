@@ -1,0 +1,12 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module2\Code\Slide13\LocalRoots\LocalRoots\bin\Debug\LocalRoots.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module2\Code\Slide13\LocalRoots\LocalRoots\bin\Debug\LocalRoots.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module2\Code\Slide13\LocalRoots\LocalRoots\bin\Debug\LocalRoots.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module2\Code\Slide13\LocalRoots\LocalRoots\obj\Debug\LocalRoots.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module2\Code\Slide13\LocalRoots\LocalRoots\obj\Debug\LocalRoots.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module2\Code\Slide13\LocalRoots\LocalRoots\obj\Debug\LocalRoots.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module2\Code\Slide12\LocalRoots\LocalRoots\bin\Debug\LocalRoots.exe.config
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module2\Code\Slide12\LocalRoots\LocalRoots\obj\Debug\LocalRoots.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module2\Code\Slide12\LocalRoots\LocalRoots\obj\Debug\LocalRoots.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module2\Code\Slide12\LocalRoots\LocalRoots\bin\Debug\LocalRoots.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module2\Code\Slide12\LocalRoots\LocalRoots\bin\Debug\LocalRoots.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module2\Code\Slide12\LocalRoots\LocalRoots\obj\Debug\LocalRoots.csprojResolveAssemblyReference.cache

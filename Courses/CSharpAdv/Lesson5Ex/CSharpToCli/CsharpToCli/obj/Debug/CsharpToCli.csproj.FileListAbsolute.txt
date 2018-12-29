@@ -1,0 +1,16 @@
+c:\users\hadraha.training\documents\visual studio 2015\Projects\CllDll\CsharpToCli\bin\Debug\CsharpToCli.exe.config
+c:\users\hadraha.training\documents\visual studio 2015\Projects\CllDll\CsharpToCli\bin\Debug\CsharpToCli.exe
+c:\users\hadraha.training\documents\visual studio 2015\Projects\CllDll\CsharpToCli\bin\Debug\CsharpToCli.pdb
+c:\users\hadraha.training\documents\visual studio 2015\Projects\CllDll\CsharpToCli\obj\Debug\CsharpToCli.csprojResolveAssemblyReference.cache
+c:\users\hadraha.training\documents\visual studio 2015\Projects\CllDll\CsharpToCli\obj\Debug\CsharpToCli.exe
+c:\users\hadraha.training\documents\visual studio 2015\Projects\CllDll\CsharpToCli\obj\Debug\CsharpToCli.pdb
+c:\users\hadraha.training\documents\visual studio 2015\Projects\CllDll\CsharpToCli\bin\Debug\CllDll.dll
+c:\users\hadraha.training\documents\visual studio 2015\Projects\CllDll\CsharpToCli\bin\Debug\CllDll.pdb
+C:\Users\hadraha.TRAINING\Documents\Visual Studio 2015\Projects\CSharpToCli\CsharpToCli\bin\Debug\CsharpToCli.exe.config
+C:\Users\hadraha.TRAINING\Documents\Visual Studio 2015\Projects\CSharpToCli\CsharpToCli\obj\Debug\CsharpToCli.exe
+C:\Users\hadraha.TRAINING\Documents\Visual Studio 2015\Projects\CSharpToCli\CsharpToCli\obj\Debug\CsharpToCli.pdb
+C:\Users\hadraha.TRAINING\Documents\Visual Studio 2015\Projects\CSharpToCli\CsharpToCli\bin\Debug\CsharpToCli.exe
+C:\Users\hadraha.TRAINING\Documents\Visual Studio 2015\Projects\CSharpToCli\CsharpToCli\bin\Debug\CsharpToCli.pdb
+C:\Users\hadraha.TRAINING\Documents\Visual Studio 2015\Projects\CSharpToCli\CsharpToCli\bin\Debug\CllDll.dll
+C:\Users\hadraha.TRAINING\Documents\Visual Studio 2015\Projects\CSharpToCli\CsharpToCli\bin\Debug\CllDll.pdb
+C:\Users\hadraha.TRAINING\Documents\Visual Studio 2015\Projects\CSharpToCli\CsharpToCli\obj\Debug\CsharpToCli.csprojResolveAssemblyReference.cache

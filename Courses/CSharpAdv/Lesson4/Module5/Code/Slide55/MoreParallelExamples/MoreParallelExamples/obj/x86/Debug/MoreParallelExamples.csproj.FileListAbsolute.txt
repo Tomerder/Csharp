@@ -1,0 +1,15 @@
+C:\courses\Ishai\50150B\2-150504\ToStudents\Lessons\Lesson6\Module26\Code\Slide13\Example3\MoreParallelExamples\MoreParallelExamples\obj\x86\Debug\Slide16.exe
+C:\courses\Ishai\50150B\2-150504\ToStudents\Lessons\Lesson6\Module26\Code\Slide13\Example3\MoreParallelExamples\MoreParallelExamples\obj\x86\Debug\Slide16.pdb
+C:\courses\Ishai\50150B\2-150504\ToStudents\Lessons\Lesson6\Module26\Code\Slide13\Example3\MoreParallelExamples\MoreParallelExamples\bin\Debug\Slide16.exe
+C:\courses\Ishai\50150B\2-150504\ToStudents\Lessons\Lesson6\Module26\Code\Slide13\Example3\MoreParallelExamples\MoreParallelExamples\bin\Debug\Slide16.pdb
+C:\courses\Ishai\50150B\2-150504\ToStudents\Lessons\Lesson6\Module26\Code\Slide13\Example3\MoreParallelExamples\MoreParallelExamples\obj\x86\Debug\MoreParallelExamples.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide60\Example3\MoreParallelExamples\MoreParallelExamples\obj\x86\Debug\Slide16.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide60\Example3\MoreParallelExamples\MoreParallelExamples\obj\x86\Debug\Slide16.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide55\MoreParallelExamples\MoreParallelExamples\obj\x86\Debug\Slide16.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide55\MoreParallelExamples\MoreParallelExamples\obj\x86\Debug\Slide16.pdb
+C:\Amir\Lesson4\Module5\Code\Slide55\MoreParallelExamples\MoreParallelExamples\bin\Debug\Slide16.exe
+C:\Amir\Lesson4\Module5\Code\Slide55\MoreParallelExamples\MoreParallelExamples\bin\Debug\Slide16.pdb
+C:\Amir\Lesson4\Module5\Code\Slide55\MoreParallelExamples\MoreParallelExamples\obj\x86\Debug\MoreParallelExamples.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson4\Module5\Code\Slide55\MoreParallelExamples\MoreParallelExamples\obj\x86\Debug\MoreParallelExamples.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson4\Module5\Code\Slide55\MoreParallelExamples\MoreParallelExamples\obj\x86\Debug\Slide16.exe
+C:\Amir\Lesson4\Module5\Code\Slide55\MoreParallelExamples\MoreParallelExamples\obj\x86\Debug\Slide16.pdb

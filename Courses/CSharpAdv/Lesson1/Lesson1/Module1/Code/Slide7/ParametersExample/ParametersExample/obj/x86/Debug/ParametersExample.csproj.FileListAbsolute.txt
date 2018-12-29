@@ -1,0 +1,17 @@
+C:\Amir\Studies\Teach\Sela\50150B\1\Module3\Code\Slide13\ParametersExample\ParametersExample\bin\Debug\ParametersExample.exe
+C:\Amir\Studies\Teach\Sela\50150B\1\Module3\Code\Slide13\ParametersExample\ParametersExample\bin\Debug\ParametersExample.pdb
+C:\Amir\Studies\Teach\Sela\50150B\1\Module3\Code\Slide13\ParametersExample\ParametersExample\obj\x86\Debug\ParametersExample.exe
+C:\Amir\Studies\Teach\Sela\50150B\1\Module3\Code\Slide13\ParametersExample\ParametersExample\obj\x86\Debug\ParametersExample.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module1\Code\Slide7\ParametersExample\ParametersExample\obj\x86\Debug\ParametersExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module1\Code\Slide7\ParametersExample\ParametersExample\obj\x86\Debug\ParametersExample.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module1\Code\Slide7\ParametersExample\ParametersExample\obj\x86\Debug\ParametersExample.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module1\Code\Slide7\ParametersExample\ParametersExample\obj\x86\Debug\ParametersExample.pdb
+C:\temp\50483\2-151112\ToStudents\Module1\Code\Slide7\ParametersExample\ParametersExample\obj\x86\Debug\ParametersExample.exe
+C:\temp\50483\2-151112\ToStudents\Module1\Code\Slide7\ParametersExample\ParametersExample\obj\x86\Debug\ParametersExample.pdb
+C:\courses\Ishai\50483A\3\ToStudents\Module1\Code\Slide7\ParametersExample\ParametersExample\obj\x86\Debug\ParametersExample.exe
+C:\courses\Ishai\50483A\3\ToStudents\Module1\Code\Slide7\ParametersExample\ParametersExample\obj\x86\Debug\ParametersExample.pdb
+C:\Amir\Lesson1\Module1\Code\Slide7\ParametersExample\ParametersExample\obj\x86\Debug\ParametersExample.exe
+C:\Amir\Lesson1\Module1\Code\Slide7\ParametersExample\ParametersExample\obj\x86\Debug\ParametersExample.pdb
+C:\Amir\Lesson1\Module1\Code\Slide7\ParametersExample\ParametersExample\bin\Debug\ParametersExample.exe
+C:\Amir\Lesson1\Module1\Code\Slide7\ParametersExample\ParametersExample\bin\Debug\ParametersExample.pdb
+C:\Amir\Lesson1\Module1\Code\Slide7\ParametersExample\ParametersExample\obj\x86\Debug\ParametersExample.csprojResolveAssemblyReference.cache

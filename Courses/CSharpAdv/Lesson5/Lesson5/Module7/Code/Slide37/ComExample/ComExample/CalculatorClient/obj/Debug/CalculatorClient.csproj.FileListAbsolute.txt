@@ -1,0 +1,7 @@
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\CalculatorClient\bin\Debug\CalculatorClient.exe
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\CalculatorClient\bin\Debug\CalculatorClient.pdb
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\CalculatorClient\bin\Debug\Interop.SimpleCOMCalculatorLib.dll
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\CalculatorClient\obj\Debug\Interop.SimpleCOMCalculatorLib.dll
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\CalculatorClient\obj\Debug\CalculatorClient.csproj.ResolveComReference.cache
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\CalculatorClient\obj\Debug\CalculatorClient.exe
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\CalculatorClient\obj\Debug\CalculatorClient.pdb

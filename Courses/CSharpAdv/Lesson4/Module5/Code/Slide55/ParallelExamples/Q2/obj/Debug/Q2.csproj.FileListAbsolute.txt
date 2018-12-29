@@ -1,0 +1,6 @@
+C:\Amir\Lesson4\Module5\Code\Slide55\ParallelExamples\Q2\bin\Debug\Q2.exe.config
+C:\Amir\Lesson4\Module5\Code\Slide55\ParallelExamples\Q2\bin\Debug\Q2.exe
+C:\Amir\Lesson4\Module5\Code\Slide55\ParallelExamples\Q2\bin\Debug\Q2.pdb
+C:\Amir\Lesson4\Module5\Code\Slide55\ParallelExamples\Q2\obj\Debug\Q2.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson4\Module5\Code\Slide55\ParallelExamples\Q2\obj\Debug\Q2.exe
+C:\Amir\Lesson4\Module5\Code\Slide55\ParallelExamples\Q2\obj\Debug\Q2.pdb

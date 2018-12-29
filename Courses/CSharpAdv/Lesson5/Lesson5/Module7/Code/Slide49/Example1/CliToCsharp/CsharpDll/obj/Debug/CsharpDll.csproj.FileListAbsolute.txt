@@ -1,0 +1,10 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide47\Example3\CliToCsharp\CsharpDll\bin\Debug\CsharpDll.dll
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide47\Example3\CliToCsharp\CsharpDll\bin\Debug\CsharpDll.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide47\Example3\CliToCsharp\CsharpDll\obj\Debug\CsharpDll.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide47\Example3\CliToCsharp\CsharpDll\obj\Debug\CsharpDll.dll
+C:\courses\Ishai\50483A\1\ToStudents\Module7\Code\Slide47\Example3\CliToCsharp\CsharpDll\obj\Debug\CsharpDll.pdb
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide49\Example1\CliToCsharp\CsharpDll\bin\Debug\CsharpDll.dll
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide49\Example1\CliToCsharp\CsharpDll\bin\Debug\CsharpDll.pdb
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide49\Example1\CliToCsharp\CsharpDll\obj\Debug\CsharpDll.csprojResolveAssemblyReference.cache
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide49\Example1\CliToCsharp\CsharpDll\obj\Debug\CsharpDll.dll
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide49\Example1\CliToCsharp\CsharpDll\obj\Debug\CsharpDll.pdb

@@ -1,0 +1,15 @@
+C:\Amir\Studies\Teach\nessCollege\ירושלים\MCPD11\2957\Module8\Example9\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe
+C:\Amir\Studies\Teach\nessCollege\ירושלים\MCPD11\2957\Module8\Example9\ConsoleApplication4\bin\Debug\ConsoleApplication4.pdb
+C:\Amir\Studies\Teach\nessCollege\ירושלים\MCPD11\2957\Module8\Example9\ConsoleApplication4\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Amir\Studies\Teach\nessCollege\ירושלים\MCPD11\2957\Module8\Example9\ConsoleApplication4\obj\x86\Debug\ConsoleApplication4.exe
+C:\Amir\Studies\Teach\nessCollege\ירושלים\MCPD11\2957\Module8\Example9\ConsoleApplication4\obj\x86\Debug\ConsoleApplication4.pdb
+C:\Amir\Studies\Teach\nessCollege\תל אביב\MCSD1\10266A\חומרים נוספים\Parallel Computing\Example9\ConsoleApplication4\obj\x86\Debug\ConsoleApplication4.exe
+C:\Amir\Studies\Teach\nessCollege\תל אביב\MCSD1\10266A\חומרים נוספים\Parallel Computing\Example9\ConsoleApplication4\obj\x86\Debug\ConsoleApplication4.pdb
+C:\Amir\Studies\Teach\nessCollege\temp\10266A\חומרים נוספים\Parallel Computing\Example9\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe
+C:\Amir\Studies\Teach\nessCollege\temp\10266A\חומרים נוספים\Parallel Computing\Example9\ConsoleApplication4\bin\Debug\ConsoleApplication4.pdb
+C:\Amir\Studies\Teach\nessCollege\temp\10266A\חומרים נוספים\Parallel Computing\Example9\ConsoleApplication4\obj\x86\Debug\ConsoleApplication4.exe
+C:\Amir\Studies\Teach\nessCollege\temp\10266A\חומרים נוספים\Parallel Computing\Example9\ConsoleApplication4\obj\x86\Debug\ConsoleApplication4.pdb
+H:\13.12.14\Amir\Studies\Teach\nessCollege\תל אביב\MCSD2\10266A\חומרים נוספים\Parallel Computing\Example9\ConsoleApplication4\obj\x86\Debug\ConsoleApplication4.exe
+H:\13.12.14\Amir\Studies\Teach\nessCollege\תל אביב\MCSD2\10266A\חומרים נוספים\Parallel Computing\Example9\ConsoleApplication4\obj\x86\Debug\ConsoleApplication4.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide16\Example3\ConsoleApplication4\obj\x86\Debug\ConsoleApplication4.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide16\Example3\ConsoleApplication4\obj\x86\Debug\ConsoleApplication4.pdb

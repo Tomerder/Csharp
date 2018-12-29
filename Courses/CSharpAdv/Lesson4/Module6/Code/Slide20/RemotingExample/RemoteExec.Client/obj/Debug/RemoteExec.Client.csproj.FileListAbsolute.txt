@@ -1,0 +1,16 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Code\Slide20\Build\Remote\RemoteExec.Client.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Code\Slide20\Build\Remote\RemoteExec.Client.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Code\Slide20\RemotingExample\RemoteExec.Client\obj\Debug\RemoteExec.Client.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Code\Slide20\RemotingExample\RemoteExec.Client\obj\Debug\RemoteExec.Client.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Code\Slide20\RemotingExample\RemoteExec.Client\obj\Debug\RemoteExec.Client.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module6\Code\Slide20\RemotingExample\RemoteExec.Client\obj\Debug\RemoteExec.Client.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module6\Code\Slide20\RemotingExample\RemoteExec.Client\obj\Debug\RemoteExec.Client.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module6\Code\Slide20\Build\Remote\RemoteExec.Client.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module6\Code\Slide20\Build\Remote\RemoteExec.Client.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module6\Code\Slide20\RemotingExample\RemoteExec.Client\obj\Debug\RemoteExec.Client.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson4\Module6\Code\Slide20\Build\Remote\RemoteExec.Client.exe
+C:\Amir\Lesson4\Module6\Code\Slide20\Build\Remote\RemoteExec.Client.pdb
+C:\Amir\Lesson4\Module6\Code\Slide20\RemotingExample\RemoteExec.Client\obj\Debug\RemoteExec.Client.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson4\Module6\Code\Slide20\RemotingExample\RemoteExec.Client\obj\Debug\RemoteExec.Client.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson4\Module6\Code\Slide20\RemotingExample\RemoteExec.Client\obj\Debug\RemoteExec.Client.exe
+C:\Amir\Lesson4\Module6\Code\Slide20\RemotingExample\RemoteExec.Client\obj\Debug\RemoteExec.Client.pdb

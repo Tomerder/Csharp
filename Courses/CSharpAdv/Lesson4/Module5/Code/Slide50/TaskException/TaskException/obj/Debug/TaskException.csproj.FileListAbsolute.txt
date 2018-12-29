@@ -1,0 +1,16 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide50\TaskException\TaskException\bin\Debug\TaskException.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide50\TaskException\TaskException\obj\Debug\TaskException.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide50\TaskException\TaskException\bin\Debug\TaskException.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide50\TaskException\TaskException\bin\Debug\TaskException.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide50\TaskException\TaskException\obj\Debug\TaskException.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide50\TaskException\TaskException\obj\Debug\TaskException.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide50\TaskException\TaskException\bin\Debug\TaskException.exe.config
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide50\TaskException\TaskException\obj\Debug\TaskException.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide50\TaskException\TaskException\obj\Debug\TaskException.pdb
+C:\Amir\Lesson4\Module5\Code\Slide50\TaskException\TaskException\bin\Debug\TaskException.exe.config
+C:\Amir\Lesson4\Module5\Code\Slide50\TaskException\TaskException\bin\Debug\TaskException.exe
+C:\Amir\Lesson4\Module5\Code\Slide50\TaskException\TaskException\bin\Debug\TaskException.pdb
+C:\Amir\Lesson4\Module5\Code\Slide50\TaskException\TaskException\obj\Debug\TaskException.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson4\Module5\Code\Slide50\TaskException\TaskException\obj\Debug\TaskException.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson4\Module5\Code\Slide50\TaskException\TaskException\obj\Debug\TaskException.exe
+C:\Amir\Lesson4\Module5\Code\Slide50\TaskException\TaskException\obj\Debug\TaskException.pdb

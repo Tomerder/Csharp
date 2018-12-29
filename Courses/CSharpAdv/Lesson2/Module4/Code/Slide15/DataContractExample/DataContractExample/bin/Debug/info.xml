@@ -1,0 +1,1 @@
+<Foo xmlns="http://schemas.datacontract.org/2004/07/DataContractExample" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Name>John</Name><id>1</id></Foo>

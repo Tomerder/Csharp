@@ -1,0 +1,6 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide8\DynamicEvents\DynamicEvents1\bin\Debug\DynamicDelegate.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide8\DynamicEvents\DynamicEvents1\obj\Debug\DynamicDelegate.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide8\DynamicEvents\DynamicEvents1\obj\Debug\DynamicDelegate.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide8\DynamicEvents\DynamicEvents1\obj\Debug\DynamicEvents1.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide8\DynamicEvents\DynamicEvents1\bin\Debug\DynamicDelegate.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide8\DynamicEvents\DynamicEvents1\bin\Debug\DynamicDelegate.pdb

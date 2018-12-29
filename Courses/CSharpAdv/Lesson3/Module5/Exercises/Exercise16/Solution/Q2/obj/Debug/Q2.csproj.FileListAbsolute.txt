@@ -1,0 +1,6 @@
+C:\Amir\Lesson3\Module5\Exercises\Exercise16\Solution\Q2\bin\Debug\Q2.exe.config
+C:\Amir\Lesson3\Module5\Exercises\Exercise16\Solution\Q2\bin\Debug\Q2.exe
+C:\Amir\Lesson3\Module5\Exercises\Exercise16\Solution\Q2\bin\Debug\Q2.pdb
+C:\Amir\Lesson3\Module5\Exercises\Exercise16\Solution\Q2\obj\Debug\Q2.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson3\Module5\Exercises\Exercise16\Solution\Q2\obj\Debug\Q2.exe
+C:\Amir\Lesson3\Module5\Exercises\Exercise16\Solution\Q2\obj\Debug\Q2.pdb

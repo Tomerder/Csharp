@@ -1,0 +1,8 @@
+C:\courses\Ishai\50150B\1-150315\ToStudents\Module26\Code\Slide6\TasksExamples\ConsoleApplication5\bin\Debug\ConsoleApplication5.exe.config
+C:\courses\Ishai\50150B\1-150315\ToStudents\Module26\Code\Slide6\TasksExamples\ConsoleApplication5\bin\Debug\ConsoleApplication5.exe
+C:\courses\Ishai\50150B\1-150315\ToStudents\Module26\Code\Slide6\TasksExamples\ConsoleApplication5\bin\Debug\ConsoleApplication5.pdb
+C:\courses\Ishai\50150B\1-150315\ToStudents\Module26\Code\Slide6\TasksExamples\ConsoleApplication5\obj\Debug\ConsoleApplication5.exe
+C:\courses\Ishai\50150B\1-150315\ToStudents\Module26\Code\Slide6\TasksExamples\ConsoleApplication5\obj\Debug\ConsoleApplication5.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\temp\Slide6\TasksExamples\ConsoleApplication5\bin\Debug\ConsoleApplication5.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\temp\Slide6\TasksExamples\ConsoleApplication5\obj\Debug\ConsoleApplication5.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\temp\Slide6\TasksExamples\ConsoleApplication5\obj\Debug\ConsoleApplication5.pdb

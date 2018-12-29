@@ -1,0 +1,8 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\COURSES\ISHAI\50483A\1\TOSTUDENTS\MODULE7\CODE\SLIDE49\EXAMPLE1\CLITOCSHARP\CSHARPDLL\BIN\DEBUG\CSHARPDLL.DLL" is missing.
+  stdafx.cpp
+  AssemblyInfo.cpp
+  CliExe.cpp
+  Generating Code...
+  .NETFramework,Version=v4.5.2.AssemblyAttributes.cpp
+  CliExe.vcxproj -> C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide49\Example1\CliToCsharp\Debug\CliExe.exe
+  CliExe.vcxproj -> C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide49\Example1\CliToCsharp\Debug\CliExe.pdb (Full PDB)

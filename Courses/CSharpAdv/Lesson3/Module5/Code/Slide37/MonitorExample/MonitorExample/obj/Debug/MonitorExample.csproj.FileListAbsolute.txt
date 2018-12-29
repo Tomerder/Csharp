@@ -1,0 +1,9 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide37\MonitorExample\MonitorExample\bin\Debug\MonitorExample.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide37\MonitorExample\MonitorExample\bin\Debug\MonitorExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide37\MonitorExample\MonitorExample\bin\Debug\MonitorExample.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide37\MonitorExample\MonitorExample\obj\Debug\MonitorExample.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide37\MonitorExample\MonitorExample\obj\Debug\MonitorExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide37\MonitorExample\MonitorExample\obj\Debug\MonitorExample.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide37\MonitorExample\MonitorExample\bin\Debug\MonitorExample.exe.config
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide37\MonitorExample\MonitorExample\obj\Debug\MonitorExample.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide37\MonitorExample\MonitorExample\obj\Debug\MonitorExample.pdb

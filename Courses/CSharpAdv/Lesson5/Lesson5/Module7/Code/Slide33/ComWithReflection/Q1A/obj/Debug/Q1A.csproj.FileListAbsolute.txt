@@ -1,0 +1,5 @@
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide33\ComWithReflection\Q1A\bin\Debug\Q1A.exe.config
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide33\ComWithReflection\Q1A\bin\Debug\Q1A.exe
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide33\ComWithReflection\Q1A\bin\Debug\Q1A.pdb
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide33\ComWithReflection\Q1A\obj\Debug\Q1A.exe
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide33\ComWithReflection\Q1A\obj\Debug\Q1A.pdb

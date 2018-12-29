@@ -1,0 +1,5 @@
+C:\Amir\Lesson1\Module2\Code\Slide31\Module02_MemoryManagement_GC\Q3\bin\Debug\Q3.exe.config
+C:\Amir\Lesson1\Module2\Code\Slide31\Module02_MemoryManagement_GC\Q3\bin\Debug\Q3.exe
+C:\Amir\Lesson1\Module2\Code\Slide31\Module02_MemoryManagement_GC\Q3\bin\Debug\Q3.pdb
+C:\Amir\Lesson1\Module2\Code\Slide31\Module02_MemoryManagement_GC\Q3\obj\Debug\Q3.exe
+C:\Amir\Lesson1\Module2\Code\Slide31\Module02_MemoryManagement_GC\Q3\obj\Debug\Q3.pdb

@@ -1,0 +1,10 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:FooRTCustom id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/SoapFormatterExample/SoapFormatterExample%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<id_>1</id_>
+<name_ id="ref-3">John</name_>
+<pass_ href="#ref-4"/>
+</a1:FooRTCustom>
+<SOAP-ENC:Array id="ref-4" xsi:type="SOAP-ENC:base64">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAeHPVGxOr00u0qcPJRxjS/QAAAAACAAAAAAADZgAAwAAAABAAAABLa3bbMcjK17RuKTsW4IMAAAAAAASAAACgAAAAEAAAAFlnKTaqRXvx3RCezQ5HdOQIAAAAMbx9O3SWEOUUAAAASvZEyEJEU68ym4uHxB9xwJczVKY=</SOAP-ENC:Array>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

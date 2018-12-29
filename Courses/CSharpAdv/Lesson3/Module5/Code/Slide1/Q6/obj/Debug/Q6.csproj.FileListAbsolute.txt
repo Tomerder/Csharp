@@ -1,0 +1,7 @@
+C:\Amir\Lesson3\Module5\Code\Slide1\Q6\bin\Debug\Q6.exe.config
+C:\Amir\Lesson3\Module5\Code\Slide1\Q6\bin\Debug\Q6.exe
+C:\Amir\Lesson3\Module5\Code\Slide1\Q6\bin\Debug\Q6.pdb
+C:\Amir\Lesson3\Module5\Code\Slide1\Q6\obj\Debug\Q6.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson3\Module5\Code\Slide1\Q6\obj\Debug\Q6.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson3\Module5\Code\Slide1\Q6\obj\Debug\Q6.exe
+C:\Amir\Lesson3\Module5\Code\Slide1\Q6\obj\Debug\Q6.pdb

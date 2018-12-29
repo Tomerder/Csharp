@@ -1,0 +1,9 @@
+C:\Amir\Lesson4\Module7\Code\Slide19\InteropExamples\Q1\bin\Debug\Q1.exe.config
+C:\Amir\Lesson4\Module7\Code\Slide19\InteropExamples\Q1\bin\Debug\Q1.exe
+C:\Amir\Lesson4\Module7\Code\Slide19\InteropExamples\Q1\bin\Debug\Q1.pdb
+C:\Amir\Lesson4\Module7\Code\Slide19\InteropExamples\Q1\obj\Debug\Q1.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson4\Module7\Code\Slide19\InteropExamples\Q1\obj\Debug\Q1.exe
+C:\Amir\Lesson4\Module7\Code\Slide19\InteropExamples\Q1\obj\Debug\Q1.pdb
+C:\Amir\Lesson4\Module7\Code\Slide19\Q1\Q1\bin\Debug\Q1.exe.config
+C:\Amir\Lesson4\Module7\Code\Slide19\Q1\Q1\obj\Debug\Q1.exe
+C:\Amir\Lesson4\Module7\Code\Slide19\Q1\Q1\obj\Debug\Q1.pdb

@@ -1,0 +1,5 @@
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\Q7\bin\Release\Q7.exe.config
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\Q7\bin\Release\Q7.exe
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\Q7\bin\Release\Q7.pdb
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\Q7\obj\Release\Q7.exe
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\Q7\obj\Release\Q7.pdb

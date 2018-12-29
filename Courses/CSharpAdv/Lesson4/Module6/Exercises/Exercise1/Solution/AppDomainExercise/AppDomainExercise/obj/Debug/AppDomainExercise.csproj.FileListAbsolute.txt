@@ -1,0 +1,9 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Exercises\Exercise1\Solution\AppDomainExercise\AppDomainExercise\bin\Debug\AppDomainExercise.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Exercises\Exercise1\Solution\AppDomainExercise\AppDomainExercise\bin\Debug\AppDomainExercise.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Exercises\Exercise1\Solution\AppDomainExercise\AppDomainExercise\bin\Debug\AppDomainExercise.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Exercises\Exercise1\Solution\AppDomainExercise\AppDomainExercise\obj\Debug\AppDomainExercise.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Exercises\Exercise1\Solution\AppDomainExercise\AppDomainExercise\obj\Debug\AppDomainExercise.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Exercises\Exercise1\Solution\AppDomainExercise\AppDomainExercise\obj\Debug\AppDomainExercise.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module6\Exercises\Exercise1\Solution\AppDomainExercise\AppDomainExercise\bin\Debug\AppDomainExercise.exe.config
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module6\Exercises\Exercise1\Solution\AppDomainExercise\AppDomainExercise\obj\Debug\AppDomainExercise.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module6\Exercises\Exercise1\Solution\AppDomainExercise\AppDomainExercise\obj\Debug\AppDomainExercise.pdb

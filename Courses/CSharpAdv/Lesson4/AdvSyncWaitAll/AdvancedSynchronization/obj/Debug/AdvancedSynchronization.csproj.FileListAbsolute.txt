@@ -1,0 +1,28 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise44a\Solution\AdvancedSynchronization\bin\Debug\Solution.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise44a\Solution\AdvancedSynchronization\obj\Debug\Solution.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise44a\Solution\AdvancedSynchronization\obj\Debug\Solution.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise44a\Solution\AdvancedSynchronization\bin\Debug\Solution.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise44a\Solution\AdvancedSynchronization\bin\Debug\Solution.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise44a\Solution\AdvancedSynchronization\obj\Debug\AdvancedSynchronization.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise44a\Starter\AdvancedSynchronization\bin\Debug\Solution.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise44a\Starter\AdvancedSynchronization\obj\Debug\Solution.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise44a\Starter\AdvancedSynchronization\obj\Debug\Solution.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise44a\Starter\AdvancedSynchronization\bin\Debug\Solution.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise44a\Starter\AdvancedSynchronization\bin\Debug\Solution.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise44a\Starter\AdvancedSynchronization\obj\Debug\AdvancedSynchronization.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Exercises\Exercise44a\Starter\AdvancedSynchronization\bin\Debug\Solution.exe.config
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Exercises\Exercise44a\Starter\AdvancedSynchronization\obj\Debug\Solution.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Exercises\Exercise44a\Starter\AdvancedSynchronization\obj\Debug\Solution.pdb
+C:\Users\hadraha.TRAINING\Desktop\CSharp\Lesson4-not final\Module5\Exercises\Exercise44\Starter\AdvancedSynchronization\bin\Debug\Solution.exe.config
+C:\Users\hadraha.TRAINING\Desktop\CSharp\Lesson4-not final\Module5\Exercises\Exercise44\Starter\AdvancedSynchronization\bin\Debug\Solution.exe
+C:\Users\hadraha.TRAINING\Desktop\CSharp\Lesson4-not final\Module5\Exercises\Exercise44\Starter\AdvancedSynchronization\bin\Debug\Solution.pdb
+C:\Users\hadraha.TRAINING\Desktop\CSharp\Lesson4-not final\Module5\Exercises\Exercise44\Starter\AdvancedSynchronization\obj\Debug\AdvancedSynchronization.csproj.CoreCompileInputs.cache
+C:\Users\hadraha.TRAINING\Desktop\CSharp\Lesson4-not final\Module5\Exercises\Exercise44\Starter\AdvancedSynchronization\obj\Debug\Solution.exe
+C:\Users\hadraha.TRAINING\Desktop\CSharp\Lesson4-not final\Module5\Exercises\Exercise44\Starter\AdvancedSynchronization\obj\Debug\Solution.pdb
+C:\Users\hadraha.TRAINING\Desktop\CSharp\AdvSyncWaitAll\AdvancedSynchronization\bin\Debug\Solution.exe.config
+C:\Users\hadraha.TRAINING\Desktop\CSharp\AdvSyncWaitAll\AdvancedSynchronization\bin\Debug\Solution.exe
+C:\Users\hadraha.TRAINING\Desktop\CSharp\AdvSyncWaitAll\AdvancedSynchronization\bin\Debug\Solution.pdb
+C:\Users\hadraha.TRAINING\Desktop\CSharp\AdvSyncWaitAll\AdvancedSynchronization\obj\Debug\AdvancedSynchronization.csprojResolveAssemblyReference.cache
+C:\Users\hadraha.TRAINING\Desktop\CSharp\AdvSyncWaitAll\AdvancedSynchronization\obj\Debug\AdvancedSynchronization.csproj.CoreCompileInputs.cache
+C:\Users\hadraha.TRAINING\Desktop\CSharp\AdvSyncWaitAll\AdvancedSynchronization\obj\Debug\Solution.exe
+C:\Users\hadraha.TRAINING\Desktop\CSharp\AdvSyncWaitAll\AdvancedSynchronization\obj\Debug\Solution.pdb

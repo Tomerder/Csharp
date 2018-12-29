@@ -1,0 +1,10 @@
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsingPInvoke\bin\Debug\UsingPInvoke.exe
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsingPInvoke\bin\Debug\UsingPInvoke.pdb
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsingPInvoke\obj\Debug\03 UsingPInvoke.csprojResolveAssemblyReference.cache
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsingPInvoke\obj\Debug\UsingPInvoke.exe
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsingPInvoke\obj\Debug\UsingPInvoke.pdb
+C:\courses\Ishai\50483A\original\V2.1\Demos\Module07_Interop\UsingPInvoke\bin\Debug\UsingPInvoke.exe
+C:\courses\Ishai\50483A\original\V2.1\Demos\Module07_Interop\UsingPInvoke\bin\Debug\UsingPInvoke.pdb
+C:\courses\Ishai\50483A\original\V2.1\Demos\Module07_Interop\UsingPInvoke\obj\Debug\03 UsingPInvoke.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\original\V2.1\Demos\Module07_Interop\UsingPInvoke\obj\Debug\UsingPInvoke.exe
+C:\courses\Ishai\50483A\original\V2.1\Demos\Module07_Interop\UsingPInvoke\obj\Debug\UsingPInvoke.pdb

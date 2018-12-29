@@ -1,0 +1,5 @@
+C:\Amir\Lesson1\Module1\Code\Slide7\CompareExample\Q3\bin\Debug\Q3.exe.config
+C:\Amir\Lesson1\Module1\Code\Slide7\CompareExample\Q3\bin\Debug\Q3.exe
+C:\Amir\Lesson1\Module1\Code\Slide7\CompareExample\Q3\bin\Debug\Q3.pdb
+C:\Amir\Lesson1\Module1\Code\Slide7\CompareExample\Q3\obj\Debug\Q3.exe
+C:\Amir\Lesson1\Module1\Code\Slide7\CompareExample\Q3\obj\Debug\Q3.pdb

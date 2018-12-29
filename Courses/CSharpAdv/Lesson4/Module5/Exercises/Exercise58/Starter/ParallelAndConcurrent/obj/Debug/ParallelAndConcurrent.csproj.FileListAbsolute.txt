@@ -1,0 +1,16 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide57\ParallelAndConcurrent\ParallelAndConcurrent\bin\Debug\ParallelAndConcurrent.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide57\ParallelAndConcurrent\ParallelAndConcurrent\bin\Debug\ParallelAndConcurrent.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide57\ParallelAndConcurrent\ParallelAndConcurrent\bin\Debug\ParallelAndConcurrent.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide57\ParallelAndConcurrent\ParallelAndConcurrent\obj\Debug\ParallelAndConcurrent.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide57\ParallelAndConcurrent\ParallelAndConcurrent\obj\Debug\ParallelAndConcurrent.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide57\ParallelAndConcurrent\ParallelAndConcurrent\obj\Debug\ParallelAndConcurrent.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise58a\Solution\ParallelAndConcurrent\bin\Debug\ParallelAndConcurrent.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise58a\Solution\ParallelAndConcurrent\obj\Debug\ParallelAndConcurrent.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise58a\Solution\ParallelAndConcurrent\obj\Debug\ParallelAndConcurrent.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise58a\Starter\ParallelAndConcurrent\bin\Debug\ParallelAndConcurrent.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise58a\Starter\ParallelAndConcurrent\obj\Debug\ParallelAndConcurrent.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Exercises\Exercise58a\Starter\ParallelAndConcurrent\obj\Debug\ParallelAndConcurrent.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Exercises\Exercise58a\Starter\ParallelAndConcurrent\bin\Debug\ParallelAndConcurrent.exe.config
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Exercises\Exercise58a\Starter\ParallelAndConcurrent\obj\Debug\ParallelAndConcurrent.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Exercises\Exercise58a\Starter\ParallelAndConcurrent\obj\Debug\ParallelAndConcurrent.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Exercises\Exercise58a\Starter\ParallelAndConcurrent\obj\Debug\ParallelAndConcurrent.csprojResolveAssemblyReference.cache

@@ -1,0 +1,6 @@
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide33\ComWithReflection\Q1B\bin\Debug\Q1B.exe.config
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide33\ComWithReflection\Q1B\bin\Debug\Q1B.exe
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide33\ComWithReflection\Q1B\bin\Debug\Q1B.pdb
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide33\ComWithReflection\Q1B\obj\Debug\Q1B.csprojResolveAssemblyReference.cache
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide33\ComWithReflection\Q1B\obj\Debug\Q1B.exe
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide33\ComWithReflection\Q1B\obj\Debug\Q1B.pdb

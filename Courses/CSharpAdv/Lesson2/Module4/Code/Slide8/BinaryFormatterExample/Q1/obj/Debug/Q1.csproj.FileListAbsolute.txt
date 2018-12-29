@@ -1,0 +1,5 @@
+C:\Amir\Lesson2\Module4\Code\Slide8\BinaryFormatterExample\Q1\bin\Debug\BinaryFormatterExample.exe.config
+C:\Amir\Lesson2\Module4\Code\Slide8\BinaryFormatterExample\Q1\obj\Debug\BinaryFormatterExample.exe
+C:\Amir\Lesson2\Module4\Code\Slide8\BinaryFormatterExample\Q1\obj\Debug\BinaryFormatterExample.pdb
+C:\Amir\Lesson2\Module4\Code\Slide8\BinaryFormatterExample\Q1\bin\Debug\BinaryFormatterExample.exe
+C:\Amir\Lesson2\Module4\Code\Slide8\BinaryFormatterExample\Q1\bin\Debug\BinaryFormatterExample.pdb

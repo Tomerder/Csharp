@@ -1,0 +1,12 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide51\TasksExamples\ConsoleApplication2\bin\Debug\ConsoleApplication5.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide51\TasksExamples\ConsoleApplication2\obj\Debug\ConsoleApplication5.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide51\TasksExamples\ConsoleApplication2\obj\Debug\ConsoleApplication5.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide51\TasksExamples\ConsoleApplication2\bin\Debug\ConsoleApplication5.exe.config
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide51\TasksExamples\ConsoleApplication2\obj\Debug\ConsoleApplication5.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide51\TasksExamples\ConsoleApplication2\obj\Debug\ConsoleApplication5.pdb
+C:\Amir\Lesson4\Module5\Code\Slide51\TasksExamples\ConsoleApplication2\bin\Debug\ConsoleApplication5.exe.config
+C:\Amir\Lesson4\Module5\Code\Slide51\TasksExamples\ConsoleApplication2\bin\Debug\ConsoleApplication5.exe
+C:\Amir\Lesson4\Module5\Code\Slide51\TasksExamples\ConsoleApplication2\bin\Debug\ConsoleApplication5.pdb
+C:\Amir\Lesson4\Module5\Code\Slide51\TasksExamples\ConsoleApplication2\obj\Debug\ConsoleApplication2.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson4\Module5\Code\Slide51\TasksExamples\ConsoleApplication2\obj\Debug\ConsoleApplication5.exe
+C:\Amir\Lesson4\Module5\Code\Slide51\TasksExamples\ConsoleApplication2\obj\Debug\ConsoleApplication5.pdb

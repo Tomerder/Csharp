@@ -1,0 +1,12 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide7\DynamicDelegate\DynamicDelegate\bin\Debug\DynamicDelegate.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide7\DynamicDelegate\DynamicDelegate\bin\Debug\DynamicDelegate.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide7\DynamicDelegate\DynamicDelegate\bin\Debug\DynamicDelegate.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide7\DynamicDelegate\DynamicDelegate\obj\Debug\DynamicDelegate.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide7\DynamicDelegate\DynamicDelegate\obj\Debug\DynamicDelegate.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide7\DynamicDelegate\DynamicDelegate\obj\Debug\DynamicDelegate.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide6\DynamicDelegate\DynamicDelegate\bin\Debug\DynamicDelegate.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide6\DynamicDelegate\DynamicDelegate\obj\Debug\DynamicDelegate.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide6\DynamicDelegate\DynamicDelegate\obj\Debug\DynamicDelegate.pdb
+C:\temp\Elbit-50483\Lesson5\Module8\Code\Slide6\DynamicDelegate\DynamicDelegate\bin\Debug\DynamicDelegate.exe.config
+C:\temp\Elbit-50483\Lesson5\Module8\Code\Slide6\DynamicDelegate\DynamicDelegate\obj\Debug\DynamicDelegate.exe
+C:\temp\Elbit-50483\Lesson5\Module8\Code\Slide6\DynamicDelegate\DynamicDelegate\obj\Debug\DynamicDelegate.pdb

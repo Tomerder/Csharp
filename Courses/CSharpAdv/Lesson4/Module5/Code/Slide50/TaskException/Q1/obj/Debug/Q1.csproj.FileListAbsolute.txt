@@ -1,0 +1,7 @@
+C:\Amir\Lesson4\Module5\Code\Slide50\TaskException\Q1\bin\Debug\Q1.exe.config
+C:\Amir\Lesson4\Module5\Code\Slide50\TaskException\Q1\bin\Debug\Q1.exe
+C:\Amir\Lesson4\Module5\Code\Slide50\TaskException\Q1\bin\Debug\Q1.pdb
+C:\Amir\Lesson4\Module5\Code\Slide50\TaskException\Q1\obj\Debug\Q1.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson4\Module5\Code\Slide50\TaskException\Q1\obj\Debug\Q1.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson4\Module5\Code\Slide50\TaskException\Q1\obj\Debug\Q1.exe
+C:\Amir\Lesson4\Module5\Code\Slide50\TaskException\Q1\obj\Debug\Q1.pdb

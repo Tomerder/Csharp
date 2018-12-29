@@ -1,0 +1,17 @@
+C:\Amir\Studies\Teach\Sela\50150B\1\Module3\Code\Slide13\CompareExample\CompareExample\bin\Debug\CompareExample.exe
+C:\Amir\Studies\Teach\Sela\50150B\1\Module3\Code\Slide13\CompareExample\CompareExample\bin\Debug\CompareExample.pdb
+C:\Amir\Studies\Teach\Sela\50150B\1\Module3\Code\Slide13\CompareExample\CompareExample\obj\x86\Debug\CompareExample.exe
+C:\Amir\Studies\Teach\Sela\50150B\1\Module3\Code\Slide13\CompareExample\CompareExample\obj\x86\Debug\CompareExample.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module1\Code\Slide7\CompareExample\CompareExample\obj\x86\Debug\CompareExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module1\Code\Slide7\CompareExample\CompareExample\obj\x86\Debug\CompareExample.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module1\Code\Slide7\CompareExample\CompareExample\obj\x86\Debug\CompareExample.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module1\Code\Slide7\CompareExample\CompareExample\obj\x86\Debug\CompareExample.pdb
+C:\temp\50483\2-151112\ToStudents\Module1\Code\Slide7\CompareExample\CompareExample\obj\x86\Debug\CompareExample.exe
+C:\temp\50483\2-151112\ToStudents\Module1\Code\Slide7\CompareExample\CompareExample\obj\x86\Debug\CompareExample.pdb
+C:\courses\Ishai\50483A\3\ToStudents\Module1\Code\Slide7\CompareExample\CompareExample\obj\x86\Debug\CompareExample.exe
+C:\courses\Ishai\50483A\3\ToStudents\Module1\Code\Slide7\CompareExample\CompareExample\obj\x86\Debug\CompareExample.pdb
+C:\Amir\Lesson1\Module1\Code\Slide7\CompareExample\CompareExample\obj\x86\Debug\CompareExample.exe
+C:\Amir\Lesson1\Module1\Code\Slide7\CompareExample\CompareExample\obj\x86\Debug\CompareExample.pdb
+C:\Amir\Lesson1\Module1\Code\Slide7\CompareExample\CompareExample\bin\Debug\CompareExample.exe
+C:\Amir\Lesson1\Module1\Code\Slide7\CompareExample\CompareExample\bin\Debug\CompareExample.pdb
+C:\Amir\Lesson1\Module1\Code\Slide7\CompareExample\CompareExample\obj\x86\Debug\CompareExample.csprojResolveAssemblyReference.cache

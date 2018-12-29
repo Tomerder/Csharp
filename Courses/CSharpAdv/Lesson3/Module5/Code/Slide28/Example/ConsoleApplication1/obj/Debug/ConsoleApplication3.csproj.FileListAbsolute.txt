@@ -1,0 +1,5 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide27\Example\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide27\Example\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide27\Example\ConsoleApplication3\obj\Debug\ConsoleApplication3.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide27\Example\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide27\Example\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb

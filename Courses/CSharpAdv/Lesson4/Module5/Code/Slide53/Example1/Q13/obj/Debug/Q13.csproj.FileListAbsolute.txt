@@ -1,0 +1,6 @@
+C:\Amir\Lesson4\Module5\Code\Slide53\Example1\Q13\bin\Debug\Q13.exe.config
+C:\Amir\Lesson4\Module5\Code\Slide53\Example1\Q13\bin\Debug\Q13.exe
+C:\Amir\Lesson4\Module5\Code\Slide53\Example1\Q13\bin\Debug\Q13.pdb
+C:\Amir\Lesson4\Module5\Code\Slide53\Example1\Q13\obj\Debug\Q13.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson4\Module5\Code\Slide53\Example1\Q13\obj\Debug\Q13.exe
+C:\Amir\Lesson4\Module5\Code\Slide53\Example1\Q13\obj\Debug\Q13.pdb

@@ -1,0 +1,5 @@
+C:\Amir\Lesson5\Module7\Code\Slide47\Example3\CliToCsharp\CsharpDll\bin\Debug\CsharpDll.dll
+C:\Amir\Lesson5\Module7\Code\Slide47\Example3\CliToCsharp\CsharpDll\bin\Debug\CsharpDll.pdb
+C:\Amir\Lesson5\Module7\Code\Slide47\Example3\CliToCsharp\CsharpDll\obj\Debug\CsharpDll.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson5\Module7\Code\Slide47\Example3\CliToCsharp\CsharpDll\obj\Debug\CsharpDll.dll
+C:\Amir\Lesson5\Module7\Code\Slide47\Example3\CliToCsharp\CsharpDll\obj\Debug\CsharpDll.pdb

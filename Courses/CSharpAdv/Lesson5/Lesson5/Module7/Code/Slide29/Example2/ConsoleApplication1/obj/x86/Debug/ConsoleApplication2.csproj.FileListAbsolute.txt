@@ -1,0 +1,3 @@
+C:\Amir\Studies\Teach\nessCollege\ירושלים\MCPD11\10266A\Module15\Example4\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.csproj.ResolveComReference.cache
+C:\Amir\Studies\Teach\nessCollege\תל אביב\MCSD1\10266A\Module15\Example4\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.csproj.ResolveComReference.cache
+H:\13.12.14\Amir\Studies\Teach\nessCollege\תל אביב\MCSD2\10266A\Module15\Example4\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.csproj.ResolveComReference.cache

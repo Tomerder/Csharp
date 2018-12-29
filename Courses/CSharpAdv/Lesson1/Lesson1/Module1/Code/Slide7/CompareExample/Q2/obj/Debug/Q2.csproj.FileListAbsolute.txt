@@ -1,0 +1,6 @@
+C:\Amir\Lesson1\Module1\Code\Slide7\CompareExample\Q2\bin\Debug\Q2.exe.config
+C:\Amir\Lesson1\Module1\Code\Slide7\CompareExample\Q2\bin\Debug\Q2.exe
+C:\Amir\Lesson1\Module1\Code\Slide7\CompareExample\Q2\bin\Debug\Q2.pdb
+C:\Amir\Lesson1\Module1\Code\Slide7\CompareExample\Q2\obj\Debug\Q2.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson1\Module1\Code\Slide7\CompareExample\Q2\obj\Debug\Q2.exe
+C:\Amir\Lesson1\Module1\Code\Slide7\CompareExample\Q2\obj\Debug\Q2.pdb

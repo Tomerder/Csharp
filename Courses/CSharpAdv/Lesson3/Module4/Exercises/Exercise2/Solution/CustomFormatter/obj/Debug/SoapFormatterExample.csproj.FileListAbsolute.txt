@@ -1,0 +1,6 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module4\Code\Slide14\SoapFormatterExample\SoapFormatterExample\bin\Debug\SoapFormatterExample.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module4\Code\Slide14\SoapFormatterExample\SoapFormatterExample\bin\Debug\SoapFormatterExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module4\Code\Slide14\SoapFormatterExample\SoapFormatterExample\bin\Debug\SoapFormatterExample.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module4\Code\Slide14\SoapFormatterExample\SoapFormatterExample\obj\Debug\SoapFormatterExample.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module4\Code\Slide14\SoapFormatterExample\SoapFormatterExample\obj\Debug\SoapFormatterExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module4\Code\Slide14\SoapFormatterExample\SoapFormatterExample\obj\Debug\SoapFormatterExample.pdb

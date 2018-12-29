@@ -1,0 +1,3 @@
+C:\courses\Ishai\50483A\3\ToStudents\Module7\Exercises\Exercise73\Starter\CsharpToCli\CsharpExe\bin\Debug\CsharpExe.exe.config
+C:\temp\Elbit-50483\Lesson5\Module7\Exercises\Exercise73\Starter\CsharpToCli\CsharpExe\bin\Debug\CsharpExe.exe.config
+C:\Amir\Lesson5\Module7\Exercises\Exercise73\Starter\CsharpToCli\CsharpExe\bin\Debug\CsharpExe.exe.config

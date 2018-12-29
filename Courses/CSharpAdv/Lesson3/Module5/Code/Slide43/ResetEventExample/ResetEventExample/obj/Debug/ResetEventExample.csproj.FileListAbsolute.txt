@@ -1,0 +1,16 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide44\ResetEventExample\ResetEventExample\bin\Debug\ResetEventExample.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide44\ResetEventExample\ResetEventExample\bin\Debug\ResetEventExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide44\ResetEventExample\ResetEventExample\bin\Debug\ResetEventExample.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide44\ResetEventExample\ResetEventExample\obj\Debug\ResetEventExample.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide44\ResetEventExample\ResetEventExample\obj\Debug\ResetEventExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide44\ResetEventExample\ResetEventExample\obj\Debug\ResetEventExample.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide43\ResetEventExample\ResetEventExample\bin\Debug\ResetEventExample.exe.config
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide43\ResetEventExample\ResetEventExample\obj\Debug\ResetEventExample.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide43\ResetEventExample\ResetEventExample\obj\Debug\ResetEventExample.pdb
+C:\Amir\Lesson3\Module5\Code\Slide43\ResetEventExample\ResetEventExample\bin\Debug\ResetEventExample.exe.config
+C:\Amir\Lesson3\Module5\Code\Slide43\ResetEventExample\ResetEventExample\bin\Debug\ResetEventExample.exe
+C:\Amir\Lesson3\Module5\Code\Slide43\ResetEventExample\ResetEventExample\bin\Debug\ResetEventExample.pdb
+C:\Amir\Lesson3\Module5\Code\Slide43\ResetEventExample\ResetEventExample\obj\Debug\ResetEventExample.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson3\Module5\Code\Slide43\ResetEventExample\ResetEventExample\obj\Debug\ResetEventExample.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson3\Module5\Code\Slide43\ResetEventExample\ResetEventExample\obj\Debug\ResetEventExample.exe
+C:\Amir\Lesson3\Module5\Code\Slide43\ResetEventExample\ResetEventExample\obj\Debug\ResetEventExample.pdb

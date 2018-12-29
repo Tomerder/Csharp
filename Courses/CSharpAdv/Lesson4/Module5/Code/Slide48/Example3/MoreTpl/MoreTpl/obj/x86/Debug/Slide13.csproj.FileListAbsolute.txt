@@ -1,0 +1,7 @@
+D:\projects\Amir\Lectures\Parallel\New\Slide13\Slide13\obj\x86\Debug\Slide13.exe
+D:\projects\Amir\Lectures\Parallel\New\Slide13\Slide13\obj\x86\Debug\Slide13.pdb
+D:\projects\Amir\Lectures\Parallel\New\Slide13\Slide13\bin\Debug\Slide13.exe
+D:\projects\Amir\Lectures\Parallel\New\Slide13\Slide13\bin\Debug\Slide13.pdb
+D:\projects\Amir\Lectures\Parallel\New\Slide13\Slide13\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\13.12.14\Amir\Studies\Teach\nessInternal\parallel\Slide13\Slide13\obj\x86\Debug\Slide13.exe
+H:\13.12.14\Amir\Studies\Teach\nessInternal\parallel\Slide13\Slide13\obj\x86\Debug\Slide13.pdb

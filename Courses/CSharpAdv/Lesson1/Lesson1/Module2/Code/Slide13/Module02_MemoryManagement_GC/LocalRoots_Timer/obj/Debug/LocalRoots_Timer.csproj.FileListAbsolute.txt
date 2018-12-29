@@ -1,0 +1,17 @@
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module2\Code\Slide13\Module02_MemoryManagement_GC\LocalRoots_Timer\bin\Debug\LocalRoots_Timer.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module2\Code\Slide13\Module02_MemoryManagement_GC\LocalRoots_Timer\bin\Debug\LocalRoots_Timer.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module2\Code\Slide13\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module2\Code\Slide13\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module2\Code\Slide13\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.pdb
+C:\temp\50483\2-151112\ToStudents\Module2\Code\Slide13\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.exe
+C:\temp\50483\2-151112\ToStudents\Module2\Code\Slide13\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.pdb
+C:\temp\50483\2-151112\ToStudents\Module2\Code\Slide13\Module02_MemoryManagement_GC\LocalRoots_Timer\bin\Debug\LocalRoots_Timer.exe
+C:\temp\50483\2-151112\ToStudents\Module2\Code\Slide13\Module02_MemoryManagement_GC\LocalRoots_Timer\bin\Debug\LocalRoots_Timer.pdb
+C:\temp\50483\2-151112\ToStudents\Module2\Code\Slide13\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\3\ToStudents\Module2\Code\Slide13\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.exe
+C:\courses\Ishai\50483A\3\ToStudents\Module2\Code\Slide13\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.pdb
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.exe
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.pdb
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\LocalRoots_Timer\bin\Debug\LocalRoots_Timer.exe
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\LocalRoots_Timer\bin\Debug\LocalRoots_Timer.pdb
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.csprojResolveAssemblyReference.cache

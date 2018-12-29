@@ -1,0 +1,7 @@
+D:\projects\Amir\Lectures\Parallel\New\Slide16\Slide16\bin\Debug\Slide16.exe
+D:\projects\Amir\Lectures\Parallel\New\Slide16\Slide16\bin\Debug\Slide16.pdb
+D:\projects\Amir\Lectures\Parallel\New\Slide16\Slide16\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\projects\Amir\Lectures\Parallel\New\Slide16\Slide16\obj\x86\Debug\Slide16.exe
+D:\projects\Amir\Lectures\Parallel\New\Slide16\Slide16\obj\x86\Debug\Slide16.pdb
+H:\13.12.14\Amir\Studies\Teach\nessInternal\parallel\Slide16\Slide16\obj\x86\Debug\Slide16.exe
+H:\13.12.14\Amir\Studies\Teach\nessInternal\parallel\Slide16\Slide16\obj\x86\Debug\Slide16.pdb

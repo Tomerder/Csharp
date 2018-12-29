@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "Q2"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-Q2-a9b9e6cd-f6b9-4f00-8f1d-d9130ca13ecb;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+c:\users\hadraha.training\documents\visual studio 2015\Projects\CliToCsharp\CsharpDll\bin\Debug\CsharpDll.dll
+c:\users\hadraha.training\documents\visual studio 2015\Projects\CliToCsharp\CsharpDll\bin\Debug\CsharpDll.pdb
+c:\users\hadraha.training\documents\visual studio 2015\Projects\CliToCsharp\CsharpDll\obj\Debug\CsharpDll.dll
+c:\users\hadraha.training\documents\visual studio 2015\Projects\CliToCsharp\CsharpDll\obj\Debug\CsharpDll.pdb

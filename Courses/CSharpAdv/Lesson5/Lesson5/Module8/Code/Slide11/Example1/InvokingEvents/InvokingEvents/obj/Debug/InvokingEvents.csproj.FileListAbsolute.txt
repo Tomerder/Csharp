@@ -1,0 +1,12 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide11\InvokingEvents\InvokingEvents\bin\Debug\InvokingEvents.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide11\InvokingEvents\InvokingEvents\bin\Debug\InvokingEvents.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide11\InvokingEvents\InvokingEvents\bin\Debug\InvokingEvents.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide11\InvokingEvents\InvokingEvents\obj\Debug\InvokingEvents.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide11\InvokingEvents\InvokingEvents\obj\Debug\InvokingEvents.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide11\InvokingEvents\InvokingEvents\obj\Debug\InvokingEvents.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide11\Example1\InvokingEvents\InvokingEvents\bin\Debug\InvokingEvents.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide11\Example1\InvokingEvents\InvokingEvents\obj\Debug\InvokingEvents.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide11\Example1\InvokingEvents\InvokingEvents\obj\Debug\InvokingEvents.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide11\Example1\InvokingEvents\InvokingEvents\bin\Debug\InvokingEvents.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide11\Example1\InvokingEvents\InvokingEvents\bin\Debug\InvokingEvents.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module8\Code\Slide11\Example1\InvokingEvents\InvokingEvents\obj\Debug\InvokingEvents.csprojResolveAssemblyReference.cache

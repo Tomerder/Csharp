@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{E59F1D2D-6EA5-4405-90E5-3484044C8C79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication2", "ConsoleApplication2\ConsoleApplication2.csproj", "{D972ABFC-1223-4E5F-849C-72679F2BA07C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication3", "ConsoleApplication3\ConsoleApplication3.csproj", "{775B8D40-7B14-4937-8F9A-92B0D28E9E04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E59F1D2D-6EA5-4405-90E5-3484044C8C79}.Debug|x86.ActiveCfg = Debug|x86
+		{E59F1D2D-6EA5-4405-90E5-3484044C8C79}.Debug|x86.Build.0 = Debug|x86
+		{E59F1D2D-6EA5-4405-90E5-3484044C8C79}.Release|x86.ActiveCfg = Release|x86
+		{E59F1D2D-6EA5-4405-90E5-3484044C8C79}.Release|x86.Build.0 = Release|x86
+		{D972ABFC-1223-4E5F-849C-72679F2BA07C}.Debug|x86.ActiveCfg = Debug|x86
+		{D972ABFC-1223-4E5F-849C-72679F2BA07C}.Debug|x86.Build.0 = Debug|x86
+		{D972ABFC-1223-4E5F-849C-72679F2BA07C}.Release|x86.ActiveCfg = Release|x86
+		{D972ABFC-1223-4E5F-849C-72679F2BA07C}.Release|x86.Build.0 = Release|x86
+		{775B8D40-7B14-4937-8F9A-92B0D28E9E04}.Debug|x86.ActiveCfg = Debug|x86
+		{775B8D40-7B14-4937-8F9A-92B0D28E9E04}.Debug|x86.Build.0 = Debug|x86
+		{775B8D40-7B14-4937-8F9A-92B0D28E9E04}.Release|x86.ActiveCfg = Release|x86
+		{775B8D40-7B14-4937-8F9A-92B0D28E9E04}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

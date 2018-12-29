@@ -1,0 +1,13 @@
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsefulManagedLibrary\bin\Debug\UsefulManagedLibrary.dll
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsefulManagedLibrary\bin\Debug\UsefulManagedLibrary.pdb
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsefulManagedLibrary\bin\Debug\UsefulManagedLibrary.tlb
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsefulManagedLibrary\obj\Debug\UsefulManagedLibrary.dll
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsefulManagedLibrary\obj\Debug\UsefulManagedLibrary.pdb
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsefulManagedLibrary\bin\x86\Debug\UsefulManagedLibrary.dll
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsefulManagedLibrary\bin\x86\Debug\UsefulManagedLibrary.pdb
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsefulManagedLibrary\bin\x86\Debug\UsefulManagedLibrary.tlb
+C:\courses\Ishai\50483A\original\V2.1\Demos\Module07_Interop\UsefulManagedLibrary\bin\x86\Debug\UsefulManagedLibrary.dll
+C:\courses\Ishai\50483A\original\V2.1\Demos\Module07_Interop\UsefulManagedLibrary\bin\x86\Debug\UsefulManagedLibrary.pdb
+C:\courses\Ishai\50483A\original\V2.1\Demos\Module07_Interop\UsefulManagedLibrary\obj\Debug\UsefulManagedLibrary.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\original\V2.1\Demos\Module07_Interop\UsefulManagedLibrary\obj\Debug\UsefulManagedLibrary.dll
+C:\courses\Ishai\50483A\original\V2.1\Demos\Module07_Interop\UsefulManagedLibrary\obj\Debug\UsefulManagedLibrary.pdb

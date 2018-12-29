@@ -1,0 +1,6 @@
+c:\users\hadraha.training\documents\visual studio 2015\Projects\PInvoke\PInvoke\bin\Debug\PInvoke.exe.config
+c:\users\hadraha.training\documents\visual studio 2015\Projects\PInvoke\PInvoke\bin\Debug\PInvoke.exe
+c:\users\hadraha.training\documents\visual studio 2015\Projects\PInvoke\PInvoke\bin\Debug\PInvoke.pdb
+c:\users\hadraha.training\documents\visual studio 2015\Projects\PInvoke\PInvoke\obj\Debug\PInvoke.csprojResolveAssemblyReference.cache
+c:\users\hadraha.training\documents\visual studio 2015\Projects\PInvoke\PInvoke\obj\Debug\PInvoke.exe
+c:\users\hadraha.training\documents\visual studio 2015\Projects\PInvoke\PInvoke\obj\Debug\PInvoke.pdb

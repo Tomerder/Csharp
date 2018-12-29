@@ -1,0 +1,5 @@
+c:\users\hadraha.training\documents\visual studio 2015\Projects\SerializeEx\SerializeEx\bin\Debug\SerializeEx.exe.config
+c:\users\hadraha.training\documents\visual studio 2015\Projects\SerializeEx\SerializeEx\bin\Debug\SerializeEx.exe
+c:\users\hadraha.training\documents\visual studio 2015\Projects\SerializeEx\SerializeEx\bin\Debug\SerializeEx.pdb
+c:\users\hadraha.training\documents\visual studio 2015\Projects\SerializeEx\SerializeEx\obj\Debug\SerializeEx.exe
+c:\users\hadraha.training\documents\visual studio 2015\Projects\SerializeEx\SerializeEx\obj\Debug\SerializeEx.pdb

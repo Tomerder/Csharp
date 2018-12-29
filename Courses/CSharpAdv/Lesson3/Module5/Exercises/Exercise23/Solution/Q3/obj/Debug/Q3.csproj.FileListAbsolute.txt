@@ -1,0 +1,7 @@
+C:\Amir\Lesson3\Module5\Exercises\Exercise23\Solution\Q3\bin\Debug\Q3.exe.config
+C:\Amir\Lesson3\Module5\Exercises\Exercise23\Solution\Q3\bin\Debug\Q3.exe
+C:\Amir\Lesson3\Module5\Exercises\Exercise23\Solution\Q3\bin\Debug\Q3.pdb
+C:\Amir\Lesson3\Module5\Exercises\Exercise23\Solution\Q3\obj\Debug\Q3.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson3\Module5\Exercises\Exercise23\Solution\Q3\obj\Debug\Q3.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson3\Module5\Exercises\Exercise23\Solution\Q3\obj\Debug\Q3.exe
+C:\Amir\Lesson3\Module5\Exercises\Exercise23\Solution\Q3\obj\Debug\Q3.pdb

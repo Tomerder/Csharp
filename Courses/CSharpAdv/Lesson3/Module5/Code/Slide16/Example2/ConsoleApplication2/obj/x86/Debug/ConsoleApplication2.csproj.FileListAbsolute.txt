@@ -1,0 +1,20 @@
+C:\Amir\Studies\Teach\nessCollege\ירושלים\MCPD11\2957\Module8\Example8\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+C:\Amir\Studies\Teach\nessCollege\ירושלים\MCPD11\2957\Module8\Example8\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+C:\Amir\Studies\Teach\nessCollege\ירושלים\MCPD11\2957\Module8\Example8\ConsoleApplication2\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Amir\Studies\Teach\nessCollege\ירושלים\MCPD11\2957\Module8\Example8\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.exe
+C:\Amir\Studies\Teach\nessCollege\ירושלים\MCPD11\2957\Module8\Example8\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.pdb
+C:\Amir\Studies\Teach\nessCollege\תל אביב\MCSD1\10266A\חומרים נוספים\Parallel Computing\Example8\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.exe
+C:\Amir\Studies\Teach\nessCollege\תל אביב\MCSD1\10266A\חומרים נוספים\Parallel Computing\Example8\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.pdb
+C:\Amir\Studies\Teach\nessCollege\תל אביב\MCSD1\10266A\חומרים נוספים\Parallel Computing\Example8\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+C:\Amir\Studies\Teach\nessCollege\תל אביב\MCSD1\10266A\חומרים נוספים\Parallel Computing\Example8\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+C:\Amir\Studies\Teach\nessCollege\temp\10266A\חומרים נוספים\Parallel Computing\Example8\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.exe
+C:\Amir\Studies\Teach\nessCollege\temp\10266A\חומרים נוספים\Parallel Computing\Example8\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.pdb
+H:\13.12.14\Amir\Studies\Teach\nessCollege\תל אביב\MCSD2\10266A\חומרים נוספים\Parallel Computing\Example8\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.exe
+H:\13.12.14\Amir\Studies\Teach\nessCollege\תל אביב\MCSD2\10266A\חומרים נוספים\Parallel Computing\Example8\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide16\Example2\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide16\Example2\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.pdb
+C:\Amir\Lesson3\Module5\Code\Slide16\Example2\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+C:\Amir\Lesson3\Module5\Code\Slide16\Example2\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+C:\Amir\Lesson3\Module5\Code\Slide16\Example2\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson3\Module5\Code\Slide16\Example2\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.exe
+C:\Amir\Lesson3\Module5\Code\Slide16\Example2\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.pdb

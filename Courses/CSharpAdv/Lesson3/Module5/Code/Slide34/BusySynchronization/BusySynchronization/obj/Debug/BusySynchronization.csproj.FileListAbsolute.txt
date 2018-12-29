@@ -1,0 +1,16 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide34\BusySynchronization\BusySynchronization\bin\Debug\BusySynchronization.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide34\BusySynchronization\BusySynchronization\bin\Debug\BusySynchronization.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide34\BusySynchronization\BusySynchronization\bin\Debug\BusySynchronization.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide34\BusySynchronization\BusySynchronization\obj\Debug\BusySynchronization.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide34\BusySynchronization\BusySynchronization\obj\Debug\BusySynchronization.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide34\BusySynchronization\BusySynchronization\obj\Debug\BusySynchronization.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide34\BusySynchronization\BusySynchronization\bin\Debug\BusySynchronization.exe.config
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide34\BusySynchronization\BusySynchronization\obj\Debug\BusySynchronization.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide34\BusySynchronization\BusySynchronization\obj\Debug\BusySynchronization.pdb
+C:\Amir\Lesson3\Module5\Code\Slide34\BusySynchronization\BusySynchronization\bin\Debug\BusySynchronization.exe.config
+C:\Amir\Lesson3\Module5\Code\Slide34\BusySynchronization\BusySynchronization\bin\Debug\BusySynchronization.exe
+C:\Amir\Lesson3\Module5\Code\Slide34\BusySynchronization\BusySynchronization\bin\Debug\BusySynchronization.pdb
+C:\Amir\Lesson3\Module5\Code\Slide34\BusySynchronization\BusySynchronization\obj\Debug\BusySynchronization.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson3\Module5\Code\Slide34\BusySynchronization\BusySynchronization\obj\Debug\BusySynchronization.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson3\Module5\Code\Slide34\BusySynchronization\BusySynchronization\obj\Debug\BusySynchronization.exe
+C:\Amir\Lesson3\Module5\Code\Slide34\BusySynchronization\BusySynchronization\obj\Debug\BusySynchronization.pdb

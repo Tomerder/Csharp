@@ -1,0 +1,17 @@
+C:\courses\Ishai\50483A\3\ToStudents\Module7\Exercises\Exercise73\Starter\CsharpToCli\CsharpExe\bin\Debug\CsharpExe.exe.config
+C:\courses\Ishai\50483A\3\ToStudents\Module7\Exercises\Exercise73\Solution\CsharpToCli\CsharpExe\bin\Debug\CsharpExe.exe.config
+C:\courses\Ishai\50483A\3\ToStudents\Module7\Exercises\Exercise73\Solution\CsharpToCli\CsharpExe\bin\Debug\CsharpExe.exe
+C:\courses\Ishai\50483A\3\ToStudents\Module7\Exercises\Exercise73\Solution\CsharpToCli\CsharpExe\bin\Debug\CsharpExe.pdb
+C:\courses\Ishai\50483A\3\ToStudents\Module7\Exercises\Exercise73\Solution\CsharpToCli\CsharpExe\bin\Debug\CliDll.dll
+C:\courses\Ishai\50483A\3\ToStudents\Module7\Exercises\Exercise73\Solution\CsharpToCli\CsharpExe\bin\Debug\CliDll.pdb
+C:\courses\Ishai\50483A\3\ToStudents\Module7\Exercises\Exercise73\Solution\CsharpToCli\CsharpExe\obj\Debug\CsharpExe.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\3\ToStudents\Module7\Exercises\Exercise73\Solution\CsharpToCli\CsharpExe\obj\Debug\CsharpExe.exe
+C:\courses\Ishai\50483A\3\ToStudents\Module7\Exercises\Exercise73\Solution\CsharpToCli\CsharpExe\obj\Debug\CsharpExe.pdb
+C:\temp\Elbit-50483\Lesson5\Module7\Exercises\Exercise73\Solution\CsharpToCli\CsharpExe\bin\Debug\CsharpExe.exe.config
+C:\temp\Elbit-50483\Lesson5\Module7\Exercises\Exercise73\Solution\CsharpToCli\CsharpExe\obj\Debug\CsharpExe.exe
+C:\temp\Elbit-50483\Lesson5\Module7\Exercises\Exercise73\Solution\CsharpToCli\CsharpExe\obj\Debug\CsharpExe.pdb
+C:\temp\Elbit-50483\Lesson5\Module7\Exercises\Exercise73\Solution\CsharpToCli\CsharpExe\bin\Debug\CsharpExe.exe
+C:\temp\Elbit-50483\Lesson5\Module7\Exercises\Exercise73\Solution\CsharpToCli\CsharpExe\bin\Debug\CsharpExe.pdb
+C:\temp\Elbit-50483\Lesson5\Module7\Exercises\Exercise73\Solution\CsharpToCli\CsharpExe\bin\Debug\CliDll.dll
+C:\temp\Elbit-50483\Lesson5\Module7\Exercises\Exercise73\Solution\CsharpToCli\CsharpExe\bin\Debug\CliDll.pdb
+C:\temp\Elbit-50483\Lesson5\Module7\Exercises\Exercise73\Solution\CsharpToCli\CsharpExe\obj\Debug\CsharpExe.csprojResolveAssemblyReference.cache

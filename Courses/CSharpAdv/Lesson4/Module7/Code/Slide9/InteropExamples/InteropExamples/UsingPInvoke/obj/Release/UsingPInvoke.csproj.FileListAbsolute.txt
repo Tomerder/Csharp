@@ -1,0 +1,4 @@
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsingPInvoke\bin\Release\UsingPInvoke.exe
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsingPInvoke\bin\Release\UsingPInvoke.pdb
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsingPInvoke\obj\Release\UsingPInvoke.exe
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsingPInvoke\obj\Release\UsingPInvoke.pdb

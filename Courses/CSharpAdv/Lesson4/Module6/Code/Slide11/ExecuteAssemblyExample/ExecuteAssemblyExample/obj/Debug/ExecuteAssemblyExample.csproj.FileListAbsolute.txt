@@ -1,0 +1,16 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Code\Slide11\ExecuteAssemblyExample\ExecuteAssemblyExample\bin\Debug\ExecuteAssemblyExample.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Code\Slide11\ExecuteAssemblyExample\ExecuteAssemblyExample\bin\Debug\ExecuteAssemblyExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Code\Slide11\ExecuteAssemblyExample\ExecuteAssemblyExample\bin\Debug\ExecuteAssemblyExample.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Code\Slide11\ExecuteAssemblyExample\ExecuteAssemblyExample\obj\Debug\ExecuteAssemblyExample.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Code\Slide11\ExecuteAssemblyExample\ExecuteAssemblyExample\obj\Debug\ExecuteAssemblyExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module6\Code\Slide11\ExecuteAssemblyExample\ExecuteAssemblyExample\obj\Debug\ExecuteAssemblyExample.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module6\Code\Slide11\ExecuteAssemblyExample\ExecuteAssemblyExample\bin\Debug\ExecuteAssemblyExample.exe.config
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module6\Code\Slide11\ExecuteAssemblyExample\ExecuteAssemblyExample\obj\Debug\ExecuteAssemblyExample.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module6\Code\Slide11\ExecuteAssemblyExample\ExecuteAssemblyExample\obj\Debug\ExecuteAssemblyExample.pdb
+C:\Amir\Lesson4\Module6\Code\Slide11\ExecuteAssemblyExample\ExecuteAssemblyExample\bin\Debug\ExecuteAssemblyExample.exe.config
+C:\Amir\Lesson4\Module6\Code\Slide11\ExecuteAssemblyExample\ExecuteAssemblyExample\bin\Debug\ExecuteAssemblyExample.exe
+C:\Amir\Lesson4\Module6\Code\Slide11\ExecuteAssemblyExample\ExecuteAssemblyExample\bin\Debug\ExecuteAssemblyExample.pdb
+C:\Amir\Lesson4\Module6\Code\Slide11\ExecuteAssemblyExample\ExecuteAssemblyExample\obj\Debug\ExecuteAssemblyExample.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson4\Module6\Code\Slide11\ExecuteAssemblyExample\ExecuteAssemblyExample\obj\Debug\ExecuteAssemblyExample.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson4\Module6\Code\Slide11\ExecuteAssemblyExample\ExecuteAssemblyExample\obj\Debug\ExecuteAssemblyExample.exe
+C:\Amir\Lesson4\Module6\Code\Slide11\ExecuteAssemblyExample\ExecuteAssemblyExample\obj\Debug\ExecuteAssemblyExample.pdb

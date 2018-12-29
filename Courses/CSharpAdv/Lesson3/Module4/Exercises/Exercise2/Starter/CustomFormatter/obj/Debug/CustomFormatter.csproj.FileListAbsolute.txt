@@ -1,0 +1,12 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module4\Exercises\Exercise1\Solution\CustomFormatter\bin\Debug\SoapFormatterExample.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module4\Exercises\Exercise1\Solution\CustomFormatter\obj\Debug\SoapFormatterExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module4\Exercises\Exercise1\Solution\CustomFormatter\obj\Debug\SoapFormatterExample.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module4\Exercises\Exercise1\Solution\CustomFormatter\bin\Debug\SoapFormatterExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module4\Exercises\Exercise1\Solution\CustomFormatter\bin\Debug\SoapFormatterExample.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module4\Exercises\Exercise1\Solution\CustomFormatter\obj\Debug\CustomFormatter.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module4\Exercises\Exercise1\Starter\CustomFormatter\bin\Debug\SoapFormatterExample.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module4\Exercises\Exercise1\Starter\CustomFormatter\obj\Debug\SoapFormatterExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module4\Exercises\Exercise1\Starter\CustomFormatter\obj\Debug\SoapFormatterExample.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module4\Exercises\Exercise2\Starter\CustomFormatter\bin\Debug\SoapFormatterExample.exe.config
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module4\Exercises\Exercise2\Starter\CustomFormatter\obj\Debug\SoapFormatterExample.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module4\Exercises\Exercise2\Starter\CustomFormatter\obj\Debug\SoapFormatterExample.pdb

@@ -1,0 +1,60 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 12.00.40629.0 (22468849).
+//
+// c:\temp\elbit-50483\lesson5\module7\code\slide44\ccwexample\module07_interop\nativeclient\debug\usefulmanagedlibrary.tlh
+//
+// C++ source equivalent of Win32 type library ..\\UsefulManagedLibrary\\bin\\x86\\Debug\\UsefulManagedLibrary.tlb
+// compiler-generated file created 11/27/17 at 21:50:40 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("203efa65-5d04-474f-b698-a57b0baab840"))
+/* LIBID */ __UsefulManagedLibrary;
+struct __declspec(uuid("c9fdda6e-7d71-35c8-9f25-0cabe80ac548"))
+/* dual interface */ IUserNameDisplayer;
+struct /* coclass */ UserNameDisplayer;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IUserNameDisplayer, __uuidof(IUserNameDisplayer));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("c9fdda6e-7d71-35c8-9f25-0cabe80ac548"))
+IUserNameDisplayer : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT DisplayUserName ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_DisplayUserName ( ) = 0;
+};
+
+struct __declspec(uuid("35b3c7f6-0ff4-365e-8772-5262c9efaf0b"))
+UserNameDisplayer;
+    // interface _Object
+    // [ default ] interface IUserNameDisplayer
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\temp\elbit-50483\lesson5\module7\code\slide44\ccwexample\module07_interop\nativeclient\debug\usefulmanagedlibrary.tli"
+
+#pragma pack(pop)

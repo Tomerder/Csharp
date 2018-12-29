@@ -1,0 +1,16 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide36\LockExample\LockExample\bin\Debug\LockExample.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide36\LockExample\LockExample\bin\Debug\LockExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide36\LockExample\LockExample\bin\Debug\LockExample.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide36\LockExample\LockExample\obj\Debug\LockExample.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide36\LockExample\LockExample\obj\Debug\LockExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide36\LockExample\LockExample\obj\Debug\LockExample.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide36\LockExample\LockExample\bin\Debug\LockExample.exe.config
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide36\LockExample\LockExample\obj\Debug\LockExample.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide36\LockExample\LockExample\obj\Debug\LockExample.pdb
+C:\Amir\Lesson3\Module5\Code\Slide36\LockExample\LockExample\bin\Debug\LockExample.exe.config
+C:\Amir\Lesson3\Module5\Code\Slide36\LockExample\LockExample\bin\Debug\LockExample.exe
+C:\Amir\Lesson3\Module5\Code\Slide36\LockExample\LockExample\bin\Debug\LockExample.pdb
+C:\Amir\Lesson3\Module5\Code\Slide36\LockExample\LockExample\obj\Debug\LockExample.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson3\Module5\Code\Slide36\LockExample\LockExample\obj\Debug\LockExample.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson3\Module5\Code\Slide36\LockExample\LockExample\obj\Debug\LockExample.exe
+C:\Amir\Lesson3\Module5\Code\Slide36\LockExample\LockExample\obj\Debug\LockExample.pdb

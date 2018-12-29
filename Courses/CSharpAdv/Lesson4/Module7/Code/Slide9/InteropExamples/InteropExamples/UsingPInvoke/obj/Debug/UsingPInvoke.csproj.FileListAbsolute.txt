@@ -1,0 +1,5 @@
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsingPInvoke\bin\Debug\UsingPInvoke.exe
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsingPInvoke\bin\Debug\UsingPInvoke.pdb
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsingPInvoke\obj\Debug\UsingPInvoke.exe
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsingPInvoke\obj\Debug\UsingPInvoke.pdb
+C:\Sela\Courses\50166_NETFramework\Demos\Module07_Interop\UsingPInvoke\obj\Debug\UsingPInvoke.csprojResolveAssemblyReference.cache

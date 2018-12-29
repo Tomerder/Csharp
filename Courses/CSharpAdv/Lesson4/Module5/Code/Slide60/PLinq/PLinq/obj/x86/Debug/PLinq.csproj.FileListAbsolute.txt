@@ -1,0 +1,15 @@
+C:\courses\Ishai\50150B\2-150504\ToStudents\Lessons\Lesson6\Module26\Code\Slide13\Example4\PLinq\PLinq\obj\x86\Debug\Slide27.exe
+C:\courses\Ishai\50150B\2-150504\ToStudents\Lessons\Lesson6\Module26\Code\Slide13\Example4\PLinq\PLinq\obj\x86\Debug\Slide27.pdb
+C:\courses\Ishai\50150B\2-150504\ToStudents\Lessons\Lesson6\Module26\Code\Slide13\Example4\PLinq\PLinq\bin\Debug\Slide27.exe
+C:\courses\Ishai\50150B\2-150504\ToStudents\Lessons\Lesson6\Module26\Code\Slide13\Example4\PLinq\PLinq\bin\Debug\Slide27.pdb
+C:\courses\Ishai\50150B\2-150504\ToStudents\Lessons\Lesson6\Module26\Code\Slide13\Example4\PLinq\PLinq\obj\x86\Debug\PLinq.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide60\Example4\PLinq\PLinq\obj\x86\Debug\Slide27.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide60\Example4\PLinq\PLinq\obj\x86\Debug\Slide27.pdb
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide60\Example1\PLinq\PLinq\obj\x86\Debug\Slide27.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide60\Example1\PLinq\PLinq\obj\x86\Debug\Slide27.pdb
+C:\Amir\Lesson4\Module5\Code\Slide60\PLinq\PLinq\bin\Debug\Slide27.exe
+C:\Amir\Lesson4\Module5\Code\Slide60\PLinq\PLinq\bin\Debug\Slide27.pdb
+C:\Amir\Lesson4\Module5\Code\Slide60\PLinq\PLinq\obj\x86\Debug\PLinq.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson4\Module5\Code\Slide60\PLinq\PLinq\obj\x86\Debug\PLinq.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson4\Module5\Code\Slide60\PLinq\PLinq\obj\x86\Debug\Slide27.exe
+C:\Amir\Lesson4\Module5\Code\Slide60\PLinq\PLinq\obj\x86\Debug\Slide27.pdb

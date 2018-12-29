@@ -1,0 +1,6 @@
+C:\Amir\Lesson4\Module5\Code\Slide53\Example1\Q8\bin\Debug\Q8.exe.config
+C:\Amir\Lesson4\Module5\Code\Slide53\Example1\Q8\bin\Debug\Q8.exe
+C:\Amir\Lesson4\Module5\Code\Slide53\Example1\Q8\bin\Debug\Q8.pdb
+C:\Amir\Lesson4\Module5\Code\Slide53\Example1\Q8\obj\Debug\Q8.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson4\Module5\Code\Slide53\Example1\Q8\obj\Debug\Q8.exe
+C:\Amir\Lesson4\Module5\Code\Slide53\Example1\Q8\obj\Debug\Q8.pdb

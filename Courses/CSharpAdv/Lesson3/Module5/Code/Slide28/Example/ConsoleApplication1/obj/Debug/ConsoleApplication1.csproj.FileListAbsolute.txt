@@ -1,0 +1,13 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide28\Example\ConsoleApplication1\obj\Debug\ConsoleApplication3.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide28\Example\ConsoleApplication1\obj\Debug\ConsoleApplication3.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide28\Example\ConsoleApplication1\bin\Debug\ConsoleApplication3.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide28\Example\ConsoleApplication1\bin\Debug\ConsoleApplication3.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module5\Code\Slide28\Example\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide28\Example\ConsoleApplication1\obj\Debug\ConsoleApplication3.exe
+C:\courses\Ishai\50483A\2-151112\ToStudents\Module5\Code\Slide28\Example\ConsoleApplication1\obj\Debug\ConsoleApplication3.pdb
+C:\Amir\Lesson3\Module5\Code\Slide28\Example\ConsoleApplication1\bin\Debug\ConsoleApplication3.exe
+C:\Amir\Lesson3\Module5\Code\Slide28\Example\ConsoleApplication1\bin\Debug\ConsoleApplication3.pdb
+C:\Amir\Lesson3\Module5\Code\Slide28\Example\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Amir\Lesson3\Module5\Code\Slide28\Example\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+C:\Amir\Lesson3\Module5\Code\Slide28\Example\ConsoleApplication1\obj\Debug\ConsoleApplication3.exe
+C:\Amir\Lesson3\Module5\Code\Slide28\Example\ConsoleApplication1\obj\Debug\ConsoleApplication3.pdb

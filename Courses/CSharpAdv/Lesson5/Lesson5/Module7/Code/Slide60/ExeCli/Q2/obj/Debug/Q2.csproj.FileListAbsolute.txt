@@ -1,0 +1,5 @@
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide60\ExeCli\Q2\bin\Debug\Q2.exe.config
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide60\ExeCli\Q2\bin\Debug\Q2.exe
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide60\ExeCli\Q2\bin\Debug\Q2.pdb
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide60\ExeCli\Q2\obj\Debug\Q2.exe
+C:\temp\Elbit-50483\Lesson5\Module7\Code\Slide60\ExeCli\Q2\obj\Debug\Q2.pdb

@@ -1,0 +1,5 @@
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\Q8\bin\Release\Q8.exe.config
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\Q8\bin\Release\Q8.exe
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\Q8\bin\Release\Q8.pdb
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\Q8\obj\Release\Q8.exe
+C:\Amir\Lesson1\Module2\Code\Slide13\Module02_MemoryManagement_GC\Q8\obj\Release\Q8.pdb

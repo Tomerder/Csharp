@@ -1,0 +1,6 @@
+c:\users\hadraha.training\documents\visual studio 2015\Projects\ReferanceEx\ReferanceEx\bin\Debug\ReferanceEx.exe.config
+c:\users\hadraha.training\documents\visual studio 2015\Projects\ReferanceEx\ReferanceEx\bin\Debug\ReferanceEx.exe
+c:\users\hadraha.training\documents\visual studio 2015\Projects\ReferanceEx\ReferanceEx\bin\Debug\ReferanceEx.pdb
+c:\users\hadraha.training\documents\visual studio 2015\Projects\ReferanceEx\ReferanceEx\obj\Debug\ReferanceEx.csprojResolveAssemblyReference.cache
+c:\users\hadraha.training\documents\visual studio 2015\Projects\ReferanceEx\ReferanceEx\obj\Debug\ReferanceEx.exe
+c:\users\hadraha.training\documents\visual studio 2015\Projects\ReferanceEx\ReferanceEx\obj\Debug\ReferanceEx.pdb

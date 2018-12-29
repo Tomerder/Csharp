@@ -1,0 +1,6 @@
+a
+b
+c
+d
+e
+I am writing this text to a file called a.txt

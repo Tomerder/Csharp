@@ -1,0 +1,6 @@
+c:\users\hadraha.training\documents\visual studio 2015\Projects\ExDirToFile\ExDirToFile\bin\Debug\ExDirToFile.exe.config
+c:\users\hadraha.training\documents\visual studio 2015\Projects\ExDirToFile\ExDirToFile\bin\Debug\ExDirToFile.exe
+c:\users\hadraha.training\documents\visual studio 2015\Projects\ExDirToFile\ExDirToFile\bin\Debug\ExDirToFile.pdb
+c:\users\hadraha.training\documents\visual studio 2015\Projects\ExDirToFile\ExDirToFile\obj\Debug\ExDirToFile.csprojResolveAssemblyReference.cache
+c:\users\hadraha.training\documents\visual studio 2015\Projects\ExDirToFile\ExDirToFile\obj\Debug\ExDirToFile.exe
+c:\users\hadraha.training\documents\visual studio 2015\Projects\ExDirToFile\ExDirToFile\obj\Debug\ExDirToFile.pdb

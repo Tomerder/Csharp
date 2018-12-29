@@ -1,0 +1,6 @@
+C:\courses\Ishai\50483A\1\ToStudents\Module9\Slide9\BigIntegerExample\BigIntegerExample\bin\Debug\BigIntegerExample.exe.config
+C:\courses\Ishai\50483A\1\ToStudents\Module9\Slide9\BigIntegerExample\BigIntegerExample\bin\Debug\BigIntegerExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module9\Slide9\BigIntegerExample\BigIntegerExample\bin\Debug\BigIntegerExample.pdb
+C:\courses\Ishai\50483A\1\ToStudents\Module9\Slide9\BigIntegerExample\BigIntegerExample\obj\Debug\BigIntegerExample.csprojResolveAssemblyReference.cache
+C:\courses\Ishai\50483A\1\ToStudents\Module9\Slide9\BigIntegerExample\BigIntegerExample\obj\Debug\BigIntegerExample.exe
+C:\courses\Ishai\50483A\1\ToStudents\Module9\Slide9\BigIntegerExample\BigIntegerExample\obj\Debug\BigIntegerExample.pdb
