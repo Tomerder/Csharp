@@ -1,0 +1,36 @@
+c:\users\dp90671\documents\visual studio 2010\Projects\CalculateAls1Crc\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.Form1.resources
+c:\users\dp90671\documents\visual studio 2010\Projects\CalculateAls1Crc\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.Properties.Resources.resources
+c:\users\dp90671\documents\visual studio 2010\Projects\CalculateAls1Crc\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.csproj.GenerateResource.Cache
+c:\users\dp90671\documents\visual studio 2010\Projects\CalculateAls1Crc\CalculateAls1Crc\bin\Debug\CalculateAls1Crc.exe
+c:\users\dp90671\documents\visual studio 2010\Projects\CalculateAls1Crc\CalculateAls1Crc\bin\Debug\CalculateAls1Crc.pdb
+c:\users\dp90671\documents\visual studio 2010\Projects\CalculateAls1Crc\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.exe
+c:\users\dp90671\documents\visual studio 2010\Projects\CalculateAls1Crc\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.pdb
+C:\Users\DP90671\Documents\Visual Studio 2010\Projects\CalculateAls1Crc\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.csprojResolveAssemblyReference.cache
+C:\Users\DP90671\Documents\Visual Studio 2010\Projects\CalculatCRC32\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.exe
+C:\Users\DP90671\Documents\Visual Studio 2010\Projects\CalculatCRC32\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.pdb
+C:\Users\DP90671\Documents\Visual Studio 2010\Projects\CalculatCRC32\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.csprojResolveAssemblyReference.cache
+C:\Users\DP90671\Documents\Visual Studio 2010\Projects\CalculatCRC32\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.Form1.resources
+C:\Users\DP90671\Documents\Visual Studio 2010\Projects\CalculatCRC32\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.Properties.Resources.resources
+C:\Users\DP90671\Documents\Visual Studio 2010\Projects\CalculatCRC32\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.csproj.GenerateResource.Cache
+C:\Users\DP90671\Documents\Visual Studio 2010\Projects\CalculatCRC32\CalculateAls1Crc\bin\Debug\CalculateAls1Crc.exe
+C:\Users\DP90671\Documents\Visual Studio 2010\Projects\CalculatCRC32\CalculateAls1Crc\bin\Debug\CalculateAls1Crc.pdb
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\CalculatCRC32\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.exe
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\CalculatCRC32\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.pdb
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\GenericCRC32Calculator\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.exe
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\GenericCRC32Calculator\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.pdb
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\GenericCRC32Calculator\CalculateAls1Crc\bin\Debug\CalculateAls1Crc.exe
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\GenericCRC32Calculator\CalculateAls1Crc\bin\Debug\CalculateAls1Crc.pdb
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\GenericCRC32Calculator\CalculateAls1Crc\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\GenericCRC32Calculator\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.Form1.resources
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\GenericCRC32Calculator\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.Properties.Resources.resources
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\GenericCRC32Calculator\CalculateAls1Crc\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\GenericCRC32Calculator\CalculateAls1Crc\obj\x86\Debug\GenerateResource.write.1.tlog
+J:\Tools\GenericCRC32Calculator\CalculateAls1Crc\bin\Debug\CalculateAls1Crc.exe
+J:\Tools\GenericCRC32Calculator\CalculateAls1Crc\bin\Debug\CalculateAls1Crc.pdb
+J:\Tools\GenericCRC32Calculator\CalculateAls1Crc\obj\x86\Debug\ResolveAssemblyReference.cache
+J:\Tools\GenericCRC32Calculator\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.Form1.resources
+J:\Tools\GenericCRC32Calculator\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.Properties.Resources.resources
+J:\Tools\GenericCRC32Calculator\CalculateAls1Crc\obj\x86\Debug\GenerateResource.read.1.tlog
+J:\Tools\GenericCRC32Calculator\CalculateAls1Crc\obj\x86\Debug\GenerateResource.write.1.tlog
+J:\Tools\GenericCRC32Calculator\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.exe
+J:\Tools\GenericCRC32Calculator\CalculateAls1Crc\obj\x86\Debug\CalculateAls1Crc.pdb

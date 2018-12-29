@@ -1,0 +1,42 @@
+c:\users\dp27813\documents\visual studio 2010\Projects\ToolsPortal\ToolsPortal\bin\Debug\ToolsPortal.exe
+c:\users\dp27813\documents\visual studio 2010\Projects\ToolsPortal\ToolsPortal\bin\Debug\ToolsPortal.pdb
+c:\users\dp27813\documents\visual studio 2010\Projects\ToolsPortal\ToolsPortal\bin\Debug\ConfigFileLib.dll
+c:\users\dp27813\documents\visual studio 2010\Projects\ToolsPortal\ToolsPortal\bin\Debug\ConfigFileLib.pdb
+c:\users\dp27813\documents\visual studio 2010\Projects\ToolsPortal\ToolsPortal\obj\x86\Debug\MainWindow.baml
+c:\users\dp27813\documents\visual studio 2010\Projects\ToolsPortal\ToolsPortal\obj\x86\Debug\MainWindow.g.cs
+c:\users\dp27813\documents\visual studio 2010\Projects\ToolsPortal\ToolsPortal\obj\x86\Debug\App.g.cs
+c:\users\dp27813\documents\visual studio 2010\Projects\ToolsPortal\ToolsPortal\obj\x86\Debug\ToolsPortal_MarkupCompile.cache
+c:\users\dp27813\documents\visual studio 2010\Projects\ToolsPortal\ToolsPortal\obj\x86\Debug\ToolsPortal.g.resources
+c:\users\dp27813\documents\visual studio 2010\Projects\ToolsPortal\ToolsPortal\obj\x86\Debug\ToolsPortal.Properties.Resources.resources
+c:\users\dp27813\documents\visual studio 2010\Projects\ToolsPortal\ToolsPortal\obj\x86\Debug\ToolsPortal.csproj.GenerateResource.Cache
+c:\users\dp27813\documents\visual studio 2010\Projects\ToolsPortal\ToolsPortal\obj\x86\Debug\ToolsPortal.exe
+c:\users\dp27813\documents\visual studio 2010\Projects\ToolsPortal\ToolsPortal\obj\x86\Debug\ToolsPortal.pdb
+C:\proj\EFVS\Software\Tools\ToolsPortal\ToolsPortal\bin\Debug\ToolsPortal.exe
+C:\proj\EFVS\Software\Tools\ToolsPortal\ToolsPortal\bin\Debug\ToolsPortal.pdb
+C:\proj\EFVS\Software\Tools\ToolsPortal\ToolsPortal\bin\Debug\ConfigFileLib.dll
+C:\proj\EFVS\Software\Tools\ToolsPortal\ToolsPortal\bin\Debug\ConfigFileLib.pdb
+C:\proj\EFVS\Software\Tools\ToolsPortal\ToolsPortal\obj\x86\Debug\MainWindow.baml
+C:\proj\EFVS\Software\Tools\ToolsPortal\ToolsPortal\obj\x86\Debug\MainWindow.g.cs
+C:\proj\EFVS\Software\Tools\ToolsPortal\ToolsPortal\obj\x86\Debug\App.g.cs
+C:\proj\EFVS\Software\Tools\ToolsPortal\ToolsPortal\obj\x86\Debug\ToolsPortal_MarkupCompile.cache
+C:\proj\EFVS\Software\Tools\ToolsPortal\ToolsPortal\obj\x86\Debug\ToolsPortal.g.resources
+C:\proj\EFVS\Software\Tools\ToolsPortal\ToolsPortal\obj\x86\Debug\ToolsPortal.Properties.Resources.resources
+C:\proj\EFVS\Software\Tools\ToolsPortal\ToolsPortal\obj\x86\Debug\ToolsPortal.csproj.GenerateResource.Cache
+C:\proj\EFVS\Software\Tools\ToolsPortal\ToolsPortal\obj\x86\Debug\ToolsPortal.exe
+C:\proj\EFVS\Software\Tools\ToolsPortal\ToolsPortal\obj\x86\Debug\ToolsPortal.pdb
+I:\Tools\ToolsPortal\ToolsPortal\bin\Debug\ToolsPortal.exe
+I:\Tools\ToolsPortal\ToolsPortal\bin\Debug\ToolsPortal.pdb
+I:\Tools\ToolsPortal\ToolsPortal\bin\Debug\ConfigFileLib.dll
+I:\Tools\ToolsPortal\ToolsPortal\bin\Debug\ConfigFileLib.pdb
+I:\Tools\ToolsPortal\ToolsPortal\obj\x86\Debug\MainWindow.baml
+I:\Tools\ToolsPortal\ToolsPortal\obj\x86\Debug\MainWindow.g.cs
+I:\Tools\ToolsPortal\ToolsPortal\obj\x86\Debug\App.g.cs
+I:\Tools\ToolsPortal\ToolsPortal\obj\x86\Debug\ToolsPortal_MarkupCompile.cache
+I:\Tools\ToolsPortal\ToolsPortal\obj\x86\Debug\ToolsPortal.g.resources
+I:\Tools\ToolsPortal\ToolsPortal\obj\x86\Debug\ToolsPortal.Properties.Resources.resources
+I:\Tools\ToolsPortal\ToolsPortal\obj\x86\Debug\ToolsPortal.csproj.GenerateResource.Cache
+I:\Tools\ToolsPortal\ToolsPortal\obj\x86\Debug\ToolsPortal.exe
+I:\Tools\ToolsPortal\ToolsPortal\obj\x86\Debug\ToolsPortal.pdb
+I:\Tools\ToolsPortal\ToolsPortal\bin\Debug\UtilsLib.dll
+I:\Tools\ToolsPortal\ToolsPortal\bin\Debug\UtilsLib.pdb
+I:\Tools\ToolsPortal\ToolsPortal\obj\x86\Debug\ToolsPortal.csprojResolveAssemblyReference.cache

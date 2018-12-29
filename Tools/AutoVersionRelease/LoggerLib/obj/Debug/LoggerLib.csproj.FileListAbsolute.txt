@@ -1,0 +1,12 @@
+C:\Users\DP27813\documents\visual studio 2010\Projects\AutoVersionRelease\LoggerLib\bin\Debug\LoggerLib.dll
+C:\Users\DP27813\documents\visual studio 2010\Projects\AutoVersionRelease\LoggerLib\bin\Debug\LoggerLib.pdb
+C:\Users\DP27813\documents\visual studio 2010\Projects\AutoVersionRelease\LoggerLib\obj\Debug\LoggerLib.dll
+C:\Users\DP27813\documents\visual studio 2010\Projects\AutoVersionRelease\LoggerLib\obj\Debug\LoggerLib.pdb
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\LoggerLib\bin\Debug\LoggerLib.dll
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\LoggerLib\bin\Debug\LoggerLib.pdb
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\LoggerLib\obj\Debug\LoggerLib.dll
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\LoggerLib\obj\Debug\LoggerLib.pdb
+I:\Tools\AutoVersionRelease\LoggerLib\bin\Debug\LoggerLib.dll
+I:\Tools\AutoVersionRelease\LoggerLib\bin\Debug\LoggerLib.pdb
+I:\Tools\AutoVersionRelease\LoggerLib\obj\Debug\LoggerLib.dll
+I:\Tools\AutoVersionRelease\LoggerLib\obj\Debug\LoggerLib.pdb

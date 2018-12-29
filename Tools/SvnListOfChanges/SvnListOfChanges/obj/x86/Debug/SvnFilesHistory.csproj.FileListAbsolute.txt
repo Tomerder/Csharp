@@ -1,0 +1,13 @@
+c:\users\dp27813\documents\visual studio 2010\Projects\SvnFilesHistory\SvnFilesHistory\bin\Debug\SvnFilesHistory.exe
+c:\users\dp27813\documents\visual studio 2010\Projects\SvnFilesHistory\SvnFilesHistory\bin\Debug\SvnFilesHistory.pdb
+c:\users\dp27813\documents\visual studio 2010\Projects\SvnFilesHistory\SvnFilesHistory\bin\Debug\SharpSvn.dll
+c:\users\dp27813\documents\visual studio 2010\Projects\SvnFilesHistory\SvnFilesHistory\bin\Debug\SharpPlink-Win32.svnExe
+c:\users\dp27813\documents\visual studio 2010\Projects\SvnFilesHistory\SvnFilesHistory\obj\x86\Debug\MainWindow.baml
+c:\users\dp27813\documents\visual studio 2010\Projects\SvnFilesHistory\SvnFilesHistory\obj\x86\Debug\MainWindow.g.cs
+c:\users\dp27813\documents\visual studio 2010\Projects\SvnFilesHistory\SvnFilesHistory\obj\x86\Debug\App.g.cs
+c:\users\dp27813\documents\visual studio 2010\Projects\SvnFilesHistory\SvnFilesHistory\obj\x86\Debug\SvnFilesHistory_MarkupCompile.cache
+c:\users\dp27813\documents\visual studio 2010\Projects\SvnFilesHistory\SvnFilesHistory\obj\x86\Debug\SvnFilesHistory.g.resources
+c:\users\dp27813\documents\visual studio 2010\Projects\SvnFilesHistory\SvnFilesHistory\obj\x86\Debug\SvnFilesHistory.Properties.Resources.resources
+c:\users\dp27813\documents\visual studio 2010\Projects\SvnFilesHistory\SvnFilesHistory\obj\x86\Debug\SvnFilesHistory.csproj.GenerateResource.Cache
+c:\users\dp27813\documents\visual studio 2010\Projects\SvnFilesHistory\SvnFilesHistory\obj\x86\Debug\SvnFilesHistory.exe
+c:\users\dp27813\documents\visual studio 2010\Projects\SvnFilesHistory\SvnFilesHistory\obj\x86\Debug\SvnFilesHistory.pdb

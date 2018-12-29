@@ -1,0 +1,74 @@
+c:\users\dp27813\documents\visual studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\bin\Debug\AutoVersionRelease.exe
+c:\users\dp27813\documents\visual studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\bin\Debug\AutoVersionRelease.pdb
+c:\users\dp27813\documents\visual studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\MainWindow.baml
+c:\users\dp27813\documents\visual studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\MainWindow.g.cs
+c:\users\dp27813\documents\visual studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\App.g.cs
+c:\users\dp27813\documents\visual studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease_MarkupCompile.cache
+c:\users\dp27813\documents\visual studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease.g.resources
+c:\users\dp27813\documents\visual studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease.Properties.Resources.resources
+c:\users\dp27813\documents\visual studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease.csproj.GenerateResource.Cache
+c:\users\dp27813\documents\visual studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease.exe
+c:\users\dp27813\documents\visual studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease.pdb
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\bin\Debug\SvnLib.dll
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\bin\Debug\SvnLib.pdb
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease.csprojResolveAssemblyReference.cache
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\bin\Debug\ConfigFileLib.dll
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\bin\Debug\ConfigFileLib.pdb
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\bin\Debug\SharpSvn.dll
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\bin\Debug\SharpPlink-Win32.svnExe
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\bin\Debug\VersionControlLib.dll
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\bin\Debug\VersionControlLib.pdb
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\bin\Debug\UtilsLib.dll
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\bin\Debug\UtilsLib.pdb
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\bin\Debug\LoggerLib.dll
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\AutoVersionRelease\AutoVersionRelease\bin\Debug\LoggerLib.pdb
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\AutoVersionRelease.exe
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\AutoVersionRelease.pdb
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\ConfigFileLib.dll
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\LoggerLib.dll
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\SvnLib.dll
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\UtilsLib.dll
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\VersionControlLib.dll
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\ConfigFileLib.pdb
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\LoggerLib.pdb
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\SvnLib.pdb
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\UtilsLib.pdb
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\VersionControlLib.pdb
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\MainWindow.baml
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\MainWindow.g.cs
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\App.g.cs
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease_MarkupCompile.cache
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease.g.resources
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease.Properties.Resources.resources
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease.csproj.GenerateResource.Cache
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease.exe
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease.pdb
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\SharpSvn.dll
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\SharpPlink-Win32.svnExe
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease.csprojResolveAssemblyReference.cache
+I:\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease.exe
+I:\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease.pdb
+I:\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease.csprojResolveAssemblyReference.cache
+I:\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\MainWindow.baml
+I:\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\MainWindow.g.cs
+I:\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\App.g.cs
+I:\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease_MarkupCompile.cache
+I:\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease.g.resources
+I:\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease.Properties.Resources.resources
+I:\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\AutoVersionRelease.csproj.GenerateResource.Cache
+I:\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\AutoVersionRelease.exe
+I:\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\AutoVersionRelease.pdb
+I:\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\ConfigFileLib.dll
+I:\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\LoggerLib.dll
+I:\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\SvnLib.dll
+I:\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\UtilsLib.dll
+I:\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\VersionControlLib.dll
+I:\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\SharpSvn.dll
+I:\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\ConfigFileLib.pdb
+I:\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\LoggerLib.pdb
+I:\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\SvnLib.pdb
+I:\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\UtilsLib.pdb
+I:\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\VersionControlLib.pdb
+I:\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\SharpPlink-Win32.svnExe
+I:\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\GenericDialogBox.baml
+I:\Tools\AutoVersionRelease\AutoVersionRelease\obj\x86\Debug\GenericDialogBox.g.cs

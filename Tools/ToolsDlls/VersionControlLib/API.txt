@@ -1,0 +1,44 @@
+//====================================================================================
+// Name: LUHConfig
+// Description: constructor
+// Input:  _configFile - path to configuration file
+//         _success - filed/success creating the object
+// Output: --
+//====================================================================================
+LUHConfig(string _sConfigFile, out bool _bSuccess)
+
+//====================================================================================
+// Name: UpdateVersionFile
+// Description: 
+// Input: _sCsciUpdate - name of CSCI to update, as defined key in the Configuration file 
+//        _sNewVersion - for insert new version (not increased by 1)
+// Output: bool - success/failed
+//====================================================================================
+public bool UpdateVersionFile(string _sCsciName, string _sNewVersion = "")
+
+//====================================================================================
+// Name: LuhUpdate
+// Description: update the LUH files from config files with versions from CSCI's ver files 
+// Input: --- 
+// Output: ---
+//====================================================================================
+bool LuhUpdate()
+
+//====================================================================================
+// Name: CreateVddExcel
+// Description: create table in excel for all versions asdefined in configuration file
+// Input: _sOutputPath - define the path to locate the excel
+//        _sFileName - define excel name
+// Output: bool - success/failed
+//====================================================================================
+bool CreateVddExcel(string _sOutputPath, string _sFileName)
+
+//====================================================================================
+// Name: GetVersion
+// Description: extract version of CSCI from its ver file
+// Input: _sCsci - The CSCI for version extraction
+//        _sVersion - contain result
+// Output: bool - success/failed
+//====================================================================================
+bool GetVersion(string _sCsci, out string _sVersion)
+

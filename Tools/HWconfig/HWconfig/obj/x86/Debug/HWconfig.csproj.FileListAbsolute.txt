@@ -1,0 +1,23 @@
+c:\users\dp90671\documents\visual studio 2010\Projects\HWconfig\HWconfig\bin\Debug\HWconfig.exe
+c:\users\dp90671\documents\visual studio 2010\Projects\HWconfig\HWconfig\bin\Debug\HWconfig.pdb
+c:\users\dp90671\documents\visual studio 2010\Projects\HWconfig\HWconfig\obj\x86\Debug\HWconfig.FormHwConfig.resources
+c:\users\dp90671\documents\visual studio 2010\Projects\HWconfig\HWconfig\obj\x86\Debug\HWconfig.Properties.Resources.resources
+c:\users\dp90671\documents\visual studio 2010\Projects\HWconfig\HWconfig\obj\x86\Debug\HWconfig.csproj.GenerateResource.Cache
+c:\users\dp90671\documents\visual studio 2010\Projects\HWconfig\HWconfig\obj\x86\Debug\HWconfig.exe
+c:\users\dp90671\documents\visual studio 2010\Projects\HWconfig\HWconfig\obj\x86\Debug\HWconfig.pdb
+c:\users\dp90671\documents\visual studio 2010\Projects\HWconfig\HWconfig\bin\Debug\Thought.Net.Telnet.dll
+c:\users\dp90671\documents\visual studio 2010\Projects\HWconfig\HWconfig\obj\x86\Debug\HWconfig.FormInitComm.resources
+C:\Users\DP90671\Documents\Visual Studio 2010\Projects\HWconfig\HWconfig\obj\x86\Debug\HWconfig.csprojResolveAssemblyReference.cache
+J:\HWconfig\HWconfig\obj\x86\Debug\HWconfig.exe
+J:\HWconfig\HWconfig\obj\x86\Debug\HWconfig.pdb
+J:\HWconfig\HWconfig\bin\Debug\HWconfig.exe
+J:\HWconfig\HWconfig\bin\Debug\HWconfig.pdb
+J:\HWconfig\HWconfig\bin\Debug\Thought.Net.Telnet.dll
+J:\HWconfig\HWconfig\obj\x86\Debug\ResolveAssemblyReference.cache
+J:\HWconfig\HWconfig\obj\x86\Debug\HWconfig.FormHwConfig.resources
+J:\HWconfig\HWconfig\obj\x86\Debug\HWconfig.FormInitComm.resources
+J:\HWconfig\HWconfig\obj\x86\Debug\HWconfig.Properties.Resources.resources
+J:\HWconfig\HWconfig\obj\x86\Debug\GenerateResource.read.1.tlog
+J:\HWconfig\HWconfig\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\HWconfig\HWconfig\obj\x86\Debug\HWconfig.exe
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\HWconfig\HWconfig\obj\x86\Debug\HWconfig.pdb

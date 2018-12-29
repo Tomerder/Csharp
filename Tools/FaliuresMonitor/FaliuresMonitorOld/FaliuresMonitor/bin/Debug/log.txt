@@ -1,0 +1,2 @@
+ERROR  ***  08/09/2014  ***  10:32:55  ***  1     ***  CommTargetAbstractLayer::GetRegValueFromTarget  ***  Error taken out reg value from receive answer
+ERROR  ***  11/09/2014  ***  17:14:33  ***  1     ***  CommTargetAbstractLayer::GetResultsFromTarget  ***  IsHandshake - failed

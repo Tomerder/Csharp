@@ -1,0 +1,7 @@
+c:\users\dp91930\documents\visual studio 2013\Projects\ExcelFileLib\ExcelFileLib\bin\Debug\ExcelFileLib.dll
+c:\users\dp91930\documents\visual studio 2013\Projects\ExcelFileLib\ExcelFileLib\bin\Debug\ExcelFileLib.pdb
+c:\users\dp91930\documents\visual studio 2013\Projects\ExcelFileLib\ExcelFileLib\obj\Debug\ExcelFileLib.dll
+c:\users\dp91930\documents\visual studio 2013\Projects\ExcelFileLib\ExcelFileLib\obj\Debug\ExcelFileLib.pdb
+C:\Users\DP91930\documents\visual studio 2013\Projects\ExcelFileLib\ExcelFileLib\obj\Debug\ExcelFileLib.csprojResolveAssemblyReference.cache
+I:\Tools\ToolsDlls\ExcelFileLib\obj\Debug\ExcelFileLib.csprojResolveAssemblyReference.cache
+I:\Tools\ToolsDlls\ExcelFileLib\obj\Debug\ExcelFileLib.dll

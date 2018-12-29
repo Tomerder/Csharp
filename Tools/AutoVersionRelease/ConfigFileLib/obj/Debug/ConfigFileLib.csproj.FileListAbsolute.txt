@@ -1,0 +1,12 @@
+C:\Users\DP27813\documents\visual studio 2010\Projects\AutoVersionRelease\ConfigFileLib\bin\Debug\ConfigFileLib.dll
+C:\Users\DP27813\documents\visual studio 2010\Projects\AutoVersionRelease\ConfigFileLib\bin\Debug\ConfigFileLib.pdb
+C:\Users\DP27813\documents\visual studio 2010\Projects\AutoVersionRelease\ConfigFileLib\obj\Debug\ConfigFileLib.dll
+C:\Users\DP27813\documents\visual studio 2010\Projects\AutoVersionRelease\ConfigFileLib\obj\Debug\ConfigFileLib.pdb
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\ConfigFileLib\bin\Debug\ConfigFileLib.dll
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\ConfigFileLib\bin\Debug\ConfigFileLib.pdb
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\ConfigFileLib\obj\Debug\ConfigFileLib.dll
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\ConfigFileLib\obj\Debug\ConfigFileLib.pdb
+I:\Tools\AutoVersionRelease\ConfigFileLib\bin\Debug\ConfigFileLib.dll
+I:\Tools\AutoVersionRelease\ConfigFileLib\bin\Debug\ConfigFileLib.pdb
+I:\Tools\AutoVersionRelease\ConfigFileLib\obj\Debug\ConfigFileLib.dll
+I:\Tools\AutoVersionRelease\ConfigFileLib\obj\Debug\ConfigFileLib.pdb

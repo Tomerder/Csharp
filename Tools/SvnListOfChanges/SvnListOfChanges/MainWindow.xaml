@@ -1,0 +1,20 @@
+﻿<Window x:Class="SvnFilesHistory.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Svn List Of Changes" Height="423" Width="800">
+    <Grid Background="#FF98BEDE">
+        <Button Content="Get List of changes" Height="23" HorizontalAlignment="Left" Margin="343,260,0,0" Name="buttonGetReport" VerticalAlignment="Top" Width="125" Click="buttonGetReport_Click" />
+        <TextBox Height="28" HorizontalAlignment="Left" Margin="127,64,0,0" Name="textBoxFrom" VerticalAlignment="Top" Width="639" />
+        <TextBox Height="26" HorizontalAlignment="Left" Margin="127,123,0,0" Name="textBoxTo" VerticalAlignment="Top" Width="639" />
+        <Label Content="From SVN Path :" Height="28" HorizontalAlignment="Left" Margin="12,64,0,0" Name="label1" VerticalAlignment="Top" Width="101" />
+        <Label Content="To SVN Path :" Height="28" HorizontalAlignment="Left" Margin="30,121,0,0" Name="label2" VerticalAlignment="Top" Width="83" />
+        <Label Content="Output File Path :" Height="28" HorizontalAlignment="Left" Margin="12,216,0,0" Name="label4" VerticalAlignment="Top" Width="101" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="127,216,0,0" Name="textBoxOutputFile" VerticalAlignment="Top" Width="601" />
+        <RichTextBox FontStyle="Normal" FontWeight="Normal" Height="66" HorizontalAlignment="Left" IsReadOnly="True" Margin="12,306,0,0" Name="textBoxMessages" VerticalAlignment="Top" VerticalScrollBarVisibility="Visible" Width="756" />
+        <Label Content="Output Type :" Height="28" HorizontalAlignment="Left" Margin="255,12,0,0" Name="labelOutputType" VerticalAlignment="Top" Width="101" FontWeight="Bold" FontSize="14" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="362,17,0,0" Name="comboBoxOutputType" VerticalAlignment="Top" Width="136" SelectionChanged="comboBoxOutputType_SelectionChanged" />
+        <Label Content="Start From Tag :" Height="28" HorizontalAlignment="Left" Margin="12,170,0,0" Name="label3" VerticalAlignment="Top" Width="101" />
+        <TextBox Height="26" HorizontalAlignment="Left" Margin="127,170,0,0" Name="textBoxTagStart" VerticalAlignment="Top" Width="211" />
+        <Button Content="..." Height="23" HorizontalAlignment="Left" Margin="737,217,0,0" Name="buttonGetPath" VerticalAlignment="Top" Width="29" Click="buttonGetPath_Click" />
+    </Grid>
+</Window>

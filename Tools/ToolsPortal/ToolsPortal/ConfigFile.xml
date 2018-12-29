@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<root>
+		
+	<GENERAL_CONFIGURATIONS>
+		
+	</GENERAL_CONFIGURATIONS>
+
+	
+	<TOOLS>
+
+    <TOOL>
+	  <Name>DB Monitor</Name>
+	  <Exe_File_Path>J:\Tools\DataBaseMonitor\bin\DataBaseMonitor.exe</Exe_File_Path>
+      <Icon_File_Path>J:\Tools\DataBaseMonitor\bin\Cube.ico</Icon_File_Path>
+      <Readme_File_Path></Readme_File_Path>
+      <Author>Cfir Aguston</Author>
+	</TOOL>
+
+    <TOOL>
+      <Name>Auto Version Release</Name>
+      <Exe_File_Path>I:\Tools\AutoVersionRelease\AutoVersionRelease\bin\Debug\AutoVersionRelease.exe</Exe_File_Path>
+      <Icon_File_Path>I:\Tools\AutoVersionRelease\AutoVersionRelease\log_target.ico</Icon_File_Path>
+      <Readme_File_Path>I:\Tools\AutoVersionRelease\readme.docx</Readme_File_Path>
+      <Author>Tomer Dery</Author>
+    </TOOL>
+
+    <TOOL>
+      <Name>Failures Monitor</Name>
+      <Exe_File_Path>J:\Tools\FailuresMonitor\Code\FaliuresMonitor\bin\Debug\FaliuresMonitor.exe</Exe_File_Path>
+      <Icon_File_Path>J:\Tools\FailuresMonitor\fail.png</Icon_File_Path>
+      <Readme_File_Path></Readme_File_Path>
+      <Author>Tomer Dery</Author>
+    </TOOL>
+    
+    <TOOL>
+      <Name>IRD Verification Tool</Name>
+      <Exe_File_Path>I:\Tools\IRD Verification Tool\IRD-Verification.exe</Exe_File_Path>
+      <Icon_File_Path>I:\Tools\IRD Verification Tool\icon.png</Icon_File_Path>
+      <Readme_File_Path>I:\Tools\IRD Verification Tool\IRD Verification tool- User Guide.docx</Readme_File_Path>
+      <Author>Zach Ashkenazi</Author>
+    </TOOL>
+
+	<TOOL>
+      <Name>Svn List of Changes</Name>
+      <Exe_File_Path>I:\Tools\SvnListOfChanges\SvnListOfChanges\bin\Debug\SvnListOfChanges.exe</Exe_File_Path>
+      <Icon_File_Path>I:\Tools\SvnListOfChanges\icon.png</Icon_File_Path>
+      <Readme_File_Path>I:\Tools\SvnListOfChanges\Readme.docx</Readme_File_Path>
+      <Author>Tomer Dery</Author>
+    </TOOL>
+	
+    <TOOL>
+      <Name>Scade Tracer Tool</Name>
+      <Exe_File_Path>J:\Tools\TracerScade6\TracerScade6.exe</Exe_File_Path>
+      <Icon_File_Path>J:\Tools\TracerScade6\trace.png</Icon_File_Path>
+      <Readme_File_Path></Readme_File_Path>
+      <Author>Erez Fridman</Author>
+    </TOOL>
+   
+    <TOOL>
+      <Name>Generic Binary Parser</Name>
+      <Exe_File_Path>I:\Tools\GenericBinaryParser\build\GenericBinaryParser\GenericBinaryParser.exe</Exe_File_Path>
+      <Icon_File_Path>I:\Tools\GenericBinaryParser\com.esl.genericbinaryparser.product\icons\128X128.png</Icon_File_Path>
+      <Readme_File_Path>I:\Tools\GenericBinaryParser\Generic Binary Parser -manual.docx</Readme_File_Path>
+      <Author>Cfir Aguston</Author>
+    </TOOL>
+   
+    <TOOL>
+      <Name>Failures Table Tool</Name>
+      <Exe_File_Path>J:\Tools\FailureTableTool\FailureTableTool\bin\Debug\FailureTableTool.exe</Exe_File_Path>
+      <Icon_File_Path>J:\Tools\FailureTableTool\FailureTableTool\sysFail.png</Icon_File_Path>
+      <Readme_File_Path></Readme_File_Path>
+      <Author>Tomer Dery</Author>
+    </TOOL>
+    
+    <TOOL>
+      <Name>Generic CRC32 Calculator</Name>
+      <Exe_File_Path>J:\Tools\GenericCRC32Calculator\GenericCRC32Calculator\bin\Debug\GenericCRC32Calculator.exe</Exe_File_Path>
+      <Icon_File_Path>J:\Tools\GenericCRC32Calculator\GenericCRC32Calculator\calc.png</Icon_File_Path>
+      <Readme_File_Path></Readme_File_Path>
+      <Author>Tomer Dery</Author>
+    </TOOL>
+    
+    <TOOL>
+      <Name>Align SDD Alocation Tool</Name>
+      <Exe_File_Path>J:\Tools\AlignHlrSddAlocTool\WindowsFormsApplication1\bin\Debug\AlignHlrSddAlocTool.exe</Exe_File_Path>
+      <Icon_File_Path>J:\Tools\AlignHlrSddAlocTool\Doc.png</Icon_File_Path>
+      <Readme_File_Path></Readme_File_Path>
+      <Author>Tomer Dery</Author>
+    </TOOL>
+    
+	<TOOL>
+      <Name>Send UDP Message</Name>
+      <Exe_File_Path>I:\Tools\SendEthernetMsg\SendEthernetMsg\bin\Debug\SendEthernetMsg.exe</Exe_File_Path>
+      <Icon_File_Path>I:\Tools\SendEthernetMsg\icon.png</Icon_File_Path>
+      <Readme_File_Path></Readme_File_Path>
+      <Author>Tomer Dery</Author>
+    </TOOL>
+	
+    <TOOL>
+      <Name>CAT Test tool</Name>
+      <Exe_File_Path>J:\Tools\CAT_TestTool\CAT_TestTool\bin\Debug\CAT_TestTool.exe</Exe_File_Path>
+      <Icon_File_Path>J:\Tools\CAT_TestTool\icon.png</Icon_File_Path>
+      <Readme_File_Path>J:\Tools\CAT_TestTool\CAT.docx</Readme_File_Path>
+      <Author>Tomer Dery</Author>
+    </TOOL>
+
+    <TOOL>
+      <Name>HW Config Tool</Name>
+      <Exe_File_Path>J:\Tools\HWconfig\HWconfig\bin\Debug\HWconfig.exe</Exe_File_Path>
+      <Icon_File_Path>J:\Tools\HWconfig\icon.png</Icon_File_Path>
+      <Readme_File_Path></Readme_File_Path>
+      <Author>Tomer Dery</Author>
+    </TOOL>
+    
+	<TOOL>
+      <Name>Performances Calculator</Name>
+      <Exe_File_Path>J:\Tools\PerformancesCalculator\PerformancesCalculator\bin\Debug\PerformancesCalculator.exe</Exe_File_Path>
+      <Icon_File_Path>J:\Tools\PerformancesCalculator\icon.png</Icon_File_Path>
+      <Readme_File_Path></Readme_File_Path>
+      <Author>Tomer Dery</Author>
+    </TOOL>
+	
+    <TOOL>
+      <Name>History File Merger</Name>
+      <Exe_File_Path>J:\Tools\HistoryFileMerger\HistoryFileMerger\bin\Debug\HistoryFileMerger.exe</Exe_File_Path>
+      <Icon_File_Path></Icon_File_Path>
+      <Readme_File_Path></Readme_File_Path>
+      <Author>Sharon Levy</Author>
+    </TOOL>
+   
+   <TOOL>
+      <Name>Frame Capture</Name>
+      <Exe_File_Path>I:\Tools\FrameCapture\FrameCapture\bin\Debug\FrameCapture.exe</Exe_File_Path>
+      <Icon_File_Path></Icon_File_Path>
+      <Readme_File_Path>I:\Tools\FrameCapture\Readme.txt</Readme_File_Path>
+      <Author>Sharon Levy</Author>
+    </TOOL>
+    
+    <TOOL>
+      <Name>Png Tool</Name>
+      <Exe_File_Path>J:\Tools\PngTools\PngTools\bin\Debug\PngTools.exe</Exe_File_Path>
+      <Icon_File_Path></Icon_File_Path>
+      <Readme_File_Path></Readme_File_Path>
+      <Author>???</Author>
+    </TOOL>
+	
+    <TOOL>
+      <Name>HyperLinksFixer</Name>
+      <Exe_File_Path>"I:\Tools\HyperLinksFixer\HyperLinksFixer\bin\Release\HyperLinksFixer.exe"</Exe_File_Path>
+      <Icon_File_Path></Icon_File_Path>
+      <Readme_File_Path></Readme_File_Path>
+      <Author>Itay Baranes</Author>
+    </TOOL>	
+	
+	 <TOOL>
+      <Name>VDD File List</Name>
+      <Exe_File_Path>I:\Tools\VddFileList\VddFileList\VddFileList\bin\Debug\VddFileList.exe</Exe_File_Path>
+      <Icon_File_Path></Icon_File_Path>
+      <Readme_File_Path></Readme_File_Path>
+      <Author>Chavrkov Maria</Author>
+    </TOOL>
+		 
+	<TOOL>
+      <Name>Excel Merger</Name>
+      <Exe_File_Path>J:\Tools\ExcelMerger\ExcelMerger.exe</Exe_File_Path>
+      <Icon_File_Path></Icon_File_Path>
+      <Readme_File_Path></Readme_File_Path>
+      <Author>Shay Alon</Author>
+    </TOOL>
+	
+    
+	</TOOLS>	
+
+</root>

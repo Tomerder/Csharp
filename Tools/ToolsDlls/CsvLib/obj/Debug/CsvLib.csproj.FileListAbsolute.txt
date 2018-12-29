@@ -1,0 +1,17 @@
+C:\Users\DP27813\documents\visual studio 2010\Projects\AutoVersionRelease\CsvLib\bin\Debug\CsvLib.dll
+C:\Users\DP27813\documents\visual studio 2010\Projects\AutoVersionRelease\CsvLib\bin\Debug\CsvLib.pdb
+C:\Users\DP27813\documents\visual studio 2010\Projects\AutoVersionRelease\CsvLib\obj\Debug\CsvLib.dll
+C:\Users\DP27813\documents\visual studio 2010\Projects\AutoVersionRelease\CsvLib\obj\Debug\CsvLib.pdb
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\CsvLib\bin\Debug\CsvLib.dll
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\CsvLib\bin\Debug\CsvLib.pdb
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\CsvLib\obj\Debug\CsvLib.dll
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\CsvLib\obj\Debug\CsvLib.pdb
+I:\Tools\AutoVersionRelease\CsvLib\bin\Debug\CsvLib.dll
+I:\Tools\AutoVersionRelease\CsvLib\bin\Debug\CsvLib.pdb
+I:\Tools\AutoVersionRelease\CsvLib\obj\Debug\CsvLib.dll
+I:\Tools\AutoVersionRelease\CsvLib\obj\Debug\CsvLib.pdb
+I:\Tools\ToolsDlls\CsvLib\bin\Debug\CsvLib.dll
+I:\Tools\ToolsDlls\CsvLib\bin\Debug\CsvLib.pdb
+I:\Tools\ToolsDlls\CsvLib\obj\Debug\CsvLib.dll
+I:\Tools\ToolsDlls\CsvLib\obj\Debug\CsvLib.pdb
+I:\Tools\ToolsDlls\CsvLib\obj\Debug\CsvLib.csprojResolveAssemblyReference.cache

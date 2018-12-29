@@ -1,0 +1,15 @@
+﻿<Window x:Class="ToolsPortal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tools Portal" Height="350" Width="525" ResizeMode="CanMinimize" Background="#FFA4D9D9">
+    <ScrollViewer Height="312" Name="scrollViewer1" Width="512">
+        <Grid Height="Auto" Name="grid1" Width="462" VerticalAlignment="Center" HorizontalAlignment="Center" Background="#FFA4D9D9">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="39*" />
+                <ColumnDefinition Width="142*" />
+                <ColumnDefinition Width="141*" />
+                <ColumnDefinition Width="140*" />
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </ScrollViewer>
+</Window>

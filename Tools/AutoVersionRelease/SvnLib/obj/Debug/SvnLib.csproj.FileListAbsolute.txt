@@ -1,0 +1,20 @@
+C:\Users\DP27813\documents\visual studio 2010\Projects\AutoVersionRelease\SvnLib\bin\Debug\SvnLib.dll
+C:\Users\DP27813\documents\visual studio 2010\Projects\AutoVersionRelease\SvnLib\bin\Debug\SvnLib.pdb
+C:\Users\DP27813\documents\visual studio 2010\Projects\AutoVersionRelease\SvnLib\obj\Debug\SvnLib.dll
+C:\Users\DP27813\documents\visual studio 2010\Projects\AutoVersionRelease\SvnLib\obj\Debug\SvnLib.pdb
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\AutoVersionRelease\SvnLib\bin\Debug\SharpPlink-Win32.svnExe
+C:\Users\DP27813\Documents\Visual Studio 2010\Projects\AutoVersionRelease\SvnLib\bin\Debug\SharpSvn.dll
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\SvnLib\bin\Debug\SvnLib.dll
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\SvnLib\bin\Debug\SvnLib.pdb
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\SvnLib\bin\Debug\SharpSvn.dll
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\SvnLib\bin\Debug\SharpPlink-Win32.svnExe
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\SvnLib\obj\Debug\SvnLib.dll
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\SvnLib\obj\Debug\SvnLib.pdb
+C:\proj\EFVS\Software\Tools\AutoVersionRelease\SvnLib\obj\Debug\SvnLib.csprojResolveAssemblyReference.cache
+I:\Tools\AutoVersionRelease\SvnLib\bin\Debug\SvnLib.dll
+I:\Tools\AutoVersionRelease\SvnLib\bin\Debug\SvnLib.pdb
+I:\Tools\AutoVersionRelease\SvnLib\bin\Debug\SharpSvn.dll
+I:\Tools\AutoVersionRelease\SvnLib\bin\Debug\SharpPlink-Win32.svnExe
+I:\Tools\AutoVersionRelease\SvnLib\obj\Debug\SvnLib.dll
+I:\Tools\AutoVersionRelease\SvnLib\obj\Debug\SvnLib.pdb
+I:\Tools\AutoVersionRelease\SvnLib\obj\Debug\SvnLib.csprojResolveAssemblyReference.cache

@@ -1,0 +1,9 @@
+J:\Tools\GenericCRC32Calculator\GenericCRC32Calculator\obj\x86\Debug\CalculateAls1Crc.exe
+J:\Tools\GenericCRC32Calculator\GenericCRC32Calculator\obj\x86\Debug\CalculateAls1Crc.pdb
+J:\Tools\GenericCRC32Calculator\GenericCRC32Calculator\bin\Debug\CalculateAls1Crc.exe
+J:\Tools\GenericCRC32Calculator\GenericCRC32Calculator\bin\Debug\CalculateAls1Crc.pdb
+J:\Tools\GenericCRC32Calculator\GenericCRC32Calculator\obj\x86\Debug\ResolveAssemblyReference.cache
+J:\Tools\GenericCRC32Calculator\GenericCRC32Calculator\obj\x86\Debug\CalculateAls1Crc.Form1.resources
+J:\Tools\GenericCRC32Calculator\GenericCRC32Calculator\obj\x86\Debug\CalculateAls1Crc.Properties.Resources.resources
+J:\Tools\GenericCRC32Calculator\GenericCRC32Calculator\obj\x86\Debug\GenerateResource.read.1.tlog
+J:\Tools\GenericCRC32Calculator\GenericCRC32Calculator\obj\x86\Debug\GenerateResource.write.1.tlog

@@ -1,0 +1,213 @@
+﻿<?xml version="1.0"?>
+<root>
+
+  <log loggerMode="DEBUG"/>
+
+  <configurationRegisters>
+    <SYNC_GENERATOR_Address_Space_TAB name="SYNC_GENERATOR_Address_Space" baseAddress ="0x203000">
+          <SYNC_GEN_RESOLUTION>
+            <item key="NAME"                    value="SYNC_GEN_RESOLUTION"/>
+            <item key="OFFSET_ADDRESS"          value="0x000"/>
+            <item key="STARTS_FROM_BIT_NUM"     value="8"/>
+            <item key="LENGTH_BITS"             value="8"/>
+            <item key="IS_MAND"                 value="true"/>
+            <item key="IS_READ_ONLY"            value="false"/>
+            <item key="VALIDATION"              value="NONE"/>
+            <item key="OFFSET ADDRESS"          value="0x00C"/>
+            <item key="RESET_VALUE"             value="0x04000500"/>
+          </SYNC_GEN_RESOLUTION>
+
+          <SYNC_GEN_SYNC_WIDTH>
+            <item key="NAME"                    value="SYNC_GEN_SYNC_WIDTH"/>
+            <item key="OFFSET_ADDRESS"          value="0x004"/>
+            <item key="STARTS_FROM_BIT_NUM"     value="0"/>
+            <item key="LENGTH_BITS"             value="32"/>
+            <item key="IS_MAND"                 value="true"/>
+            <item key="IS_READ_ONLY"            value="false"/>
+            <item key="VALIDATION"              value="NONE"/>
+            <item key="RESET_VALUE"             value="0x00030016"/>
+          </SYNC_GEN_SYNC_WIDTH>
+
+          <SYNC_GEN_HPORCH>
+            <item key="NAME"                    value="SYNC_GEN_HPORCH"/>
+            <item key="OFFSET_ADDRESS"          value="0x008"/>
+            <item key="STARTS_FROM_BIT_NUM"     value="0"/>
+            <item key="LENGTH_BITS"             value="32"/>
+            <item key="IS_READ_ONLY"            value="true"/>
+            <item key="VALIDATION"              value="NONE"/>
+            <item key="RESET_VALUE"             value="0x00200015"/>
+          </SYNC_GEN_HPORCH>
+
+          <SYNC_GEN_VPORCH>
+            <item key="NAME"                    value="SYNC_GEN_VPORCH"/>
+            <item key="OFFSET_ADDRESS"          value="0x00C"/>
+            <item key="STARTS_FROM_BIT_NUM"     value="0"/>
+            <item key="LENGTH_BITS"             value="32"/>
+            <item key="IS_MAND"                 value="true"/>
+            <item key="IS_READ_ONLY"            value="true"/>
+            <item key="VALIDATION"              value="NONE"/>
+            <item key="RESET_VALUE"             value="0x00260001"/>   
+          </SYNC_GEN_VPORCH>
+
+          <EXTERNAL_SYNC_SELECT>
+            <item key="NAME"                    value="EXTERNAL_SYNC_SELECT"/>
+            <item key="OFFSET_ADDRESS"          value="0x010"/>
+            <item key="STARTS_FROM_BIT_NUM"     value="0"/>
+            <item key="LENGTH_BITS"             value="32"/>
+            <item key="IS_MAND"                 value="true"/>
+            <item key="IS_READ_ONLY"            value="false"/>
+            <item key="VALIDATION"              value="NONE"/>
+            <item key="RESET_VALUE"             value="0x00000000"/>
+          </EXTERNAL_SYNC_SELECT>
+
+          <EXT_SYNC_EXIST>
+            <item key="NAME"                    value="EXT_SYNC_EXIST"/>
+            <item key="OFFSET_ADDRESS"          value="0x014"/>
+            <item key="STARTS_FROM_BIT_NUM"     value="0"/>
+            <item key="LENGTH_BITS"             value="32"/>
+            <item key="IS_MAND"                 value="true"/>
+            <item key="IS_READ_ONLY"            value="true"/>
+            <item key="VALIDATION"              value="NONE"/>
+            <item key="RESET_VALUE"             value="0x00000000"/>
+          </EXT_SYNC_EXIST>
+
+         <EXT_SYNC_ERROR>
+            <item key="NAME"                    value="EXT_SYNC_ERROR"/>
+            <item key="OFFSET_ADDRESS"          value="0x018"/>
+            <item key="STARTS_FROM_BIT_NUM"     value="0"/>
+            <item key="LENGTH_BITS"             value="32"/>
+            <item key="IS_MAND"                 value="true"/>
+            <item key="IS_READ_ONLY"            value="false"/>
+            <item key="VALIDATION"              value="NONE"/>
+            <item key="RESET_VALUE"             value="0x00000000"/>
+          </EXT_SYNC_ERROR>
+
+          <Time_Tag_960Hz>
+            <item key="NAME"                    value="Time_Tag_960Hz_LSB"/>
+            <item key="OFFSET_ADDRESS"          value="0x000C0"/>
+            <item key="STARTS_FROM_BIT_NUM"     value="0"/>
+            <item key="LENGTH_BITS"             value="32"/>
+            <item key="IS_MAND"                 value="true"/>
+            <item key="IS_READ_ONLY"            value="true"/>
+            <item key="VALIDATION"              value="NONE"/>
+            <item key="RESET_VALUE"             value="0x00000000"/>
+          </Time_Tag_960Hz>
+
+         <Time_Tag_960Hz>
+            <item key="NAME"                    value="Time_Tag_960Hz_MSB"/>
+            <item key="OFFSET_ADDRESS"          value="0x000C4"/>
+            <item key="STARTS_FROM_BIT_NUM"     value="0"/>
+            <item key="LENGTH_BITS"             value="32"/>
+            <item key="IS_MAND"                 value="true"/>
+            <item key="IS_READ_ONLY"            value="true"/>
+            <item key="VALIDATION"              value="NONE"/>
+            <item key="RESET_VALUE"             value="1"/>
+          </Time_Tag_960Hz>
+    </SYNC_GENERATOR_Address_Space_TAB>
+
+
+
+    <Video_Capture_TAB name="Video_Capture" baseAddress ="0x300000">
+          <VCH_Convert_Mode>
+            <item key="NAME"                    value="VCH_Convert_Mode"/>
+            <item key="OFFSET_ADDRESS"          value="0x10"/>
+            <item key="STARTS_FROM_BIT_NUM"     value="0"/>
+            <item key="LENGTH_BITS"             value="32"/>
+            <item key="IS_MAND"                 value="true"/>
+            <item key="IS_READ_ONLY"            value="false"/>
+            <item key="VALIDATION"              value="LIST_OF_VALUES"/>
+            <item key="LIST_OF_VALUES"          value="0x0,0x1,0x2,0x3,0x4,0x5,0x6,0x7"/>
+            <item key="RESET_VALUE"             value="0x7"/>
+          </VCH_Convert_Mode>
+
+          <VCH_False_Coloring>
+            <item key="NAME"                    value="VCH_False_Coloring"/>
+            <item key="OFFSET_ADDRESS"          value="0x3C"/>
+            <item key="STARTS_FROM_BIT_NUM"     value="0"/>
+            <item key="LENGTH_BITS"             value="32"/>
+            <item key="IS_MAND"                 value="true"/>
+            <item key="IS_READ_ONLY"            value="false"/>
+            <item key="VALIDATION"              value="NONE"/>
+            <item key="RESET_VALUE"             value="0x0000 "/>
+          </VCH_False_Coloring>
+    </Video_Capture_TAB>
+
+
+
+    <VP_general_registers_TAB name="VP_general_registers" baseAddress ="0x700000">
+          <VP_version>
+            <item key="NAME"                    value="VP_version"/>
+            <item key="OFFSET_ADDRESS"          value="0x100"/>
+            <item key="STARTS_FROM_BIT_NUM"     value="0"/>
+            <item key="LENGTH_BITS"             value="32"/>
+            <item key="IS_MAND"                 value="true"/>
+            <item key="IS_READ_ONLY"            value="true"/>
+            <item key="VALIDATION"              value="NONE"/>
+            <item key="RESET_VALUE"             value=""/>
+          </VP_version>
+    </VP_general_registers_TAB>
+
+
+  
+    <Misc_Registers_TAB name="Misc_Registers" baseAddress ="0x940000">
+          <FPGA_version>
+            <item key="NAME"                    value="FPGA_version_minor"/>
+            <item key="OFFSET_ADDRESS"          value="0x00"/>
+            <item key="STARTS_FROM_BIT_NUM"     value="0"/>
+            <item key="LENGTH_BITS"             value="8"/>
+            <item key="IS_READ_ONLY"            value="true"/>
+            <item key="VALIDATION"              value="NONE"/>
+            <item key="RESET_VALUE"             value=""/>
+          </FPGA_version>
+
+          <FPGA_version>
+            <item key="NAME"                    value="FPGA_version_major"/>
+            <item key="OFFSET_ADDRESS"          value="0x00"/>
+            <item key="STARTS_FROM_BIT_NUM"     value="8"/>
+            <item key="LENGTH_BITS"             value="8"/>
+            <item key="IS_READ_ONLY"            value="true"/>
+            <item key="VALIDATION"              value="NONE"/>
+            <item key="RESET_VALUE"             value=""/>
+          </FPGA_version>
+
+         <MUXBUS_XX_MULTI_RT>
+              <item key="NAME"                    value="MUXBUS_RT_DISABLE_BIST"/>
+              <item key="OFFSET_ADDRESS"          value="0x3C"/>
+              <item key="STARTS_FROM_BIT_NUM"     value="0"/>
+              <item key="LENGTH_BITS"             value="1"/>
+              <item key="IS_READ_ONLY"            value="false"/>
+              <item key="VALIDATION"              value="LIST_OF_VALUES"/>
+              <item key="LIST_OF_VALUES"          value="0x0,0x1"/>
+              <item key="RESET_VALUE"             value="0x00"/>
+          </MUXBUS_XX_MULTI_RT>
+
+         <MUXBUS_XX_MULTI_RT>
+            <item key="NAME"                    value="MUXBUS_BM_DISABLE_BIST"/>
+            <item key="OFFSET_ADDRESS"          value="0x3C"/>
+            <item key="STARTS_FROM_BIT_NUM"     value="1"/>
+            <item key="LENGTH_BITS"             value="1"/>
+            <item key="IS_READ_ONLY"            value="false"/>
+            <item key="VALIDATION"              value="LIST_OF_VALUES"/>
+            <item key="LIST_OF_VALUES"          value="0x0,0x1"/>
+            <item key="RESET_VALUE"             value="0x0"/>
+          </MUXBUS_XX_MULTI_RT>
+    
+    </Misc_Registers_TAB>
+
+  
+  
+    <TEST_TAB name="TEST_TAB" baseAddress ="0x203000">
+      <TEST_REG>
+        <item key="NAME"                    value="TEST_REG"/>
+        <item key="OFFSET_ADDRESS"          value="0x00"/>
+        <item key="STARTS_FROM_BIT_NUM"     value="0"/>
+        <item key="LENGTH_BITS"             value="32"/>
+        <item key="IS_MAND"                 value="true"/>
+        <item key="IS_READ_ONLY"            value="true"/>
+        <item key="VALIDATION"              value="NONE"/>
+        <item key="RESET_VALUE"             value="0x00"/>
+      </TEST_REG>
+    </TEST_TAB>
+
+  </configurationRegisters>
+</root>

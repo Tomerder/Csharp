@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<!--
+TypeA - #define OFP_CM_VERSION "3681A02-06" Or static const CHAR* OSAL_VERSION	= "4071A01-25";
+TypeB - #define PRJ_VERSION      "0114"
+
+<Partition>
+	<CSCIName>name as presented in VDD</CSCIName>
+	<luhName>name as defined in luh file</luhName> 
+	<Path>path to version file</Path>
+	<Type>type of version file, see above</Type>
+</Partition>
+
+<SR>
+	<FileName>system integrator name</FileName>
+	<Path>path to luh file</Path>
+</SR>
+-->
+<root>
+	<VersionPath>
+		<Partition>
+			<CSCIName>CLAWS</CSCIName>
+			<luhName>CLAWS.bin</luhName> 
+			<Path>I:\CLAWS\Source\Manager\clwVersionManager.h</Path>
+			<Type>TypeA</Type>
+		</Partition>
+		<Partition>
+			<CSCIName>DISPLAY</CSCIName>
+			<luhName>DISPLAY.bin</luhName> 
+			<Path>J:\Implementation\Source\SR1\DISPLAY\DisplayManager\dispVersionManager.h</Path>
+			<Type>TypeA</Type>
+		</Partition>
+		<Partition>
+			<CSCIName>OFP_SR1</CSCIName>
+			<luhName>OFP_SR1.bin</luhName> 
+			<Path>J:\Implementation\Source\SR1\OFP_SR1\HUDManager\hudVersionManager.h</Path>
+			<Type>TypeA</Type>
+		</Partition>
+		<Partition>
+			<CSCIName>VIDEO</CSCIName>
+			<luhName>VIDEO.bin</luhName> 
+			<Path>I:\Video\Source\VDLManager\videoVersionManager.h</Path>
+			<Type>TypeA</Type>
+		</Partition>
+		<Partition>
+			<CSCIName>MONITOR</CSCIName>
+			<luhName>MONITOR.bin</luhName> 
+			<Path>I:\Monitor\Source\MONManager\monVersionManager.h</Path>
+			<Type>TypeA</Type>
+		</Partition>
+		<Partition>
+			<CSCIName>OFP_SR2</CSCIName>
+			<luhName>OFP_SR2.bin</luhName> 
+			<Path>J:\Implementation\Source\SR2\OFP_SR2\HUDManager\hudVersionManager.h</Path>
+			<Type>TypeA</Type>
+		</Partition>
+		<Partition>
+			<CSCIName>COMMON</CSCIName>
+			<luhName>COMMON.bin</luhName> 
+			<Path>I:\Common\CommonVersionManager.h</Path>
+			<Type>TypeA</Type>
+		</Partition>
+		<Partition>
+			<CSCIName>COMMON_SR1</CSCIName>
+			<luhName>COMMON_SR1.bin</luhName> 
+			<Path>J:\Implementation\Source\SR1\COMMON\CommonSr1VersionManager.h</Path>
+			<Type>TypeA</Type>
+		</Partition>
+		<Partition>
+			<CSCIName>COMMON_SR1_SR2</CSCIName>
+			<luhName>COMMON_SR1_SR2.bin</luhName> 
+			<Path>J:\Implementation\Source\COMMON\CommonSr1Sr2VersionManager.h</Path>
+			<Type>TypeA</Type>
+		</Partition>	
+		<Partition>
+			<CSCIName>INFRASTRUCTURES</CSCIName>
+			<luhName>Infrastructures.bin</luhName> 
+			<Path>I:\Infrastructures\OSAL\Core\osalVersion.h</Path>
+			<Type>TypeA</Type>
+		</Partition>
+		<Partition>
+			<CSCIName>SYSINT_SR1</CSCIName>
+			<luhName>SYSINT_SR1</luhName> 
+			<Path>J:\Implementation\Source\SR1\SYSINT_SR1\sysint1VersionManager.h</Path>
+			<Type>TypeA</Type>
+		</Partition>
+		<Partition>
+			<CSCIName>SYSINT_SR2</CSCIName>
+			<luhName>SYSINT_SR2</luhName> 
+			<Path>J:\Implementation\Source\SR2\SYSINT_SR2\sysint2VersionManager.h</Path>
+			<Type>TypeA</Type>
+		</Partition>
+		<Partition>
+			<CSCIName>Claws_CF</CSCIName>
+			<luhName>Claws_CF.bin</luhName> 
+			<Path>J:\Implementation\Source\CLAWS_CF\prjVersion.h</Path>
+			<Type>TypeB</Type>
+		</Partition>
+		<Partition>
+			<CSCIName>Video_CF</CSCIName>
+			<luhName>Video_CF.bin</luhName> 
+			<Path>J:\Implementation\Source\VIDEO_CF\prjVersion.h</Path>
+			<Type>TypeB</Type>
+		</Partition>
+		<Partition>
+			<CSCIName>MONITOR_CF</CSCIName>
+			<luhName>DASSAULT_MONITOR_CF.bin</luhName> 
+			<Path>J:\Implementation\Source\SR2\MONITOR_CF\prjVersion.h</Path>
+			<Type>TypeB</Type>
+		</Partition>
+		<Partition>
+			<CSCIName>BSP_HDP</CSCIName>
+			<luhName>coreOS.bin</luhName> 
+			<Path>J:\Implementation\Source\BSP\prjVersion.h</Path>
+			<Type>TypeB</Type>
+		</Partition>
+		<Partition>
+			<CSCIName></CSCIName>
+			<luhName>ETHERNET.bin</luhName> 
+			<Path>J:\Implementation\Source\BSP\prjVersion.h</Path>
+			<Type>TypeB</Type>
+		</Partition>
+		<Partition>
+			<CSCIName></CSCIName>
+			<luhName>sl_nvr.bin</luhName> 
+			<Path>J:\Implementation\Source\BSP\prjVersion.h</Path>
+			<Type>TypeB</Type>
+		</Partition>
+		<Partition>
+			<CSCIName></CSCIName>
+			<luhName>sl_utils.bin</luhName> 
+			<Path>J:\Implementation\Source\BSP\prjVersion.h</Path>
+			<Type>TypeB</Type>
+		</Partition>
+		<Partition>
+			<CSCIName></CSCIName>
+			<luhName>ssl_hdp.bin</luhName> 
+			<Path>J:\Implementation\Source\BSP\prjVersion.h</Path>
+			<Type>TypeB</Type>
+		</Partition>
+		<Partition>
+			<CSCIName>BSP_PCF</CSCIName>
+			<luhName>full_instance_crc32.bin</luhName> 
+			<Path>J:\Implementation\Source\BSP\PCF\pcfVersionManager.h</Path>
+			<Type>TypeA</Type>
+		</Partition>
+		<Partition>
+			<CSCIName>VMD</CSCIName>
+			<luhName>VMD.bin</luhName> 
+			<Path>I:\VIDEO\Source\VMD\VMDVersionManager.h</Path>
+			<Type>TypeA</Type>
+		</Partition>
+		<Partition>
+			<CSCIName>LDR615</CSCIName>
+			<luhName>ldr615.bin</luhName> 
+			<Path>J:\Implementation\Source\LDR615A\Ldr615VersionManager.h</Path>
+			<Type>TypeA</Type>
+		</Partition>
+		<Partition>
+			<CSCIName>LDR615 SL</CSCIName>
+			<luhName>sl_ldr615.bin</luhName> 
+			<Path>J:\Implementation\Source\BSP\Ldr615slVersionManager.h</Path>
+			<Type>TypeA</Type>
+		</Partition>
+		<Partition>
+			<CSCIName>PC_SIM</CSCIName>
+			<luhName></luhName> 
+			<Path>J:\PcSimulator\pcSimVersionManager.h</Path>
+			<Type>TypeA</Type>
+		</Partition>
+	</VersionPath>
+	
+	<LUHFiles>
+		<SR>
+			<FileName>SYSINT_SR1</FileName>
+			<Path>J:\Implementation\Source\SR1\SYSINT_SR1\SR1_SW_LUHSettings.xml</Path>
+		</SR>
+		<SR>
+			<FileName>SYSINT_SR2</FileName>
+			<Path>J:\Implementation\Source\SR2\SYSINT_SR2\SR2_SW_LUHSettings.xml</Path>
+		</SR>
+	</LUHFiles>
+</root>

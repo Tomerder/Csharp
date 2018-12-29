@@ -1,0 +1,7674 @@
+/* $*************** KCG Version 6.1.3 (build i6) ****************
+** Command: s2c613 -config J:/EFVS/Dassault/Implementation/Source/SR1/OFP_SR1/GeneratedCode/Scade\kcg_s2c_config.txt
+** Generation date: 2014-11-05T16:03:28
+*************************************************************$ */
+#ifndef _KCG_TYPES_H_
+#define _KCG_TYPES_H_
+
+#define KCG_MAPW_CPY
+
+#include "../Include/ofp_kcg_types.h"
+
+#ifndef kcg_int
+#define kcg_int kcg_int
+typedef int kcg_int;
+#endif /* kcg_int */
+
+#ifndef kcg_bool
+#define kcg_bool kcg_bool
+typedef unsigned char kcg_bool;
+#endif /* kcg_bool */
+
+#ifndef kcg_real
+#define kcg_real kcg_real
+typedef double kcg_real;
+#endif /* kcg_real */
+
+#ifndef kcg_char
+#define kcg_char kcg_char
+typedef unsigned char kcg_char;
+#endif /* kcg_char */
+
+#include "kcg_imported_types.h"
+
+#ifndef kcg_false
+#define kcg_false ((kcg_bool) 0)
+#endif /* kcg_false */
+
+#ifndef kcg_true
+#define kcg_true ((kcg_bool) 1)
+#endif /* kcg_true */
+
+#ifndef kcg_assign
+#include "kcg_assign.h"
+#endif /* kcg_assign */
+
+#ifndef kcg_assign_struct
+#define kcg_assign_struct kcg_assign
+#endif /* kcg_assign_struct */
+
+#ifndef kcg_assign_array
+#define kcg_assign_array kcg_assign
+#endif /* kcg_assign_array */
+
+/* HUDManager::StickBrightnessStatusEnum */
+typedef enum {
+  STICK_BRIGHTNESS_NO_CHANGE_HUDManager,
+  STICK_BRIGHTNESS_UP_HUDManager,
+  STICK_BRIGHTNESS_DOWN_HUDManager
+} StickBrightnessStatusEnum_HUDManager;
+/* HUDManager::VideoSourceEnum */
+typedef enum { VIDEO_MANAGER_SOURCE_EVS_HUDManager } VideoSourceEnum_HUDManager;
+/* OHUManager::OhuDeviceEnum */
+typedef enum {
+  OHU_DEVICE_1_OHUManager,
+  NUM_OF_OHU_DEVICES_OHUManager
+} OhuDeviceEnum_OHUManager;
+/* SVSManager::SvsModeEnum */
+typedef enum {
+  SVS_MODE_1_SVSManager,
+  SVS_MODE_2_SVSManager,
+  SVS_MODE_3_SVSManager
+} SvsModeEnum_SVSManager;
+/* SVSManager::SvsA429DataOutEnum */
+typedef enum {
+  SVS_A429_DATA_AC_TYPE_SVSManager,
+  SVS_A429_DATA_PHASE_OF_FLIGHT_SVSManager,
+  SVS_A429_DATA_MIN_RANGE_SVSManager,
+  SVS_A429_DATA_LAYER_TERRAIN_SVSManager,
+  SVS_A429_DATA_LAYER_RIDGE_LINES_SVSManager,
+  SVS_A429_DATA_LAYER_DEST_RUNWAY_SVSManager,
+  SVS_A429_DATA_LAYER_TO_WAYPOINT_SVSManager,
+  SVS_A429_DATA_LAYER_RUNWAY_AXIS_SVSManager,
+  SVS_A429_DATA_LAYER_APPROACH_AXIS_SVSManager,
+  SVS_A429_DATA_LAYER_OBSTACLES_SVSManager,
+  SVS_A429_DATA_LAYER_DEST_AIRPORT_SVSManager,
+  SVS_A429_DATA_LAYER_OTHER_AIRPORT_SVSManager,
+  SVS_A429_DATA_LAYER_OTHER_RUNWAYS_SVSManager,
+  SVS_A429_DATA_LAYER_RANGE_RING_SVSManager,
+  SVS_A429_DATA_BRIGHTNESS_SVSManager,
+  SVS_A429_DATA_LAYER_PERFORM_IBIT_SVSManager,
+  SVS_A429_DATA_SVS_SKY_COLOR_SVSManager,
+  SVS_A429_DATA_SVS_CLEAR_COLOR_SVSManager,
+  NUM_OF_SVS_A429_DATA_OUT_SVSManager
+} SvsA429DataOutEnum_SVSManager;
+/* VIDEOManager::VideoProcessEnum */
+typedef enum {
+  VIDEO_PROCESS_0_VIDEOManager,
+  VIDEO_PROCESS_1_VIDEOManager
+} VideoProcessEnum_VIDEOManager;
+/* VIDEOManager::VpWindowEnum */
+typedef enum {
+  VP_WINDOW_0_VIDEOManager,
+  VP_WINDOW_1_VIDEOManager,
+  VP_WINDOW_2_VIDEOManager,
+  VP_WINDOW_3_VIDEOManager
+} VpWindowEnum_VIDEOManager;
+/* MAUManager::MauDeviceEnum */
+typedef enum {
+  MAU_DEVICE_1_MAUManager,
+  MAU_DEVICE_2_MAUManager,
+  NUM_OF_MAU_DEVICES_MAUManager
+} MauDeviceEnum_MAUManager;
+/* BrightnessChangeEnum */
+typedef enum {
+  BRIGHTNESS_NO_CHANGE,
+  BRIGHTNESS_DOWN,
+  BRIGHTNESS_UP
+} BrightnessChangeEnum;
+/* EVSManager::EvsDeviceEnum */
+typedef enum {
+  EVS_DEVICE_1_EVSManager,
+  NUM_OF_EVS_DEVICES_EVSManager
+} EvsDeviceEnum_EVSManager;
+/* NVRAMManager::NvramUserEnum */
+typedef enum {
+  NVRAM_USER_00_NVRAMManager,
+  NVRAM_USER_01_NVRAMManager,
+  NUMBER_OF_NVRAM_USERS_NVRAMManager
+} NvramUserEnum_NVRAMManager;
+/* ExtPcManager::AlignFeedbackEnum */
+typedef enum {
+  Align_Success_ExtPcManager,
+  HUD_AlignFail_ExtPcManager,
+  EVS_AlignFail_ExtPcManager,
+  CTVS_AlignFail_ExtPcManager,
+  Verification_AlignFail_ExtPcManager,
+  EVS_Align_Mode_Set_ExtPcManager
+} AlignFeedbackEnum_ExtPcManager;
+/* truthtables::TruthTableValues */
+typedef enum {
+  T_truthtables,
+  F_truthtables,
+  X_truthtables
+} TruthTableValues_truthtables;
+/* BasicIO::A429::A429LabelTypeEnum */
+typedef enum {
+  A429_LABEL_TYPE_BNR_BasicIO_A429,
+  A429_LABEL_TYPE_DSC_BasicIO_A429,
+  A429_LABEL_TYPE_BCD_BasicIO_A429,
+  NUM_OF_A429_LABEL_TYPE_BasicIO_A429
+} A429LabelTypeEnum_BasicIO_A429;
+/* DivisionStatusEnum */
+typedef enum {
+  DIVISION_STATUS_ENUM_NORMAL,
+  DIVISION_STATUS_ENUM_INFINITY,
+  DIVISION_STATUS_ENUM_UNDEFINED
+} DivisionStatusEnum;
+/** "Remark_1" {Description = ""} */
+/* Utilities::Arinc429Parser::tArinc429StatusEnum */
+typedef enum {
+  ARINC_429_STATUS_FAILURE_Utilities_Arinc429Parser,
+  ARINC_429_STATUS_DATA_NOT_COMPUTED_Utilities_Arinc429Parser,
+  ARINC_429_STATUS_FUNCTIONAL_TEST_Utilities_Arinc429Parser,
+  ARINC_429_STATUS_DATA_OK_Utilities_Arinc429Parser,
+  ARINC_429_STATUS_BCD_00_Utilities_Arinc429Parser,
+  ARINC_429_STATUS_BCD_11_Utilities_Arinc429Parser
+} tArinc429StatusEnum_Utilities_Arinc429Parser;
+/* VideoVcComponentEnum */
+typedef enum {
+  VIDEO_VC_0,
+  VIDEO_VC_1,
+  VIDEO_VC_2,
+  VIDEO_VC_3,
+  VIDEO_VC_4,
+  VIDEO_VC_5,
+  VIDEO_VC_6,
+  VIDEO_VC_7,
+  VIDEO_VC_8,
+  VIDEO_VC_9
+} VideoVcComponentEnum;
+/* CLAWSInterface::ApproachModeClawsEnum */
+typedef enum {
+  APPROACH_MODE_NP_CLAWSInterface,
+  APPROACH_MODE_C1_CLAWSInterface,
+  APPROACH_MODE_C2_CLAWSInterface,
+  APPROACH_MODE_C3_CLAWSInterface,
+  NUM_OF_APPROACH_MODES_CLAWSInterface
+} ApproachModeClawsEnum_CLAWSInterface;
+/** Longitudinal Flight Director Modes Enumeration */
+/* CLAWSInterface::LongitudinalFlightDirectorModeEnum */
+typedef enum {
+  /** Glideslope tracking law #1 engaged */ LONG_FD_GS_TRACK_1_CLAWSInterface,
+  LONG_FD_TOGA_CLAWSInterface,
+  LONG_FD_OFF_CLAWSInterface,
+  LONG_FD_VNAV_PATH_CLAWSInterface,
+  LONG_FD_PATH_CLAWSInterface,
+  LONG_FD_OTHER_CLAWSInterface,
+  LONG_FD_INVALID_CLAWSInterface = -1
+} LongitudinalFlightDirectorModeEnum_CLAWSInterface;
+/** Lateral Flight Director Modes Enumeration */
+/* CLAWSInterface::LateralFlightDirectorModeEnum */
+typedef enum {
+  /** VOR/LOC track engaged */ LAT_FD_VOR_LOC_CLAWSInterface,
+  /** Take-off/Go-Around (TOGA mode engaged) */ LAT_FD_TOGA_CLAWSInterface,
+  /** The lateral flight director is off (No mode engaged) */ LAT_FD_OFF_CLAWSInterface,
+  LAT_FD_OTHER_CLAWSInterface
+} LateralFlightDirectorModeEnum_CLAWSInterface;
+/* CLAWSInterface::VorLocModeEnum */
+typedef enum {
+  NEITHER_CLAWSInterface,
+  ILS_MODE_CLAWSInterface,
+  VOR_MODE_CLAWSInterface,
+  NUM_OF_VOR_LOC_MODES_CLAWSInterface
+} VorLocModeEnum_CLAWSInterface;
+/* CLAWSInterface::SpeedModeEnum */
+typedef enum {
+  SPEED_MODE_SPEED_CLAWSInterface,
+  SPEED_MODE_MACH_CLAWSInterface
+} SpeedModeEnum_CLAWSInterface;
+/* TYPES::VerticalFdArmModeEnum */
+typedef enum {
+  VERTICAL_FD_ARM_MODE_NONE_TYPES = 0,
+  VERTICAL_FD_ARM_MODE_ALT_SEL_TYPES = 18,
+  VERTICAL_FD_ARM_MODE_GLIDESLOPE_TYPES = 26,
+  VERTICAL_FD_ARM_MODE_GLIDEPATH_TYPES = 30,
+  VERTICAL_FD_ARM_MODE_VNAV_TYPES = 38,
+  VERTICAL_FD_ARM_MODE_VASEL_TYPES = 44,
+  VERTICAL_FD_ARM_MODE_VGP_TYPES = 48,
+  VERTICAL_FD_ARM_MODE_WS_TYPES = 50
+} VerticalFdArmModeEnum_TYPES;
+/* TYPES::VerticalSpeedPhaseEnum */
+typedef enum {
+  V_SPEED_PHASE_TAKE_OFF_TYPES,
+  V_SPEED_PHASE_LANDING_TYPES
+} VerticalSpeedPhaseEnum_TYPES;
+/* TYPES::AutoThrottleModeEnum */
+typedef enum {
+  AUTO_THROTTLE_MODE_TAKEOFF_TYPES,
+  AUTO_THROTTLE_MODE_RETARD_TYPES,
+  AUTO_THROTTLE_MODE_THRUST_TYPES,
+  AUTO_THROTTLE_MODE_SPEED_CAS_TYPES,
+  AUTO_THROTTLE_MODE_THRUST_INVALID_TYPES,
+  AUTO_THROTTLE_MODE_NOT_USED_TYPES,
+  AUTO_THROTTLE_MODE_GO_AROUND_TYPES,
+  AUTO_THROTTLE_MODE_SPEED_MACH_TYPES
+} AutoThrottleModeEnum_TYPES;
+/* TYPES::AlertMessageStateEnum */
+typedef enum {
+  ALERT_MESSAGE_NONE_TYPES,
+  ALERT_MESSAGE_ARMED_TYPES,
+  ALERT_MESSAGE_ACTIVE_TYPES
+} AlertMessageStateEnum_TYPES;
+/* TYPES::AutoPilotDataSideEnum */
+typedef enum {
+  AUTO_PILOT_DATA_SIDE_RIGHT_TYPES,
+  AUTO_PILOT_DATA_SIDE_LEFT_TYPES,
+  AUTO_PILOT_DATA_SIDE_DUAL_COUPLE_TYPES
+} AutoPilotDataSideEnum_TYPES;
+/* TYPES::SelectedAirspeedSourceEnum */
+typedef enum {
+  SELECTED_AIR_SPEED_SOURCE_MANUAL_TYPES,
+  SELECTED_AIR_SPEED_SOURCE_FMS_TYPES
+} SelectedAirspeedSourceEnum_TYPES;
+/* TYPES::DisplayedAirBrakeStateEnum */
+typedef enum {
+  DISPLAYED_AB_NOT_DISPLAYED_TYPES,
+  DISPLAYED_AB_TYPES,
+  DISPLAYED_AB1_TYPES,
+  DISPLAYED_AB2_TYPES
+} DisplayedAirBrakeStateEnum_TYPES;
+/* TYPES::FmsGpsSourceEnum */
+typedef enum {
+  FMS_GPS_SOURCE_NONE_TYPES,
+  FMS_GPS_SOURCE_GPS1_TYPES,
+  FMS_GPS_SOURCE_GPS2_TYPES
+} FmsGpsSourceEnum_TYPES;
+/* TYPES::VerticalDeviationTypeEnum */
+typedef enum {
+  VERTICAL_DEVIATION_TYPE_VPATH_TYPES,
+  VERTICAL_DEVIATION_TYPE_VGP_TYPES
+} VerticalDeviationTypeEnum_TYPES;
+/* TYPES::AnnunciationStatusEnum */
+typedef enum {
+  ANNUNCIATION_STATUS_NOT_DISPLAYED_TYPES,
+  ANNUNCIATION_STATUS_PREVIEW_TYPES,
+  ANNUNCIATION_STATUS_ACTIVE_TYPES,
+  ANNUNCIATION_STATUS_FLASHING_TYPES
+} AnnunciationStatusEnum_TYPES;
+/* TYPES::LpvVerticalDeviationStatusEnum */
+typedef enum {
+  LPV_VERTICAL_DEV_NOT_DISPLAYED_TYPES,
+  LPV_VERTICAL_DEV_PREVIEW_TYPES,
+  LPV_VERTICAL_DEV_ACTIVE_TYPES,
+  LPV_VERTICAL_DEV_FLASHING_TYPES
+} LpvVerticalDeviationStatusEnum_TYPES;
+/* TYPES::FlapsMarkerStatusEnum */
+typedef enum {
+  FLAPS_MARKER_SELECTED_0_TYPES,
+  FLAPS_MARKER_SELECTED_1_TYPES,
+  FLAPS_MARKER_SELECTED_2_TYPES,
+  FLAPS_MARKER_SELECTED_3_TYPES,
+  FLAPS_MARKER_INVALID_TYPES
+} FlapsMarkerStatusEnum_TYPES;
+/* TYPES::FlapsStateEnum */
+typedef enum {
+  FLAPS_STATE_INVALID_TYPES,
+  FLAPS_STATE_OK_TYPES,
+  FLAPS_STATE_FAILED_TYPES,
+  FLAPS_STATE_NO_TO_TYPES
+} FlapsStateEnum_TYPES;
+/* TYPES::SlatsStatusEnum */
+typedef enum {
+  SLATS_STATUS_NOT_EXTENDED_TYPES,
+  SLATS_STATUS_MOVING_TYPES,
+  SLATS_STATUS_EXTENDED_NORMAL_TYPES,
+  SLATS_STATUS_EXTENDED_ABNORMAL_TYPES,
+  SLATS_STATUS_EXTENDED_NO_TO_TYPES,
+  SLATS_STATUS_UNDETEMINED_TYPES
+} SlatsStatusEnum_TYPES;
+/* TYPES::AircraftMarkEnum */
+typedef enum {
+  AIRCRAFT_MARK_1_TYPES,
+  AIRCRAFT_MARK_2_TYPES,
+  AIRCRAFT_MARK_3_TYPES
+} AircraftMarkEnum_TYPES;
+/* TYPES::AutoThrottleN1UpperLimit */
+typedef enum {
+  AT_N1_UPPER_LIMIT_TAKEOFF_TYPES,
+  AT_N1_UPPER_LIMIT_RTTO_TYPES,
+  AT_N1_UPPER_LIMIT_CLIMB_TYPES,
+  AT_N1_UPPER_LIMIT_CLIMB_DELTA_TYPES,
+  AT_N1_UPPER_LIMIT_RESERVED_TYPES,
+  AT_N1_UPPER_LIMIT_CRUISE_TYPES
+} AutoThrottleN1UpperLimit_TYPES;
+/* TYPES::RnpAnnunciationColorEnum */
+typedef enum {
+  RNP_ANNUNCIATION_COLOR_GREEN_TYPES,
+  RNP_ANNUNCIATION_COLOR_AMBER_TYPES,
+  RNP_ANNUNCIATION_COLOR_RED_TYPES,
+  RNP_ANNUNCIATION_COLOR_WHITE_TYPES
+} RnpAnnunciationColorEnum_TYPES;
+/* TYPES::ApproachAnnunciationColorEnum */
+typedef enum {
+  APPROACH_ANNUNCIATION_COLOR_GREEN_TYPES,
+  APPROACH_ANNUNCIATION_COLOR_AMBER_TYPES,
+  APPROACH_ANNUNCIATION_COLOR_RED_TYPES,
+  APPROACH_ANNUNCIATION_COLOR_WHITE_TYPES
+} ApproachAnnunciationColorEnum_TYPES;
+/* TYPES::MinimumSelectionEnum */
+typedef enum {
+  MINIMUM_SELECTION_DH_TYPES,
+  MINIMUM_SELECTION_MDA_TYPES
+} MinimumSelectionEnum_TYPES;
+/* TYPES::LandingGearState */
+typedef enum {
+  GEAR_STATE_UPLOCKED_TYPES,
+  GEAR_STATE_DOWNLOCKED_TYPES,
+  GEAR_STATE_UPLOCKED_HANDLE_DOWN_TYPES,
+  GEAR_STATE_UPLOCKED_AURAL_WARNING_TYPES,
+  GEAR_STATE_INVALID_TYPES,
+  GEAR_STATE_TRANSITIONING_DOWN_TYPES,
+  GEAR_STATE_TRANSITIONING_DOWN_GEAR_EXTEND_TYPES,
+  GEAR_STATE_TRANSITIONING_DOWN_AURAL_WARNING_TYPES,
+  GEAR_STATE_TRANSITIONING_UP_TYPES,
+  GEAR_STATE_TRANSITIONING_UP_TOO_LONG_TYPES
+} LandingGearState_TYPES;
+/* TYPES::DeviationTypeState */
+typedef enum {
+  FAILURE_WARNING_TYPES,
+  NO_COMPUTED_DATA_TYPES,
+  FUNCTIONAL_TEST_TYPES,
+  NORMAL_OPERATION_TYPES
+} DeviationTypeState_TYPES;
+/* TYPES::TcasCombinedControlEnum */
+typedef enum {
+  TCAS_CONTROL_NO_ADVISORY_TYPES,
+  TCAS_CONTROL_CLEAR_OF_CONTENT_TYPES,
+  TCAS_CONTROL_DROP_TRACK_TYPES,
+  TCAS_CONTROL_ALTITUDE_LOST_TYPES,
+  TCAS_CONTROL_CLIMB_CORRECTIVE_TYPES,
+  TCAS_CONTROL_DESCENT_CORRECTIVE_TYPES,
+  TCAS_CONTROL_PREVENTIVE_TYPES,
+  TCAS_CONTROL_NOT_USED_TYPES
+} TcasCombinedControlEnum_TYPES;
+/* TYPES::TcasDownAdvisoryEnum */
+typedef enum {
+  TCAS_DOWN_ADVISORY_NO_DOWN_ADVISORY_TYPES,
+  TCAS_DOWN_ADVISORY_DESCENT_TYPES,
+  TCAS_DOWN_ADVISORY_DONT_CLIMB_TYPES,
+  TCAS_DOWN_ADVISORY_DONT_CLIMB_ABOVE_500_TYPES,
+  TCAS_DOWN_ADVISORY_DONT_CLIMB_ABOVE_1000_TYPES,
+  TCAS_DOWN_ADVISORY_DONT_CLIMB_ABOVE_2000_TYPES,
+  TCAS_DOWN_ADVISORY_NOT_USED_TYPES,
+  TCAS_DOWN_ADVISORY_NOT_USED_2_TYPES
+} TcasDownAdvisoryEnum_TYPES;
+/* TYPES::TcasUpAdvisoryEnum */
+typedef enum {
+  TCAS_UP_ADVISORY_NO_UP_ADVISORY_TYPES,
+  TCAS_UP_ADVISORY_CLIMB_TYPES,
+  TCAS_UP_ADVISORY_DONT_DESCENT_TYPES,
+  TCAS_UP_ADVISORY_DONT_DESCENT_500_TYPES,
+  TCAS_UP_ADVISORY_DONT_DESCENT_1000_TYPES,
+  TCAS_UP_ADVISORY_DONT_DESCENT_2000_TYPES,
+  TCAS_UP_ADVISORY_NOT_USED_TYPES,
+  TCAS_UP_ADVISORY_NOT_USED_2_TYPES
+} TcasUpAdvisoryEnum_TYPES;
+/* TYPES::AlternateSourceFlagIrsEnum */
+typedef enum {
+  ALTERNATE_SOURCE_FLAG_IRS_NONE_TYPES,
+  ALTERNATE_SOURCE_FLAG_IRS_1_TYPES,
+  ALTERNATE_SOURCE_FLAG_IRS_2_TYPES,
+  ALTERNATE_SOURCE_FLAG_IRS_3_TYPES
+} AlternateSourceFlagIrsEnum_TYPES;
+/* TYPES::FmsSelectedEnum */
+typedef enum {
+  FMS_SELECTED_1_TYPES,
+  FMS_SELECTED_2_TYPES,
+  FMS_SELECTED_3_TYPES
+} FmsSelectedEnum_TYPES;
+/* TYPES::LpvModeAnnunciationColorEnum */
+typedef enum {
+  LPV_MODE_ANNUNCIATION_COLOR_GREEN_TYPES,
+  LPV_MODE_ANNUNCIATION_COLOR_AMBER_TYPES,
+  LPV_MODE_ANNUNCIATION_COLOR_RED_TYPES,
+  LPV_MODE_ANNUNCIATION_COLOR_WHITE_TYPES
+} LpvModeAnnunciationColorEnum_TYPES;
+/* CLAWS::SelecetedCourseSourceEnum */
+typedef enum {
+  PILOT_SELECTED_COURCE_SOURCE_CLAWS,
+  DESIRED_TRACK_SOURCE_CLAWS,
+  LOCALIZER_TRACK_SOURCE_CLAWS
+} SelecetedCourseSourceEnum_CLAWS;
+/* CLAWS::CoordinateSystemEnum */
+typedef enum {
+  COORDINATE_SYSTEM_TRUE_CLAWS,
+  COORDINATE_SYSTEM_MAGNETIC_CLAWS
+} CoordinateSystemEnum_CLAWS;
+/* GPSManager::GpsDeviceEnum */
+typedef enum {
+  GPS_DEVICE_1_GPSManager,
+  GPS_DEVICE_2_GPSManager,
+  NUM_OF_GPS_DEVICES_GPSManager
+} GpsDeviceEnum_GPSManager;
+/* BasicIO::A429::DataTypeEnum */
+typedef enum {
+  DATA_TYPE_REAL_BasicIO_A429,
+  DATA_TYPE_INT_BasicIO_A429,
+  DATA_TYPE_MASKED_INT_BasicIO_A429,
+  DATA_TYPE_BOOL_BasicIO_A429
+} DataTypeEnum_BasicIO_A429;
+/* MAU::MauSdiTypeEnum */
+typedef enum {
+  MAU_SDI_TYPE_NONE_MAU,
+  MAU_SDI_TYPE_TACTICAL_MAU,
+  MAU_SDI_TYPE_FCS_MAU,
+  MAU_SDI_TYPE_FMS_MAU,
+  MAU_SDI_TYPE_MWS_A_MAU,
+  MAU_SDI_TYPE_MWS_C_MAU,
+  MAU_SDI_TYPE_CIOCAL_MAU,
+  MAU_SDI_TYPE_MASTER_EEC_MAU,
+  MAU_SDI_TYPE_MRC_MAU,
+  MAU_SDI_TYPE_ADS_MAU,
+  MAU_SDI_TYPE_APM_MAU,
+  MAU_SDI_TYPE_EGPWM_MAU,
+  MAU_SDI_TYPE_FORCE_00_MAU,
+  MAU_SDI_TYPE_FORCE_01_MAU,
+  MAU_SDI_TYPE_FORCE_10_MAU,
+  MAU_SDI_TYPE_FORCE_11_MAU
+} MauSdiTypeEnum_MAU;
+/* IRSManager::IrsDeviceEnum */
+typedef enum {
+  IRS_DEVICE_1_IRSManager,
+  IRS_DEVICE_2_IRSManager,
+  IRS_DEVICE_3_IRSManager,
+  NUM_OF_IRS_DEVICES_IRSManager
+} IrsDeviceEnum_IRSManager;
+/* OHUManager::OhuBrightnessKnobEnum */
+typedef enum {
+  OHU_BRIGHTNESS_KNOB_NO_CHANGE_OHUManager,
+  OHU_BRIGHTNESS_KNOB_DOWN_OHUManager,
+  OHU_BRIGHTNESS_KNOB_UP_OHUManager,
+  OHU_BRIGHTNESS_KNOB_RESET_DEFAULT_OHUManager
+} OhuBrightnessKnobEnum_OHUManager;
+/* OHUManager::OhuContrastKnobEnum */
+typedef enum {
+  OHU_CONTRAST_KNOB_NO_CHANGE_OHUManager,
+  OHU_CONTRAST_KNOB_UP_OHUManager,
+  OHU_CONTRAST_KNOB_DOWN_OHUManager
+} OhuContrastKnobEnum_OHUManager;
+/* RADALTManager::RadaltDeviceEnum */
+typedef enum {
+  RADALT_DEVICE_1_RADALTManager,
+  RADALT_DEVICE_2_RADALTManager,
+  NUM_OF_RADALT_DEVICES_RADALTManager
+} RadaltDeviceEnum_RADALTManager;
+/* SVSManager::SvsRunwayInfoEnum */
+typedef enum {
+  SVS_RUNWAY_INFO_SYMBOLIC_SVSManager,
+  SVS_RUNWAY_INFO_CONFORMAL_SVSManager,
+  SVS_RUNWAY_INFO_NO_SELECTED_SVSManager,
+  SVS_RUNWAY_INFO_SELECTED_NOT_DISPLAYED_SVSManager
+} SvsRunwayInfoEnum_SVSManager;
+/* SVSManager::SvsAeronauticalDbSelectedEnum */
+typedef enum {
+  SVS_AERONAUTICAL_DB_SELECTED_1_SVSManager,
+  SVS_AERONAUTICAL_DB_SELECTED_2_SVSManager
+} SvsAeronauticalDbSelectedEnum_SVSManager;
+/* SVSManager::SvsDbIntegrityStatusEnum */
+typedef enum {
+  SVS_DB_INTEGRITY_STATUS_CRC_OK_SVSManager,
+  SVS_DB_INTEGRITY_STATUS_IN_PROGRESS_SVSManager,
+  SVS_DB_INTEGRITY_STATUS_CRC_FAIL_SVSManager,
+  SVS_DB_INTEGRITY_STATUS_DB_EXPIRED_SVSManager,
+  SVS_DB_INTEGRITY_STATUS_DB_OLD_SVSManager,
+  SVS_DB_INTEGRITY_STATUS_DB_INVALID_SVSManager,
+  SVS_DB_INTEGRITY_STATUS_DB_NOT_CHECKED_SVSManager
+} SvsDbIntegrityStatusEnum_SVSManager;
+/* EVSManager::EvsHudcuMasterEnum */
+typedef enum {
+  EVS_HUDCU_MASTER_LH_EVSManager,
+  EVS_HUDCU_MASTER_RH_EVSManager
+} EvsHudcuMasterEnum_EVSManager;
+/* HUDManager::StatesModesManager::MaintenanceModeEnum */
+typedef enum {
+  MAINTENANCE_ALIGNMENT_MODE_HUDManager_StatesModesManager,
+  MAINTENANCE_LOADER_MODE_HUDManager_StatesModesManager,
+  MAINTENANCE_IBIT_MODE_HUDManager_StatesModesManager
+} MaintenanceModeEnum_HUDManager_StatesModesManager;
+/* HUDManager::MaintenanceSubmodeEnum */
+typedef enum {
+  MAINTENANCE_SUBMODE_ALIGN_HUD_HUDManager,
+  MAINTENANCE_SUBMODE_ALIGN_EVS_HUDManager
+} MaintenanceSubmodeEnum_HUDManager;
+/* HUDManager::VideoLogic::VideoXvsModeEnum */
+typedef enum {
+  VIDEO_XVS_MODE_ON_HUDManager_VideoLogic,
+  VIDEO_XVS_MODE_SBY_HUDManager_VideoLogic,
+  VIDEO_XVS_MODE_OFF_HUDManager_VideoLogic
+} VideoXvsModeEnum_HUDManager_VideoLogic;
+/* OHUManager::SvsMinRangeEnum */
+typedef enum {
+  SVS_MIN_RANGE_NO_CHANGE_OHUManager,
+  SVS_MIN_RANGE_DOWN_OHUManager,
+  SVS_MIN_RANGE_UP_OHUManager,
+  SVS_MIN_RANGE_RESET_OHUManager
+} SvsMinRangeEnum_OHUManager;
+/* HUDManager::StatesModesManager::OperationalModeEnum */
+typedef enum {
+  OPERATIONAL_INITIALIZATION_MODE_HUDManager_StatesModesManager,
+  OPERATIONAL_STBY_MODE_HUDManager_StatesModesManager,
+  OPERATIONAL_EXTENDED_INITIALIZATION_MODE_HUDManager_StatesModesManager,
+  OPERATIONAL_NORMAL_MODE_HUDManager_StatesModesManager
+} OperationalModeEnum_HUDManager_StatesModesManager;
+/* HUDManager::TestsManager::OhuTooBrightTestStageEnum */
+typedef enum {
+  OHU_TOO_BRIGHT_TEST_STAGE_1_HUDManager_TestsManager,
+  OHU_TOO_BRIGHT_TEST_STAGE_2_HUDManager_TestsManager
+} OhuTooBrightTestStageEnum_HUDManager_TestsManager;
+/* HUDManager::TestsManager::OhuBakLightOffTestStageEnum */
+typedef enum {
+  OHU_BL_OFF_TEST_STAGE_1_HUDManager_TestsManager,
+  OHU_BL_OFF_TEST_STAGE_2_HUDManager_TestsManager,
+  OHU_BL_OFF_TEST_STAGE_3_HUDManager_TestsManager
+} OhuBakLightOffTestStageEnum_HUDManager_TestsManager;
+/* HUDManager::FailuresManager::SystemModeVerificationEnum */
+typedef enum {
+  SYSTEM_MODE_VERIFICATION_NONE_HUDManager_FailuresManager,
+  SYSTEM_MODE_VERIFICATION_NORMAL_OR_STBY_HUDManager_FailuresManager
+} SystemModeVerificationEnum_HUDManager_FailuresManager;
+/* NVRAMManager::NvramIndexEnum */
+typedef enum {
+  NVRAM_INDEX_EVS_VERTICAL_OFFSET_NVRAMManager,
+  NVRAM_INDEX_EVS_LATERAL_OFFSET_NVRAMManager,
+  NVRAM_INDEX_EVS_ROLL_OFFSET_NVRAMManager,
+  NVRAM_INDEX_HUD_VERTICAL_OFFSET_NVRAMManager,
+  NVRAM_INDEX_HUD_LATERAL_OFFSET_NVRAMManager,
+  NVRAM_INDEX_HUD_ROLL_OFFSET_NVRAMManager,
+  NVRAM_INDEX_CU_FAILURES_NVRAMManager,
+  NUMBER_OF_NVRAM_INDEXES_NVRAMManager
+} NvramIndexEnum_NVRAMManager;
+/* HUDManager::TestsManager::ExtInitTestsListEnum */
+typedef enum {
+  TEST_OHU_TOO_BRIGHT_HUDManager_TestsManager,
+  TEST_OHU_BACKLIGHT_OFF_HUDManager_TestsManager
+} ExtInitTestsListEnum_HUDManager_TestsManager;
+/* HUDManager::TestsManager::InitTestsListEnum */
+typedef enum {
+  INIT_TEST_INTERNAL_INTEGRITY_HUDManager_TestsManager,
+  INIT_TEST_NUM_OF_INIT_TESTS_HUDManager_TestsManager
+} InitTestsListEnum_HUDManager_TestsManager;
+/* MAU::AdsSourceSelectionEnum */
+typedef enum {
+  ADS_SOURCE_SELECTION_NONE_MAU,
+  ADS_SOURCE_SELECTION_ADS1_MAU,
+  ADS_SOURCE_SELECTION_ADS2_MAU,
+  ADS_SOURCE_SELECTION_ADS3_MAU
+} AdsSourceSelectionEnum_MAU;
+/* VIDEOManager::VideoSourceEnum */
+typedef enum {
+  VIDEO_EVS_SOURCE_VIDEOManager,
+  VIDEO_ANALOG_SOURCE_VIDEOManager,
+  VIDEO_2_SOURCE_VIDEOManager,
+  VIDEO_SVS_SOURCE_VIDEOManager,
+  VIDEO_4_SOURCE_VIDEOManager,
+  VIDEO_SYMB_SOURCE_VIDEOManager,
+  NUM_OF_VIDEO_SOURCES_VIDEOManager
+} VideoSourceEnum_VIDEOManager;
+/* VIDEOManager::VideoDisplayDestinationEnum */
+typedef enum {
+  HUD_DISPLAY_DESTINATION_VIDEOManager,
+  DOWN_DISPLAY_DESTINATION_VIDEOManager,
+  NUM_OF_DISPLAY_DESTINATIONS_VIDEOManager
+} VideoDisplayDestinationEnum_VIDEOManager;
+/* VideoStickStbyOnEnum */
+typedef enum { VIDEO_STICK_STBY, VIDEO_STICK_ON } VideoStickStbyOnEnum;
+/* VideoXvsOffOnEnum */
+typedef enum { VIDEO_XVS_OFF, VIDEO_XVS_ON } VideoXvsOffOnEnum;
+/* VideoStateEnum */
+typedef enum { VIDEO_STATE_OFF, VIDEO_STATE_ON } VideoStateEnum;
+/* HUDManager::GlobalBrightnessManager::HudBrightnessModeEnum */
+typedef enum {
+  HUD_BRIGHTNESS_MODE_AUTO_HUDManager_GlobalBrightnessManager,
+  HUD_BRIGHTNESS_MODE_MANUAL_HUDManager_GlobalBrightnessManager
+} HudBrightnessModeEnum_HUDManager_GlobalBrightnessManager;
+/* HUDManager::FailuresManager::FailureListEnum */
+typedef enum {
+  OHU_NVRAM_FAILURE_HUDManager_FailuresManager,
+  OHU_INTERNAL_I2C_FAILURE_HUDManager_FailuresManager,
+  OHU_A2D_FAILURE_HUDManager_FailuresManager,
+  OHU_FLS_FAILURE_HUDManager_FailuresManager,
+  OHU_CP_INIT_FAILURE_HUDManager_FailuresManager,
+  OHU_BACK_LIGHT_OFF_DISCERETE_FAILURE_HUDManager_FailuresManager,
+  OHU_VIDEO_PATH_FAILURE_HUDManager_FailuresManager,
+  OHU_LCD_DIGITAL_CONTROL_SIGNAL_FAILURE_HUDManager_FailuresManager,
+  OHU_CP_KNOBS_FAILURE_HUDManager_FailuresManager,
+  OHU_LVPS_AND_CAPACITORS_FAILURE_HUDManager_FailuresManager,
+  OHU_ARINC_818_FAILURE_HUDManager_FailuresManager,
+  OHU_HIGH_TEMPERATURE_FAILURE_HUDManager_FailuresManager,
+  OHU_DATA_AND_COMMAND_CRC_FAILURE_HUDManager_FailuresManager,
+  OHU_LED_CONTROL_FAILURE_HUDManager_FailuresManager,
+  OHU_CP_I2C_FAILURE_HUDManager_FailuresManager,
+  OHU_818_KEEP_ALIVE_COUNTER_FAILURE_HUDManager_FailuresManager,
+  OHU_CP_INTERNAL_I2C_FAILURE_HUDManager_FailuresManager,
+  OHU_LCD_DRIVER_FAILURE_HUDManager_FailuresManager,
+  OHU_PREV_VIDEO_FRAME_CRC_FAILURE_HUDManager_FailuresManager,
+  OHU_CPS_FAILURE_HUDManager_FailuresManager,
+  OHU_AC_TYPE_EXT_FAILURE_HUDManager_FailuresManager,
+  OHU_CU_KEEP_ALIVE_COUNTER_FAILURE_HUDManager_FailuresManager,
+  OHU_SR1_SYMB_FREEZE_FAILURE_HUDManager_FailuresManager,
+  DISCRETE_PROGRAM_PIN1_FAILURE_HUDManager_FailuresManager,
+  DISCRETE_PROGRAM_PIN2_FAILURE_HUDManager_FailuresManager,
+  DISCRETE_PROGRAM_PIN3_FAILURE_HUDManager_FailuresManager,
+  DISCRETE_PP_ODDPAR_FAILURE_HUDManager_FailuresManager,
+  DISCRETE_PP_PICOPI_FAILURE_HUDManager_FailuresManager,
+  OHU_LED_CONTROL_EXT_PBIT_FAILURE_HUDManager_FailuresManager,
+  OHU_DATA_AND_COMMAND_CRC_EXT_PBIT_FAILURE_HUDManager_FailuresManager,
+  OHU_ARINC_818_KEEP_ALIVE_COUNTER_EXT_PBIT_FAILURE_HUDManager_FailuresManager,
+  OHU_FRAME_CRC_FAILURE_HUDManager_FailuresManager,
+  OHU_BACK_LIGHT_OFF_PBIT_FAILURE_HUDManager_FailuresManager,
+  HUD_CU_ARINC_429_MAU_IN1_SR1_FAILURE_HUDManager_FailuresManager,
+  ARINC_429_RX_02_FAILURE_HUDManager_FailuresManager,
+  OHU_KEEP_ALIVE_FAILURE_HUDManager_FailuresManager,
+  ARINC_429_RX_01_FAILURE_HUDManager_FailuresManager,
+  ARINC_818_TX_SR1_FAILURE_HUDManager_FailuresManager,
+  HUD_CU_LVDS_SR1_FAILURE_HUDManager_FailuresManager,
+  EAGLE_FREEZE_FAILURE_HUDManager_FailuresManager,
+  EAGLE_GRAPHIC_MEMORY_INTERFACE_FAILURE_HUDManager_FailuresManager,
+  EVS_FRAME_FREEZE_FAILURE_HUDManager_FailuresManager,
+  EAGLE_FPGA_RGISTER_BUS_FAILURE_HUDManager_FailuresManager,
+  EAGLE_EXTERNAL_SYNC_FAILURE_HUDManager_FailuresManager,
+  OHU_FLS_TOO_BRIGHT_FAILURE_HUDManager_FailuresManager,
+  OHU_DEPLOYED_STOWED_FAILURE_HUDManager_FailuresManager,
+  OHU_BACKLIGHT_OFF_DISCRETE_EXT_FAILURE_HUDManager_FailuresManager,
+  OHU_TOO_BRIGHT_EXT_PBIT_FAILURE_HUDManager_FailuresManager,
+  MAU_APM_OHU_CRC_FAILURE_HUDManager_FailuresManager,
+  SVS_PRESENT_POSITION_FAILURE_HUDManager_FailuresManager,
+  SVS_HEADING_FAILURE_HUDManager_FailuresManager,
+  SVS_ROLL_FAILURE_HUDManager_FailuresManager,
+  SVS_PITCH_FAILURE_HUDManager_FailuresManager,
+  EVS_CRC_FREEZE_FAILURE_HUDManager_FailuresManager,
+  EVS_HEATER_FAILURE_HUDManager_FailuresManager,
+  EVS_LH_OPT_TRANSMITTER_FAILURE_HUDManager_FailuresManager,
+  EVS_POWER_FAILURE_HUDManager_FailuresManager,
+  EVS_RECEIVED_ARINC_429_RX_FAILURE_HUDManager_FailuresManager,
+  EVS_TVS_SENSOR_FAILURE_HUDManager_FailuresManager,
+  EVS_NVS_SENSOR_FAILURE_HUDManager_FailuresManager,
+  EVS_DVS1_SENSOR_FAILURE_HUDManager_FailuresManager,
+  EVS_DVS2_SENSOR_FAILURE_HUDManager_FailuresManager,
+  EVS_DVS3_SENSOR_FAILURE_HUDManager_FailuresManager,
+  EVS_DVS4_SENSOR_FAILURE_HUDManager_FailuresManager,
+  EVS_FROZEN_TVS_FAILURE_HUDManager_FailuresManager,
+  EVS_FROZEN_NVS_FAILURE_HUDManager_FailuresManager,
+  EVS_FROZEN_DVS1_FAILURE_HUDManager_FailuresManager,
+  EVS_FROZEN_DVS2_FAILURE_HUDManager_FailuresManager,
+  EVS_FROZEN_DVS3_FAILURE_HUDManager_FailuresManager,
+  EVS_FROZEN_DVS4_FAILURE_HUDManager_FailuresManager,
+  EVS_TVS_INTERNAL_TP_FAILURE_HUDManager_FailuresManager,
+  EVS_NVS_INTERNAL_TP_FAILURE_HUDManager_FailuresManager,
+  EVS_DVS1_INTERNAL_TP_FAILURE_HUDManager_FailuresManager,
+  EVS_DVS2_INTERNAL_TP_FAILURE_HUDManager_FailuresManager,
+  EVS_DVS3_INTERNAL_TP_FAILURE_HUDManager_FailuresManager,
+  EVS_DVS4_INTERNAL_TP_FAILURE_HUDManager_FailuresManager,
+  EVS_PFI_FAILURE_HUDManager_FailuresManager,
+  EVS_OVERTEMP_FAILURE_HUDManager_FailuresManager,
+  EVS_NUC_FAILURE_HUDManager_FailuresManager,
+  EVS_DDR_FAILURE_HUDManager_FailuresManager,
+  EVS_VIDEO_INVALID_FAILURE_HUDManager_FailuresManager,
+  EVS_HUMODITY_HIGH_FAILURE_HUDManager_FailuresManager,
+  SVS_ARINC_429_RX_02_SR3_FAILURE_HUDManager_FailuresManager,
+  SVS_ARINC_429_RX_03_SR3_FAILURE_HUDManager_FailuresManager,
+  SVS_ARINC_429_RX_04_SR3_FAILURE_HUDManager_FailuresManager,
+  SVS_ARINC_429_RX_05_SR3_FAILURE_HUDManager_FailuresManager,
+  SVS_ARINC_429_RX_06_SR3_FAILURE_HUDManager_FailuresManager,
+  SVS_ARINC_429_RX_22_SR3_FAILURE_HUDManager_FailuresManager,
+  SVS_ARINC_429_RX_23_SR3_FAILURE_HUDManager_FailuresManager,
+  SVS_ARINC_429_RX_24_SR3_FAILURE_HUDManager_FailuresManager,
+  SVS_ARINC_429_RX_26_SR3_FAILURE_HUDManager_FailuresManager,
+  SVS_DEGRADED_IAMGE_FAILURE_HUDManager_FailuresManager,
+  SVS_EAGLE_FPGA_GENERAL_ERRORS_SR3_FAILURE_HUDManager_FailuresManager,
+  SVS_EAGLE_FPGA_INTERRUPTS_SR3_FAILURE_HUDManager_FailuresManager,
+  SVS_EAGLE_FPGA_REGISTER_BUS_FAILURE_HUDManager_FailuresManager,
+  SVS_EXTERNAL_SYNCS_DETECTION_SR3_FAILURE_HUDManager_FailuresManager,
+  SVS_GC_CPLD_INTERRUPTS_SR3_FAILURE_HUDManager_FailuresManager,
+  SVS_GRAPHICS_MEMORY_IF_SR3_FAILURE_HUDManager_FailuresManager,
+  SVS_HORIZONTAL_FOM_FAILURE_HUDManager_FailuresManager,
+  SVS_LVDS_SR3_FAILURE_HUDManager_FailuresManager,
+  SVS_MON_TAWS_ALTITUDE_NCD_FAILURE_HUDManager_FailuresManager,
+  SVS_MON_TAWS_POSITION_NCD_FAILURE_HUDManager_FailuresManager,
+  SVS_NO_SELECTED_RUNWAY_FOR_LANDING_FAILURE_HUDManager_FailuresManager,
+  SVS_NVRAM_SR3_FAILURE_HUDManager_FailuresManager,
+  SVS_OBSTACLES_DATABASE_FAILURE_HUDManager_FailuresManager,
+  SVS_OBSTACLES_DATABASE_EXPIRED_FAILURE_HUDManager_FailuresManager,
+  SVS_PCI1_SR1_CBIT_FAILURE_HUDManager_FailuresManager,
+  SVS_PCI1_ERROR_SR3_FAILURE_HUDManager_FailuresManager,
+  SVS_SELECTED_RUNWAY_IN_DATABASE_FALIURE_HUDManager_FailuresManager,
+  SVS_TAWS_ALTITUDE_MISCOMPARE_FAILURE_HUDManager_FailuresManager,
+  SVS_TAWS_POSITION_MISCOMPARE_FAILURE_HUDManager_FailuresManager,
+  SVS_TERRAIN_DB_ERROR_FAILURE_HUDManager_FailuresManager,
+  SVS_TERRAIN_STATIC_ERROR_THRESHOLD_FAILURE_HUDManager_FailuresManager,
+  SVS_VERTICAL_FOM_FAILURE_HUDManager_FailuresManager,
+  SVS_WATCHDOG_EXPIRATION_SR3_FAILURE_HUDManager_FailuresManager,
+  OHU_FLS_COMPARISON_FAILURE_HUDManager_FailuresManager,
+  OHU_BRIGHTNESS_COMMAND_ACKNOWLEDGE_FAILURE_HUDManager_FailuresManager,
+  DISPLAY_KEEP_ALIVE_FAILURE_HUDManager_FailuresManager,
+  CU_BACKLIGHT_OFF_DISCRETE_OUT_SR1_FAILURE_HUDManager_FailuresManager,
+  HUD_CU_ARINC_429_RX_22_SR1_FAILURE_HUDManager_FailuresManager,
+  HUD_CU_EAGLE_FPGA_INTERRUPTS_SR1_FAILURE_HUDManager_FailuresManager,
+  HUD_CU_GC_CPLD_INTERRUPTS_SR1_FAILURE_HUDManager_FailuresManager,
+  OHU_TOO_BRIGHT_MONITOR_CBIT_FAILURE_HUDManager_FailuresManager,
+  HUD_CU_DDRMEM_INTERNAL_ERROR_SR1_FAILURE_HUDManager_FailuresManager,
+  HUD_CU_WATCHDOG_MECHANISM_SR1_FAILURE_HUDManager_FailuresManager,
+  HUD_CU_PCI1_ERROR_SR1_FAILURE_HUDManager_FailuresManager,
+  HUD_CU_EAGLE_FPGA_CRC_ERROR_SR1_FAILURE_HUDManager_FailuresManager,
+  HUD_CU_EAGLE_FPGA_GENERAL_ERRORS_SR1_FAILURE_HUDManager_FailuresManager,
+  AC_TYPE_PROGRAM_PIN_MISCOMPARE_FAILURE_HUDManager_FailuresManager,
+  HUD_CU_WATCHDOG_EXPIRATION_SR1_FAILURE_HUDManager_FailuresManager,
+  HUD_CU_ARINC_429_MAU_IN2_SR1_FAILURE_HUDManager_FailuresManager,
+  INTERNAL_INTEGRITY_SR1_FAILURE_HUDManager_FailuresManager,
+  HUD_CU_OVER_TEMP_SR1_FAILURE_HUDManager_FailuresManager,
+  HUD_CU_FULL_EAGLE_GRAPHICS_MEMORY_SR1_FAILURE_HUDManager_FailuresManager,
+  HUD_CU_FULL_HDP_GRAPHICS_MEMORY_SR1_FAILURE_HUDManager_FailuresManager,
+  HUD_CU_OHU_BORESITE_COMMAND_ACKNOWLEDGE_SR1_FAILURE_HUDManager_FailuresManager,
+  HUD_CU_COMMAND_ACKNOWLEDGE_MECHANISM_SR1_FAILURE_HUDManager_FailuresManager,
+  EVS_CALCULATED_ARINC_429_RX_FAILURE_HUDManager_FailuresManager,
+  EVS_ALIGNMENT_OFFSETS_CRC_FAILURE_HUDManager_FailuresManager,
+  EVS_LANDING_REPORTED_FAILURE_HUDManager_FailuresManager,
+  NUMBER_OF_FAILURES_HUDManager_FailuresManager
+} FailureListEnum_HUDManager_FailuresManager;
+/* HUDManager::SystemModeEnum */
+typedef enum {
+  SYSTEM_MODE_INITIALIZATION_HUDManager,
+  SYSTEM_MODE_STBY_HUDManager,
+  SYSTEM_MODE_EXTENDED_INITIALIZATION_HUDManager,
+  SYSTEM_MODE_NORMAL_HUDManager,
+  SYSTEM_MODE_IBIT_HUDManager,
+  SYSTEM_MODE_LOADER_HUDManager,
+  SYSTEM_MODE_ALIGN_HUDManager
+} SystemModeEnum_HUDManager;
+/* HUDManager::HudSystemStateEnum */
+typedef enum {
+  SYSTEM_STATE_OPERATIONAL_HUDManager,
+  SYSTEM_STATE_MAINTENANCE_HUDManager
+} HudSystemStateEnum_HUDManager;
+/* SVSManager::SvsPhaseOfFlightEnum */
+typedef enum {
+  SVS_PHASE_OF_FLIGHT_TAXI_SVSManager,
+  SVS_PHASE_OF_FLIGHT_TOGA_SVSManager,
+  SVS_PHASE_OF_FLIGHT_CRUISE_SVSManager,
+  SVS_PHASE_OF_FLIGHT_APPROACH_SVSManager,
+  SVS_PHASE_OF_FLIGHT_ROLL_OUT_SVSManager
+} SvsPhaseOfFlightEnum_SVSManager;
+/** Enumeration that defines the four available fan speeds in the HUDC. */
+/* SVIOManager::SvioFanSpeedEnum */
+typedef enum {
+  FAN_SPEED_1_SVIOManager,
+  FAN_SPEED_2_SVIOManager,
+  FAN_SPEED_3_SVIOManager,
+  FAN_SPEED_4_SVIOManager
+} SvioFanSpeedEnum_SVIOManager;
+/* HudDataBase::HudDbIndexEnum */
+typedef enum {
+  HUD_DB_INDEX_CLAWS_100FT_GLIDESLOPE_DEVIATION_HudDataBase,
+  HUD_DB_INDEX_CLAWS_100FT_LOCALIZER_DEVIATION_HudDataBase,
+  HUD_DB_INDEX_CLAWS_APPROACH_CAPABILITY_HudDataBase,
+  HUD_DB_INDEX_CLAWS_APPROACH_WARNING_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_CLAWS_AUTOTHROTTLE_RETARD_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_CLAWS_CAT3_SYSTEM_SET_HudDataBase,
+  HUD_DB_INDEX_CLAWS_COMMAND_CUE_DISPLAYED_HudDataBase,
+  HUD_DB_INDEX_CLAWS_FD_LATERAL_COMMAND_HudDataBase,
+  HUD_DB_INDEX_CLAWS_FD_VERTICAL_COMMAND_HudDataBase,
+  HUD_DB_INDEX_CLAWS_FLARE_COMMAND_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_CLAWS_FPV_MODE_HudDataBase,
+  HUD_DB_INDEX_CLAWS_FPV_POSITION_X_HudDataBase,
+  HUD_DB_INDEX_CLAWS_FPV_POSITION_Y_HudDataBase,
+  HUD_DB_INDEX_CLAWS_FPV_VISIBLE_HudDataBase,
+  HUD_DB_INDEX_CLAWS_GROUND_CAPABILITY_HudDataBase,
+  HUD_DB_INDEX_CLAWS_GROUND_LOC_POSITION_X_HudDataBase,
+  HUD_DB_INDEX_CLAWS_GROUND_LOC_POSITION_Y_HudDataBase,
+  HUD_DB_INDEX_CLAWS_GROUND_LOC_VISIBLE_HudDataBase,
+  HUD_DB_INDEX_CLAWS_GROUND_MAX_LOCALIZER_DEVIATION_HudDataBase,
+  HUD_DB_INDEX_CLAWS_GROUND_MODE_HudDataBase,
+  HUD_DB_INDEX_CLAWS_GUIDANCE_CUE_DISPLAYED_HudDataBase,
+  HUD_DB_INDEX_CLAWS_HUD2_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_CLAWS_HUD3_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_CLAWS_HUD3_AVAILABLE_HudDataBase,
+  HUD_DB_INDEX_CLAWS_IDLE_MESSAGE_DISPLAYED_HudDataBase,
+  HUD_DB_INDEX_CLAWS_IDLE_MESSAGE_DISPLAYED_VALID_HudDataBase,
+  HUD_DB_INDEX_CLAWS_MAX_LOCALIZER_DEVIATION_HudDataBase,
+  HUD_DB_INDEX_CLAWS_MAX_NEGATIVE_SPEED_ERROR_HudDataBase,
+  HUD_DB_INDEX_CLAWS_MAX_POSITIVE_SPEED_ERROR_HudDataBase,
+  HUD_DB_INDEX_CLAWS_ROLLOUT_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_CLAWS_ROLLOUT_ARMED_HudDataBase,
+  HUD_DB_INDEX_CLAWS_ROLLOUT_CAUTION_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_CLAWS_TAKEOFF_ARMED_SET_HudDataBase,
+  HUD_DB_INDEX_CLAWS_TAKEOFF_CAUTION_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_CLAWS_TAKEOFF_GUIDANCE_SET_HudDataBase,
+  HUD_DB_INDEX_CLAWS_TAKEOFF_WARNING_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_CLAWS_TD_LOCALIZER_DEVIATION_HudDataBase,
+  HUD_DB_INDEX_CLAWS_TOUCH_DOWN_BANK_ANGLE_HudDataBase,
+  HUD_DB_INDEX_CLAWS_TOUCH_DOWN_IRS_VERTICAL_SPEED_HudDataBase,
+  HUD_DB_INDEX_CLAWS_TOUCH_DOWN_LATERAL_POSITION_HudDataBase,
+  HUD_DB_INDEX_CLAWS_TOUCH_DOWN_LONGITUDIANL_POSITION_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_DISPLAYED_BARO_ALTITUDE_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_DISPLAYED_BARO_ALTITUDE_VISIBLE_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_DISPLAYED_CALIBRATED_AIRSPEED_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_DISPLAYED_CALIBRATED_AIRSPEED_VISIBLE_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_EVS_SBY_ANNUNCIATION_FLASHING_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_FPV_POSITION_X_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_FPV_POSITION_Y_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_FPV_DASHED_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_FPV_MODE_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_FPV_VISIBLE_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_GROUND_LOC_POSITION_X_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_GROUND_LOC_POSITION_Y_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_GROUND_LOC_VISIBLE_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_HORIZON_LINE_DASHED_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_HORIZON_LINE_PITCH_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_HORIZON_LINE_ROLL_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_HORIZON_LINE_VISIBLE_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_KEEP_ALIVE_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_NO_TAKE_OFF_FLASH_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_NO_TAKE_OFF_POSITION_X_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_NO_TAKE_OFF_POSITION_Y_HudDataBase,
+  HUD_DB_INDEX_DISPLAY_NO_TAKE_OFF_VISIBLE_HudDataBase,
+  HUD_DB_INDEX_EVS_BRIGHTNESS_PERCENTAGE_HudDataBase,
+  HUD_DB_INDEX_EVS_IS_AVAILABLE_HudDataBase,
+  HUD_DB_INDEX_EVS_SVS_BALANCE_HudDataBase,
+  HUD_DB_INDEX_EVS_SVS_BALANCE_VALID_HudDataBase,
+  HUD_DB_INDEX_EVS_PARALAX_ENABLED_HudDataBase,
+  HUD_DB_INDEX_GPS_GROUND_SPEED_HudDataBase,
+  HUD_DB_INDEX_GPS_GROUND_SPEED_VALID_HudDataBase,
+  HUD_DB_INDEX_GPS_HFOM_HudDataBase,
+  HUD_DB_INDEX_GPS_HFOM_VALID_HudDataBase,
+  HUD_DB_INDEX_GPS_LATITUDE_HudDataBase,
+  HUD_DB_INDEX_GPS_LATITUDE_VALID_HudDataBase,
+  HUD_DB_INDEX_GPS_LONGITUDE_HudDataBase,
+  HUD_DB_INDEX_GPS_LONGITUDE_VALID_HudDataBase,
+  HUD_DB_INDEX_GPS_TRACK_ANGLE_HudDataBase,
+  HUD_DB_INDEX_GPS_TRACK_ANGLE_VALID_HudDataBase,
+  HUD_DB_INDEX_GPS_SENSOR_OPERATIONAL_MODE_HudDataBase,
+  HUD_DB_INDEX_GPS_SENSOR_OPERATIONAL_MODE_VALID_HudDataBase,
+  HUD_DB_INDEX_HUD_AIRCRAFT_TYPE_HudDataBase,
+  HUD_DB_INDEX_HUD_CU_POSITION_HudDataBase,
+  HUD_DB_INDEX_HUD_DISPLAY_MODE_HudDataBase,
+  HUD_DB_INDEX_HUD_FRAME_NUMBER_HudDataBase,
+  HUD_DB_INDEX_HUD_NUC_ENABLE_HudDataBase,
+  HUD_DB_INDEX_HUD_PHASE_OF_FLIGHT_HudDataBase,
+  HUD_DB_INDEX_HUD_VIDEO_BRIGHTNESS_CORRECT_VALUE_HudDataBase,
+  HUD_DB_INDEX_HUD_XVS_MODE_HudDataBase,
+  HUD_DB_INDEX_HUD_XVS_MODE_VALID_HudDataBase,
+  HUD_DB_INDEX_HUD_XVS_SUB_MODE_HudDataBase,
+  HUD_DB_INDEX_HUD_XVS_SUB_MODE_VALID_HudDataBase,
+  HUD_DB_INDEX_IRS_TRUE_TRACK_ANGLE_HudDataBase,
+  HUD_DB_INDEX_IRS_TRUE_TRACK_ANGLE_VALID_HudDataBase,
+  HUD_DB_INDEX_IRS_TRUE_HEADING_ANGLE_HudDataBase,
+  HUD_DB_INDEX_IRS_TRUE_HEADING_ANGLE_VALID_HudDataBase,
+  HUD_DB_INDEX_IRS_PITCH_ANGLE_HudDataBase,
+  HUD_DB_INDEX_IRS_PITCH_ANGLE_VALID_HudDataBase,
+  HUD_DB_INDEX_IRS_ROLL_ANGLE_HudDataBase,
+  HUD_DB_INDEX_IRS_ROLL_ANGLE_VALID_HudDataBase,
+  HUD_DB_INDEX_IRS_ROLL_RATE_HudDataBase,
+  HUD_DB_INDEX_IRS_ROLL_RATE_VALID_HudDataBase,
+  HUD_DB_INDEX_IRS_PITCH_RATE_HudDataBase,
+  HUD_DB_INDEX_IRS_PITCH_RATE_VALID_HudDataBase,
+  HUD_DB_INDEX_IRS_YAW_RATE_HudDataBase,
+  HUD_DB_INDEX_IRS_YAW_RATE_VALID_HudDataBase,
+  HUD_DB_INDEX_IRS_LONGITUDINAL_ACCELERATION_HudDataBase,
+  HUD_DB_INDEX_IRS_LONGITUDINAL_ACCELERATION_VALID_HudDataBase,
+  HUD_DB_INDEX_IRS_LATERAL_ACCELERATION_HudDataBase,
+  HUD_DB_INDEX_IRS_LATERAL_ACCELERATION_VALID_HudDataBase,
+  HUD_DB_INDEX_IRS_MAGNETIC_HEADING_ANGLE_HudDataBase,
+  HUD_DB_INDEX_IRS_MAGNETIC_HEADING_ANGLE_VALID_HudDataBase,
+  HUD_DB_INDEX_IRS_MAGNETIC_TRACK_ANGLE_HudDataBase,
+  HUD_DB_INDEX_IRS_MAGNETIC_TRACK_ANGLE_VALID_HudDataBase,
+  HUD_DB_INDEX_IRS_MODE_HudDataBase,
+  HUD_DB_INDEX_IRS_MODE_VALID_HudDataBase,
+  HUD_DB_INDEX_IRS_NORMAL_ACCELERATION_HudDataBase,
+  HUD_DB_INDEX_IRS_NORMAL_ACCELERATION_VALID_HudDataBase,
+  HUD_DB_INDEX_IRS_INERTIAL_VERT_SPEED_HudDataBase,
+  HUD_DB_INDEX_IRS_INERTIAL_VERT_SPEED_VALID_HudDataBase,
+  HUD_DB_INDEX_IRS_WIND_SPEED_HudDataBase,
+  HUD_DB_INDEX_IRS_WIND_SPEED_VALID_HudDataBase,
+  HUD_DB_INDEX_IRS_WIND_DIRECTION_HudDataBase,
+  HUD_DB_INDEX_IRS_WIND_DIRECTION_VALID_HudDataBase,
+  HUD_DB_INDEX_IRS_FLIGHT_PATH_ANGLE_HudDataBase,
+  HUD_DB_INDEX_IRS_FLIGHT_PATH_ANGLE_VALID_HudDataBase,
+  HUD_DB_INDEX_IRS_HYBRID_GROUND_SPEED_HudDataBase,
+  HUD_DB_INDEX_IRS_HYBRID_GROUND_SPEED_VALID_HudDataBase,
+  HUD_DB_INDEX_IRS_GROUND_SPEED_HudDataBase,
+  HUD_DB_INDEX_IRS_GROUND_SPEED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_PILOT_ACTIVE_NAV_SOURCE_HudDataBase,
+  HUD_DB_INDEX_MAU_PILOT_ACTIVE_NAV_SOURCE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_ACTIVE_NAV_SOURCE_OFF_SIDE_HudDataBase,
+  HUD_DB_INDEX_MAU_ADM_MODE_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_MAU_ADM_MODE_ACTIVE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_AFCS_SPEED_BUG_HudDataBase,
+  HUD_DB_INDEX_MAU_AFCS_SPEED_BUG_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_ALT_DEPART_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_MAU_ALT_DEPART_ACTIVE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_ALTITUDE_PRESSURE_HudDataBase,
+  HUD_DB_INDEX_MAU_ALTITUDE_PRESSURE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_APPROACH_AIRSPEED_HudDataBase,
+  HUD_DB_INDEX_MAU_APPROACH_AIRSPEED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_APPROACH_LPV_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_MAU_APPROACH_LPV_ACTIVE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_APPROACH_MODE_HudDataBase,
+  HUD_DB_INDEX_MAU_APPROACH_MODE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_APPROACH_REFERENCE_SPEED_HudDataBase,
+  HUD_DB_INDEX_MAU_APPROACH_REFERENCE_SPEED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_AT_N1_UPPER_LIMIT_HudDataBase,
+  HUD_DB_INDEX_MAU_AT_N1_UPPER_LIMIT_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_AT_UNDERSPEED_PROT_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_MAU_AT_UNDERSPEED_PROT_ACTIVE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_AUTO_PILOT_DATA_SIDE_HudDataBase,
+  HUD_DB_INDEX_MAU_AUTO_PILOT_DATA_SIDE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_AUTO_PILOT_STATE_HudDataBase,
+  HUD_DB_INDEX_MAU_AUTO_PILOT_STATE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_AUTO_THROTTLE_ENGAGED_HudDataBase,
+  HUD_DB_INDEX_MAU_AUTO_THROTTLE_ENGAGED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_AUTO_THROTTLE_MAX_LIM_ANNUN_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_MAU_AUTO_THROTTLE_MAX_LIM_ANNUN_ACTIVE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_AUTO_THROTTLE_MIN_LIM_ANNUN_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_MAU_AUTO_THROTTLE_MIN_LIM_ANNUN_ACTIVE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_AUTO_THROTTLE_MODE_HudDataBase,
+  HUD_DB_INDEX_MAU_AUTO_THROTTLE_MODE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_AUTO_THROTTLE_OVERSPEED_PROT_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_MAU_AUTO_THROTTLE_OVERSPEED_PROT_ACTIVE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_AUTO_THROTTLE_STATE_HudDataBase,
+  HUD_DB_INDEX_MAU_AUTO_THROTTLE_STATE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_BARO_SET_FORMAT_HudDataBase,
+  HUD_DB_INDEX_MAU_BARO_SET_FORMAT_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_BARO_SET_INHG_HudDataBase,
+  HUD_DB_INDEX_MAU_BARO_SET_INHG_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_BARO_SET_MBAR_HudDataBase,
+  HUD_DB_INDEX_MAU_BARO_SET_MBAR_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_CAS_ADVISORY_MESSAGE_ON_HudDataBase,
+  HUD_DB_INDEX_MAU_CAS_ADVISORY_MESSAGE_ON_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_CAS_MASTER_CAUTION_ON_HudDataBase,
+  HUD_DB_INDEX_MAU_CAS_MASTER_CAUTION_ON_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_CAS_MASTER_WARNING_ON_HudDataBase,
+  HUD_DB_INDEX_MAU_CAS_MASTER_WARNING_ON_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_CENTER_ENGINE_REVERSE_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_MAU_CENTER_ENGINE_REVERSE_ACTIVE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_CENTER_THROTTLE_POSITION_HudDataBase,
+  HUD_DB_INDEX_MAU_CENTER_THROTTLE_POSITION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_CO_PILOT_ADC_SELECTED_SOURCE_HudDataBase,
+  HUD_DB_INDEX_MAU_CO_PILOT_ADC_SELECTED_SOURCE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_CO_PILOT_IRS_SELECTED_SOURCE_HudDataBase,
+  HUD_DB_INDEX_MAU_CO_PILOT_IRS_SELECTED_SOURCE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_CO_PILOT_NAVIGATION_CHANNEL_HudDataBase,
+  HUD_DB_INDEX_MAU_CO_PILOT_NAVIGATION_CHANNEL_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_CO_PILOT_RADALT_SELECTED_SOURCE_HudDataBase,
+  HUD_DB_INDEX_MAU_CO_PILOT_RADALT_SELECTED_SOURCE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DAU1_CHANNEL_DISPLAYED_HudDataBase,
+  HUD_DB_INDEX_MAU_DAU1_CHANNEL_DISPLAYED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DAU2_CHANNEL_DISPLAYED_HudDataBase,
+  HUD_DB_INDEX_MAU_DAU2_CHANNEL_DISPLAYED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DDI_DISPLAYED_HudDataBase,
+  HUD_DB_INDEX_MAU_DDI_DISPLAYED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DECISION_HEIGHT_OR_MDA_HudDataBase,
+  HUD_DB_INDEX_MAU_DECISION_HEIGHT_OR_MDA_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYD_BARO_SET_STD_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYD_BARO_SET_STD_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_AB_STATE_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_AB_STATE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_AIRSPEED_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_AIRSPEED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_AOA_N_AMBER_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_AOA_N_AMBER_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_APPROACH_ANN_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_APPROACH_ANN_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_APPROACH_ANN_COLOR_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_APPROACH_ANN_COLOR_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_APPROACH_ANN_FLASH_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_APPROACH_ANN_FLASH_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_BARO_ALTITUDE_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_BARO_ALTITUDE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_BODY_AOA_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_BODY_AOA_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_AOA_RED_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_AOA_RED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_CALIBRATED_AIRSPEED_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_CALIBRATED_AIRSPEED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_CHECK_ASEL_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_CHECK_ASEL_ACTIVE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_DME_HOLD_ON_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_DME_HOLD_ON_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_DRIFT_INDEX_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_DRIFT_INDEX_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_INNER_MARKER_ON_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_INNER_MARKER_ON_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_LONG_ACCEL_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_LONG_ACCEL_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_MMO_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_MMO_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_NORMALIZED_AOA_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_NORMALIZED_AOA_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_OUTER_MARKER_ON_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_OUTER_MARKER_ON_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_RADIO_ALTITUDE_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_RADIO_ALTITUDE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_SRN_DISTANCE_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_SRN_DISTANCE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_VERTICAL_SPEED_HudDataBase,
+  HUD_DB_INDEX_MAU_DISPLAYED_VERTICAL_SPEED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_EVS_CHECKBOX_SELECTED_HudDataBase,
+  HUD_DB_INDEX_MAU_EVS_CHECKBOX_SELECTED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_EVS_MINIMUM_ALERT_MESSAGE_STATE_HudDataBase,
+  HUD_DB_INDEX_MAU_EVS_MINIMUM_ALERT_MESSAGE_STATE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_EVS_SELECTED_DECISION_HIGHT_MDA_HudDataBase,
+  HUD_DB_INDEX_MAU_EVS_SELECTED_DECISION_HIGHT_MDA_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FD_AVAILABLE_HudDataBase,
+  HUD_DB_INDEX_MAU_FD_AVAILABLE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FD_MIN_SPEED_REF_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_MAU_FD_MIN_SPEED_REF_ACTIVE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FINAL_TAKEOFF_AIRSPEED_HudDataBase,
+  HUD_DB_INDEX_MAU_FINAL_TAKEOFF_AIRSPEED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FLAPS_MARKER_STATUS_HudDataBase,
+  HUD_DB_INDEX_MAU_FLAPS_MARKER_STATUS_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FLAPS_POSITION_HudDataBase,
+  HUD_DB_INDEX_MAU_FLAPS_POSITION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FLAPS_SLAT_HANDLE_AUTO_THROTTLE_CLEAN_HudDataBase,
+  HUD_DB_INDEX_MAU_FLAPS_SLAT_HANDLE_AUTO_THROTTLE_CLEAN_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FLAPS_SLAT_STATE_HudDataBase,
+  HUD_DB_INDEX_MAU_FLAPS_SLAT_STATE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FLAPS_STATE_HudDataBase,
+  HUD_DB_INDEX_MAU_FLAPS_STATE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_SLATS_STATUS_HudDataBase,
+  HUD_DB_INDEX_MAU_SLATS_STATUS_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_DISPLAYED_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_DISPLAYED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_FLASH_LATERAL_CAPTURE_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_FLASH_LATERAL_CAPTURE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_FLASH_VERTICAL_CAPTURE_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_FLASH_VERTICAL_CAPTURE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_LATERAL_MODE_ARMED_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_LATERAL_MODE_ARMED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_LATERAL_MODE_CAPTURED_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_LATERAL_MODE_CAPTURED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_OVERSPEED_PROT_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_OVERSPEED_PROT_ACTIVE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_PITCH_COMMAND_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_PITCH_COMMAND_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_ROLL_COMMAND_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_ROLL_COMMAND_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_STATE_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_STATE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_UNDERSPEED_PROT_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_UNDERSPEED_PROT_ACTIVE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_VERT_MODE_ARMED_PRIM_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_VERT_MODE_ARMED_PRIM_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_VERT_MODE_ARMED_SEC_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_DIRECTOR_VERT_MODE_ARMED_SEC_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_PATH_VECTOR_COMMAND_HudDataBase,
+  HUD_DB_INDEX_MAU_FLIGHT_PATH_VECTOR_COMMAND_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_AIRSPEED_REF_CAS_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_AIRSPEED_REF_CAS_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_AIRSPEED_REF_MACH_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_AIRSPEED_REF_MACH_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_ALTITUDE_CONSTRAINT_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_ALTITUDE_CONSTRAINT_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_APP_ANNUNCIATION_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_APP_ANNUNCIATION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_CDI_SELECTED_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_CDI_SELECTED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_DEGRADED_ANNUNCIATION_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_DEGRADED_ANNUNCIATION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_DESIRED_TRACK_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_DESIRED_TRACK_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_DISTANCE_TO_WAYPOINT_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_DISTANCE_TO_WAYPOINT_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_EPU_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_EPU_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_LATERAL_DEV_ALONG_PATH_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_LATERAL_DEV_ALONG_PATH_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_LATERAL_DEVIATION_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_LATERAL_DEVIATION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_LATERAL_SCALE_FACTOR_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_LATERAL_SCALE_FACTOR_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_LTA_ANNUNCIATION_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_LTA_ANNUNCIATION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_MAG_TRU_SELECTION_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_MAG_TRU_SELECTION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_MAGNETIC_VARIATION_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_MAGNETIC_VARIATION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_OFFSET_ANNUNCIATION_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_OFFSET_ANNUNCIATION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_PREVIEW_VERTICAL_DEVIATION_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_PREVIEW_VERTICAL_DEVIATION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_PRIORITY_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_PRIORITY_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_SELECTED_PRIORITY_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_SELECTED_PRIORITY_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_STA_ANNUNCIATION_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_STA_ANNUNCIATION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_TERM_ANNUNCIATION_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_TERM_ANNUNCIATION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_TO_WAYPOINT_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_TO_WAYPOINT_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_VERTICAL_DEVIATION_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_VERTICAL_DEVIATION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_VERTICAL_SCALE_FACTOR_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_VERTICAL_SCALE_FACTOR_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_VTA_ANNUNCIATION_HudDataBase,
+  HUD_DB_INDEX_MAU_FMS_VTA_ANNUNCIATION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_GLIDE_SLPOE_ANGLE_HudDataBase,
+  HUD_DB_INDEX_MAU_GLIDE_SLPOE_ANGLE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_GO_AROUND_SAFE_ALTITUDE_HudDataBase,
+  HUD_DB_INDEX_MAU_GO_AROUND_SAFE_ALTITUDE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_GPS_DISTANCE_TO_LANDING_HudDataBase,
+  HUD_DB_INDEX_MAU_GPS_DISTANCE_TO_LANDING_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_GPS_LATERAL_DEVIATION_HudDataBase,
+  HUD_DB_INDEX_MAU_GPS_LATERAL_DEVIATION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_GPS_VERTICAL_DEVIATION_HudDataBase,
+  HUD_DB_INDEX_MAU_GPS_VERTICAL_DEVIATION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_GROUND_PROX_ALERT_HudDataBase,
+  HUD_DB_INDEX_MAU_GROUND_PROX_ALERT_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_GROUND_PROX_WARNING_HudDataBase,
+  HUD_DB_INDEX_MAU_GROUND_PROX_WARNING_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_GROUND_SPEED_HudDataBase,
+  HUD_DB_INDEX_MAU_GROUND_SPEED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_HEADING_SELECT_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_MAU_HEADING_SELECT_ACTIVE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_LANDING_GEAR_DOWN_HudDataBase,
+  HUD_DB_INDEX_MAU_LANDING_GEAR_DOWN_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_LATERAL_DEVIATION_HudDataBase,
+  HUD_DB_INDEX_MAU_LATERAL_DEVIATION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_LATERAL_EXCESSIVE_DEVIATION_ON_HudDataBase,
+  HUD_DB_INDEX_MAU_LATERAL_EXCESSIVE_DEVIATION_ON_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_LEFT_ENGINE_REVERSE_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_MAU_LEFT_ENGINE_REVERSE_ACTIVE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_LEFT_LDG_STATE_HudDataBase,
+  HUD_DB_INDEX_MAU_LEFT_LDG_STATE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_LEFT_THROTTLE_POSITION_HudDataBase,
+  HUD_DB_INDEX_MAU_LEFT_THROTTLE_POSITION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_LOCALIZER_TRACK_HudDataBase,
+  HUD_DB_INDEX_MAU_LOCALIZER_TRACK_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_LOW_SPEED_HudDataBase,
+  HUD_DB_INDEX_MAU_LOW_SPEED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_LSBA_FAIL_DISPLAYED_HudDataBase,
+  HUD_DB_INDEX_MAU_LSBA_FAIL_DISPLAYED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_LPV_MODE_ANN_ON_HudDataBase,
+  HUD_DB_INDEX_MAU_LPV_MODE_ANN_ON_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_LPV_MODE_ANN_COLOR_HudDataBase,
+  HUD_DB_INDEX_MAU_LPV_MODE_ANN_COLOR_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_LPV_VERTICAL_DEVIATION_STATUS_HudDataBase,
+  HUD_DB_INDEX_MAU_LPV_VERTICAL_DEVIATION_STATUS_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_LVTO_SELECTED_HudDataBase,
+  HUD_DB_INDEX_MAU_LVTO_SELECTED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_MARKER_BEACON_HudDataBase,
+  HUD_DB_INDEX_MAU_MARKER_BEACON_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_METRIC_SELECTED_HudDataBase,
+  HUD_DB_INDEX_MAU_METRIC_SELECTED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_MINIMUM_ALERT_MESSAGE_STATE_HudDataBase,
+  HUD_DB_INDEX_MAU_MINIMUM_ALERT_MESSAGE_STATE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_NAV_TUNED_TO_LOC_HudDataBase,
+  HUD_DB_INDEX_MAU_NAV_TUNED_TO_LOC_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_NO_TAKE_OFF_ON_HudDataBase,
+  HUD_DB_INDEX_MAU_NO_TAKE_OFF_ON_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_NOSE_LDG_STATE_HudDataBase,
+  HUD_DB_INDEX_MAU_NOSE_LDG_STATE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_NUMBER_OF_INSTALLED_RADALTS_HudDataBase,
+  HUD_DB_INDEX_MAU_NUMBER_OF_INSTALLED_RADALTS_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_PILOT_ADC_SELECTED_SOURCE_HudDataBase,
+  HUD_DB_INDEX_MAU_PILOT_ADC_SELECTED_SOURCE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_PILOT_IRS_SELECTED_SOURCE_HudDataBase,
+  HUD_DB_INDEX_MAU_PILOT_IRS_SELECTED_SOURCE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_PITCH_MISCOMPARE_HudDataBase,
+  HUD_DB_INDEX_MAU_PITCH_MISCOMPARE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_PILOT_NAVIGATION_CHANNEL_HudDataBase,
+  HUD_DB_INDEX_MAU_PILOT_NAVIGATION_CHANNEL_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_PILOT_RADALT_SELECTED_SOURCE_HudDataBase,
+  HUD_DB_INDEX_MAU_PILOT_RADALT_SELECTED_SOURCE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_PILOT_TCS_SWITCH_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_MAU_PILOT_TCS_SWITCH_ACTIVE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_PREVIEW_DEV_TYPE_HudDataBase,
+  HUD_DB_INDEX_MAU_PREVIEW_DEV_TYPE_STATE_HudDataBase,
+  HUD_DB_INDEX_MAU_PREVIEW_DEV_TYPE_STATE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_PREVIEW_DEV_TYPE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_PREVIEW_NAV_SOURCE_HudDataBase,
+  HUD_DB_INDEX_MAU_PREVIEW_NAV_SOURCE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_PREVIEW_NAV_SOURCE_OFF_SIDE_HudDataBase,
+  HUD_DB_INDEX_MAU_PREVIEW_SELECTED_HudDataBase,
+  HUD_DB_INDEX_MAU_PREVIEW_SELECTED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_RIGHT_ENGINE_REVERSE_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_MAU_RIGHT_ENGINE_REVERSE_ACTIVE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_RIGHT_LDG_STATE_HudDataBase,
+  HUD_DB_INDEX_MAU_RIGHT_LDG_STATE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_RIGHT_THROTTLE_POSITION_HudDataBase,
+  HUD_DB_INDEX_MAU_RIGHT_THROTTLE_POSITION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_RNP_ANN_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_MAU_RNP_ANN_ACTIVE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_RNP_COLOR_HudDataBase,
+  HUD_DB_INDEX_MAU_RNP_COLOR_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_ROTATION_TAKEOFF_AISPEED_HudDataBase,
+  HUD_DB_INDEX_MAU_ROTATION_TAKEOFF_AISPEED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_RUNWAY_ELEVATION_HudDataBase,
+  HUD_DB_INDEX_MAU_RUNWAY_ELEVATION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_RUNWAY_LENGTH_HudDataBase,
+  HUD_DB_INDEX_MAU_RUNWAY_LENGTH_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_AIRSPEED_IAS_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_AIRSPEED_IAS_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_AIRSPEED_MACH_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_AIRSPEED_MACH_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_AIRSPEED_SOURCE_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_AIRSPEED_SOURCE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_AIRSPEED_TYPE_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_AIRSPEED_TYPE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_ALTITUDE_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_ALTITUDE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_ALTITUDE_METRIC_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_ALTITUDE_METRIC_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_COURSE_COPILOT_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_COURSE_COPILOT_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_COURSE_PILOT_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_COURSE_PILOT_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_DECISION_HEIGHT_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_DECISION_HEIGHT_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_HEADING_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_HEADING_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_TRACK_HudDataBase,
+  HUD_DB_INDEX_MAU_SELECTED_TRACK_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_STALL_WARNING_SPEED_HudDataBase,
+  HUD_DB_INDEX_MAU_STALL_WARNING_SPEED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_STEEP_APPROACH_HudDataBase,
+  HUD_DB_INDEX_MAU_STEEP_APPROACH_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_TCAS_ADVISORY_RATE_HudDataBase,
+  HUD_DB_INDEX_MAU_TCAS_ADVISORY_RATE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_TCAS_COMBINED_CONTOL_HudDataBase,
+  HUD_DB_INDEX_MAU_TCAS_COMBINED_CONTOL_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_TCAS_DOWN_ADVISORY_HudDataBase,
+  HUD_DB_INDEX_MAU_TCAS_DOWN_ADVISORY_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_TCAS_UP_ADVISORY_HudDataBase,
+  HUD_DB_INDEX_MAU_TCAS_UP_ADVISORY_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_TD_DISPLAYED_HudDataBase,
+  HUD_DB_INDEX_MAU_TD_DISPLAYED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_TERRAIN_CAUTION_HudDataBase,
+  HUD_DB_INDEX_MAU_TERRAIN_CAUTION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_TERRAIN_WARNING_HudDataBase,
+  HUD_DB_INDEX_MAU_TERRAIN_WARNING_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_THRUST_DIRECTOR_COMMAND_HudDataBase,
+  HUD_DB_INDEX_MAU_THRUST_DIRECTOR_COMMAND_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_TO_SAFE_ALTITUDE_HudDataBase,
+  HUD_DB_INDEX_MAU_TO_SAFE_ALTITUDE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_TOGA_BUTTON_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_MAU_TOGA_BUTTON_ACTIVE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_TRACK_SELECT_ACTIVE_HudDataBase,
+  HUD_DB_INDEX_MAU_TRACK_SELECT_ACTIVE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_TRUE_AIRSPEED_HudDataBase,
+  HUD_DB_INDEX_MAU_TRUE_AIRSPEED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_TSE_INDICATOR_DISPLAYED_HudDataBase,
+  HUD_DB_INDEX_MAU_TSE_INDICATOR_DISPLAYED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_TSE_INDICATOR_FLASH_HudDataBase,
+  HUD_DB_INDEX_MAU_TSE_INDICATOR_FLASH_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_V_CONSTRAINT_HudDataBase,
+  HUD_DB_INDEX_MAU_V_CONSTRAINT_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_V1_SPEED_HudDataBase,
+  HUD_DB_INDEX_MAU_V1_SPEED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_V2_SPEED_HudDataBase,
+  HUD_DB_INDEX_MAU_V2_SPEED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_VERTICAL_DEVIATION_HudDataBase,
+  HUD_DB_INDEX_MAU_VERTICAL_DEVIATION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_VERTICAL_DEVIATION_TYPE_HudDataBase,
+  HUD_DB_INDEX_MAU_VERTICAL_DEVIATION_TYPE_STATE_HudDataBase,
+  HUD_DB_INDEX_MAU_VERTICAL_DEVIATION_TYPE_STATE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_VERTICAL_DEVIATION_TYPE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_VERTICAL_EXCESSIVE_DEVIATION_ON_HudDataBase,
+  HUD_DB_INDEX_MAU_VERTICAL_EXCESSIVE_DEVIATION_ON_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_VERTICAL_FLIGHT_DIRECTOR_MODE_HudDataBase,
+  HUD_DB_INDEX_MAU_VERTICAL_FLIGHT_DIRECTOR_MODE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_VERTICAL_SPEED_LANDING_PHASE_HudDataBase,
+  HUD_DB_INDEX_MAU_VERTICAL_SPEED_LANDING_PHASE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_VFR_AIRSPEED_HudDataBase,
+  HUD_DB_INDEX_MAU_VFR_AIRSPEED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_VGP_DEVIATION_DISPLAY_STATUS_HudDataBase,
+  HUD_DB_INDEX_MAU_VGP_DEVIATION_DISPLAY_STATUS_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_VNAV_CONSTRAINT_TYPE_HudDataBase,
+  HUD_DB_INDEX_MAU_VNAV_CONSTRAINT_TYPE_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_VNAV_CONSTRAINT_VALIDITY_HudDataBase,
+  HUD_DB_INDEX_MAU_VNAV_CONSTRAINT_VALIDITY_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_VOR_LOC_CDI_SELECTED_HudDataBase,
+  HUD_DB_INDEX_MAU_VOR_LOC_CDI_SELECTED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_VSBA_FAIL_DISPLAYED_HudDataBase,
+  HUD_DB_INDEX_MAU_VSBA_FAIL_DISPLAYED_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_WEIGHT_ON_WHEELS_HudDataBase,
+  HUD_DB_INDEX_MAU_WEIGHT_ON_WHEELS_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_WINDSHEAR_CAUTION_HudDataBase,
+  HUD_DB_INDEX_MAU_WINDSHEAR_CAUTION_VALID_HudDataBase,
+  HUD_DB_INDEX_MAU_WINDSHEAR_WARNING_HudDataBase,
+  HUD_DB_INDEX_MAU_WINDSHEAR_WARNING_VALID_HudDataBase,
+  HUD_DB_INDEX_MON_AIRSPEED_MISCOMPARE_HudDataBase,
+  HUD_DB_INDEX_MON_ATTITUDE_MISCOMPARE_HudDataBase,
+  HUD_DB_INDEX_MON_BARO_ALTITUDE_MISCOMPARE_HudDataBase,
+  HUD_DB_INDEX_MON_FPV_MISCOMPARE_HudDataBase,
+  HUD_DB_INDEX_MON_GLIDE_SLOPE_MISCOMPARE_HudDataBase,
+  HUD_DB_INDEX_MON_HEADING_MISCOMPARE_HudDataBase,
+  HUD_DB_INDEX_MON_LOCALIZER_MISCOMPARE_HudDataBase,
+  HUD_DB_INDEX_MON_RADIO_ALTITUDE_MISCOMPARE_HudDataBase,
+  HUD_DB_INDEX_OHU_COMBINER_DEPLOYED_HudDataBase,
+  HUD_DB_INDEX_OHU_COMBINER_DEPLOYED_VALID_HudDataBase,
+  HUD_DB_INDEX_OHU_VIDEO_IMAGE_ON_HudDataBase,
+  HUD_DB_INDEX_OHU_EVS_CONTRAST_KNOB_HudDataBase,
+  HUD_DB_INDEX_OHU_HUD_BRIGHTNESS_ALS_FAIL_HudDataBase,
+  HUD_DB_INDEX_OHU_HUD_BRIGHTNESS_KNOB_HudDataBase,
+  HUD_DB_INDEX_OHU_HUD_BRIGHTNESS_KNOB_VALID_HudDataBase,
+  HUD_DB_INDEX_OHU_HUD_BRIGHTNESS_MODE_HudDataBase,
+  HUD_DB_INDEX_OHU_XVS_POSITION_HudDataBase,
+  HUD_DB_INDEX_POWER_SCAN_ENABLED_HudDataBase,
+  HUD_DB_INDEX_RADALT_RADIO_ALTITUDE_HudDataBase,
+  HUD_DB_INDEX_RADALT_RADIO_ALTITUDE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_AFCS_WINDSHEAR_CONDITION_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_AFCS_WINDSHEAR_CONDITION_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_ALTITUDE_ABOVE_RUNWAY_HudDataBase,
+  HUD_DB_INDEX_SVS_ALTITUDE_ABOVE_RUNWAY_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_ALTITUDE_NOT_VALID_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_ALTITUDE_NOT_VALID_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_AERONAUTICAL_DB_1_INTEGRITY_STATUS_HudDataBase,
+  HUD_DB_INDEX_SVS_AERONAUTICAL_DB_1_INTEGRITY_STATUS_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_AERONAUTICAL_DB_2_INTEGRITY_STATUS_HudDataBase,
+  HUD_DB_INDEX_SVS_AERONAUTICAL_DB_2_INTEGRITY_STATUS_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_AERONAUTICAL_DB_SELECTED_HudDataBase,
+  HUD_DB_INDEX_SVS_AERONAUTICAL_DB_SELECTED_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_IRS_IN1_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_IRS_IN1_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_IRS_IN2_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_IRS_IN2_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_IRS_IN3_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_IRS_IN3_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RALT_IN1_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RALT_IN1_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RALT_IN2_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RALT_IN2_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RX_02_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RX_02_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RX_03_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RX_03_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RX_04_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RX_04_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RX_05_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RX_05_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RX_06_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RX_06_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RX_22_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RX_22_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RX_23_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RX_23_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RX_24_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RX_24_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RX_26_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_ARINC_429_RX_26_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_BRIGHTNESS_OFFSET_HudDataBase,
+  HUD_DB_INDEX_SVS_BRIGHTNESS_PERCENTAGE_HudDataBase,
+  HUD_DB_INDEX_SVS_DEGRADED_IAMGE_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_DEGRADED_IAMGE_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_EAGLE_FPGA_GENERAL_ERRORS_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_EAGLE_FPGA_GENERAL_ERRORS_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_EAGLE_FPGA_INTERRUPTS_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_EAGLE_FPGA_INTERRUPTS_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_EAGLE_FPGA_REGISTER_BUS_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_EAGLE_FPGA_REGISTER_BUS_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_ETHERNET_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_ETHERNET_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_EXTERNAL_SYNCS_DETECTION_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_EXTERNAL_SYNCS_DETECTION_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_GC_CPLD_INTERRUPTS_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_GC_CPLD_INTERRUPTS_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_GRAPHICS_MEMORY_IF_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_GRAPHICS_MEMORY_IF_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_HEADING_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_HEADING_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_HORIZONTAL_FOM_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_HORIZONTAL_FOM_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_IS_FAILED_HudDataBase,
+  HUD_DB_INDEX_SVS_LVDS_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_LVDS_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_MINIMUM_RANGE_FEEDBACK_HudDataBase,
+  HUD_DB_INDEX_SVS_MINIMUM_RANGE_FEEDBACK_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_MON_TAWS_ALTITUDE_NCD_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_MON_TAWS_ALTITUDE_NCD_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_MON_TAWS_POSITION_NCD_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_MON_TAWS_POSITION_NCD_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_NO_SELECTED_RUNWAY_FOR_LANDING_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_NO_SELECTED_RUNWAY_FOR_LANDING_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_NVRAM_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_NVRAM_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_OBSTACLES_DB_INTEGRITY_STATUS_HudDataBase,
+  HUD_DB_INDEX_SVS_OBSTACLES_DB_INTEGRITY_STATUS_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_PCI1_SR3_CBIT_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_PCI1_SR3_CBIT_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_PCI1_ERROR_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_PCI1_ERROR_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_PITCH_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_PITCH_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_PRESENT_POSITION_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_PRESENT_POSITION_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_ROLL_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_ROLL_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_RUNWAY_INFO_HudDataBase,
+  HUD_DB_INDEX_SVS_RUNWAY_INFO_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_RUNWAY_STATIC_ERROR_THRESHOLD_HudDataBase,
+  HUD_DB_INDEX_SVS_RUNWAY_STATIC_ERROR_THRESHOLD_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_SELECTED_RUNWAY_IN_DATABASE_FALIURE_HudDataBase,
+  HUD_DB_INDEX_SVS_SELECTED_RUNWAY_IN_DATABASE_FALIURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_SELECTED_RUNWAY_LENGTH_HudDataBase,
+  HUD_DB_INDEX_SVS_SELECTED_RUNWAY_LENGTH_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_SELECTED_RUNWAY_LATITUDE_HudDataBase,
+  HUD_DB_INDEX_SVS_SELECTED_RUNWAY_LATITUDE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_SELECTED_RUNWAY_LONGITUDE_HudDataBase,
+  HUD_DB_INDEX_SVS_SELECTED_RUNWAY_LONGITUDE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_TAWS_ALTITUDE_MISCOMPARE_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_TAWS_ALTITUDE_MISCOMPARE_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_TAWS_POSITION_MISCOMPARE_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_TAWS_POSITION_MISCOMPARE_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_TERRAIN_DB_ERROR_HudDataBase,
+  HUD_DB_INDEX_SVS_TERRAIN_DB_ERROR_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_TERRAIN_DB_INTEGRITY_STATUS_HudDataBase,
+  HUD_DB_INDEX_SVS_TERRAIN_DB_INTEGRITY_STATUS_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_TERRAIN_STATIC_ERROR_THRESHOLD_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_TERRAIN_STATIC_ERROR_THRESHOLD_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_TYPE_HudDataBase,
+  HUD_DB_INDEX_SVS_TYPE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_VERTICAL_FOM_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_VERTICAL_FOM_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SVS_WATCHDOG_EXPIRATION_SR3_FAILURE_HudDataBase,
+  HUD_DB_INDEX_SVS_WATCHDOG_EXPIRATION_SR3_FAILURE_VALID_HudDataBase,
+  HUD_DB_INDEX_SYMBOLOGY_BRIGHTNESS_HudDataBase,
+  HUD_DB_INDEX_SYSTEM_MODE_HudDataBase,
+  HUD_DB_INDEX_SYSTEM_STATE_HudDataBase,
+  HUD_DB_INDEX_PATTERN_IAS_UNITS_HudDataBase,
+  HUD_DB_INDEX_PATTERN_IAS_DECIMS_HudDataBase,
+  HUD_DB_INDEX_PATTERN_IAS_HUNDREDS_HudDataBase,
+  HUD_DB_INDEX_PATTERN_IAS_UNITS_SHIFTX_HudDataBase,
+  HUD_DB_INDEX_PATTERN_IAS_UNITS_SHIFTY_HudDataBase,
+  HUD_DB_INDEX_PATTERN_IAS_DECIMS_SHIFTX_HudDataBase,
+  HUD_DB_INDEX_PATTERN_IAS_DECIMS_SHIFTY_HudDataBase,
+  HUD_DB_INDEX_PATTERN_IAS_HUNDREDS_SHIFTX_HudDataBase,
+  HUD_DB_INDEX_PATTERN_IAS_HUNDREDS_SHIFTY_HudDataBase,
+  HUD_DB_INDEX_PATTERN_IAS_UNITS_VISIBLE_HudDataBase,
+  HUD_DB_INDEX_PATTERN_IAS_DECIMS_VISIBLE_HudDataBase,
+  HUD_DB_INDEX_PATTERN_IAS_HUNDREDS_VISIBLE_HudDataBase,
+  HUD_DB_INDEX_PATTERN_IAS_UNITS_FONT_SIZE_HudDataBase,
+  HUD_DB_INDEX_PATTERN_IAS_DECIMS_FONT_SIZE_HudDataBase,
+  HUD_DB_INDEX_PATTERN_IAS_HUNDREDS_FONT_SIZE_HudDataBase,
+  HUD_DB_INDEX_PATTERN_IAS_READOUT_STATE_HudDataBase,
+  HUD_DB_NUM_INDEXES_HudDataBase
+} HudDbIndexEnum_HudDataBase;
+/* TYPES::MarkerBeaconEnum */
+typedef enum {
+  MARKER_BEACON_NONE_TYPES,
+  MARKER_BEACON_INNER_TYPES,
+  MARKER_BEACON_MIDDLE_TYPES,
+  MARKER_BEACON_OUTER_TYPES
+} MarkerBeaconEnum_TYPES;
+/* TYPES::GpsSensorOperationalModeEnum */
+typedef enum {
+  GPS_SENSOR_MODE_SELF_TEST_TYPES,
+  GPS_SENSOR_MODE_INITIALIZATION_TYPES,
+  GPS_SENSOR_MODE_ACQUISITION_TYPES,
+  GPS_SENSOR_MODE_NAVIGATION_TYPES,
+  GPS_SENSOR_MODE_ALTITUDE_AIDING_TYPES,
+  GPS_SENSOR_MODE_DIFFERENTIAL_TYPES,
+  GPS_SENSOR_MODE_AIDED_TYPES,
+  GPS_SENSOR_MODE_FAULT_TYPES
+} GpsSensorOperationalModeEnum_TYPES;
+/* TYPES::DauChannelDisplayedEnum */
+typedef enum {
+  DISPLAYED_DAU_AUTO_TYPES,
+  DISPLAYED_DAU_REVERSION_TYPES
+} DauChannelDisplayedEnum_TYPES;
+/* TYPES::SelectedAdcSourceEnum */
+typedef enum {
+  SELECTED_ADC_NONE_TYPES,
+  SELECTED_ADC_1_TYPES,
+  SELECTED_ADC_2_TYPES,
+  SELECTED_ADC_3_TYPES
+} SelectedAdcSourceEnum_TYPES;
+/* TYPES::SelectedRadaltSourceEnum */
+typedef enum {
+  SELECTED_RADALT_SOURCE_1_TYPES,
+  SELECTED_RADALT_SOURCE_2_TYPES
+} SelectedRadaltSourceEnum_TYPES;
+/* TYPES::ApproachAnnunciationEnum */
+typedef enum {
+  APPROACH_ANNUNCIATION_NONE_TYPES,
+  APPROACH_ANNUNCIATION_CAT2_TYPES,
+  APPROACH_ANNUNCIATION_HUD2_TYPES,
+  APPROACH_ANNUNCIATION_HUD3_TYPES
+} ApproachAnnunciationEnum_TYPES;
+/* TYPES::AutoNucControlEnum */
+typedef enum {
+  AUTO_NUC_CONTROL_NONE_TYPES,
+  AUTO_NUC_CONTROL_DISABLE_TYPES,
+  AUTO_NUC_CONTROL_ENABLE_TYPES
+} AutoNucControlEnum_TYPES;
+/* TYPES::DisplayModeEnum */
+typedef enum {
+  DISPLAY_MODE_BASIC_TYPES,
+  DISPLAY_MODE_SECONDARY_TYPES,
+  DISPLAY_MODE_ALIGN_TYPES
+} DisplayModeEnum_TYPES;
+/* TYPES::SymbologyBrightnessControlEnum */
+typedef enum {
+  SYMBOLOGY_BRIGHTNESS_CONTROL_LOW_TYPES,
+  SYMBOLOGY_BRIGHTNESS_CONTROL_MED_TYPES,
+  SYMBOLOGY_BRIGHTNESS_CONTROL_HIGH_TYPES,
+  SYMBOLOGY_BRIGHTNESS_CONTROL_MAX_TYPES,
+  SYMBOLOGY_BRIGHTNESS_CONTROL_NUMBER_OF_ELEMTENTS_TYPES
+} SymbologyBrightnessControlEnum_TYPES;
+/* TYPES::PhaseOfFlightEnum */
+typedef enum {
+  PHASE_OF_FLIGHT_TAXI_TYPES,
+  PHASE_OF_FLIGHT_TOGA_TYPES,
+  PHASE_OF_FLIGHT_CRUISE_TYPES,
+  PHASE_OF_FLIGHT_APPROACH_TYPES,
+  PHASE_OF_FLIGHT_ROLL_OUT_TYPES,
+  PHASE_OF_FLIGHT_NEAR_UNUSUAL_ATTITUDE_TYPES,
+  PHASE_OF_FLIGHT_UNUSUAL_ATTITUDE_TYPES
+} PhaseOfFlightEnum_TYPES;
+/* TYPES::HudXvsModeEnum */
+typedef enum {
+  CVS_MODE_EVS_ON_TYPES,
+  CVS_MODE_EVS_OFF_TYPES,
+  CVS_MODE_EVS_SBY_TYPES,
+  CVS_MODE_SVS_ON_TYPES,
+  CVS_MODE_SVS_OFF_TYPES,
+  CVS_MODE_SVS_SBY_TYPES,
+  CVS_MODE_CVS_ON_TYPES,
+  CVS_MODE_CVS_OFF_TYPES,
+  CVS_MODE_CVS_SBY_TYPES,
+  CVS_MODE_VDO_OFF_TYPES
+} HudXvsModeEnum_TYPES;
+/* TYPES::HudXvsSubModeEnum */
+typedef enum {
+  CVS_SUB_MODE_FUL_TYPES,
+  CVS_SUB_MODE_LI_TYPES,
+  CVS_SUB_MODE_HI_TYPES,
+  CVS_SUB_MODE_LO_TYPES,
+  CVS_SUB_MODE_HI_CAL_TYPES,
+  CVS_SUB_MODE_LO_CAL_TYPES,
+  CVS_SUB_MODE_CAL_TYPES,
+  CVS_SUB_MODE_INIT_TYPES,
+  CVS_SUB_MODE_NONE_TYPES
+} HudXvsSubModeEnum_TYPES;
+/* DiscreteStateEnum */
+typedef enum { DISCRETE_DOWN, DISCRETE_UP } DiscreteStateEnum;
+/* TYPES::CuPositionEnum */
+typedef enum {
+  CU_POSITION_LEFT_TYPES,
+  CU_POSITION_RIGHT_TYPES,
+  CU_POSITION_NA_TYPES
+} CuPositionEnum_TYPES;
+/* TYPES::AircraftTypeEnum */
+typedef enum {
+  AIRCRAFT_TYPE_F2000_TYPES,
+  AIRCRAFT_TYPE_F7X_TYPES,
+  AIRCRAFT_TYPE_F5X_TYPES,
+  AIRCRAFT_TYPE_F900_TYPES,
+  AIRCRAFT_TYPE_NA_TYPES
+} AircraftTypeEnum_TYPES;
+/* TYPES::IrsModeEnum */
+typedef enum {
+  IRS_MODE_SELF_TEST_TYPES,
+  IRS_MODE_INITIALIZATION_TYPES,
+  IRS_MODE_ACQUISITION_TYPES,
+  IRS_MODE_NAVIGATION_TYPES,
+  IRS_MODE_RESERVED_TYPES,
+  IRS_MODE_SPARE1_TYPES,
+  IRS_MODE_SPARE2_TYPES,
+  IRS_MODE_FAULT_TYPES
+} IrsModeEnum_TYPES;
+/* OHUManager::SvsModeEnum */
+typedef enum {
+  SVS_MODE_SPARE_1_OHUManager,
+  SVS_MODE_AUTO_OHUManager,
+  SVS_MODE_RL_OHUManager,
+  SVS_MODE_FULL_OHUManager
+} SvsModeEnum_OHUManager;
+/* OHUManager::OhuOperationalCommandEnum */
+typedef enum {
+  OHU_OPERATIONAL_CMD_OHUManager = 0,
+  OHU_EXTENDED_PBIT_CMD_OHUManager = 1,
+  OHU_STANDBY_CMD_OHUManager = 2,
+  OHU_IBIT_CMD_OHUManager = 3
+} OhuOperationalCommandEnum_OHUManager;
+/* SVSManager::SvsTypeEnum */
+typedef enum {
+  SVS_TYPE_TOPOLOGICAL_SVSManager,
+  SVS_TYPE_RIDGE_LINES_SVSManager
+} SvsTypeEnum_SVSManager;
+/* STICKManager::StickBrightnessChangeEnum */
+typedef enum {
+  STICK_BRIGHTNESS_NO_CHANGE_STICKManager,
+  STICK_BRIGHTNESS_DOWN_STICKManager,
+  STICK_BRIGHTNESS_UP_STICKManager
+} StickBrightnessChangeEnum_STICKManager;
+/* STICKManager::StickDiscreteToggleEnum */
+typedef enum {
+  STICK_DISCRETE_NO_CHANGE_STICKManager,
+  STICK_DISCRETE_TOGGLE_STICKManager
+} StickDiscreteToggleEnum_STICKManager;
+/* BasicIO::A429::A429StatusEnum */
+typedef enum {
+  A429_STATUS_FAILURE_BasicIO_A429,
+  A429_STATUS_NCD_BasicIO_A429,
+  A429_STATUS_FT_BasicIO_A429,
+  A429_STATUS_NO_BasicIO_A429,
+  A429_STATUS_BCD_PLUS_BasicIO_A429,
+  A429_STATUS_BCD_MINUS_BasicIO_A429
+} A429StatusEnum_BasicIO_A429;
+/* TYPES::ActiveNavigationSourceEnum */
+typedef enum {
+  NAVIGATION_SOURCE_NAV1_TYPES,
+  NAVIGATION_SOURCE_NAV2_TYPES,
+  NAVIGATION_SOURCE_FMS1_TYPES,
+  NAVIGATION_SOURCE_FMS2_TYPES,
+  NAVIGATION_SOURCE_FMS3_TYPES,
+  NAVIGATION_SOURCE_SBA1_TYPES,
+  NAVIGATION_SOURCE_SBA2_TYPES
+} ActiveNavigationSourceEnum_TYPES;
+/* TYPES::VerticalFdModeEnum */
+typedef enum {
+  VERTICAL_FD_MODE_INVALID_TYPES = 0,
+  VERTICAL_FD_MODE_STBY_TYPES = 1,
+  VERTICAL_FD_MODE_GO_AROUND_TYPES = 7,
+  VERTICAL_FD_MODE_TAKEOFF_TYPES = 9,
+  VERTICAL_FD_MODE_FPA_HOLD_TYPES = 11,
+  VERTICAL_FD_MODE_SPEED_TYPES = 13,
+  VERTICAL_FD_MODE_CLIMB_TYPES = 15,
+  VERTICAL_FD_MODE_ALT_SELECT_CAP_TYPES = 19,
+  VERTICAL_FD_MODE_ALT_HOLD_TYPES = 21,
+  VERTICAL_FD_MODE_GLIDESLOPE_TYPES = 27,
+  VERTICAL_FD_MODE_GLIDEPATH_TYPES = 31,
+  VERTICAL_FD_MODE_VNAV_PATH_TYPES = 39,
+  VERTICAL_FD_MODE_VNAV_FLC_TYPES = 41,
+  VERTICAL_FD_MODE_VNAV_ALT_SEL_CAP_TYPES = 45,
+  VERTICAL_FD_MODE_VNAV_ALT_TYPES = 47,
+  VERTICAL_FD_MODE_VNAV_GLIDEPATH_TYPES = 49,
+  VERTICAL_FD_MODE_WINDSHEAR_TYPES = 51
+} VerticalFdModeEnum_TYPES;
+/* TYPES::SelectedAirspeedTypeEnum */
+typedef enum {
+  SELECTED_AIR_SPEED_TYPE_CAS_TYPES,
+  SELECTED_AIR_SPEED_TYPE_MACH_TYPES
+} SelectedAirspeedTypeEnum_TYPES;
+/* TYPES::LateralFdModeEnum */
+typedef enum {
+  LATERAL_FD_MODE_INVALID_TYPES = 0,
+  LATERAL_FD_MODE_STBY_TYPES = 1,
+  LATERAL_FD_MODE_HEADING_HOLD_TYPES = 5,
+  LATERAL_FD_MODE_WINGS_LEVEL_TYPES = 7,
+  LATERAL_FD_MODE_ROLL_HOLD_TYPES = 9,
+  LATERAL_FD_MODE_HEADING_SELECT_TYPES = 11,
+  LATERAL_FD_MODE_NAV_LOC_TYPES = 41,
+  LATERAL_FD_MODE_APP_LOC_TYPES = 51,
+  LATERAL_FD_MODE_NAV_AZ_TYPES = 61,
+  LATERAL_FD_MODE_APP_AZ_TYPES = 69,
+  LATERAL_FD_MODE_BC_LOC_TYPES = 77,
+  LATERAL_FD_MODE_BC_AZ_TYPES = 87,
+  LATERAL_FD_MODE_LNAV_TYPES = 103,
+  LATERAL_FD_MODE_TRACK_SELECT_TYPES = 105
+} LateralFdModeEnum_TYPES;
+/* TYPES::AutoPilotStateEnum */
+typedef enum {
+  AUTO_PILOT_STATE_NONE_TYPES,
+  AUTO_PILOT_STATE_ENGAGED_TYPES,
+  AUTO_PILOT_STATE_DISENGAGED_TYPES,
+  AUTO_PILOT_STATE_ABNORMAL_DISENGAGED_TYPES
+} AutoPilotStateEnum_TYPES;
+/* TYPES::DhOrMdaSelectedEnum */
+typedef enum {
+  SELECTED_DH_TYPES,
+  SELECTED_MDA_TYPES
+} DhOrMdaSelectedEnum_TYPES;
+/* TYPES::AutoThrottleStateEnum */
+typedef enum {
+  AUTO_THROTTLE_STATE_NONE_TYPES,
+  AUTO_THROTTLE_STATE_DISENGAGED_TYPES,
+  AUTO_THROTTLE_STATE_ENGAGED_TYPES,
+  AUTO_THROTTLE_STATE_ARMED_TYPES,
+  AUTO_THROTTLE_STATE_ABNORMAL_TYPES
+} AutoThrottleStateEnum_TYPES;
+/* TYPES::ApproachModeEnum */
+typedef enum {
+  APPROACH_MODE_CAT1_TYPES,
+  APPROACH_MODE_CAT2_HUD2_TYPES,
+  APPROACH_MODE_HUD3_TYPES,
+  APPROACH_MODE_VGP_TYPES,
+  APPROACH_MODE_LOC_TYPES,
+  APPROACH_MODE_B_C_TYPES,
+  APPROACH_MODE_LNAV_VNAV_TYPES,
+  APPROACH_MODE_LPV_TYPES,
+  APPROACH_MODE_RNP_TYPES,
+  APPROACH_MODE_LOC_VGP_TYPES,
+  APPROACH_MODE_B_C_VGP_TYPES,
+  APPROACH_MODE_CAT3_TYPES,
+  APPROACH_MODE_LVTO_CAT3_TYPES
+} ApproachModeEnum_TYPES;
+/* TYPES::LateralFdArmModeEnum */
+typedef enum {
+  LATERAL_FD_ARM_MODE_INVALID_TYPES = 0,
+  LATERAL_FD_ARM_MODE_NAV_LOC_TYPES = 40,
+  LATERAL_FD_ARM_MODE_APP_LOC_TYPES = 50,
+  LATERAL_FD_ARM_MODE_NAV_AZ_TYPES = 60,
+  LATERAL_FD_ARM_MODE_APP_AZ_TYPES = 68,
+  LATERAL_FD_ARM_MODE_BC_LOC_TYPES = 74,
+  LATERAL_FD_ARM_MODE_BC_AZ_TYPES = 86,
+  LATERAL_FD_ARM_MODE_LNAV_FMS_TYPES = 100
+} LateralFdArmModeEnum_TYPES;
+/* TYPES::PreviewNavigationSourceEnum */
+typedef enum {
+  PREVIEW_NAV_SOURCE_NAV1_TYPES,
+  PREVIEW_NAV_SOURCE_NAV2_TYPES,
+  PREVIEW_NAV_SOURCE_SBA1_TYPES,
+  PREVIEW_NAV_SOURCE_SBA2_TYPES
+} PreviewNavigationSourceEnum_TYPES;
+/* TYPES::FmsMagTruSelectionEnum */
+typedef enum { FMS_MAG_TYPES, FMS_TRUE_TYPES } FmsMagTruSelectionEnum_TYPES;
+/* TYPES::BaroSetFormatEnum */
+typedef enum {
+  BARO_SET_FORMAT_IN_HG_TYPES,
+  BARO_SET_FORMAT_HPA_TYPES
+} BaroSetFormatEnum_TYPES;
+/* TYPES::FlapsSlatStateEnum */
+typedef enum {
+  FLAPS_SLAT_STATE_SF0_TYPES,
+  FLAPS_SLAT_STATE_SF1_TYPES,
+  FLAPS_SLAT_STATE_SF2_TYPES,
+  FLAPS_SLAT_STATE_SF3_TYPES
+} FlapsSlatStateEnum_TYPES;
+/* TYPES::IrsSelectedSourceEnum */
+typedef enum {
+  SELECTED_IRS_SOURCE_NONE_TYPES,
+  SELECTED_IRS_SOURCE_1A_TYPES,
+  SELECTED_IRS_SOURCE_1B_TYPES,
+  SELECTED_IRS_SOURCE_2A_TYPES,
+  SELECTED_IRS_SOURCE_2B_TYPES,
+  SELECTED_IRS_SOURCE_3A_TYPES,
+  SELECTED_IRS_SOURCE_3B_TYPES
+} IrsSelectedSourceEnum_TYPES;
+/* TYPES::CmcCommandEnum */
+typedef enum {
+  CMC_COMMAND_NO_COMMAND_TYPES,
+  CMC_COMMAND_WAIT_CMC_PROCESSING_TYPES,
+  CMC_COMMAND_CLEAR_CMC_TYPES,
+  CMC_COMMAND_ENTER_MAINTENANCE_MODE_TYPES,
+  CMC_COMMAND_PERFORM_INITIATED_BITE_TYPES
+} CmcCommandEnum_TYPES;
+/* EVSManager::EvsModeControlEnum */
+typedef enum {
+  EVS_MODE_CONTROL_SLEEPING_EVSManager = 1,
+  EVS_MODE_CONTROL_NORMAL_EVSManager = 2,
+  EVS_MODE_CONTROL_MAINTENANCE_EVSManager = 4,
+  EVS_MODE_CONTROL_INIT_EVSManager
+} EvsModeControlEnum_EVSManager;
+/* EVSManager::EvsVideoModeEnum */
+typedef enum {
+  EVS_VIDEO_MODE_AUTO_EVSManager,
+  EVS_VIDEO_MODE_HIGH_RESOLUTION_EVSManager,
+  EVS_VIDEO_MODE_HIGH_SENSITIVITY_EVSManager
+} EvsVideoModeEnum_EVSManager;
+/* ExtPcManager::RequestedAlignmentCommandEnum */
+typedef enum {
+  ALIGN_CMD_HUD_ALIGNMENT_ExtPcManager,
+  ALIGN_CMD_EVS_MANUAL_ALIGNMENT_ExtPcManager,
+  ALIGN_CMD_EVS_AUTO_ALIGNMENT_ExtPcManager,
+  ALIGN_CMD_CTVS_ALIGNMENT_ExtPcManager,
+  ALIGN_CMD_HUD_VERIFY_ExtPcManager,
+  ALIGN_CMD_EVS_VERIFY_ExtPcManager,
+  ALIGN_CMD_CTVS_VERIFY_ExtPcManager,
+  ALIGN_CMD_EXIT_ALIGNMENT_ExtPcManager,
+  ALIGN_CMD_REMOVE_EVS_CROSS_ExtPcManager,
+  ALIGN_CMD_HUD_ESTABLISH_CONNECTION_ExtPcManager,
+  ALIGN_CMD_HUD_VERIFY_REQUESTED_ACTIVITIY_ERROR_ExtPcManager
+} RequestedAlignmentCommandEnum_ExtPcManager;
+/* ExtPcManager::EvsInitSourceEnum */
+typedef enum {
+  ApmSource_ExtPcManager,
+  HudLastRemember_ExtPcManager
+} EvsInitSourceEnum_ExtPcManager;
+/** Flight mode: ground or flight. */
+/* TYPES::FpvModeEnum */
+typedef enum { FPV_MODE_AIR_TYPES, FPV_MODE_GROUND_TYPES } FpvModeEnum_TYPES;
+/* HUDManager::FlightManager::CalculateDisplayMode::SMDisplayMode */
+typedef enum {
+  SSM_TR_no_trans_SMDisplayMode,
+  SSM_TR_Basic_1_SMDisplayMode,
+  SSM_TR_Secondary_1_SMDisplayMode
+} SSM_TR_SMDisplayMode;
+/* HUDManager::FlightManager::CalculateDisplayMode::SMDisplayMode */
+typedef enum {
+  SSM_st_Basic_SMDisplayMode,
+  SSM_st_Secondary_SMDisplayMode
+} SSM_ST_SMDisplayMode;
+/* HUDManager::FlightManager::IsAircraftInUnusualAttitude::EnterUnusualAttitudeMode */
+typedef enum {
+  SSM_TR_no_trans_EnterUnusualAttitudeMode,
+  SSM_TR_EnterUA_1_EnterUnusualAttitudeMode,
+  SSM_TR_LeaveUA_1_EnterUnusualAttitudeMode
+} SSM_TR_EnterUnusualAttitudeMode;
+/* HUDManager::FlightManager::IsAircraftInUnusualAttitude::EnterUnusualAttitudeMode */
+typedef enum {
+  SSM_st_EnterUA_EnterUnusualAttitudeMode,
+  SSM_st_LeaveUA_EnterUnusualAttitudeMode
+} SSM_ST_EnterUnusualAttitudeMode;
+/** "Graphical_1" {Text = "HUD_OFP_SR1_SRS_984 "} */
+/** "Graphical_2" {Text = "HUD_OFP_SR1_SRS_996 "} */
+/** "Graphical_3" {Text = "HUD_OFP_SR1_SRS_1342 "} */
+/* HUDManager::FlightManager::CalculatePhaseOfFlight::PhaseOfFlightStateMachine */
+typedef enum {
+  SSM_TR_no_trans_PhaseOfFlightStateMachine,
+  SSM_TR_CRUISE_1_PhaseOfFlightStateMachine,
+  SSM_TR_CRUISE_2_PhaseOfFlightStateMachine,
+  SSM_TR_TAXI_1_PhaseOfFlightStateMachine,
+  SSM_TR_TAXI_2_PhaseOfFlightStateMachine,
+  SSM_TR_TOGA_1_PhaseOfFlightStateMachine,
+  SSM_TR_TOGA_2_PhaseOfFlightStateMachine,
+  SSM_TR_TOGA_3_PhaseOfFlightStateMachine,
+  SSM_TR_TOGA_4_PhaseOfFlightStateMachine,
+  SSM_TR_ROLLOUT_1_PhaseOfFlightStateMachine,
+  SSM_TR_ROLLOUT_2_PhaseOfFlightStateMachine,
+  SSM_TR_ROLLOUT_3_PhaseOfFlightStateMachine,
+  SSM_TR_APPROACH_1_PhaseOfFlightStateMachine,
+  SSM_TR_APPROACH_2_PhaseOfFlightStateMachine,
+  SSM_TR_APPROACH_3_PhaseOfFlightStateMachine,
+  SSM_TR_INIT_1_PhaseOfFlightStateMachine,
+  SSM_TR_INIT_2_PhaseOfFlightStateMachine
+} SSM_TR_PhaseOfFlightStateMachine;
+/** "Graphical_1" {Text = "HUD_OFP_SR1_SRS_984 "} */
+/** "Graphical_2" {Text = "HUD_OFP_SR1_SRS_996 "} */
+/** "Graphical_3" {Text = "HUD_OFP_SR1_SRS_1342 "} */
+/* HUDManager::FlightManager::CalculatePhaseOfFlight::PhaseOfFlightStateMachine */
+typedef enum {
+  SSM_st_CRUISE_PhaseOfFlightStateMachine,
+  SSM_st_TAXI_PhaseOfFlightStateMachine,
+  SSM_st_TOGA_PhaseOfFlightStateMachine,
+  SSM_st_ROLLOUT_PhaseOfFlightStateMachine,
+  SSM_st_APPROACH_PhaseOfFlightStateMachine,
+  SSM_st_INIT_PhaseOfFlightStateMachine
+} SSM_ST_PhaseOfFlightStateMachine;
+/* HUDManager::StatesModesManager::DoOpeartionalModes::SMSystemMode */
+typedef enum {
+  SSM_TR_no_trans_SMSystemMode,
+  SSM_TR_STBY_1_SMSystemMode,
+  SSM_TR_STBY_2_SMSystemMode,
+  SSM_TR_ExtendedInitialization_1_SMSystemMode,
+  SSM_TR_Normal_1_SMSystemMode,
+  SSM_TR_Initialization_1_SMSystemMode
+} SSM_TR_SMSystemMode;
+/* HUDManager::StatesModesManager::DoOpeartionalModes::SMSystemMode */
+typedef enum {
+  SSM_st_STBY_SMSystemMode,
+  SSM_st_ExtendedInitialization_SMSystemMode,
+  SSM_st_Normal_SMSystemMode,
+  SSM_st_Initialization_SMSystemMode
+} SSM_ST_SMSystemMode;
+typedef struct { kcg_real rX; kcg_real rY; } struct__73221;
+
+/* RectangularPointStruct */
+typedef struct__73221 RectangularPointStruct;
+
+typedef struct {
+  RectangularPointStruct /** FPV CLAWS absolute position [pixel]. */ stSymbClawsFPVAbsPos;
+  kcg_bool /** Visibility of FPV CLAWS symbol (true for visible and false for not visible). */ bSymbClawsFPVVisibility;
+  FpvModeEnum_TYPES /** FPV CLAWS flight mode (ground/flight). */ eSymbClawsFPVFlightMode;
+  RectangularPointStruct /** FPV display absolute position [pixel]. */ stSymbDisplayFPVAbsPos;
+  kcg_bool /** Visibility of FPV display symbol (true for visible and false for not visible). */ bSymbDisplayFPVVisibility;
+  FpvModeEnum_TYPES /** FPV display flight mode (ground/flight). */ eSymbDisplayFPVFlightMode;
+  kcg_bool /** FPV display is dashed when true and solid when false. */ bSymbDisplayFPVDashed;
+  RectangularPointStruct /** Ground loc absolute position [pixel]. */ stSymbGroundLocAbsPos;
+  kcg_bool /** Visibility of Ground Loc symbol (true for visible and false for not visible). */ bSymbGroundLocVisibility;
+  RectangularPointStruct /** No take off absolute position [pixel]. */ stSymbNoTakeOffFlagAbsPos;
+  kcg_bool /** Visibility of No Take OFF symbol (true for visible and false for not visible). */ bSymbNoTakeoOffFlagVisibility;
+  kcg_bool /** Symbol is flshing when true and solid when false. */ bSymbNoOffFlagFlash;
+  RectangularPointStruct /** Baro altitude digits absolute position in the altitude readout [pixel]. */ stSymbBaroAltReadoutAbsPos;
+  kcg_bool /** Visibility of BaroAlt digits in the altitude readout (true for visible and false for not visible). */ bSymbBaroAltVisibility;
+  kcg_real /** Baro altitude value [Ft]. */ rSymbBaroAltReadoutValue;
+  RectangularPointStruct /** CAS digits absolute position in the speed readout [pixel]. */ stSymbCASReadoutAbsPos;
+  kcg_bool /** Visibility of CAS digits in the speed readout (true for visible and false for not visible). */ bSymbCASVisibility;
+  kcg_real /** CAS value [Knots]. */ rSymbCASReadoutValue;
+  kcg_real /** Horizon line pitch value [Deg]. */ rSymbHorizonLinePitchValue;
+  kcg_real /** Horizon line roll value [Deg]. */ rSymbHorizonLineRollValue;
+  kcg_bool /** Visibility of horizon line (true for visible and false for not visible). */ bSymbHorizonLineVisibility;
+  kcg_bool /** Horizon line is dashed when true and solid when false. */ bSymbHorizonLineDashed;
+  kcg_int /** Symbols synchronization frame number value. */ iSymbSyncFrameNumValue;
+  kcg_bool bGroundmode;
+  kcg_bool bGroundmodeValid;
+  kcg_bool bEvsStbyAnnunciationFlashing;
+  kcg_bool /** Spare. */ bSparePadding;
+} struct__73226;
+
+/* DisplayManager::DisplayDataStruct */
+typedef struct__73226 DisplayDataStruct_DisplayManager;
+
+typedef struct {
+  kcg_bool /** Barometric altitude miscompare indication. */ bMonBaroAltitudeMiscompare;
+  kcg_bool /** Radio altitude miscompare indication. */ bMonRadioALtitudeMiscompare;
+  kcg_bool /** Heading miscompare indication. */ bMonHeadingMiscompare;
+  kcg_bool /** Attitude miscompare indication. */ bMonAttitudeMiscompare;
+  kcg_bool /** Airspeed miscompare indication. */ bMonAirspeedMiscompare;
+  kcg_bool /** Localizer miscompare indication. */ bMonLocalizerMiscompare;
+  kcg_bool /** Glide slope miscompare indication. */ bMonGlideSlopeMiscompare;
+  kcg_bool /** Flag to set HUD off/on */ bBacklightOff;
+} struct__73256;
+
+/* SR2Manager::SR2DataInStruct */
+typedef struct__73256 SR2DataInStruct_SR2Manager;
+
+typedef struct {
+  kcg_bool bSdramTestFailed;
+  kcg_bool bEagleFreezeFailed;
+  kcg_bool bDiscreteProgramPin1Failed;
+  kcg_bool bDiscreteProgramPin2Failed;
+  kcg_bool bDiscreteProgramPin3Failed;
+  kcg_bool bDiscreteProgramPinParFailed;
+  kcg_bool bDiscreteProgramPinPicFailed;
+  kcg_bool bArinc429Rx2Sr1Failed;
+  kcg_bool bArinc429Rx1Sr1Failed;
+  kcg_bool bArinc818Tx1Sr1Failed;
+  kcg_bool bLvdsSr1Failed;
+  kcg_bool bEagleGraphicMemoryInterfaceFailed;
+  kcg_bool bEagleFpgaRegisterBusFailed;
+  kcg_bool bEagleExternalSyncDetectFailed;
+  kcg_bool bCuBacklightOffDiscreteOutSr1Failed;
+  kcg_bool bHudCuArinc429Rx22Sr1Failed;
+  kcg_bool bHudCuEagleFpgaInterruptsSr1Failed;
+  kcg_bool bHudCuGcCpldInterruptsSr1Failed;
+  kcg_bool bHudCuDdrmemInternalErrorSr1Failed;
+  kcg_bool bHudCuWatchdogMechanismSr1Failed;
+  kcg_bool bHudCuPci1ErrorSr1Failed;
+  kcg_bool bHudCuEagleFpgaCrcErrorSr1Failed;
+  kcg_bool bHudCuEagleFpgaGeneralErrorsSr1Failed;
+  kcg_bool bHudCuWatchdogExpirationSr1Failed;
+  kcg_bool bThermalMonitoringFailed;
+  kcg_bool bHudCuFullEagleGraphicsMemorySr1Failed;
+  kcg_bool bHudCuFullHdpGraphicsMemorySr1Failed;
+} struct__73267;
+
+/* BITManager::BitOperationalDataStruct */
+typedef struct__73267 BitOperationalDataStruct_BITManager;
+
+typedef kcg_int array_int_10[10];
+
+/* ExtPcManager::SpareAlignDataType */
+typedef array_int_10 SpareAlignDataType_ExtPcManager;
+
+typedef struct {
+  kcg_int iMessageId;
+  RequestedAlignmentCommandEnum_ExtPcManager eRequestedAlignmentCommand;
+  kcg_int iLateralShift;
+  kcg_int iVerticalShift;
+  kcg_int iRollShift;
+  kcg_int iHudAlignCrc;
+  kcg_int iEvsAlignCrc;
+  kcg_int iCtvsAlignCrc;
+  EvsInitSourceEnum_ExtPcManager eEvsInitSource;
+  SpareAlignDataType_ExtPcManager SpareAlignData;
+  kcg_bool bMessageValid;
+} struct__73300;
+
+/* ExtPcManager::ExtPcDataInputStruct */
+typedef struct__73300 ExtPcDataInputStruct_ExtPcManager;
+
+typedef struct {
+  kcg_int iHdpTemperature;
+  kcg_bool bHdpTemperatureValid;
+} struct__73314;
+
+/* HDPManager::HdpOperationalData */
+typedef struct__73314 HdpOperationalData_HDPManager;
+
+typedef struct {
+  kcg_int iTemperatureSensor;
+  kcg_bool bTemperatureSensorValid;
+} struct__73319;
+
+/* SVIOManager::SvioOperationalDataStruct */
+typedef struct__73319 SvioOperationalDataStruct_SVIOManager;
+
+typedef struct {
+  kcg_bool bLhOptTransmitterFailure;
+  kcg_bool bPowerFail;
+  kcg_bool bArinc429RxFailure;
+  kcg_bool bTvsSensorFail;
+  kcg_bool bNvsSensorFail;
+  kcg_bool bDvs1SensorFail;
+  kcg_bool bDvs2SensorFail;
+  kcg_bool bDvs3SensorFail;
+  kcg_bool bDvs4SensorFail;
+  kcg_bool bDdrFail;
+  kcg_bool bOvertemp;
+  kcg_bool bFrozenTvs;
+  kcg_bool bFrozenNvs;
+  kcg_bool bFrozenDvs1;
+  kcg_bool bFrozenDvs2;
+  kcg_bool bFrozenDvs3;
+  kcg_bool bFrozenDvs4;
+  kcg_bool bTvsInternalTpFail;
+  kcg_bool bNvsInternalTpFail;
+  kcg_bool bDvs1InternalTpFail;
+  kcg_bool bDvs2InternalTpFail;
+  kcg_bool bDvs3InternalTpFail;
+  kcg_bool bDvs4InternalTpFail;
+  kcg_bool bPfi;
+  kcg_bool bAppArinc429RxFail;
+  kcg_bool bNucFail;
+  kcg_bool bHumidityHighFail;
+  kcg_bool bEvsRs485FailureLh;
+  kcg_bool bEvsRs485FailureRh;
+} struct__73324;
+
+/* EVSManager::EvsFailureStruct */
+typedef struct__73324 EvsFailureStruct_EVSManager;
+
+typedef struct {
+  kcg_real rIrWindowTemp;
+  kcg_real rVisWindowTemp;
+  kcg_real rOpticalBoardTemp;
+  kcg_real rControlBoardTemp;
+  kcg_real rPsTemp;
+} struct__73356;
+
+/* EVSManager::EvsTempSensorStruct */
+typedef struct__73356 EvsTempSensorStruct_EVSManager;
+
+typedef struct {
+  EvsModeControlEnum_EVSManager eModeOfOperation;
+  kcg_bool bModeOfOperationValidity;
+  EvsVideoModeEnum_EVSManager eVideoMode;
+  kcg_bool bSensorPresence;
+  kcg_bool bActivateAlignmentMode;
+  kcg_bool bEvsBusy;
+  kcg_bool bPerformingNuc;
+  kcg_bool bEvsHeaterActive;
+  kcg_bool bEvsHeaterFail;
+  EvsTempSensorStruct_EVSManager stEvsTempSensorSensitivity;
+  EvsFailureStruct_EVSManager stEvsFailure;
+  kcg_bool bEvsAvailable;
+} struct__73364;
+
+/* EVSManager::EvsOperationalDataStruct */
+typedef struct__73364 EvsOperationalDataStruct_EVSManager;
+
+typedef struct {
+  A429StatusEnum_BasicIO_A429 eSsm;
+  kcg_int iSdi;
+  UINT64 un64Timestamp;
+} struct__73381;
+
+/* BasicIO::A429::A429LabelInfoStruct */
+typedef struct__73381 A429LabelInfoStruct_BasicIO_A429;
+
+typedef struct {
+  VerticalFdModeEnum_TYPES /** MAU flight director vertical mode. */ eFdVerticalModeCaptured;
+  kcg_bool /** True for valid and false for invalid data. */ bFdVerticalModeCapturedValidity;
+  kcg_bool /** MAU wheels on ground indicator. */ bMwsWowOnGround;
+  kcg_bool /** True for valid and false for invalid data. */ bMwsWowOnGroundValidity;
+  kcg_real /** MAU Displayed CAS. */ rDisplayedCalibratedAirspeed;
+  kcg_bool /** True for valid and false for invalid data. */ bDisplayedCalibratedAirspeedValidity;
+  kcg_real /** MAU displayed barometric altitude. */ rDisplayedBaroAltitude;
+  kcg_bool /** True for valid and false for invalid data. */ bDisplayedBaroAltitudeValidity;
+  kcg_real /** MAU RADALT. */ rDisplayedRadioAltitude;
+  A429LabelInfoStruct_BasicIO_A429 /** ARINC429 label status (timestamp + ssm) for MAU RADALT */ stDisplayedRadioAltitudeStatus;
+  kcg_real /** MAU True Airspeed */ rTrueAirspeed;
+  kcg_bool bTrueAirspeedValidity;
+  kcg_real /** MAU Right Throttle Position */ rRightThrottlePosition;
+  kcg_bool /** True for valid and false for invalid data. */ bRightThrottlePositionValidity;
+  kcg_real /** MAU Pilot Navigation Channel */ rPilotNavigationChannel;
+  kcg_bool /** True for valid and false for invalid data. */ bPilotNavigationChannelValidity;
+  kcg_bool /** MAU Nav Tuned To Loc */ bNavTunedToLoc;
+  kcg_bool /** True for valid and false for invalid data. */ bNavTunedToLocValidity;
+  PreviewNavigationSourceEnum_TYPES /** MAU Preview Nav Src */ ePreviewNavSrc;
+  kcg_bool /** True for valid and false for invalid data. */ bPreviewNavSrcValidity;
+  kcg_real /** MAU Flight Path Vector Command */ rFlightPathVectorCommand;
+  kcg_bool /** True for valid and false for invalid data. */ bFlightPathVectorCommandValidity;
+  kcg_bool /** MAU Lvto Selected */ bLvtoSelected;
+  kcg_bool /** True for valid and false for invalid data. */ bLvtoSelectedValidity;
+  kcg_real /** MAU Left Throttle Position */ rLeftThrottlePosition;
+  kcg_bool /** True for valid and false for invalid data. */ bLeftThrottlePositionValidity;
+  LateralFdArmModeEnum_TYPES /** MAU Lateral Fd Armed Mode */ eLateralFdArmedMode;
+  kcg_bool /** True for valid and false for invalid data. */ bLateralFdArmedModeValidity;
+  LateralFdModeEnum_TYPES /** MAU Lateral Fd Mode */ eLateralFdMode;
+  kcg_bool /** True for valid and false for invalid data. */ bLateralFdModeValidity;
+  kcg_real /** MAU Flight Director Roll Command */ rFlightDirectorRollCommand;
+  kcg_bool /** True for valid and false for invalid data. */ bFlightDirectorRollCommandValidity;
+  kcg_real /** MAU Flight Director Pitch Command */ rFlightDirectorPitchCommand;
+  kcg_bool /** True for valid and false for invalid data. */ bFlightDirectorPitchCommandValidity;
+  kcg_bool /** MAU Flight Director Displayed */ bFlightDirectorDisplayed;
+  kcg_bool /** MAU Flight Director Displayed Validity */ bFlightDirectorDisplayedValidity;
+  kcg_real /** MAU Angle Of Attack */ rAngleOfAttack;
+  kcg_bool /** True for valid and false for invalid data. */ bAngleOfAttackValidity;
+  DhOrMdaSelectedEnum_TYPES /** MAU Dh Or Mda Selected */ eDhOrMdaSelected;
+  kcg_bool /** True for valid and false for invalid data. */ bDhOrMdaSelectedValidity;
+  kcg_real /** MAU Flaps Position */ rFlapsPosition;
+  kcg_bool /** True for valid and false for invalid data. */ bFlapsPositionValidity;
+  kcg_real /** MAU CoPilot Navigation Channel */ rCoPilotNavigationChannel;
+  kcg_bool /** True for valid and false for invalid data. */ bCoPilotNavigationChannelValidity;
+  AutoThrottleStateEnum_TYPES /** MAU Auto Throttle State */ eAutoThrottleState;
+  kcg_bool /** True for valid and false for invalid data. */ bAutoThrottleStateValidity;
+  kcg_int /** MAU Approach Reference Speed */ iApproachReferenceSpeed;
+  kcg_bool /** True for valid and false for invalid data. */ bApproachReferenceSpeedValidity;
+  AutoPilotStateEnum_TYPES /** MAU Autopilot State */ eAutopilotState;
+  kcg_bool /** True for valid and false for invalid data. */ bAutopilotStateValidity;
+  ApproachModeEnum_TYPES /** MAU Approach Mode */ eApproachMode;
+  kcg_bool /** True for valid and false for invalid data. */ bApproachModeValidity;
+  ActiveNavigationSourceEnum_TYPES /** MAU Active Navigation Source */ eActiveNavigationSource;
+  kcg_bool /** True for valid and false for invalid data. */ bActiveNavigationSourceValidity;
+  kcg_real /** MAU Selected Decision Height */ rSelectedDecisionHeight;
+  kcg_bool /** True for valid and false for invalid data. */ bSelectedDecisionHeightValidity;
+  kcg_int /** MAU Selected AirSpeed */ iSelectedAirSpeed;
+  kcg_bool /** True for valid and false for invalid data. */ bSelectedAirSpeedValidity;
+  SelectedAirspeedTypeEnum_TYPES /** MAU Selected Airspeed Type */ eSelectedAirspeedType;
+  kcg_bool /** True for valid and false for invalid data. */ bSelectedAirspeedTypeValidity;
+  kcg_real /** MAU Selected Airspeed Mach */ rSelectedAirspeedMach;
+  kcg_bool /** True for valid and false for invalid data. */ bSelectedAirspeedMachValidity;
+  kcg_int /** MAU selected course [Deg]. */ iSelectedCourse;
+  kcg_bool /** True for valid and false for invalid data. */ bSelectedCourseValidity;
+  kcg_real /** MAU lateral deviation [Deg]. */ rLateralDeviation;
+  kcg_bool /** True for valid and false for invalid data. */ bLateralDeviationValidity;
+  kcg_int /** MAU runway length [Ft]. */ iRunwayLength;
+  kcg_bool /** True for valid and false for invalid data. */ bRunwayLengthValidity;
+  kcg_int /** MAU runway elevation [Ft]. */ iRunwayElevation;
+  kcg_bool /** True for valid and false for invalid data. */ bRunwayElevationValidity;
+  kcg_real /** MAU vertical deviation [DDM] (Difference in the Depth of Modulation). */ rVerticalDeviation;
+  kcg_bool /** True for valid and false for invalid data. */ bVerticalDeviationValidity;
+  kcg_real /** MAU glide slope deviation [Deg]. */ rGlideSlopeAngle;
+  kcg_bool /** True for valid and false for invalid data. */ bGlideSlopeAngleValidity;
+  kcg_real /** MAU Localizer Track */ rLocalizerTrack;
+  kcg_bool /** True for valid and false for invalid data. */ bLocalizerTrackValidity;
+  kcg_real /** MAU FMS Desired Track */ rFmsDesiredTrack;
+  kcg_bool /** True for valid and false for invalid data. */ bFmsDesiredTrackValidity;
+  kcg_real /** MAU FMS Mag Variation */ rFmsMagVariation;
+  kcg_bool /** True for valid and false for invalid data. */ bFmsMagVariationValidity;
+  FmsMagTruSelectionEnum_TYPES /** MAU FMS Tru Selection */ eFmsTruSelection;
+  kcg_bool /** True for valid and false for invalid data. */ bFmsTruSelectionValidity;
+  kcg_real rDigitalMach;
+  kcg_bool bDigitalMachValid;
+  kcg_bool bMwsLandingGearDown;
+  kcg_bool /** True for valid and false for invalid data. */ bMwsLandingGearDownValid;
+  FlapsSlatStateEnum_TYPES eFlapsSlatState;
+  kcg_bool bFlapSlatStateStatus;
+  kcg_bool bFdOverspeedProtActive;
+  kcg_bool /** True for valid and false for invalid data. */ bFdOverspeedProtActiveValid;
+  kcg_bool bFdUnderspeedProtActive;
+  kcg_bool /** True for valid and false for invalid data. */ bFdUnderspeedProtActiveValid;
+  kcg_bool bAtUnderspeedProtActive;
+  kcg_bool /** True for valid and false for invalid data. */ bAtOverspeedProtActiveValid;
+  kcg_bool bAtOverspeedProtActive;
+  kcg_bool /** True for valid and false for invalid data. */ bAtUnderspeedProtActiveValid;
+  kcg_bool bAdmModeActive;
+  kcg_bool /** True for valid and false for invalid data. */ bAdmModeActiveValid;
+  kcg_real rLowSpeedCue;
+  kcg_bool /** True for valid and false for invalid data. */ bLowSpeedCueValid;
+  kcg_real rStallWarning;
+  kcg_bool /** True for valid and false for invalid data. */ bStallWarning;
+  kcg_real rVConstraint;
+  kcg_bool /** True for valid and false for invalid data. */ bVConstraintValid;
+  kcg_real rMaxOperatingSpeed;
+  kcg_bool /** True for valid and false for invalid data. */ bMaxOperatingSpeedValid;
+  kcg_int iEvsLateralOffset;
+  kcg_bool /** True for valid and false for invalid data. */ bEvsLateralOffsetValid;
+  kcg_int iEvsVerticalOffset;
+  kcg_bool /** True for valid and false for invalid data. */ bEvsVerticalOffsetValid;
+  kcg_int iEvsRollOffset;
+  kcg_bool /** True for valid and false for invalid data. */ bEvsRollOffsetValid;
+  kcg_int iEvsApmAlignCrc;
+  kcg_bool bEvsApmAlignCrcStatus;
+  kcg_bool bInterface;
+  kcg_bool bInterfaceValid;
+  kcg_int iHudLateralOffset;
+  kcg_bool /** True for valid and false for invalid data. */ bHudLateralOffsetValid;
+  kcg_int iHudVerticalOffset;
+  kcg_bool /** True for valid and false for invalid data. */ bHudVerticalOffsetValid;
+  kcg_int iHudRollOffset;
+  kcg_bool /** True for valid and false for invalid data. */ bHudRollOffsetValid;
+  kcg_int iHudOffsetCrc1;
+  kcg_bool /** True for valid and false for invalid data. */ bHudOffsetCrc1Valid;
+  kcg_int iHudOffsetCrc2;
+  kcg_bool /** True for valid and false for invalid data. */ bHudOffsetCrc2Valid;
+  kcg_bool bHudApmAlignCrcStatus;
+  kcg_bool bMaintenanceCommand;
+  kcg_bool bMaintenanceCommandValid;
+  kcg_int iEvsOffsetCrc1;
+  kcg_bool /** True for valid and false for invalid data. */ bEvsOffsetCrc1Valid;
+  kcg_int iEvsOffsetCrc2;
+  kcg_bool /** True for valid and false for invalid data. */ bEvsOffsetCrc2Valid;
+  kcg_bool /** True for miscompare indication and false for no miscompare indication. */ bMauBaroAltMiscompFlag;
+  kcg_bool /** True for valid and false for invalid data. */ bMauBaroAltMiscompFlagValidity;
+  kcg_bool /** True for miscompare indication and false for no miscompare indication. */ bMauAirspeedMiscompFlag;
+  kcg_bool /** True for valid and false for invalid data. */ bMauAirspeedMiscompFlagValidity;
+  kcg_bool /** True for miscompare indication and false for no miscompare indication. */ bMauHeadingMiscompFlag;
+  kcg_bool /** True for valid and false for invalid data. */ bMauHeadingMiscompFlagValidity;
+  kcg_bool /** True for miscompare indication and false for no miscompare indication. */ bMauLocalizerMiscompFlag;
+  kcg_bool /** True for valid and false for invalid data. */ bMauLocalizerMiscompFlagValidity;
+  kcg_bool /** True for miscompare indication and false for no miscompare indication. */ bMauPitchMiscompFlag;
+  kcg_bool /** True for valid and false for invalid data. */ bMauPitchMiscompFlagValidity;
+  kcg_bool /** True for miscompare indication and false for no miscompare indication. */ bMauRollMiscompFlag;
+  kcg_bool /** True for valid and false for invalid data. */ bMauRollMiscompFlagValidity;
+  kcg_bool /** True for miscompare indication and false for no miscompare indication. */ bMauRadioAltitudeMiscompFlag;
+  kcg_bool /** True for valid and false for invalid data. */ bMauRadioAltitudeMiscompFlagValidity;
+  kcg_bool /** True for miscompare indication and false for no miscompare indication. */ bMauGlideslopeMiscompFlag;
+  kcg_bool /** True for valid and false for invalid data. */ bMauGlideslopeMiscompFlagValidity;
+  kcg_real rGroundSpeed;
+  kcg_bool /** True for valid and false for invalid data. */ bGroundSpeedValid;
+  kcg_bool bWindshearWarningHUD;
+  kcg_bool /** True for valid and false for invalid data. */ bWindshearWarningHUDValid;
+  kcg_bool bDdiDisplayed;
+  kcg_bool /** True for valid and false for invalid data. */ bDdiDisplayedValid;
+  kcg_real rDisplayedDriftIndex;
+  kcg_bool /** True for valid and false for invalid data. */ bDisplayedDriftIndexValid;
+  IrsSelectedSourceEnum_TYPES /** Selecetd IRS source. */ eIrsSelectedSource;
+  kcg_bool /** True for valid and false for invalid data. */ bIrsSelectedSourceValid;
+  kcg_real /** MAU Center Throttle Position */ rCenterThrottlePosition;
+  kcg_bool /** True for valid and false for invalid data. */ bCenterThrottlePositionValid;
+  BaroSetFormatEnum_TYPES eBaroSetFormat;
+  kcg_bool bHudConfirmPressed;
+  kcg_bool bHudConfirmPressedValid;
+  CmcCommandEnum_TYPES eCmcCommand;
+  kcg_bool bCmcCommandValid;
+  kcg_int iCmcEquipId;
+  kcg_bool bCmcEquipIdValid;
+} struct__73387;
+
+/* MAUManager::MauFlightDataStruct */
+typedef struct__73387 MauFlightDataStruct_MAUManager;
+
+typedef struct {
+  MauFlightDataStruct_MAUManager stMauPrimaryData;
+  MauFlightDataStruct_MAUManager stMauSecondaryData;
+} struct__73558;
+
+/* MAUManager::MauEngDataStruct */
+typedef struct__73558 MauEngDataStruct_MAUManager;
+
+typedef struct {
+  kcg_bool bSr1SymbologyFreezeFailed;
+  kcg_bool bEvsFrameFreezeFailed;
+  kcg_bool bEvsCrcFreezeFailed;
+  kcg_bool bSvsFrameFreezeFailed;
+  kcg_bool bSvsCrcFreezeFailed;
+  kcg_real rSvsLosHeading;
+  kcg_real rSvsLosPitch;
+  kcg_real rSvsLosRoll;
+  kcg_bool bFrameNumberValidity;
+} struct__73563;
+
+/* VIDEOManager::VideoOperationalDataStruct */
+typedef struct__73563 VideoOperationalDataStruct_VIDEOManager;
+
+typedef struct {
+  StickBrightnessChangeEnum_STICKManager eBrightnessChange;
+  kcg_bool bBrightnesChangeValidity;
+  kcg_bool bDisplayModeShortPress;
+  kcg_bool bDisplayModeLongPress;
+  kcg_bool bDisplayModePressValid;
+  StickDiscreteToggleEnum_STICKManager eVideoOnStbyToggle;
+  kcg_bool bVideoOnStbyToggleValidity;
+} struct__73575;
+
+/* STICKManager::StickOperationalDataStruct */
+typedef struct__73575 StickOperationalDataStruct_STICKManager;
+
+typedef struct {
+  kcg_bool bPresentPositionFailure;
+  kcg_bool bAltitudeNotValidFailure;
+  kcg_bool bTawsPositionMiscompareFailure;
+  kcg_bool bTawsAltitudeMiscompareFailure;
+  kcg_bool bHeadingFailure;
+  kcg_bool bRollFailure;
+  kcg_bool bPitchFailure;
+  kcg_bool bAfcsWindshearConditionFailure;
+  kcg_bool bHorizontalFomFailure;
+  kcg_bool bVerticalFomFailure;
+  kcg_bool bTerrainStaticErrorThresholdFailure;
+  kcg_bool bRunwayStaticErrorFailure;
+  kcg_bool bDegradedImageFailure;
+  kcg_bool bNoSelectedRunwayForLandingFailure;
+  kcg_bool bAeronauticalDbExpiredFailure;
+  kcg_bool bAeronauticalDbFailure;
+  kcg_bool bTerrainDbErrorFailure;
+  kcg_bool bEagleFpgaInterruptsSr3Failure;
+  kcg_bool bGcCpldInterruptsSr3Failure;
+  kcg_bool bPci1Sr3CbitFailure;
+  kcg_bool bA429Rx02Sr3Failure;
+  kcg_bool bA429Rx03Sr3Failure;
+  kcg_bool bA429Rx04Sr3Failure;
+  kcg_bool bA429Rx05Sr3Failure;
+  kcg_bool bA429Rx06Sr3Failure;
+  kcg_bool bA429Rx22Sr3Failure;
+  kcg_bool bA429Rx23Sr3Failure;
+  kcg_bool bA429Rx24Sr3Failure;
+  kcg_bool bA429Rx26Sr3Failure;
+  kcg_bool bGraphicsMemoryIfSr3Failure;
+  kcg_bool bEagleFpgaRegisterBusFailure;
+  kcg_bool bExternalSyncDetectionSr3Failure;
+  kcg_bool bNvramFailure;
+  kcg_bool bPci1ErrorSr3Failure;
+  kcg_bool bEagleFpgaGeneralErrorsSr3Failure;
+  kcg_bool bWatchdogExpirationSr3Failure;
+  kcg_bool bObstaclesDbExpiredFailure;
+  kcg_bool bObstaclesDbFailure;
+  kcg_bool bSelectedRunwayInDbFailure;
+  kcg_bool bLvdsSr3Failure;
+  kcg_bool bTawsMonAltitudeFailure;
+  kcg_bool bTawsMonPositionFailure;
+} struct__73585;
+
+/* SVSManager::SvsFailureTypeStruct */
+typedef struct__73585 SvsFailureTypeStruct_SVSManager;
+
+typedef struct {
+  kcg_bool bAltitudeAboveFieldValid;
+  kcg_bool bRollFailureValid;
+  SvsFailureTypeStruct_SVSManager stFailureDataValid;
+} struct__73630;
+
+/* SVSManager::SvsOperationalDataValidityStruct */
+typedef struct__73630 SvsOperationalDataValidityStruct_SVSManager;
+
+typedef struct {
+  kcg_bool bSvsDbAeroOld;
+  kcg_bool bSvsDbAeroExpired;
+  kcg_bool bSvsDbAeroError;
+  kcg_bool bSvsDbObstOld;
+  kcg_bool bSvsDbObstExpired;
+  kcg_bool bSvsDbObstError;
+  kcg_bool bHudDbOld;
+  kcg_bool bSvsDbStatusValid;
+} struct__73636;
+
+/* SVSManager::SvsDbStatusStruct */
+typedef struct__73636 SvsDbStatusStruct_SVSManager;
+
+typedef struct {
+  kcg_real rAltitudeAboveField;
+  kcg_bool bRollFailure;
+  kcg_bool bPitchFailure;
+  kcg_bool bSvsAvailable;
+  kcg_bool bRunwayDisplayed;
+  SvsTypeEnum_SVSManager eSvsType;
+  SvsFailureTypeStruct_SVSManager stFailureData;
+  SvsDbStatusStruct_SVSManager stSvsDbStatus;
+} struct__73647;
+
+/* SVSManager::SvsOperationalDataStruct */
+typedef struct__73647 SvsOperationalDataStruct_SVSManager;
+
+typedef struct {
+  kcg_bool bEvsModeLow;
+  kcg_bool bEvsModeLowValid;
+  kcg_bool bEvsModeHigh;
+  kcg_bool bEvsModeHighValid;
+  kcg_bool bEvsPresent;
+  kcg_bool bEvsPresentValid;
+} struct__73658;
+
+/* ACManager::AcManagerOperationalDataStruct */
+typedef struct__73658 AcManagerOperationalDataStruct_ACManager;
+
+typedef struct { kcg_real rAltitude; kcg_bool bAltitudeValid; } struct__73667;
+
+/* RADALTManager::RadaltFlightDataStruct */
+typedef struct__73667 RadaltFlightDataStruct_RADALTManager;
+
+typedef struct {
+  RadaltFlightDataStruct_RADALTManager stPrimaryData;
+  RadaltFlightDataStruct_RADALTManager stSecondaryData;
+} struct__73672;
+
+/* RADALTManager::RadaltOperationalDataStruct */
+typedef struct__73672 RadaltOperationalDataStruct_RADALTManager;
+
+typedef struct {
+  kcg_bool bBrightnessCmdLoopAckValid;
+  kcg_bool bFlsMeanValid;
+  kcg_bool bHudBrightnessToggleValidity;
+  kcg_bool bHudBrightnessKnobValidity;
+  kcg_bool bCombinerDeployedValid;
+  kcg_bool bSvsModeValidity;
+  kcg_bool bSvsMinRangeValidity;
+  kcg_bool bXvsPositionValidity;
+  kcg_bool bXvsKnobValidity;
+  kcg_bool bAlsMeanValidity;
+  kcg_bool bEvsContrastKnobValidity;
+  kcg_bool bEvsNucValidity;
+  kcg_bool bEvsCalibrationValidity;
+  kcg_bool bBoresightRollValidity;
+  kcg_bool bBoresightPitchValidity;
+  kcg_bool bBoresightYawValidity;
+  kcg_bool bPbitDoneValidity;
+  kcg_bool eCommandAckModeValidity;
+  kcg_bool bExtPbitDoneValidity;
+} struct__73677;
+
+/* OHUManager::OhuOperationalDataValidityStruct */
+typedef struct__73677 OhuOperationalDataValidityStruct_OHUManager;
+
+typedef struct {
+  kcg_bool bVideoPathFailed;
+  kcg_bool bLcdDigitalControlSignalFailed;
+  kcg_bool bCpsFailed;
+} struct__73699;
+
+/* OHUManager::OhuIbitDataStruct */
+typedef struct__73699 OhuIbitDataStruct_OHUManager;
+
+typedef struct {
+  kcg_bool bNvramFailed;
+  kcg_bool bCpInitFailed;
+  kcg_bool bInternalI2CFailed;
+  kcg_bool bCpI2CFailed;
+  kcg_bool bCpInternalI2CFailed;
+  kcg_bool bOpuA2DFailed;
+  kcg_bool bTooBrightMonitorFailed;
+  kcg_bool bTooBrightExtFailed;
+  kcg_bool bBackLightOffFailed;
+  kcg_bool bBackLightOffExtFailed;
+  kcg_bool bVideoPathFailed;
+  kcg_bool bLcdDriverFailed;
+  kcg_bool bLcdDigitalControlSignalFailed;
+  kcg_bool bLvpsAndCapacitorsFailed;
+  kcg_bool bArinc818Failed;
+  kcg_bool bLedControlExtFailed;
+  kcg_bool bDataAndCommandCrcExtFailed;
+  kcg_bool bAcTypeExtFailed;
+  kcg_bool bArinc818KeepAliveCounterExtFailed;
+  kcg_bool bA2DFailed;
+  kcg_bool bBackLightOffDiscreteFailed;
+} struct__73705;
+
+/* OHUManager::OhuPbitDataStruct */
+typedef struct__73705 OhuPbitDataStruct_OHUManager;
+
+typedef struct {
+  kcg_bool bNvramFailed;
+  kcg_bool bInternalI2CFailed;
+  kcg_bool bA2DFailed;
+  kcg_bool bFlsFailed;
+  kcg_bool bTooBrightFailed;
+  kcg_bool bBackLightOffDiscreteFailed;
+  kcg_bool bVideoPathFailed;
+  kcg_bool bDigitalControlSignalsFailed;
+  kcg_bool bLvpsAndCapacitorsFailed;
+  kcg_bool bArinc818Failed;
+  kcg_bool bHighTemperatureFailed;
+  kcg_bool bLedControlFailed;
+  kcg_bool bDataAndCommandCrcFailed;
+  kcg_bool bPreviousVideoFrameCrcFailed;
+  kcg_bool b818KeepAliveCounterFailed;
+  kcg_bool bLcdDigitalControlSignalFailed;
+  kcg_bool bCpKnobsFailed;
+  kcg_bool bCpsFailed;
+  kcg_bool bCuKeepAliveCounterFailed;
+  kcg_bool bCpI2CFailed;
+  kcg_bool bCpInternalI2CFailed;
+  kcg_bool bOhuTooBrightMonitorCbitFailed;
+  kcg_bool bOhuAlsCbitFailed;
+} struct__73729;
+
+/* OHUManager::OhuCbitDataStruct */
+typedef struct__73729 OhuCbitDataStruct_OHUManager;
+
+typedef struct {
+  kcg_int iBrightnessCmdLoopAAck;
+  kcg_int iBrightnessCmdLoopBAck;
+  kcg_int iFlsMean;
+  kcg_bool bHudBrightnessModeIsToggled;
+  kcg_int iHudBrightnessKnob;
+  kcg_bool bCombinerDeployed;
+  kcg_bool bCombinerStowed;
+  SvsModeEnum_OHUManager eSvsMode;
+  kcg_int iSvsMinRangeCmd;
+  kcg_int iXvsPosition;
+  kcg_bool bXvsKnobIsToggled;
+  kcg_int iAlsMean;
+  kcg_int iEvsContrastKnob;
+  kcg_bool bEvsNuc;
+  kcg_int iEvsCalibration;
+  kcg_int iBoresightRoll;
+  kcg_int iBoresightVertical;
+  kcg_int iBoresightLateral;
+  kcg_bool bStowedMoreThan30Min;
+  kcg_bool bPbitDone;
+  OhuCbitDataStruct_OHUManager stCbitData;
+  OhuPbitDataStruct_OHUManager stPbitData;
+  OhuIbitDataStruct_OHUManager stIbitData;
+  OhuOperationalCommandEnum_OHUManager eCommandAckMode;
+  kcg_bool bFrameCrcFailed;
+  kcg_bool bOhuKeepAliveFailed;
+  kcg_bool bDeployedStawedFailed;
+  kcg_real rOpuPsTemp;
+  kcg_real rOpuIdisTemp;
+  kcg_real rOpuBlTemp;
+  kcg_real rOpuPebTemp;
+  kcg_real rOpuHeaterTempR;
+  kcg_real rOpuHeaterTempL;
+  kcg_bool bExtPbitDone;
+  OhuOperationalCommandEnum_OHUManager eOhuModeStatus;
+  kcg_int iCommandAckAcProgramPins;
+  kcg_int iAcProgramPinsStatus;
+} struct__73755;
+
+/* OHUManager::OhuOperationalDataStruct */
+typedef struct__73755 OhuOperationalDataStruct_OHUManager;
+
+typedef struct {
+  kcg_real rThrottlePosition;
+  kcg_bool bDisplayMode;
+  kcg_bool bThrottlePositionValid;
+  kcg_bool bDeclutterStateValid;
+} struct__73795;
+
+/* SIMManager::SimOperationalDataStruct */
+typedef struct__73795 SimOperationalDataStruct_SIMManager;
+
+typedef struct {
+  kcg_int iUtcSecond;
+  kcg_int iUtcMinute;
+  kcg_int iUtcHour;
+  A429StatusEnum_BasicIO_A429 eUtcStatus;
+  kcg_int iDateYearUnits;
+  kcg_int iDateYearTens;
+  kcg_int iDateMonthUnits;
+  kcg_int iDateMonthTens;
+  kcg_int iDateDayUnits;
+  kcg_int iDateDayTens;
+  A429StatusEnum_BasicIO_A429 eDateStatus;
+} struct__73802;
+
+/* GPSManager::GpsTimeDataStruct */
+typedef struct__73802 GpsTimeDataStruct_GPSManager;
+
+typedef struct {
+  kcg_real rTrackAngle;
+  kcg_bool bTrackAngleValid;
+  kcg_real rGroundSpeed;
+  kcg_bool bGroundSpeedValid;
+} struct__73816;
+
+/* GPSManager::GpsFlightDataStruct */
+typedef struct__73816 GpsFlightDataStruct_GPSManager;
+
+typedef struct {
+  GpsFlightDataStruct_GPSManager stPrimaryData;
+  GpsFlightDataStruct_GPSManager stSecondaryData;
+  GpsTimeDataStruct_GPSManager stTimeData;
+} struct__73823;
+
+/* GPSManager::GpsOperationalDataStruct */
+typedef struct__73823 GpsOperationalDataStruct_GPSManager;
+
+typedef struct {
+  kcg_real rPitchAngle;
+  kcg_bool bPitchAngleValid;
+  kcg_real rRollAngle;
+  kcg_bool bRollAngleValid;
+  kcg_real rHeadingAngle;
+  kcg_bool bHeadingAngleValid;
+  kcg_real rGroundSpeed;
+  kcg_bool bGroundSpeedValidity;
+  kcg_real rTrueTrackAngle;
+  kcg_bool bTrueTrackAngleValidity;
+  kcg_real rInertialVertSpeed;
+  kcg_bool bInertialVertSpeedValidity;
+  kcg_real rLateralAcceleration;
+  kcg_bool bLateralAccelerationValidity;
+  kcg_real rLongitudinalAcceleration;
+  kcg_bool bLongitudinalAccelerationValidity;
+  kcg_real rMagneticHeadingAngle;
+  kcg_bool bMagneticHeadingAngleValidity;
+  kcg_real rFlightPathAngle;
+  kcg_bool bFlightPathAngleValidity;
+  kcg_real rMagneticTrackAngle;
+  kcg_bool bMagneticTrackAngleValidity;
+  kcg_real rNormalAcceleration;
+  kcg_bool bNormalAccelerationValidity;
+  kcg_real rPitchRate;
+  kcg_bool bPitchRateValidity;
+  kcg_real rRollRate;
+  kcg_bool bRollRateValidity;
+  kcg_real rYawRate;
+  kcg_bool bYawRateValidity;
+  IrsModeEnum_TYPES eIrsMode;
+  kcg_bool bIrsModeValid;
+  kcg_real rWindSpeed;
+  kcg_bool bWindSpeedValid;
+  kcg_real rWindDirection;
+  kcg_bool bWindDirectionValid;
+} struct__73829;
+
+/* IRSManager::IrsFlightDataStruct */
+typedef struct__73829 IrsFlightDataStruct_IRSManager;
+
+typedef struct {
+  IrsFlightDataStruct_IRSManager stPrimaryData;
+  IrsFlightDataStruct_IRSManager stSecondaryData;
+} struct__73868;
+
+/* IRSManager::IrsOperationalDataStruct */
+typedef struct__73868 IrsOperationalDataStruct_IRSManager;
+
+typedef struct {
+  kcg_bool /** True for miscompare indication and false for no miscompare indication. */
+  /** True for miscompare indication and false for no miscompare indication. */ bMauBaroAltMiscompFlag;
+  kcg_bool /** True for valid and false for invalid data. */
+  /** True for valid and false for invalid data. */ bMauBaroAltMiscompFlagValidity;
+  kcg_bool /** True for miscompare indication and false for no miscompare indication. */
+  /** True for miscompare indication and false for no miscompare indication. */ bMauAirspeedMiscompFlag;
+  kcg_bool /** True for valid and false for invalid data. */
+  /** True for valid and false for invalid data. */ bMauAirspeedMiscompFlagValidity;
+  kcg_bool /** True for miscompare indication and false for no miscompare indication. */
+  /** True for miscompare indication and false for no miscompare indication. */ bMauHeadingMiscompFlag;
+  kcg_bool /** True for valid and false for invalid data. */
+  /** True for valid and false for invalid data. */ bMauHeadingMiscompFlagValidity;
+  kcg_bool /** True for miscompare indication and false for no miscompare indication. */
+  /** True for miscompare indication and false for no miscompare indication. */ bMauLocalizerMiscompFlag;
+  kcg_bool /** True for valid and false for invalid data. */
+  /** True for valid and false for invalid data. */ bMauLocalizerMiscompFlagValidity;
+  kcg_bool /** True for miscompare indication and false for no miscompare indication. */
+  /** True for miscompare indication and false for no miscompare indication. */ bMauPitchMiscompFlag;
+  kcg_bool /** True for valid and false for invalid data. */
+  /** True for valid and false for invalid data. */ bMauPitchMiscompFlagValidity;
+  kcg_bool /** True for miscompare indication and false for no miscompare indication. */
+  /** True for miscompare indication and false for no miscompare indication. */ bMauRollMiscompFlag;
+  kcg_bool /** True for valid and false for invalid data. */
+  /** True for valid and false for invalid data. */ bMauRollMiscompFlagValidity;
+  kcg_bool /** True for miscompare indication and false for no miscompare indication. */
+  /** True for miscompare indication and false for no miscompare indication. */ bMauRadioAltitudeMiscompFlag;
+  kcg_bool /** True for valid and false for invalid data. */
+  /** True for valid and false for invalid data. */ bMauRadioAltitudeMiscompFlagValidity;
+  kcg_bool /** True for miscompare indication and false for no miscompare indication. */
+  /** True for miscompare indication and false for no miscompare indication. */ bMauGlideslopeMiscompFlag;
+  kcg_bool /** True for valid and false for invalid data. */
+  /** True for valid and false for invalid data. */ bMauGlideslopeMiscompFlagValidity;
+} struct__73873;
+
+/* HUDManager::MiscompareFlagsStruct */
+typedef struct__73873 MiscompareFlagsStruct_HUDManager;
+
+/** True for valid and false for invalid data. */
+/* INTERFACE::MiscompareFlagsStruct */
+typedef struct__73873 MiscompareFlagsStruct_INTERFACE;
+
+typedef struct { struct__73221 stData; kcg_bool bValid; } struct__73892;
+
+/* RectangularPointValidStruct */
+typedef struct__73892 RectangularPointValidStruct;
+
+typedef struct {
+  AircraftTypeEnum_TYPES eAcType;
+  CuPositionEnum_TYPES eHudCuPosition;
+  kcg_bool bIsDual;
+} struct__73897;
+
+/* AcConfigurationStruct */
+typedef struct__73897 AcConfigurationStruct;
+
+typedef struct {
+  DiscreteStateEnum eDiscreteState;
+  kcg_bool bDiscreteValid;
+} struct__73903;
+
+/* DiscreteStruct */
+typedef struct__73903 DiscreteStruct;
+
+typedef struct {
+  DiscreteStruct stHudOverTemperature;
+  DiscreteStruct stBrightnessPlus;
+  DiscreteStruct stBrightnessMinus;
+  DiscreteStruct stOnStby;
+  DiscreteStruct stDisplayMode;
+} struct__73908;
+
+/* STICKManager::StickDiscretesStruct */
+typedef struct__73908 StickDiscretesStruct_STICKManager;
+
+typedef struct {
+  DiscreteStruct stAircraftType1;
+  DiscreteStruct stAircraftType2;
+  DiscreteStruct stAircraftType3;
+  DiscreteStruct stPilotCopilot;
+  DiscreteStruct stParity;
+  DiscreteStruct stEvsModeLow;
+  DiscreteStruct stEvsModeHigh;
+  DiscreteStruct stMaintenanceModeCmd;
+  DiscreteStruct stMaintenanceModeGroundCmd;
+  DiscreteStruct stAircraftTypePic;
+  DiscreteStruct stAircraftTypePar;
+  DiscreteStruct stAnalogRadalt1Valid;
+  DiscreteStruct stAnalogRadalt2Valid;
+  DiscreteStruct stEvsPresent;
+} struct__73916;
+
+/* ACManager::AircraftDiscretesStruct */
+typedef struct__73916 AircraftDiscretesStruct_ACManager;
+
+typedef struct {
+  struct__73892 /** FPV absolute position [pixel] and Visibility (true for visible and false for not visible). */ stSymbGuidanceFPVAbsPos;
+  FpvModeEnum_TYPES /** FPV flight mode (ground/flight). */ eSymbGuidanceFPVFlightMode;
+  struct__73892 /** FPV display absolute position [pixel]. */ stSymbDisplayFPVAbsPos;
+  FpvModeEnum_TYPES /** FPV display flight mode (ground/flight). */ eSymbDisplayFPVFlightMode;
+  kcg_bool /** FPV is dashed when true and solid when false. */ bSymbDisplayFPVDashed;
+  struct__73892 /** No take off absolute position [pixel] and Visibility (true for visible and false for not visible). */ stSymbNoTakeOffFlagAbsPos;
+  kcg_bool /** Symbol is flshing when true and solid when false. */ bSymbNoOffFlagFlash;
+  struct__73892 /** Ground loc absolute position [pixel] and Visibility (true for visible and false for not visible). */ stSymbGroundLocAbsPos;
+  struct__73892 /** Baro altitude digits absolute position in the altitude readout [pixel] and Visibility (true for visible and false for not visible). */ stSymbBaroAltReadoutAbsPos;
+  kcg_real /** Baro altitude value [Ft]. */ rSymbBaroAltReadoutValue;
+  struct__73892 /** CAS digits absolute position in the speed readout [pixel] and Visibility (true for visible and false for not visible). */ stSymbCASReadoutAbsPos;
+  kcg_real /** CAS value [Knots]. */ rSymbCASReadoutValue;
+  kcg_real /** Horizon line pitch value [Deg]. */ rSymbHorizonLinePitchValue;
+  kcg_real /** Horizon line roll value [Deg]. */ rSymbHorizonLineRollValue;
+  kcg_bool /** Visibility of horizon line (true for visible and false for not visible). */ bSymbHorizonLineVisibility;
+  kcg_bool /** Horizon line is dashed when true and solid when false. */ bSymbHorizonLineDashed;
+  kcg_int /** Symbols synchronization frame number value. */ iSymbSyncFrameNumValue;
+  kcg_bool /** Validity of symbols synchronization frame number (true for valid and false for not valid). */ bSymbSyncFrameNumStatus;
+} struct__73933;
+
+/* HUDManager::SymbolsDataStruct */
+typedef struct__73933 SymbolsDataStruct_HUDManager;
+
+typedef struct {
+  kcg_real /** Displayed barometric altitude [Ft]. */ rDisplayedBaroAlt;
+  kcg_bool /** True for valid and false for invalid data. */ bDisplayedBaroAltValidity;
+  kcg_real /** Displayed CAS [Knots]. */ rDisplayedCas;
+  kcg_bool /** True for valid and false for invalid data. */ bDisplayedCasValidity;
+  kcg_real /** Glide slope deviation [Deg]. */ rGlideSlopeAngle;
+  kcg_bool /** True for valid and false for invalid data. */ bGlideSlopeAngleValidity;
+  kcg_real /** Vertical deviation [DDM] (Difference in the Depth of Modulation). */ rVerticalDeviation;
+  kcg_bool /** True for valid and false for invalid data. */ bVerticalDeviationValidity;
+  kcg_int /** Runway elevation [Ft]. */ iRunwayElevation;
+  kcg_bool /** True for valid and false for invalid data. */ bRunwayElevationValidity;
+  kcg_int /** Runway length [Ft]. */ iRunwayLength;
+  kcg_bool /** True for valid and false for invalid data. */ bRunwayLengthValidity;
+  kcg_real /** Lateral deviation [Deg]. */ rLateralDeviation;
+  kcg_bool /** True for valid and false for invalid data. */ bLateralDeviationValidity;
+  kcg_int /** Selected course [Deg]. */ iSelectedCourse;
+  kcg_bool /** True for valid and false for invalid data. */ bSelectedCourseValidity;
+  kcg_int /** Selected AirSpeed */ iSelectedAirSpeed;
+  kcg_bool /** True for valid and false for invalid data. */ bSelectedAirSpeedValidity;
+  kcg_real /** Selected Airspeed Mach */ rSelectedAirspeedMach;
+  kcg_bool /** True for valid and false for invalid data. */ bSelectedAirspeedMachValidity;
+  SelectedAirspeedTypeEnum_TYPES /** Selected Airspeed Type */ eSelectedAirspeedType;
+  kcg_bool /** True for valid and false for invalid data. */ bSelectedAirspeedTypeValidity;
+  kcg_real /** Selected Decision Height */ rSelectedDecisionHeight;
+  kcg_bool /** True for valid and false for invalid data. */ bSelectedDecisionHeightValidity;
+  ActiveNavigationSourceEnum_TYPES /** Active Navigation Source */ eActiveNavigationSource;
+  kcg_bool /** True for valid and false for invalid data. */ bActiveNavigationSourceValidity;
+  ApproachModeEnum_TYPES /** Approach Mode */ eApproachMode;
+  kcg_bool /** True for valid and false for invalid data. */ bApproachModeValidity;
+  AutoPilotStateEnum_TYPES /** Autopilot State */ eAutopilotState;
+  kcg_bool /** True for valid and false for invalid data. */ bAutopilotStateValidity;
+  kcg_int /** Approach Reference Speed */ iApproachReferenceSpeed;
+  kcg_bool /** True for valid and false for invalid data. */ bApproachReferenceSpeedValidity;
+  AutoThrottleStateEnum_TYPES /** Auto Throttle State */ eAutoThrottleState;
+  kcg_bool /** True for valid and false for invalid data. */ bAutoThrottleStateValidity;
+  kcg_real /** CoPilot Navigation Channel */ rCoPilotNavigationChannel;
+  kcg_bool /** True for valid and false for invalid data. */ bCoPilotNavigationChannelValidity;
+  kcg_real /** Flaps Position */ rFlapsPosition;
+  kcg_bool /** True for valid and false for invalid data. */ bFlapsPositionValidity;
+  DhOrMdaSelectedEnum_TYPES /** Dh Or Mda Selected */ eDhOrMdaSelected;
+  kcg_bool /** True for valid and false for invalid data. */ bDhOrMdaSelectedValidity;
+  kcg_real /** Angle Of Attack */ rAngleOfAttack;
+  kcg_bool /** True for valid and false for invalid data. */ bAngleOfAttackValidity;
+  kcg_bool /** Flight Director Displayed */ bFlightDirectorDisplayed;
+  kcg_bool /** True for valid and false for invalid data. */ bFlightDirectorDisplayedValidity;
+  kcg_real /** Flight Director Pitch Command */ rFlightDirectorPitchCommand;
+  kcg_bool /** True for valid and false for invalid data. */ bFlightDirectorPitchCommandValidity;
+  kcg_real /** Flight Director Roll Command */ rFlightDirectorRollCommand;
+  kcg_bool /** True for valid and false for invalid data. */ bFlightDirectorRollCommandValidity;
+  LateralFdModeEnum_TYPES /** Lateral Fd Mode */ eLateralFdMode;
+  kcg_bool /** True for valid and false for invalid data. */ bLateralFdModeValidity;
+  LateralFdArmModeEnum_TYPES /** Lateral Fd Armed Mode */ eLateralFdArmedMode;
+  kcg_bool /** True for valid and false for invalid data. */ bLateralFdArmedModeValidity;
+  kcg_real /** Left Throttle Position */ rLeftThrottlePosition;
+  kcg_bool /** True for valid and false for invalid data. */ bLeftThrottlePositionValidity;
+  kcg_bool /** Lvto Selected */ bLvtoSelected;
+  kcg_bool /** True for valid and false for invalid data. */ bLvtoSelectedValidity;
+  kcg_real /** Flight Path Vector Command */ rFlightPathVectorCommand;
+  kcg_bool /** True for valid and false for invalid data. */ bFlightPathVectorCommandValidity;
+  PreviewNavigationSourceEnum_TYPES /** Preview Nav Src */ ePreviewNavSrc;
+  kcg_bool /** True for valid and false for invalid data. */ bPreviewNavSrcValidity;
+  kcg_bool /** Nav Tuned To Loc */ bNavTunedToLoc;
+  kcg_bool /** True for valid and false for invalid data. */ bNavTunedToLocValidity;
+  kcg_real /** Pilot Navigation Channel */ rPilotNavigationChannel;
+  kcg_bool /** True for valid and false for invalid data. */ bPilotNavigationChannelValidity;
+  VerticalFdModeEnum_TYPES /** Vertical Fd Mode */ eVerticalFdMode;
+  kcg_bool /** True for valid and false for invalid data. */ bVerticalFdModeValidity;
+  kcg_bool /** Weight On Wheels */ bWeightOnWheels;
+  kcg_bool /** True for valid and false for invalid data. */ bWeightOnWheelsValidity;
+  kcg_real /** Right Throttle Position */ rRightThrottlePosition;
+  kcg_bool /** True for valid and false for invalid data. */ bRightThrottlePositionValidity;
+  kcg_real /** True Airspeed */ rTrueAirspeed;
+  kcg_bool /** True for valid and false for invalid data. */ bTrueAirspeedValidity;
+  kcg_real /** Localizer Track */ rLocalizerTrack;
+  kcg_bool /** True for valid and false for invalid data. */ bLocalizerTrackValidity;
+  kcg_real /** FMS Desired Track */ rFmsDesiredTrack;
+  kcg_bool /** True for valid and false for invalid data. */ bFmsDesiredTrackValidity;
+  FmsMagTruSelectionEnum_TYPES /** FMS Tru Selection */ eFmsTruSelection;
+  kcg_bool /** True for valid and false for invalid data. */ bFmsTruSelectionValidity;
+  kcg_real /** FMS Mag Variation */ rFmsMagVariation;
+  kcg_bool /** True for valid and false for invalid data. */ bFmsMagVariationValidity;
+  IrsSelectedSourceEnum_TYPES /** Selected IRS source enumerator. */ eIrsSelectedSource;
+  kcg_bool /** True for valid and false for invalid data. */ bIrsSelectedSourceValid;
+  IrsModeEnum_TYPES /** IRS Mode enumerator. */ eIrsMode;
+  kcg_bool /** True for valid and false for invalid data. */ bIrsModeValid;
+  kcg_real /** Ground speed [Kts]. */ rGroundSpeed;
+  kcg_bool /** True for valid and false for invalid data. */ bGroundSpeedValidity;
+  kcg_real /** True track angle [Deg]. */ rTrueTrackAngle;
+  kcg_bool /** True for valid and false for invalid data. */ bTrueTrackAngleValidity;
+  kcg_real /** Inertial vertical speed [Ft/min]. */ rInertialVertSpeed;
+  kcg_bool /** True for valid and false for invalid data. */ bInertialVertSpeedValidity;
+  kcg_real /** Lateral acceleration [G]. */ rLateralAcceleration;
+  kcg_bool /** True for valid and false for invalid data. */ bLateralAccelerationValidity;
+  kcg_real /** Longitudinal acceleration [G]. */ rLongitudinalAcceleration;
+  kcg_bool /** True for valid and false for invalid data. */ bLongitudinalAccelerationValidity;
+  kcg_real /** Magnetic heading angle [Deg]. */ rMagneticHeadingAngle;
+  kcg_bool /** True for valid and false for invalid data. */ bMagneticHeadingAngleValidity;
+  kcg_real /** Flight path angle Deg]. */ rFlightPathAngle;
+  kcg_bool /** True for valid and false for invalid data. */ bFlightPathAngleValidity;
+  kcg_real /** Magnetic track angle [Deg]. */ rMagneticTrackAngle;
+  kcg_bool /** True for valid and false for invalid data. */ bMagneticTrackAngleValidity;
+  kcg_real /** Normal acceleration [G]. */ rNormalAcceleration;
+  kcg_bool /** True for valid and false for invalid data. */ bNormalAccelerationValidity;
+  kcg_real /** Pitch angle [Deg]. */ rPitchAngle;
+  kcg_bool /** True for valid and false for invalid data. */ bPitchAngleValidity;
+  kcg_real /** Pitch rate [Deg/Sec]. */ rPitchRate;
+  kcg_bool /** True for valid and false for invalid data. */ bPitchRateValidity;
+  kcg_real /** Roll angle [Deg]. */ rRollAngle;
+  kcg_bool /** True for valid and false for invalid data. */ bRollAngleValidity;
+  kcg_real /** Roll rate [Deg/Sec]. */ rRollRate;
+  kcg_bool /** True for valid and false for invalid data. */ bRollRateValidity;
+  kcg_real /** True heading angle [Deg]. */ rTrueHeadingAngle;
+  kcg_bool /** True for valid and false for invalid data. */ bTrueHeadingAngleValidity;
+  kcg_real /** Yaw rate [Deg/Sec]. */ rYawRate;
+  kcg_bool /** True for valid and false for invalid data. */ bYawRateValidity;
+  kcg_real /** GPS track angle [Deg]. */ rGpsTrackAngle;
+  kcg_bool /** True for valid and false for invalid data. */ bGpsTrackAngleValidity;
+  kcg_real /** GPS Ground Speed */ rGpsGroundSpeed;
+  kcg_bool /** True for valid and false for invalid data. */ bGpsGroundSpeedValidity;
+  kcg_real /** Radio Altitude */ rRadioAltitude;
+  kcg_bool /** True for valid and false for invalid data. */ bRadioAltitudeValidity;
+  kcg_real rDigitalMach;
+  kcg_bool bDigitalMachValidity;
+} struct__73954;
+
+/* HUDManager::FlightGroupStruct */
+typedef struct__73954 FlightGroupStruct_HUDManager;
+
+typedef struct {
+  kcg_int /** SR1 sensors synchronization frame number value. */ iSr1SyncFrameNumValue;
+  AircraftTypeEnum_TYPES eAcType;
+} struct__74079;
+
+/* HUDManager::GeneralInfoStruct */
+typedef struct__74079 GeneralInfoStruct_HUDManager;
+
+typedef struct {
+  kcg_bool bEvsHeaterActive;
+  kcg_bool bEvsNucActive;
+  struct__74079 stGeneralInfo;
+  struct__73873 stMauMiscompareData;
+  struct__73954 stFlightGroupPrimary;
+  struct__73954 stFlightGroupSecondary;
+  struct__73933 stSymbolsData;
+  struct__73802 stGpsTime;
+  kcg_int iHdpTemperature;
+  kcg_int iSvioTemperature;
+  EvsVideoModeEnum_EVSManager eEvsVideoMode;
+  kcg_bool bDeclutterCmd;
+  kcg_bool bImageOnOffCmd;
+  kcg_bool bCombinerDeployed;
+  kcg_bool bCombinerStowed;
+  kcg_real rOpuPsTemp;
+  kcg_real rOpuIdisTemp;
+  kcg_real rOpuBlTemp;
+  kcg_real rOpuPebTemp;
+  kcg_real rOpuHeaterTempR;
+  kcg_real rOpuHeaterTempL;
+  kcg_real rEvsPsTemp;
+  kcg_real rEvsCtrlBoardTemp;
+  kcg_real rEvsOpticalTemp;
+  kcg_real rEvsVisWindowTemp;
+  kcg_real rEvsIrWindowTemp;
+  kcg_int iCvsBalance;
+  kcg_bool bRunwayDisplayed;
+  SvsTypeEnum_SVSManager eSvsType;
+  kcg_bool bCombinerStowedMoreThan30Minutes;
+  struct__73636 stSvsDbStatus;
+  kcg_bool bEvsStbyAnnunciationFlashing;
+} struct__74084;
+
+/* HUDManager::HudOutDataStruct */
+typedef struct__74084 HudOutDataStruct_HUDManager;
+
+typedef struct {
+  kcg_bool bPbitDone;
+  kcg_bool bPbitDoneValid;
+  kcg_bool bManualNucPressed;
+  kcg_int iSvsMinRange;
+  kcg_bool bSvsMinRangeValidity;
+  kcg_real rAltitudeAboveField;
+  kcg_bool bAltitudeAboveFieldValid;
+  kcg_real rRadaltAltitude;
+  kcg_bool bRadaltAltitudeValid;
+  kcg_bool bEvsModeLow;
+  kcg_bool bEvsModeLowValid;
+  kcg_bool bEvsModeHigh;
+  kcg_bool bEvsModeHighValid;
+  kcg_bool bOhuDeployed;
+  kcg_bool bOhuStowed;
+  kcg_real rWindSpeed;
+  kcg_real rWindDirection;
+  kcg_real rTrueHeadingAngle;
+  kcg_real rDisplayedRadioAltitudePrimary;
+  A429LabelInfoStruct_BasicIO_A429 stDisplayedRadioAltitudeStatusPrimary;
+  kcg_real rDisplayedRadioAltitudeSecondary;
+  A429LabelInfoStruct_BasicIO_A429 stDisplayedRadioAltitudeStatusSecondary;
+  kcg_bool bGroundMode;
+  BaroSetFormatEnum_TYPES eBaroSetFormat;
+  kcg_bool bHudConfirmPressed;
+  kcg_bool bHudConfirmPressedValid;
+  kcg_bool bRunwayElevationValid;
+  kcg_bool bRunwayLengthValid;
+  kcg_bool bLocalizerTrackValid;
+  kcg_bool bGlideslopeAngleValid;
+  kcg_int iRunwayElevation;
+  kcg_int iRunwayLength;
+  kcg_real rLocalizerTrack;
+  kcg_real rGlideslopeAngle;
+  kcg_bool bExtPbitDone;
+  kcg_bool bExtPbitDoneValid;
+  kcg_bool bLongDisplayModeButtonPress;
+  kcg_bool bLongDisplayModeButtonPressValid;
+  ActiveNavigationSourceEnum_TYPES eActiveNavigationSource;
+  kcg_bool bActiveNavigationSourceValid;
+} struct__74119;
+
+/* HUDManager::HudInDataStruct */
+typedef struct__74119 HudInDataStruct_HUDManager;
+
+typedef struct {
+  kcg_bool bHdpTemperatureValid;
+  kcg_int iHdpTemperature;
+  kcg_bool bSvioTemperatureValid;
+  kcg_int iSvioTemperature;
+  kcg_bool bThermalMonitoringFailed;
+  kcg_int iMauHudRollOffset;
+  kcg_int iMauHudVerticalOffset;
+  kcg_int iMauHudLateralOffset;
+  kcg_int iOhuBoresightRoll;
+  kcg_int iOhuBoresightVertical;
+  kcg_int iOhuBoresightLateral;
+  OhuOperationalCommandEnum_OHUManager eCommandAckMode;
+  OhuOperationalCommandEnum_OHUManager eOhuModeStatus;
+  kcg_int iCommandAckAcProgramPins;
+  kcg_int iAcProgramPinsStatus;
+} struct__74162;
+
+/* HUDManager::TestsManager::TestsManagerDataStruct */
+typedef struct__74162 TestsManagerDataStruct_HUDManager_TestsManager;
+
+typedef struct {
+  kcg_int iOhuFlsMean;
+  OhuOperationalCommandEnum_OHUManager eOhuModeAck;
+} struct__74180;
+
+/* HUDManager::TestsManager::TestsLogicDataStructure */
+typedef struct__74180 TestsLogicDataStructure_HUDManager_TestsManager;
+
+typedef struct {
+  kcg_bool bArinc429Rx01Failed;
+  kcg_bool bArinc429Rx02Failed;
+  kcg_bool bArinc818TxSr1Failed;
+  kcg_bool bCuLvdsSr1Failed;
+  kcg_bool bEagleFpgaRegisterBusFailed;
+  kcg_bool bEagleGraphicMemoryInterfaceFailed;
+  kcg_bool bEagleExternalSyncDetectFailed;
+  kcg_bool bOhuNvramFailed;
+  kcg_bool bOhuInternalI2CFailed;
+  kcg_bool bOhuA2DFailed;
+  kcg_bool bOhuFlsFailed;
+  kcg_bool bOhuCpsFailed;
+  kcg_bool bOhuCpKnobsFailed;
+  kcg_bool bOhuCpI2CFailed;
+  kcg_bool bOhuCpInitFailed;
+  kcg_bool bOhuCpInternalI2CFailed;
+  kcg_bool bOhuTooBrightFailed;
+  kcg_bool bOhuBackLightOffDiscreteFailed;
+  kcg_bool bOhuVideoPathFailed;
+  kcg_bool bOhuLcdDigitalControlSignalsFailed;
+  kcg_bool bOhuDigitalControlSignalsFailed;
+  kcg_bool bOhuLvpsAndCapacitorsFailed;
+  kcg_bool bOhuArinc818Failed;
+  kcg_bool bOhuHighTemperatureFailed;
+  kcg_bool bOhuLedControlFailed;
+  kcg_bool bOhuDataAndCommandCrcFailed;
+  kcg_bool bOhu818KeepAliveCounterFailed;
+  kcg_bool bOhuFrameCrcFailed;
+  kcg_bool bOhuPrevVideoFrameCrcFailed;
+  kcg_bool bOhuAcTypeExtFailed;
+  kcg_bool bOhuLcdDriverFailed;
+  kcg_bool bOhuCuKeepAliveCounterFailed;
+  kcg_bool bOhuLedControlExtPbitFailed;
+  kcg_bool bOhuDataAndCommandCrcExtPbitFailed;
+  kcg_bool bOhuArinc818KeepAliveCounerExtPbitFailed;
+  kcg_bool bOhuBackLightOffExtPbitFailed;
+  kcg_bool bOhuKeepAliveFailed;
+  kcg_bool bOhuFlsFailFailed;
+  kcg_bool bOhuDeployedStowedFailed;
+  kcg_bool bMauApmHudCrcFailed;
+  kcg_bool bMauInterfaceFailed;
+  kcg_bool bEvsHeaterFailed;
+  kcg_bool bSvsPresentPositionValidityFailed;
+  kcg_bool bSvsHeadingValidityFailed;
+  kcg_bool bSvsRollValidityFailed;
+  kcg_bool bSvsPitchValidityFailed;
+  kcg_bool bSvsAfcsWindshearConditionFailed;
+  kcg_bool bSvsHorizontalFomMonitoringValidityFailed;
+  kcg_bool bSvsVerticalFomMonitoringValidityFailed;
+  kcg_bool bSvsAeronauticalDatabaseValidityFailed;
+  kcg_bool bSvsAeronauticalDatabaseExpiredFailed;
+  kcg_bool bSvsObstaclesDatabaseValidityFailed;
+  kcg_bool bSvsObstaclesDatabaseExpiredFailed;
+  kcg_bool bSvsAltitudeNotValidFailed;
+  kcg_bool bSvsTawsPositionMiscompareFailed;
+  kcg_bool bSvsTawsAltitudeMiscompareFailed;
+  kcg_bool bSvsTerrainStaticErrorFailed;
+  kcg_bool bSvsRunwayStaticErrorThresholdFailed;
+  kcg_bool bSvsDegradedImageFailed;
+  kcg_bool bSvsNoSelectedRunwayForLandingFailed;
+  kcg_bool bSvsAeronauticalDbExpiredFailed;
+  kcg_bool bSvsAeronauticalFailed;
+  kcg_bool bSvsTerrainDbErrorFailed;
+  kcg_bool bSvsEagleFpgaInterruptsSr3Failed;
+  kcg_bool bSvsGcCpldInterruptsSr3Failed;
+  kcg_bool bSvsPci1Sr3CbitFailed;
+  kcg_bool bSvsA429Rx02Sr3Failed;
+  kcg_bool bSvsA429Rx03Sr3Failed;
+  kcg_bool bSvsA429Rx04Sr3Failed;
+  kcg_bool bSvsA429Rx05Sr3Failed;
+  kcg_bool bSvsA429Rx06Sr3Failed;
+  kcg_bool bSvsA429Rx22Sr3Failed;
+  kcg_bool bSvsA429Rx23Sr3Failed;
+  kcg_bool bSvsA429Rx24Sr3Failed;
+  kcg_bool bSvsA429Rx26Sr3Failed;
+  kcg_bool bSvsGraphicsMemoryIfSr3Failed;
+  kcg_bool bSvsEagleFpgaRegisterBusFailed;
+  kcg_bool bSvsExternalSynDetectionSr3Failed;
+  kcg_bool bSvsNvramfailed;
+  kcg_bool bSvsPci1ErrorSr3Failed;
+  kcg_bool bSvsEagleFpgaGeneralErrorsSr3Failed;
+  kcg_bool bSvsWatchdogExpirationSr3Failed;
+  kcg_bool bSvsDegradedFailed;
+  kcg_bool bSvsSelectedRunwayInDbFailed;
+  kcg_bool bSvsLvdsSr3Failed;
+  kcg_bool bEagleFreezeFailed;
+  kcg_bool bSr1SymbFreezeFailed;
+  kcg_bool bEvsCrcFreezeFailed;
+  kcg_bool bEvsFrameFreezeFailed;
+  kcg_bool bHudCasFailed;
+  kcg_bool bDiscreteProgramPin1Failed;
+  kcg_bool bDiscreteProgramPin2Failed;
+  kcg_bool bDiscreteProgramPin3Failed;
+  kcg_bool bDiscreteProgramPinParFailed;
+  kcg_bool bDiscreteProgramPinPicFailed;
+  kcg_bool bEvsLhOptTransmitterFailed;
+  kcg_bool bEvsPowerFailed;
+  kcg_bool bEvsArinc429RxFailed;
+  kcg_bool bEvsTvsSensorFailed;
+  kcg_bool bEvsNvsSensorFailed;
+  kcg_bool bEvsDvs1SensorFailed;
+  kcg_bool bEvsDvs2SensorFailed;
+  kcg_bool bEvsDvs3SensorFailed;
+  kcg_bool bEvsDvs4SensorFailed;
+  kcg_bool bEvsFrozenTvsFailed;
+  kcg_bool bEvsFrozenNvsFailed;
+  kcg_bool bEvsFrozenDvs1Failed;
+  kcg_bool bEvsFrozenDvs2Failed;
+  kcg_bool bEvsFrozenDvs3Failed;
+  kcg_bool bEvsFrozenDvs4Failed;
+  kcg_bool bEvsTvsInternalTpFailed;
+  kcg_bool bEvsNvsInternalTpFailed;
+  kcg_bool bEvsDvs1InternalTpFailed;
+  kcg_bool bEvsDvs2InternalTpFailed;
+  kcg_bool bEvsDvs3InternalTpFailed;
+  kcg_bool bEvsDvs4InternalTpFailed;
+  kcg_bool bEvsNucFailed;
+  kcg_bool bEvsDdrFailed;
+  kcg_bool bEvsVideoInvalidFailed;
+  kcg_bool bEvsHumidityHighFailed;
+  kcg_bool bEvsAppArinc429RxFail;
+  kcg_bool bEvsPFI;
+  kcg_bool bEvsOvertemp;
+  EvsModeControlEnum_EVSManager eEvsModeOfOperation;
+  kcg_bool bEvsIsAvailable;
+  kcg_bool bCuBacklightOffDiscreteOutSr1Failed;
+  kcg_bool bHudCuArinc429Rx22Sr1Failed;
+  kcg_bool bHudCuEagleFpgaInterruptsSr1Failed;
+  kcg_bool bHudCuGcCpldInterruptsSr1Failed;
+  kcg_bool bOhuTooBrightMonitorCbitFailed;
+  kcg_bool bHudCuDdrmemInternalErrorSr1Failed;
+  kcg_bool bHudCuWatchdogMechanismSr1Failed;
+  kcg_bool bHudCuPci1ErrorSr1Failed;
+  kcg_bool bHudCuEagleFpgaCrcErrorSr1Failed;
+  kcg_bool bHudCuEagleFpgaGeneralErrorsSr1Failed;
+  kcg_bool bSvsTawsMonAltFailed;
+  kcg_bool bSvsTawsMonPosFailed;
+  kcg_bool bHudCuWatchdogExpirationSr1Failed;
+  kcg_bool bHudCuFullEagleGraphicsMemorySr1Failed;
+  kcg_bool bHudCuFullHdpGraphicsMemorySr1Failed;
+  kcg_bool bEvsAligmentOffsetsCrcFailed;
+  kcg_bool bEvsRs485FailureLh;
+  kcg_bool bEvsRs485FailureRh;
+} struct__74185;
+
+/* HUDManager::FailuresManager::FailuresManagerDataStruct */
+typedef struct__74185 FailuresManagerDataStruct_HUDManager_FailuresManager;
+
+typedef struct {
+  kcg_real rPitchAngle;
+  kcg_bool bPitchAngleValid;
+  kcg_real rRollAngle;
+  kcg_bool bRollAngleValid;
+  kcg_real rTrueHeadingAngle;
+  kcg_bool bTrueHeadingAngleValid;
+} struct__74331;
+
+/* HUDManager::PowerScanManager::PositionDataStruct */
+typedef struct__74331 PositionDataStruct_HUDManager_PowerScanManager;
+
+typedef struct {
+  struct__74331 stAcPositionData;
+  struct__74331 stSvsPositionData;
+} struct__74340;
+
+/* HUDManager::PowerScanManager::PscanInDataStruct */
+typedef struct__74340 PscanInDataStruct_HUDManager_PowerScanManager;
+
+typedef struct {
+  kcg_int iSvioTemperature;
+  kcg_bool bSvioTemperatureValid;
+  kcg_int iHdpTemperature;
+  kcg_bool bHdpTemperatureValid;
+  kcg_real rAltitude;
+  kcg_bool bPowerSupplyAsserted;
+} struct__74345;
+
+/* HUDManager::TempManager::TemperatureManagerDataStruct */
+typedef struct__74345 TemperatureManagerDataStruct_HUDManager_TempManager;
+
+typedef struct {
+  kcg_int iEvsVerticalOffset;
+  kcg_int iEvsLateralOffset;
+  kcg_int iEvsRollOffset;
+  kcg_int iHudVerticalOffset;
+  kcg_int iHudLateralOffset;
+  kcg_int iHudRollOffset;
+  kcg_int iMessageId;
+  RequestedAlignmentCommandEnum_ExtPcManager eRequestedAlignmentCommand;
+  kcg_int iRequestedLateralShift;
+  kcg_int iRequestedVerticalShift;
+  kcg_int iRequestedRollShift;
+  kcg_bool bMessageValid;
+  kcg_bool bHudApmCrcStatus;
+  kcg_int iHudOffsetCrc1;
+  kcg_int iHudOffsetCrc2;
+} struct__74354;
+
+/* HUDManager::AlignmentLogic::AligmentLogicDataStruct */
+typedef struct__74354 AligmentLogicDataStruct_HUDManager_AlignmentLogic;
+
+typedef struct {
+  StickDiscreteToggleEnum_STICKManager eVideoOnStbyToggle;
+  StickBrightnessChangeEnum_STICKManager eBrightnessChange;
+  kcg_bool bBrightnesChangeValidity;
+  kcg_bool bXvsKnobIsToggled;
+  kcg_bool bXvsKnobValidity;
+  kcg_int iXvsPosition;
+  kcg_int iEvsContrastKnob;
+  kcg_bool bEvsContrastKnobValidity;
+  kcg_bool bEvsApmAlignCrcOk;
+  kcg_bool bSvsAvailable;
+  kcg_bool bXvsModeValidity;
+  EvsModeControlEnum_EVSManager eEvsModeOfOperation;
+  EvsVideoModeEnum_EVSManager eEvsVideoMode;
+  kcg_bool bEvsBusy;
+  kcg_bool bEvsPerfomingNuc;
+  kcg_bool bSvsInterfaceValid;
+  SvsTypeEnum_SVSManager eSvsType;
+} struct__74372;
+
+/* HUDManager::VideoLogic::VideoLogicDataStruct */
+typedef struct__74372 VideoLogicDataStruct_HUDManager_VideoLogic;
+
+typedef struct {
+  kcg_bool bFlightDirectorOverspeedProtActive;
+  kcg_bool bFlightDirectorOverspeedProtActiveValid;
+  kcg_bool bFlightDirectorUnderspeedProtActive;
+  kcg_bool bFlightDirectorUnderspeedProtActiveValid;
+  kcg_bool bAutoThrottleOverspeedProtActive;
+  kcg_bool bAutoThrottleOverspeedProtActiveValid;
+  kcg_bool bAutoThrottleUnderspeedProtActive;
+  kcg_bool bAutoThrottleUnderspeedProtActiveValid;
+  kcg_bool bAdmModeActive;
+  kcg_bool bAdmModeActiveValid;
+  kcg_real rLowSpeedCue;
+  kcg_bool bLowSpeedCueValid;
+  kcg_real rStallWarningSpeed;
+  kcg_bool bStallWarningSpeedValid;
+  kcg_real rVerticalConstraintSpeed;
+  kcg_bool bVerticalConstraintSpeedValid;
+  kcg_real rMaxOperatingSpeed;
+  kcg_bool bMaxOperatingSpeedValid;
+  kcg_real rCalibratedAirspeed;
+  kcg_bool bCalibratedAirspeedValid;
+  kcg_real rRadioAltitude;
+  kcg_bool bDisplayModeChangeRequest;
+  AircraftTypeEnum_TYPES eAircraftType;
+  kcg_real rPitchAngle;
+  kcg_real rRollAngle;
+  kcg_real rGroundSpeed;
+  kcg_bool bLandingGearDown;
+  FlapsSlatStateEnum_TYPES eFlapsSlatState;
+  kcg_bool bWeighOnWheels;
+  kcg_bool bWeightOnWheelsValid;
+  kcg_real rRightThrottlePosition;
+  kcg_real rLeftThrottlePosition;
+  kcg_real rCenterThrottlePosition;
+  VerticalFdModeEnum_TYPES eFlightDirectordVerticalMode;
+  kcg_bool bWindshearWarningHud;
+  kcg_bool bWindshearWarningHudValid;
+  kcg_real rDisplayedDriftIndex;
+  kcg_bool bDisplayedDriftIndexValid;
+  kcg_bool bPitchAngleValid;
+  kcg_bool bRollAngleValid;
+  kcg_bool bGroundSpeedValid;
+  kcg_bool bLandingGearDownValid;
+  kcg_bool bFlapsSlatStateValid;
+  kcg_bool bRightThrottlePositionValid;
+  kcg_bool bLeftThrottlePositionValid;
+  kcg_bool bCenterThrottlePositionValid;
+  kcg_bool bFlightDirectorVerticalModeValid;
+  kcg_bool bGroundmode;
+  kcg_bool bGroundmodeValid;
+} struct__74392;
+
+/* HUDManager::FlightManager::FlighManagerDataStruct */
+typedef struct__74392 FlighManagerDataStruct_HUDManager_FlightManager;
+
+typedef struct {
+  kcg_bool bHudBrightnessModeIsToggled;
+  kcg_int iAlsMean;
+  kcg_int iHudBrightnessKnob;
+  kcg_bool bHudBrightnessKnobValidity;
+  kcg_int iFlsMean;
+  kcg_bool bFlsMeanValid;
+  kcg_bool bAlsMeanValid;
+  kcg_int iBrightnessCmdLoopAAck;
+  kcg_int iBrightnessCmdLoopBAck;
+} struct__74444;
+
+/* HUDManager::GlobalBrightnessManager::GlobalBrightnessDataStruct */
+typedef struct__74444 GlobalBrightnessDataStruct_HUDManager_GlobalBrightnessManager;
+
+typedef struct {
+  kcg_bool bLoaderCommanded;
+  kcg_bool bInterfaceValid;
+  kcg_bool bOnGround;
+  kcg_bool bCombinerDeployed;
+  kcg_bool bCombinerDeployedValid;
+  kcg_bool bDiscreteUp;
+  CmcCommandEnum_TYPES eCmcCommand;
+  kcg_int iCmcEquipId;
+  AircraftTypeEnum_TYPES eAircraftType;
+  kcg_bool bCmcCommandValid;
+  kcg_bool bCmcEquipIdValid;
+} struct__74456;
+
+/* HUDManager::StatesModesManager::ModesManagerDataStruct */
+typedef struct__74456 ModesManagerDataStruct_HUDManager_StatesModesManager;
+
+typedef struct {
+  RectangularPointStruct /** FPV absolute position [pixel]. */ stSymbFPVAbsPos;
+  kcg_bool /** Visibility of FPV symbol (true for visible and false for not visible). */ bSymbFPVVisibility;
+  FpvModeEnum_TYPES /** FPV flight mode (ground/flight). */ eSymbFPVFlightMode;
+  kcg_bool /** FPV is dashed when true and solid when false. */ bSymbFPVDashed;
+  RectangularPointStruct /** No take off absolute position [pixel]. */ stSymbNoTakeOffFlagAbsPos;
+  kcg_bool /** Visibility of No Take OFF symbol (true for visible and false for not visible). */ bSymbNoTakeoOffFlagVisibility;
+  kcg_bool /** Symbol is flshing when true and solid when false. */ bSymbNoOffFlagFlash;
+  RectangularPointStruct /** Ground loc absolute position [pixel]. */ stSymbGroundLocAbsPos;
+  kcg_bool /** Visibility of Ground Loc symbol (true for visible and false for not visible). */ bSymbGroundLocVisibility;
+  RectangularPointStruct /** Baro altitude digits absolute position in the altitude readout [pixel]. */ stSymbBaroAltReadoutAbsPos;
+  kcg_bool /** Visibility of BaroAlt digits in the altitude readout (true for visible and false for not visible). */ bSymbBaroAltVisibility;
+  kcg_real /** Baro altitude value [Ft]. */ rSymbBaroAltReadoutValue;
+  RectangularPointStruct /** CAS digits absolute position in the speed readout [pixel]. */ stSymbCASReadoutAbsPos;
+  kcg_bool /** Visibility of CAS digits in the speed readout (true for visible and false for not visible). */ bSymbCASVisibility;
+  kcg_real /** CAS value [Knots]. */ rSymbCASReadoutValue;
+  kcg_real /** Horizon line pitch value [Deg]. */ rSymbHorizonLinePitchValue;
+  kcg_real /** Horizon line roll value [Deg]. */ rSymbHorizonLineRollValue;
+  kcg_bool /** Visibility of horizon line (true for visible and false for not visible). */ bSymbHorizonLineVisibility;
+  kcg_bool /** Horizon line is dashed when true and solid when false. */ bSymbHorizonLineDashed;
+  kcg_int /** Symbols synchronization frame number value. */ iSymbSyncFrameNumValue;
+  kcg_bool /** Spare. */ bSparePadding;
+} struct__74470;
+
+/* INTERFACE::SymbolsDisplayDataStruct */
+typedef struct__74470 SymbolsDisplayDataStruct_INTERFACE;
+
+typedef struct {
+  kcg_real rRadioAltitude;
+  kcg_bool bRadioAltitudeValidity;
+} struct__74494;
+
+/* INTERFACE::RadaltDataStruct */
+typedef struct__74494 RadaltDataStruct_INTERFACE;
+
+typedef struct {
+  kcg_real /** [Knots]. */ rGpsTrackAngle;
+  kcg_bool /** True for valid and false for invalid data. */ bGpsTrackAngleValidity;
+  kcg_real rGpsGroundSpeed;
+  kcg_bool bGpsGroundSpeedValidity;
+} struct__74499;
+
+/** SR1 GPS data. */
+/* INTERFACE::GpsDataStruct */
+typedef struct__74499 GpsDataStruct_INTERFACE;
+
+typedef struct {
+  kcg_real /** MAU displayed barometric altitude [Ft]. */ rMauDisplayedBaroAlt;
+  kcg_bool /** True for valid and false for invalid data. */ bMauDisplayedBaroAltValidity;
+  kcg_real /** MAU displayed CAS [Knots]. */ rMauDisplayedCas;
+  kcg_bool /** True for valid and false for invalid data. */ bMauDisplayedCasValidity;
+  kcg_real /** MAU glide slope deviation [Deg]. */ rMauGlideSlopeAngle;
+  kcg_bool /** True for valid and false for invalid data. */ bMauGlideSlopeAngleValidity;
+  kcg_real /** MAU vertical deviation [DDM] (Difference in the Depth of Modulation). */ rMauVerticalDeviation;
+  kcg_bool /** True for valid and false for invalid data. */ bMauVerticalDeviationValidity;
+  kcg_int /** MAU runway elevation [Ft]. */ iMauRunwayElevation;
+  kcg_bool /** True for valid and false for invalid data. */ bMauRunwayElevationValidity;
+  kcg_int /** MAU runway length [Ft]. */ iMauRunwayLength;
+  kcg_bool /** True for valid and false for invalid data. */ bMauRunwayLengthValidity;
+  kcg_real /** MAU lateral deviation [Deg]. */ rMauLateralDeviation;
+  kcg_bool /** True for valid and false for invalid data. */ bMauLateralDeviationValidity;
+  kcg_real /** MAU displayed RADALT [Ft]. */ rMauDisplayedRadioAltitude;
+  kcg_bool /** True for valid and false for invalid data. */ bMauDisplayedRadioAltitudeValidity;
+  kcg_int /** MAU selected course [Deg]. */ iMauSelectedCourse;
+  kcg_bool /** True for valid and false for invalid data. */ bMauSelectedCourseValidity;
+  kcg_int /** MAU Selected AirSpeed */ iMauSelectedAirSpeed;
+  kcg_bool /** True for valid and false for invalid data. */ bMauSelectedAirSpeedValidity;
+  kcg_real /** MAU Selected Airspeed Mach */ iMauSelectedAirspeedMach;
+  kcg_bool /** True for valid and false for invalid data. */ bMauSelectedAirspeedMachValidity;
+  SelectedAirspeedTypeEnum_TYPES /** MAU Selected Airspeed Type */ eMauSelectedAirspeedType;
+  kcg_bool /** True for valid and false for invalid data. */ bMauSelectedAirspeedTypeValidity;
+  kcg_real /** MAU Selected Decision Height */ rMauSelectedDecisionHeight;
+  kcg_bool /** True for valid and false for invalid data. */ bMauSelectedDecisionHeightValidity;
+  ActiveNavigationSourceEnum_TYPES /** MAU Active Navigation Source */ eMauActiveNavigationSource;
+  kcg_bool /** True for valid and false for invalid data. */ bMauActiveNavigationSourceValidity;
+  ApproachModeEnum_TYPES /** MAU Approach Mode */ eMauApproachMode;
+  kcg_bool /** True for valid and false for invalid data. */ bMauApproachModeValidity;
+  AutoPilotStateEnum_TYPES /** MAU Autopilot State */ eMauAutopilotState;
+  kcg_bool /** True for valid and false for invalid data. */ bMauAutopilotStateValidity;
+  kcg_int /** MAU Approach Reference Speed */ iMauApproachReferenceSpeed;
+  kcg_bool /** True for valid and false for invalid data. */ bMauApproachReferenceSpeedValidity;
+  AutoThrottleStateEnum_TYPES /** MAU Auto Throttle State */ eMauAutoThrottleState;
+  kcg_bool /** True for valid and false for invalid data. */ bMauAutoThrottleStateValidity;
+  kcg_real /** MAU CoPilot Navigation Channel */ rMauCoPilotNavigationChannel;
+  kcg_bool /** True for valid and false for invalid data. */ bMauCoPilotNavigationChannelValidity;
+  kcg_real /** MAU Flaps Position */ rMauFlapsPosition;
+  kcg_bool /** True for valid and false for invalid data. */ bMauFlapsPositionValidity;
+  DhOrMdaSelectedEnum_TYPES /** MAU Dh Or Mda Selected */ eMauDhOrMdaSelected;
+  kcg_bool /** True for valid and false for invalid data. */ bMauDhOrMdaSelectedValidity;
+  kcg_real /** MAU Angle Of Attack */ rMauAngleOfAttack;
+  kcg_bool /** True for valid and false for invalid data. */ bMauAngleOfAttackValidity;
+  kcg_bool /** MAU Flight Director Displayed */ bMauFlightDirectorDisplayed;
+  kcg_bool /** True for valid and false for invalid data. */ bMauFlightDirectorDisplayedValidity;
+  kcg_real /** MAU Flight Director Pitch Command */ rMauFlightDirectorPitchCommand;
+  kcg_bool /** True for valid and false for invalid data. */ bMauFlightDirectorPitchCommandValidity;
+  kcg_real /** MAU Flight Director Roll Command */ rMauFlightDirectorRollCommand;
+  kcg_bool /** True for valid and false for invalid data. */ bMauFlightDirectorRollCommandValidity;
+  LateralFdModeEnum_TYPES /** MAU Lateral Fd Mode */ eMauLateralFdMode;
+  kcg_bool /** True for valid and false for invalid data. */ bMauLateralFdModeValidity;
+  LateralFdArmModeEnum_TYPES /** MAU Lateral Fd Armed Mode */ eMauLateralFdArmedMode;
+  kcg_bool /** True for valid and false for invalid data. */ bMauLateralFdArmedModeValidity;
+  kcg_real /** MAU Left Throttle Position */ rMauLeftThrottlePosition;
+  kcg_bool /** True for valid and false for invalid data. */ bMauLeftThrottlePositionValidity;
+  kcg_bool /** MAU Lvto Selected */ bMauLvtoSelected;
+  kcg_bool /** True for valid and false for invalid data. */ bMauLvtoSelectedValidity;
+  kcg_real /** MAU Flight Path Vector Command */ rMauFlightPathVectorCommand;
+  kcg_bool /** True for valid and false for invalid data. */ bMauFlightPathVectorCommandValidity;
+  PreviewNavigationSourceEnum_TYPES /** MAU Preview Nav Src */ eMauPreviewNavSrc;
+  kcg_bool /** True for valid and false for invalid data. */ bMauPreviewNavSrcValidity;
+  kcg_bool /** MAU Nav Tuned To Loc */ bMauNavTunedToLoc;
+  kcg_bool /** True for valid and false for invalid data. */ bMauNavTunedToLocValidity;
+  kcg_real /** MAU Pilot Navigation Channel */ rMauPilotNavigationChannel;
+  kcg_bool /** True for valid and false for invalid data. */ bMauPilotNavigationChannelValidity;
+  VerticalFdModeEnum_TYPES /** MAU Vertical Fd Mode */ eMauVerticalFdMode;
+  kcg_bool /** True for valid and false for invalid data. */ bMauVerticalFdModeValidity;
+  kcg_bool /** MAU Weight On Wheels */ bMauWeightOnWheels;
+  kcg_bool /** True for valid and false for invalid data. */ bMauWeightOnWheelsValidity;
+  kcg_real /** MAU Right Throttle Position */ rMauRightThrottlePosition;
+  kcg_bool /** True for valid and false for invalid data. */ bMauRightThrottlePositionValidity;
+  kcg_real /** MAU True Airspeed */ rMauTrueAirspeed;
+  kcg_bool /** True for valid and false for invalid data. */ bMauTrueAirspeedValidity;
+  kcg_real /** MAU Localizer Track */ rMauLocalizerTrack;
+  kcg_bool /** True for valid and false for invalid data. */ bMauLocalizerTrackValidity;
+  kcg_real /** MAU FMS Desired Track */ rMauFmsDesiredTrack;
+  kcg_bool /** True for valid and false for invalid data. */ bMauFmsDesiredTrackValidity;
+  kcg_real /** MAU FMS Mag Variation */ rMauFmsMagVariation;
+  kcg_bool /** True for valid and false for invalid data. */ bMauFmsMagVariationValidity;
+  FmsMagTruSelectionEnum_TYPES /** MAU FMS Tru Selection */ eMauFmsTruSelection;
+  kcg_bool /** True for valid and false for invalid data. */ bMauFmsTruSelectionValidity;
+  kcg_real /** MAU displayed airspeed. */ rDigitalMach;
+  kcg_bool /** True for valid and false for invalid data. */ bDigitalMachValidity;
+  IrsSelectedSourceEnum_TYPES /** MAU selected IRS source enumerator. */ eIrsSelectedSource;
+  kcg_bool /** True for valid and false for invalid data. */ bIrsSelectedSourceValidity;
+} struct__74506;
+
+/* INTERFACE::MauDataStruct */
+typedef struct__74506 MauDataStruct_INTERFACE;
+
+typedef struct {
+  RectangularPointStruct /** FPV absolute position [pixel]. */ stSymbFPVAbsPos;
+  kcg_bool /** Visibility of FPV symbol (true for visible and false for not visible). */ bSymbFPVVisibility;
+  FpvModeEnum_TYPES /** FPV flight mode (ground/flight). */ eSymbFPVFlightMode;
+  RectangularPointStruct /** No take off absolute position [pixel]. */ stSymbNoTakeOffFlagAbsPos;
+  kcg_bool /** Visibility of No Take OFF symbol (true for visible and false for not visible). */ bSymbNoTakeoOffFlagVisibility;
+  kcg_bool /** Symbol is flshing when true and solid when false. */ bSymbNoOffFlagFlash;
+  RectangularPointStruct /** Ground loc absolute position [pixel]. */ stSymbGroundLocAbsPos;
+  kcg_bool /** Visibility of Ground Loc symbol (true for visible and false for not visible). */ bSymbGroundLocVisibility;
+  RectangularPointStruct /** Baro altitude digits absolute position in the altitude readout [pixel]. */ stSymbBaroAltReadoutAbsPos;
+  kcg_bool /** Visibility of BaroAlt digits in the altitude readout (true for visible and false for not visible). */ bSymbBaroAltVisibility;
+  kcg_real /** Baro altitude value [Ft]. */ rSymbBaroAltReadoutValue;
+  RectangularPointStruct /** CAS digits absolute position in the speed readout [pixel]. */ stSymbCASReadoutAbsPos;
+  kcg_bool /** Visibility of CAS digits in the speed readout (true for visible and false for not visible). */ bSymbCASVisibility;
+  kcg_real /** CAS value [Knots]. */ rSymbCASReadoutValue;
+  kcg_real /** Horizon line pitch value [Deg]. */ rSymbHorizonLinePitchValue;
+  kcg_real /** Horizon line roll value [Deg]. */ rSymbHorizonLineRollValue;
+  kcg_bool /** Visibility of horizon line (true for visible and false for not visible). */ bSymbHorizonLineVisibility;
+  kcg_bool /** Horizon line is dashed when true and solid when false. */ bSymbHorizonLineDashed;
+  kcg_int /** Symbols synchronization frame number value. */ iSymbSyncFrameNumValue;
+  kcg_bool /** Spare. */ bSparePadding;
+} struct__74595;
+
+/* INTERFACE::SymbolsGuidanceDataStruct */
+typedef struct__74595 SymbolsGuidanceDataStruct_INTERFACE;
+
+typedef struct {
+  IrsModeEnum_TYPES /** IRS mode enumerator. */ eIrsMode;
+  kcg_bool /** IRS Mode validity. */ bIrsModeValid;
+  kcg_real /** Ground speed [Kts]. */ rIrsGroundSpeed;
+  kcg_bool /** True for valid and false for invalid data. */ bIrsGroundSpeedValidity;
+  kcg_real rIrsTrueTrackAngle;
+  kcg_bool bIrsTrueTrackAngleValidity;
+  kcg_real /** Inertial vertical speed [Ft/min]. */ rIrsInertialVertSpeed;
+  kcg_bool /** True for valid and false for invalid data. */ bIrsInertialVertSpeedValidity;
+  kcg_real /** Lateral acceleration [G]. */ rIrsLateralAcceleration;
+  kcg_bool /** True for valid and false for invalid data. */ bIrsLateralAccelerationValidity;
+  kcg_real /** Longitudinal acceleration [G]. */ rIrsLongitudinalAcceleration;
+  kcg_bool /** True for valid and false for invalid data. */ bIrsLongitudinalAccelerationValidity;
+  kcg_real /** Magnetic heading angle [Deg]. */ rIrsMagneticHeadingAngle;
+  kcg_bool /** True for valid and false for invalid data. */ bIrsMagneticHeadingAngleValidity;
+  kcg_real rIrsFlightPathAngle;
+  kcg_bool bIrsFlightPathAngleValidity;
+  kcg_real /** Magnetic track angle [Deg]. */ rIrsMagneticTrackAngle;
+  kcg_bool /** True for valid and false for invalid data. */ bIrsMagneticTrackAngleValidity;
+  kcg_real /** Normal acceleration [G]. */ rIrsNormalAcceleration;
+  kcg_bool /** True for valid and false for invalid data. */ bIrsNormalAccelerationValidity;
+  kcg_real /** Pitch angle [Deg]. */ rIrsPitchAngle;
+  kcg_bool /** True for valid and false for invalid data. */ bIrsPitchAngleValidity;
+  kcg_real /** Pitch rate [Deg/Sec]. */ rIrsPitchRate;
+  kcg_bool /** True for valid and false for invalid data. */ bIrsPitchRateValidity;
+  kcg_real /** Roll angle [Deg]. */ rIrsRollAngle;
+  kcg_bool /** True for valid and false for invalid data. */ bIrsRollAngleValidity;
+  kcg_real /** Roll rate [Deg/Sec]. */ rIrsRollRate;
+  kcg_bool /** True for valid and false for invalid data. */ bIrsRollRateValidity;
+  kcg_real /** True heading angle [Deg]. */ rIrsTrueHeadingAngle;
+  kcg_bool /** True for valid and false for invalid data. */ bIrsTrueHeadingAngleValidity;
+  kcg_real /** Yaw rate [Deg/Sec]. */ rIrsYawRate;
+  kcg_bool /** True for valid and false for invalid data. */ bIrsYawRateValidity;
+} struct__74618;
+
+/** IRS data sent from SR1. */
+/* INTERFACE::IrsSensorsDataStruct */
+typedef struct__74618 IrsSensorsDataStruct_INTERFACE;
+
+typedef struct {
+  kcg_int /** SR1 sensors synchronization frame number value. */ iSr1SyncFrameNumValue;
+  AircraftTypeEnum_TYPES eAcType;
+  IrsSensorsDataStruct_INTERFACE stIrsPrimaryData;
+  IrsSensorsDataStruct_INTERFACE stIrsSecondaryData;
+  SymbolsGuidanceDataStruct_INTERFACE /** Symbols sanity data. */ stSymbolsSanityData;
+  SymbolsDisplayDataStruct_INTERFACE /** Symbols displayed data. */ stSymbolsRecognitionData;
+  MauDataStruct_INTERFACE stMauPrimaryData;
+  MauDataStruct_INTERFACE stMauSecondaryData;
+  MiscompareFlagsStruct_INTERFACE stMauMiscompareData;
+  GpsDataStruct_INTERFACE stGpsPrimaryData;
+  GpsDataStruct_INTERFACE stGpsSecondaryData;
+  RadaltDataStruct_INTERFACE stRadaltPrimaryData;
+  RadaltDataStruct_INTERFACE stRadaltSecondary;
+  kcg_bool /** Spare. */ bSparePadding;
+} struct__74653;
+
+/** SR1 data in structure. */
+/* INTERFACE::Sr1ToSr2DataStruct */
+typedef struct__74653 Sr1ToSr2DataStruct_INTERFACE;
+
+typedef struct {
+  kcg_real rDisplayedRadaltPrimary;
+  kcg_bool bDisplayedRadaltPrimaryValid;
+  kcg_real rDisplayedRadaltSecondary;
+  kcg_bool bDisplayedRadaltSecondaryValid;
+} struct__74670;
+
+/* HUDManager::CalculatedDataToMonitoringStruct */
+typedef struct__74670 CalculatedDataToMonitoringStruct_HUDManager;
+
+typedef struct {
+  struct__74079 stGeneralInformation;
+  struct__73954 stFlightGroupPrimary;
+  struct__73954 stFlightGroupSecondary;
+  struct__73873 stMauMiscompareData;
+  struct__73933 stSymbolsStruct;
+  struct__74670 stLogicData;
+} struct__74677;
+
+/* SR2Manager::SR2DataOutStruct */
+typedef struct__74677 SR2DataOutStruct_SR2Manager;
+
+typedef kcg_char array_char_256[256];
+
+/* ExtPcManager::cAlignMessageArray */
+typedef array_char_256 cAlignMessageArray_ExtPcManager;
+
+typedef struct {
+  kcg_int iMessageIdFeedback;
+  RequestedAlignmentCommandEnum_ExtPcManager eRequestedAlignCommand;
+  kcg_int iLateralAlignValue;
+  kcg_int iVerticalAlignValue;
+  kcg_int iRollAlignValue;
+  kcg_int iCalculatedCrc;
+  VideoStateEnum eEvsMode;
+  kcg_int iApmLateralAlign;
+  kcg_int iApmVerticallAlign;
+  kcg_int iApmRollAlign;
+  kcg_int iApmAlignCrc;
+  cAlignMessageArray_ExtPcManager aHudAlignMessage;
+} struct__74689;
+
+/* ExtPcManager::ExtPcDataOutStruct */
+typedef struct__74689 ExtPcDataOutStruct_ExtPcManager;
+
+typedef kcg_int array_int_3[3];
+
+/* SVIOManager::SvioLabelsOutArray */
+typedef array_int_3 SvioLabelsOutArray_SVIOManager;
+
+typedef struct {
+  SvioFanSpeedEnum_SVIOManager eFan1Speed;
+  kcg_bool bFan1Enabled;
+  SvioFanSpeedEnum_SVIOManager eFan2Speed;
+  kcg_bool bFan2Enabled;
+} struct__74707;
+
+/* SVIOManager::SvioOutDataStruct */
+typedef struct__74707 SvioOutDataStruct_SVIOManager;
+
+typedef kcg_int array_int_7[7];
+
+/* EVSManager::EvsA429LabelsOutArray */
+typedef array_int_7 EvsA429LabelsOutArray_EVSManager;
+
+typedef struct {
+  EvsModeControlEnum_EVSManager eEvsMode;
+  kcg_bool bAlignActive;
+  kcg_bool bAutoNucActive;
+  kcg_bool bManualNucPressed;
+  EvsVideoModeEnum_EVSManager eEvsVideoMode;
+  kcg_bool bWowStatus;
+  kcg_int iDateYearUnits;
+  kcg_int iDateYearTens;
+  kcg_int iDateMonthUnits;
+  kcg_int iDateMonthTens;
+  kcg_int iDateDayUnits;
+  kcg_int iDateDayTens;
+  A429StatusEnum_BasicIO_A429 eDateStatus;
+  kcg_int iUtcHour;
+  kcg_int iUtcMinute;
+  kcg_int iUtcSecond;
+  A429StatusEnum_BasicIO_A429 eUtcStatus;
+  VideoXvsOffOnEnum eXvsOnOffState;
+  kcg_bool bCombinerStowed;
+  kcg_bool bCombinerDeployed;
+  kcg_bool bMaintenanceCommanded;
+  kcg_bool bCombinerStowedMoreThan30Minutes;
+  kcg_bool bStbyAfterPowerUp;
+} struct__74717;
+
+/* EVSManager::EvsOutDataStruct */
+typedef struct__74717 EvsOutDataStruct_EVSManager;
+
+typedef kcg_int array_int_27[27];
+
+/* MAUManager::MauA429LabelsOutArray */
+typedef array_int_27 MauA429LabelsOutArray_MAUManager;
+
+typedef struct {
+  kcg_bool bApproachWarning;
+  kcg_bool bCombinerStowed;
+  kcg_bool bCat3System;
+  kcg_bool bCombinerDeployed;
+  kcg_bool bHudFail;
+  kcg_bool bAtRetard;
+  kcg_bool bIdleMsg;
+  kcg_bool bFlareMsg;
+  kcg_bool bHud3;
+  kcg_bool bHud2;
+  kcg_bool bFdSource;
+  kcg_bool bHudCmdCue;
+  kcg_bool bRunwayElevationConfirmed;
+  kcg_bool bRunwayLengthConfirmed;
+  kcg_bool bLocalizerTrackConfimed;
+  kcg_bool bGlideSlopeAngleConfirmed;
+  kcg_bool bTakeoffWarning;
+  kcg_bool bHud3NotAvailable;
+  kcg_bool bLvtoNotAvailable;
+  kcg_bool bEvsHeaterFail;
+  kcg_bool bEvsHeaterActive;
+  kcg_bool bEvsFail;
+  kcg_bool bEvsOnDisplayed;
+  kcg_bool bEvsSbyDisplayed;
+  kcg_bool bEvsDimDisplayed;
+  kcg_bool bInvalidVideoOutput;
+  kcg_bool bEvsSbyFlashing;
+  kcg_bool bNoEvsDisplayed;
+  kcg_bool bBoxedNoEvsAnnunciation;
+  kcg_bool bNoEvsAnnunciation;
+  kcg_bool bSvsOnAnnunciationActive;
+  kcg_bool bSvsSbyAnnunciationActive;
+  kcg_bool bNoSvsAnnunciationActive;
+  kcg_bool bCvsOnAnnunciationActive;
+  kcg_bool bCvsSbyAnnunciationActive;
+  kcg_bool bNoCvsAnnunciationActive;
+  kcg_bool bVdoOff;
+  kcg_bool bHudCuFail;
+  kcg_bool bEvsNucActive;
+  kcg_bool bNormalModeActive;
+  kcg_bool bLoaderModeActive;
+  kcg_bool bBadConfigModeActive;
+  kcg_bool bManintenanceModeActive;
+  kcg_bool bSwIncompatibale;
+  kcg_bool bBacklightOff;
+  kcg_int iRoiLeftTopY;
+  kcg_int iEvsVideoMode;
+  kcg_bool bBrightnessCmdM;
+  kcg_bool bBrightnessCmdP;
+  kcg_bool bEvsHighCmd;
+  kcg_bool bEvsLowCmd;
+  kcg_bool bStbyModeActive;
+  kcg_bool bDeclutterCmd;
+  kcg_bool bImageOnOffCmd;
+  kcg_int iSvsType;
+  kcg_int iSvsModeSelection;
+  kcg_int iBrightnessMode;
+  kcg_int iGlobalBrightness;
+  kcg_int iEfvsContrast;
+  kcg_int iRoiLeftTopX;
+  kcg_bool bRoiActive;
+  kcg_real rHdpTemperature;
+  kcg_real rSvioTemperature;
+  kcg_real rOpuPsTemperature;
+  kcg_real rOpuIdisTemperature;
+  kcg_real rOpuBlTemperature;
+  kcg_real rOpuPebTemperature;
+  kcg_real rOpuRightHeaterTemperature;
+  kcg_real rOpuLeftHeaterTemperature;
+  kcg_real rEvsPsTemperature;
+  kcg_real rEvsControlBoardTemperature;
+  kcg_real rEvsOpticalTemperature;
+  kcg_real rEvsVisWindowTemperature;
+  kcg_real rEvsIrWindowTemperature;
+  kcg_int iCvsBalance;
+  kcg_int iVideoBrightness;
+  kcg_bool bSvsDbAeroOld;
+  kcg_bool bSvsDbObstOld;
+  kcg_bool bSvsDbAeroErr;
+  kcg_bool bSvsDbObstErr;
+  kcg_real rSvsLateralFov;
+  kcg_real rSvsMinRange;
+  kcg_real rSvsMaxRange;
+  kcg_bool bMaintenanceModeRequestSet28v;
+  kcg_bool bMaintenanceModeRequestSetGnd;
+  kcg_bool bRunwaySymbolDisplayed;
+  kcg_bool bHudDbOld;
+  kcg_int iDisplayMode;
+  kcg_bool bSvsFail;
+  kcg_bool bAcTypeProgramPinsMiscompare;
+} struct__74746;
+
+/* MAUManager::MauA429DataOutStruct */
+typedef struct__74746 MauA429DataOutStruct_MAUManager;
+
+typedef struct {
+  kcg_int iEvsBrightnessPercentage;
+  kcg_int iSvsBrightnessPercentage;
+  kcg_real rEvsAlignVertical;
+  kcg_real rEvsAlignLateral;
+  kcg_real rEvsAlignRoll;
+  kcg_real stSvsOffsetVertical;
+  kcg_real stSvsOffsetLateral;
+  kcg_real stSvsOffsetRoll;
+  VideoXvsOffOnEnum eVideoXvsState;
+  VideoStickStbyOnEnum eVideoStickState;
+  kcg_bool bEvsOn;
+  kcg_bool bSvsOn;
+  kcg_bool bSymbologyOn;
+  kcg_int iSymbologyBrightness;
+  kcg_int iConstantBrightness;
+  kcg_int iEvsContrastLut;
+  kcg_bool bSvsStatus;
+  kcg_bool bEvsFreezeFailure;
+  kcg_bool bPhaseOfFlightIsVideoOff;
+} struct__74839;
+
+/* VIDEOManager::VideoOutDataStruct */
+typedef struct__74839 VideoOutDataStruct_VIDEOManager;
+
+typedef kcg_int array_int_6[6];
+
+/* SVSManager::Svs429LabelsOutArray */
+typedef array_int_6 Svs429LabelsOutArray_SVSManager;
+
+typedef struct {
+  AircraftTypeEnum_TYPES eAircraftType;
+  PhaseOfFlightEnum_TYPES ePhaseOfFlight;
+  kcg_real rSvsRange;
+  DisplayModeEnum_TYPES eDisplayMode;
+  kcg_int iSvsSkyColor;
+  kcg_int iSvsClearColor;
+  kcg_bool bSvsTerrainLayerVisible;
+  kcg_bool bSvsRidgeLinesLayerVisible;
+  kcg_bool bSvsDestinationRunwayLayerVisible;
+  kcg_bool bSvsToWaypointLayerVisible;
+  kcg_bool bSvsRunwayAxisLayerVisible;
+  kcg_bool bSvsApproachAxisLayerVisible;
+  kcg_bool bSvsObstaclesLayerVisible;
+  kcg_bool bSvsDestinationAiportLayerVisible;
+  kcg_bool bSvsOtherAiportsLayerVisible;
+  kcg_bool bSvsOtherRunwaysLayerVisible;
+  kcg_bool bSvsRangeRingLayerVisible;
+} struct__74864;
+
+/* SVSManager::SvsOutDataStruct */
+typedef struct__74864 SvsOutDataStruct_SVSManager;
+
+typedef struct {
+  uint8 u8Byte3;
+  uint8 u8Byte2;
+  uint8 u8Byte1;
+  uint8 u8Byte0;
+  uint8 u8Byte7;
+  uint8 u8Byte6;
+  uint8 u8Byte5;
+  uint8 u8Byte4;
+  uint8 u8Byte11;
+  uint8 u8Byte10;
+  uint8 u8Byte9;
+  uint8 u8Byte8;
+  uint8 u8Byte15;
+  uint8 u8Byte14;
+  uint8 u8Byte13;
+  uint8 u8Byte12;
+  uint8 u8Byte19;
+  uint8 u8Byte18;
+  uint8 u8Byte17;
+  uint8 u8Byte16;
+  uint8 u8Byte23;
+  uint8 u8Byte22;
+  uint8 u8Byte21;
+  uint8 u8Byte20;
+  uint8 u8Byte27;
+  uint8 u8Byte26;
+  uint8 u8Byte25;
+  uint8 u8Byte24;
+  uint8 u8Byte31;
+  uint8 u8Byte30;
+  uint8 u8Byte29;
+  uint8 u8Byte28;
+  uint8 u8Byte35;
+  uint8 u8Byte34;
+  uint8 u8Byte33;
+  uint8 u8Byte32;
+  uint8 u8Byte39;
+  uint8 u8Byte38;
+  uint8 u8Byte37;
+  uint8 u8Byte36;
+  uint8 u8Byte43;
+  uint8 u8Byte42;
+  uint8 u8Byte41;
+  uint8 u8Byte40;
+} struct__74884;
+
+/* Ohu818OutMessageStruct */
+typedef struct__74884 Ohu818OutMessageStruct;
+
+typedef struct {
+  kcg_bool bAutoBrightnessLedOn;
+  kcg_int iGlobalBrightnessCommandA;
+  kcg_int iGlobalBrightnessCommandB;
+  OhuOperationalCommandEnum_OHUManager eOhuOperationalCommand;
+  kcg_bool bVideoLedOn;
+  kcg_bool bBackLightOn;
+  kcg_bool bNightFilterSet;
+  kcg_bool bPbitDone;
+  kcg_int iOhuAlignmentVerical;
+  kcg_int iOhuAlignmentLateral;
+  kcg_int iOhuAlignmentRoll;
+  kcg_bool bExtPbitAck;
+  kcg_int iHudOffsetCrc1;
+  kcg_int iHudOffsetCrc2;
+} struct__74931;
+
+/* OHUManager::OhuOutDataStruct */
+typedef struct__74931 OhuOutDataStruct_OHUManager;
+
+typedef struct { kcg_int iAlsCrcLsb; kcg_int iAlsCrcMsb; } struct__74948;
+
+/* OHUManager::OhuAlsCrcStruct */
+typedef struct__74948 OhuAlsCrcStruct_OHUManager;
+
+typedef struct {
+  kcg_int iData1;
+  kcg_int iData2;
+  kcg_int iData3;
+  kcg_int iData4;
+  kcg_int iData5;
+} struct__74953;
+
+/* OHUManager::OhuCrcBufferStruct */
+typedef struct__74953 OhuCrcBufferStruct_OHUManager;
+
+typedef struct {
+  kcg_int iEvsVerticalOffset;
+  kcg_int iEvsLateralOffset;
+  kcg_int iEvsRollOffset;
+} struct__74961;
+
+/* HUDManager::AlignmentLogic::EvsOffsetsStruct */
+typedef struct__74961 EvsOffsetsStruct_HUDManager_AlignmentLogic;
+
+typedef struct {
+  kcg_int iTactical;
+  kcg_int iFcs;
+  kcg_int iFms;
+  kcg_int iMwsA;
+  kcg_int iMwsC;
+  kcg_int iCiocal;
+  kcg_int iMasterEec;
+  kcg_int iMrc;
+  AdsSourceSelectionEnum_MAU eAdsSelectedSource;
+  kcg_int iApm;
+  kcg_int iEgpwm;
+} struct__74967;
+
+/* MAU::MauPrioritiesStruct */
+typedef struct__74967 MauPrioritiesStruct_MAU;
+
+typedef struct {
+  SvioFanSpeedEnum_SVIOManager eFanSpeed;
+  kcg_bool bFanEnabled;
+} struct__74981;
+
+/* SVIOManager::SvioFanStruct */
+typedef struct__74981 SvioFanStruct_SVIOManager;
+
+typedef struct {
+  kcg_bool bIsHudFail;
+  kcg_bool bIsSvsFail;
+  kcg_bool bIsEvsFail;
+} struct__74986;
+
+/* HUDManager::FailuresManager::FailuresResultsDataStruct */
+typedef struct__74986 FailuresResultsDataStruct_HUDManager_FailuresManager;
+
+typedef struct {
+  kcg_bool bWatchdogFailure;
+  kcg_bool bEvsFreezeFailure;
+  kcg_bool bEvsHeaterFailure;
+  kcg_bool bAcTypeProgramPinsMiscompareFailure;
+  FailuresResultsDataStruct_HUDManager_FailuresManager stCasFailures;
+} struct__74992;
+
+/* HUDManager::FailuresManager::FailuresOutDataStructure */
+typedef struct__74992 FailuresOutDataStructure_HUDManager_FailuresManager;
+
+typedef struct {
+  kcg_bool bAutoBrightnessLedOn;
+  kcg_int iSymbologyBrightness;
+  OhuOperationalCommandEnum_OHUManager eOhuOperationalCommand;
+  kcg_bool bVideoLedOn;
+  kcg_bool bBackLightOn;
+  kcg_bool bNightFilterSet;
+  kcg_int iEvsContrastLut;
+  VideoXvsOffOnEnum eVideoXvsOffOn;
+  VideoStickStbyOnEnum eVideoStbyOn;
+  DisplayModeEnum_TYPES eDisplayMode;
+  PhaseOfFlightEnum_TYPES ePhaseOfFlight;
+  kcg_int iGlobalBrightnessCommand_A;
+  kcg_int iGlobalBrightnessCommand_B;
+  kcg_bool bEvsContrastChangeValidity;
+  StickBrightnessChangeEnum_STICKManager eVideoBrightnessChange;
+  kcg_bool bVideoBrightnessChangeValidty;
+  kcg_bool bOhuPbitDone;
+  kcg_real rSvsRange;
+  kcg_real rEvsAlignmentVertical;
+  kcg_real rEvsAlignmentLateral;
+  kcg_real rEvsAlignmentRoll;
+  kcg_real rSvsPowerScanVertical;
+  kcg_real rSvsPowerScanLateral;
+  kcg_real rSvsPowerScanRoll;
+  SvioFanStruct_SVIOManager stFanData;
+  kcg_real rHudAlignmentVertical;
+  kcg_real rHudAlignmentLateral;
+  kcg_real rHudAlignmentRoll;
+  kcg_bool bEvsOn;
+  kcg_bool bSvsOn;
+  ExtPcDataOutStruct_ExtPcManager stExtPcDataOut;
+  kcg_int iSvsSkyColor;
+  kcg_int iSvsClearColor;
+  kcg_bool bSvsTerrainAndObstacles;
+  kcg_bool bSymbologyOn;
+  kcg_bool bMaintMsgValid;
+  EvsModeControlEnum_EVSManager eEvsMode;
+  kcg_bool bAlignActive;
+  kcg_bool bAutoNucActive;
+  kcg_bool bManualNucPressed;
+  kcg_int iBrightnessConstantChange;
+  kcg_int iEvsBrightnessPercentage;
+  kcg_int iSvsBrightnessPercentage;
+  FailuresOutDataStructure_HUDManager_FailuresManager stHudFailuresData;
+  kcg_real rXvsKnobPosition;
+  EvsVideoModeEnum_EVSManager eEvsVideoMode;
+  HudXvsModeEnum_TYPES eCvsMode;
+  HudXvsSubModeEnum_TYPES eCvsSubMode;
+  kcg_bool bCvsModeValidity;
+  HudSystemStateEnum_HUDManager eSystemState;
+  SystemModeEnum_HUDManager eSystemMode;
+  kcg_bool bNormalModeActive;
+  kcg_bool bLoaderModeActive;
+  kcg_bool bBadConfigurationModeActive;
+  kcg_bool bMaintenanceModeActive;
+  kcg_bool bStbyModeActive;
+  kcg_bool bSwIncompatible;
+  EvsModeControlEnum_EVSManager eEvsModeControl;
+  kcg_real rEvsRoiTopLeftX;
+  kcg_real rEvsRoiTopLeftY;
+  kcg_bool bEvsRoiActive;
+  kcg_int iGlobalBrightnessStep;
+  HudBrightnessModeEnum_HUDManager_GlobalBrightnessManager eBrightnessMode;
+  kcg_bool bStbyAfterPowerUp;
+  kcg_real rDisplayedRadioAltitudePrimary;
+  kcg_bool bDisplayedRadioAltitudePrimaryValid;
+  kcg_real rDisplayedRadioAltitudeSecondary;
+  kcg_bool bDisplayedRadioAltitudeSecondaryValid;
+  kcg_bool bRunwayElevationConfirmed;
+  kcg_bool bRunwayLengthConfirmed;
+  kcg_bool bLocalizerTrackConfirmed;
+  kcg_bool bGlideslopeAngleConfirmed;
+  kcg_bool bOhuExtPbitAck;
+  kcg_bool bSvsTerrainLayerVisible;
+  kcg_bool bSvsRidgeLinesLayerVisible;
+  kcg_bool bSvsDestinationRunwayLayerVisible;
+  kcg_bool bSvsToWaypointLayerVisible;
+  kcg_bool bSvsRunwayAxisLayerVisible;
+  kcg_bool bSvsApproachAxisLayerVisible;
+  kcg_bool bSvsObstaclesLayerVisible;
+  kcg_bool bSvsDestinationAiportLayerVisible;
+  kcg_bool bSvsOtherAiportsLayerVisible;
+  kcg_bool bSvsOtherRunwaysLayerVisible;
+  kcg_bool bSvsRangeRingLayerVisible;
+  kcg_int iHudOffsetCrc1;
+  kcg_int iHudOffsetCrc2;
+} struct__75000;
+
+/* HUDManager::HudLogicOutDataStruct */
+typedef struct__75000 HudLogicOutDataStruct_HUDManager;
+
+typedef struct {
+  kcg_bool bDisplayKeepAliveFailed;
+  kcg_bool bHudCommandAckMechanismSr1Failed;
+  kcg_bool bHudCuOhuBoresightCommandAckSr1Failed;
+  kcg_bool bHudCuOverTempSr1Failed;
+  kcg_bool bInternalIntegrityTestFailed;
+  kcg_bool bOhuBacklightOffTestFailed;
+  kcg_bool bOhuTooBrightTestFailed;
+} struct__75089;
+
+/* HUDManager::TestsManager::TestsOutDataStruct */
+typedef struct__75089 TestsOutDataStruct_HUDManager_TestsManager;
+
+typedef kcg_bool array_bool_140[140];
+
+/* HUDManager::FailuresManager::FailuresResultsArray */
+typedef array_bool_140 FailuresResultsArray_HUDManager_FailuresManager;
+
+typedef struct {
+  kcg_int iId;
+  kcg_bool bIsHudFail;
+  kcg_bool bIsSvsFail;
+  kcg_bool bIsEvsFail;
+  FailureListEnum_HUDManager_FailuresManager eFailure;
+  SystemModeVerificationEnum_HUDManager_FailuresManager eVerificationPolicy;
+} struct__75102;
+
+/* HUDManager::FailuresManager::FailuresDataStruct */
+typedef struct__75102 FailuresDataStruct_HUDManager_FailuresManager;
+
+typedef FailuresDataStruct_HUDManager_FailuresManager array__75111[140];
+
+/* HUDManager::FailuresManager::FailuresDataArray */
+typedef array__75111 FailuresDataArray_HUDManager_FailuresManager;
+
+typedef kcg_int array_int_96[96];
+
+typedef struct {
+  kcg_bool bRunwayElevationConfirmed;
+  kcg_bool bRunwayLengthConfirmed;
+  kcg_bool bLocalizerTrackConfirmed;
+  kcg_bool bGlideslopeAngleConfirmed;
+} struct__75117;
+
+/* HUDManager::HudLogicManager::HudConfirmDataStruct */
+typedef struct__75117 HudConfirmDataStruct_HUDManager_HudLogicManager;
+
+typedef kcg_int array_int_32[32];
+
+typedef kcg_real array_real_32[32];
+
+typedef struct {
+  kcg_bool /** Barometric altitude miscompare indication. */ bMonBaroAltitudeMiscompare;
+  kcg_bool /** Radio altitude miscompare indication. */ bMonRadioALtitudeMiscompare;
+  kcg_bool /** Heading miscompare indication. */ bMonHeadingMiscompare;
+  kcg_bool /** Attitude miscompare indication. */ bMonAttitudeMiscompare;
+  kcg_bool /** Airspeed miscompare indication. */ bMonAirspeedMiscompare;
+  kcg_bool /** Localizer miscompare indication. */ bMonLocalizerMiscompare;
+  kcg_bool /** Glide slope miscompare indication. */ bMonGlideSlopeMiscompare;
+  kcg_bool /** FPV miscompare indication. */ bMonFpvMiscompare;
+} struct__75130;
+
+/** Outgoing SR2 data to SR1. */
+/* INTERFACE::Sr2ToSr1DataStruct */
+typedef struct__75130 Sr2ToSr1DataStruct_INTERFACE;
+
+typedef kcg_int array_int_4[4];
+
+typedef struct {
+  kcg_bool bResult;
+  kcg_int iMoreInfo;
+  array_int_4 iData;
+} struct__75144;
+
+/* BITManager::BitFailureDataStruct */
+typedef struct__75144 BitFailureDataStruct_BITManager;
+
+typedef struct {
+  kcg_bool bProgramPin1;
+  kcg_bool bProgramPin2;
+  kcg_bool bProgramPin3;
+  kcg_bool bProgramPinPic;
+  kcg_bool bProgramPinPar;
+  kcg_bool bDisplayMode;
+  kcg_bool bVideoOnStby;
+  kcg_bool bVideoBrightnessPlus;
+  kcg_bool bVideoBrightnessMinus;
+  kcg_bool bEvsModeLow;
+  kcg_bool bEvsModeHigh;
+} struct__75150;
+
+/* BITManager::discretesIn03FaliureStructure */
+typedef struct__75150 discretesIn03FaliureStructure_BITManager;
+
+typedef struct {
+  BitFailureDataStruct_BITManager stSdramTestFailed;
+  BitFailureDataStruct_BITManager stCoreOsFlashFailed;
+  BitFailureDataStruct_BITManager stNvramFailed;
+  BitFailureDataStruct_BITManager stInterruptControllerFailed;
+  BitFailureDataStruct_BITManager stGcRegisterFailed;
+  BitFailureDataStruct_BITManager stHardwareReadyFailed;
+  BitFailureDataStruct_BITManager stEthernet1Failed;
+  BitFailureDataStruct_BITManager stEthernet2Failed;
+  BitFailureDataStruct_BITManager stWatchdogFailed;
+  BitFailureDataStruct_BITManager stEagleFpgaRegisterBusFailed;
+  BitFailureDataStruct_BITManager stEagleGraphicMemoryInterfaceFailed;
+  BitFailureDataStruct_BITManager stEagleExternalSyncDetectFailed;
+  BitFailureDataStruct_BITManager stPciHdpFpgaFailed;
+  BitFailureDataStruct_BITManager stPciIoFpgaFailed;
+  BitFailureDataStruct_BITManager stPciVrFpga;
+  BitFailureDataStruct_BITManager stSr1SymbFreezeFailed;
+  BitFailureDataStruct_BITManager stEagleFreezeFailed;
+  BitFailureDataStruct_BITManager stLvdsFailed;
+  BitFailureDataStruct_BITManager stEvsVideoFreezeFailed;
+  BitFailureDataStruct_BITManager stDiscreteIoIn003Failed;
+  BitFailureDataStruct_BITManager stDiscreteIoIn28Failed;
+  BitFailureDataStruct_BITManager stDiscreteHdpDoFailed;
+  BitFailureDataStruct_BITManager stDiscreteIoDo2435Failed;
+  BitFailureDataStruct_BITManager stHdpA429Rx01Failed;
+  BitFailureDataStruct_BITManager stHdpA429Rx02Failed;
+  BitFailureDataStruct_BITManager stHdpA429Rx03Failed;
+  BitFailureDataStruct_BITManager stHdpA429Rx04Failed;
+  BitFailureDataStruct_BITManager stHdpA429Rx05Failed;
+  BitFailureDataStruct_BITManager stHdpA429Rx06Failed;
+  BitFailureDataStruct_BITManager stHdpA429Rx07Failed;
+  BitFailureDataStruct_BITManager stHdpA429Rx08Failed;
+  BitFailureDataStruct_BITManager stHdpA429Rx09Failed;
+  BitFailureDataStruct_BITManager stHdpA429Rx10Failed;
+  BitFailureDataStruct_BITManager stHdpA429Tx01Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx01Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx02Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx03Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx04Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx05Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx06Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx07Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx08Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx09Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx10Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx11Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx12Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx13Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx14Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx28Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx29Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx30Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx31Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx32Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx33Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx34Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx35Failed;
+  BitFailureDataStruct_BITManager stCioA429Rx36Failed;
+  BitFailureDataStruct_BITManager stCioA429Tx01Failed;
+  BitFailureDataStruct_BITManager stCioA429Tx02Failed;
+  BitFailureDataStruct_BITManager stCioA429Tx03Failed;
+  BitFailureDataStruct_BITManager stCioA429Tx04Failed;
+  BitFailureDataStruct_BITManager stCioA429Tx05Failed;
+  BitFailureDataStruct_BITManager stCioA429Tx06Failed;
+  BitFailureDataStruct_BITManager stCioA429Tx07Failed;
+  BitFailureDataStruct_BITManager stCioA429Tx08Failed;
+  BitFailureDataStruct_BITManager stCioA429Tx09Failed;
+  BitFailureDataStruct_BITManager stCioA429Tx10Failed;
+  BitFailureDataStruct_BITManager stCioA429Tx11Failed;
+  BitFailureDataStruct_BITManager stCioA429Tx12Failed;
+  BitFailureDataStruct_BITManager stSdeBitFailed;
+  BitFailureDataStruct_BITManager stArinc818RxFailed;
+  BitFailureDataStruct_BITManager stArinc818TxFailed;
+  BitFailureDataStruct_BITManager stLpddrHdpFailed;
+  BitFailureDataStruct_BITManager stThermalMonitoringFailed;
+  BitFailureDataStruct_BITManager stAnalogDevsFailed;
+  BitFailureDataStruct_BITManager stSdeFanFailed;
+  BitFailureDataStruct_BITManager stAbnormalPowerDownFailed;
+  BitFailureDataStruct_BITManager stBspBitFailed;
+  BitFailureDataStruct_BITManager stAnalogVideoInFailed;
+  BitFailureDataStruct_BITManager stAnalogVideoOutFailed;
+} struct__75164;
+
+/* BITManager::BitResultsDataStruct */
+typedef struct__75164 BitResultsDataStruct_BITManager;
+
+typedef struct {
+  kcg_real rTempSensorData;
+  kcg_real rTempSensorStatus;
+} struct__75247;
+
+/* HDPManager::HdpSensorsData */
+typedef struct__75247 HdpSensorsData_HDPManager;
+
+typedef struct {
+  kcg_int iLabelNumber;
+  kcg_int iLsb;
+  kcg_int iMsb;
+} struct__75252;
+
+/* BasicIO::A429::A429DataConfigStruct */
+typedef struct__75252 A429DataConfigStruct_BasicIO_A429;
+
+typedef struct {
+  kcg_real rValue;
+  kcg_real rValue1;
+  A429LabelInfoStruct_BasicIO_A429 stLabelInfo;
+} struct__75258;
+
+/* BasicIO::A429::A429LabelStruct */
+typedef struct__75258 A429LabelStruct_BasicIO_A429;
+
+typedef A429LabelStruct_BasicIO_A429 array__75264[256];
+
+/* BasicIO::A429::A429LineArray */
+typedef array__75264 A429LineArray_BasicIO_A429;
+
+typedef A429LineArray_BasicIO_A429 array__75267[1];
+
+/* OHUManager::OhuDevicesArray */
+typedef array__75267 OhuDevicesArray_OHUManager;
+
+/* EVSManager::EvsDeviceArray */
+typedef array__75267 EvsDeviceArray_EVSManager;
+
+typedef kcg_int array_int_256[256];
+
+/* BasicIO::A429::A429LabelTimeoutArray */
+typedef array_int_256 A429LabelTimeoutArray_BasicIO_A429;
+
+typedef A429LineArray_BasicIO_A429 array__75273[4];
+
+/* BasicIO::A429::A429LineSdiArray */
+typedef array__75273 A429LineSdiArray_BasicIO_A429;
+
+typedef MauSdiTypeEnum_MAU array__75276[256];
+
+/* MAU::MauA429SdiSelectionArray */
+typedef array__75276 MauA429SdiSelectionArray_MAU;
+
+typedef struct {
+  A429DataConfigStruct_BasicIO_A429 stDataConfig;
+  kcg_int iLabelTimeout;
+  DataTypeEnum_BasicIO_A429 eDbDataType;
+  kcg_int iDbIndex;
+  kcg_int iDbIndexValidity;
+} struct__75279;
+
+/* BasicIO::A429::A429DbDataConfigStruct */
+typedef struct__75279 A429DbDataConfigStruct_BasicIO_A429;
+
+typedef A429DbDataConfigStruct_BasicIO_A429 array__75287[11];
+
+/* MAUManager::MauA429ConfigInPilCopiArray */
+typedef array__75287 MauA429ConfigInPilCopiArray_MAUManager;
+
+typedef A429DbDataConfigStruct_BasicIO_A429 array__75290[166];
+
+/* MAUManager::MauA429ConfigInF2000Array */
+typedef array__75290 MauA429ConfigInF2000Array_MAUManager;
+
+typedef A429DbDataConfigStruct_BasicIO_A429 array__75293[167];
+
+/* MAUManager::MauA429ConfigInF7XArray */
+typedef array__75293 MauA429ConfigInF7XArray_MAUManager;
+
+/* MAUManager::MauA429ConfigInF900Array */
+typedef array__75293 MauA429ConfigInF900Array_MAUManager;
+
+/* MAUManager::MauA429ConfigInF5XArray */
+typedef array__75293 MauA429ConfigInF5XArray_MAUManager;
+
+typedef struct {
+  kcg_real rAngleOfAttack;
+  kcg_bool bAngleOfAttackValid;
+} struct__75296;
+
+/* MAUManager::MauComposedDataStruct */
+typedef struct__75296 MauComposedDataStruct_MAUManager;
+
+typedef struct {
+  FlapsSlatStateEnum_TYPES eFlapsSlatState;
+  kcg_bool bFlapsSlatStateValid;
+  kcg_real rFlapsPosition;
+  kcg_bool bFlapsPositionValid;
+  MarkerBeaconEnum_TYPES eMarkerBeacon;
+  kcg_bool bMarkerBeaconValid;
+  AutoThrottleStateEnum_TYPES eAutoThrottleState;
+  kcg_bool bAutoThrottleStateValid;
+  kcg_bool bLandingGearDown;
+  kcg_bool bLandingGearDownValid;
+  kcg_real rPilotNavigationChannel;
+  kcg_bool bPilotNavigationChannelValid;
+  kcg_real rCoPilotNavigationChannel;
+  kcg_bool bCoPilotNavigationChannelValid;
+  AutoPilotStateEnum_TYPES eAutoPilotState;
+  kcg_bool bAutoPilotStateValid;
+  kcg_bool bWeightOnWheels;
+  kcg_bool bWeightOnWheelsValid;
+  kcg_real rLeftThrottlePosition;
+  kcg_bool bLeftThrottlePositionValid;
+  kcg_real rCenterThrottlePosition;
+  kcg_bool bCenterThrottlePositionValid;
+  kcg_real rRightThrottlePosition;
+  kcg_bool bRightThrottlePositionValid;
+  kcg_bool bDriftIndexDisplayed;
+  kcg_real rDriftIndexValue;
+  kcg_bool bDriftIndexValid;
+  kcg_bool bActiveNavSrcOffSide;
+  kcg_bool bPreviewNavSrcOffSide;
+} struct__75301;
+
+/* MAUManager::MauSpecificDataStruct */
+typedef struct__75301 MauSpecificDataStruct_MAUManager;
+
+typedef A429LineSdiArray_BasicIO_A429 array__75333[2];
+
+/* MAUManager::MauDevicesArray */
+typedef array__75333 MauDevicesArray_MAUManager;
+
+typedef struct {
+  kcg_int iFrameNumber;
+  kcg_real rHeading;
+  kcg_real rPitch;
+  kcg_real rRoll;
+} struct__75336;
+
+/* VIDEOManager::VideoSvsDataStruct */
+typedef struct__75336 VideoSvsDataStruct_VIDEOManager;
+
+typedef struct {
+  kcg_bool stSr1SymbFreeze;
+  kcg_bool st818Channel1FrameFreeze;
+  kcg_bool st818Channel1CrcFreeze;
+  kcg_bool st818Channel4FrameFreeze;
+  kcg_bool st818Channel4CrcFreeze;
+} struct__75343;
+
+/* VIDEOManager::VideoBitResultsDataStruct */
+typedef struct__75343 VideoBitResultsDataStruct_VIDEOManager;
+
+typedef A429DbDataConfigStruct_BasicIO_A429 array__75351[45];
+
+/* SVSManager::SvsDataBaseConfigInArray */
+typedef array__75351 SvsDataBaseConfigInArray_SVSManager;
+
+typedef A429DbDataConfigStruct_BasicIO_A429 array__75354[1];
+
+/* OHUManager::OhuA429ConfigInArray */
+typedef array__75354 OhuA429ConfigInArray_OHUManager;
+
+/* RADALTManager::RadaltA429ConfigInArray */
+typedef array__75354 RadaltA429ConfigInArray_RADALTManager;
+
+typedef A429LineArray_BasicIO_A429 array__75357[2];
+
+/* GPSManager::GpsDevicesArray */
+typedef array__75357 GpsDevicesArray_GPSManager;
+
+/* RADALTManager::RadaltDevicesArray */
+typedef array__75357 RadaltDevicesArray_RADALTManager;
+
+typedef A429LabelStruct_BasicIO_A429 array__75360[10];
+
+/* OHUManager::A429AccumulateArray */
+typedef array__75360 A429AccumulateArray_OHUManager;
+
+typedef A429AccumulateArray_OHUManager array__75363[10];
+
+/* OHUManager::OhuAccLineArray */
+typedef array__75363 OhuAccLineArray_OHUManager;
+
+typedef struct {
+  kcg_real rValue;
+  A429LabelInfoStruct_BasicIO_A429 stLabelInfo;
+} struct__75366;
+
+/* FloatLabelDataStruct */
+typedef struct__75366 FloatLabelDataStruct;
+
+typedef struct {
+  kcg_bool bDeclutterState;
+  A429LabelInfoStruct_BasicIO_A429 stLabelInfo;
+} struct__75371;
+
+/* SIMManager::SimLabel201DataStruct */
+typedef struct__75371 SimLabel201DataStruct_SIMManager;
+
+typedef struct {
+  FloatLabelDataStruct stLabel127;
+  SimLabel201DataStruct_SIMManager stLabel201;
+} struct__75376;
+
+/* SIMManager::SimA429LabelsStruct */
+typedef struct__75376 SimA429LabelsStruct_SIMManager;
+
+typedef A429DbDataConfigStruct_BasicIO_A429 array__75381[6];
+
+/* GPSManager::GpsA429ConfigInArray */
+typedef array__75381 GpsA429ConfigInArray_GPSManager;
+
+typedef A429DbDataConfigStruct_BasicIO_A429 array__75384[19];
+
+/* IRSManager::IrsA429ConfigInArray */
+typedef array__75384 IrsA429ConfigInArray_IRSManager;
+
+typedef A429LineArray_BasicIO_A429 array__75387[3];
+
+/* IRSManager::IrsDeviceArray */
+typedef array__75387 IrsDeviceArray_IRSManager;
+
+typedef struct {
+  IrsSelectedSourceEnum_TYPES eIrsSelectedSource;
+  kcg_bool /** True for valid and false for invalid data. */ bIrsSelectedSourceValidity;
+} struct__75390;
+
+/* INTERFACE::IrsSelectedDataStruct */
+typedef struct__75390 IrsSelectedDataStruct_INTERFACE;
+
+typedef struct {
+  kcg_bool bVisible;
+  kcg_real rXPosition;
+  kcg_real rYPosition;
+  kcg_real rRotation;
+} struct__75395;
+
+/* CLAWS::RotatedSymbolStruct */
+typedef struct__75395 RotatedSymbolStruct_CLAWS;
+
+typedef struct {
+  kcg_bool bVisible;
+  kcg_bool bDashed;
+  kcg_real rX;
+  kcg_real rY;
+  kcg_real rRotation;
+  kcg_int iValue;
+  kcg_real rX2;
+  kcg_real rY2;
+  kcg_real rValue;
+} struct__75402;
+
+/* CLAWSInterface::SymbolStruct */
+typedef struct__75402 SymbolStruct_CLAWSInterface;
+
+typedef struct { kcg_bool bVisible; } struct__75414;
+
+/* CLAWS::WarningSymbolStruct */
+typedef struct__75414 WarningSymbolStruct_CLAWS;
+
+typedef struct {
+  kcg_bool bVisible;
+  kcg_real tXPosition;
+  kcg_real tYPosition;
+  kcg_real tValue;
+} struct__75418;
+
+/* CLAWS::FlightPathSpeedSymbolStruct */
+typedef struct__75418 FlightPathSpeedSymbolStruct_CLAWS;
+
+typedef struct {
+  kcg_bool bVisible;
+  kcg_real tXPosition;
+  kcg_real tYPosition;
+  kcg_bool bDashed;
+} struct__75425;
+
+/* CLAWS::DashedSymbolStruct */
+typedef struct__75425 DashedSymbolStruct_CLAWS;
+
+typedef struct {
+  kcg_bool bVisible;
+  kcg_real rXPosition;
+  kcg_real rYPosition;
+} struct__75432;
+
+/* CLAWS::BasicSymbolStruct */
+typedef struct__75432 BasicSymbolStruct_CLAWS;
+
+typedef struct {
+  DashedSymbolStruct_CLAWS stFlightPathSymbol;
+  DashedSymbolStruct_CLAWS stFlightDirectorSymbol;
+  BasicSymbolStruct_CLAWS stAccelerationCaretSymbol;
+  FlightPathSpeedSymbolStruct_CLAWS stFlightPathSpeedSymbol;
+  BasicSymbolStruct_CLAWS stFlareAlertCueSymbol;
+  BasicSymbolStruct_CLAWS stIdleSymbol;
+  RotatedSymbolStruct_CLAWS stAfcsSourcedFlightDirectorSymbol;
+  BasicSymbolStruct_CLAWS stNonPrecisionFlareAlertCueSymbol;
+} struct__75438;
+
+/* CLAWS::FlightPathSymbolGroupStruct */
+typedef struct__75438 FlightPathSymbolGroupStruct_CLAWS;
+
+typedef struct {
+  WarningSymbolStruct_CLAWS stNoAIIIWarningMessage;
+  WarningSymbolStruct_CLAWS stNoAIIWarningMessage;
+  WarningSymbolStruct_CLAWS stNoFlareWarningMessage;
+  WarningSymbolStruct_CLAWS stExcessiveDeviationWarningMessage;
+  WarningSymbolStruct_CLAWS stNoAIWarningMessage;
+} struct__75449;
+
+/* CLAWS::WarningMessageGroupStruct */
+typedef struct__75449 WarningMessageGroupStruct_CLAWS;
+
+typedef struct {
+  DashedSymbolStruct_CLAWS stGroundLocSymbol;
+  BasicSymbolStruct_CLAWS stGroundFlightPathSymbol;
+} struct__75457;
+
+/* CLAWS::GroundGuidanceGroupStruct */
+typedef struct__75457 GroundGuidanceGroupStruct_CLAWS;
+
+typedef struct {
+  kcg_real rMaxLocalizerDevDdm;
+  kcg_real r100FtLocalizerDevDdm;
+  kcg_real r100FtGlideslopeDevDdm;
+  kcg_real rGndRollMaxLocalizerDevDdm;
+  kcg_real rTdLocalizerDevDdm;
+  kcg_real rTdBankAngleDeg;
+  kcg_real rTdIrsVerticalSpeedFps;
+  kcg_real rHudVerticalCommandDeg;
+  kcg_real rHudLateralCommandDeg;
+  kcg_bool bHudCat2Active;
+  kcg_bool bHudCat3SystemSet;
+  kcg_bool bHudCat3Active;
+  kcg_bool bHudCat3NotAvailable;
+  kcg_bool bFlareCommandActive;
+  kcg_bool bHudGuidanceCueDisplayed;
+  kcg_bool bHddCommandCueDisplayed;
+  kcg_real rMaxSpeedErrorPositiveKts;
+  kcg_real rMaxSpeedErrorNegativeKts;
+  kcg_real rTdLongPositionFt;
+  kcg_real rTdLateralPositionFt;
+  kcg_real rTdMainGearSinkRateFps;
+  kcg_bool bTakeoffArmedSet;
+  kcg_bool bTakeoffGuidanceActive;
+  kcg_bool bTakeoffCautionActive;
+  kcg_bool bTakeoffWarningActive;
+  kcg_bool bRolloutArmedSet;
+  kcg_bool bRolloutGuidanceActive;
+  kcg_bool bRolloutCautionActive;
+  kcg_bool bRolloutWarningActive;
+} struct__75462;
+
+/* CLAWSInterface::CertStatsStruct */
+typedef struct__75462 CertStatsStruct_CLAWSInterface;
+
+typedef struct {
+  kcg_bool bVisible;
+  kcg_real tX1Position;
+  kcg_real tY1Position;
+  kcg_real tX2Position;
+  kcg_real tY2Position;
+} struct__75494;
+
+/* CLAWS::RunwayLandingZoneLineStruct */
+typedef struct__75494 RunwayLandingZoneLineStruct_CLAWS;
+
+typedef struct {
+  BasicSymbolStruct_CLAWS stRunwayEndpoint1;
+  BasicSymbolStruct_CLAWS stRunwayEndpoint2;
+  BasicSymbolStruct_CLAWS stRunwayEndpoint3;
+  BasicSymbolStruct_CLAWS stRunwayEndpoint4;
+  RunwayLandingZoneLineStruct_CLAWS stRunwayLandingZoneLeftLine;
+  RunwayLandingZoneLineStruct_CLAWS stRunwayLandingZoneRightLine;
+  BasicSymbolStruct_CLAWS stLocalizer;
+} struct__75502;
+
+/* CLAWS::MiscellaneousGroupStruct */
+typedef struct__75502 MiscellaneousGroupStruct_CLAWS;
+
+typedef int32 array__75512[32];
+
+/* CLAWSInterface::FtsuDataStruct */
+typedef array__75512 FtsuDataStruct_CLAWSInterface;
+
+typedef struct {
+  int32 NLongsVersNo;
+  int32 EndianKey;
+  int32 FrameCounter;
+  int32 VehType;
+  FtsuDataStruct_CLAWSInterface DaqChan;
+  int32 Crc32Bit;
+} struct__75515;
+
+/* CLAWSInterface::FtsuOutputStruct */
+typedef struct__75515 FtsuOutputStruct_CLAWSInterface;
+
+typedef struct {
+  kcg_real rAlpha;
+  kcg_real rBeta;
+  kcg_bool bIsVerticalLine;
+} struct__75524;
+
+/* LineStruct */
+typedef struct__75524 LineStruct;
+
+typedef struct {
+  RectangularPointStruct stTopLeftEdge;
+  RectangularPointStruct stTopRightEdge;
+  RectangularPointStruct stBottomLeftEdge;
+  RectangularPointStruct stBottomRightEdge;
+} struct__75530;
+
+/* RectangleStruct */
+typedef struct__75530 RectangleStruct;
+
+typedef struct { kcg_real rTheta; kcg_real rRadius; } struct__75537;
+
+/* PolarPointStruct */
+typedef struct__75537 PolarPointStruct;
+
+typedef struct { kcg_real rAlpha; kcg_real rBeta; } struct__75542;
+
+/* PolarLineStruct */
+typedef struct__75542 PolarLineStruct;
+
+typedef struct {
+  RectangularPointStruct stBeginPoint;
+  RectangularPointStruct stEndPoint;
+} struct__75547;
+
+/* LineSegmentStruct */
+typedef struct__75547 LineSegmentStruct;
+
+typedef struct { kcg_int k; kcg_real f; } struct__75552;
+
+/* lut::LutIndex */
+typedef struct__75552 LutIndex_lut;
+
+typedef struct {
+  StickDiscreteToggleEnum_STICKManager eVideoOnStbyToggle;
+  StickBrightnessChangeEnum_STICKManager eBrightnessChange;
+  kcg_bool bBrightnesChangeValidity;
+  kcg_bool bXvsKnobIsToggled;
+  kcg_bool bXvsKnobValidity;
+  kcg_int iXvsPosition;
+  OhuContrastKnobEnum_OHUManager eEvsContrastKnob;
+  kcg_bool bEvsContrastKnobValidity;
+} struct__75557;
+
+/* VIDEOManager::VideoLogicDataStruct */
+typedef struct__75557 VideoLogicDataStruct_VIDEOManager;
+
+typedef struct {
+  array_int_256 iCurrEvsGammaLut;
+  array_int_256 iCurrSvsGammaLut;
+} struct__75568;
+
+/* HUDManager::VideoGammaLutStruct */
+typedef struct__75568 VideoGammaLutStruct_HUDManager;
+
+/* VIDEOManager::VideoGammaLutStruct */
+typedef struct__75568 VideoGammaLutStruct_VIDEOManager;
+
+typedef struct {
+  kcg_real rVerticalOffset;
+  kcg_real rLaterlOffset;
+  kcg_real rRollOffset;
+} struct__75573;
+
+/* VIDEOManager::VideoOffsetStruct */
+typedef struct__75573 VideoOffsetStruct_VIDEOManager;
+
+typedef struct {
+  array_int_256 iCurrGammaLut;
+  kcg_int iBrightnessPercent;
+  kcg_int iConstantCorrection;
+  kcg_int iLutNumber;
+} struct__75579;
+
+/* VIDEOManager::VideoSourceStruct */
+typedef struct__75579 VideoSourceStruct_VIDEOManager;
+
+typedef array_int_256 array_int_256_32[32];
+
+typedef struct {
+  kcg_int iSvsRange;
+  SvsModeEnum_SVSManager eSvsMode;
+  kcg_bool bSvsLayer1Displayed;
+  kcg_bool bSvsLayer2Displayed;
+  kcg_bool bSvsLayer3Displayed;
+  kcg_bool bSvsLayer4Displayed;
+  kcg_int iSvsBrightnessPercentage;
+  AircraftTypeEnum_TYPES eAcType;
+  PhaseOfFlightEnum_TYPES ePhaseOfFlight;
+} struct__75589;
+
+/* SVSManager::SvsOutMessageStruct */
+typedef struct__75589 SvsOutMessageStruct_SVSManager;
+
+typedef struct {
+  uint8 iByte1;
+  uint8 iByte2;
+  uint8 iByte3;
+  uint8 iByte4;
+  uint8 iByte5;
+} struct__75601;
+
+/* OHUManager::OhuBytesBuffer */
+typedef struct__75601 OhuBytesBuffer_OHUManager;
+
+typedef struct { kcg_bool bNucCommandActive; } struct__75609;
+
+/* HUDManager::EvsInDataStruct */
+typedef struct__75609 EvsInDataStruct_HUDManager;
+
+typedef struct {
+  kcg_real rFlValue;
+  kcg_int iCmdValueMin;
+  kcg_int iCmdValueMax;
+} struct__75613;
+
+/* HUDManager::HudGlobalBrightnessStructure */
+typedef struct__75613 HudGlobalBrightnessStructure_HUDManager;
+
+typedef struct { kcg_bool bIsPerformed; kcg_bool bIsFailed; } struct__75619;
+
+/* HUDManager::TestsManager::TestDataStructure */
+typedef struct__75619 TestDataStructure_HUDManager_TestsManager;
+
+typedef struct {
+  TestDataStructure_HUDManager_TestsManager stOhuTooBrightTest;
+  TestDataStructure_HUDManager_TestsManager stOhuBacklightOffTest;
+  TestDataStructure_HUDManager_TestsManager stInternalIntegrityTest;
+} struct__75624;
+
+/* HUDManager::TestsManager::TestResultsDataStructure */
+typedef struct__75624 TestResultsDataStructure_HUDManager_TestsManager;
+
+typedef struct { kcg_bool bIsMajor; kcg_int iId; } struct__75630;
+
+/* HUDManager::FailuresManager::FailureDataStruct */
+typedef struct__75630 FailureDataStruct_HUDManager_FailuresManager;
+
+typedef kcg_bool array_bool_2[2];
+
+typedef struct { kcg_int idx; array_bool_2 items; } struct__75638;
+
+typedef kcg_bool array_bool_3[3];
+
+typedef struct { kcg_int idx; array_bool_3 items; } struct__75646;
+
+typedef kcg_bool array_bool_4[4];
+
+typedef struct { kcg_int idx; array_bool_4 items; } struct__75654;
+
+typedef kcg_bool array_bool_5[5];
+
+typedef struct { kcg_int idx; array_bool_5 items; } struct__75662;
+
+typedef kcg_real array_real_3[3];
+
+typedef array_real_3 array_real_3_3[3];
+
+typedef kcg_int array_int_25[25];
+
+typedef kcg_int array_int_24[24];
+
+typedef kcg_int array_int_2[2];
+
+typedef struct { kcg_int idx; array_int_2 items; } struct__75682;
+
+typedef struct { kcg_int idx; array_int_3 items; } struct__75687;
+
+typedef struct { kcg_int idx; array_int_4 items; } struct__75692;
+
+typedef kcg_int array_int_5[5];
+
+typedef struct { kcg_int idx; array_int_5 items; } struct__75700;
+
+typedef struct { kcg_int idx; array_int_6 items; } struct__75705;
+
+typedef struct { kcg_int idx; array_int_7 items; } struct__75710;
+
+typedef kcg_int array_int_8[8];
+
+typedef struct { kcg_int idx; array_int_8 items; } struct__75718;
+
+typedef kcg_int array_int_9[9];
+
+typedef struct { kcg_int idx; array_int_9 items; } struct__75726;
+
+typedef struct { kcg_int idx; array_int_10 items; } struct__75731;
+
+typedef kcg_int array_int_11[11];
+
+typedef struct { kcg_int idx; array_int_11 items; } struct__75739;
+
+typedef kcg_int array_int_12[12];
+
+typedef struct { kcg_int idx; array_int_12 items; } struct__75747;
+
+typedef kcg_int array_int_13[13];
+
+typedef struct { kcg_int idx; array_int_13 items; } struct__75755;
+
+typedef kcg_int array_int_14[14];
+
+typedef struct { kcg_int idx; array_int_14 items; } struct__75763;
+
+typedef kcg_int array_int_15[15];
+
+typedef struct { kcg_int idx; array_int_15 items; } struct__75771;
+
+typedef kcg_int array_int_16[16];
+
+typedef struct { kcg_int idx; array_int_16 items; } struct__75779;
+
+typedef kcg_int array_int_17[17];
+
+typedef struct { kcg_int idx; array_int_17 items; } struct__75787;
+
+typedef kcg_int array_int_18[18];
+
+typedef struct { kcg_int idx; array_int_18 items; } struct__75795;
+
+typedef kcg_int array_int_19[19];
+
+typedef struct { kcg_int idx; array_int_19 items; } struct__75803;
+
+typedef kcg_int array_int_20[20];
+
+typedef struct { kcg_int idx; array_int_20 items; } struct__75811;
+
+typedef kcg_int array_int_21[21];
+
+typedef struct { kcg_int idx; array_int_21 items; } struct__75819;
+
+typedef kcg_int array_int_22[22];
+
+typedef struct { kcg_int idx; array_int_22 items; } struct__75827;
+
+typedef kcg_int array_int_23[23];
+
+typedef struct { kcg_int idx; array_int_23 items; } struct__75835;
+
+typedef struct { kcg_int idx; array_int_24 items; } struct__75840;
+
+typedef kcg_bool array_bool_19[19];
+
+typedef kcg_bool array_bool_8[8];
+
+typedef kcg_bool array_bool_6[6];
+
+typedef kcg_bool array_bool_11[11];
+
+typedef kcg_bool array_bool_10[10];
+
+#ifndef kcg_copy_struct__73221
+#define kcg_copy_struct__73221(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73221)))
+#endif /* kcg_copy_struct__73221 */
+
+#ifndef kcg_copy_struct__73226
+#define kcg_copy_struct__73226(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73226)))
+#endif /* kcg_copy_struct__73226 */
+
+#ifndef kcg_copy_struct__73256
+#define kcg_copy_struct__73256(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73256)))
+#endif /* kcg_copy_struct__73256 */
+
+#ifndef kcg_copy_struct__73267
+#define kcg_copy_struct__73267(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73267)))
+#endif /* kcg_copy_struct__73267 */
+
+#ifndef kcg_copy_struct__73300
+#define kcg_copy_struct__73300(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73300)))
+#endif /* kcg_copy_struct__73300 */
+
+#ifndef kcg_copy_struct__73314
+#define kcg_copy_struct__73314(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73314)))
+#endif /* kcg_copy_struct__73314 */
+
+#ifndef kcg_copy_struct__73319
+#define kcg_copy_struct__73319(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73319)))
+#endif /* kcg_copy_struct__73319 */
+
+#ifndef kcg_copy_struct__73324
+#define kcg_copy_struct__73324(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73324)))
+#endif /* kcg_copy_struct__73324 */
+
+#ifndef kcg_copy_struct__73356
+#define kcg_copy_struct__73356(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73356)))
+#endif /* kcg_copy_struct__73356 */
+
+#ifndef kcg_copy_struct__73364
+#define kcg_copy_struct__73364(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73364)))
+#endif /* kcg_copy_struct__73364 */
+
+#ifndef kcg_copy_struct__73381
+#define kcg_copy_struct__73381(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73381)))
+#endif /* kcg_copy_struct__73381 */
+
+#ifndef kcg_copy_struct__73387
+#define kcg_copy_struct__73387(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73387)))
+#endif /* kcg_copy_struct__73387 */
+
+#ifndef kcg_copy_struct__73558
+#define kcg_copy_struct__73558(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73558)))
+#endif /* kcg_copy_struct__73558 */
+
+#ifndef kcg_copy_struct__73563
+#define kcg_copy_struct__73563(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73563)))
+#endif /* kcg_copy_struct__73563 */
+
+#ifndef kcg_copy_struct__73575
+#define kcg_copy_struct__73575(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73575)))
+#endif /* kcg_copy_struct__73575 */
+
+#ifndef kcg_copy_struct__73585
+#define kcg_copy_struct__73585(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73585)))
+#endif /* kcg_copy_struct__73585 */
+
+#ifndef kcg_copy_struct__73630
+#define kcg_copy_struct__73630(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73630)))
+#endif /* kcg_copy_struct__73630 */
+
+#ifndef kcg_copy_struct__73636
+#define kcg_copy_struct__73636(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73636)))
+#endif /* kcg_copy_struct__73636 */
+
+#ifndef kcg_copy_struct__73647
+#define kcg_copy_struct__73647(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73647)))
+#endif /* kcg_copy_struct__73647 */
+
+#ifndef kcg_copy_struct__73658
+#define kcg_copy_struct__73658(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73658)))
+#endif /* kcg_copy_struct__73658 */
+
+#ifndef kcg_copy_struct__73667
+#define kcg_copy_struct__73667(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73667)))
+#endif /* kcg_copy_struct__73667 */
+
+#ifndef kcg_copy_struct__73672
+#define kcg_copy_struct__73672(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73672)))
+#endif /* kcg_copy_struct__73672 */
+
+#ifndef kcg_copy_struct__73677
+#define kcg_copy_struct__73677(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73677)))
+#endif /* kcg_copy_struct__73677 */
+
+#ifndef kcg_copy_struct__73699
+#define kcg_copy_struct__73699(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73699)))
+#endif /* kcg_copy_struct__73699 */
+
+#ifndef kcg_copy_struct__73705
+#define kcg_copy_struct__73705(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73705)))
+#endif /* kcg_copy_struct__73705 */
+
+#ifndef kcg_copy_struct__73729
+#define kcg_copy_struct__73729(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73729)))
+#endif /* kcg_copy_struct__73729 */
+
+#ifndef kcg_copy_struct__73755
+#define kcg_copy_struct__73755(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73755)))
+#endif /* kcg_copy_struct__73755 */
+
+#ifndef kcg_copy_struct__73795
+#define kcg_copy_struct__73795(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73795)))
+#endif /* kcg_copy_struct__73795 */
+
+#ifndef kcg_copy_struct__73802
+#define kcg_copy_struct__73802(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73802)))
+#endif /* kcg_copy_struct__73802 */
+
+#ifndef kcg_copy_struct__73816
+#define kcg_copy_struct__73816(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73816)))
+#endif /* kcg_copy_struct__73816 */
+
+#ifndef kcg_copy_struct__73823
+#define kcg_copy_struct__73823(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73823)))
+#endif /* kcg_copy_struct__73823 */
+
+#ifndef kcg_copy_struct__73829
+#define kcg_copy_struct__73829(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73829)))
+#endif /* kcg_copy_struct__73829 */
+
+#ifndef kcg_copy_struct__73868
+#define kcg_copy_struct__73868(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73868)))
+#endif /* kcg_copy_struct__73868 */
+
+#ifndef kcg_copy_struct__73873
+#define kcg_copy_struct__73873(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73873)))
+#endif /* kcg_copy_struct__73873 */
+
+#ifndef kcg_copy_struct__73892
+#define kcg_copy_struct__73892(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73892)))
+#endif /* kcg_copy_struct__73892 */
+
+#ifndef kcg_copy_struct__73897
+#define kcg_copy_struct__73897(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73897)))
+#endif /* kcg_copy_struct__73897 */
+
+#ifndef kcg_copy_struct__73903
+#define kcg_copy_struct__73903(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73903)))
+#endif /* kcg_copy_struct__73903 */
+
+#ifndef kcg_copy_struct__73908
+#define kcg_copy_struct__73908(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73908)))
+#endif /* kcg_copy_struct__73908 */
+
+#ifndef kcg_copy_struct__73916
+#define kcg_copy_struct__73916(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73916)))
+#endif /* kcg_copy_struct__73916 */
+
+#ifndef kcg_copy_struct__73933
+#define kcg_copy_struct__73933(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73933)))
+#endif /* kcg_copy_struct__73933 */
+
+#ifndef kcg_copy_struct__73954
+#define kcg_copy_struct__73954(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__73954)))
+#endif /* kcg_copy_struct__73954 */
+
+#ifndef kcg_copy_struct__74079
+#define kcg_copy_struct__74079(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74079)))
+#endif /* kcg_copy_struct__74079 */
+
+#ifndef kcg_copy_struct__74084
+#define kcg_copy_struct__74084(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74084)))
+#endif /* kcg_copy_struct__74084 */
+
+#ifndef kcg_copy_struct__74119
+#define kcg_copy_struct__74119(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74119)))
+#endif /* kcg_copy_struct__74119 */
+
+#ifndef kcg_copy_struct__74162
+#define kcg_copy_struct__74162(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74162)))
+#endif /* kcg_copy_struct__74162 */
+
+#ifndef kcg_copy_struct__74180
+#define kcg_copy_struct__74180(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74180)))
+#endif /* kcg_copy_struct__74180 */
+
+#ifndef kcg_copy_struct__74185
+#define kcg_copy_struct__74185(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74185)))
+#endif /* kcg_copy_struct__74185 */
+
+#ifndef kcg_copy_struct__74331
+#define kcg_copy_struct__74331(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74331)))
+#endif /* kcg_copy_struct__74331 */
+
+#ifndef kcg_copy_struct__74340
+#define kcg_copy_struct__74340(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74340)))
+#endif /* kcg_copy_struct__74340 */
+
+#ifndef kcg_copy_struct__74345
+#define kcg_copy_struct__74345(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74345)))
+#endif /* kcg_copy_struct__74345 */
+
+#ifndef kcg_copy_struct__74354
+#define kcg_copy_struct__74354(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74354)))
+#endif /* kcg_copy_struct__74354 */
+
+#ifndef kcg_copy_struct__74372
+#define kcg_copy_struct__74372(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74372)))
+#endif /* kcg_copy_struct__74372 */
+
+#ifndef kcg_copy_struct__74392
+#define kcg_copy_struct__74392(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74392)))
+#endif /* kcg_copy_struct__74392 */
+
+#ifndef kcg_copy_struct__74444
+#define kcg_copy_struct__74444(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74444)))
+#endif /* kcg_copy_struct__74444 */
+
+#ifndef kcg_copy_struct__74456
+#define kcg_copy_struct__74456(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74456)))
+#endif /* kcg_copy_struct__74456 */
+
+#ifndef kcg_copy_struct__74470
+#define kcg_copy_struct__74470(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74470)))
+#endif /* kcg_copy_struct__74470 */
+
+#ifndef kcg_copy_struct__74494
+#define kcg_copy_struct__74494(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74494)))
+#endif /* kcg_copy_struct__74494 */
+
+#ifndef kcg_copy_struct__74499
+#define kcg_copy_struct__74499(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74499)))
+#endif /* kcg_copy_struct__74499 */
+
+#ifndef kcg_copy_struct__74506
+#define kcg_copy_struct__74506(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74506)))
+#endif /* kcg_copy_struct__74506 */
+
+#ifndef kcg_copy_struct__74595
+#define kcg_copy_struct__74595(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74595)))
+#endif /* kcg_copy_struct__74595 */
+
+#ifndef kcg_copy_struct__74618
+#define kcg_copy_struct__74618(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74618)))
+#endif /* kcg_copy_struct__74618 */
+
+#ifndef kcg_copy_struct__74653
+#define kcg_copy_struct__74653(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74653)))
+#endif /* kcg_copy_struct__74653 */
+
+#ifndef kcg_copy_struct__74670
+#define kcg_copy_struct__74670(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74670)))
+#endif /* kcg_copy_struct__74670 */
+
+#ifndef kcg_copy_struct__74677
+#define kcg_copy_struct__74677(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74677)))
+#endif /* kcg_copy_struct__74677 */
+
+#ifndef kcg_copy_struct__74689
+#define kcg_copy_struct__74689(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74689)))
+#endif /* kcg_copy_struct__74689 */
+
+#ifndef kcg_copy_struct__74707
+#define kcg_copy_struct__74707(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74707)))
+#endif /* kcg_copy_struct__74707 */
+
+#ifndef kcg_copy_struct__74717
+#define kcg_copy_struct__74717(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74717)))
+#endif /* kcg_copy_struct__74717 */
+
+#ifndef kcg_copy_struct__74746
+#define kcg_copy_struct__74746(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74746)))
+#endif /* kcg_copy_struct__74746 */
+
+#ifndef kcg_copy_struct__74839
+#define kcg_copy_struct__74839(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74839)))
+#endif /* kcg_copy_struct__74839 */
+
+#ifndef kcg_copy_struct__74864
+#define kcg_copy_struct__74864(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74864)))
+#endif /* kcg_copy_struct__74864 */
+
+#ifndef kcg_copy_struct__74884
+#define kcg_copy_struct__74884(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74884)))
+#endif /* kcg_copy_struct__74884 */
+
+#ifndef kcg_copy_struct__74931
+#define kcg_copy_struct__74931(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74931)))
+#endif /* kcg_copy_struct__74931 */
+
+#ifndef kcg_copy_struct__74948
+#define kcg_copy_struct__74948(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74948)))
+#endif /* kcg_copy_struct__74948 */
+
+#ifndef kcg_copy_struct__74953
+#define kcg_copy_struct__74953(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74953)))
+#endif /* kcg_copy_struct__74953 */
+
+#ifndef kcg_copy_struct__74961
+#define kcg_copy_struct__74961(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74961)))
+#endif /* kcg_copy_struct__74961 */
+
+#ifndef kcg_copy_struct__74967
+#define kcg_copy_struct__74967(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74967)))
+#endif /* kcg_copy_struct__74967 */
+
+#ifndef kcg_copy_struct__74981
+#define kcg_copy_struct__74981(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74981)))
+#endif /* kcg_copy_struct__74981 */
+
+#ifndef kcg_copy_struct__74986
+#define kcg_copy_struct__74986(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74986)))
+#endif /* kcg_copy_struct__74986 */
+
+#ifndef kcg_copy_struct__74992
+#define kcg_copy_struct__74992(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__74992)))
+#endif /* kcg_copy_struct__74992 */
+
+#ifndef kcg_copy_struct__75000
+#define kcg_copy_struct__75000(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75000)))
+#endif /* kcg_copy_struct__75000 */
+
+#ifndef kcg_copy_struct__75089
+#define kcg_copy_struct__75089(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75089)))
+#endif /* kcg_copy_struct__75089 */
+
+#ifndef kcg_copy_struct__75102
+#define kcg_copy_struct__75102(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75102)))
+#endif /* kcg_copy_struct__75102 */
+
+#ifndef kcg_copy_struct__75117
+#define kcg_copy_struct__75117(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75117)))
+#endif /* kcg_copy_struct__75117 */
+
+#ifndef kcg_copy_struct__75130
+#define kcg_copy_struct__75130(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75130)))
+#endif /* kcg_copy_struct__75130 */
+
+#ifndef kcg_copy_struct__75144
+#define kcg_copy_struct__75144(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75144)))
+#endif /* kcg_copy_struct__75144 */
+
+#ifndef kcg_copy_struct__75150
+#define kcg_copy_struct__75150(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75150)))
+#endif /* kcg_copy_struct__75150 */
+
+#ifndef kcg_copy_struct__75164
+#define kcg_copy_struct__75164(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75164)))
+#endif /* kcg_copy_struct__75164 */
+
+#ifndef kcg_copy_struct__75247
+#define kcg_copy_struct__75247(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75247)))
+#endif /* kcg_copy_struct__75247 */
+
+#ifndef kcg_copy_struct__75252
+#define kcg_copy_struct__75252(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75252)))
+#endif /* kcg_copy_struct__75252 */
+
+#ifndef kcg_copy_struct__75258
+#define kcg_copy_struct__75258(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75258)))
+#endif /* kcg_copy_struct__75258 */
+
+#ifndef kcg_copy_struct__75279
+#define kcg_copy_struct__75279(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75279)))
+#endif /* kcg_copy_struct__75279 */
+
+#ifndef kcg_copy_struct__75296
+#define kcg_copy_struct__75296(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75296)))
+#endif /* kcg_copy_struct__75296 */
+
+#ifndef kcg_copy_struct__75301
+#define kcg_copy_struct__75301(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75301)))
+#endif /* kcg_copy_struct__75301 */
+
+#ifndef kcg_copy_struct__75336
+#define kcg_copy_struct__75336(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75336)))
+#endif /* kcg_copy_struct__75336 */
+
+#ifndef kcg_copy_struct__75343
+#define kcg_copy_struct__75343(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75343)))
+#endif /* kcg_copy_struct__75343 */
+
+#ifndef kcg_copy_struct__75366
+#define kcg_copy_struct__75366(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75366)))
+#endif /* kcg_copy_struct__75366 */
+
+#ifndef kcg_copy_struct__75371
+#define kcg_copy_struct__75371(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75371)))
+#endif /* kcg_copy_struct__75371 */
+
+#ifndef kcg_copy_struct__75376
+#define kcg_copy_struct__75376(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75376)))
+#endif /* kcg_copy_struct__75376 */
+
+#ifndef kcg_copy_struct__75390
+#define kcg_copy_struct__75390(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75390)))
+#endif /* kcg_copy_struct__75390 */
+
+#ifndef kcg_copy_struct__75395
+#define kcg_copy_struct__75395(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75395)))
+#endif /* kcg_copy_struct__75395 */
+
+#ifndef kcg_copy_struct__75402
+#define kcg_copy_struct__75402(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75402)))
+#endif /* kcg_copy_struct__75402 */
+
+#ifndef kcg_copy_struct__75414
+#define kcg_copy_struct__75414(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75414)))
+#endif /* kcg_copy_struct__75414 */
+
+#ifndef kcg_copy_struct__75418
+#define kcg_copy_struct__75418(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75418)))
+#endif /* kcg_copy_struct__75418 */
+
+#ifndef kcg_copy_struct__75425
+#define kcg_copy_struct__75425(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75425)))
+#endif /* kcg_copy_struct__75425 */
+
+#ifndef kcg_copy_struct__75432
+#define kcg_copy_struct__75432(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75432)))
+#endif /* kcg_copy_struct__75432 */
+
+#ifndef kcg_copy_struct__75438
+#define kcg_copy_struct__75438(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75438)))
+#endif /* kcg_copy_struct__75438 */
+
+#ifndef kcg_copy_struct__75449
+#define kcg_copy_struct__75449(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75449)))
+#endif /* kcg_copy_struct__75449 */
+
+#ifndef kcg_copy_struct__75457
+#define kcg_copy_struct__75457(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75457)))
+#endif /* kcg_copy_struct__75457 */
+
+#ifndef kcg_copy_struct__75462
+#define kcg_copy_struct__75462(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75462)))
+#endif /* kcg_copy_struct__75462 */
+
+#ifndef kcg_copy_struct__75494
+#define kcg_copy_struct__75494(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75494)))
+#endif /* kcg_copy_struct__75494 */
+
+#ifndef kcg_copy_struct__75502
+#define kcg_copy_struct__75502(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75502)))
+#endif /* kcg_copy_struct__75502 */
+
+#ifndef kcg_copy_struct__75515
+#define kcg_copy_struct__75515(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75515)))
+#endif /* kcg_copy_struct__75515 */
+
+#ifndef kcg_copy_struct__75524
+#define kcg_copy_struct__75524(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75524)))
+#endif /* kcg_copy_struct__75524 */
+
+#ifndef kcg_copy_struct__75530
+#define kcg_copy_struct__75530(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75530)))
+#endif /* kcg_copy_struct__75530 */
+
+#ifndef kcg_copy_struct__75537
+#define kcg_copy_struct__75537(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75537)))
+#endif /* kcg_copy_struct__75537 */
+
+#ifndef kcg_copy_struct__75542
+#define kcg_copy_struct__75542(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75542)))
+#endif /* kcg_copy_struct__75542 */
+
+#ifndef kcg_copy_struct__75547
+#define kcg_copy_struct__75547(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75547)))
+#endif /* kcg_copy_struct__75547 */
+
+#ifndef kcg_copy_struct__75552
+#define kcg_copy_struct__75552(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75552)))
+#endif /* kcg_copy_struct__75552 */
+
+#ifndef kcg_copy_struct__75557
+#define kcg_copy_struct__75557(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75557)))
+#endif /* kcg_copy_struct__75557 */
+
+#ifndef kcg_copy_struct__75568
+#define kcg_copy_struct__75568(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75568)))
+#endif /* kcg_copy_struct__75568 */
+
+#ifndef kcg_copy_struct__75573
+#define kcg_copy_struct__75573(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75573)))
+#endif /* kcg_copy_struct__75573 */
+
+#ifndef kcg_copy_struct__75579
+#define kcg_copy_struct__75579(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75579)))
+#endif /* kcg_copy_struct__75579 */
+
+#ifndef kcg_copy_struct__75589
+#define kcg_copy_struct__75589(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75589)))
+#endif /* kcg_copy_struct__75589 */
+
+#ifndef kcg_copy_struct__75601
+#define kcg_copy_struct__75601(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75601)))
+#endif /* kcg_copy_struct__75601 */
+
+#ifndef kcg_copy_struct__75609
+#define kcg_copy_struct__75609(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75609)))
+#endif /* kcg_copy_struct__75609 */
+
+#ifndef kcg_copy_struct__75613
+#define kcg_copy_struct__75613(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75613)))
+#endif /* kcg_copy_struct__75613 */
+
+#ifndef kcg_copy_struct__75619
+#define kcg_copy_struct__75619(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75619)))
+#endif /* kcg_copy_struct__75619 */
+
+#ifndef kcg_copy_struct__75624
+#define kcg_copy_struct__75624(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75624)))
+#endif /* kcg_copy_struct__75624 */
+
+#ifndef kcg_copy_struct__75630
+#define kcg_copy_struct__75630(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75630)))
+#endif /* kcg_copy_struct__75630 */
+
+#ifndef kcg_copy_struct__75638
+#define kcg_copy_struct__75638(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75638)))
+#endif /* kcg_copy_struct__75638 */
+
+#ifndef kcg_copy_struct__75646
+#define kcg_copy_struct__75646(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75646)))
+#endif /* kcg_copy_struct__75646 */
+
+#ifndef kcg_copy_struct__75654
+#define kcg_copy_struct__75654(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75654)))
+#endif /* kcg_copy_struct__75654 */
+
+#ifndef kcg_copy_struct__75662
+#define kcg_copy_struct__75662(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75662)))
+#endif /* kcg_copy_struct__75662 */
+
+#ifndef kcg_copy_struct__75682
+#define kcg_copy_struct__75682(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75682)))
+#endif /* kcg_copy_struct__75682 */
+
+#ifndef kcg_copy_struct__75687
+#define kcg_copy_struct__75687(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75687)))
+#endif /* kcg_copy_struct__75687 */
+
+#ifndef kcg_copy_struct__75692
+#define kcg_copy_struct__75692(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75692)))
+#endif /* kcg_copy_struct__75692 */
+
+#ifndef kcg_copy_struct__75700
+#define kcg_copy_struct__75700(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75700)))
+#endif /* kcg_copy_struct__75700 */
+
+#ifndef kcg_copy_struct__75705
+#define kcg_copy_struct__75705(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75705)))
+#endif /* kcg_copy_struct__75705 */
+
+#ifndef kcg_copy_struct__75710
+#define kcg_copy_struct__75710(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75710)))
+#endif /* kcg_copy_struct__75710 */
+
+#ifndef kcg_copy_struct__75718
+#define kcg_copy_struct__75718(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75718)))
+#endif /* kcg_copy_struct__75718 */
+
+#ifndef kcg_copy_struct__75726
+#define kcg_copy_struct__75726(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75726)))
+#endif /* kcg_copy_struct__75726 */
+
+#ifndef kcg_copy_struct__75731
+#define kcg_copy_struct__75731(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75731)))
+#endif /* kcg_copy_struct__75731 */
+
+#ifndef kcg_copy_struct__75739
+#define kcg_copy_struct__75739(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75739)))
+#endif /* kcg_copy_struct__75739 */
+
+#ifndef kcg_copy_struct__75747
+#define kcg_copy_struct__75747(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75747)))
+#endif /* kcg_copy_struct__75747 */
+
+#ifndef kcg_copy_struct__75755
+#define kcg_copy_struct__75755(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75755)))
+#endif /* kcg_copy_struct__75755 */
+
+#ifndef kcg_copy_struct__75763
+#define kcg_copy_struct__75763(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75763)))
+#endif /* kcg_copy_struct__75763 */
+
+#ifndef kcg_copy_struct__75771
+#define kcg_copy_struct__75771(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75771)))
+#endif /* kcg_copy_struct__75771 */
+
+#ifndef kcg_copy_struct__75779
+#define kcg_copy_struct__75779(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75779)))
+#endif /* kcg_copy_struct__75779 */
+
+#ifndef kcg_copy_struct__75787
+#define kcg_copy_struct__75787(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75787)))
+#endif /* kcg_copy_struct__75787 */
+
+#ifndef kcg_copy_struct__75795
+#define kcg_copy_struct__75795(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75795)))
+#endif /* kcg_copy_struct__75795 */
+
+#ifndef kcg_copy_struct__75803
+#define kcg_copy_struct__75803(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75803)))
+#endif /* kcg_copy_struct__75803 */
+
+#ifndef kcg_copy_struct__75811
+#define kcg_copy_struct__75811(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75811)))
+#endif /* kcg_copy_struct__75811 */
+
+#ifndef kcg_copy_struct__75819
+#define kcg_copy_struct__75819(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75819)))
+#endif /* kcg_copy_struct__75819 */
+
+#ifndef kcg_copy_struct__75827
+#define kcg_copy_struct__75827(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75827)))
+#endif /* kcg_copy_struct__75827 */
+
+#ifndef kcg_copy_struct__75835
+#define kcg_copy_struct__75835(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75835)))
+#endif /* kcg_copy_struct__75835 */
+
+#ifndef kcg_copy_struct__75840
+#define kcg_copy_struct__75840(kcg_C1, kcg_C2) (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct__75840)))
+#endif /* kcg_copy_struct__75840 */
+
+#ifndef kcg_copy_array_int_10
+#define kcg_copy_array_int_10(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_10)))
+#endif /* kcg_copy_array_int_10 */
+
+#ifndef kcg_copy_array_char_256
+#define kcg_copy_array_char_256(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_char_256)))
+#endif /* kcg_copy_array_char_256 */
+
+#ifndef kcg_copy_array_int_3
+#define kcg_copy_array_int_3(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_3)))
+#endif /* kcg_copy_array_int_3 */
+
+#ifndef kcg_copy_array_int_7
+#define kcg_copy_array_int_7(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_7)))
+#endif /* kcg_copy_array_int_7 */
+
+#ifndef kcg_copy_array_int_27
+#define kcg_copy_array_int_27(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_27)))
+#endif /* kcg_copy_array_int_27 */
+
+#ifndef kcg_copy_array_int_6
+#define kcg_copy_array_int_6(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_6)))
+#endif /* kcg_copy_array_int_6 */
+
+#ifndef kcg_copy_array_bool_140
+#define kcg_copy_array_bool_140(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_140)))
+#endif /* kcg_copy_array_bool_140 */
+
+#ifndef kcg_copy_array__75111
+#define kcg_copy_array__75111(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array__75111)))
+#endif /* kcg_copy_array__75111 */
+
+#ifndef kcg_copy_array_int_96
+#define kcg_copy_array_int_96(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_96)))
+#endif /* kcg_copy_array_int_96 */
+
+#ifndef kcg_copy_array_int_32
+#define kcg_copy_array_int_32(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_32)))
+#endif /* kcg_copy_array_int_32 */
+
+#ifndef kcg_copy_array_real_32
+#define kcg_copy_array_real_32(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_real_32)))
+#endif /* kcg_copy_array_real_32 */
+
+#ifndef kcg_copy_array_int_4
+#define kcg_copy_array_int_4(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_4)))
+#endif /* kcg_copy_array_int_4 */
+
+#ifndef kcg_copy_array__75264
+#define kcg_copy_array__75264(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array__75264)))
+#endif /* kcg_copy_array__75264 */
+
+#ifndef kcg_copy_array__75267
+#define kcg_copy_array__75267(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array__75267)))
+#endif /* kcg_copy_array__75267 */
+
+#ifndef kcg_copy_array_int_256
+#define kcg_copy_array_int_256(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_256)))
+#endif /* kcg_copy_array_int_256 */
+
+#ifndef kcg_copy_array__75273
+#define kcg_copy_array__75273(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array__75273)))
+#endif /* kcg_copy_array__75273 */
+
+#ifndef kcg_copy_array__75276
+#define kcg_copy_array__75276(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array__75276)))
+#endif /* kcg_copy_array__75276 */
+
+#ifndef kcg_copy_array__75287
+#define kcg_copy_array__75287(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array__75287)))
+#endif /* kcg_copy_array__75287 */
+
+#ifndef kcg_copy_array__75290
+#define kcg_copy_array__75290(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array__75290)))
+#endif /* kcg_copy_array__75290 */
+
+#ifndef kcg_copy_array__75293
+#define kcg_copy_array__75293(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array__75293)))
+#endif /* kcg_copy_array__75293 */
+
+#ifndef kcg_copy_array__75333
+#define kcg_copy_array__75333(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array__75333)))
+#endif /* kcg_copy_array__75333 */
+
+#ifndef kcg_copy_array__75351
+#define kcg_copy_array__75351(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array__75351)))
+#endif /* kcg_copy_array__75351 */
+
+#ifndef kcg_copy_array__75354
+#define kcg_copy_array__75354(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array__75354)))
+#endif /* kcg_copy_array__75354 */
+
+#ifndef kcg_copy_array__75357
+#define kcg_copy_array__75357(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array__75357)))
+#endif /* kcg_copy_array__75357 */
+
+#ifndef kcg_copy_array__75360
+#define kcg_copy_array__75360(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array__75360)))
+#endif /* kcg_copy_array__75360 */
+
+#ifndef kcg_copy_array__75363
+#define kcg_copy_array__75363(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array__75363)))
+#endif /* kcg_copy_array__75363 */
+
+#ifndef kcg_copy_array__75381
+#define kcg_copy_array__75381(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array__75381)))
+#endif /* kcg_copy_array__75381 */
+
+#ifndef kcg_copy_array__75384
+#define kcg_copy_array__75384(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array__75384)))
+#endif /* kcg_copy_array__75384 */
+
+#ifndef kcg_copy_array__75387
+#define kcg_copy_array__75387(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array__75387)))
+#endif /* kcg_copy_array__75387 */
+
+#ifndef kcg_copy_array__75512
+#define kcg_copy_array__75512(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array__75512)))
+#endif /* kcg_copy_array__75512 */
+
+#ifndef kcg_copy_array_int_256_32
+#define kcg_copy_array_int_256_32(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_256_32)))
+#endif /* kcg_copy_array_int_256_32 */
+
+#ifndef kcg_copy_array_bool_2
+#define kcg_copy_array_bool_2(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_2)))
+#endif /* kcg_copy_array_bool_2 */
+
+#ifndef kcg_copy_array_bool_3
+#define kcg_copy_array_bool_3(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_3)))
+#endif /* kcg_copy_array_bool_3 */
+
+#ifndef kcg_copy_array_bool_4
+#define kcg_copy_array_bool_4(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_4)))
+#endif /* kcg_copy_array_bool_4 */
+
+#ifndef kcg_copy_array_bool_5
+#define kcg_copy_array_bool_5(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_5)))
+#endif /* kcg_copy_array_bool_5 */
+
+#ifndef kcg_copy_array_real_3
+#define kcg_copy_array_real_3(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_real_3)))
+#endif /* kcg_copy_array_real_3 */
+
+#ifndef kcg_copy_array_real_3_3
+#define kcg_copy_array_real_3_3(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_real_3_3)))
+#endif /* kcg_copy_array_real_3_3 */
+
+#ifndef kcg_copy_array_int_25
+#define kcg_copy_array_int_25(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_25)))
+#endif /* kcg_copy_array_int_25 */
+
+#ifndef kcg_copy_array_int_24
+#define kcg_copy_array_int_24(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_24)))
+#endif /* kcg_copy_array_int_24 */
+
+#ifndef kcg_copy_array_int_2
+#define kcg_copy_array_int_2(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_2)))
+#endif /* kcg_copy_array_int_2 */
+
+#ifndef kcg_copy_array_int_5
+#define kcg_copy_array_int_5(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_5)))
+#endif /* kcg_copy_array_int_5 */
+
+#ifndef kcg_copy_array_int_8
+#define kcg_copy_array_int_8(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_8)))
+#endif /* kcg_copy_array_int_8 */
+
+#ifndef kcg_copy_array_int_9
+#define kcg_copy_array_int_9(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_9)))
+#endif /* kcg_copy_array_int_9 */
+
+#ifndef kcg_copy_array_int_11
+#define kcg_copy_array_int_11(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_11)))
+#endif /* kcg_copy_array_int_11 */
+
+#ifndef kcg_copy_array_int_12
+#define kcg_copy_array_int_12(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_12)))
+#endif /* kcg_copy_array_int_12 */
+
+#ifndef kcg_copy_array_int_13
+#define kcg_copy_array_int_13(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_13)))
+#endif /* kcg_copy_array_int_13 */
+
+#ifndef kcg_copy_array_int_14
+#define kcg_copy_array_int_14(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_14)))
+#endif /* kcg_copy_array_int_14 */
+
+#ifndef kcg_copy_array_int_15
+#define kcg_copy_array_int_15(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_15)))
+#endif /* kcg_copy_array_int_15 */
+
+#ifndef kcg_copy_array_int_16
+#define kcg_copy_array_int_16(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_16)))
+#endif /* kcg_copy_array_int_16 */
+
+#ifndef kcg_copy_array_int_17
+#define kcg_copy_array_int_17(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_17)))
+#endif /* kcg_copy_array_int_17 */
+
+#ifndef kcg_copy_array_int_18
+#define kcg_copy_array_int_18(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_18)))
+#endif /* kcg_copy_array_int_18 */
+
+#ifndef kcg_copy_array_int_19
+#define kcg_copy_array_int_19(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_19)))
+#endif /* kcg_copy_array_int_19 */
+
+#ifndef kcg_copy_array_int_20
+#define kcg_copy_array_int_20(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_20)))
+#endif /* kcg_copy_array_int_20 */
+
+#ifndef kcg_copy_array_int_21
+#define kcg_copy_array_int_21(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_21)))
+#endif /* kcg_copy_array_int_21 */
+
+#ifndef kcg_copy_array_int_22
+#define kcg_copy_array_int_22(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_22)))
+#endif /* kcg_copy_array_int_22 */
+
+#ifndef kcg_copy_array_int_23
+#define kcg_copy_array_int_23(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int_23)))
+#endif /* kcg_copy_array_int_23 */
+
+#ifndef kcg_copy_array_bool_19
+#define kcg_copy_array_bool_19(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_19)))
+#endif /* kcg_copy_array_bool_19 */
+
+#ifndef kcg_copy_array_bool_8
+#define kcg_copy_array_bool_8(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_8)))
+#endif /* kcg_copy_array_bool_8 */
+
+#ifndef kcg_copy_array_bool_6
+#define kcg_copy_array_bool_6(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_6)))
+#endif /* kcg_copy_array_bool_6 */
+
+#ifndef kcg_copy_array_bool_11
+#define kcg_copy_array_bool_11(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_11)))
+#endif /* kcg_copy_array_bool_11 */
+
+#ifndef kcg_copy_array_bool_10
+#define kcg_copy_array_bool_10(kcg_C1, kcg_C2) (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_10)))
+#endif /* kcg_copy_array_bool_10 */
+
+#ifndef kcg_comp_struct__73221
+extern kcg_bool kcg_comp_struct__73221(
+  struct__73221 *kcg_c1,
+  struct__73221 *kcg_c2);
+#endif /* kcg_comp_struct__73221 */
+
+#ifndef kcg_comp_struct__73226
+extern kcg_bool kcg_comp_struct__73226(
+  struct__73226 *kcg_c1,
+  struct__73226 *kcg_c2);
+#endif /* kcg_comp_struct__73226 */
+
+#ifndef kcg_comp_struct__73256
+extern kcg_bool kcg_comp_struct__73256(
+  struct__73256 *kcg_c1,
+  struct__73256 *kcg_c2);
+#endif /* kcg_comp_struct__73256 */
+
+#ifndef kcg_comp_struct__73267
+extern kcg_bool kcg_comp_struct__73267(
+  struct__73267 *kcg_c1,
+  struct__73267 *kcg_c2);
+#endif /* kcg_comp_struct__73267 */
+
+#ifndef kcg_comp_struct__73300
+extern kcg_bool kcg_comp_struct__73300(
+  struct__73300 *kcg_c1,
+  struct__73300 *kcg_c2);
+#endif /* kcg_comp_struct__73300 */
+
+#ifndef kcg_comp_struct__73314
+extern kcg_bool kcg_comp_struct__73314(
+  struct__73314 *kcg_c1,
+  struct__73314 *kcg_c2);
+#endif /* kcg_comp_struct__73314 */
+
+#ifndef kcg_comp_struct__73319
+extern kcg_bool kcg_comp_struct__73319(
+  struct__73319 *kcg_c1,
+  struct__73319 *kcg_c2);
+#endif /* kcg_comp_struct__73319 */
+
+#ifndef kcg_comp_struct__73324
+extern kcg_bool kcg_comp_struct__73324(
+  struct__73324 *kcg_c1,
+  struct__73324 *kcg_c2);
+#endif /* kcg_comp_struct__73324 */
+
+#ifndef kcg_comp_struct__73356
+extern kcg_bool kcg_comp_struct__73356(
+  struct__73356 *kcg_c1,
+  struct__73356 *kcg_c2);
+#endif /* kcg_comp_struct__73356 */
+
+#ifndef kcg_comp_struct__73364
+extern kcg_bool kcg_comp_struct__73364(
+  struct__73364 *kcg_c1,
+  struct__73364 *kcg_c2);
+#endif /* kcg_comp_struct__73364 */
+
+#ifndef kcg_comp_struct__73381
+extern kcg_bool kcg_comp_struct__73381(
+  struct__73381 *kcg_c1,
+  struct__73381 *kcg_c2);
+#endif /* kcg_comp_struct__73381 */
+
+#ifndef kcg_comp_struct__73387
+extern kcg_bool kcg_comp_struct__73387(
+  struct__73387 *kcg_c1,
+  struct__73387 *kcg_c2);
+#endif /* kcg_comp_struct__73387 */
+
+#ifndef kcg_comp_struct__73558
+extern kcg_bool kcg_comp_struct__73558(
+  struct__73558 *kcg_c1,
+  struct__73558 *kcg_c2);
+#endif /* kcg_comp_struct__73558 */
+
+#ifndef kcg_comp_struct__73563
+extern kcg_bool kcg_comp_struct__73563(
+  struct__73563 *kcg_c1,
+  struct__73563 *kcg_c2);
+#endif /* kcg_comp_struct__73563 */
+
+#ifndef kcg_comp_struct__73575
+extern kcg_bool kcg_comp_struct__73575(
+  struct__73575 *kcg_c1,
+  struct__73575 *kcg_c2);
+#endif /* kcg_comp_struct__73575 */
+
+#ifndef kcg_comp_struct__73585
+extern kcg_bool kcg_comp_struct__73585(
+  struct__73585 *kcg_c1,
+  struct__73585 *kcg_c2);
+#endif /* kcg_comp_struct__73585 */
+
+#ifndef kcg_comp_struct__73630
+extern kcg_bool kcg_comp_struct__73630(
+  struct__73630 *kcg_c1,
+  struct__73630 *kcg_c2);
+#endif /* kcg_comp_struct__73630 */
+
+#ifndef kcg_comp_struct__73636
+extern kcg_bool kcg_comp_struct__73636(
+  struct__73636 *kcg_c1,
+  struct__73636 *kcg_c2);
+#endif /* kcg_comp_struct__73636 */
+
+#ifndef kcg_comp_struct__73647
+extern kcg_bool kcg_comp_struct__73647(
+  struct__73647 *kcg_c1,
+  struct__73647 *kcg_c2);
+#endif /* kcg_comp_struct__73647 */
+
+#ifndef kcg_comp_struct__73658
+extern kcg_bool kcg_comp_struct__73658(
+  struct__73658 *kcg_c1,
+  struct__73658 *kcg_c2);
+#endif /* kcg_comp_struct__73658 */
+
+#ifndef kcg_comp_struct__73667
+extern kcg_bool kcg_comp_struct__73667(
+  struct__73667 *kcg_c1,
+  struct__73667 *kcg_c2);
+#endif /* kcg_comp_struct__73667 */
+
+#ifndef kcg_comp_struct__73672
+extern kcg_bool kcg_comp_struct__73672(
+  struct__73672 *kcg_c1,
+  struct__73672 *kcg_c2);
+#endif /* kcg_comp_struct__73672 */
+
+#ifndef kcg_comp_struct__73677
+extern kcg_bool kcg_comp_struct__73677(
+  struct__73677 *kcg_c1,
+  struct__73677 *kcg_c2);
+#endif /* kcg_comp_struct__73677 */
+
+#ifndef kcg_comp_struct__73699
+extern kcg_bool kcg_comp_struct__73699(
+  struct__73699 *kcg_c1,
+  struct__73699 *kcg_c2);
+#endif /* kcg_comp_struct__73699 */
+
+#ifndef kcg_comp_struct__73705
+extern kcg_bool kcg_comp_struct__73705(
+  struct__73705 *kcg_c1,
+  struct__73705 *kcg_c2);
+#endif /* kcg_comp_struct__73705 */
+
+#ifndef kcg_comp_struct__73729
+extern kcg_bool kcg_comp_struct__73729(
+  struct__73729 *kcg_c1,
+  struct__73729 *kcg_c2);
+#endif /* kcg_comp_struct__73729 */
+
+#ifndef kcg_comp_struct__73755
+extern kcg_bool kcg_comp_struct__73755(
+  struct__73755 *kcg_c1,
+  struct__73755 *kcg_c2);
+#endif /* kcg_comp_struct__73755 */
+
+#ifndef kcg_comp_struct__73795
+extern kcg_bool kcg_comp_struct__73795(
+  struct__73795 *kcg_c1,
+  struct__73795 *kcg_c2);
+#endif /* kcg_comp_struct__73795 */
+
+#ifndef kcg_comp_struct__73802
+extern kcg_bool kcg_comp_struct__73802(
+  struct__73802 *kcg_c1,
+  struct__73802 *kcg_c2);
+#endif /* kcg_comp_struct__73802 */
+
+#ifndef kcg_comp_struct__73816
+extern kcg_bool kcg_comp_struct__73816(
+  struct__73816 *kcg_c1,
+  struct__73816 *kcg_c2);
+#endif /* kcg_comp_struct__73816 */
+
+#ifndef kcg_comp_struct__73823
+extern kcg_bool kcg_comp_struct__73823(
+  struct__73823 *kcg_c1,
+  struct__73823 *kcg_c2);
+#endif /* kcg_comp_struct__73823 */
+
+#ifndef kcg_comp_struct__73829
+extern kcg_bool kcg_comp_struct__73829(
+  struct__73829 *kcg_c1,
+  struct__73829 *kcg_c2);
+#endif /* kcg_comp_struct__73829 */
+
+#ifndef kcg_comp_struct__73868
+extern kcg_bool kcg_comp_struct__73868(
+  struct__73868 *kcg_c1,
+  struct__73868 *kcg_c2);
+#endif /* kcg_comp_struct__73868 */
+
+#ifndef kcg_comp_struct__73873
+extern kcg_bool kcg_comp_struct__73873(
+  struct__73873 *kcg_c1,
+  struct__73873 *kcg_c2);
+#endif /* kcg_comp_struct__73873 */
+
+#ifndef kcg_comp_struct__73892
+extern kcg_bool kcg_comp_struct__73892(
+  struct__73892 *kcg_c1,
+  struct__73892 *kcg_c2);
+#endif /* kcg_comp_struct__73892 */
+
+#ifndef kcg_comp_struct__73897
+extern kcg_bool kcg_comp_struct__73897(
+  struct__73897 *kcg_c1,
+  struct__73897 *kcg_c2);
+#endif /* kcg_comp_struct__73897 */
+
+#ifndef kcg_comp_struct__73903
+extern kcg_bool kcg_comp_struct__73903(
+  struct__73903 *kcg_c1,
+  struct__73903 *kcg_c2);
+#endif /* kcg_comp_struct__73903 */
+
+#ifndef kcg_comp_struct__73908
+extern kcg_bool kcg_comp_struct__73908(
+  struct__73908 *kcg_c1,
+  struct__73908 *kcg_c2);
+#endif /* kcg_comp_struct__73908 */
+
+#ifndef kcg_comp_struct__73916
+extern kcg_bool kcg_comp_struct__73916(
+  struct__73916 *kcg_c1,
+  struct__73916 *kcg_c2);
+#endif /* kcg_comp_struct__73916 */
+
+#ifndef kcg_comp_struct__73933
+extern kcg_bool kcg_comp_struct__73933(
+  struct__73933 *kcg_c1,
+  struct__73933 *kcg_c2);
+#endif /* kcg_comp_struct__73933 */
+
+#ifndef kcg_comp_struct__73954
+extern kcg_bool kcg_comp_struct__73954(
+  struct__73954 *kcg_c1,
+  struct__73954 *kcg_c2);
+#endif /* kcg_comp_struct__73954 */
+
+#ifndef kcg_comp_struct__74079
+extern kcg_bool kcg_comp_struct__74079(
+  struct__74079 *kcg_c1,
+  struct__74079 *kcg_c2);
+#endif /* kcg_comp_struct__74079 */
+
+#ifndef kcg_comp_struct__74084
+extern kcg_bool kcg_comp_struct__74084(
+  struct__74084 *kcg_c1,
+  struct__74084 *kcg_c2);
+#endif /* kcg_comp_struct__74084 */
+
+#ifndef kcg_comp_struct__74119
+extern kcg_bool kcg_comp_struct__74119(
+  struct__74119 *kcg_c1,
+  struct__74119 *kcg_c2);
+#endif /* kcg_comp_struct__74119 */
+
+#ifndef kcg_comp_struct__74162
+extern kcg_bool kcg_comp_struct__74162(
+  struct__74162 *kcg_c1,
+  struct__74162 *kcg_c2);
+#endif /* kcg_comp_struct__74162 */
+
+#ifndef kcg_comp_struct__74180
+extern kcg_bool kcg_comp_struct__74180(
+  struct__74180 *kcg_c1,
+  struct__74180 *kcg_c2);
+#endif /* kcg_comp_struct__74180 */
+
+#ifndef kcg_comp_struct__74185
+extern kcg_bool kcg_comp_struct__74185(
+  struct__74185 *kcg_c1,
+  struct__74185 *kcg_c2);
+#endif /* kcg_comp_struct__74185 */
+
+#ifndef kcg_comp_struct__74331
+extern kcg_bool kcg_comp_struct__74331(
+  struct__74331 *kcg_c1,
+  struct__74331 *kcg_c2);
+#endif /* kcg_comp_struct__74331 */
+
+#ifndef kcg_comp_struct__74340
+extern kcg_bool kcg_comp_struct__74340(
+  struct__74340 *kcg_c1,
+  struct__74340 *kcg_c2);
+#endif /* kcg_comp_struct__74340 */
+
+#ifndef kcg_comp_struct__74345
+extern kcg_bool kcg_comp_struct__74345(
+  struct__74345 *kcg_c1,
+  struct__74345 *kcg_c2);
+#endif /* kcg_comp_struct__74345 */
+
+#ifndef kcg_comp_struct__74354
+extern kcg_bool kcg_comp_struct__74354(
+  struct__74354 *kcg_c1,
+  struct__74354 *kcg_c2);
+#endif /* kcg_comp_struct__74354 */
+
+#ifndef kcg_comp_struct__74372
+extern kcg_bool kcg_comp_struct__74372(
+  struct__74372 *kcg_c1,
+  struct__74372 *kcg_c2);
+#endif /* kcg_comp_struct__74372 */
+
+#ifndef kcg_comp_struct__74392
+extern kcg_bool kcg_comp_struct__74392(
+  struct__74392 *kcg_c1,
+  struct__74392 *kcg_c2);
+#endif /* kcg_comp_struct__74392 */
+
+#ifndef kcg_comp_struct__74444
+extern kcg_bool kcg_comp_struct__74444(
+  struct__74444 *kcg_c1,
+  struct__74444 *kcg_c2);
+#endif /* kcg_comp_struct__74444 */
+
+#ifndef kcg_comp_struct__74456
+extern kcg_bool kcg_comp_struct__74456(
+  struct__74456 *kcg_c1,
+  struct__74456 *kcg_c2);
+#endif /* kcg_comp_struct__74456 */
+
+#ifndef kcg_comp_struct__74470
+extern kcg_bool kcg_comp_struct__74470(
+  struct__74470 *kcg_c1,
+  struct__74470 *kcg_c2);
+#endif /* kcg_comp_struct__74470 */
+
+#ifndef kcg_comp_struct__74494
+extern kcg_bool kcg_comp_struct__74494(
+  struct__74494 *kcg_c1,
+  struct__74494 *kcg_c2);
+#endif /* kcg_comp_struct__74494 */
+
+#ifndef kcg_comp_struct__74499
+extern kcg_bool kcg_comp_struct__74499(
+  struct__74499 *kcg_c1,
+  struct__74499 *kcg_c2);
+#endif /* kcg_comp_struct__74499 */
+
+#ifndef kcg_comp_struct__74506
+extern kcg_bool kcg_comp_struct__74506(
+  struct__74506 *kcg_c1,
+  struct__74506 *kcg_c2);
+#endif /* kcg_comp_struct__74506 */
+
+#ifndef kcg_comp_struct__74595
+extern kcg_bool kcg_comp_struct__74595(
+  struct__74595 *kcg_c1,
+  struct__74595 *kcg_c2);
+#endif /* kcg_comp_struct__74595 */
+
+#ifndef kcg_comp_struct__74618
+extern kcg_bool kcg_comp_struct__74618(
+  struct__74618 *kcg_c1,
+  struct__74618 *kcg_c2);
+#endif /* kcg_comp_struct__74618 */
+
+#ifndef kcg_comp_struct__74653
+extern kcg_bool kcg_comp_struct__74653(
+  struct__74653 *kcg_c1,
+  struct__74653 *kcg_c2);
+#endif /* kcg_comp_struct__74653 */
+
+#ifndef kcg_comp_struct__74670
+extern kcg_bool kcg_comp_struct__74670(
+  struct__74670 *kcg_c1,
+  struct__74670 *kcg_c2);
+#endif /* kcg_comp_struct__74670 */
+
+#ifndef kcg_comp_struct__74677
+extern kcg_bool kcg_comp_struct__74677(
+  struct__74677 *kcg_c1,
+  struct__74677 *kcg_c2);
+#endif /* kcg_comp_struct__74677 */
+
+#ifndef kcg_comp_struct__74689
+extern kcg_bool kcg_comp_struct__74689(
+  struct__74689 *kcg_c1,
+  struct__74689 *kcg_c2);
+#endif /* kcg_comp_struct__74689 */
+
+#ifndef kcg_comp_struct__74707
+extern kcg_bool kcg_comp_struct__74707(
+  struct__74707 *kcg_c1,
+  struct__74707 *kcg_c2);
+#endif /* kcg_comp_struct__74707 */
+
+#ifndef kcg_comp_struct__74717
+extern kcg_bool kcg_comp_struct__74717(
+  struct__74717 *kcg_c1,
+  struct__74717 *kcg_c2);
+#endif /* kcg_comp_struct__74717 */
+
+#ifndef kcg_comp_struct__74746
+extern kcg_bool kcg_comp_struct__74746(
+  struct__74746 *kcg_c1,
+  struct__74746 *kcg_c2);
+#endif /* kcg_comp_struct__74746 */
+
+#ifndef kcg_comp_struct__74839
+extern kcg_bool kcg_comp_struct__74839(
+  struct__74839 *kcg_c1,
+  struct__74839 *kcg_c2);
+#endif /* kcg_comp_struct__74839 */
+
+#ifndef kcg_comp_struct__74864
+extern kcg_bool kcg_comp_struct__74864(
+  struct__74864 *kcg_c1,
+  struct__74864 *kcg_c2);
+#endif /* kcg_comp_struct__74864 */
+
+#ifndef kcg_comp_struct__74884
+extern kcg_bool kcg_comp_struct__74884(
+  struct__74884 *kcg_c1,
+  struct__74884 *kcg_c2);
+#endif /* kcg_comp_struct__74884 */
+
+#ifndef kcg_comp_struct__74931
+extern kcg_bool kcg_comp_struct__74931(
+  struct__74931 *kcg_c1,
+  struct__74931 *kcg_c2);
+#endif /* kcg_comp_struct__74931 */
+
+#ifndef kcg_comp_struct__74948
+extern kcg_bool kcg_comp_struct__74948(
+  struct__74948 *kcg_c1,
+  struct__74948 *kcg_c2);
+#endif /* kcg_comp_struct__74948 */
+
+#ifndef kcg_comp_struct__74953
+extern kcg_bool kcg_comp_struct__74953(
+  struct__74953 *kcg_c1,
+  struct__74953 *kcg_c2);
+#endif /* kcg_comp_struct__74953 */
+
+#ifndef kcg_comp_struct__74961
+extern kcg_bool kcg_comp_struct__74961(
+  struct__74961 *kcg_c1,
+  struct__74961 *kcg_c2);
+#endif /* kcg_comp_struct__74961 */
+
+#ifndef kcg_comp_struct__74967
+extern kcg_bool kcg_comp_struct__74967(
+  struct__74967 *kcg_c1,
+  struct__74967 *kcg_c2);
+#endif /* kcg_comp_struct__74967 */
+
+#ifndef kcg_comp_struct__74981
+extern kcg_bool kcg_comp_struct__74981(
+  struct__74981 *kcg_c1,
+  struct__74981 *kcg_c2);
+#endif /* kcg_comp_struct__74981 */
+
+#ifndef kcg_comp_struct__74986
+extern kcg_bool kcg_comp_struct__74986(
+  struct__74986 *kcg_c1,
+  struct__74986 *kcg_c2);
+#endif /* kcg_comp_struct__74986 */
+
+#ifndef kcg_comp_struct__74992
+extern kcg_bool kcg_comp_struct__74992(
+  struct__74992 *kcg_c1,
+  struct__74992 *kcg_c2);
+#endif /* kcg_comp_struct__74992 */
+
+#ifndef kcg_comp_struct__75000
+extern kcg_bool kcg_comp_struct__75000(
+  struct__75000 *kcg_c1,
+  struct__75000 *kcg_c2);
+#endif /* kcg_comp_struct__75000 */
+
+#ifndef kcg_comp_struct__75089
+extern kcg_bool kcg_comp_struct__75089(
+  struct__75089 *kcg_c1,
+  struct__75089 *kcg_c2);
+#endif /* kcg_comp_struct__75089 */
+
+#ifndef kcg_comp_struct__75102
+extern kcg_bool kcg_comp_struct__75102(
+  struct__75102 *kcg_c1,
+  struct__75102 *kcg_c2);
+#endif /* kcg_comp_struct__75102 */
+
+#ifndef kcg_comp_struct__75117
+extern kcg_bool kcg_comp_struct__75117(
+  struct__75117 *kcg_c1,
+  struct__75117 *kcg_c2);
+#endif /* kcg_comp_struct__75117 */
+
+#ifndef kcg_comp_struct__75130
+extern kcg_bool kcg_comp_struct__75130(
+  struct__75130 *kcg_c1,
+  struct__75130 *kcg_c2);
+#endif /* kcg_comp_struct__75130 */
+
+#ifndef kcg_comp_struct__75144
+extern kcg_bool kcg_comp_struct__75144(
+  struct__75144 *kcg_c1,
+  struct__75144 *kcg_c2);
+#endif /* kcg_comp_struct__75144 */
+
+#ifndef kcg_comp_struct__75150
+extern kcg_bool kcg_comp_struct__75150(
+  struct__75150 *kcg_c1,
+  struct__75150 *kcg_c2);
+#endif /* kcg_comp_struct__75150 */
+
+#ifndef kcg_comp_struct__75164
+extern kcg_bool kcg_comp_struct__75164(
+  struct__75164 *kcg_c1,
+  struct__75164 *kcg_c2);
+#endif /* kcg_comp_struct__75164 */
+
+#ifndef kcg_comp_struct__75247
+extern kcg_bool kcg_comp_struct__75247(
+  struct__75247 *kcg_c1,
+  struct__75247 *kcg_c2);
+#endif /* kcg_comp_struct__75247 */
+
+#ifndef kcg_comp_struct__75252
+extern kcg_bool kcg_comp_struct__75252(
+  struct__75252 *kcg_c1,
+  struct__75252 *kcg_c2);
+#endif /* kcg_comp_struct__75252 */
+
+#ifndef kcg_comp_struct__75258
+extern kcg_bool kcg_comp_struct__75258(
+  struct__75258 *kcg_c1,
+  struct__75258 *kcg_c2);
+#endif /* kcg_comp_struct__75258 */
+
+#ifndef kcg_comp_struct__75279
+extern kcg_bool kcg_comp_struct__75279(
+  struct__75279 *kcg_c1,
+  struct__75279 *kcg_c2);
+#endif /* kcg_comp_struct__75279 */
+
+#ifndef kcg_comp_struct__75296
+extern kcg_bool kcg_comp_struct__75296(
+  struct__75296 *kcg_c1,
+  struct__75296 *kcg_c2);
+#endif /* kcg_comp_struct__75296 */
+
+#ifndef kcg_comp_struct__75301
+extern kcg_bool kcg_comp_struct__75301(
+  struct__75301 *kcg_c1,
+  struct__75301 *kcg_c2);
+#endif /* kcg_comp_struct__75301 */
+
+#ifndef kcg_comp_struct__75336
+extern kcg_bool kcg_comp_struct__75336(
+  struct__75336 *kcg_c1,
+  struct__75336 *kcg_c2);
+#endif /* kcg_comp_struct__75336 */
+
+#ifndef kcg_comp_struct__75343
+extern kcg_bool kcg_comp_struct__75343(
+  struct__75343 *kcg_c1,
+  struct__75343 *kcg_c2);
+#endif /* kcg_comp_struct__75343 */
+
+#ifndef kcg_comp_struct__75366
+extern kcg_bool kcg_comp_struct__75366(
+  struct__75366 *kcg_c1,
+  struct__75366 *kcg_c2);
+#endif /* kcg_comp_struct__75366 */
+
+#ifndef kcg_comp_struct__75371
+extern kcg_bool kcg_comp_struct__75371(
+  struct__75371 *kcg_c1,
+  struct__75371 *kcg_c2);
+#endif /* kcg_comp_struct__75371 */
+
+#ifndef kcg_comp_struct__75376
+extern kcg_bool kcg_comp_struct__75376(
+  struct__75376 *kcg_c1,
+  struct__75376 *kcg_c2);
+#endif /* kcg_comp_struct__75376 */
+
+#ifndef kcg_comp_struct__75390
+extern kcg_bool kcg_comp_struct__75390(
+  struct__75390 *kcg_c1,
+  struct__75390 *kcg_c2);
+#endif /* kcg_comp_struct__75390 */
+
+#ifndef kcg_comp_struct__75395
+extern kcg_bool kcg_comp_struct__75395(
+  struct__75395 *kcg_c1,
+  struct__75395 *kcg_c2);
+#endif /* kcg_comp_struct__75395 */
+
+#ifndef kcg_comp_struct__75402
+extern kcg_bool kcg_comp_struct__75402(
+  struct__75402 *kcg_c1,
+  struct__75402 *kcg_c2);
+#endif /* kcg_comp_struct__75402 */
+
+#ifndef kcg_comp_struct__75414
+extern kcg_bool kcg_comp_struct__75414(
+  struct__75414 *kcg_c1,
+  struct__75414 *kcg_c2);
+#endif /* kcg_comp_struct__75414 */
+
+#ifndef kcg_comp_struct__75418
+extern kcg_bool kcg_comp_struct__75418(
+  struct__75418 *kcg_c1,
+  struct__75418 *kcg_c2);
+#endif /* kcg_comp_struct__75418 */
+
+#ifndef kcg_comp_struct__75425
+extern kcg_bool kcg_comp_struct__75425(
+  struct__75425 *kcg_c1,
+  struct__75425 *kcg_c2);
+#endif /* kcg_comp_struct__75425 */
+
+#ifndef kcg_comp_struct__75432
+extern kcg_bool kcg_comp_struct__75432(
+  struct__75432 *kcg_c1,
+  struct__75432 *kcg_c2);
+#endif /* kcg_comp_struct__75432 */
+
+#ifndef kcg_comp_struct__75438
+extern kcg_bool kcg_comp_struct__75438(
+  struct__75438 *kcg_c1,
+  struct__75438 *kcg_c2);
+#endif /* kcg_comp_struct__75438 */
+
+#ifndef kcg_comp_struct__75449
+extern kcg_bool kcg_comp_struct__75449(
+  struct__75449 *kcg_c1,
+  struct__75449 *kcg_c2);
+#endif /* kcg_comp_struct__75449 */
+
+#ifndef kcg_comp_struct__75457
+extern kcg_bool kcg_comp_struct__75457(
+  struct__75457 *kcg_c1,
+  struct__75457 *kcg_c2);
+#endif /* kcg_comp_struct__75457 */
+
+#ifndef kcg_comp_struct__75462
+extern kcg_bool kcg_comp_struct__75462(
+  struct__75462 *kcg_c1,
+  struct__75462 *kcg_c2);
+#endif /* kcg_comp_struct__75462 */
+
+#ifndef kcg_comp_struct__75494
+extern kcg_bool kcg_comp_struct__75494(
+  struct__75494 *kcg_c1,
+  struct__75494 *kcg_c2);
+#endif /* kcg_comp_struct__75494 */
+
+#ifndef kcg_comp_struct__75502
+extern kcg_bool kcg_comp_struct__75502(
+  struct__75502 *kcg_c1,
+  struct__75502 *kcg_c2);
+#endif /* kcg_comp_struct__75502 */
+
+#ifndef kcg_comp_struct__75515
+extern kcg_bool kcg_comp_struct__75515(
+  struct__75515 *kcg_c1,
+  struct__75515 *kcg_c2);
+#endif /* kcg_comp_struct__75515 */
+
+#ifndef kcg_comp_struct__75524
+extern kcg_bool kcg_comp_struct__75524(
+  struct__75524 *kcg_c1,
+  struct__75524 *kcg_c2);
+#endif /* kcg_comp_struct__75524 */
+
+#ifndef kcg_comp_struct__75530
+extern kcg_bool kcg_comp_struct__75530(
+  struct__75530 *kcg_c1,
+  struct__75530 *kcg_c2);
+#endif /* kcg_comp_struct__75530 */
+
+#ifndef kcg_comp_struct__75537
+extern kcg_bool kcg_comp_struct__75537(
+  struct__75537 *kcg_c1,
+  struct__75537 *kcg_c2);
+#endif /* kcg_comp_struct__75537 */
+
+#ifndef kcg_comp_struct__75542
+extern kcg_bool kcg_comp_struct__75542(
+  struct__75542 *kcg_c1,
+  struct__75542 *kcg_c2);
+#endif /* kcg_comp_struct__75542 */
+
+#ifndef kcg_comp_struct__75547
+extern kcg_bool kcg_comp_struct__75547(
+  struct__75547 *kcg_c1,
+  struct__75547 *kcg_c2);
+#endif /* kcg_comp_struct__75547 */
+
+#ifndef kcg_comp_struct__75552
+extern kcg_bool kcg_comp_struct__75552(
+  struct__75552 *kcg_c1,
+  struct__75552 *kcg_c2);
+#endif /* kcg_comp_struct__75552 */
+
+#ifndef kcg_comp_struct__75557
+extern kcg_bool kcg_comp_struct__75557(
+  struct__75557 *kcg_c1,
+  struct__75557 *kcg_c2);
+#endif /* kcg_comp_struct__75557 */
+
+#ifndef kcg_comp_struct__75568
+extern kcg_bool kcg_comp_struct__75568(
+  struct__75568 *kcg_c1,
+  struct__75568 *kcg_c2);
+#endif /* kcg_comp_struct__75568 */
+
+#ifndef kcg_comp_struct__75573
+extern kcg_bool kcg_comp_struct__75573(
+  struct__75573 *kcg_c1,
+  struct__75573 *kcg_c2);
+#endif /* kcg_comp_struct__75573 */
+
+#ifndef kcg_comp_struct__75579
+extern kcg_bool kcg_comp_struct__75579(
+  struct__75579 *kcg_c1,
+  struct__75579 *kcg_c2);
+#endif /* kcg_comp_struct__75579 */
+
+#ifndef kcg_comp_struct__75589
+extern kcg_bool kcg_comp_struct__75589(
+  struct__75589 *kcg_c1,
+  struct__75589 *kcg_c2);
+#endif /* kcg_comp_struct__75589 */
+
+#ifndef kcg_comp_struct__75601
+extern kcg_bool kcg_comp_struct__75601(
+  struct__75601 *kcg_c1,
+  struct__75601 *kcg_c2);
+#endif /* kcg_comp_struct__75601 */
+
+#ifndef kcg_comp_struct__75609
+extern kcg_bool kcg_comp_struct__75609(
+  struct__75609 *kcg_c1,
+  struct__75609 *kcg_c2);
+#endif /* kcg_comp_struct__75609 */
+
+#ifndef kcg_comp_struct__75613
+extern kcg_bool kcg_comp_struct__75613(
+  struct__75613 *kcg_c1,
+  struct__75613 *kcg_c2);
+#endif /* kcg_comp_struct__75613 */
+
+#ifndef kcg_comp_struct__75619
+extern kcg_bool kcg_comp_struct__75619(
+  struct__75619 *kcg_c1,
+  struct__75619 *kcg_c2);
+#endif /* kcg_comp_struct__75619 */
+
+#ifndef kcg_comp_struct__75624
+extern kcg_bool kcg_comp_struct__75624(
+  struct__75624 *kcg_c1,
+  struct__75624 *kcg_c2);
+#endif /* kcg_comp_struct__75624 */
+
+#ifndef kcg_comp_struct__75630
+extern kcg_bool kcg_comp_struct__75630(
+  struct__75630 *kcg_c1,
+  struct__75630 *kcg_c2);
+#endif /* kcg_comp_struct__75630 */
+
+#ifndef kcg_comp_struct__75638
+extern kcg_bool kcg_comp_struct__75638(
+  struct__75638 *kcg_c1,
+  struct__75638 *kcg_c2);
+#endif /* kcg_comp_struct__75638 */
+
+#ifndef kcg_comp_struct__75646
+extern kcg_bool kcg_comp_struct__75646(
+  struct__75646 *kcg_c1,
+  struct__75646 *kcg_c2);
+#endif /* kcg_comp_struct__75646 */
+
+#ifndef kcg_comp_struct__75654
+extern kcg_bool kcg_comp_struct__75654(
+  struct__75654 *kcg_c1,
+  struct__75654 *kcg_c2);
+#endif /* kcg_comp_struct__75654 */
+
+#ifndef kcg_comp_struct__75662
+extern kcg_bool kcg_comp_struct__75662(
+  struct__75662 *kcg_c1,
+  struct__75662 *kcg_c2);
+#endif /* kcg_comp_struct__75662 */
+
+#ifndef kcg_comp_struct__75682
+extern kcg_bool kcg_comp_struct__75682(
+  struct__75682 *kcg_c1,
+  struct__75682 *kcg_c2);
+#endif /* kcg_comp_struct__75682 */
+
+#ifndef kcg_comp_struct__75687
+extern kcg_bool kcg_comp_struct__75687(
+  struct__75687 *kcg_c1,
+  struct__75687 *kcg_c2);
+#endif /* kcg_comp_struct__75687 */
+
+#ifndef kcg_comp_struct__75692
+extern kcg_bool kcg_comp_struct__75692(
+  struct__75692 *kcg_c1,
+  struct__75692 *kcg_c2);
+#endif /* kcg_comp_struct__75692 */
+
+#ifndef kcg_comp_struct__75700
+extern kcg_bool kcg_comp_struct__75700(
+  struct__75700 *kcg_c1,
+  struct__75700 *kcg_c2);
+#endif /* kcg_comp_struct__75700 */
+
+#ifndef kcg_comp_struct__75705
+extern kcg_bool kcg_comp_struct__75705(
+  struct__75705 *kcg_c1,
+  struct__75705 *kcg_c2);
+#endif /* kcg_comp_struct__75705 */
+
+#ifndef kcg_comp_struct__75710
+extern kcg_bool kcg_comp_struct__75710(
+  struct__75710 *kcg_c1,
+  struct__75710 *kcg_c2);
+#endif /* kcg_comp_struct__75710 */
+
+#ifndef kcg_comp_struct__75718
+extern kcg_bool kcg_comp_struct__75718(
+  struct__75718 *kcg_c1,
+  struct__75718 *kcg_c2);
+#endif /* kcg_comp_struct__75718 */
+
+#ifndef kcg_comp_struct__75726
+extern kcg_bool kcg_comp_struct__75726(
+  struct__75726 *kcg_c1,
+  struct__75726 *kcg_c2);
+#endif /* kcg_comp_struct__75726 */
+
+#ifndef kcg_comp_struct__75731
+extern kcg_bool kcg_comp_struct__75731(
+  struct__75731 *kcg_c1,
+  struct__75731 *kcg_c2);
+#endif /* kcg_comp_struct__75731 */
+
+#ifndef kcg_comp_struct__75739
+extern kcg_bool kcg_comp_struct__75739(
+  struct__75739 *kcg_c1,
+  struct__75739 *kcg_c2);
+#endif /* kcg_comp_struct__75739 */
+
+#ifndef kcg_comp_struct__75747
+extern kcg_bool kcg_comp_struct__75747(
+  struct__75747 *kcg_c1,
+  struct__75747 *kcg_c2);
+#endif /* kcg_comp_struct__75747 */
+
+#ifndef kcg_comp_struct__75755
+extern kcg_bool kcg_comp_struct__75755(
+  struct__75755 *kcg_c1,
+  struct__75755 *kcg_c2);
+#endif /* kcg_comp_struct__75755 */
+
+#ifndef kcg_comp_struct__75763
+extern kcg_bool kcg_comp_struct__75763(
+  struct__75763 *kcg_c1,
+  struct__75763 *kcg_c2);
+#endif /* kcg_comp_struct__75763 */
+
+#ifndef kcg_comp_struct__75771
+extern kcg_bool kcg_comp_struct__75771(
+  struct__75771 *kcg_c1,
+  struct__75771 *kcg_c2);
+#endif /* kcg_comp_struct__75771 */
+
+#ifndef kcg_comp_struct__75779
+extern kcg_bool kcg_comp_struct__75779(
+  struct__75779 *kcg_c1,
+  struct__75779 *kcg_c2);
+#endif /* kcg_comp_struct__75779 */
+
+#ifndef kcg_comp_struct__75787
+extern kcg_bool kcg_comp_struct__75787(
+  struct__75787 *kcg_c1,
+  struct__75787 *kcg_c2);
+#endif /* kcg_comp_struct__75787 */
+
+#ifndef kcg_comp_struct__75795
+extern kcg_bool kcg_comp_struct__75795(
+  struct__75795 *kcg_c1,
+  struct__75795 *kcg_c2);
+#endif /* kcg_comp_struct__75795 */
+
+#ifndef kcg_comp_struct__75803
+extern kcg_bool kcg_comp_struct__75803(
+  struct__75803 *kcg_c1,
+  struct__75803 *kcg_c2);
+#endif /* kcg_comp_struct__75803 */
+
+#ifndef kcg_comp_struct__75811
+extern kcg_bool kcg_comp_struct__75811(
+  struct__75811 *kcg_c1,
+  struct__75811 *kcg_c2);
+#endif /* kcg_comp_struct__75811 */
+
+#ifndef kcg_comp_struct__75819
+extern kcg_bool kcg_comp_struct__75819(
+  struct__75819 *kcg_c1,
+  struct__75819 *kcg_c2);
+#endif /* kcg_comp_struct__75819 */
+
+#ifndef kcg_comp_struct__75827
+extern kcg_bool kcg_comp_struct__75827(
+  struct__75827 *kcg_c1,
+  struct__75827 *kcg_c2);
+#endif /* kcg_comp_struct__75827 */
+
+#ifndef kcg_comp_struct__75835
+extern kcg_bool kcg_comp_struct__75835(
+  struct__75835 *kcg_c1,
+  struct__75835 *kcg_c2);
+#endif /* kcg_comp_struct__75835 */
+
+#ifndef kcg_comp_struct__75840
+extern kcg_bool kcg_comp_struct__75840(
+  struct__75840 *kcg_c1,
+  struct__75840 *kcg_c2);
+#endif /* kcg_comp_struct__75840 */
+
+#ifndef kcg_comp_array_int_10
+extern kcg_bool kcg_comp_array_int_10(
+  array_int_10 *kcg_c1,
+  array_int_10 *kcg_c2);
+#endif /* kcg_comp_array_int_10 */
+
+#ifndef kcg_comp_array_char_256
+extern kcg_bool kcg_comp_array_char_256(
+  array_char_256 *kcg_c1,
+  array_char_256 *kcg_c2);
+#endif /* kcg_comp_array_char_256 */
+
+#ifndef kcg_comp_array_int_3
+extern kcg_bool kcg_comp_array_int_3(array_int_3 *kcg_c1, array_int_3 *kcg_c2);
+#endif /* kcg_comp_array_int_3 */
+
+#ifndef kcg_comp_array_int_7
+extern kcg_bool kcg_comp_array_int_7(array_int_7 *kcg_c1, array_int_7 *kcg_c2);
+#endif /* kcg_comp_array_int_7 */
+
+#ifndef kcg_comp_array_int_27
+extern kcg_bool kcg_comp_array_int_27(
+  array_int_27 *kcg_c1,
+  array_int_27 *kcg_c2);
+#endif /* kcg_comp_array_int_27 */
+
+#ifndef kcg_comp_array_int_6
+extern kcg_bool kcg_comp_array_int_6(array_int_6 *kcg_c1, array_int_6 *kcg_c2);
+#endif /* kcg_comp_array_int_6 */
+
+#ifndef kcg_comp_array_bool_140
+extern kcg_bool kcg_comp_array_bool_140(
+  array_bool_140 *kcg_c1,
+  array_bool_140 *kcg_c2);
+#endif /* kcg_comp_array_bool_140 */
+
+#ifndef kcg_comp_array__75111
+extern kcg_bool kcg_comp_array__75111(
+  array__75111 *kcg_c1,
+  array__75111 *kcg_c2);
+#endif /* kcg_comp_array__75111 */
+
+#ifndef kcg_comp_array_int_96
+extern kcg_bool kcg_comp_array_int_96(
+  array_int_96 *kcg_c1,
+  array_int_96 *kcg_c2);
+#endif /* kcg_comp_array_int_96 */
+
+#ifndef kcg_comp_array_int_32
+extern kcg_bool kcg_comp_array_int_32(
+  array_int_32 *kcg_c1,
+  array_int_32 *kcg_c2);
+#endif /* kcg_comp_array_int_32 */
+
+#ifndef kcg_comp_array_real_32
+extern kcg_bool kcg_comp_array_real_32(
+  array_real_32 *kcg_c1,
+  array_real_32 *kcg_c2);
+#endif /* kcg_comp_array_real_32 */
+
+#ifndef kcg_comp_array_int_4
+extern kcg_bool kcg_comp_array_int_4(array_int_4 *kcg_c1, array_int_4 *kcg_c2);
+#endif /* kcg_comp_array_int_4 */
+
+#ifndef kcg_comp_array__75264
+extern kcg_bool kcg_comp_array__75264(
+  array__75264 *kcg_c1,
+  array__75264 *kcg_c2);
+#endif /* kcg_comp_array__75264 */
+
+#ifndef kcg_comp_array__75267
+extern kcg_bool kcg_comp_array__75267(
+  array__75267 *kcg_c1,
+  array__75267 *kcg_c2);
+#endif /* kcg_comp_array__75267 */
+
+#ifndef kcg_comp_array_int_256
+extern kcg_bool kcg_comp_array_int_256(
+  array_int_256 *kcg_c1,
+  array_int_256 *kcg_c2);
+#endif /* kcg_comp_array_int_256 */
+
+#ifndef kcg_comp_array__75273
+extern kcg_bool kcg_comp_array__75273(
+  array__75273 *kcg_c1,
+  array__75273 *kcg_c2);
+#endif /* kcg_comp_array__75273 */
+
+#ifndef kcg_comp_array__75276
+extern kcg_bool kcg_comp_array__75276(
+  array__75276 *kcg_c1,
+  array__75276 *kcg_c2);
+#endif /* kcg_comp_array__75276 */
+
+#ifndef kcg_comp_array__75287
+extern kcg_bool kcg_comp_array__75287(
+  array__75287 *kcg_c1,
+  array__75287 *kcg_c2);
+#endif /* kcg_comp_array__75287 */
+
+#ifndef kcg_comp_array__75290
+extern kcg_bool kcg_comp_array__75290(
+  array__75290 *kcg_c1,
+  array__75290 *kcg_c2);
+#endif /* kcg_comp_array__75290 */
+
+#ifndef kcg_comp_array__75293
+extern kcg_bool kcg_comp_array__75293(
+  array__75293 *kcg_c1,
+  array__75293 *kcg_c2);
+#endif /* kcg_comp_array__75293 */
+
+#ifndef kcg_comp_array__75333
+extern kcg_bool kcg_comp_array__75333(
+  array__75333 *kcg_c1,
+  array__75333 *kcg_c2);
+#endif /* kcg_comp_array__75333 */
+
+#ifndef kcg_comp_array__75351
+extern kcg_bool kcg_comp_array__75351(
+  array__75351 *kcg_c1,
+  array__75351 *kcg_c2);
+#endif /* kcg_comp_array__75351 */
+
+#ifndef kcg_comp_array__75354
+extern kcg_bool kcg_comp_array__75354(
+  array__75354 *kcg_c1,
+  array__75354 *kcg_c2);
+#endif /* kcg_comp_array__75354 */
+
+#ifndef kcg_comp_array__75357
+extern kcg_bool kcg_comp_array__75357(
+  array__75357 *kcg_c1,
+  array__75357 *kcg_c2);
+#endif /* kcg_comp_array__75357 */
+
+#ifndef kcg_comp_array__75360
+extern kcg_bool kcg_comp_array__75360(
+  array__75360 *kcg_c1,
+  array__75360 *kcg_c2);
+#endif /* kcg_comp_array__75360 */
+
+#ifndef kcg_comp_array__75363
+extern kcg_bool kcg_comp_array__75363(
+  array__75363 *kcg_c1,
+  array__75363 *kcg_c2);
+#endif /* kcg_comp_array__75363 */
+
+#ifndef kcg_comp_array__75381
+extern kcg_bool kcg_comp_array__75381(
+  array__75381 *kcg_c1,
+  array__75381 *kcg_c2);
+#endif /* kcg_comp_array__75381 */
+
+#ifndef kcg_comp_array__75384
+extern kcg_bool kcg_comp_array__75384(
+  array__75384 *kcg_c1,
+  array__75384 *kcg_c2);
+#endif /* kcg_comp_array__75384 */
+
+#ifndef kcg_comp_array__75387
+extern kcg_bool kcg_comp_array__75387(
+  array__75387 *kcg_c1,
+  array__75387 *kcg_c2);
+#endif /* kcg_comp_array__75387 */
+
+#ifndef kcg_comp_array__75512
+extern kcg_bool kcg_comp_array__75512(
+  array__75512 *kcg_c1,
+  array__75512 *kcg_c2);
+#endif /* kcg_comp_array__75512 */
+
+#ifndef kcg_comp_array_int_256_32
+extern kcg_bool kcg_comp_array_int_256_32(
+  array_int_256_32 *kcg_c1,
+  array_int_256_32 *kcg_c2);
+#endif /* kcg_comp_array_int_256_32 */
+
+#ifndef kcg_comp_array_bool_2
+extern kcg_bool kcg_comp_array_bool_2(
+  array_bool_2 *kcg_c1,
+  array_bool_2 *kcg_c2);
+#endif /* kcg_comp_array_bool_2 */
+
+#ifndef kcg_comp_array_bool_3
+extern kcg_bool kcg_comp_array_bool_3(
+  array_bool_3 *kcg_c1,
+  array_bool_3 *kcg_c2);
+#endif /* kcg_comp_array_bool_3 */
+
+#ifndef kcg_comp_array_bool_4
+extern kcg_bool kcg_comp_array_bool_4(
+  array_bool_4 *kcg_c1,
+  array_bool_4 *kcg_c2);
+#endif /* kcg_comp_array_bool_4 */
+
+#ifndef kcg_comp_array_bool_5
+extern kcg_bool kcg_comp_array_bool_5(
+  array_bool_5 *kcg_c1,
+  array_bool_5 *kcg_c2);
+#endif /* kcg_comp_array_bool_5 */
+
+#ifndef kcg_comp_array_real_3
+extern kcg_bool kcg_comp_array_real_3(
+  array_real_3 *kcg_c1,
+  array_real_3 *kcg_c2);
+#endif /* kcg_comp_array_real_3 */
+
+#ifndef kcg_comp_array_real_3_3
+extern kcg_bool kcg_comp_array_real_3_3(
+  array_real_3_3 *kcg_c1,
+  array_real_3_3 *kcg_c2);
+#endif /* kcg_comp_array_real_3_3 */
+
+#ifndef kcg_comp_array_int_25
+extern kcg_bool kcg_comp_array_int_25(
+  array_int_25 *kcg_c1,
+  array_int_25 *kcg_c2);
+#endif /* kcg_comp_array_int_25 */
+
+#ifndef kcg_comp_array_int_24
+extern kcg_bool kcg_comp_array_int_24(
+  array_int_24 *kcg_c1,
+  array_int_24 *kcg_c2);
+#endif /* kcg_comp_array_int_24 */
+
+#ifndef kcg_comp_array_int_2
+extern kcg_bool kcg_comp_array_int_2(array_int_2 *kcg_c1, array_int_2 *kcg_c2);
+#endif /* kcg_comp_array_int_2 */
+
+#ifndef kcg_comp_array_int_5
+extern kcg_bool kcg_comp_array_int_5(array_int_5 *kcg_c1, array_int_5 *kcg_c2);
+#endif /* kcg_comp_array_int_5 */
+
+#ifndef kcg_comp_array_int_8
+extern kcg_bool kcg_comp_array_int_8(array_int_8 *kcg_c1, array_int_8 *kcg_c2);
+#endif /* kcg_comp_array_int_8 */
+
+#ifndef kcg_comp_array_int_9
+extern kcg_bool kcg_comp_array_int_9(array_int_9 *kcg_c1, array_int_9 *kcg_c2);
+#endif /* kcg_comp_array_int_9 */
+
+#ifndef kcg_comp_array_int_11
+extern kcg_bool kcg_comp_array_int_11(
+  array_int_11 *kcg_c1,
+  array_int_11 *kcg_c2);
+#endif /* kcg_comp_array_int_11 */
+
+#ifndef kcg_comp_array_int_12
+extern kcg_bool kcg_comp_array_int_12(
+  array_int_12 *kcg_c1,
+  array_int_12 *kcg_c2);
+#endif /* kcg_comp_array_int_12 */
+
+#ifndef kcg_comp_array_int_13
+extern kcg_bool kcg_comp_array_int_13(
+  array_int_13 *kcg_c1,
+  array_int_13 *kcg_c2);
+#endif /* kcg_comp_array_int_13 */
+
+#ifndef kcg_comp_array_int_14
+extern kcg_bool kcg_comp_array_int_14(
+  array_int_14 *kcg_c1,
+  array_int_14 *kcg_c2);
+#endif /* kcg_comp_array_int_14 */
+
+#ifndef kcg_comp_array_int_15
+extern kcg_bool kcg_comp_array_int_15(
+  array_int_15 *kcg_c1,
+  array_int_15 *kcg_c2);
+#endif /* kcg_comp_array_int_15 */
+
+#ifndef kcg_comp_array_int_16
+extern kcg_bool kcg_comp_array_int_16(
+  array_int_16 *kcg_c1,
+  array_int_16 *kcg_c2);
+#endif /* kcg_comp_array_int_16 */
+
+#ifndef kcg_comp_array_int_17
+extern kcg_bool kcg_comp_array_int_17(
+  array_int_17 *kcg_c1,
+  array_int_17 *kcg_c2);
+#endif /* kcg_comp_array_int_17 */
+
+#ifndef kcg_comp_array_int_18
+extern kcg_bool kcg_comp_array_int_18(
+  array_int_18 *kcg_c1,
+  array_int_18 *kcg_c2);
+#endif /* kcg_comp_array_int_18 */
+
+#ifndef kcg_comp_array_int_19
+extern kcg_bool kcg_comp_array_int_19(
+  array_int_19 *kcg_c1,
+  array_int_19 *kcg_c2);
+#endif /* kcg_comp_array_int_19 */
+
+#ifndef kcg_comp_array_int_20
+extern kcg_bool kcg_comp_array_int_20(
+  array_int_20 *kcg_c1,
+  array_int_20 *kcg_c2);
+#endif /* kcg_comp_array_int_20 */
+
+#ifndef kcg_comp_array_int_21
+extern kcg_bool kcg_comp_array_int_21(
+  array_int_21 *kcg_c1,
+  array_int_21 *kcg_c2);
+#endif /* kcg_comp_array_int_21 */
+
+#ifndef kcg_comp_array_int_22
+extern kcg_bool kcg_comp_array_int_22(
+  array_int_22 *kcg_c1,
+  array_int_22 *kcg_c2);
+#endif /* kcg_comp_array_int_22 */
+
+#ifndef kcg_comp_array_int_23
+extern kcg_bool kcg_comp_array_int_23(
+  array_int_23 *kcg_c1,
+  array_int_23 *kcg_c2);
+#endif /* kcg_comp_array_int_23 */
+
+#ifndef kcg_comp_array_bool_19
+extern kcg_bool kcg_comp_array_bool_19(
+  array_bool_19 *kcg_c1,
+  array_bool_19 *kcg_c2);
+#endif /* kcg_comp_array_bool_19 */
+
+#ifndef kcg_comp_array_bool_8
+extern kcg_bool kcg_comp_array_bool_8(
+  array_bool_8 *kcg_c1,
+  array_bool_8 *kcg_c2);
+#endif /* kcg_comp_array_bool_8 */
+
+#ifndef kcg_comp_array_bool_6
+extern kcg_bool kcg_comp_array_bool_6(
+  array_bool_6 *kcg_c1,
+  array_bool_6 *kcg_c2);
+#endif /* kcg_comp_array_bool_6 */
+
+#ifndef kcg_comp_array_bool_11
+extern kcg_bool kcg_comp_array_bool_11(
+  array_bool_11 *kcg_c1,
+  array_bool_11 *kcg_c2);
+#endif /* kcg_comp_array_bool_11 */
+
+#ifndef kcg_comp_array_bool_10
+extern kcg_bool kcg_comp_array_bool_10(
+  array_bool_10 *kcg_c1,
+  array_bool_10 *kcg_c2);
+#endif /* kcg_comp_array_bool_10 */
+
+#define kcg_comp_AcConfigurationStruct kcg_comp_struct__73897
+
+#define kcg_copy_AcConfigurationStruct kcg_copy_struct__73897
+
+#define kcg_comp_DiscreteStruct kcg_comp_struct__73903
+
+#define kcg_copy_DiscreteStruct kcg_copy_struct__73903
+
+#define kcg_comp_FloatLabelDataStruct kcg_comp_struct__75366
+
+#define kcg_copy_FloatLabelDataStruct kcg_copy_struct__75366
+
+#define kcg_comp_FailuresOutDataStructure_HUDManager_FailuresManager kcg_comp_struct__74992
+
+#define kcg_copy_FailuresOutDataStructure_HUDManager_FailuresManager kcg_copy_struct__74992
+
+#define kcg_comp_FailuresManagerDataStruct_HUDManager_FailuresManager kcg_comp_struct__74185
+
+#define kcg_copy_FailuresManagerDataStruct_HUDManager_FailuresManager kcg_copy_struct__74185
+
+#define kcg_comp_HudConfirmDataStruct_HUDManager_HudLogicManager kcg_comp_struct__75117
+
+#define kcg_copy_HudConfirmDataStruct_HUDManager_HudLogicManager kcg_copy_struct__75117
+
+#define kcg_comp_PositionDataStruct_HUDManager_PowerScanManager kcg_comp_struct__74331
+
+#define kcg_copy_PositionDataStruct_HUDManager_PowerScanManager kcg_copy_struct__74331
+
+#define kcg_comp_MauComposedDataStruct_MAUManager kcg_comp_struct__75296
+
+#define kcg_copy_MauComposedDataStruct_MAUManager kcg_copy_struct__75296
+
+#define kcg_comp_PscanInDataStruct_HUDManager_PowerScanManager kcg_comp_struct__74340
+
+#define kcg_copy_PscanInDataStruct_HUDManager_PowerScanManager kcg_copy_struct__74340
+
+#define kcg_comp_MauSpecificDataStruct_MAUManager kcg_comp_struct__75301
+
+#define kcg_copy_MauSpecificDataStruct_MAUManager kcg_copy_struct__75301
+
+#define kcg_comp_MauFlightDataStruct_MAUManager kcg_comp_struct__73387
+
+#define kcg_copy_MauFlightDataStruct_MAUManager kcg_copy_struct__73387
+
+#define kcg_comp_MauA429ConfigInPilCopiArray_MAUManager kcg_comp_array__75287
+
+#define kcg_copy_MauA429ConfigInPilCopiArray_MAUManager kcg_copy_array__75287
+
+#define kcg_comp_MauA429ConfigInF5XArray_MAUManager kcg_comp_array__75293
+
+#define kcg_copy_MauA429ConfigInF5XArray_MAUManager kcg_copy_array__75293
+
+#define kcg_comp_TemperatureManagerDataStruct_HUDManager_TempManager kcg_comp_struct__74345
+
+#define kcg_copy_TemperatureManagerDataStruct_HUDManager_TempManager kcg_copy_struct__74345
+
+#define kcg_comp_MauA429ConfigInF900Array_MAUManager kcg_comp_array__75293
+
+#define kcg_copy_MauA429ConfigInF900Array_MAUManager kcg_copy_array__75293
+
+#define kcg_comp_MauA429ConfigInF7XArray_MAUManager kcg_comp_array__75293
+
+#define kcg_copy_MauA429ConfigInF7XArray_MAUManager kcg_copy_array__75293
+
+#define kcg_comp_MauA429ConfigInF2000Array_MAUManager kcg_comp_array__75290
+
+#define kcg_copy_MauA429ConfigInF2000Array_MAUManager kcg_copy_array__75290
+
+#define kcg_comp_MauA429DataOutStruct_MAUManager kcg_comp_struct__74746
+
+#define kcg_copy_MauA429DataOutStruct_MAUManager kcg_copy_struct__74746
+
+#define kcg_comp_AligmentLogicDataStruct_HUDManager_AlignmentLogic kcg_comp_struct__74354
+
+#define kcg_copy_AligmentLogicDataStruct_HUDManager_AlignmentLogic kcg_copy_struct__74354
+
+#define kcg_comp_EvsOffsetsStruct_HUDManager_AlignmentLogic kcg_comp_struct__74961
+
+#define kcg_copy_EvsOffsetsStruct_HUDManager_AlignmentLogic kcg_copy_struct__74961
+
+#define kcg_comp_MauA429LabelsOutArray_MAUManager kcg_comp_array_int_27
+
+#define kcg_copy_MauA429LabelsOutArray_MAUManager kcg_copy_array_int_27
+
+#define kcg_comp_MauEngDataStruct_MAUManager kcg_comp_struct__73558
+
+#define kcg_copy_MauEngDataStruct_MAUManager kcg_copy_struct__73558
+
+#define kcg_comp_MauDevicesArray_MAUManager kcg_comp_array__75333
+
+#define kcg_copy_MauDevicesArray_MAUManager kcg_copy_array__75333
+
+#define kcg_comp_VideoLogicDataStruct_HUDManager_VideoLogic kcg_comp_struct__74372
+
+#define kcg_copy_VideoLogicDataStruct_HUDManager_VideoLogic kcg_copy_struct__74372
+
+#define kcg_comp_RunwayLandingZoneLineStruct_CLAWS kcg_comp_struct__75494
+
+#define kcg_copy_RunwayLandingZoneLineStruct_CLAWS kcg_copy_struct__75494
+
+#define kcg_comp_RotatedSymbolStruct_CLAWS kcg_comp_struct__75395
+
+#define kcg_copy_RotatedSymbolStruct_CLAWS kcg_copy_struct__75395
+
+#define kcg_comp_MiscellaneousGroupStruct_CLAWS kcg_comp_struct__75502
+
+#define kcg_copy_MiscellaneousGroupStruct_CLAWS kcg_copy_struct__75502
+
+#define kcg_comp_FlightPathSymbolGroupStruct_CLAWS kcg_comp_struct__75438
+
+#define kcg_copy_FlightPathSymbolGroupStruct_CLAWS kcg_copy_struct__75438
+
+#define kcg_comp_WarningMessageGroupStruct_CLAWS kcg_comp_struct__75449
+
+#define kcg_copy_WarningMessageGroupStruct_CLAWS kcg_copy_struct__75449
+
+#define kcg_comp_GroundGuidanceGroupStruct_CLAWS kcg_comp_struct__75457
+
+#define kcg_copy_GroundGuidanceGroupStruct_CLAWS kcg_copy_struct__75457
+
+#define kcg_comp_VideoSvsDataStruct_VIDEOManager kcg_comp_struct__75336
+
+#define kcg_copy_VideoSvsDataStruct_VIDEOManager kcg_copy_struct__75336
+
+#define kcg_comp_FlightPathSpeedSymbolStruct_CLAWS kcg_comp_struct__75418
+
+#define kcg_copy_FlightPathSpeedSymbolStruct_CLAWS kcg_copy_struct__75418
+
+#define kcg_comp_VideoOperationalDataStruct_VIDEOManager kcg_comp_struct__73563
+
+#define kcg_copy_VideoOperationalDataStruct_VIDEOManager kcg_copy_struct__73563
+
+#define kcg_comp_WarningSymbolStruct_CLAWS kcg_comp_struct__75414
+
+#define kcg_copy_WarningSymbolStruct_CLAWS kcg_copy_struct__75414
+
+#define kcg_comp_VideoBitResultsDataStruct_VIDEOManager kcg_comp_struct__75343
+
+#define kcg_copy_VideoBitResultsDataStruct_VIDEOManager kcg_copy_struct__75343
+
+#define kcg_comp_BasicSymbolStruct_CLAWS kcg_comp_struct__75432
+
+#define kcg_copy_BasicSymbolStruct_CLAWS kcg_copy_struct__75432
+
+#define kcg_comp_DashedSymbolStruct_CLAWS kcg_comp_struct__75425
+
+#define kcg_copy_DashedSymbolStruct_CLAWS kcg_copy_struct__75425
+
+#define kcg_comp_CertStatsStruct_CLAWSInterface kcg_comp_struct__75462
+
+#define kcg_copy_CertStatsStruct_CLAWSInterface kcg_copy_struct__75462
+
+#define kcg_comp_FlighManagerDataStruct_HUDManager_FlightManager kcg_comp_struct__74392
+
+#define kcg_copy_FlighManagerDataStruct_HUDManager_FlightManager kcg_copy_struct__74392
+
+#define kcg_comp_FtsuDataStruct_CLAWSInterface kcg_comp_array__75512
+
+#define kcg_copy_FtsuDataStruct_CLAWSInterface kcg_copy_array__75512
+
+#define kcg_comp_FtsuOutputStruct_CLAWSInterface kcg_comp_struct__75515
+
+#define kcg_copy_FtsuOutputStruct_CLAWSInterface kcg_copy_struct__75515
+
+#define kcg_comp_VideoLogicDataStruct_VIDEOManager kcg_comp_struct__75557
+
+#define kcg_copy_VideoLogicDataStruct_VIDEOManager kcg_copy_struct__75557
+
+#define kcg_comp_VideoGammaLutStruct_VIDEOManager kcg_comp_struct__75568
+
+#define kcg_copy_VideoGammaLutStruct_VIDEOManager kcg_copy_struct__75568
+
+#define kcg_comp_VideoOffsetStruct_VIDEOManager kcg_comp_struct__75573
+
+#define kcg_copy_VideoOffsetStruct_VIDEOManager kcg_copy_struct__75573
+
+#define kcg_comp_Ohu818OutMessageStruct kcg_comp_struct__74884
+
+#define kcg_copy_Ohu818OutMessageStruct kcg_copy_struct__74884
+
+#define kcg_comp_SymbolStruct_CLAWSInterface kcg_comp_struct__75402
+
+#define kcg_copy_SymbolStruct_CLAWSInterface kcg_copy_struct__75402
+
+#define kcg_comp_VideoSourceStruct_VIDEOManager kcg_comp_struct__75579
+
+#define kcg_copy_VideoSourceStruct_VIDEOManager kcg_copy_struct__75579
+
+#define kcg_comp_VideoOutDataStruct_VIDEOManager kcg_comp_struct__74839
+
+#define kcg_copy_VideoOutDataStruct_VIDEOManager kcg_copy_struct__74839
+
+#define kcg_comp_GlobalBrightnessDataStruct_HUDManager_GlobalBrightnessManager kcg_comp_struct__74444
+
+#define kcg_copy_GlobalBrightnessDataStruct_HUDManager_GlobalBrightnessManager kcg_copy_struct__74444
+
+#define kcg_comp_StickOperationalDataStruct_STICKManager kcg_comp_struct__73575
+
+#define kcg_copy_StickOperationalDataStruct_STICKManager kcg_copy_struct__73575
+
+#define kcg_comp_StickDiscretesStruct_STICKManager kcg_comp_struct__73908
+
+#define kcg_copy_StickDiscretesStruct_STICKManager kcg_copy_struct__73908
+
+#define kcg_comp_ModesManagerDataStruct_HUDManager_StatesModesManager kcg_comp_struct__74456
+
+#define kcg_copy_ModesManagerDataStruct_HUDManager_StatesModesManager kcg_copy_struct__74456
+
+#define kcg_comp_SvsDbStatusStruct_SVSManager kcg_comp_struct__73636
+
+#define kcg_copy_SvsDbStatusStruct_SVSManager kcg_copy_struct__73636
+
+#define kcg_comp_SvsFailureTypeStruct_SVSManager kcg_comp_struct__73585
+
+#define kcg_copy_SvsFailureTypeStruct_SVSManager kcg_copy_struct__73585
+
+#define kcg_comp_SvsDataBaseConfigInArray_SVSManager kcg_comp_array__75351
+
+#define kcg_copy_SvsDataBaseConfigInArray_SVSManager kcg_copy_array__75351
+
+#define kcg_comp_SvsOperationalDataValidityStruct_SVSManager kcg_comp_struct__73630
+
+#define kcg_copy_SvsOperationalDataValidityStruct_SVSManager kcg_copy_struct__73630
+
+#define kcg_comp_SvsOperationalDataStruct_SVSManager kcg_comp_struct__73647
+
+#define kcg_copy_SvsOperationalDataStruct_SVSManager kcg_copy_struct__73647
+
+#define kcg_comp_Svs429LabelsOutArray_SVSManager kcg_comp_array_int_6
+
+#define kcg_copy_Svs429LabelsOutArray_SVSManager kcg_copy_array_int_6
+
+#define kcg_comp_SvsOutDataStruct_SVSManager kcg_comp_struct__74864
+
+#define kcg_copy_SvsOutDataStruct_SVSManager kcg_copy_struct__74864
+
+#define kcg_comp_SvsOutMessageStruct_SVSManager kcg_comp_struct__75589
+
+#define kcg_copy_SvsOutMessageStruct_SVSManager kcg_copy_struct__75589
+
+#define kcg_comp_AcManagerOperationalDataStruct_ACManager kcg_comp_struct__73658
+
+#define kcg_copy_AcManagerOperationalDataStruct_ACManager kcg_copy_struct__73658
+
+#define kcg_comp_AircraftDiscretesStruct_ACManager kcg_comp_struct__73916
+
+#define kcg_copy_AircraftDiscretesStruct_ACManager kcg_copy_struct__73916
+
+#define kcg_comp_RadaltFlightDataStruct_RADALTManager kcg_comp_struct__73667
+
+#define kcg_copy_RadaltFlightDataStruct_RADALTManager kcg_copy_struct__73667
+
+#define kcg_comp_RadaltOperationalDataStruct_RADALTManager kcg_comp_struct__73672
+
+#define kcg_copy_RadaltOperationalDataStruct_RADALTManager kcg_copy_struct__73672
+
+#define kcg_comp_RadaltA429ConfigInArray_RADALTManager kcg_comp_array__75354
+
+#define kcg_copy_RadaltA429ConfigInArray_RADALTManager kcg_copy_array__75354
+
+#define kcg_comp_RadaltDevicesArray_RADALTManager kcg_comp_array__75357
+
+#define kcg_copy_RadaltDevicesArray_RADALTManager kcg_copy_array__75357
+
+#define kcg_comp_MauA429SdiSelectionArray_MAU kcg_comp_array__75276
+
+#define kcg_copy_MauA429SdiSelectionArray_MAU kcg_copy_array__75276
+
+#define kcg_comp_MauPrioritiesStruct_MAU kcg_comp_struct__74967
+
+#define kcg_copy_MauPrioritiesStruct_MAU kcg_copy_struct__74967
+
+#define kcg_comp_OhuAlsCrcStruct_OHUManager kcg_comp_struct__74948
+
+#define kcg_copy_OhuAlsCrcStruct_OHUManager kcg_copy_struct__74948
+
+#define kcg_comp_OhuCrcBufferStruct_OHUManager kcg_comp_struct__74953
+
+#define kcg_copy_OhuCrcBufferStruct_OHUManager kcg_copy_struct__74953
+
+#define kcg_comp_OhuA429ConfigInArray_OHUManager kcg_comp_array__75354
+
+#define kcg_copy_OhuA429ConfigInArray_OHUManager kcg_copy_array__75354
+
+#define kcg_comp_OhuIbitDataStruct_OHUManager kcg_comp_struct__73699
+
+#define kcg_copy_OhuIbitDataStruct_OHUManager kcg_copy_struct__73699
+
+#define kcg_comp_OhuPbitDataStruct_OHUManager kcg_comp_struct__73705
+
+#define kcg_copy_OhuPbitDataStruct_OHUManager kcg_copy_struct__73705
+
+#define kcg_comp_OhuCbitDataStruct_OHUManager kcg_comp_struct__73729
+
+#define kcg_copy_OhuCbitDataStruct_OHUManager kcg_copy_struct__73729
+
+#define kcg_comp_OhuAccLineArray_OHUManager kcg_comp_array__75363
+
+#define kcg_copy_OhuAccLineArray_OHUManager kcg_copy_array__75363
+
+#define kcg_comp_A429AccumulateArray_OHUManager kcg_comp_array__75360
+
+#define kcg_copy_A429AccumulateArray_OHUManager kcg_copy_array__75360
+
+#define kcg_comp_A429LabelTimeoutArray_BasicIO_A429 kcg_comp_array_int_256
+
+#define kcg_copy_A429LabelTimeoutArray_BasicIO_A429 kcg_copy_array_int_256
+
+#define kcg_comp_OhuBytesBuffer_OHUManager kcg_comp_struct__75601
+
+#define kcg_copy_OhuBytesBuffer_OHUManager kcg_copy_struct__75601
+
+#define kcg_comp_OhuOutDataStruct_OHUManager kcg_comp_struct__74931
+
+#define kcg_copy_OhuOutDataStruct_OHUManager kcg_copy_struct__74931
+
+#define kcg_comp_A429DataConfigStruct_BasicIO_A429 kcg_comp_struct__75252
+
+#define kcg_copy_A429DataConfigStruct_BasicIO_A429 kcg_copy_struct__75252
+
+#define kcg_comp_A429LabelInfoStruct_BasicIO_A429 kcg_comp_struct__73381
+
+#define kcg_copy_A429LabelInfoStruct_BasicIO_A429 kcg_copy_struct__73381
+
+#define kcg_comp_A429LineSdiArray_BasicIO_A429 kcg_comp_array__75273
+
+#define kcg_copy_A429LineSdiArray_BasicIO_A429 kcg_copy_array__75273
+
+#define kcg_comp_OhuOperationalDataValidityStruct_OHUManager kcg_comp_struct__73677
+
+#define kcg_copy_OhuOperationalDataValidityStruct_OHUManager kcg_copy_struct__73677
+
+#define kcg_comp_A429LineArray_BasicIO_A429 kcg_comp_array__75264
+
+#define kcg_copy_A429LineArray_BasicIO_A429 kcg_copy_array__75264
+
+#define kcg_comp_OhuOperationalDataStruct_OHUManager kcg_comp_struct__73755
+
+#define kcg_copy_OhuOperationalDataStruct_OHUManager kcg_copy_struct__73755
+
+#define kcg_comp_OhuDevicesArray_OHUManager kcg_comp_array__75267
+
+#define kcg_copy_OhuDevicesArray_OHUManager kcg_copy_array__75267
+
+#define kcg_comp_A429DbDataConfigStruct_BasicIO_A429 kcg_comp_struct__75279
+
+#define kcg_copy_A429DbDataConfigStruct_BasicIO_A429 kcg_copy_struct__75279
+
+#define kcg_comp_A429LabelStruct_BasicIO_A429 kcg_comp_struct__75258
+
+#define kcg_copy_A429LabelStruct_BasicIO_A429 kcg_copy_struct__75258
+
+#define kcg_comp_SymbolsDisplayDataStruct_INTERFACE kcg_comp_struct__74470
+
+#define kcg_copy_SymbolsDisplayDataStruct_INTERFACE kcg_copy_struct__74470
+
+#define kcg_comp_RadaltDataStruct_INTERFACE kcg_comp_struct__74494
+
+#define kcg_copy_RadaltDataStruct_INTERFACE kcg_copy_struct__74494
+
+#define kcg_comp_Sr2ToSr1DataStruct_INTERFACE kcg_comp_struct__75130
+
+#define kcg_copy_Sr2ToSr1DataStruct_INTERFACE kcg_copy_struct__75130
+
+#define kcg_comp_GpsDataStruct_INTERFACE kcg_comp_struct__74499
+
+#define kcg_copy_GpsDataStruct_INTERFACE kcg_copy_struct__74499
+
+#define kcg_comp_MiscompareFlagsStruct_INTERFACE kcg_comp_struct__73873
+
+#define kcg_copy_MiscompareFlagsStruct_INTERFACE kcg_copy_struct__73873
+
+#define kcg_comp_MauDataStruct_INTERFACE kcg_comp_struct__74506
+
+#define kcg_copy_MauDataStruct_INTERFACE kcg_copy_struct__74506
+
+#define kcg_comp_SymbolsGuidanceDataStruct_INTERFACE kcg_comp_struct__74595
+
+#define kcg_copy_SymbolsGuidanceDataStruct_INTERFACE kcg_copy_struct__74595
+
+#define kcg_comp_RectangularPointValidStruct kcg_comp_struct__73892
+
+#define kcg_copy_RectangularPointValidStruct kcg_copy_struct__73892
+
+#define kcg_comp_IrsSelectedDataStruct_INTERFACE kcg_comp_struct__75390
+
+#define kcg_copy_IrsSelectedDataStruct_INTERFACE kcg_copy_struct__75390
+
+#define kcg_comp_IrsSensorsDataStruct_INTERFACE kcg_comp_struct__74618
+
+#define kcg_copy_IrsSensorsDataStruct_INTERFACE kcg_copy_struct__74618
+
+#define kcg_comp_Sr1ToSr2DataStruct_INTERFACE kcg_comp_struct__74653
+
+#define kcg_copy_Sr1ToSr2DataStruct_INTERFACE kcg_copy_struct__74653
+
+#define kcg_comp_PolarLineStruct kcg_comp_struct__75542
+
+#define kcg_copy_PolarLineStruct kcg_copy_struct__75542
+
+#define kcg_comp_PolarPointStruct kcg_comp_struct__75537
+
+#define kcg_copy_PolarPointStruct kcg_copy_struct__75537
+
+#define kcg_comp_LineSegmentStruct kcg_comp_struct__75547
+
+#define kcg_copy_LineSegmentStruct kcg_copy_struct__75547
+
+#define kcg_comp_LineStruct kcg_comp_struct__75524
+
+#define kcg_copy_LineStruct kcg_copy_struct__75524
+
+#define kcg_comp_RectangleStruct kcg_comp_struct__75530
+
+#define kcg_copy_RectangleStruct kcg_copy_struct__75530
+
+#define kcg_comp_RectangularPointStruct kcg_comp_struct__73221
+
+#define kcg_copy_RectangularPointStruct kcg_copy_struct__73221
+
+#define kcg_comp_SimOperationalDataStruct_SIMManager kcg_comp_struct__73795
+
+#define kcg_copy_SimOperationalDataStruct_SIMManager kcg_copy_struct__73795
+
+#define kcg_comp_SimA429LabelsStruct_SIMManager kcg_comp_struct__75376
+
+#define kcg_copy_SimA429LabelsStruct_SIMManager kcg_copy_struct__75376
+
+#define kcg_comp_SimLabel201DataStruct_SIMManager kcg_comp_struct__75371
+
+#define kcg_copy_SimLabel201DataStruct_SIMManager kcg_copy_struct__75371
+
+#define kcg_comp_GpsTimeDataStruct_GPSManager kcg_comp_struct__73802
+
+#define kcg_copy_GpsTimeDataStruct_GPSManager kcg_copy_struct__73802
+
+#define kcg_comp_GpsOperationalDataStruct_GPSManager kcg_comp_struct__73823
+
+#define kcg_copy_GpsOperationalDataStruct_GPSManager kcg_copy_struct__73823
+
+#define kcg_comp_GpsFlightDataStruct_GPSManager kcg_comp_struct__73816
+
+#define kcg_copy_GpsFlightDataStruct_GPSManager kcg_copy_struct__73816
+
+#define kcg_comp_GpsA429ConfigInArray_GPSManager kcg_comp_array__75381
+
+#define kcg_copy_GpsA429ConfigInArray_GPSManager kcg_copy_array__75381
+
+#define kcg_comp_GpsDevicesArray_GPSManager kcg_comp_array__75357
+
+#define kcg_copy_GpsDevicesArray_GPSManager kcg_copy_array__75357
+
+#define kcg_comp_LutIndex_lut kcg_comp_struct__75552
+
+#define kcg_copy_LutIndex_lut kcg_copy_struct__75552
+
+#define kcg_comp_IrsFlightDataStruct_IRSManager kcg_comp_struct__73829
+
+#define kcg_copy_IrsFlightDataStruct_IRSManager kcg_copy_struct__73829
+
+#define kcg_comp_IrsA429ConfigInArray_IRSManager kcg_comp_array__75384
+
+#define kcg_copy_IrsA429ConfigInArray_IRSManager kcg_copy_array__75384
+
+#define kcg_comp_IrsDeviceArray_IRSManager kcg_comp_array__75387
+
+#define kcg_copy_IrsDeviceArray_IRSManager kcg_copy_array__75387
+
+#define kcg_comp_IrsOperationalDataStruct_IRSManager kcg_comp_struct__73868
+
+#define kcg_copy_IrsOperationalDataStruct_IRSManager kcg_copy_struct__73868
+
+#define kcg_comp_DisplayDataStruct_DisplayManager kcg_comp_struct__73226
+
+#define kcg_copy_DisplayDataStruct_DisplayManager kcg_copy_struct__73226
+
+#define kcg_comp_SR2DataInStruct_SR2Manager kcg_comp_struct__73256
+
+#define kcg_copy_SR2DataInStruct_SR2Manager kcg_copy_struct__73256
+
+#define kcg_comp_SR2DataOutStruct_SR2Manager kcg_comp_struct__74677
+
+#define kcg_copy_SR2DataOutStruct_SR2Manager kcg_copy_struct__74677
+
+#define kcg_comp_CalculatedDataToMonitoringStruct_HUDManager kcg_comp_struct__74670
+
+#define kcg_copy_CalculatedDataToMonitoringStruct_HUDManager kcg_copy_struct__74670
+
+#define kcg_comp_SymbolsDataStruct_HUDManager kcg_comp_struct__73933
+
+#define kcg_copy_SymbolsDataStruct_HUDManager kcg_copy_struct__73933
+
+#define kcg_comp_FlightGroupStruct_HUDManager kcg_comp_struct__73954
+
+#define kcg_copy_FlightGroupStruct_HUDManager kcg_copy_struct__73954
+
+#define kcg_comp_MiscompareFlagsStruct_HUDManager kcg_comp_struct__73873
+
+#define kcg_copy_MiscompareFlagsStruct_HUDManager kcg_copy_struct__73873
+
+#define kcg_comp_BitFailureDataStruct_BITManager kcg_comp_struct__75144
+
+#define kcg_copy_BitFailureDataStruct_BITManager kcg_copy_struct__75144
+
+#define kcg_comp_GeneralInfoStruct_HUDManager kcg_comp_struct__74079
+
+#define kcg_copy_GeneralInfoStruct_HUDManager kcg_copy_struct__74079
+
+#define kcg_comp_discretesIn03FaliureStructure_BITManager kcg_comp_struct__75150
+
+#define kcg_copy_discretesIn03FaliureStructure_BITManager kcg_copy_struct__75150
+
+#define kcg_comp_BitOperationalDataStruct_BITManager kcg_comp_struct__73267
+
+#define kcg_copy_BitOperationalDataStruct_BITManager kcg_copy_struct__73267
+
+#define kcg_comp_BitResultsDataStruct_BITManager kcg_comp_struct__75164
+
+#define kcg_copy_BitResultsDataStruct_BITManager kcg_copy_struct__75164
+
+#define kcg_comp_HudOutDataStruct_HUDManager kcg_comp_struct__74084
+
+#define kcg_copy_HudOutDataStruct_HUDManager kcg_copy_struct__74084
+
+#define kcg_comp_HudInDataStruct_HUDManager kcg_comp_struct__74119
+
+#define kcg_copy_HudInDataStruct_HUDManager kcg_copy_struct__74119
+
+#define kcg_comp_EvsInDataStruct_HUDManager kcg_comp_struct__75609
+
+#define kcg_copy_EvsInDataStruct_HUDManager kcg_copy_struct__75609
+
+#define kcg_comp_HudGlobalBrightnessStructure_HUDManager kcg_comp_struct__75613
+
+#define kcg_copy_HudGlobalBrightnessStructure_HUDManager kcg_copy_struct__75613
+
+#define kcg_comp_VideoGammaLutStruct_HUDManager kcg_comp_struct__75568
+
+#define kcg_copy_VideoGammaLutStruct_HUDManager kcg_copy_struct__75568
+
+#define kcg_comp_HudLogicOutDataStruct_HUDManager kcg_comp_struct__75000
+
+#define kcg_copy_HudLogicOutDataStruct_HUDManager kcg_copy_struct__75000
+
+#define kcg_comp_cAlignMessageArray_ExtPcManager kcg_comp_array_char_256
+
+#define kcg_copy_cAlignMessageArray_ExtPcManager kcg_copy_array_char_256
+
+#define kcg_comp_SpareAlignDataType_ExtPcManager kcg_comp_array_int_10
+
+#define kcg_copy_SpareAlignDataType_ExtPcManager kcg_copy_array_int_10
+
+#define kcg_comp_ExtPcDataInputStruct_ExtPcManager kcg_comp_struct__73300
+
+#define kcg_copy_ExtPcDataInputStruct_ExtPcManager kcg_copy_struct__73300
+
+#define kcg_comp_ExtPcDataOutStruct_ExtPcManager kcg_comp_struct__74689
+
+#define kcg_copy_ExtPcDataOutStruct_ExtPcManager kcg_copy_struct__74689
+
+#define kcg_comp_TestsOutDataStruct_HUDManager_TestsManager kcg_comp_struct__75089
+
+#define kcg_copy_TestsOutDataStruct_HUDManager_TestsManager kcg_copy_struct__75089
+
+#define kcg_comp_TestsManagerDataStruct_HUDManager_TestsManager kcg_comp_struct__74162
+
+#define kcg_copy_TestsManagerDataStruct_HUDManager_TestsManager kcg_copy_struct__74162
+
+#define kcg_comp_HdpSensorsData_HDPManager kcg_comp_struct__75247
+
+#define kcg_copy_HdpSensorsData_HDPManager kcg_copy_struct__75247
+
+#define kcg_comp_HdpOperationalData_HDPManager kcg_comp_struct__73314
+
+#define kcg_copy_HdpOperationalData_HDPManager kcg_copy_struct__73314
+
+#define kcg_comp_TestResultsDataStructure_HUDManager_TestsManager kcg_comp_struct__75624
+
+#define kcg_copy_TestResultsDataStructure_HUDManager_TestsManager kcg_copy_struct__75624
+
+#define kcg_comp_TestDataStructure_HUDManager_TestsManager kcg_comp_struct__75619
+
+#define kcg_copy_TestDataStructure_HUDManager_TestsManager kcg_copy_struct__75619
+
+#define kcg_comp_TestsLogicDataStructure_HUDManager_TestsManager kcg_comp_struct__74180
+
+#define kcg_copy_TestsLogicDataStructure_HUDManager_TestsManager kcg_copy_struct__74180
+
+#define kcg_comp_FailuresResultsDataStruct_HUDManager_FailuresManager kcg_comp_struct__74986
+
+#define kcg_copy_FailuresResultsDataStruct_HUDManager_FailuresManager kcg_copy_struct__74986
+
+#define kcg_comp_FailuresResultsArray_HUDManager_FailuresManager kcg_comp_array_bool_140
+
+#define kcg_copy_FailuresResultsArray_HUDManager_FailuresManager kcg_copy_array_bool_140
+
+#define kcg_comp_FailuresDataArray_HUDManager_FailuresManager kcg_comp_array__75111
+
+#define kcg_copy_FailuresDataArray_HUDManager_FailuresManager kcg_copy_array__75111
+
+#define kcg_comp_FailuresDataStruct_HUDManager_FailuresManager kcg_comp_struct__75102
+
+#define kcg_copy_FailuresDataStruct_HUDManager_FailuresManager kcg_copy_struct__75102
+
+#define kcg_comp_FailureDataStruct_HUDManager_FailuresManager kcg_comp_struct__75630
+
+#define kcg_copy_FailureDataStruct_HUDManager_FailuresManager kcg_copy_struct__75630
+
+#define kcg_comp_SvioOperationalDataStruct_SVIOManager kcg_comp_struct__73319
+
+#define kcg_copy_SvioOperationalDataStruct_SVIOManager kcg_copy_struct__73319
+
+#define kcg_comp_SvioLabelsOutArray_SVIOManager kcg_comp_array_int_3
+
+#define kcg_copy_SvioLabelsOutArray_SVIOManager kcg_copy_array_int_3
+
+#define kcg_comp_SvioFanStruct_SVIOManager kcg_comp_struct__74981
+
+#define kcg_copy_SvioFanStruct_SVIOManager kcg_copy_struct__74981
+
+#define kcg_comp_SvioOutDataStruct_SVIOManager kcg_comp_struct__74707
+
+#define kcg_copy_SvioOutDataStruct_SVIOManager kcg_copy_struct__74707
+
+#define kcg_comp_EvsFailureStruct_EVSManager kcg_comp_struct__73324
+
+#define kcg_copy_EvsFailureStruct_EVSManager kcg_copy_struct__73324
+
+#define kcg_comp_EvsOperationalDataStruct_EVSManager kcg_comp_struct__73364
+
+#define kcg_copy_EvsOperationalDataStruct_EVSManager kcg_copy_struct__73364
+
+#define kcg_comp_EvsTempSensorStruct_EVSManager kcg_comp_struct__73356
+
+#define kcg_copy_EvsTempSensorStruct_EVSManager kcg_copy_struct__73356
+
+#define kcg_comp_EvsDeviceArray_EVSManager kcg_comp_array__75267
+
+#define kcg_copy_EvsDeviceArray_EVSManager kcg_copy_array__75267
+
+#define kcg_comp_EvsOutDataStruct_EVSManager kcg_comp_struct__74717
+
+#define kcg_copy_EvsOutDataStruct_EVSManager kcg_copy_struct__74717
+
+#define kcg_comp_EvsA429LabelsOutArray_EVSManager kcg_comp_array_int_7
+
+#define kcg_copy_EvsA429LabelsOutArray_EVSManager kcg_copy_array_int_7
+
+#endif /* _KCG_TYPES_H_ */
+/* $*************** KCG Version 6.1.3 (build i6) ****************
+** kcg_types.h
+** Generation date: 2014-11-05T16:03:28
+*************************************************************$ */
+

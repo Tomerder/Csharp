@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<root>
+		
+	<GENERAL_CONFIGURATIONS>
+		<LOGGER_MODE>ERROR</LOGGER_MODE>
+		<MAPPING_SCRIPT_PATH>C:\AutoRelease\Map.bat</MAPPING_SCRIPT_PATH>
+		<ENV_PATH>C:/AutoRelease/EFVS/</ENV_PATH>
+		<INPUTS_PATH>C:/AutoRelease/</INPUTS_PATH>
+		<OUTPUTS_PATH>C:/AutoRelease/OUTPUT/</OUTPUTS_PATH>
+		<!--Email configs-->
+		<NOTIFICATION_MAIL_FROM></NOTIFICATION_MAIL_FROM>
+		<NOTIFICATION_MAIL_TO></NOTIFICATION_MAIL_TO>
+		<NOTIFICATION_MAIL_USER></NOTIFICATION_MAIL_USER>
+		<NOTIFICATION_MAIL_PASS></NOTIFICATION_MAIL_PASS>
+	</GENERAL_CONFIGURATIONS>
+	
+	<CSCI_LIST>	
+		
+		<CSCI>
+			<Name>INFRASTRUCTURES</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Infrastructures/tags/4071A01-24_NetStu</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Infrastructures</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path></Pre_Build_Script_Path>		
+			<Build_Script_Path></Build_Script_Path>					
+			<Dependents_CSCIs></Dependents_CSCIs>
+			<Is_Sysint>0</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>1</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>
+		
+		<CSCI>
+			<Name>VIDEO</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Video/tags/4939A01-32c</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Video</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path></Pre_Build_Script_Path>		
+			<Build_Script_Path>C:\AutoRelease\BUILD VIDEO.bat</Build_Script_Path>					
+			<Dependents_CSCIs></Dependents_CSCIs>
+			<Is_Sysint>0</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>1</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>
+		
+		<CSCI>
+			<Name>CLAWS</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/CLAWS/tags/3684A01-33</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\CLAWS</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path></Pre_Build_Script_Path>		
+			<Build_Script_Path></Build_Script_Path>					
+			<Dependents_CSCIs>COMMON</Dependents_CSCIs>
+			<Is_Sysint>0</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>1</Is_Checkout_Even_If_Already_Exists>		
+		</CSCI>
+	
+		<CSCI>
+			<Name>COMMON_SR1</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Projects/Dassault/Implementation/Source/SR1/COMMON/trunk</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Projects\Dassault\Implementation\Source\SR1\COMMON</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path></Pre_Build_Script_Path>		
+			<Build_Script_Path></Build_Script_Path>					
+			<Dependents_CSCIs></Dependents_CSCIs>
+			<Is_Sysint>0</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>1</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>
+				
+		<CSCI>
+			<Name>COMMON_SR1_SR2</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Projects/Dassault/Implementation/Source/COMMON/trunk</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Projects\Dassault\Implementation\Source\COMMON</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path></Pre_Build_Script_Path>		
+			<Build_Script_Path>C:\AutoRelease\BUILD_COMMON_SR1_SR2.bat</Build_Script_Path>					
+			<Dependents_CSCIs></Dependents_CSCIs>
+			<Is_Sysint>0</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>1</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>
+		
+		<CSCI>
+			<Name>COMMON</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Common/tags/4470A01-27a</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Common</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path></Pre_Build_Script_Path>		
+			<Build_Script_Path></Build_Script_Path>					
+			<Dependents_CSCIs></Dependents_CSCIs>
+			<Is_Sysint>0</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>1</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>
+				
+		<CSCI>	
+			<Name>OFP_SR1</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Projects/Dassault/Implementation/Source/SR1/OFP_SR1/trunk</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Projects\Dassault\Implementation\Source\SR1\OFP_SR1</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path>J:\Implementation\Source\SR1\OFP_SR1\SCADE_GENERATOR_AND_REPORTER.bat</Pre_Build_Script_Path>
+			<Build_Script_Path>C:\AutoRelease\BUILD_OFP_SR1.bat</Build_Script_Path>			
+			<Dependents_CSCIs>COMMON,COMMON_SR1,COMMON_SR1_SR2</Dependents_CSCIs>
+			<Is_Sysint>0</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>1</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>
+		
+		<CSCI>	
+			<Name>DISPLAY</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Projects/Dassault/Implementation/Source/SR1/DISPLAY/trunk</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Projects\Dassault\Implementation\Source\SR1\DISPLAY</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path>J:\Implementation\Source\SR1\DISPLAY\GENERATE_SCADE_AND_SCADE_DISPLAY.bat</Pre_Build_Script_Path>
+			<Build_Script_Path>C:\AutoRelease\BUILD_DISPLAY.bat</Build_Script_Path>			
+			<Dependents_CSCIs>COMMON,COMMON_SR1,COMMON_SR1_SR2</Dependents_CSCIs>
+			<Is_Sysint>0</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>1</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>		
+			
+		<CSCI>	
+			<Name>OFP_SR2</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Projects/Dassault/Implementation/Source/SR2/OFP_SR2/trunk</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Projects\Dassault\Implementation\Source\SR2\OFP_SR2</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path>J:\Implementation\Source\SR2\OFP_SR2\SCADE_KCG_OFP_SR2.bat</Pre_Build_Script_Path>
+			<Build_Script_Path>C:\AutoRelease\BUILD_OFP_SR2.bat</Build_Script_Path>			
+			<Dependents_CSCIs>COMMON,COMMON_SR1_SR2</Dependents_CSCIs>
+			<Is_Sysint>0</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>1</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>	
+			
+		<CSCI>	
+			<Name>MONITOR</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Monitor/trunk</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Monitor</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path>I:\Monitor\SCADE_KCG_MONITOR.bat</Pre_Build_Script_Path>
+			<Build_Script_Path>C:\AutoRelease\BUILD_MONITOR.bat</Build_Script_Path>			
+			<Dependents_CSCIs></Dependents_CSCIs>
+			<Is_Sysint>0</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>1</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>
+			
+		<CSCI>	
+			<Name>BSP</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Projects/Dassault/Implementation/Source/BSP/tags/3685A01-48E</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Projects\Dassault\Implementation\Source\BSP</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path></Pre_Build_Script_Path>
+			<Build_Script_Path></Build_Script_Path>			
+			<Dependents_CSCIs></Dependents_CSCIs>
+			<Is_Sysint>0</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>1</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>
+		
+		<CSCI>	
+			<Name>CLAWS_CF</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Projects/Dassault/Implementation/Source/CLAWS_CF/tags/4469A02-00</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Projects\Dassault\Implementation\Source\CLAWS_CF</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path></Pre_Build_Script_Path>
+			<Build_Script_Path></Build_Script_Path>			
+			<Dependents_CSCIs></Dependents_CSCIs>
+			<Is_Sysint>0</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>1</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>
+		
+		<CSCI>	
+			<Name>VIDEO_CF</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Projects/Dassault/Implementation/Source/VIDEO_CF/tags/4468A01-14</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Projects\Dassault\Implementation\Source\VIDEO_CF</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path></Pre_Build_Script_Path>
+			<Build_Script_Path></Build_Script_Path>			
+			<Dependents_CSCIs></Dependents_CSCIs>
+			<Is_Sysint>0</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>1</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>
+		
+		<CSCI>	
+			<Name>MONITOR_CF</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Projects/Dassault/Implementation/Source/SR2/MONITOR_CF/tags/5266A01-14</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Projects\Dassault\Implementation\Source\SR2\MONITOR_CF</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path></Pre_Build_Script_Path>
+			<Build_Script_Path></Build_Script_Path>			
+			<Dependents_CSCIs></Dependents_CSCIs>
+			<Is_Sysint>0</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>1</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>
+		
+		<CSCI>	
+			<Name>ETHERNET</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Projects/Dassault/Implementation/Source/ETHERNET/tags/3685A01-48</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Projects\Dassault\Implementation\Source\ETHERNET</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path></Pre_Build_Script_Path>
+			<Build_Script_Path></Build_Script_Path>			
+			<Dependents_CSCIs></Dependents_CSCIs>
+			<Is_Sysint>0</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>1</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>
+		
+		<CSCI>	
+			<Name>LDR615A</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Projects/Dassault/Implementation/Source/LDR615A/tags/3688A00-15a</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Projects\Dassault\Implementation\Source\LDR615A</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path></Pre_Build_Script_Path>
+			<Build_Script_Path></Build_Script_Path>			
+			<Dependents_CSCIs></Dependents_CSCIs>
+			<Is_Sysint>0</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>1</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>
+									
+		<CSCI>
+			<Name>SYSINT_SR1</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Projects/Dassault/Implementation/Source/SR1/SYSINT_SR1/trunk</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Projects\Dassault\Implementation\Source\SR1\SYSINT_SR1</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path></Pre_Build_Script_Path>		
+			<Build_Script_Path>C:\AutoRelease\BUILD_SYSINT_SR1.bat</Build_Script_Path>					
+			<Dependents_CSCIs>COMMON,COMMON_SR1,COMMON_SR1_SR2,DISPLAY,OFP_SR1,VIDEO,CLAWS,VIDEO_CF,CLAWS_CF,BSP,ETHERNET,INFRASTRUCTURES,LDR615A</Dependents_CSCIs>
+			<Is_Sysint>1</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>1</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>
+		
+		<CSCI>
+			<Name>SYSINT_SR2</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Projects/Dassault/Implementation/Source/SR2/SYSINT_SR2/trunk</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Projects\Dassault\Implementation\Source\SR2\SYSINT_SR2</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path></Pre_Build_Script_Path>		
+			<Build_Script_Path>C:\AutoRelease\BUILD_SYSINT_SR2.bat</Build_Script_Path>					
+			<Dependents_CSCIs>COMMON,COMMON_SR1_SR2,MONITOR,MONITOR_CF,OFP_SR2,VIDEO,CLAWS,VIDEO_CF,CLAWS_CF,MONITOR_CF,BSP,ETHERNET,INFRASTRUCTURES,LDR615A</Dependents_CSCIs>
+			<Is_Sysint>1</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>1</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>
+			
+		<CSCI>
+			<Name>Tools</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Tools</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Tools</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path></Pre_Build_Script_Path>		
+			<Build_Script_Path></Build_Script_Path>					
+			<Dependents_CSCIs></Dependents_CSCIs>
+			<Is_Sysint>0</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>0</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>	
+		
+		<CSCI>
+			<Name>Dassault_Tools</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Projects/Dassault/Tools</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Projects\Dassault\Tools</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path></Pre_Build_Script_Path>		
+			<Build_Script_Path></Build_Script_Path>					
+			<Dependents_CSCIs></Dependents_CSCIs>
+			<Is_Sysint>0</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>0</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>	
+		
+		<CSCI>
+			<Name>PC_SIM</Name>
+			<Svn_Url_Path>http://svn-subs:18080/svn/efvs/Software/Projects/Dassault/PcSimulator/trunk</Svn_Url_Path>
+			<Local_Path_To_Checkout>C:\AutoRelease\EFVS\Software\Projects\Dassault\PcSimulator</Local_Path_To_Checkout>
+			<Pre_Build_Script_Path></Pre_Build_Script_Path>		
+			<Build_Script_Path>J:\PcSimulator\Workspace\BUILD_PC_SIM.bat</Build_Script_Path>					
+			<Dependents_CSCIs></Dependents_CSCIs>
+			<Is_Sysint>0</Is_Sysint>
+			<Is_Checkout_Even_If_Already_Exists>1</Is_Checkout_Even_If_Already_Exists>
+		</CSCI>	
+		
+	</CSCI_LIST>	
+ 
+</root>

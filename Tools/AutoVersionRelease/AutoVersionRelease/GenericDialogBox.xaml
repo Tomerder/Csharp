@@ -1,0 +1,16 @@
+﻿<Window x:Class="AutoVersionRelease.GenericDialogBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="GenericDialogBox" Height="226" Width="516">
+    <Grid Background="#FF5AB2AB">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="73*" />
+            <RowDefinition Height="99*" />
+        </Grid.RowDefinitions>
+        <Button Content="Confirm" Height="23" HorizontalAlignment="Left" Margin="107,76,0,0" Name="buttonConfirm" VerticalAlignment="Top" Width="94" Grid.Row="1" Click="buttonConfirm_Click" />
+        <Button Content="Cancel" Height="23" HorizontalAlignment="Left" Margin="266,76,0,0" Name="buttonCancel" VerticalAlignment="Top" Width="94" Grid.Row="1" />
+        <Label Content="Message to user" Height="62" HorizontalAlignment="Left" Margin="28,9,0,0" Name="labelMessageToUser" VerticalAlignment="Top" Width="445" FontWeight="Normal" FontStyle="Normal" BorderThickness="5" ClipToBounds="False" />
+        <Label Content="labelInputFromUser" Height="28" HorizontalAlignment="Left" Margin="28,1,0,0" Name="labelInputFromUser" VerticalAlignment="Top" Grid.Row="1" Width="270" />
+        <TextBox Grid.Row="1" Height="40" HorizontalAlignment="Left" Margin="33,25,0,0" Name="textBoxInputFromUser" VerticalAlignment="Top" Width="440" />
+    </Grid>
+</Window>
