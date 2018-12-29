@@ -1,0 +1,30 @@
+using System;
+using System.Text;
+using PerformanceHarness;
+
+[MeasurableClass]
+public static class StringEmptyTest
+{
+     private static volatile string _s = "Hello";
+     private static volatile int _x;
+
+	[SetupMethod]
+	static void Setup()
+	{
+	}
+
+	[TeardownMethod]
+	static void Teardown()
+	{
+	}
+
+	[MeasurableMethod]
+	static void Measure()
+	{
+          
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+                if (_s == String.Empty) ++_x;
+		}
+	}
+}

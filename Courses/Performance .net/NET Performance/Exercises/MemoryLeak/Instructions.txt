@@ -1,0 +1,19 @@
+
+1. Run the Finalizer.exe application.
+
+2. Use the Windows Performance Monitor (perfmon) to determine that it leaks managed memory --
+
+2a. Run perfmon from the command line / Start Menu.
+2b. Add the .NET CLR Memory \ # Bytes in all Heaps performance counter for the Finalizer.exe process.
+2c. Inspect the memory usage for a minute or so.
+2d. (OPTIONAL) Add other .NET CLR Memory counters if it helps.
+
+3. Run the Finalizer.exe application under the profiler --
+
+3a. Run the RedGate ANTS Memory Profiler from the Start Menu.
+3b. Configure it to profile a .NET executable and point it to Finalizer.exe
+3c. Let the profiler run the application. Every 10 seconds or so, click the "Take Memory Snapshot" button.
+3d. After a minute or so, kill the application.
+
+4. Analyze the memory snapshots -- compare them, look at object references, etc. -- to reach a conclusion why the Finalizer.exe application is leaking managed memory.
+(NOTE: We have already seen this application in class.)

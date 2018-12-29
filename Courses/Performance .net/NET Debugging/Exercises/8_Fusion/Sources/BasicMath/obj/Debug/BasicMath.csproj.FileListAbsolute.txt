@@ -1,0 +1,7 @@
+C:\Courses\NET Debugging\Exercises\8_Fusion\Sources\BasicMath\bin\Debug\BasicMath.dll
+C:\Courses\NET Debugging\Exercises\8_Fusion\Sources\BasicMath\bin\Debug\BasicMath.pdb
+C:\Courses\NET Debugging\Exercises\8_Fusion\Sources\BasicMath\bin\Debug\CalculatorInterfaces.dll
+C:\Courses\NET Debugging\Exercises\8_Fusion\Sources\BasicMath\bin\Debug\CalculatorInterfaces.pdb
+C:\Courses\NET Debugging\Exercises\8_Fusion\Sources\BasicMath\obj\Debug\BasicMath.csprojResolveAssemblyReference.cache
+C:\Courses\NET Debugging\Exercises\8_Fusion\Sources\BasicMath\obj\Debug\BasicMath.dll
+C:\Courses\NET Debugging\Exercises\8_Fusion\Sources\BasicMath\obj\Debug\BasicMath.pdb

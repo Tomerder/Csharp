@@ -1,0 +1,61 @@
+.sympath srv*http://msdl.microsoft.com/download/symbols;cache*c:\SymbolsCache - Sets the symbol path (both symbols server and symbols cache) - each execution of this command will replace ALL the content of the symbols path definition.
+
+.sympath+ [path as in the previous command] - Append a symbol path to the current symbol path settings
+
+.symfix - Sets the default symbols path to the MS Symbols server
+
+.reload - Reloads all the symbols from the symbol path defined.
+
+.load sos - Loads an extension from a specific path (c:\temp\sos.dll)
+.loadby sos clr (mscorwks) - Loads an extention by the path of an existing module (clr for .Net 4, mscorwks for .Net 2).
+
+.chain - Prints the list of the currently loaded extensions
+
+.unload sos - Unloads an extension called sos.
+
+!objsize - Get the size of the object and all it's internal members
+!gcroot - Get the path to this object from the application roots (statics, stacks, gc handles, finalization queue)
+
+.foreach (obj {!dumpheap -mt 00007ff94d5881c8 -short}) {!objsize obj}
+-- Go through all the objects in the heap with the specific MT, and get the object total size for all the instances
+
+.foreach (obj {!dumpheap -mt 00007ff94d5881c8 -short}) {!gcroot obj}
+-- Go through all the objects in the heap with the specific MT, and get path to the object from the application roots.
+
+.shell -ci "!dumpdomain" FINDSTR mscorlib
+-- Runs the dumpDomain command, and pipes the output to command shell with the FINDSTR (grep) to filter the results. 
+
+~ - Get all the threads
+!threads - Get all the managed threads
+
+~*e !clrstack - Loop all the threads, and for each thread runs a command (in this case, !clrstack)
+
+~7s - Change the current thread to 7
+k - unmanaged stack
+!CLRStack - managed stack (-a (all) - local variables, parameters)
+
+!DumpStackObjects (!dso) - Prints all objects in the stack (private variables)
+
+!dumpObj (!do) - Dumps an object content.
+
+!dumpheap -stat  - Dumps a statistics view of all the types in the heap
+!dumpheap -type [Type name] - Dumps all objects that are from the type passed as an argument (can be wildcard, i.e System.String)
+
+!dumpheap -mt [MT] - Dumps all the objects in the heap that are of type that is equal to the argument been passed.
+
+!dumpmt -md [MT] - Dump information of the method table, including all the methods and method descriptors.
+
+!ip2md - Converts from an IP (instruction pointer - as you can find on the stacks) to a method descriptors which then can be used to get the assembly code, or IL.
+
+!syncblk - Prints a summary for the Sync Block Table - especially usefull for deadlocks.
+
+!finalizeQueue - Prints a statistics view of the content of the finalization queue
+!dumparray [Obj] - Dumps the content of an array
+
+!printException (!pe) - Prints the exception on the current thread
+!dumpil [MD] - Dumps the IL code of the method the it's method descriptor been passed as argument.
+
+!dumpDomain - Dumps the content of all the application domains including the modules loaded for each app domain.
+!dumpModule -mt [Module adress] - Dumps the content of the types of module address been passed as an argument.
+
+!TraverseHeap - Saves the heap data into a file (XML or binary) - which if it is binary, it can be opened from the CLR Profiler tool.

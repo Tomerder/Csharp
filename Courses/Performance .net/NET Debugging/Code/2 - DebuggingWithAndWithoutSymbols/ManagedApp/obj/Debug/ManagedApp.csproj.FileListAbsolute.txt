@@ -1,0 +1,5 @@
+C:\Courses\NET Debugging\Code\2 - DebuggingWithAndWithoutSymbols\ManagedApp\bin\Debug\ManagedApp.exe
+C:\Courses\NET Debugging\Code\2 - DebuggingWithAndWithoutSymbols\ManagedApp\bin\Debug\ManagedApp.pdb
+C:\Courses\NET Debugging\Code\2 - DebuggingWithAndWithoutSymbols\ManagedApp\obj\Debug\ManagedApp.csprojResolveAssemblyReference.cache
+C:\Courses\NET Debugging\Code\2 - DebuggingWithAndWithoutSymbols\ManagedApp\obj\Debug\ManagedApp.exe
+C:\Courses\NET Debugging\Code\2 - DebuggingWithAndWithoutSymbols\ManagedApp\obj\Debug\ManagedApp.pdb

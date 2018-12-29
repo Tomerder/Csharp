@@ -1,0 +1,5 @@
+C:\Courses\NET Debugging\Exercises\13_MemoryWCF\Sources\MemoryExhaustingService\bin\Debug\MemoryExhaustingService.exe
+C:\Courses\NET Debugging\Exercises\13_MemoryWCF\Sources\MemoryExhaustingService\bin\Debug\MemoryExhaustingService.pdb
+C:\Courses\NET Debugging\Exercises\13_MemoryWCF\Sources\MemoryExhaustingService\obj\x86\Debug\MemoryExhaustingService.csprojResolveAssemblyReference.cache
+C:\Courses\NET Debugging\Exercises\13_MemoryWCF\Sources\MemoryExhaustingService\obj\x86\Debug\MemoryExhaustingService.exe
+C:\Courses\NET Debugging\Exercises\13_MemoryWCF\Sources\MemoryExhaustingService\obj\x86\Debug\MemoryExhaustingService.pdb

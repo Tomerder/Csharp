@@ -1,0 +1,16 @@
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\bin\Release\WindowsFormsApplication1.exe.config
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\bin\Release\WindowsFormsApplication1.exe
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\bin\Release\WindowsFormsApplication1.pdb
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\obj\Release\WindowsFormsApplication1.Properties.Resources.resources
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\obj\Release\RayTracerDemo.csproj.GenerateResource.Cache
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\obj\Release\WindowsFormsApplication1.exe
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\obj\Release\WindowsFormsApplication1.pdb
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\obj\Release\RayTracerDemo.csprojResolveAssemblyReference.cache
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\bin\Release\WindowsFormsApplication1.exe.config
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\obj\Release\WindowsFormsApplication1.exe
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\obj\Release\WindowsFormsApplication1.pdb
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\bin\Release\WindowsFormsApplication1.exe
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\bin\Release\WindowsFormsApplication1.pdb
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\obj\Release\RayTracerDemo.csprojResolveAssemblyReference.cache
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\obj\Release\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\obj\Release\RayTracerDemo.csproj.GenerateResource.Cache

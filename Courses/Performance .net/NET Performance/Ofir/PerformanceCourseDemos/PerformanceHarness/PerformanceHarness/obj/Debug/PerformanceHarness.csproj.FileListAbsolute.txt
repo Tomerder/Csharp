@@ -1,0 +1,12 @@
+C:\Users\Ofir\SkyDrive\Projects\PerformanceHarness\PerformanceHarness\bin\Debug\PerformanceHarness.dll
+C:\Users\Ofir\SkyDrive\Projects\PerformanceHarness\PerformanceHarness\bin\Debug\PerformanceHarness.pdb
+C:\Users\Ofir\SkyDrive\Projects\PerformanceHarness\PerformanceHarness\obj\Debug\PerformanceHarness.csprojResolveAssemblyReference.cache
+C:\Users\Ofir\SkyDrive\Projects\PerformanceHarness\PerformanceHarness\obj\Debug\PerformanceHarness.csproj.ResolveComReference.cache
+C:\Users\Ofir\SkyDrive\Projects\PerformanceHarness\PerformanceHarness\obj\Debug\PerformanceHarness.dll
+C:\Users\Ofir\SkyDrive\Projects\PerformanceHarness\PerformanceHarness\obj\Debug\PerformanceHarness.pdb
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\PerformanceHarness\PerformanceHarness\bin\Debug\PerformanceHarness.dll
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\PerformanceHarness\PerformanceHarness\bin\Debug\PerformanceHarness.pdb
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\PerformanceHarness\PerformanceHarness\obj\Debug\PerformanceHarness.csprojResolveAssemblyReference.cache
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\PerformanceHarness\PerformanceHarness\obj\Debug\PerformanceHarness.csproj.ResolveComReference.cache
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\PerformanceHarness\PerformanceHarness\obj\Debug\PerformanceHarness.dll
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\PerformanceHarness\PerformanceHarness\obj\Debug\PerformanceHarness.pdb

@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using PerformanceHarness;
+
+[MeasurableClass]
+public static class NoGetHashCodeOverride
+{
+     struct Complex
+     {
+         int Real, Imag;
+         public Complex(int r, int i) { Real = r; Imag = i; }
+     }
+
+	[SetupMethod]
+	static void Setup()
+	{
+	}
+
+	[TeardownMethod]
+	static void Teardown()
+	{
+	}
+
+	[MeasurableMethod]
+	static void Measure()
+	{
+          Dictionary<Complex, bool> dict = new Dictionary<Complex, bool>();
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+               dict.Add(new Complex(__i, %NUMBER_OF_ITERATIONS% - __i), false);
+		}
+	}
+}

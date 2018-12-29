@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using PerformanceHarness;
+
+[assembly: MeasurableClass(typeof(Boxing))]
+
+public static class Boxing
+{
+	private static volatile int _x;
+
+	[MeasurableMethod]
+	static void Measure()
+	{
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+			Foo(__i);
+		}
+	}
+
+     static void Foo(object o) { _x = (int) o; }
+}

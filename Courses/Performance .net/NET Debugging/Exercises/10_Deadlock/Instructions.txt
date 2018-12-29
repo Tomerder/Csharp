@@ -1,0 +1,14 @@
+1. Run the SimpleWriteApp.exe application. It does not terminate---it should display text such as "Work item 1 done", etc.
+
+2. Capture a hang dump or attach WinDbg to the application.
+
+3. Use the standard commands (kb, !Threads, !CLRStack) to make a first attempt at hang diagnostics.
+
+4. There are two threads that seem to be using an instance of MyReaderWriterLock. Are both threads using the same instance?
+(Note this remark from the class' XML documentation: If more than one writer attempts to acquire the lock at the same time, the behavior is undefined.)
+
+5. Inspect the MyReaderWriterLock instances used by the two threads with the !do command. Inspect their internal implementation state (the semaphore) and its handle. For example, use the !handle 100 7 command to view handle information for handle 100.
+
+6. Consult the application's source code and finalize your understanding of the deadlock's cause.
+
+7. Suggest how the MyReaderWriterLock implementation can be improved to prevent this deadlock.

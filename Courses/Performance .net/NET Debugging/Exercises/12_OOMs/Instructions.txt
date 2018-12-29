@@ -1,0 +1,12 @@
+
+The Binaries folder contains four executables that cause an out-of-memory exception. Analyze them in order to determine the root cause of the error.
+
+Use the following:
+
+!dumpheap
+!vmstat
+!address
+!analyzeoom (if using CLR 4.0 or Silverlight)
+!dumpdomain
+!heap
+SysInternals VMMap utility

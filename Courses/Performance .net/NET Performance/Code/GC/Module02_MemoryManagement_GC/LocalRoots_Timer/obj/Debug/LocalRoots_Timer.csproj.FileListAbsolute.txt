@@ -1,0 +1,15 @@
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\LocalRoots_Timer\bin\Debug\LocalRoots_Timer.exe
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\LocalRoots_Timer\bin\Debug\LocalRoots_Timer.pdb
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.csprojResolveAssemblyReference.cache
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.exe
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.pdb
+C:\Users\Ofir\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.exe
+C:\Users\Ofir\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.pdb
+C:\Users\Ofir\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\LocalRoots_Timer\bin\Debug\LocalRoots_Timer.exe
+C:\Users\Ofir\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\LocalRoots_Timer\bin\Debug\LocalRoots_Timer.pdb
+C:\Users\Ofir\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.csprojResolveAssemblyReference.cache
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.exe
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.pdb
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\LocalRoots_Timer\bin\Debug\LocalRoots_Timer.exe
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\LocalRoots_Timer\bin\Debug\LocalRoots_Timer.pdb
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\LocalRoots_Timer\obj\Debug\LocalRoots_Timer.csprojResolveAssemblyReference.cache

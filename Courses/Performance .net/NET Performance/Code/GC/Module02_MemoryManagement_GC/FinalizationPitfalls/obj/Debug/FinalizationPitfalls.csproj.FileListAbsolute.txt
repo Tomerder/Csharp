@@ -1,0 +1,15 @@
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\FinalizationPitfalls\bin\Debug\FinalizationPitfalls.exe
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\FinalizationPitfalls\bin\Debug\FinalizationPitfalls.pdb
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\FinalizationPitfalls\obj\Debug\FinalizationPitfalls.csprojResolveAssemblyReference.cache
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\FinalizationPitfalls\obj\Debug\FinalizationPitfalls.exe
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\FinalizationPitfalls\obj\Debug\FinalizationPitfalls.pdb
+C:\Users\Ofir\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\FinalizationPitfalls\obj\Debug\FinalizationPitfalls.exe
+C:\Users\Ofir\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\FinalizationPitfalls\obj\Debug\FinalizationPitfalls.pdb
+C:\Users\Ofir\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\FinalizationPitfalls\bin\Debug\FinalizationPitfalls.exe
+C:\Users\Ofir\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\FinalizationPitfalls\bin\Debug\FinalizationPitfalls.pdb
+C:\Users\Ofir\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\FinalizationPitfalls\obj\Debug\FinalizationPitfalls.csprojResolveAssemblyReference.cache
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\FinalizationPitfalls\bin\Debug\FinalizationPitfalls.exe
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\FinalizationPitfalls\bin\Debug\FinalizationPitfalls.pdb
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\FinalizationPitfalls\obj\Debug\FinalizationPitfalls.csprojResolveAssemblyReference.cache
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\FinalizationPitfalls\obj\Debug\FinalizationPitfalls.exe
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\FinalizationPitfalls\obj\Debug\FinalizationPitfalls.pdb

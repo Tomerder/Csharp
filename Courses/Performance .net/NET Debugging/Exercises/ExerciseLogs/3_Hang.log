@@ -1,0 +1,502 @@
+Opened log file 'C:\temp\dndebug\3_Hang.log'
+0:011> lm
+start    end        module name
+00980000 00988000   FileExplorer   (deferred)             
+6b4a0000 6b9d6000   System_Xml_ni   (deferred)             
+6b9e0000 6bad1000   System_Configuration_ni   (deferred)             
+6bb30000 6bb35000   shfolder   (deferred)             
+6e650000 6e745000   PROPSYS    (deferred)             
+6e9c0000 6eb50000   gdiplus    (deferred)             
+6ec50000 6f82e000   System_Windows_Forms_ni   (deferred)             
+6f830000 6f9b7000   System_Drawing_ni   (deferred)             
+6f9c0000 70159000   System_ni   (deferred)             
+70160000 701bb000   mscorjit   (deferred)             
+701d0000 70cc8000   mscorlib_ni   (deferred)             
+70cd0000 70d6b000   MSVCR80    (deferred)             
+70d70000 71301000   mscorwks   (deferred)             
+71310000 71376000   mscoreei   (deferred)             
+71380000 713ca000   MSCOREE    (deferred)             
+714a0000 714ae000   RpcRtRemote   (deferred)             
+715e0000 7177e000   comctl32   (deferred)             
+71dc0000 71dd3000   dwmapi     (deferred)             
+71de0000 71e60000   uxtheme    (deferred)             
+73e70000 73ebb000   apphelp    (deferred)             
+73ec0000 73ee1000   ntmarta    (deferred)             
+73f90000 73f9b000   profapi    (deferred)             
+73fa0000 73fdb000   rsaenh     (deferred)             
+73fe0000 73ff6000   CRYPTSP    (deferred)             
+74d90000 74d9c000   CRYPTBASE   (deferred)             
+74da0000 74e00000   SspiCli    (deferred)             
+74e00000 74f1c000   CRYPT32    (deferred)             
+74f20000 74f77000   SHLWAPI    (deferred)             
+74f80000 75bc9000   shell32    (deferred)             
+75bd0000 75c6d000   USP10      (deferred)             
+75c70000 75c7a000   LPK        (deferred)             
+75c80000 75d10000   GDI32      (deferred)             
+75d10000 75db0000   ADVAPI32   (deferred)             
+75db0000 75dbc000   MSASN1     (deferred)             
+75df0000 75f25000   urlmon     (deferred)             
+75f30000 75fbf000   OLEAUT32   (deferred)             
+75fc0000 75fd2000   DEVOBJ     (deferred)             
+75fe0000 7608c000   msvcrt     (deferred)             
+76100000 76127000   CFGMGR32   (deferred)             
+76130000 76220000   RPCRT4     (deferred)             
+76220000 76280000   IMM32      (deferred)             
+76300000 76319000   sechost    (deferred)             
+76320000 76420000   USER32     (deferred)             
+76420000 764a3000   CLBCatQ    (deferred)             
+764b0000 764f6000   KERNELBASE   (deferred)             
+76500000 76600000   KERNEL32   (deferred)             
+76600000 767f9000   iertutil   (deferred)             
+76800000 7695c000   ole32      (deferred)             
+76a60000 76aa5000   WLDAP32    (deferred)             
+76ab0000 76c4d000   SETUPAPI   (deferred)             
+76c50000 76d1c000   MSCTF      (deferred)             
+77230000 773b0000   ntdll      (pdb symbols)          c:\symbols\wntdll.pdb\ACE318E6A2F44F23A6CC5628F10A7DDC2\wntdll.pdb
+0:011> .loadby sos mscorwks
+0:011> !Threads
+ThreadCount: 4
+UnstartedThread: 0
+BackgroundThread: 1
+PendingThread: 0
+DeadThread: 1
+Hosted Runtime: no
+                                      PreEmptive   GC Alloc           Lock
+       ID OSID ThreadOBJ    State     GC       Context       Domain   Count APT Exception
+   0    1 2288 00654c18   2006020 Enabled  029ecca0:029edfe8 00653068     1 STA
+   2    2  6ec 006916a0      b220 Enabled  00000000:00000000 00653068     0 MTA (Finalizer)
+   4    3 1f54 006c5538   200b020 Enabled  029ea2c4:029ebfe8 00653068     1 MTA
+XXXX    4    0 048d75b8      5820 Enabled  00000000:00000000 00653068     0 Ukn
+0:011> ~4s
+eax=00000000 ebx=04c3ef0c ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+eip=772500ed esp=04c3eebc ebp=04c3ef58 iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+ntdll!ZwWaitForMultipleObjects+0x15:
+772500ed 83c404          add     esp,4
+0:004> !CLRStack
+OS Thread Id: 0x1f54 (4)
+ESP       EIP     
+04c3f194 772500ed [GCFrame: 04c3f194] 
+04c3f264 772500ed [HelperMethodFrame_1OBJ: 04c3f264] System.Threading.Monitor.Enter(System.Object)
+04c3f2bc 003a0c55 FileExplorer.MainForm.LaunchNotepad(System.Object)
+04c3f310 70b1208e System.Threading.ThreadHelper.ThreadStart_Context(System.Object)
+04c3f31c 703f027f System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object)
+04c3f334 708ebe6a System.Threading.ThreadHelper.ThreadStart(System.Object)
+04c3f55c 70d71b6c [GCFrame: 04c3f55c] 
+0:004> ~0s
+eax=00000044 ebx=0017e3ec ecx=00000000 edx=00000000 esi=00000002 edi=00000000
+eip=772500ed esp=0017e39c ebp=0017e438 iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+ntdll!ZwWaitForMultipleObjects+0x15:
+772500ed 83c404          add     esp,4
+0:000> !CLRStack
+OS Thread Id: 0x2288 (0)
+ESP       EIP     
+0017e798 772500ed [GCFrame: 0017e798] 
+0017e868 772500ed [HelperMethodFrame_1OBJ: 0017e868] System.Threading.Monitor.Enter(System.Object)
+0017e8c0 003a0b10 FileExplorer.MainForm.listBox1_DoubleClick(System.Object, System.EventArgs)
+0017e924 6f37402c System.Windows.Forms.Control.OnDoubleClick(System.EventArgs)
+0017e93c 6f6a5ef6 System.Windows.Forms.ListBox.WndProc(System.Windows.Forms.Message ByRef)
+0017e9e8 6ee484a0 System.Windows.Forms.Control+ControlNativeWindow.OnMessage(System.Windows.Forms.Message ByRef)
+0017e9f0 6ee48421 System.Windows.Forms.Control+ControlNativeWindow.WndProc(System.Windows.Forms.Message ByRef)
+0017ea04 6ee482fa System.Windows.Forms.NativeWindow.Callback(IntPtr, Int32, IntPtr, IntPtr)
+0017eba8 002809e4 [NDirectMethodFrameStandalone: 0017eba8] System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG ByRef)
+0017ebb8 6ee58aee System.Windows.Forms.Application+ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32, Int32, Int32)
+0017ec54 6ee58757 System.Windows.Forms.Application+ThreadContext.RunMessageLoopInner(Int32, System.Windows.Forms.ApplicationContext)
+0017eca8 6ee585a1 System.Windows.Forms.Application+ThreadContext.RunMessageLoop(Int32, System.Windows.Forms.ApplicationContext)
+0017ecd8 6ee15911 System.Windows.Forms.Application.Run(System.Windows.Forms.Form)
+0017ecec 003a00ae FileExplorer.Program.Main()
+0017ef18 70d71b6c [GCFrame: 0017ef18] 
+0:000> !syncblk
+Index SyncBlock MonitorHeld Recursion Owning Thread Info  SyncBlock Owner
+   16 006b34dc            3         1 00654c18  2288   0   023a8938 System.String
+   17 006b350c            3         1 006c5538  1f54   4   023a895c System.String
+-----------------------------
+Total           17
+CCW             0
+RCW             0
+ComClassFactory 0
+Free            0
+0:000> kb
+ChildEBP RetAddr  Args to Child              
+0017e39c 764c0962 00000002 0017e3ec 00000001 ntdll!ZwWaitForMultipleObjects+0x15
+0017e438 7651162d 0017e3ec 0017e460 00000000 KERNELBASE!WaitForMultipleObjectsEx+0x100
+0017e480 763403da 00000002 7efde000 00000000 KERNEL32!WaitForMultipleObjectsExImplementation+0xe0
+0017e4d4 76823490 00000044 006b3520 ffffffff USER32!RealMsgWaitForMultipleObjectsEx+0x14d
+0017e500 768110ef 006b3520 ffffffff 0017e528 ole32!CCliModalLoop::BlockFn+0xa1
+0017e580 70ddc905 00000002 ffffffff 00000001 ole32!CoWaitForMultipleHandles+0xcd
+0017e5a0 70ddc866 00000000 ffffffff 00000001 mscorwks!NT5WaitRoutine+0x51
+0017e60c 70ddc7ca 00000001 006b3520 00000000 mscorwks!MsgWaitHelper+0xa5
+0017e62c 70ecfbe4 00000001 006b3520 00000000 mscorwks!Thread::DoAppropriateAptStateWait+0x28
+0017e6b0 70ecfc79 00000001 006b3520 00000000 mscorwks!Thread::DoAppropriateWaitWorker+0x13c
+0017e700 70ecfdf9 00000001 006b3520 00000000 mscorwks!Thread::DoAppropriateWait+0x40
+0017e75c 70d8c5b6 ffffffff 00000001 00000000 mscorwks!CLREvent::WaitEx+0xf7
+0017e770 70e8c002 ffffffff 00000001 00000000 mscorwks!CLREvent::Wait+0x17
+0017e7fc 70ed146c 00654c18 ffffffff 00654c18 mscorwks!AwareLock::EnterEpilog+0x8c
+0017e818 70ed13f0 e35d5c6d 0017e908 023a82b0 mscorwks!AwareLock::Enter+0x61
+0017e8b8 003a0b10 029e8ee4 029e8ec4 029e8e6c mscorwks!JIT_MonEnterWorker_Portable+0xb3
+*** WARNING: Unable to verify checksum for C:\Windows\assembly\NativeImages_v2.0.50727_32\System.Windows.Forms\2e2e31c87004468796d3defa1a1df011\System.Windows.Forms.ni.dll
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+0017e918 6f37402c 029e8dfc 023bc5b0 023bc3c8 0x3a0b10
+0017e934 6f6a5ef6 00000000 00000000 0017e974 System_Windows_Forms_ni+0x72402c
+0017e9e0 6ee484a0 0017e9fc 6ee48421 00000000 System_Windows_Forms_ni+0xa55ef6
+0017e9e8 6ee48421 00000000 023bc4b0 0017ea2c System_Windows_Forms_ni+0x1f84a0
+0:000> !u 0x3a0b10
+Normal JIT generated code
+FileExplorer.MainForm.listBox1_DoubleClick(System.Object, System.EventArgs)
+Begin 003a09b8, size 1ca
+003a09b8 55              push    ebp
+003a09b9 8bec            mov     ebp,esp
+003a09bb 57              push    edi
+003a09bc 56              push    esi
+003a09bd 53              push    ebx
+003a09be 83ec4c          sub     esp,4Ch
+003a09c1 8bf1            mov     esi,ecx
+003a09c3 8d7dc0          lea     edi,[ebp-40h]
+003a09c6 b90c000000      mov     ecx,0Ch
+003a09cb 33c0            xor     eax,eax
+003a09cd f3ab            rep stos dword ptr es:[edi]
+003a09cf 8bce            mov     ecx,esi
+003a09d1 33c0            xor     eax,eax
+003a09d3 8945e8          mov     dword ptr [ebp-18h],eax
+003a09d6 894dd0          mov     dword ptr [ebp-30h],ecx
+003a09d9 8955dc          mov     dword ptr [ebp-24h],edx
+003a09dc 833de4302c0000  cmp     dword ptr ds:[2C30E4h],0
+003a09e3 7405            je      003a09ea
+003a09e5 e83fa9c270      call    mscorwks!JIT_DbgIsJustMyCode (70fcb329)
+003a09ea 33d2            xor     edx,edx
+003a09ec 8955cc          mov     dword ptr [ebp-34h],edx
+003a09ef 33d2            xor     edx,edx
+003a09f1 8955c8          mov     dword ptr [ebp-38h],edx
+003a09f4 33d2            xor     edx,edx
+003a09f6 8955c0          mov     dword ptr [ebp-40h],edx
+003a09f9 33d2            xor     edx,edx
+003a09fb 8955c4          mov     dword ptr [ebp-3Ch],edx
+003a09fe c745d800000000  mov     dword ptr [ebp-28h],0
+003a0a05 90              nop
+003a0a06 8b45d0          mov     eax,dword ptr [ebp-30h]
+003a0a09 8b8848010000    mov     ecx,dword ptr [eax+148h]
+003a0a0f 3909            cmp     dword ptr [ecx],ecx
+003a0a11 e83e3ea36e      call    System_Windows_Forms_ni+0x184854 (6edd4854) (System.Windows.Forms.ListBox.get_SelectedItem(), mdToken: 06002087)
+003a0a16 8945bc          mov     dword ptr [ebp-44h],eax
+003a0a19 837dbc00        cmp     dword ptr [ebp-44h],0
+003a0a1d 7414            je      003a0a33
+003a0a1f 8b45bc          mov     eax,dword ptr [ebp-44h]
+*** WARNING: Unable to verify checksum for C:\Windows\assembly\NativeImages_v2.0.50727_32\mscorlib\8c1770d45c63cf5c462eeb945ef9aa5d\mscorlib.ni.dll
+003a0a22 8138c0884370    cmp     dword ptr [eax],offset mscorlib_ni+0x2688c0 (704388c0)
+003a0a28 7505            jne     003a0a2f
+003a0a2a 8b45bc          mov     eax,dword ptr [ebp-44h]
+003a0a2d eb02            jmp     003a0a31
+003a0a2f 33c0            xor     eax,eax
+003a0a31 eb03            jmp     003a0a36
+003a0a33 8b45bc          mov     eax,dword ptr [ebp-44h]
+003a0a36 8945cc          mov     dword ptr [ebp-34h],eax
+003a0a39 8b4dcc          mov     ecx,dword ptr [ebp-34h]
+003a0a3c e86f2e0570      call    mscorlib_ni+0x2238b0 (703f38b0) (System.String.IsNullOrEmpty(System.String), mdToken: 0600014c)
+003a0a41 8945d4          mov     dword ptr [ebp-2Ch],eax
+003a0a44 837dd400        cmp     dword ptr [ebp-2Ch],0
+003a0a48 0f94c0          sete    al
+003a0a4b 0fb6c0          movzx   eax,al
+003a0a4e 8945d8          mov     dword ptr [ebp-28h],eax
+003a0a51 837dd800        cmp     dword ptr [ebp-28h],0
+003a0a55 7506            jne     003a0a5d
+003a0a57 90              nop
+003a0a58 e911010000      jmp     003a0b6e
+003a0a5d 8b45d0          mov     eax,dword ptr [ebp-30h]
+003a0a60 8b8844010000    mov     ecx,dword ptr [eax+144h]
+003a0a66 3909            cmp     dword ptr [ecx],ecx
+003a0a68 e847c0a26e      call    System_Windows_Forms_ni+0x17cab4 (6edccab4) (System.Windows.Forms.TreeView.get_SelectedNode(), mdToken: 06005fa4)
+003a0a6d 8945b8          mov     dword ptr [ebp-48h],eax
+003a0a70 8b4db8          mov     ecx,dword ptr [ebp-48h]
+003a0a73 3909            cmp     dword ptr [ecx],ecx
+003a0a75 e89611a46e      call    System_Windows_Forms_ni+0x191c10 (6ede1c10) (System.Windows.Forms.TreeNode.get_Name(), mdToken: 06005efa)
+003a0a7a 8945b4          mov     dword ptr [ebp-4Ch],eax
+003a0a7d 8b55cc          mov     edx,dword ptr [ebp-34h]
+003a0a80 8b4db4          mov     ecx,dword ptr [ebp-4Ch]
+003a0a83 e8288aff6f      call    mscorlib_ni+0x1c94b0 (703994b0) (System.IO.Path.Combine(System.String, System.String), mdToken: 06003611)
+003a0a88 8945b0          mov     dword ptr [ebp-50h],eax
+003a0a8b 8b45b0          mov     eax,dword ptr [ebp-50h]
+003a0a8e 8945cc          mov     dword ptr [ebp-34h],eax
+003a0a91 8b45d0          mov     eax,dword ptr [ebp-30h]
+003a0a94 8b804c010000    mov     eax,dword ptr [eax+14Ch]
+003a0a9a 8945c4          mov     dword ptr [ebp-3Ch],eax
+003a0a9d 8b4dc4          mov     ecx,dword ptr [ebp-3Ch]
+003a0aa0 e8701f9d70      call    mscorwks!JIT_MonEnterWorker (70d72a15)
+003a0aa5 90              nop
+003a0aa6 90              nop
+003a0aa7 b9dc2a4270      mov     ecx,offset mscorlib_ni+0x252adc (70422adc) (MT: System.Threading.ParameterizedThreadStart)
+003a0aac e8e715edff      call    00272098 (JitHelp: CORINFO_HELP_NEWSFAST_CHKRESTORE)
+003a0ab1 8945ac          mov     dword ptr [ebp-54h],eax
+003a0ab4 b8c8c02c00      mov     eax,2CC0C8h
+003a0ab9 50              push    eax
+003a0aba 8b55d0          mov     edx,dword ptr [ebp-30h]
+003a0abd 8b4dac          mov     ecx,dword ptr [ebp-54h]
+003a0ac0 e86ba2fe6f      call    mscorlib_ni+0x1bad30 (7038ad30) (System.MulticastDelegate.CtorClosed(System.Object, IntPtr), mdToken: 060003bd)
+003a0ac5 b9948e4370      mov     ecx,offset mscorlib_ni+0x268e94 (70438e94) (MT: System.Threading.Thread)
+003a0aca e845bb9d70      call    mscorwks!JIT_NewFast (70d7c614)
+003a0acf 8945a8          mov     dword ptr [ebp-58h],eax
+003a0ad2 8b55ac          mov     edx,dword ptr [ebp-54h]
+003a0ad5 8b4da8          mov     ecx,dword ptr [ebp-58h]
+003a0ad8 e873ce4b70      call    mscorlib_ni+0x68d950 (7085d950) (System.Threading.Thread..ctor(System.Threading.ParameterizedThreadStart), mdToken: 060012ae)
+003a0add 8b45a8          mov     eax,dword ptr [ebp-58h]
+003a0ae0 8945c8          mov     dword ptr [ebp-38h],eax
+003a0ae3 8b55cc          mov     edx,dword ptr [ebp-34h]
+003a0ae6 8b4dc8          mov     ecx,dword ptr [ebp-38h]
+003a0ae9 3909            cmp     dword ptr [ecx],ecx
+003a0aeb e8d0ce4b70      call    mscorlib_ni+0x68d9c0 (7085d9c0) (System.Threading.Thread.Start(System.Object), mdToken: 060012b3)
+003a0af0 90              nop
+003a0af1 b9c8000000      mov     ecx,0C8h
+003a0af6 e845870070      call    mscorlib_ni+0x1d9240 (703a9240) (System.Threading.Thread.Sleep(Int32), mdToken: 060012d6)
+003a0afb 90              nop
+003a0afc 8b45d0          mov     eax,dword ptr [ebp-30h]
+003a0aff 8b8050010000    mov     eax,dword ptr [eax+150h]
+003a0b05 8945c0          mov     dword ptr [ebp-40h],eax
+003a0b08 8b4dc0          mov     ecx,dword ptr [ebp-40h]
+003a0b0b e8051f9d70      call    mscorwks!JIT_MonEnterWorker (70d72a15)
+>>> 003a0b10 90              nop
+003a0b11 90              nop
+003a0b12 8b4dc8          mov     ecx,dword ptr [ebp-38h]
+003a0b15 3909            cmp     dword ptr [ecx],ecx
+003a0b17 e8b4cc4b70      call    mscorlib_ni+0x68d7d0 (7085d7d0) (System.Threading.Thread.Join(), mdToken: 060012d1)
+003a0b1c 90              nop
+003a0b1d 90              nop
+003a0b1e 90              nop
+003a0b1f c745e400000000  mov     dword ptr [ebp-1Ch],0
+003a0b26 c745e8fc000000  mov     dword ptr [ebp-18h],0FCh
+003a0b2d 68580b3a00      push    3A0B58h
+003a0b32 eb00            jmp     003a0b34
+003a0b34 8b4dc0          mov     ecx,dword ptr [ebp-40h]
+003a0b37 e853219d70      call    mscorwks!JIT_MonExitWorker (70d72c8f)
+003a0b3c 90              nop
+003a0b3d 58              pop     eax
+003a0b3e ffe0            jmp     eax
+003a0b40 90              nop
+003a0b41 90              nop
+003a0b42 90              nop
+003a0b43 c745e400000000  mov     dword ptr [ebp-1Ch],0
+003a0b4a c745e8fc000000  mov     dword ptr [ebp-18h],0FCh
+003a0b51 68790b3a00      push    3A0B79h
+003a0b56 eb09            jmp     003a0b61
+003a0b58 c745e800000000  mov     dword ptr [ebp-18h],0
+003a0b5f ebdf            jmp     003a0b40
+003a0b61 8b4dc4          mov     ecx,dword ptr [ebp-3Ch]
+003a0b64 e826219d70      call    mscorwks!JIT_MonExitWorker (70d72c8f)
+003a0b69 90              nop
+003a0b6a 58              pop     eax
+003a0b6b ffe0            jmp     eax
+003a0b6d 90              nop
+003a0b6e 90              nop
+003a0b6f 8d65f4          lea     esp,[ebp-0Ch]
+003a0b72 5b              pop     ebx
+003a0b73 5e              pop     esi
+003a0b74 5f              pop     edi
+003a0b75 5d              pop     ebp
+003a0b76 c20400          ret     4
+003a0b79 c745e800000000  mov     dword ptr [ebp-18h],0
+003a0b80 ebeb            jmp     003a0b6d
+0:000> dd 0017e918-40 L1
+0017e8d8  023a895c
+0:000> !do 023a895c
+Name: System.String
+MethodTable: 704388c0
+EEClass: 701fa498
+Size: 44(0x2c) bytes
+ (C:\Windows\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll)
+String: SecondaryLock
+Fields:
+      MT    Field   Offset                 Type VT     Attr    Value Name
+7043ab0c  4000096        4         System.Int32  1 instance       14 m_arrayLength
+7043ab0c  4000097        8         System.Int32  1 instance       13 m_stringLength
+704395a0  4000098        c          System.Char  1 instance       53 m_firstChar
+704388c0  4000099       10        System.String  0   shared   static Empty
+    >> Domain:Value  00653068:02391198 <<
+704394f0  400009a       14        System.Char[]  0   shared   static WhitespaceChars
+    >> Domain:Value  00653068:02391738 <<
+0:000> ~4s
+eax=00000000 ebx=04c3ef0c ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+eip=772500ed esp=04c3eebc ebp=04c3ef58 iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+ntdll!ZwWaitForMultipleObjects+0x15:
+772500ed 83c404          add     esp,4
+0:004> kb
+ChildEBP RetAddr  Args to Child              
+04c3eebc 764c0962 00000001 04c3ef0c 00000001 ntdll!ZwWaitForMultipleObjects+0x15
+04c3ef58 7651162d 04c3ef0c 04c3ef80 00000000 KERNELBASE!WaitForMultipleObjectsEx+0x100
+04c3efa0 70ecfeaa 00000001 7efde000 00000000 KERNEL32!WaitForMultipleObjectsExImplementation+0xe0
+04c3f008 70ecfadb 00000001 006b34f0 00000000 mscorwks!WaitForMultipleObjectsEx_SO_TOLERANT+0x6f
+04c3f028 70ecfbe4 00000001 006b34f0 00000000 mscorwks!Thread::DoAppropriateAptStateWait+0x3c
+04c3f0ac 70ecfc79 00000001 006b34f0 00000000 mscorwks!Thread::DoAppropriateWaitWorker+0x13c
+04c3f0fc 70ecfdf9 00000001 006b34f0 00000000 mscorwks!Thread::DoAppropriateWait+0x40
+04c3f158 70d8c5b6 ffffffff 00000001 00000000 mscorwks!CLREvent::WaitEx+0xf7
+04c3f16c 70e8c002 ffffffff 00000001 00000000 mscorwks!CLREvent::Wait+0x17
+04c3f1f8 70ed146c 006c5538 ffffffff 006c5538 mscorwks!AwareLock::EnterEpilog+0x8c
+04c3f214 70ed13f0 e7894661 04c3f2f8 023a82b0 mscorwks!AwareLock::Enter+0x61
+04c3f2b4 003a0c55 00000000 04c3f28c 04c3f36c mscorwks!JIT_MonEnterWorker_Portable+0xb3
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+04c3f308 70b1208e 029e8f50 04c3f328 703f027f 0x3a0c55
+04c3f314 703f027f 04c3f36c 029e8f1c 029e8f50 mscorlib_ni+0x94208e
+04c3f328 708ebe6a 029e8f1c 00000000 006c5538 mscorlib_ni+0x22027f
+04c3f340 70d71b6c 5aa1369a 04c3f438 04c3f3d0 mscorlib_ni+0x71be6a
+04c3f350 70d82209 04c3f420 00000000 04c3f3f0 mscorwks!CallDescrWorker+0x33
+04c3f3d0 70d96511 04c3f420 00000000 04c3f3f0 mscorwks!CallDescrWorkerWithHandler+0xa3
+04c3f508 70d96544 7036347c 04c3f664 04c3f594 mscorwks!MethodDesc::CallDescr+0x19c
+04c3f524 70d96562 7036347c 04c3f664 04c3f594 mscorwks!MethodDesc::CallTargetWorker+0x1f
+0:004> !u 0x3a0c55
+Normal JIT generated code
+FileExplorer.MainForm.LaunchNotepad(System.Object)
+Begin 003a0b98, size 16d
+003a0b98 55              push    ebp
+003a0b99 8bec            mov     ebp,esp
+003a0b9b 57              push    edi
+003a0b9c 56              push    esi
+003a0b9d 53              push    ebx
+003a0b9e 83ec40          sub     esp,40h
+003a0ba1 8bf1            mov     esi,ecx
+003a0ba3 8d7dc4          lea     edi,[ebp-3Ch]
+003a0ba6 b90b000000      mov     ecx,0Bh
+003a0bab 33c0            xor     eax,eax
+003a0bad f3ab            rep stos dword ptr es:[edi]
+003a0baf 8bce            mov     ecx,esi
+003a0bb1 33c0            xor     eax,eax
+003a0bb3 8945e8          mov     dword ptr [ebp-18h],eax
+003a0bb6 894ddc          mov     dword ptr [ebp-24h],ecx
+003a0bb9 8955d8          mov     dword ptr [ebp-28h],edx
+003a0bbc 833de4302c0000  cmp     dword ptr ds:[2C30E4h],0
+003a0bc3 7405            je      003a0bca
+003a0bc5 e85fa7c270      call    mscorwks!JIT_DbgIsJustMyCode (70fcb329)
+003a0bca 33d2            xor     edx,edx
+003a0bcc 8955cc          mov     dword ptr [ebp-34h],edx
+003a0bcf 33d2            xor     edx,edx
+003a0bd1 8955c4          mov     dword ptr [ebp-3Ch],edx
+003a0bd4 33d2            xor     edx,edx
+003a0bd6 8955c8          mov     dword ptr [ebp-38h],edx
+003a0bd9 33d2            xor     edx,edx
+003a0bdb 8955d4          mov     dword ptr [ebp-2Ch],edx
+003a0bde 33d2            xor     edx,edx
+003a0be0 8955d0          mov     dword ptr [ebp-30h],edx
+003a0be3 33d2            xor     edx,edx
+003a0be5 8955cc          mov     dword ptr [ebp-34h],edx
+003a0be8 90              nop
+003a0be9 837dd800        cmp     dword ptr [ebp-28h],0
+003a0bed 741f            je      003a0c0e
+003a0bef 8b45d8          mov     eax,dword ptr [ebp-28h]
+003a0bf2 8138c0884370    cmp     dword ptr [eax],offset mscorlib_ni+0x2688c0 (704388c0)
+003a0bf8 7505            jne     003a0bff
+003a0bfa 8b45d8          mov     eax,dword ptr [ebp-28h]
+003a0bfd eb0d            jmp     003a0c0c
+003a0bff 8b55d8          mov     edx,dword ptr [ebp-28h]
+003a0c02 b9c0884370      mov     ecx,offset mscorlib_ni+0x2688c0 (704388c0) (MT: System.String)
+003a0c07 e867b69d70      call    mscorwks!JIT_ChkCastClassSpecial (70d7c273)
+003a0c0c eb03            jmp     003a0c11
+003a0c0e 8b45d8          mov     eax,dword ptr [ebp-28h]
+003a0c11 8945d4          mov     dword ptr [ebp-2Ch],eax
+003a0c14 8b45dc          mov     eax,dword ptr [ebp-24h]
+003a0c17 8b8050010000    mov     eax,dword ptr [eax+150h]
+003a0c1d 8945c8          mov     dword ptr [ebp-38h],eax
+003a0c20 8b4dc8          mov     ecx,dword ptr [ebp-38h]
+003a0c23 e8ed1d9d70      call    mscorwks!JIT_MonEnterWorker (70d72a15)
+003a0c28 90              nop
+003a0c29 90              nop
+003a0c2a 8b0d4c203903    mov     ecx,dword ptr ds:[339204Ch] ("C:\windows\notepad.exe")
+003a0c30 8b55d4          mov     edx,dword ptr [ebp-2Ch]
+*** WARNING: Unable to verify checksum for C:\Windows\assembly\NativeImages_v2.0.50727_32\System\5ba3bf5367fc012300c6566f20cb7f54\System.ni.dll
+003a0c33 e87c09ba6f      call    System_ni+0x5815b4 (6ff415b4) (System.Diagnostics.Process.Start(System.String, System.String), mdToken: 06003a9c)
+003a0c38 8945c0          mov     dword ptr [ebp-40h],eax
+003a0c3b 8b45c0          mov     eax,dword ptr [ebp-40h]
+003a0c3e 8945d0          mov     dword ptr [ebp-30h],eax
+003a0c41 8b45dc          mov     eax,dword ptr [ebp-24h]
+003a0c44 8b804c010000    mov     eax,dword ptr [eax+14Ch]
+003a0c4a 8945c4          mov     dword ptr [ebp-3Ch],eax
+003a0c4d 8b4dc4          mov     ecx,dword ptr [ebp-3Ch]
+003a0c50 e8c01d9d70      call    mscorwks!JIT_MonEnterWorker (70d72a15)
+>>> 003a0c55 90              nop
+003a0c56 90              nop
+003a0c57 8b45dc          mov     eax,dword ptr [ebp-24h]
+003a0c5a 8945bc          mov     dword ptr [ebp-44h],eax
+003a0c5d 8b45bc          mov     eax,dword ptr [ebp-44h]
+003a0c60 8945b8          mov     dword ptr [ebp-48h],eax
+003a0c63 837dcc00        cmp     dword ptr [ebp-34h],0
+003a0c67 752c            jne     003a0c95
+003a0c69 b9e052ea6e      mov     ecx,offset System_Windows_Forms_ni+0x2552e0 (6eea52e0) (MT: System.Windows.Forms.MethodInvoker)
+003a0c6e e82514edff      call    00272098 (JitHelp: CORINFO_HELP_NEWSFAST_CHKRESTORE)
+003a0c73 8945b4          mov     dword ptr [ebp-4Ch],eax
+003a0c76 b8d8c02c00      mov     eax,2CC0D8h
+003a0c7b 50              push    eax
+003a0c7c 8b55dc          mov     edx,dword ptr [ebp-24h]
+003a0c7f 8b4db4          mov     ecx,dword ptr [ebp-4Ch]
+003a0c82 e8a9a0fe6f      call    mscorlib_ni+0x1bad30 (7038ad30) (System.MulticastDelegate.CtorClosed(System.Object, IntPtr), mdToken: 060003bd)
+003a0c87 8b45b4          mov     eax,dword ptr [ebp-4Ch]
+003a0c8a 8945cc          mov     dword ptr [ebp-34h],eax
+003a0c8d 8b45b8          mov     eax,dword ptr [ebp-48h]
+003a0c90 8945b8          mov     dword ptr [ebp-48h],eax
+003a0c93 eb00            jmp     003a0c95
+003a0c95 8b55cc          mov     edx,dword ptr [ebp-34h]
+003a0c98 8b4db8          mov     ecx,dword ptr [ebp-48h]
+003a0c9b e8088da26e      call    System_Windows_Forms_ni+0x1799a8 (6edc99a8) (System.Windows.Forms.Control.BeginInvoke(System.Delegate), mdToken: 060014c5)
+003a0ca0 90              nop
+003a0ca1 90              nop
+003a0ca2 90              nop
+003a0ca3 c745e400000000  mov     dword ptr [ebp-1Ch],0
+003a0caa c745e8fc000000  mov     dword ptr [ebp-18h],0FCh
+003a0cb1 68dc0c3a00      push    3A0CDCh
+003a0cb6 eb00            jmp     003a0cb8
+003a0cb8 8b4dc4          mov     ecx,dword ptr [ebp-3Ch]
+003a0cbb e8cf1f9d70      call    mscorwks!JIT_MonExitWorker (70d72c8f)
+003a0cc0 90              nop
+003a0cc1 58              pop     eax
+003a0cc2 ffe0            jmp     eax
+003a0cc4 90              nop
+003a0cc5 90              nop
+003a0cc6 90              nop
+003a0cc7 c745e400000000  mov     dword ptr [ebp-1Ch],0
+003a0cce c745e8fc000000  mov     dword ptr [ebp-18h],0FCh
+003a0cd5 68fc0c3a00      push    3A0CFCh
+003a0cda eb09            jmp     003a0ce5
+003a0cdc c745e800000000  mov     dword ptr [ebp-18h],0
+003a0ce3 ebdf            jmp     003a0cc4
+003a0ce5 8b4dc8          mov     ecx,dword ptr [ebp-38h]
+003a0ce8 e8a21f9d70      call    mscorwks!JIT_MonExitWorker (70d72c8f)
+003a0ced 90              nop
+003a0cee 58              pop     eax
+003a0cef ffe0            jmp     eax
+003a0cf1 90              nop
+003a0cf2 90              nop
+003a0cf3 90              nop
+003a0cf4 8d65f4          lea     esp,[ebp-0Ch]
+003a0cf7 5b              pop     ebx
+003a0cf8 5e              pop     esi
+003a0cf9 5f              pop     edi
+003a0cfa 5d              pop     ebp
+003a0cfb c3              ret
+003a0cfc c745e800000000  mov     dword ptr [ebp-18h],0
+003a0d03 ebec            jmp     003a0cf1
+0:004> dd 04c3f308-3c L1
+04c3f2cc  023a8938
+0:004> !do 023a8938
+Name: System.String
+MethodTable: 704388c0
+EEClass: 701fa498
+Size: 34(0x22) bytes
+ (C:\Windows\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll)
+String: MainLock
+Fields:
+      MT    Field   Offset                 Type VT     Attr    Value Name
+7043ab0c  4000096        4         System.Int32  1 instance        9 m_arrayLength
+7043ab0c  4000097        8         System.Int32  1 instance        8 m_stringLength
+704395a0  4000098        c          System.Char  1 instance       4d m_firstChar
+704388c0  4000099       10        System.String  0   shared   static Empty
+    >> Domain:Value  00653068:02391198 <<
+704394f0  400009a       14        System.Char[]  0   shared   static WhitespaceChars
+    >> Domain:Value  00653068:02391738 <<
+0:004> !syncblk
+Index SyncBlock MonitorHeld Recursion Owning Thread Info  SyncBlock Owner
+   16 006b34dc            3         1 00654c18  2288   0   023a8938 System.String
+   17 006b350c            3         1 006c5538  1f54   4   023a895c System.String
+-----------------------------
+Total           17
+CCW             0
+RCW             0
+ComClassFactory 0
+Free            0
+0:004> q
+quit:

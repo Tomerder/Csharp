@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadlockDetector.Client", "DeadlockDetector.Client\DeadlockDetector.Client.csproj", "{CED071B7-5481-4995-AE43-F4287CD640DB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DeadlockDetector.Tester", "DeadlockDetector.Tester\DeadlockDetector.Tester.vcproj", "{7DFA444F-E60C-4AD8-B9B7-043C61404133}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DeadlockDetector.WCTHelper", "DeadlockDetector.WCTHelper\DeadlockDetector.WCTHelper.vcproj", "{AF57211C-BEAC-40C7-9054-BED9F493B056}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CED071B7-5481-4995-AE43-F4287CD640DB}.Debug|Win32.ActiveCfg = Debug|x86
+		{CED071B7-5481-4995-AE43-F4287CD640DB}.Debug|x64.ActiveCfg = Debug|x64
+		{CED071B7-5481-4995-AE43-F4287CD640DB}.Debug|x64.Build.0 = Debug|x64
+		{CED071B7-5481-4995-AE43-F4287CD640DB}.Debug|x86.ActiveCfg = Debug|x86
+		{CED071B7-5481-4995-AE43-F4287CD640DB}.Debug|x86.Build.0 = Debug|x86
+		{CED071B7-5481-4995-AE43-F4287CD640DB}.Release|Win32.ActiveCfg = Release|x86
+		{CED071B7-5481-4995-AE43-F4287CD640DB}.Release|x64.ActiveCfg = Release|x64
+		{CED071B7-5481-4995-AE43-F4287CD640DB}.Release|x64.Build.0 = Release|x64
+		{CED071B7-5481-4995-AE43-F4287CD640DB}.Release|x86.ActiveCfg = Release|x86
+		{CED071B7-5481-4995-AE43-F4287CD640DB}.Release|x86.Build.0 = Release|x86
+		{7DFA444F-E60C-4AD8-B9B7-043C61404133}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7DFA444F-E60C-4AD8-B9B7-043C61404133}.Debug|Win32.Build.0 = Debug|Win32
+		{7DFA444F-E60C-4AD8-B9B7-043C61404133}.Debug|x64.ActiveCfg = Debug|x64
+		{7DFA444F-E60C-4AD8-B9B7-043C61404133}.Debug|x64.Build.0 = Debug|x64
+		{7DFA444F-E60C-4AD8-B9B7-043C61404133}.Debug|x86.ActiveCfg = Debug|Win32
+		{7DFA444F-E60C-4AD8-B9B7-043C61404133}.Debug|x86.Build.0 = Debug|Win32
+		{7DFA444F-E60C-4AD8-B9B7-043C61404133}.Release|Win32.ActiveCfg = Release|Win32
+		{7DFA444F-E60C-4AD8-B9B7-043C61404133}.Release|Win32.Build.0 = Release|Win32
+		{7DFA444F-E60C-4AD8-B9B7-043C61404133}.Release|x64.ActiveCfg = Release|x64
+		{7DFA444F-E60C-4AD8-B9B7-043C61404133}.Release|x64.Build.0 = Release|x64
+		{7DFA444F-E60C-4AD8-B9B7-043C61404133}.Release|x86.ActiveCfg = Release|x64
+		{AF57211C-BEAC-40C7-9054-BED9F493B056}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AF57211C-BEAC-40C7-9054-BED9F493B056}.Debug|Win32.Build.0 = Debug|Win32
+		{AF57211C-BEAC-40C7-9054-BED9F493B056}.Debug|x64.ActiveCfg = Debug|x64
+		{AF57211C-BEAC-40C7-9054-BED9F493B056}.Debug|x64.Build.0 = Debug|x64
+		{AF57211C-BEAC-40C7-9054-BED9F493B056}.Debug|x86.ActiveCfg = Debug|Win32
+		{AF57211C-BEAC-40C7-9054-BED9F493B056}.Debug|x86.Build.0 = Debug|Win32
+		{AF57211C-BEAC-40C7-9054-BED9F493B056}.Release|Win32.ActiveCfg = Release|Win32
+		{AF57211C-BEAC-40C7-9054-BED9F493B056}.Release|Win32.Build.0 = Release|Win32
+		{AF57211C-BEAC-40C7-9054-BED9F493B056}.Release|x64.ActiveCfg = Release|x64
+		{AF57211C-BEAC-40C7-9054-BED9F493B056}.Release|x64.Build.0 = Release|x64
+		{AF57211C-BEAC-40C7-9054-BED9F493B056}.Release|x86.ActiveCfg = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

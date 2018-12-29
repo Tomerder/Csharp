@@ -1,0 +1,103 @@
+
+1. Run the StrangeLeak.exe application.
+
+2. Use perfmon and the ".NET CLR Memory\# Bytes in All Heaps" performance counter to see that the application is leaking managed memory.
+
+3. Attach WinDbg to the application and examine its memory usage. Use !dumpheap, !gcroot, !finalizequeue.
+
+4. To determine which thread is the owner of the STA object to which your thread is attempting to switch, inspect the unmanaged call stack of the thread. Locate the ole32!CRpcChannelBuffer::SendReceive2 frame. Pass the first parameter to dd. In the resulting output, locate the 7th DWORD and pass it to dd again. In the resulting output, the 3rd DWORD is the process ID and the 4th DWORD is the thread ID (of the STA thread to which your thread is trying to switch).
+
+For example:
+
+0:002> kb 30
+ChildEBP RetAddr  Args to Child              
+010bef7c 76e00816 00000278 00000000 00000000 ntdll!ZwWaitForSingleObject+0x15
+010befe8 75791184 00000278 ffffffff 00000000 KERNELBASE!WaitForSingleObjectEx+0x98
+010bf000 75791138 00000278 ffffffff 00000000 KERNEL32!WaitForSingleObjectExImplementation+0x75
+010bf014 76ca88df 00000278 ffffffff 00821490 KERNEL32!WaitForSingleObject+0x12
+010bf038 76dca819 00820dd8 00833330 010bf144 ole32!GetToSTA+0xad
+010bf068 76dcc05f 010bf130 010bf258 00821490 ole32!CRpcChannelBuffer::SwitchAptAndDispatchCall+0x140
+010bf148 76cbd0e5 00821490 010bf258 010bf240 ole32!CRpcChannelBuffer::SendReceive2+0xef
+010bf1c4 76ca7fab 00821490 010bf258 010bf240 ole32!CAptRpcChnl::SendReceive+0xaf
+010bf218 76dcbf75 00000001 00837260 010bf240 ole32!CCtxComChnl::SendReceive+0x95
+010bf234 75cd414b 007f773c 010bf284 75d50149 ole32!NdrExtpProxySendReceive+0x49
+010bf240 75d50149 d259945e 010bf68c 0700022b RPCRT4!NdrpProxySendReceive+0xe
+010bf654 76dcba02 76cdd338 76cdc120 010bf68c RPCRT4!NdrClientCall2+0x1a6
+010bf674 76cbc8b5 0000000c 00000008 010bf70c ole32!ObjectStublessClient+0xa2
+010bf684 76ca8bb0 007f773c 010bf6c0 00000001 ole32!ObjectStubless+0xf
+010bf70c 76c9d02c 00812078 55538272 010bf818 ole32!CObjectContext::InternalContextCallback+0x128
+010bf75c 55537936 00812088 55538272 010bf818 ole32!CObjectContext::ContextCallback+0x92
+010bf874 55700d71 55538039 0082b268 d25914d1 clr!CtxEntry::EnterContext+0x312
+010bf8ac 55538092 0082b268 d259149d 00000001 clr!RCW::ReleaseAllInterfacesCallBack+0x5f
+010bf8e0 557019b3 d259155d 557494f4 00801978 clr!RCW::Cleanup+0x22
+010bf920 557495fc 0082b268 d25915bd 010bfa20 clr!RCW::FinalExternalRelease+0x14f
+010bf9c0 79abd2f1 79ad8ab2 00193948 00000000 clr!MarshalNative::FinalReleaseComObject+0x108
+010bf9f8 55564b01 00000000 00801978 00000000 mscorlib_ni+0x27d2f1
+010bfa18 55564b01 010bfa64 5553cc44 010bfc38 clr!MethodTable::SetObjCreateDelegate+0xbd
+010bfa74 555649c7 027ece90 0019c071 00000000 clr!MethodTable::SetObjCreateDelegate+0xbd
+010bfaa0 55564a56 027ece90 027ece90 00000000 clr!MethodTable::CallFinalizer+0xca
+010bfab8 55564c9f 027ece90 d2591775 010bfb28 clr!WKS::CallFinalizer+0xa7
+010bfb08 55564bdb 00801978 00000409 010bfb37 clr!WKS::GCHeap::TraceGCSegments+0x239
+010bfb38 55628405 00801978 00000000 00801978 clr!WKS::GCHeap::TraceGCSegments+0x415
+010bfb54 55565c05 00000001 010bfc38 00801978 clr!WKS::GCHeap::FinalizerThreadWorker+0xcd
+010bfb68 55565c87 010bfc80 d2591065 010bfc80 clr!Thread::DoExtraWorkForFinalizer+0x114
+010bfc18 55565d42 010bfc80 d2591005 00000000 clr!Thread::ShouldChangeAbortToUnload+0x101
+010bfc78 555578be 00000000 007ef370 00000000 clr!Thread::ShouldChangeAbortToUnload+0x399
+010bfc9c 555578d1 55628354 00000008 010bfce4 clr!ManagedThreadBase_NoADTransition+0x35
+010bfcac 5559d313 55628354 d2591099 00000000 clr!ManagedThreadBase::FinalizerBase+0xf
+010bfce4 55565a08 00000000 00000000 00000000 clr!WKS::GCHeap::FinalizerThreadStart+0x10c
+010bfd84 75793677 007e8f28 010bfdd0 77649d42 clr!Thread::intermediateThreadProc+0x4b
+010bfd90 77649d42 007e8f28 2d575f0f 00000000 KERNEL32!BaseThreadInitThunk+0xe
+010bfdd0 77649d15 555659c0 007e8f28 00000000 ntdll!__RtlUserThreadStart+0x70
+010bfde8 00000000 555659c0 007e8f28 00000000 ntdll!_RtlUserThreadStart+0x1b
+
+0:002> dd 00821490 
+00821490  76cdf3b8 76cb80dc 00000003 0000002a
+008214a0  0082b4b0 00000000 00820dd8 00822300
+008214b0  00818480 00833240 76cd8638 00070005
+008214c0  00000003 000015dc 00000000 00000000
+008214d0  00821510 f1eef1ee 0069006f 0074006e
+008214e0  00690044 00630073 0076006f 00720065
+008214f0  00450079 0065006c 0065006d 0074006e
+00821500  0020002c 00790053 00740073 006d0065
+
+0:002> dd 00820dd8 
+00820dd8  00820e58 76dd68f8 00001ca4 000015dc
+00820de8  8bcc0373 c5742101 ce37d660 e788446f
+00820df8  ce37d660 e788446f 0000a000 15dc1ca4
+00820e08  79aa13b0 31d81ac9 00000303 00181582
+00820e18  0081b318 00000000 00000000 00000000
+00820e28  00000001 ffffffff 00820d30 007f773c
+00820e38  00000003 00000000 00000000 00000000
+00820e48  00000000 00070005 00000000 00000000
+
+0:002> ~*
+   0  Id: 1ca4.1658 Suspend: 1 Teb: 7efdd000 Unfrozen
+      Start: StrangeLeak!COM+_Entry_Point <PERF> (StrangeLeak+0x2bce) (013d2bce) 
+      Priority: 0  Priority class: 32  Affinity: ff
+   1  Id: 1ca4.1ef8 Suspend: 1 Teb: 7efda000 Unfrozen
+      Start: clr!DebuggerRCThread::ThreadProcStatic (5561741c) 
+      Priority: 0  Priority class: 32  Affinity: ff
+.  2  Id: 1ca4.110c Suspend: 1 Teb: 7efd7000 Unfrozen
+      Start: clr!Thread::intermediateThreadProc (555659c0) 
+      Priority: 2  Priority class: 32  Affinity: ff
+   3  Id: 1ca4.1e5c Suspend: 1 Teb: 7efaf000 Unfrozen
+      Start: ntdll!TppWaiterpThread (77671c66) 
+      Priority: 0  Priority class: 32  Affinity: ff
+   4  Id: 1ca4.15dc Suspend: 1 Teb: 7efac000 Unfrozen
+      Start: clr!Thread::intermediateThreadProc (555659c0) 
+      Priority: 0  Priority class: 32  Affinity: ff
+   5  Id: 1ca4.23a4 Suspend: 1 Teb: 7efa9000 Unfrozen
+      Start: ntdll!TppWorkerThread (77672c81) 
+      Priority: 0  Priority class: 32  Affinity: ff
+   6  Id: 1ca4.11e8 Suspend: 1 Teb: 7efa6000 Unfrozen
+      Start: ntdll!TppWorkerThread (77672c81) 
+      Priority: 0  Priority class: 32  Affinity: ff
+   7  Id: 1ca4.1694 Suspend: 1 Teb: 7efa3000 Unfrozen
+      Start: ole32!CRpcThreadCache::RpcWorkerThreadEntry (76cbc7f5) 
+      Priority: 0  Priority class: 32  Affinity: ff
+#  8  Id: 1ca4.53c Suspend: 1 Teb: 7efa0000 Unfrozen
+      Start: ntdll!DbgUiRemoteBreakin (776af4e2) 
+      Priority: 0  Priority class: 32  Affinity: ff
+
+5. Conclude why the application is leaking memory.

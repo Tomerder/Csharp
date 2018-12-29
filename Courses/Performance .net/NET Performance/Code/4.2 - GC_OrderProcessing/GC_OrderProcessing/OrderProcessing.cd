@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="GC_OrderProcessing.OrderFilterer">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>OrderFilterer.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAgAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_processor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GC_OrderProcessing.OrderProcessor">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>OrderProcessor.cs</FileName>
+      <HashCode>AAAAAAAAQAAAAAAAAhAAAAAAAAAAQAAAABAAAAAAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GC_OrderProcessing.OrderReceiver">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>OrderReceiver.cs</FileName>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_filterer" />
+    </ShowAsAssociation>
+  </Class>
+</ClassDiagram>

@@ -1,0 +1,26 @@
+using System;
+using PerformanceHarness;
+
+[MeasurableClass]
+public static class StringTest
+{
+	[SetupMethod]
+	static void Setup()
+	{
+	}
+
+	[TeardownMethod]
+	static void Teardown()
+	{
+	}
+
+	[MeasurableMethod]
+	static void Measure()
+	{
+          string s = String.Empty;
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+               s += "a";
+		}
+	}
+}

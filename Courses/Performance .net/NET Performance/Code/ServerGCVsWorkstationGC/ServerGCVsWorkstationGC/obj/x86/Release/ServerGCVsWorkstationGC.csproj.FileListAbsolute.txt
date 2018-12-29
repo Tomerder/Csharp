@@ -1,0 +1,6 @@
+C:\Courses\NET Performance\Code\ServerGCVsWorkstationGC\ServerGCVsWorkstationGC\bin\Release\ServerGCVsWorkstationGC.exe.config
+C:\Courses\NET Performance\Code\ServerGCVsWorkstationGC\ServerGCVsWorkstationGC\bin\Release\ServerGCVsWorkstationGC.exe
+C:\Courses\NET Performance\Code\ServerGCVsWorkstationGC\ServerGCVsWorkstationGC\bin\Release\ServerGCVsWorkstationGC.pdb
+C:\Courses\NET Performance\Code\ServerGCVsWorkstationGC\ServerGCVsWorkstationGC\obj\x86\Release\ServerGCVsWorkstationGC.exe
+C:\Courses\NET Performance\Code\ServerGCVsWorkstationGC\ServerGCVsWorkstationGC\obj\x86\Release\ServerGCVsWorkstationGC.pdb
+C:\Courses\NET Performance\Code\ServerGCVsWorkstationGC\ServerGCVsWorkstationGC\obj\x86\Release\ServerGCVsWorkstationGC.csprojResolveAssemblyReference.cache

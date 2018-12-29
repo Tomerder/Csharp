@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using PerformanceHarness;
+
+[MeasurableClass]
+public static class ForeachTest
+{
+     private static List<int> _list = new List<int>(1000);
+     private volatile static int _i;
+  
+	[SetupMethod]
+	static void Setup()
+	{
+	}
+
+	[TeardownMethod]
+	static void Teardown()
+	{
+	}
+
+	[MeasurableMethod]
+	static void Measure()
+	{
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+                 foreach (int i in _list) {
+                        _i += i;
+                 }
+		}
+	}
+}

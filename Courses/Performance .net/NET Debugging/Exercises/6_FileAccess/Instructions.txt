@@ -1,0 +1,31 @@
+
+1. Run Process Monitor and configure a filter to include only the process StupidNotepad.exe.
+
+2. Make sure that "Capture Events" is enabled in the File menu.
+
+3. Run the StupidNotepad.exe application. Click File-->Open and choose the "MyFile" file that appears in the application's directory. The application should crash with an exception---inspect the exception (copy its details or write them down), and then dismiss it by clicking "Continue".
+
+4. Go back to Process Monitor and look for an event that has something to do with the exception that you saw in the previous step.
+(Hint: Search for all file accesses with "MyFile" in their path using the Ctrl+F find dialog.)
+
+5. Double click the interesting event and go to the Stack tab. Wait for symbols to load and locate the frames that look like JITted code (i.e. not associated with any module).
+
+6. Attach WinDbg to the application, load SOS and switch to thread 0. Use the !u command to inspect the code at the addresses located in the previous step.
+
+7. At this point, you should be able to determine where the exception occurred in your code (even if you didn't record the exception call stack in step 3).
+
+8. Close the StupidNotepad application and launch it again.
+
+9. Attach WinDbg to the application, load SOS, and set up a breakpoint in the NotepadMainForm.openToolstripMenuItem_Click method. The easy way to do would be:
+
+!bpmd StupidNotepad StupidNotepad.NotepadMainForm.openToolStripMenuItem_Click
+
+The harder (but more interesting) way would be to use the !bpmd -md command, passing to it the method descriptor obtained by using the !DumpDomain, !DumpAssembly, !DumpModule -mt, and !DumpMT -md commands. (See the SOS !help for more information.)
+
+10. Inspect the assembly code (use !u on the value of the EIP register) and see where the File.ReadAllText method is called (this is the culprit you should have detected at step 7).
+
+11. Set a standard breakpoint on that address using the bp command.
+
+12. Note that the file name is passed to the File.ReadAllText method in the ECX register, and it's obtained from a local variable. Use !CLRStack -a to inspect the method's local variables. (Hint: Two of them are strings that differ only slightly.)
+
+13. With the information gathered in the previous steps, open the application executable with .NET Reflector and determine the root cause of the problem.

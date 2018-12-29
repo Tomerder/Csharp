@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using PerformanceHarness;
+
+[assembly: MeasurableClass(typeof(ArrayTest))]
+
+public static class ArrayTest
+{
+	private static volatile int _x;
+     private static int[] _array;
+
+     [SetupMethod]
+     static void Setup()
+     {
+          _array = new int[10000];
+          for (int i = 0; i < _array.Length; ++i)
+               _array[i] = i;
+     }
+
+//     [TeardownMethod]
+//     static void Teardown() { GC.Collect(); }
+
+	[MeasurableMethod]
+	static void Measure()
+	{
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+			for (int i = 0; i < _array.Length; ++i)
+              {
+                  _x += _array[i];
+              }
+		}
+          _array = null;
+	}
+}

@@ -1,0 +1,1198 @@
+Opened log file 'C:\temp\dndebug\1_Crash.log'
+0:000> lm
+start    end        module name
+00ec0000 00ec8000   FileExplorer   (deferred)             
+6b4a0000 6b9d6000   System_Xml_ni   (deferred)             
+6b9e0000 6bad1000   System_Configuration_ni   (deferred)             
+6bb30000 6bb35000   shfolder   (deferred)             
+6e9c0000 6eb50000   gdiplus    (deferred)             
+6ec50000 6f82e000   System_Windows_Forms_ni   (deferred)             
+6f830000 6f9b7000   System_Drawing_ni   (deferred)             
+6f9c0000 70159000   System_ni   (deferred)             
+70160000 701bb000   mscorjit   (deferred)             
+701d0000 70cc8000   mscorlib_ni   (deferred)             
+70cd0000 70d6b000   MSVCR80    (deferred)             
+70d70000 71301000   mscorwks   (pdb symbols)          c:\symbols\mscorwks.pdb\4A8261B5806248EEB35D45EF12EFF7892\mscorwks.pdb
+71310000 71376000   mscoreei   (deferred)             
+71380000 713ca000   MSCOREE    (deferred)             
+715e0000 7177e000   comctl32   (deferred)             
+71dc0000 71dd3000   dwmapi     (deferred)             
+71de0000 71e60000   uxtheme    (deferred)             
+73f90000 73f9b000   profapi    (deferred)             
+74d90000 74d9c000   CRYPTBASE   (deferred)             
+74da0000 74e00000   SspiCli    (deferred)             
+74f20000 74f77000   SHLWAPI    (deferred)             
+74f80000 75bc9000   shell32    (deferred)             
+75bd0000 75c6d000   USP10      (deferred)             
+75c70000 75c7a000   LPK        (deferred)             
+75c80000 75d10000   GDI32      (deferred)             
+75d10000 75db0000   ADVAPI32   (deferred)             
+75fe0000 7608c000   msvcrt     (deferred)             
+76130000 76220000   RPCRT4     (deferred)             
+76220000 76280000   IMM32      (deferred)             
+76300000 76319000   sechost    (deferred)             
+76320000 76420000   USER32     (deferred)             
+764b0000 764f6000   KERNELBASE   (deferred)             
+76500000 76600000   KERNEL32   (deferred)             
+76800000 7695c000   ole32      (deferred)             
+76c50000 76d1c000   MSCTF      (deferred)             
+77230000 773b0000   ntdll      (pdb symbols)          c:\symbols\wntdll.pdb\ACE318E6A2F44F23A6CC5628F10A7DDC2\wntdll.pdb
+0:000> .loadby sos mscorwks
+0:000> .chain
+Extension DLL search Path:
+    C:\Program Files (x86)\Debugging Tools for Windows (x86)\WINXP;C:\Program Files (x86)\Debugging Tools for Windows (x86)\winext;C:\Program Files (x86)\Debugging Tools for Windows (x86)\winext\arcade;C:\Program Files (x86)\Debugging Tools for Windows (x86)\pri;C:\Program Files (x86)\Debugging Tools for Windows (x86);C:\Program Files (x86)\Debugging Tools for Windows (x86)\winext\arcade;C:\Program Files (x86)\Windows Resource Kits\Tools\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files\Intel\DMIX;c:\Program Files\WIDCOMM\Bluetooth Software\;c:\Program Files\WIDCOMM\Bluetooth Software\syswow64;c:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Microsoft Windows Performance Toolkit\
+Extension DLL chain:
+    C:\Windows\Microsoft.NET\Framework\v2.0.50727\sos: image 2.0.50727.4927, API 1.0.0, built Thu Jun 04 08:39:07 2009
+        [path: C:\Windows\Microsoft.NET\Framework\v2.0.50727\sos.dll]
+    dbghelp: image 6.11.0001.404, API 6.1.6, built Thu Feb 26 03:55:30 2009
+        [path: C:\Program Files (x86)\Debugging Tools for Windows (x86)\dbghelp.dll]
+    ext: image 6.11.0001.404, API 1.0.0, built Thu Feb 26 03:55:30 2009
+        [path: C:\Program Files (x86)\Debugging Tools for Windows (x86)\winext\ext.dll]
+    wow64exts: image 6.1.7015.0, API 1.0.0, built Thu Feb 26 03:54:36 2009
+        [path: C:\Program Files (x86)\Debugging Tools for Windows (x86)\WINXP\wow64exts.dll]
+    exts: image 6.11.0001.404, API 1.0.0, built Thu Feb 26 03:55:24 2009
+        [path: C:\Program Files (x86)\Debugging Tools for Windows (x86)\WINXP\exts.dll]
+    uext: image 6.11.0001.404, API 1.0.0, built Thu Feb 26 03:55:26 2009
+        [path: C:\Program Files (x86)\Debugging Tools for Windows (x86)\winext\uext.dll]
+    ntsdexts: image 6.1.7015.0, API 1.0.0, built Thu Feb 26 03:54:43 2009
+        [path: C:\Program Files (x86)\Debugging Tools for Windows (x86)\WINXP\ntsdexts.dll]
+0:000> !PrintException
+There is no current managed exception on this thread
+0:000> k
+ChildEBP RetAddr  
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+002c302c 004d079c 0x4d078e
+002c3068 004d079c 0x4d079c
+002c30a4 004d079c 0x4d079c
+002c30e0 004d079c 0x4d079c
+002c311c 004d079c 0x4d079c
+002c3158 004d079c 0x4d079c
+002c3194 004d079c 0x4d079c
+002c31d0 004d079c 0x4d079c
+002c320c 004d079c 0x4d079c
+002c3248 004d079c 0x4d079c
+002c3284 004d079c 0x4d079c
+002c32c0 004d079c 0x4d079c
+002c32fc 004d079c 0x4d079c
+002c3338 004d079c 0x4d079c
+002c3374 004d079c 0x4d079c
+002c33b0 004d079c 0x4d079c
+002c33ec 004d079c 0x4d079c
+002c3428 004d079c 0x4d079c
+002c3464 004d079c 0x4d079c
+002c34a0 004d079c 0x4d079c
+0:000> !CLRStack -a
+OS Thread Id: 0x1b10 (0)
+ESP       EIP     
+002c2ffc 004d078e FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3018 = 0x00000000
+        0x002c3014 = 0x00000000
+        0x002c3010 = 0x00000000
+        0x002c3028 = 0x00000000
+        0x002c3024 = 0x00000000
+
+002c3038 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3054 = 0x00000000
+        0x002c3050 = 0x00000000
+        0x002c304c = 0x00000000
+        0x002c3064 = 0x00000000
+        0x002c3060 = 0x00000000
+
+002c3074 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3090 = 0x00000000
+        0x002c308c = 0x00000000
+        0x002c3088 = 0x00000000
+        0x002c30a0 = 0x00000000
+        0x002c309c = 0x00000000
+
+002c30b0 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c30cc = 0x00000000
+        0x002c30c8 = 0x00000000
+        0x002c30c4 = 0x00000000
+        0x002c30dc = 0x00000000
+        0x002c30d8 = 0x00000000
+
+002c30ec 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3108 = 0x00000000
+        0x002c3104 = 0x00000000
+        0x002c3100 = 0x00000000
+        0x002c3118 = 0x00000000
+        0x002c3114 = 0x00000000
+
+002c3128 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3144 = 0x00000000
+        0x002c3140 = 0x00000000
+        0x002c313c = 0x00000000
+        0x002c3154 = 0x00000000
+        0x002c3150 = 0x00000000
+
+002c3164 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3180 = 0x00000000
+        0x002c317c = 0x00000000
+        0x002c3178 = 0x00000000
+        0x002c3190 = 0x00000000
+        0x002c318c = 0x00000000
+
+002c31a0 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c31bc = 0x00000000
+        0x002c31b8 = 0x00000000
+        0x002c31b4 = 0x00000000
+        0x002c31cc = 0x00000000
+        0x002c31c8 = 0x00000000
+
+002c31dc 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c31f8 = 0x00000000
+        0x002c31f4 = 0x00000000
+        0x002c31f0 = 0x00000000
+        0x002c3208 = 0x00000000
+        0x002c3204 = 0x00000000
+
+002c3218 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3234 = 0x00000000
+        0x002c3230 = 0x00000000
+        0x002c322c = 0x00000000
+        0x002c3244 = 0x00000000
+        0x002c3240 = 0x00000000
+
+002c3254 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3270 = 0x00000000
+        0x002c326c = 0x00000000
+        0x002c3268 = 0x00000000
+        0x002c3280 = 0x00000000
+        0x002c327c = 0x00000000
+
+002c3290 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c32ac = 0x00000000
+        0x002c32a8 = 0x00000000
+        0x002c32a4 = 0x00000000
+        0x002c32bc = 0x00000000
+        0x002c32b8 = 0x00000000
+
+002c32cc 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c32e8 = 0x00000000
+        0x002c32e4 = 0x00000000
+        0x002c32e0 = 0x00000000
+        0x002c32f8 = 0x00000000
+        0x002c32f4 = 0x00000000
+
+002c3308 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3324 = 0x00000000
+        0x002c3320 = 0x00000000
+        0x002c331c = 0x00000000
+        0x002c3334 = 0x00000000
+        0x002c3330 = 0x00000000
+
+002c3344 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3360 = 0x00000000
+        0x002c335c = 0x00000000
+        0x002c3358 = 0x00000000
+        0x002c3370 = 0x00000000
+        0x002c336c = 0x00000000
+
+002c3380 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c339c = 0x00000000
+        0x002c3398 = 0x00000000
+        0x002c3394 = 0x00000000
+        0x002c33ac = 0x00000000
+        0x002c33a8 = 0x00000000
+
+002c33bc 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c33d8 = 0x00000000
+        0x002c33d4 = 0x00000000
+        0x002c33d0 = 0x00000000
+        0x002c33e8 = 0x00000000
+        0x002c33e4 = 0x00000000
+
+002c33f8 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3414 = 0x00000000
+        0x002c3410 = 0x00000000
+        0x002c340c = 0x00000000
+        0x002c3424 = 0x00000000
+        0x002c3420 = 0x00000000
+
+002c3434 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3450 = 0x00000000
+        0x002c344c = 0x00000000
+        0x002c3448 = 0x00000000
+        0x002c3460 = 0x00000000
+        0x002c345c = 0x00000000
+
+002c3470 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c348c = 0x00000000
+        0x002c3488 = 0x00000000
+        0x002c3484 = 0x00000000
+        0x002c349c = 0x00000000
+        0x002c3498 = 0x00000000
+
+002c34ac 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c34c8 = 0x00000000
+        0x002c34c4 = 0x00000000
+        0x002c34c0 = 0x00000000
+        0x002c34d8 = 0x00000000
+        0x002c34d4 = 0x00000000
+
+002c34e8 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3504 = 0x00000000
+        0x002c3500 = 0x00000000
+        0x002c34fc = 0x00000000
+        0x002c3514 = 0x00000000
+        0x002c3510 = 0x00000000
+
+002c3524 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3540 = 0x00000000
+        0x002c353c = 0x00000000
+        0x002c3538 = 0x00000000
+        0x002c3550 = 0x00000000
+        0x002c354c = 0x00000000
+
+002c3560 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c357c = 0x00000000
+        0x002c3578 = 0x00000000
+        0x002c3574 = 0x00000000
+        0x002c358c = 0x00000000
+        0x002c3588 = 0x00000000
+
+002c359c 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c35b8 = 0x00000000
+        0x002c35b4 = 0x00000000
+        0x002c35b0 = 0x00000000
+        0x002c35c8 = 0x00000000
+        0x002c35c4 = 0x00000000
+
+002c35d8 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c35f4 = 0x00000000
+        0x002c35f0 = 0x00000000
+        0x002c35ec = 0x00000000
+        0x002c3604 = 0x00000000
+        0x002c3600 = 0x00000000
+
+002c3614 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3630 = 0x00000000
+        0x002c362c = 0x00000000
+        0x002c3628 = 0x00000000
+        0x002c3640 = 0x00000000
+        0x002c363c = 0x00000000
+
+002c3650 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c366c = 0x00000000
+        0x002c3668 = 0x00000000
+        0x002c3664 = 0x00000000
+        0x002c367c = 0x00000000
+        0x002c3678 = 0x00000000
+
+002c368c 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c36a8 = 0x00000000
+        0x002c36a4 = 0x00000000
+        0x002c36a0 = 0x00000000
+        0x002c36b8 = 0x00000000
+        0x002c36b4 = 0x00000000
+
+002c36c8 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c36e4 = 0x00000000
+        0x002c36e0 = 0x00000000
+        0x002c36dc = 0x00000000
+        0x002c36f4 = 0x00000000
+        0x002c36f0 = 0x00000000
+
+002c3704 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3720 = 0x00000000
+        0x002c371c = 0x00000000
+        0x002c3718 = 0x00000000
+        0x002c3730 = 0x00000000
+        0x002c372c = 0x00000000
+
+002c3740 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c375c = 0x00000000
+        0x002c3758 = 0x00000000
+        0x002c3754 = 0x00000000
+        0x002c376c = 0x00000000
+        0x002c3768 = 0x00000000
+
+002c377c 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3798 = 0x00000000
+        0x002c3794 = 0x00000000
+        0x002c3790 = 0x00000000
+        0x002c37a8 = 0x00000000
+        0x002c37a4 = 0x00000000
+
+002c37b8 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c37d4 = 0x00000000
+        0x002c37d0 = 0x00000000
+        0x002c37cc = 0x00000000
+        0x002c37e4 = 0x00000000
+        0x002c37e0 = 0x00000000
+
+002c37f4 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3810 = 0x00000000
+        0x002c380c = 0x00000000
+        0x002c3808 = 0x00000000
+        0x002c3820 = 0x00000000
+        0x002c381c = 0x00000000
+
+002c3830 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c384c = 0x00000000
+        0x002c3848 = 0x00000000
+        0x002c3844 = 0x00000000
+        0x002c385c = 0x00000000
+        0x002c3858 = 0x00000000
+
+002c386c 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3888 = 0x00000000
+        0x002c3884 = 0x00000000
+        0x002c3880 = 0x00000000
+        0x002c3898 = 0x00000000
+        0x002c3894 = 0x00000000
+
+002c38a8 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c38c4 = 0x00000000
+        0x002c38c0 = 0x00000000
+        0x002c38bc = 0x00000000
+        0x002c38d4 = 0x00000000
+        0x002c38d0 = 0x00000000
+
+002c38e4 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3900 = 0x00000000
+        0x002c38fc = 0x00000000
+        0x002c38f8 = 0x00000000
+        0x002c3910 = 0x00000000
+        0x002c390c = 0x00000000
+
+002c3920 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c393c = 0x00000000
+        0x002c3938 = 0x00000000
+        0x002c3934 = 0x00000000
+        0x002c394c = 0x00000000
+        0x002c3948 = 0x00000000
+
+002c395c 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3978 = 0x00000000
+        0x002c3974 = 0x00000000
+        0x002c3970 = 0x00000000
+        0x002c3988 = 0x00000000
+        0x002c3984 = 0x00000000
+
+002c3998 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c39b4 = 0x00000000
+        0x002c39b0 = 0x00000000
+        0x002c39ac = 0x00000000
+        0x002c39c4 = 0x00000000
+        0x002c39c0 = 0x00000000
+
+002c39d4 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c39f0 = 0x00000000
+        0x002c39ec = 0x00000000
+        0x002c39e8 = 0x00000000
+        0x002c3a00 = 0x00000000
+        0x002c39fc = 0x00000000
+
+002c3a10 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3a2c = 0x00000000
+        0x002c3a28 = 0x00000000
+        0x002c3a24 = 0x00000000
+        0x002c3a3c = 0x00000000
+        0x002c3a38 = 0x00000000
+
+002c3a4c 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3a68 = 0x00000000
+        0x002c3a64 = 0x00000000
+        0x002c3a60 = 0x00000000
+        0x002c3a78 = 0x00000000
+        0x002c3a74 = 0x00000000
+
+002c3a88 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3aa4 = 0x00000000
+        0x002c3aa0 = 0x00000000
+        0x002c3a9c = 0x00000000
+        0x002c3ab4 = 0x00000000
+        0x002c3ab0 = 0x00000000
+
+002c3ac4 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3ae0 = 0x00000000
+        0x002c3adc = 0x00000000
+        0x002c3ad8 = 0x00000000
+        0x002c3af0 = 0x00000000
+        0x002c3aec = 0x00000000
+
+002c3b00 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3b1c = 0x00000000
+        0x002c3b18 = 0x00000000
+        0x002c3b14 = 0x00000000
+        0x002c3b2c = 0x00000000
+        0x002c3b28 = 0x00000000
+
+002c3b3c 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3b58 = 0x00000000
+        0x002c3b54 = 0x00000000
+        0x002c3b50 = 0x00000000
+        0x002c3b68 = 0x00000000
+        0x002c3b64 = 0x00000000
+
+002c3b78 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3b94 = 0x00000000
+        0x002c3b90 = 0x00000000
+        0x002c3b8c = 0x00000000
+        0x002c3ba4 = 0x00000000
+        0x002c3ba0 = 0x00000000
+
+002c3bb4 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3bd0 = 0x00000000
+        0x002c3bcc = 0x00000000
+        0x002c3bc8 = 0x00000000
+        0x002c3be0 = 0x00000000
+        0x002c3bdc = 0x00000000
+
+002c3bf0 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3c0c = 0x00000000
+        0x002c3c08 = 0x00000000
+        0x002c3c04 = 0x00000000
+        0x002c3c1c = 0x00000000
+        0x002c3c18 = 0x00000000
+
+002c3c2c 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3c48 = 0x00000000
+        0x002c3c44 = 0x00000000
+        0x002c3c40 = 0x00000000
+        0x002c3c58 = 0x00000000
+        0x002c3c54 = 0x00000000
+
+002c3c68 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3c84 = 0x00000000
+        0x002c3c80 = 0x00000000
+        0x002c3c7c = 0x00000000
+        0x002c3c94 = 0x00000000
+        0x002c3c90 = 0x00000000
+
+002c3ca4 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3cc0 = 0x00000000
+        0x002c3cbc = 0x00000000
+        0x002c3cb8 = 0x00000000
+        0x002c3cd0 = 0x00000000
+        0x002c3ccc = 0x00000000
+
+002c3ce0 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3cfc = 0x00000000
+        0x002c3cf8 = 0x00000000
+        0x002c3cf4 = 0x00000000
+        0x002c3d0c = 0x00000000
+        0x002c3d08 = 0x00000000
+
+002c3d1c 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3d38 = 0x00000000
+        0x002c3d34 = 0x00000000
+        0x002c3d30 = 0x00000000
+        0x002c3d48 = 0x00000000
+        0x002c3d44 = 0x00000000
+
+002c3d58 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3d74 = 0x00000000
+        0x002c3d70 = 0x00000000
+        0x002c3d6c = 0x00000000
+        0x002c3d84 = 0x00000000
+        0x002c3d80 = 0x00000000
+
+002c3d94 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3db0 = 0x00000000
+        0x002c3dac = 0x00000000
+        0x002c3da8 = 0x00000000
+        0x002c3dc0 = 0x00000000
+        0x002c3dbc = 0x00000000
+
+002c3dd0 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3dec = 0x00000000
+        0x002c3de8 = 0x00000000
+        0x002c3de4 = 0x00000000
+        0x002c3dfc = 0x00000000
+        0x002c3df8 = 0x00000000
+
+002c3e0c 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3e28 = 0x00000000
+        0x002c3e24 = 0x00000000
+        0x002c3e20 = 0x00000000
+        0x002c3e38 = 0x00000000
+        0x002c3e34 = 0x00000000
+
+002c3e48 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3e64 = 0x00000000
+        0x002c3e60 = 0x00000000
+        0x002c3e5c = 0x00000000
+        0x002c3e74 = 0x00000000
+        0x002c3e70 = 0x00000000
+
+002c3e84 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3ea0 = 0x00000000
+        0x002c3e9c = 0x00000000
+        0x002c3e98 = 0x00000000
+        0x002c3eb0 = 0x00000000
+        0x002c3eac = 0x00000000
+
+002c3ec0 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3edc = 0x00000000
+        0x002c3ed8 = 0x00000000
+        0x002c3ed4 = 0x00000000
+        0x002c3eec = 0x00000000
+        0x002c3ee8 = 0x00000000
+
+002c3efc 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3f18 = 0x00000000
+        0x002c3f14 = 0x00000000
+        0x002c3f10 = 0x00000000
+        0x002c3f28 = 0x00000000
+        0x002c3f24 = 0x00000000
+
+002c3f38 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3f54 = 0x00000000
+        0x002c3f50 = 0x00000000
+        0x002c3f4c = 0x00000000
+        0x002c3f64 = 0x00000000
+        0x002c3f60 = 0x00000000
+
+002c3f74 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3f90 = 0x00000000
+        0x002c3f8c = 0x00000000
+        0x002c3f88 = 0x00000000
+        0x002c3fa0 = 0x00000000
+        0x002c3f9c = 0x00000000
+
+002c3fb0 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c3fcc = 0x00000000
+        0x002c3fc8 = 0x00000000
+        0x002c3fc4 = 0x00000000
+        0x002c3fdc = 0x00000000
+        0x002c3fd8 = 0x00000000
+
+002c3fec 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c4008 = 0x00000000
+        0x002c4004 = 0x00000000
+        0x002c4000 = 0x00000000
+        0x002c4018 = 0x00000000
+        0x002c4014 = 0x00000000
+
+002c4028 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c4044 = 0x00000000
+        0x002c4040 = 0x00000000
+        0x002c403c = 0x00000000
+        0x002c4054 = 0x00000000
+        0x002c4050 = 0x00000000
+
+002c4064 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c4080 = 0x00000000
+        0x002c407c = 0x00000000
+        0x002c4078 = 0x00000000
+        0x002c4090 = 0x00000000
+        0x002c408c = 0x00000000
+
+002c40a0 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c40bc = 0x00000000
+        0x002c40b8 = 0x00000000
+        0x002c40b4 = 0x00000000
+        0x002c40cc = 0x00000000
+        0x002c40c8 = 0x00000000
+
+002c40dc 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c40f8 = 0x00000000
+        0x002c40f4 = 0x00000000
+        0x002c40f0 = 0x00000000
+        0x002c4108 = 0x00000000
+        0x002c4104 = 0x00000000
+
+002c4118 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c4134 = 0x00000000
+        0x002c4130 = 0x00000000
+        0x002c412c = 0x00000000
+        0x002c4144 = 0x00000000
+        0x002c4140 = 0x00000000
+
+002c4154 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c4170 = 0x00000000
+        0x002c416c = 0x00000000
+        0x002c4168 = 0x00000000
+        0x002c4180 = 0x00000000
+        0x002c417c = 0x00000000
+
+002c4190 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c41ac = 0x00000000
+        0x002c41a8 = 0x00000000
+        0x002c41a4 = 0x00000000
+        0x002c41bc = 0x00000000
+        0x002c41b8 = 0x00000000
+
+002c41cc 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c41e8 = 0x00000000
+        0x002c41e4 = 0x00000000
+        0x002c41e0 = 0x00000000
+        0x002c41f8 = 0x00000000
+        0x002c41f4 = 0x00000000
+
+002c4208 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c4224 = 0x00000000
+        0x002c4220 = 0x00000000
+        0x002c421c = 0x00000000
+        0x002c4234 = 0x00000000
+        0x002c4230 = 0x00000000
+
+002c4244 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c4260 = 0x00000000
+        0x002c425c = 0x00000000
+        0x002c4258 = 0x00000000
+        0x002c4270 = 0x00000000
+        0x002c426c = 0x00000000
+
+002c4280 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c429c = 0x00000000
+        0x002c4298 = 0x00000000
+        0x002c4294 = 0x00000000
+        0x002c42ac = 0x00000000
+        0x002c42a8 = 0x00000000
+
+002c42bc 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c42d8 = 0x00000000
+        0x002c42d4 = 0x00000000
+        0x002c42d0 = 0x00000000
+        0x002c42e8 = 0x00000000
+        0x002c42e4 = 0x00000000
+
+002c42f8 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c4314 = 0x00000000
+        0x002c4310 = 0x00000000
+        0x002c430c = 0x00000000
+        0x002c4324 = 0x00000000
+        0x002c4320 = 0x00000000
+
+002c4334 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c4350 = 0x00000000
+        0x002c434c = 0x00000000
+        0x002c4348 = 0x00000000
+        0x002c4360 = 0x00000000
+        0x002c435c = 0x00000000
+
+002c4370 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c438c = 0x00000000
+        0x002c4388 = 0x00000000
+        0x002c4384 = 0x00000000
+        0x002c439c = 0x00000000
+        0x002c4398 = 0x00000000
+
+002c43ac 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c43c8 = 0x00000000
+        0x002c43c4 = 0x00000000
+        0x002c43c0 = 0x00000000
+        0x002c43d8 = 0x00000000
+        0x002c43d4 = 0x00000000
+
+002c43e8 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c4404 = 0x00000000
+        0x002c4400 = 0x00000000
+        0x002c43fc = 0x00000000
+        0x002c4414 = 0x00000000
+        0x002c4410 = 0x00000000
+
+002c4424 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c4440 = 0x00000000
+        0x002c443c = 0x00000000
+        0x002c4438 = 0x00000000
+        0x002c4450 = 0x00000000
+        0x002c444c = 0x00000000
+
+002c4460 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c447c = 0x00000000
+        0x002c4478 = 0x00000000
+        0x002c4474 = 0x00000000
+        0x002c448c = 0x00000000
+        0x002c4488 = 0x00000000
+
+002c449c 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c44b8 = 0x00000000
+        0x002c44b4 = 0x00000000
+        0x002c44b0 = 0x00000000
+        0x002c44c8 = 0x00000000
+        0x002c44c4 = 0x00000000
+
+002c44d8 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c44f4 = 0x00000000
+        0x002c44f0 = 0x00000000
+        0x002c44ec = 0x00000000
+        0x002c4504 = 0x00000000
+        0x002c4500 = 0x00000000
+
+002c4514 004d079c FileExplorer.MainForm.RecursivelyFillTreeview(System.Windows.Forms.TreeNode, System.String)
+    PARAMETERS:
+        this = 0x026290e8
+        node = 0x0264eff8
+        path = 0x0262996c
+    LOCALS:
+        0x002c4530 = 0x00000000
+        0x002c452c = 0x00000000
+        0x002c4528 = 0x00000000
+        0x002c4540 = 0x00000000
+        0x002c453c = 0x00000000
+
+<interrupted>
+0:000> !do 0x0262996c
+Name: System.String
+MethodTable: 704388c0
+EEClass: 701fa498
+Size: 62(0x3e) bytes
+ (C:\Windows\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll)
+String: C:\Program Files (x86)
+Fields:
+      MT    Field   Offset                 Type VT     Attr    Value Name
+7043ab0c  4000096        4         System.Int32  1 instance       23 m_arrayLength
+7043ab0c  4000097        8         System.Int32  1 instance       22 m_stringLength
+704395a0  4000098        c          System.Char  1 instance       43 m_firstChar
+704388c0  4000099       10        System.String  0   shared   static Empty
+    >> Domain:Value  007731a8:025a1198 <<
+704394f0  400009a       14        System.Char[]  0   shared   static WhitespaceChars
+    >> Domain:Value  007731a8:025a1750 <<
+0:000> q
+quit:
+Closing open log file C:\temp\dndebug\1_Crash.log

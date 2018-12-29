@@ -1,0 +1,198 @@
+//**********************************************************************
+//find out were threads are
+//**********************************************************************
+
+:005> 
+OS Thread Id: 0x1ebc (5)
+Child SP       IP Call Site
+04d9f21c 7763015d [HelperMethodFrame_1OBJ: 04d9f21c] System.Threading.WaitHandle.WaitOneNative(System.Runtime.InteropServices.SafeHandle, UInt32, Boolean, Boolean)
+04d9f300 711f3901 System.Threading.WaitHandle.InternalWaitOne(System.Runtime.InteropServices.SafeHandle, Int64, Boolean, Boolean)
+04d9f318 711f38c8 System.Threading.WaitHandle.WaitOne(Int32, Boolean)
+04d9f32c 711f389e System.Threading.WaitHandle.WaitOne()
+04d9f334 0041076b SimpleWriteApp.MySmartReaderWriterLock.LockForWriting() [D:\courses\NET Debugging\Exercises\10_Deadlock\SimpleWriteApp\Program.cs @ 40]
+04d9f34c 00410612 SimpleWriteApp.Program.<Main>b__1(System.Object) [D:\courses\NET Debugging\Exercises\10_Deadlock\SimpleWriteApp\Program.cs @ 68]
+04d9f360 7115fb72 System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(System.Object)
+04d9f368 7116a417 System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+04d9f3d4 7116a366 System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+04d9f3e8 7115fd30 System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+04d9f3fc 7120ebef System.Threading.ThreadPoolWorkQueue.Dispatch()
+04d9f44c 7120eaba System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+04d9f674 720b1396 [DebuggerU2MCatchHandlerFrame: 04d9f674] 
+
+
+
+!sync0:005> ~4s
+eax=00000000 ebx=04c8f17c ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+eip=7763015d esp=04c8f12c ebp=04c8f1c8 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!ZwWaitForMultipleObjects+0x15:
+7763015d 83c404          add     esp,4
+0:004> !CLRStack
+OS Thread Id: 0x2190 (4)
+Child SP       IP Call Site
+04c8f38c 7763015d [HelperMethodFrame_1OBJ: 04c8f38c] System.Threading.WaitHandle.WaitOneNative(System.Runtime.InteropServices.SafeHandle, UInt32, Boolean, Boolean)
+04c8f470 711f3901 System.Threading.WaitHandle.InternalWaitOne(System.Runtime.InteropServices.SafeHandle, Int64, Boolean, Boolean)
+04c8f488 711f38c8 System.Threading.WaitHandle.WaitOne(Int32, Boolean)
+04c8f49c 711f389e System.Threading.WaitHandle.WaitOne()
+04c8f4a4 0041076b SimpleWriteApp.MySmartReaderWriterLock.LockForWriting() [D:\courses\NET Debugging\Exercises\10_Deadlock\SimpleWriteApp\Program.cs @ 40]
+04c8f4bc 0041057a SimpleWriteApp.Program.<Main>b__0(System.Object) [D:\courses\NET Debugging\Exercises\10_Deadlock\SimpleWriteApp\Program.cs @ 59]
+04c8f4d0 7115fb72 System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(System.Object)
+04c8f4d8 7116a417 System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+04c8f544 7116a366 System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+04c8f558 7115fd30 System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+04c8f56c 7120ebef System.Threading.ThreadPoolWorkQueue.Dispatch()
+04c8f5bc 7120eaba System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+04c8f7e4 720b1396 [DebuggerU2MCatchHandlerFrame: 04c8f7e4] 
+
+
+//**********************************************************************
+//get address for class which locks
+//**********************************************************************
+ 
+0:004> !dumpheap -type MySmartReaderWriterLock
+ Address       MT     Size
+0247433c 001c4df8       16     
+024762e4 001c4df8       16     
+
+Statistics:
+      MT    Count    TotalSize Class Name
+001c4df8        2           32 SimpleWriteApp.MySmartReaderWriterLock
+Total 2 objects
+
+//**********************************************************************
+//see IL code of method : MySmartReaderWriterLock.LockForWriting()
+//**********************************************************************
+
+0:004> !dumpmt -md 001c4df8
+EEClass:         001c1a38
+Module:          001c3fbc
+Name:            SimpleWriteApp.MySmartReaderWriterLock
+mdToken:         02000002
+File:            C:\Users\hadrahanat\Desktop\Performance .net\NET Debugging\Exercises\10_Deadlock\Binaries\SimpleWriteApp.exe
+BaseSize:        0x10
+ComponentSize:   0x0
+Slots in VTable: 9
+Number of IFaces in IFaceMap: 0
+--------------------------------------
+MethodDesc Table
+   Entry MethodDe    JIT Name
+712019c8 70e661fc PreJIT System.Object.ToString()
+71207850 70e66204 PreJIT System.Object.Equals(System.Object)
+7120bd80 70e66224 PreJIT System.Object.GetHashCode()
+7115dbe8 70e66238 PreJIT System.Object.Finalize()
+00410650 001c4db0    JIT SimpleWriteApp.MySmartReaderWriterLock..ctor(Int32)
+00410081 001c4dbc   NONE SimpleWriteApp.MySmartReaderWriterLock.LockForReading()
+00410085 001c4dc8   NONE SimpleWriteApp.MySmartReaderWriterLock.UnlockForReading()
+00410720 001c4dd4    JIT SimpleWriteApp.MySmartReaderWriterLock.LockForWriting()
+0041008d 001c4de0   NONE SimpleWriteApp.MySmartReaderWriterLock.UnlockForWriting()
+0:004> !dumpil 001c4dd4
+ilAddr = 009c20a8
+IL_0000: nop 
+IL_0001: ldc.i4.0 
+IL_0002: stloc.0 
+IL_0003: br.s IL_001e
+IL_0005: nop 
+IL_0006: ldc.i4.1 
+IL_0007: call System.Threading.Thread::Sleep 
+IL_000c: nop 
+IL_000d: ldarg.0 
+IL_000e: ldfld SimpleWriteApp.MySmartReaderWriterLock::_sem
+IL_0013: callvirt System.Threading.WaitHandle::WaitOne 
+IL_0018: pop 
+IL_0019: nop 
+IL_001a: ldloc.0 
+IL_001b: ldc.i4.1 
+IL_001c: add 
+IL_001d: stloc.0 
+IL_001e: ldloc.0 
+IL_001f: ldarg.0 
+IL_0020: ldfld SimpleWriteApp.MySmartReaderWriterLock::_maxReaders
+IL_0025: clt 
+IL_0027: stloc.1 
+IL_0028: ldloc.1 
+IL_0029: brtrue.s IL_0105
+IL_002b: ret 
+
+//**********************************************************************
+//get address for class which locks
+//**********************************************************************
+ 
+0:004> !dumpheap -type MySmartReaderWriterLock
+ Address       MT     Size
+0247433c 001c4df8       16     
+024762e4 001c4df8       16    
+
+
+//**********************************************************************
+// dump object : MySmartReaderWriterLock - to get semaphore address
+//**********************************************************************
+
+//****************************for object on thread1 
+
+0:004> !do 0247433c
+Name:        SimpleWriteApp.MySmartReaderWriterLock
+MethodTable: 001c4df8
+EEClass:     001c1a38
+Size:        16(0x10) bytes
+File:        C:\Users\hadrahanat\Desktop\Performance .net\NET Debugging\Exercises\10_Deadlock\Binaries\SimpleWriteApp.exe
+Fields:
+      MT    Field   Offset                 Type VT     Attr    Value Name
+7068e37c  4000001        4 ...reading.Semaphore  0 instance 02474698 _sem
+7129f6bc  4000002        8         System.Int32  1 instance       10 _maxReaders
+
+//****************************for object on thread2
+
+0:005> !do 024762e4
+Name:        SimpleWriteApp.MySmartReaderWriterLock
+MethodTable: 001c4df8
+EEClass:     001c1a38
+Size:        16(0x10) bytes
+File:        C:\Users\hadrahanat\Desktop\Performance .net\NET Debugging\Exercises\10_Deadlock\Binaries\SimpleWriteApp.exe
+Fields:
+      MT    Field   Offset                 Type VT     Attr    Value Name
+7068e37c  4000001        4 ...reading.Semaphore  0 instance 024765a4 _sem
+7129f6bc  4000002        8         System.Int32  1 instance       10 _maxReaders
+
+
+
+//**********************************************************************
+// dump semaphore:  (Addresses : 02474698 / 024765a4 )
+//**********************************************************************
+
+//****************************for sem on thread1 
+
+0:004> !do 02474698 
+Name:        System.Threading.Semaphore
+MethodTable: 7068e37c
+EEClass:     7047d5f4
+Size:        24(0x18) bytes
+File:        C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll
+Fields:
+      MT    Field   Offset                 Type VT     Attr    Value Name
+7129dbd4  4000577        4        System.Object  0 instance 00000000 __identity
+7129c00c  40018fc        c        System.IntPtr  1 instance      29c waitHandle
+7129b208  40018fd        8 ...es.SafeWaitHandle  0 instance 024746c8 safeWaitHandle
+712978b4  40018fe       10       System.Boolean  1 instance        0 hasThreadAffinity
+7129c00c  40018ff      e40        System.IntPtr  1   shared   static InvalidHandle
+    >> Domain:Value  006cacd0:ffffffff <<
+
+//****************************for sem on thread2
+
+0:005> !do 024765a4
+Name:        System.Threading.Semaphore
+MethodTable: 7068e37c
+EEClass:     7047d5f4
+Size:        24(0x18) bytes
+File:        C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll
+Fields:
+      MT    Field   Offset                 Type VT     Attr    Value Name
+7129dbd4  4000577        4        System.Object  0 instance 00000000 __identity
+7129c00c  40018fc        c        System.IntPtr  1 instance      2a0 waitHandle
+7129b208  40018fd        8 ...es.SafeWaitHandle  0 instance 024765bc safeWaitHandle
+712978b4  40018fe       10       System.Boolean  1 instance        0 hasThreadAffinity
+7129c00c  40018ff      e40        System.IntPtr  1   shared   static InvalidHandle
+    >> Domain:Value  006cacd0:ffffffff <<
+
+
+
+

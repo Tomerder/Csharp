@@ -1,0 +1,4 @@
+C:\Courses\NET Debugging\Exercises\9_StrangeBug\Sources\bin\Release\FileAccessEmulation.exe
+C:\Courses\NET Debugging\Exercises\9_StrangeBug\Sources\bin\Release\FileAccessEmulation.pdb
+C:\Courses\NET Debugging\Exercises\9_StrangeBug\Sources\obj\x86\Release\FileAccessEmulation.exe
+C:\Courses\NET Debugging\Exercises\9_StrangeBug\Sources\obj\x86\Release\FileAccessEmulation.pdb

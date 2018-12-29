@@ -1,0 +1,4 @@
+C:\Courses\NET Debugging\Exercises\12_OOMs\OOMs\OOM2\bin\Release\OOM2.exe
+C:\Courses\NET Debugging\Exercises\12_OOMs\OOMs\OOM2\bin\Release\OOM2.pdb
+C:\Courses\NET Debugging\Exercises\12_OOMs\OOMs\OOM2\obj\x86\Release\OOM2.exe
+C:\Courses\NET Debugging\Exercises\12_OOMs\OOMs\OOM2\obj\x86\Release\OOM2.pdb

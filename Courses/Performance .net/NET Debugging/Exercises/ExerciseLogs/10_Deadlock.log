@@ -1,0 +1,388 @@
+Opened log file 'C:\temp\dndebug\10_Deadlock.log'
+0:008> lm
+start    end        module name
+002b0000 002b8000   SimpleWriteApp   (deferred)             
+5f2e0000 600a3000   mscorlib_ni   (deferred)             
+616f0000 61f88000   System_ni   (deferred)             
+61f90000 625ff000   clr        (deferred)             
+6d420000 6d480000   clrjit     (deferred)             
+6d660000 6d71e000   MSVCR100_CLR0400   (deferred)             
+71310000 71376000   mscoreei   (deferred)             
+71380000 713ca000   MSCOREE    (deferred)             
+74890000 748a0000   nlssorting   (deferred)             
+74d90000 74d9c000   CRYPTBASE   (deferred)             
+74da0000 74e00000   SspiCli    (deferred)             
+74f20000 74f77000   SHLWAPI    (deferred)             
+75bd0000 75c6d000   USP10      (deferred)             
+75c70000 75c7a000   LPK        (deferred)             
+75c80000 75d10000   GDI32      (deferred)             
+75d10000 75db0000   ADVAPI32   (deferred)             
+75fe0000 7608c000   msvcrt     (deferred)             
+76130000 76220000   RPCRT4     (deferred)             
+76220000 76280000   IMM32      (deferred)             
+76300000 76319000   sechost    (deferred)             
+76320000 76420000   USER32     (deferred)             
+764b0000 764f6000   KERNELBASE   (deferred)             
+76500000 76600000   KERNEL32   (deferred)             
+76800000 7695c000   ole32      (deferred)             
+76c50000 76d1c000   MSCTF      (deferred)             
+77230000 773b0000   ntdll      (pdb symbols)          c:\symbols\wntdll.pdb\ACE318E6A2F44F23A6CC5628F10A7DDC2\wntdll.pdb
+0:008> .loadby sos clr
+0:008> !Threads
+ThreadCount:      6
+UnstartedThread:  0
+BackgroundThread: 5
+PendingThread:    0
+DeadThread:       0
+Hosted Runtime:   no
+                                   PreEmptive   GC Alloc                Lock
+       ID  OSID ThreadOBJ    State GC           Context       Domain   Count APT Exception
+   0    1  1998 009686b8      a020 Enabled  02302588:02303fe8 0092f8c8     1 MTA
+   2    2  20c0 00937850      b220 Enabled  00000000:00000000 0092f8c8     0 MTA (Finalizer)
+   4    3  1868 009870a8   3009220 Enabled  022feb4c:02300004 0092f8c8     0 MTA (Threadpool Worker)
+   5    4  1dd0 00987988   3009220 Enabled  022fc794:022fe004 0092f8c8     0 MTA (Threadpool Worker)
+   6    5  1c68 0098beb8   1009220 Enabled  02300204:02301fe8 0092f8c8     0 MTA (Threadpool Worker)
+   7    6   9d4 0098c3b0   1009220 Enabled  00000000:00000000 0092f8c8     0 MTA (Threadpool Worker)
+0:008> ~0s
+eax=00000001 ebx=004def34 ecx=00000000 edx=00000000 esi=00000003 edi=02302234
+eip=765b73ea esp=004dedcc ebp=004dee54 iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+KERNEL32!ReadConsoleInternal+0x15:
+765b73ea 83c404          add     esp,4
+0:000> !CLRStack
+OS Thread Id: 0x1998 (0)
+Child SP IP       Call Site
+004deebc 765b73ea [InlinedCallFrame: 004deebc] 
+004deeb8 5f5a1c8b DomainNeutralILStubClass.IL_STUB_PInvoke(Microsoft.Win32.SafeHandles.SafeFileHandle, Byte*, Int32, Int32 ByRef, IntPtr)*** WARNING: Unable to verify checksum for C:\Windows\assembly\NativeImages_v4.0.30319_32\mscorlib\246f1a5abb686b9dcdf22d3505b08cea\mscorlib.ni.dll
+
+004deebc 5fc0f7e8 [InlinedCallFrame: 004deebc] System.IO.__ConsoleStream.ReadFile(Microsoft.Win32.SafeHandles.SafeFileHandle, Byte*, Int32, Int32 ByRef, IntPtr)
+004def30 5fc0f7e8 System.IO.__ConsoleStream.ReadFileNative(Microsoft.Win32.SafeHandles.SafeFileHandle, Byte[], Int32, Int32, Int32, Int32 ByRef)
+004def5c 5fc0f6d0 System.IO.__ConsoleStream.Read(Byte[], Int32, Int32)
+004def7c 5f558bfb System.IO.StreamReader.ReadBuffer()
+004def90 5f53560a System.IO.StreamReader.ReadLine()
+004defb0 5fc15f45 System.IO.TextReader+SyncTextReader.ReadLine()
+004defc0 5fb0c292 System.Console.ReadLine()
+004defc8 001e011d SimpleWriteApp.Program.Main(System.String[])*** WARNING: Unable to verify checksum for C:\temp\dndebug\10_Deadlock\Binaries\SimpleWriteApp.exe
+ [D:\courses\NET Debugging\Exercises\10_Deadlock\SimpleWriteApp\Program.cs @ 73]
+004df200 61f921db [GCFrame: 004df200] 
+0:000> ~2s
+eax=00000000 ebx=043ef50c ecx=00000000 edx=00000000 esi=00000003 edi=00000000
+eip=772500ed esp=043ef4bc ebp=043ef558 iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+ntdll!ZwWaitForMultipleObjects+0x15:
+772500ed 83c404          add     esp,4
+0:002> !CLRStack
+OS Thread Id: 0x20c0 (2)
+Child SP IP       Call Site
+043ef6d8 772500ed [DebuggerU2MCatchHandlerFrame: 043ef6d8] 
+0:002> ~4s
+eax=00000000 ebx=04d2efac ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+eip=772500ed esp=04d2ef5c ebp=04d2eff8 iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+ntdll!ZwWaitForMultipleObjects+0x15:
+772500ed 83c404          add     esp,4
+0:004> !CLRStack
+OS Thread Id: 0x1868 (4)
+Child SP IP       Call Site
+04d2f22c 772500ed [HelperMethodFrame_1OBJ: 04d2f22c] System.Threading.WaitHandle.WaitOneNative(System.Runtime.InteropServices.SafeHandle, UInt32, Boolean, Boolean)
+04d2f2d4 5f58b5ef System.Threading.WaitHandle.InternalWaitOne(System.Runtime.InteropServices.SafeHandle, Int64, Boolean, Boolean)
+04d2f2f0 5f58b5ad System.Threading.WaitHandle.WaitOne(Int32, Boolean)
+04d2f308 5f58b570 System.Threading.WaitHandle.WaitOne()
+04d2f310 001e0366 SimpleWriteApp.MySmartReaderWriterLock.LockForWriting() [D:\courses\NET Debugging\Exercises\10_Deadlock\SimpleWriteApp\Program.cs @ 40]
+04d2f324 001e0225 SimpleWriteApp.Program.<Main>b__1(System.Object) [D:\courses\NET Debugging\Exercises\10_Deadlock\SimpleWriteApp\Program.cs @ 68]
+04d2f338 5f58d871 System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(System.Object)
+04d2f340 5f517ff4 System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+04d2f364 5f552b66 System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+04d2f378 5f5523f3 System.Threading.ThreadPoolWorkQueue.Dispatch()
+04d2f3c4 5f552299 System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+04d2f784 61f921db [DebuggerU2MCatchHandlerFrame: 04d2f784] 
+0:004> ~5s
+eax=00000000 ebx=047ff3bc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+eip=772500ed esp=047ff36c ebp=047ff408 iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+ntdll!ZwWaitForMultipleObjects+0x15:
+772500ed 83c404          add     esp,4
+0:005> !CLRStack
+OS Thread Id: 0x1dd0 (5)
+Child SP IP       Call Site
+047ff63c 772500ed [HelperMethodFrame_1OBJ: 047ff63c] System.Threading.WaitHandle.WaitOneNative(System.Runtime.InteropServices.SafeHandle, UInt32, Boolean, Boolean)
+047ff6e4 5f58b5ef System.Threading.WaitHandle.InternalWaitOne(System.Runtime.InteropServices.SafeHandle, Int64, Boolean, Boolean)
+047ff700 5f58b5ad System.Threading.WaitHandle.WaitOne(Int32, Boolean)
+047ff718 5f58b570 System.Threading.WaitHandle.WaitOne()
+047ff720 001e0366 SimpleWriteApp.MySmartReaderWriterLock.LockForWriting() [D:\courses\NET Debugging\Exercises\10_Deadlock\SimpleWriteApp\Program.cs @ 40]
+047ff734 001e0195 SimpleWriteApp.Program.<Main>b__0(System.Object) [D:\courses\NET Debugging\Exercises\10_Deadlock\SimpleWriteApp\Program.cs @ 59]
+047ff748 5f58d871 System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(System.Object)
+047ff750 5f517ff4 System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+047ff774 5f552b66 System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+047ff788 5f5523f3 System.Threading.ThreadPoolWorkQueue.Dispatch()
+047ff7d4 5f552299 System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+047ffb94 61f921db [DebuggerU2MCatchHandlerFrame: 047ffb94] 
+0:005> ~6s
+eax=00000000 ebx=00000000 ecx=00000000 edx=00000000 esi=000001ec edi=04f9f8e0
+eip=7724f861 esp=04f9f898 ebp=04f9f904 iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+ntdll!ZwWaitForSingleObject+0x15:
+7724f861 83c404          add     esp,4
+0:006> !CLRStack
+OS Thread Id: 0x1c68 (6)
+Child SP IP       Call Site
+GetFrameContext failed: 1
+0:006> ~7s
+eax=00000000 ebx=00000000 ecx=00000000 edx=00000000 esi=000001ec edi=051efa60
+eip=7724f861 esp=051efa18 ebp=051efa84 iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+ntdll!ZwWaitForSingleObject+0x15:
+7724f861 83c404          add     esp,4
+0:007> !CLRStack
+OS Thread Id: 0x9d4 (7)
+Child SP IP       Call Site
+GetFrameContext failed: 1
+0:007> ~4s
+eax=00000000 ebx=04d2efac ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+eip=772500ed esp=04d2ef5c ebp=04d2eff8 iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+ntdll!ZwWaitForMultipleObjects+0x15:
+772500ed 83c404          add     esp,4
+0:004> !CLRStack -a
+OS Thread Id: 0x1868 (4)
+Child SP IP       Call Site
+04d2f22c 772500ed [HelperMethodFrame_1OBJ: 04d2f22c] System.Threading.WaitHandle.WaitOneNative(System.Runtime.InteropServices.SafeHandle, UInt32, Boolean, Boolean)
+04d2f2d4 5f58b5ef System.Threading.WaitHandle.InternalWaitOne(System.Runtime.InteropServices.SafeHandle, Int64, Boolean, Boolean)
+    PARAMETERS:
+        waitableSafeHandle = <no data>
+        millisecondsTimeout = <no data>
+        hasThreadAffinity = <no data>
+        exitContext = <no data>
+    LOCALS:
+        <CLR reg> = 0x00000000
+
+04d2f2f0 5f58b5ad System.Threading.WaitHandle.WaitOne(Int32, Boolean)
+    PARAMETERS:
+        this = <no data>
+        millisecondsTimeout = <no data>
+        exitContext = <no data>
+
+04d2f308 5f58b570 System.Threading.WaitHandle.WaitOne()
+    PARAMETERS:
+        this = <no data>
+
+04d2f310 001e0366 SimpleWriteApp.MySmartReaderWriterLock.LockForWriting() [D:\courses\NET Debugging\Exercises\10_Deadlock\SimpleWriteApp\Program.cs @ 40]
+    PARAMETERS:
+        this (0x04d2f310) = 0x022fe304
+    LOCALS:
+        0x04d2f318 = 0x00000005
+        0x04d2f314 = 0x00000001
+
+04d2f324 001e0225 SimpleWriteApp.Program.<Main>b__1(System.Object) [D:\courses\NET Debugging\Exercises\10_Deadlock\SimpleWriteApp\Program.cs @ 68]
+    PARAMETERS:
+        _ (0x04d2f32c) = 0x00000000
+    LOCALS:
+        0x04d2f328 = 0x022fe304
+
+04d2f338 5f58d871 System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(System.Object)
+    PARAMETERS:
+        state = <no data>
+    LOCALS:
+        <no data>
+        <no data>
+
+04d2f340 5f517ff4 System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+    PARAMETERS:
+        executionContext = <no data>
+        callback = <no data>
+        state = <no data>
+        ignoreSyncCtx = <no data>
+    LOCALS:
+        <no data>
+
+04d2f364 5f552b66 System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+    PARAMETERS:
+        this = <no data>
+    LOCALS:
+        <no data>
+
+04d2f378 5f5523f3 System.Threading.ThreadPoolWorkQueue.Dispatch()
+    LOCALS:
+        0x04d2f398 = 0x295953a4
+        0x04d2f394 = 0x00000001
+        0x04d2f390 = 0x022fb848
+        0x04d2f380 = 0x022fe044
+        0x04d2f38c = 0x00000000
+        <no data>
+        <no data>
+        0x04d2f384 = 0x00000000
+
+04d2f3c4 5f552299 System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+    LOCALS:
+        <no data>
+        <no data>
+        <no data>
+        <no data>
+        <no data>
+
+04d2f784 61f921db [DebuggerU2MCatchHandlerFrame: 04d2f784] 
+0:004> !do 0x022fe304
+Name:        SimpleWriteApp.MySmartReaderWriterLock
+MethodTable: 001838fc
+EEClass:     00181970
+Size:        16(0x10) bytes
+File:        C:\temp\dndebug\10_Deadlock\Binaries\SimpleWriteApp.exe
+Fields:
+      MT    Field   Offset                 Type VT     Attr    Value Name
+618d5a1c  4000001        4 ...reading.Semaphore  0 instance 022fe650 _sem
+5f602978  4000002        8         System.Int32  1 instance       10 _maxReaders
+0:004> !do 022fe650 
+Name:        System.Threading.Semaphore
+MethodTable: 618d5a1c
+EEClass:     61751b04
+Size:        24(0x18) bytes
+File:        C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll
+Fields:
+      MT    Field   Offset                 Type VT     Attr    Value Name
+5f5ff5e8  40001cf        4        System.Object  0 instance 00000000 __identity
+5f5faa2c  4000694        c        System.IntPtr  1 instance      26c waitHandle
+5f5fb298  4000695        8 ...es.SafeWaitHandle  0 instance 022fe668 safeWaitHandle
+5f60662c  4000696       10       System.Boolean  1 instance        0 hasThreadAffinity
+5f5faa2c  4000697      b7c        System.IntPtr  1   shared   static InvalidHandle
+    >> Domain:Value  0092f8c8:ffffffff <<
+5f602978  4000537      8f4         System.Int32  1   static      260 MAX_PATH
+0:004> !handle 26c f
+Handle 26c
+  Type         	Semaphore
+  Attributes   	0
+  GrantedAccess	0x1f0003:
+         Delete,ReadControl,WriteDac,WriteOwner,Synch
+         QueryState,ModifyState
+  HandleCount  	3
+  PointerCount 	7
+  Name         	\Sessions\1\BaseNamedObjects\RWLSemaphore_10
+  Object Specific Information
+    Semaphore Count 0
+    Semaphore Limit 10
+0:004> ~5s
+eax=00000000 ebx=047ff3bc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+eip=772500ed esp=047ff36c ebp=047ff408 iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+ntdll!ZwWaitForMultipleObjects+0x15:
+772500ed 83c404          add     esp,4
+0:005> !CLRStack -a
+OS Thread Id: 0x1dd0 (5)
+Child SP IP       Call Site
+047ff63c 772500ed [HelperMethodFrame_1OBJ: 047ff63c] System.Threading.WaitHandle.WaitOneNative(System.Runtime.InteropServices.SafeHandle, UInt32, Boolean, Boolean)
+047ff6e4 5f58b5ef System.Threading.WaitHandle.InternalWaitOne(System.Runtime.InteropServices.SafeHandle, Int64, Boolean, Boolean)
+    PARAMETERS:
+        waitableSafeHandle = <no data>
+        millisecondsTimeout = <no data>
+        hasThreadAffinity = <no data>
+        exitContext = <no data>
+    LOCALS:
+        <CLR reg> = 0x00000000
+
+047ff700 5f58b5ad System.Threading.WaitHandle.WaitOne(Int32, Boolean)
+    PARAMETERS:
+        this = <no data>
+        millisecondsTimeout = <no data>
+        exitContext = <no data>
+
+047ff718 5f58b570 System.Threading.WaitHandle.WaitOne()
+    PARAMETERS:
+        this = <no data>
+
+047ff720 001e0366 SimpleWriteApp.MySmartReaderWriterLock.LockForWriting() [D:\courses\NET Debugging\Exercises\10_Deadlock\SimpleWriteApp\Program.cs @ 40]
+    PARAMETERS:
+        this (0x047ff720) = 0x022fc3a0
+    LOCALS:
+        0x047ff728 = 0x00000005
+        0x047ff724 = 0x00000001
+
+047ff734 001e0195 SimpleWriteApp.Program.<Main>b__0(System.Object) [D:\courses\NET Debugging\Exercises\10_Deadlock\SimpleWriteApp\Program.cs @ 59]
+    PARAMETERS:
+        _ (0x047ff73c) = 0x00000000
+    LOCALS:
+        0x047ff738 = 0x022fc3a0
+
+047ff748 5f58d871 System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(System.Object)
+    PARAMETERS:
+        state = <no data>
+    LOCALS:
+        <no data>
+        <no data>
+
+047ff750 5f517ff4 System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+    PARAMETERS:
+        executionContext = <no data>
+        callback = <no data>
+        state = <no data>
+        ignoreSyncCtx = <no data>
+    LOCALS:
+        <no data>
+
+047ff774 5f552b66 System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+    PARAMETERS:
+        this = <no data>
+    LOCALS:
+        <no data>
+
+047ff788 5f5523f3 System.Threading.ThreadPoolWorkQueue.Dispatch()
+    LOCALS:
+        0x047ff7a8 = 0x295953a4
+        0x047ff7a4 = 0x00000001
+        0x047ff7a0 = 0x022fb7f0
+        0x047ff790 = 0x022fc064
+        0x047ff79c = 0x00000000
+        <no data>
+        <no data>
+        0x047ff794 = 0x00000000
+
+047ff7d4 5f552299 System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+    LOCALS:
+        <no data>
+        <no data>
+        <no data>
+        <no data>
+        <no data>
+
+047ffb94 61f921db [DebuggerU2MCatchHandlerFrame: 047ffb94] 
+0:005> !do 26c 
+<Note: this object has an invalid CLASS field>
+Invalid object
+0:005> !do 0x022fc3a0
+Name:        SimpleWriteApp.MySmartReaderWriterLock
+MethodTable: 001838fc
+EEClass:     00181970
+Size:        16(0x10) bytes
+File:        C:\temp\dndebug\10_Deadlock\Binaries\SimpleWriteApp.exe
+Fields:
+      MT    Field   Offset                 Type VT     Attr    Value Name
+618d5a1c  4000001        4 ...reading.Semaphore  0 instance 022fc714 _sem
+5f602978  4000002        8         System.Int32  1 instance       10 _maxReaders
+0:005> !do 022fc714 
+Name:        System.Threading.Semaphore
+MethodTable: 618d5a1c
+EEClass:     61751b04
+Size:        24(0x18) bytes
+File:        C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll
+Fields:
+      MT    Field   Offset                 Type VT     Attr    Value Name
+5f5ff5e8  40001cf        4        System.Object  0 instance 00000000 __identity
+5f5faa2c  4000694        c        System.IntPtr  1 instance      270 waitHandle
+5f5fb298  4000695        8 ...es.SafeWaitHandle  0 instance 022fc72c safeWaitHandle
+5f60662c  4000696       10       System.Boolean  1 instance        0 hasThreadAffinity
+5f5faa2c  4000697      b7c        System.IntPtr  1   shared   static InvalidHandle
+    >> Domain:Value  0092f8c8:ffffffff <<
+5f602978  4000537      8f4         System.Int32  1   static      260 MAX_PATH
+0:005> !handle 270 f
+Handle 270
+  Type         	Semaphore
+  Attributes   	0
+  GrantedAccess	0x1f0003:
+         Delete,ReadControl,WriteDac,WriteOwner,Synch
+         QueryState,ModifyState
+  HandleCount  	3
+  PointerCount 	7
+  Name         	\Sessions\1\BaseNamedObjects\RWLSemaphore_10
+  Object Specific Information
+    Semaphore Count 0
+    Semaphore Limit 10
+0:005> q
+quit:

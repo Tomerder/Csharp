@@ -1,0 +1,5 @@
+C:\Courses\NET Debugging\Exercises\12_OOMs\OOMs\OOM1\bin\Debug\OOM1.exe
+C:\Courses\NET Debugging\Exercises\12_OOMs\OOMs\OOM1\bin\Debug\OOM1.pdb
+C:\Courses\NET Debugging\Exercises\12_OOMs\OOMs\OOM1\obj\x86\Debug\OOM1.csprojResolveAssemblyReference.cache
+C:\Courses\NET Debugging\Exercises\12_OOMs\OOMs\OOM1\obj\x86\Debug\OOM1.exe
+C:\Courses\NET Debugging\Exercises\12_OOMs\OOMs\OOM1\obj\x86\Debug\OOM1.pdb

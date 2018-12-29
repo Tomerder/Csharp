@@ -1,0 +1,11 @@
+<root>
+  <GLOBAL_CODE>
+    static volatile int _i;
+    static byte[] _data = new byte[10000];
+  </GLOBAL_CODE>
+  <SETUP_CODE/>
+  <TEARDOWN_CODE/>
+  <MEASURE_CODE>
+    foreach (byte b in _data) { _i += b; }
+  </MEASURE_CODE>
+</root>

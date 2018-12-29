@@ -1,0 +1,27 @@
+HKCR
+{
+	HostControl.SimpleHostControl.1 = s 'SimpleHostControl Class'
+	{
+		CLSID = s '{43BDF965-5383-44E8-8F09-EEF75192170A}'
+	}
+	HostControl.SimpleHostControl = s 'SimpleHostControl Class'
+	{
+		CLSID = s '{43BDF965-5383-44E8-8F09-EEF75192170A}'
+		CurVer = s 'HostControl.SimpleHostControl.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {43BDF965-5383-44E8-8F09-EEF75192170A} = s 'SimpleHostControl Class'
+		{
+			ProgID = s 'HostControl.SimpleHostControl.1'
+			VersionIndependentProgID = s 'HostControl.SimpleHostControl'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{3B31020A-2973-4982-A0A4-FD3C40BFC36D}'
+		}
+	}
+}

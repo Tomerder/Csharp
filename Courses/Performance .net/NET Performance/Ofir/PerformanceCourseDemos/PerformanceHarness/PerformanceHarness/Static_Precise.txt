@@ -1,0 +1,18 @@
+using System;
+using PerformanceHarness;
+
+[MeasurableClass]
+public static class PreciseStaticCtorTest
+{
+     private static int x;
+     static PreciseStaticCtorTest() { }
+
+	[MeasurableMethod]
+	static void Measure()
+	{
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+                   x = 5;
+		}
+	}
+}

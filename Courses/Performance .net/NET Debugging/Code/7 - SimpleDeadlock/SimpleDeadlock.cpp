@@ -1,0 +1,46 @@
+// SimpleDeadlock.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+#include <windows.h>
+
+HANDLE g_hMutex1;
+HANDLE g_hMutex2;
+
+DWORD WINAPI Thread1(LPVOID)
+{
+	::WaitForSingleObject(g_hMutex1, INFINITE);
+	::Sleep(500);
+	::WaitForSingleObject(g_hMutex2, INFINITE);
+	::Sleep(1000);
+	::ReleaseMutex(g_hMutex2);
+	::ReleaseMutex(g_hMutex1);
+	return 0;
+}
+
+DWORD WINAPI Thread2(LPVOID)
+{
+	::WaitForSingleObject(g_hMutex2, INFINITE);
+	::Sleep(500);
+	::WaitForSingleObject(g_hMutex1, INFINITE);
+	::Sleep(1000);
+	::ReleaseMutex(g_hMutex1);
+	::ReleaseMutex(g_hMutex2);
+	return 0;
+}
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	g_hMutex1 = ::CreateMutex(NULL, FALSE, L"My First Mutex");
+	g_hMutex2 = ::CreateMutex(NULL, FALSE, L"My Second Mutex");
+
+	HANDLE rghThreads[2];
+	rghThreads[0] = ::CreateThread(NULL, 0, Thread1, NULL, 0, NULL);
+	rghThreads[1] = ::CreateThread(NULL, 0, Thread2, NULL, 0, NULL);
+
+	::WaitForMultipleObjects(2, rghThreads, TRUE, INFINITE);
+
+	return 0;
+}
+

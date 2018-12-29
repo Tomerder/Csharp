@@ -1,0 +1,7 @@
+C:\Users\Ofir\SkyDrive\Projects\PerformanceHarness\PerformanceHarnessConsoleTester\bin\Debug\PerformanceHarnessConsoleTester.exe
+C:\Users\Ofir\SkyDrive\Projects\PerformanceHarness\PerformanceHarnessConsoleTester\bin\Debug\PerformanceHarnessConsoleTester.pdb
+C:\Users\Ofir\SkyDrive\Projects\PerformanceHarness\PerformanceHarnessConsoleTester\bin\Debug\PerformanceHarness.dll
+C:\Users\Ofir\SkyDrive\Projects\PerformanceHarness\PerformanceHarnessConsoleTester\bin\Debug\PerformanceHarness.pdb
+C:\Users\Ofir\SkyDrive\Projects\PerformanceHarness\PerformanceHarnessConsoleTester\obj\Debug\PerformanceHarnessConsoleTester.csprojResolveAssemblyReference.cache
+C:\Users\Ofir\SkyDrive\Projects\PerformanceHarness\PerformanceHarnessConsoleTester\obj\Debug\PerformanceHarnessConsoleTester.exe
+C:\Users\Ofir\SkyDrive\Projects\PerformanceHarness\PerformanceHarnessConsoleTester\obj\Debug\PerformanceHarnessConsoleTester.pdb

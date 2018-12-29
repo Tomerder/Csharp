@@ -1,0 +1,12 @@
+
+1. Run the MemoryExhaustingService.exe application from the Binaries folder.
+
+2. Monitor its memory usage with Performance Monitor and make sure there is a memory leak. Explain why this is a managed memory leak.
+
+3. Attach a debugger or take a hang dump of the application and inspect the objects in memory and their roots. (See previous exercises for a more detailed description of this process.)
+
+4. Repeat step #3 multiple times after letting the memory leak accumulate. Determine the root cause for the problem---the fix that needs to be made in the application's source code or configuration so that the memory leak does not occur.
+
+After completing this exercise, you might want to read the following post for a detailed diagnostic walkthrough of this situation:
+
+http://blogs.microsoft.co.il/blogs/sasha/archive/2010/08/19/the-case-of-the-rogue-heartbeat-timer.aspx

@@ -1,0 +1,16 @@
+C:\Users\Ofir\SkyDrive\Projects\PerformanceCourseDemos\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Ofir\SkyDrive\Projects\PerformanceCourseDemos\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Ofir\SkyDrive\Projects\PerformanceCourseDemos\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Ofir\SkyDrive\Projects\PerformanceCourseDemos\WindowsFormsApplication1\obj\Debug\RayTracerDemo.csprojResolveAssemblyReference.cache
+C:\Users\Ofir\SkyDrive\Projects\PerformanceCourseDemos\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Ofir\SkyDrive\Projects\PerformanceCourseDemos\WindowsFormsApplication1\obj\Debug\RayTracerDemo.csproj.GenerateResource.Cache
+C:\Users\Ofir\SkyDrive\Projects\PerformanceCourseDemos\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Ofir\SkyDrive\Projects\PerformanceCourseDemos\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\obj\Debug\WindowsFormsApplication1.exe
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\obj\Debug\WindowsFormsApplication1.pdb
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\bin\Debug\WindowsFormsApplication1.exe
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\bin\Debug\WindowsFormsApplication1.pdb
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\obj\Debug\RayTracerDemo.csprojResolveAssemblyReference.cache
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\RayTracerDemo\obj\Debug\RayTracerDemo.csproj.GenerateResource.Cache

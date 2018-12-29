@@ -1,0 +1,12 @@
+﻿
+public static class HelpfulUtilities {
+    public static unsafe $$$ ReadUnsafe(byte[] data, int offset)
+    {
+        //pin data, return address of the offset-th element in the array
+        fixed (byte* temp = &data[offset])
+        {
+            $$$ * p = ( $$$ *)temp; //Cast
+            return *p; //Dereference -- memory copy done by the JIT!
+        }
+    }
+}

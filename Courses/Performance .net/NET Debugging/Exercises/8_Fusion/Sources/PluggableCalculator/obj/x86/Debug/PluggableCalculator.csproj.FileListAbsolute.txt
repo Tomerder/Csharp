@@ -1,0 +1,10 @@
+C:\Courses\NET Debugging\Exercises\8_Fusion\Sources\PluggableCalculator\bin\Debug\PluggableCalculator.exe
+C:\Courses\NET Debugging\Exercises\8_Fusion\Sources\PluggableCalculator\bin\Debug\PluggableCalculator.pdb
+C:\Courses\NET Debugging\Exercises\8_Fusion\Sources\PluggableCalculator\bin\Debug\CalculatorInterfaces.dll
+C:\Courses\NET Debugging\Exercises\8_Fusion\Sources\PluggableCalculator\bin\Debug\CalculatorInterfaces.pdb
+C:\Courses\NET Debugging\Exercises\8_Fusion\Sources\PluggableCalculator\obj\x86\Debug\PluggableCalculator.csprojResolveAssemblyReference.cache
+C:\Courses\NET Debugging\Exercises\8_Fusion\Sources\PluggableCalculator\obj\x86\Debug\PluggableCalculator.CalcMainForm.resources
+C:\Courses\NET Debugging\Exercises\8_Fusion\Sources\PluggableCalculator\obj\x86\Debug\PluggableCalculator.Properties.Resources.resources
+C:\Courses\NET Debugging\Exercises\8_Fusion\Sources\PluggableCalculator\obj\x86\Debug\PluggableCalculator.csproj.GenerateResource.Cache
+C:\Courses\NET Debugging\Exercises\8_Fusion\Sources\PluggableCalculator\obj\x86\Debug\PluggableCalculator.exe
+C:\Courses\NET Debugging\Exercises\8_Fusion\Sources\PluggableCalculator\obj\x86\Debug\PluggableCalculator.pdb

@@ -1,0 +1,10 @@
+
+1. Run the PluggableCalculator.exe application. It crashes with an exception during its initialization sequence because an assembly cannot be found. Close the application.
+
+2. Open a Visual Studio Command Prompt. Use "fuslogvw" to configure assembly bind logging (remember to check "Log all binds to disk" as well as provide a custom log path).
+
+3. Run the application again and inspect the Fusion log after the failure repeats. Look for the name of the assembly that failed to load and double-click that line in the UI to see a detailed log entry.
+
+4. What is the root cause of the exception? (Hint: Read the documentation for the AppDomainSetup.PrivateBinPath property.)
+
+5. Inspect the application's executable with .NET Reflector to find the line of code that configures the AppDomain inappropriately.

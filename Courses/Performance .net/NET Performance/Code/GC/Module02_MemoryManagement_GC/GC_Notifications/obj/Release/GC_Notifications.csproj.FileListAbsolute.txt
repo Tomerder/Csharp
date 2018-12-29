@@ -1,0 +1,14 @@
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\GC_Notifications\bin\Release\GC_Notifications.exe.config
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\GC_Notifications\bin\Release\GC_Notifications.exe
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\GC_Notifications\bin\Release\GC_Notifications.pdb
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\GC_Notifications\obj\Release\GC_Notifications.exe
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\GC_Notifications\obj\Release\GC_Notifications.pdb
+C:\Users\Ofir\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\GC_Notifications\bin\Release\GC_Notifications.exe.config
+C:\Users\Ofir\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\GC_Notifications\obj\Release\GC_Notifications.exe
+C:\Users\Ofir\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\GC_Notifications\obj\Release\GC_Notifications.pdb
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\GC_Notifications\bin\Release\GC_Notifications.exe.config
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\GC_Notifications\obj\Release\GC_Notifications.exe
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\GC_Notifications\obj\Release\GC_Notifications.pdb
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\GC_Notifications\bin\Release\GC_Notifications.exe
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\GC_Notifications\bin\Release\GC_Notifications.pdb
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\GC_Notifications\obj\Release\GC_Notifications.csprojResolveAssemblyReference.cache

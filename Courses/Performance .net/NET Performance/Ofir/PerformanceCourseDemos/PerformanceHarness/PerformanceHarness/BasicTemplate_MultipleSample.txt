@@ -1,0 +1,51 @@
+using System;
+using PerformanceHarness;
+
+[assembly: MeasurableClass(typeof(ForeachTest))]
+[assembly: MeasurableClass(typeof(ForTest))]
+[assembly: MeasurableClass(typeof(RandomTest))]
+
+public static class ForeachTest
+{
+	private static volatile int _x;
+
+	[MeasurableMethod]
+	static void Measure()
+	{
+		byte[] data = new byte[10000];
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+			foreach (byte b in data) { _x += b; }
+		}
+	}
+}
+
+public static class ForTest
+{
+	private static volatile int _x;
+
+	[MeasurableMethod]
+	static void Measure()
+	{
+		byte[] data = new byte[10000];
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+			for (int i = 0; i < data.Length; ++i) { _x += data[i]; }
+		}
+	}
+}
+
+public static class RandomTest
+{
+	private static volatile int _x;
+
+	[MeasurableMethod]
+	static void Measure()
+	{
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+			Random rnd = new Random();
+			_x = rnd.Next();
+		}
+	}
+}

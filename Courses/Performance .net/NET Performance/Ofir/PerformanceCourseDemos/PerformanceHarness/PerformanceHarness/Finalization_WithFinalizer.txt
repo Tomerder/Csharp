@@ -1,0 +1,29 @@
+using System;
+using PerformanceHarness;
+
+[MeasurableClass]
+public static class WithFinalizerTest
+{
+     class WithFinalizer { ~WithFinalizer() { } }
+
+     private static volatile object _obj;
+
+	[SetupMethod]
+	static void Setup()
+	{
+	}
+
+	[TeardownMethod]
+	static void Teardown()
+	{
+	}
+
+	[MeasurableMethod]
+	static void Measure()
+	{
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+              _obj = new WithFinalizer();
+		}
+	}
+}

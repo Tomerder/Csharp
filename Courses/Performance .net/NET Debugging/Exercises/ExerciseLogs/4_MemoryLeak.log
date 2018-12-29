@@ -1,0 +1,2218 @@
+Opened log file 'c:\temp\dndebug\4_MemoryLeak.log'
+0:005> lm
+start    end        module name
+00240000 0024a000   FileExplorer   (deferred)             
+681b0000 683e4000   System_Core_ni   (deferred)             
+6b4a0000 6b9d6000   System_Xml_ni   (deferred)             
+6b9e0000 6bad1000   System_Configuration_ni   (deferred)             
+6bb30000 6bb35000   shfolder   (deferred)             
+6e9c0000 6eb50000   gdiplus    (deferred)             
+6ec50000 6f82e000   System_Windows_Forms_ni   (deferred)             
+6f830000 6f9b7000   System_Drawing_ni   (deferred)             
+6f9c0000 70159000   System_ni   (deferred)             
+70160000 701bb000   mscorjit   (deferred)             
+701d0000 70cc8000   mscorlib_ni   (deferred)             
+70cd0000 70d6b000   MSVCR80    (deferred)             
+70d70000 71301000   mscorwks   (deferred)             
+71310000 71376000   mscoreei   (deferred)             
+71380000 713ca000   MSCOREE    (deferred)             
+715e0000 7177e000   comctl32   (deferred)             
+71dc0000 71dd3000   dwmapi     (deferred)             
+71de0000 71e60000   uxtheme    (deferred)             
+73f90000 73f9b000   profapi    (deferred)             
+74d90000 74d9c000   CRYPTBASE   (deferred)             
+74da0000 74e00000   SspiCli    (deferred)             
+74f20000 74f77000   SHLWAPI    (deferred)             
+74f80000 75bc9000   shell32    (deferred)             
+75bd0000 75c6d000   USP10      (deferred)             
+75c70000 75c7a000   LPK        (deferred)             
+75c80000 75d10000   GDI32      (deferred)             
+75d10000 75db0000   ADVAPI32   (deferred)             
+75f30000 75fbf000   OLEAUT32   (deferred)             
+75fe0000 7608c000   msvcrt     (deferred)             
+76130000 76220000   RPCRT4     (deferred)             
+76220000 76280000   IMM32      (deferred)             
+76300000 76319000   sechost    (deferred)             
+76320000 76420000   USER32     (deferred)             
+76420000 764a3000   CLBCatQ    (deferred)             
+764b0000 764f6000   KERNELBASE   (deferred)             
+76500000 76600000   KERNEL32   (deferred)             
+76800000 7695c000   ole32      (deferred)             
+76c50000 76d1c000   MSCTF      (deferred)             
+77230000 773b0000   ntdll      (pdb symbols)          c:\symbols\wntdll.pdb\ACE318E6A2F44F23A6CC5628F10A7DDC2\wntdll.pdb
+0:005> .loadby sos mscorwks
+0:005> !DumpHeap -stat
+total 274802 objects
+Statistics:
+      MT    Count    TotalSize Class Name
+70446438        1           12 System.Collections.Generic.ObjectEqualityComparer`1[[System.IntPtr, mscorlib]]
+70446198        1           12 System.Collections.Generic.GenericEqualityComparer`1[[System.Int16, mscorlib]]
+70445768        1           12 System.Runtime.CompilerServices.TypeDependencyAttribute
+7044190c        1           12 System.Collections.Generic.GenericEqualityComparer`1[[System.String, mscorlib]]
+70440bbc        1           12 System.Security.Permissions.ReflectionPermission
+7043f8c4        1           12 System.Resources.FastResourceComparer
+7043eadc        1           12 System.Boolean
+7043e5c8        1           12 System.DefaultBinder
+7043d888        1           12 System.RuntimeTypeHandle[]
+7043cd60        1           12 System.__Filters
+7043cd10        1           12 System.Reflection.Missing
+7043cc18        1           12 System.RuntimeType+TypeCacheQueue
+70439d64        1           12 System.RuntimeTypeHandle
+7043833c        1           12 System.Text.DecoderExceptionFallback
+704382f8        1           12 System.Text.EncoderExceptionFallback
+7041c81c        1           12 System.Security.Permissions.FileDialogPermission
+7041c7e0        1           12 System.Security.PolicyManager
+7041b93c        1           12 System.Reflection.DefaultMemberAttribute
+7041ac60        1           12 System.Reflection.__Filters
+7041a078        1           12 System.DBNull
+704199b4        1           12 System.SerializableAttribute
+704191c4        1           12 System.Threading.SynchronizationContext
+70418ebc        1           12 System.Collections.Generic.ObjectEqualityComparer`1[[System.Object, mscorlib]]
+70416b18        1           12 System.Runtime.InteropServices.GuidAttribute
+70416a34        1           12 System.CLSCompliantAttribute
+70415504        1           12 System.EventArgs
+70415288        1           12 System.Collections.Hashtable+ValueCollection
+6fb6f9dc        1           12 System.ComponentModel.TypeConverterAttribute
+6fb6f964        1           12 System.ComponentModel.TypeConverter
+6fb6f44c        1           12 System.ComponentModel.WeakHashtable+WeakKeyComparer
+6fb6d614        1           12 System.ComponentModel.StringConverter
+6eeac478        1           12 System.Windows.Forms.VisualStyles.VisualStyleRenderer+ThemeHandle
+6eea7db4        1           12 System.Windows.Forms.OSFeature
+6eea557c        1           12 System.Windows.Forms.InputLanguage
+6eea525c        1           12 System.Windows.Forms.FormCollection
+6eea46c4        1           12 System.Windows.Forms.Layout.ArrangedElementCollection
+6eea460c        1           12 System.Windows.Forms.Layout.DefaultLayout
+6ba193a0        1           12 System.Configuration.ConfigurationPermission
+6ba19344        1           12 System.Configuration.ConfigurationValues+EmptyCollection+EmptyCollectionEnumerator
+6ba192f4        1           12 System.Configuration.ConfigurationValues+EmptyCollection
+6ba191a8        1           12 System.Configuration.ConfigurationElementProperty
+6ba19008        1           12 System.Configuration.ConfigurationPropertyCollection
+6ba18a54        1           12 System.Configuration.SimpleBitVector32
+6ba188b8        1           12 System.Configuration.BaseConfigurationRecord+IndirectLocationInputComparer
+6ba1862c        1           12 System.Configuration.Internal.InternalConfigHost
+7043fb48        1           16 System.Resources.ResourceReader+TypeLimitingDeserializationBinder
+7043caa8        1           16 System.Reflection.CerArrayList`1[[System.Reflection.RuntimeConstructorInfo, mscorlib]]
+70439f64        1           16 System.Globalization.GlobalizationAssembly
+6f88c3ac        1           16 System.Drawing.PointF
+6f88bd7c        1           16 System.Drawing.Point
+6f88bd1c        1           16 System.Drawing.SizeF
+6f6220dc        1           16 System.Windows.Forms.PreviewKeyDownEventArgs
+6eeb6d54        1           16 System.Windows.Forms.TreeViewEventArgs
+6eea5504        1           16 System.Windows.Forms.Application+ComponentManager+ComponentHashtableEntry
+6eea51ec        1           16 System.Windows.Forms.Control+FontHandleWrapper
+6eea3b00        1           16 System.Windows.Forms.ClientUtils+WeakRefCollection
+6ee98140        1           16 System.Windows.Forms.ListBox+ObjectCollection
+6ba18edc        1           16 System.Configuration.RuntimeConfigurationRecord+RuntimeConfigurationFactory
+6ba18500        1           16 System.Configuration.Internal.ConfigSystem
+70445de4        1           20 System.Random
+70445c48        1           20 System.Environment+ResourceHelper
+70441c20        1           20 System.Security.Permissions.EnvironmentPermission
+70415b48        1           20 System.Object[][]
+6fb5599c        1           20 Microsoft.Win32.SystemEvents
+6f88b7c4        1           20 System.Drawing.FontFamily
+6eea5f98        1           20 System.Windows.Forms.ApplicationContext
+6eea1594        1           20 System.Windows.Forms.WindowsFormsSynchronizationContext
+6ba19118        1           20 System.Configuration.StringValidator
+70441988        1           24 System.String[][]
+70440f00        2           24 System.OrdinalComparer
+704408ac        1           24 System.RuntimeType+ActivatorCache
+7043a4e4        1           24 System.OperatingSystem
+7041d314        2           24 System.Security.Permissions.StrongNamePublicKeyBlob
+70419314        1           24 System.Collections.Generic.List`1[[System.WeakReference, mscorlib]]
+6f88ce88        1           24 System.Drawing.Color
+6f88bfd0        2           24 System.Drawing.GraphicsUnit
+6eea6954        1           24 System.Windows.Forms.NativeMethods+TRACKMOUSEEVENT
+6eea5454        1           24 System.Windows.Forms.NativeMethods+MSOCRINFOSTRUCT
+6eea4864        1           24 System.Windows.Forms.Form+ControlCollection
+6ee989f8        1           24 System.Windows.Forms.ListBox+ItemArray
+6ba19158        2           24 System.Configuration.DefaultValidator
+6ba18bec        2           24 System.Configuration.OverrideModeSetting
+7043c9e0        1           28 System.RuntimeType+RuntimeTypeCache+MemberInfoCache`1[[System.Reflection.RuntimeConstructorInfo, mscorlib]]
+70438f8c        1           28 System.SharedStatics
+7043841c        1           28 System.IO.Stream+NullStream
+6eea6070        1           28 System.Windows.Forms.Cursor
+6eea53c4        1           28 System.Windows.Forms.Application+ComponentManager
+6ba18074        1           28 System.Configuration.ClientConfigurationHost
+70441cd0        1           32 System.Text.UnicodeEncoding+Decoder
+70440e8c        2           32 System.CultureAwareComparer
+70440d14        2           32 System.Enum+HashEntry
+7043bab8        2           32 System.Text.DecoderReplacementFallback
+7043ba68        2           32 System.Text.EncoderReplacementFallback
+7043aed0        1           32 System.Security.PermissionTokenFactory
+7043a848        2           32 System.Security.Permissions.FileIOAccess
+70438280        1           32 System.Threading.IOCompletionCallback
+7041cc4c        1           32 System.Security.Util.Tokenizer+StringMaker
+70419f0c        2           32 System.DateTime
+70415408        1           32 System.Text.UnicodeEncoding
+70415204        1           32 System.Threading.ContextCallback
+6fb55800        1           32 Microsoft.Win32.NativeMethods+WndProc
+6fb55678        1           32 Microsoft.Win32.NativeMethods+ConHndlr
+6eeb5838        1           32 System.Windows.Forms.TreeViewEventHandler
+6ba18568        1           32 System.Configuration.Internal.InternalConfigRoot
+6ba1829c        1           32 System.Configuration.Internal.InternalConfigEventHandler
+70445d0c        1           36 System.Collections.Queue
+7043a09c        1           36 System.Int64[]
+7041d154        3           36 System.Security.Policy.AllMembershipCondition
+704180cc        1           36 System.Resources.RuntimeResourceSet
+70415c9c        1           36 System.Threading.ExecutionContext
+6eeb5168        1           36 System.Windows.Forms.SplitContainer+SplitContainerTypedControlCollection
+6eea7d1c        1           36 System.Windows.Forms.UnsafeNativeMethods+ThemingScope+ACTCTX
+6eea12b8        1           36 System.Windows.Forms.AnchorStyles[]
+6ba18004        1           36 System.Configuration.ClientConfigurationSystem
+7043fac4        1           40 System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+7043f708        1           40 System.IO.BinaryReader
+7041ee70        1           40 System.Int32[][]
+6fb6ffb4        2           40 System.Collections.Specialized.ListDictionary+DictionaryNode
+6fb6fe38        2           40 System.Collections.Specialized.HybridDictionary
+6eea5b54        2           40 System.Windows.Forms.Internal.WindowsRegion
+6eea5910        1           40 System.Windows.Forms.NativeMethods+MSG[]
+7043a760        1           44 System.Security.FrameSecurityDescriptor
+704393ac        1           44 System.AppDomainSetup
+70415c54        1           44 System.Threading.ReaderWriterLock
+6f88c59c        1           44 System.Drawing.BufferedGraphics
+6f88b3f4        1           44 System.Drawing.Font
+7043d850        1           48 System.Signature
+7043a890        2           48 System.Security.Util.StringExpressionSet
+70415d88        1           48 System.Reflection.RuntimeConstructorInfo
+6fb55af8        2           48 System.Collections.Generic.List`1[[Microsoft.Win32.SystemEvents+SystemEventInvokeInfo, System]]
+6fb55738        1           48 Microsoft.Win32.NativeMethods+WNDCLASS
+6f88c354        3           48 System.Drawing.Drawing2D.GraphicsState
+6f88b358        4           48 System.Drawing.Printing.PrintingPermission
+6f88b264        2           48 System.Drawing.Rectangle
+6f60bf54        3           48 System.Windows.Forms.KeyEventArgs
+6eea5760        3           48 System.Windows.Forms.Internal.IntNativeMethods+POINT
+6eea0d20        2           48 System.Windows.Forms.ImageList+Indexer
+6ee9d7d0        2           48 System.Windows.Forms.PropertyStore+RectangleWrapper
+6ba191f4        1           48 System.Configuration.ConfigurationValues
+6ba18198        1           48 System.Configuration.ClientConfigPaths
+7044621c        1           52 System.Collections.Generic.Dictionary`2[[System.IntPtr, mscorlib],[System.Int16, mscorlib]]
+70445f7c        1           52 System.Collections.Generic.Dictionary`2[[System.Int16, mscorlib],[System.IntPtr, mscorlib]]
+704411a0        1           52 System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]]
+7043f7c0        1           52 System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Resources.ResourceLocator, mscorlib]]
+70415388        1           52 System.Resources.ResourceManager
+6fb559e8        1           52 System.Collections.Generic.Dictionary`2[[System.Object, mscorlib],[System.Collections.Generic.List`1[[Microsoft.Win32.SystemEvents+SystemEventInvokeInfo, System]], mscorlib]]
+6ba18fc0        1           52 System.Configuration.ConfigurationProperty
+70a68cc4        2           56 System.Text.DecoderReplacementFallbackBuffer
+7043b964        2           56 System.Text.UTF8Encoding
+70438e94        1           56 System.Threading.Thread
+70416528        1           56 System.LogLevel[]
+6fb6fef4        2           56 System.Collections.Specialized.ListDictionary
+6ba18a98        2           56 System.Configuration.StreamInfo
+7043b77c        3           60 System.Globalization.CultureTableItem
+70435e24        3           60 System.SZArrayHelper+SZGenericArrayEnumerator`1[[System.String, mscorlib]]
+7042436c        1           60 System.IO.StreamReader+NullStreamReader
+70416aa0        5           60 System.Runtime.InteropServices.ComVisibleAttribute
+6fb700f8        3           60 System.ComponentModel.EventHandlerList+ListEntry
+6fb55c84        1           60 System.Collections.Generic.Dictionary`2+Entry[[System.Object, mscorlib],[System.Collections.Generic.List`1[[Microsoft.Win32.SystemEvents+SystemEventInvokeInfo, System]], mscorlib]][]
+6f61cfdc        3           60 System.Windows.Forms.ListControlConvertEventArgs
+70439fb8        1           64 System.IO.UnmanagedMemoryStream
+7041acb8        2           64 System.Reflection.TypeFilter
+70415748        2           64 System.Globalization.CompareInfo
+704156c4        2           64 System.Runtime.CompilerServices.RuntimeHelpers+CleanupCode
+70415638        2           64 System.Runtime.CompilerServices.RuntimeHelpers+TryCode
+6fb5588c        2           64 Microsoft.Win32.UserPreferenceChangedEventHandler
+6f6301bc        1           64 System.Windows.Forms.WindowsFormsSection
+6eea45d4        4           64 System.Windows.Forms.LayoutEventArgs
+7043b6e8        1           68 System.Globalization.CultureTable
+6fb6f378        1           68 System.ComponentModel.WeakHashtable
+704408f4        3           72 System.RuntimeType+ActivatorCacheEntry
+7043a468        3           72 System.Version
+70438c04        1           72 System.ExecutionEngineException
+70438b74        1           72 System.StackOverflowException
+70438ae4        1           72 System.OutOfMemoryException
+6ba18b0c        2           72 System.Configuration.Internal.FileVersion
+7043c370        1           76 System.RuntimeType+RuntimeTypeCache
+6ba192b0        1           76 System.Configuration.SectionInformation
+7043d7ec        4           80 Microsoft.Win32.SafeHandles.SafeFileHandle
+7041d394        5           80 System.Security.Policy.ZoneMembershipCondition
+7041d2a4        4           80 System.Security.Policy.PolicyStatement
+70418050        1           80 System.Resources.ResourceReader
+6fb70050        2           80 System.Diagnostics.BooleanSwitch
+6fb6aecc        2           80 System.Diagnostics.TraceSwitch
+6fb55bec        5           80 Microsoft.Win32.SystemEvents+SystemEventInvokeInfo
+6f88cddc        5           80 System.Drawing.Size
+6f88bdf0        2           80 System.Drawing.Icon
+6eea4958        4           80 System.Windows.Forms.Control+ControlCollection
+6eea3be8        3           84 System.Windows.Forms.Internal.DeviceContext+GraphicsState
+6eea37d4        3           84 System.Windows.Forms.Internal.WindowsGraphics
+6eea123c        3           84 System.Windows.Forms.Padding
+6b5579c4        1           84 System.Xml.XmlTextReaderImpl+NodeData
+7043cdbc        3           96 System.Reflection.MemberFilter
+70417c24        4           96 System.Collections.Stack
+70416cd4        4           96 System.Guid
+6fb55918        3           96 Microsoft.Win32.UserPreferenceChangingEventHandler
+6f88c1fc        6           96 System.Drawing.Region
+6f88c10c        6           96 System.Drawing.Drawing2D.Matrix
+6f88b874        3           96 System.Drawing.Graphics
+6eea511c        8           96 System.Windows.Forms.Control+MultithreadSafeCallScope
+6eea3ba4        6           96 System.Windows.Forms.ClientUtils+WeakRefCollection+WeakRefObject
+7043ccd8        1          100 System.Reflection.MetadataArgs+SkipAddresses
+7043ae24        5          100 System.Security.PermissionToken
+704390a0        1          100 System.AppDomain
+6ba18910        5          100 System.Configuration.ConfigurationSchemaErrors
+6fb6f72c        2          104 System.ComponentModel.AttributeCollection+AttributeEntry[]
+6eea19d4        1          104 System.Windows.Forms.Application+MarshalingControl
+7043acec        3          108 System.Security.Permissions.FileIOPermission
+70416434        1          108 System.SwitchStructure[]
+6f88c0b4        3          108 System.Drawing.GraphicsContext
+6eea57b8        3          108 System.Windows.Forms.Internal.WindowsSolidBrush
+704177d4        7          112 System.Security.Permissions.UIPermission
+6fb700a0        7          112 System.ComponentModel.EventHandlerList
+6eea1408        7          112 System.Windows.Forms.PropertyStore+SizeWrapper
+6eea0dbc        7          112 System.Windows.Forms.PropertyStore
+7043ab0c       10          120 System.Int32
+70416e24        2          120 System.Collections.Hashtable+SyncHashtable
+6fb6f57c        6          120 System.ComponentModel.TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor
+7043eca0        4          128 System.Text.UTF8Encoding+UTF8Decoder
+70422388        4          128 System.Collections.ArrayList+SyncArrayList
+70419408        8          128 System.Runtime.InteropServices.HandleRef
+6eea20e4        3          132 System.Windows.Forms.NativeWindow+WindowClass
+6eea164c        1          132 System.Windows.Forms.Application+ThreadContext
+00226fe4        3          132 System.Linq.Enumerable+<TakeIterator>d__3a`1[[System.String, mscorlib]]
+6f88c434        2          136 System.Drawing.BufferedGraphicsContext
+70417bc0        7          140 Microsoft.Win32.SafeHandles.SafeRegistryHandle
+7043a7a0       12          144 System.Security.Permissions.SecurityPermission
+70439e0c        6          144 System.Reflection.Assembly
+70438c94        2          144 System.Threading.ThreadAbortException
+6f88cfec       12          144 System.Drawing.KnownColor
+7043fc94        1          152 System.Collections.Generic.Dictionary`2+Entry[[System.String, mscorlib],[System.Resources.ResourceLocator, mscorlib]][]
+7041f0c0        3          156 System.Security.Policy.PolicyLevel
+6fb6f4b4        8          160 System.ComponentModel.ReflectTypeDescriptionProvider
+6eea4580        4          160 System.Windows.Forms.VScrollProperties
+6eea44d8        4          160 System.Windows.Forms.HScrollProperties
+6ba18990        5          160 System.Configuration.BaseConfigurationRecord+ConfigRecordStreamInfo
+6eea55b4        4          168 System.Windows.Forms.ImeMode[]
+6eea32c8        6          168 System.Windows.Forms.PropertyStore+PaddingWrapper
+70419520        5          180 System.Single[]
+7044156c        1          188 System.Collections.Generic.Dictionary`2+Entry[[System.String, mscorlib],[System.Int32, mscorlib]][]
+6fb6f520        8          192 System.ComponentModel.TypeDescriptor+TypeDescriptionNode
+6fb6f6a8       10          200 System.ComponentModel.AttributeCollection
+7043a584        6          216 System.Security.PermissionSet
+6eea3910        3          216 System.Windows.Forms.Internal.DeviceContext
+6ee96a50        1          216 System.Windows.Forms.ListBox
+704179c0        7          224 Microsoft.Win32.RegistryKey
+6eea5ff0        8          224 System.Windows.Forms.MouseEventArgs
+7043c2b0        5          240 System.Reflection.Module
+7043b698        5          240 System.Globalization.CultureTableRecord
+70424280        4          240 System.IO.StreamReader
+70414e30        4          240 System.Guid[]
+6eea31e0        6          252 System.Windows.Forms.PropertyStore+IntegerEntry[]
+70440c58        2          256 System.UInt64[]
+7043b824        2          256 System.Globalization.NumberFormatInfo
+7043b4bc        4          272 System.Globalization.CultureInfo
+6ee9cc44        1          276 System.Windows.Forms.TreeView
+6fb6fd90       14          280 System.UriParser+BuiltInUriParser
+6f88b6d8       10          280 System.Internal.HandleCollector+HandleType
+6eea5710        7          280 System.Windows.Forms.PaintEventArgs
+70440694        4          320 System.IO.FileStream
+6eea21f4       10          320 System.Windows.Forms.NativeMethods+WndProc
+7043ae84        9          324 System.Security.Util.TokenBasedSet
+00225db8        1          336 FileExplorer.MainForm
+7041ce8c       10          360 System.Security.Policy.UnionCodeGroup
+6fb6f664        9          360 System.ComponentModel.ReflectTypeDescriptionProvider+ReflectedTypeData
+6eeb3008        1          360 System.Windows.Forms.SplitContainer
+6ba18794        5          360 System.Configuration.RuntimeConfigurationRecord
+6eea154c        7          364 System.Windows.Forms.CreateParams
+70415bfc       23          368 System.WeakReference
+6eeb4a68        2          368 System.Windows.Forms.SplitterPanel
+6ba18de4       12          384 System.Configuration.SectionInput
+6eea1980       14          392 System.Internal.HandleCollector+HandleType
+6eea0e14        7          392 System.Windows.Forms.Control+ControlNativeWindow
+6eea1098        1          456 System.Windows.Forms.NativeWindow+HandleBucket[]
+6ba18d9c       14          560 System.Configuration.SectionRecord
+7041f118       12          576 System.Security.NamedPermissionSet
+6fb70168       51          612 System.Collections.Specialized.BitVector32+Section
+6eea144c        7          664 System.Windows.Forms.PropertyStore+ObjectEntry[]
+6ba18d44       12          768 System.Configuration.SectionXmlInfo
+6ee98a50       53          848 System.Windows.Forms.ListBox+ItemArray+Entry
+70415300       43         1548 System.Collections.Hashtable+HashtableEnumerator
+7041cdb0       65         1560 System.Security.Policy.StrongNameMembershipCondition
+704384dc      170         2040 System.Object
+7043aa5c       22         2084 System.Int32[]
+6eeb7254       41         2132 System.Windows.Forms.OwnerDrawPropertyBag
+704389fc      109         2180 System.Text.StringBuilder
+00226c78      124         2480 FileExplorer.MainForm+FileInformation
+7043af14       45         2520 System.Collections.Hashtable
+6eeb71f4       44         2992 System.Windows.Forms.NativeMethods+NMTVCUSTOMDRAW
+70439a40      165         3300 System.RuntimeType
+7041914c      149         4768 System.EventHandler
+6ba18c6c       95         5320 System.Configuration.FactoryRecord
+7041cb5c      232         6496 System.Security.SecurityElement
+7043a8f0      297         7128 System.Collections.ArrayList
+704394f0       30         8444 System.Char[]
+6eeb70a4     1219        24380 System.Windows.Forms.TreeNodeCollection
+7043b188     3859        46308 System.IntPtr
+7043b010       46       132480 System.Collections.Hashtable+bucket[]
+6eeb71a0     7634       244288 System.Windows.Forms.TreeNode+TreeNodeImageIndexer
+6eeb6da0     3818       335984 System.Windows.Forms.TreeNode
+70414eec     1758       673676 System.Object[]
+003016d8      114       826056      Free
+7043b330   179282      2902828 System.Byte[]
+704388c0    74570     27325876 System.String
+Total 274802 objects
+Fragmented blocks larger than 0.5 MB:
+    Addr     Size      Followed by
+071094e0    0.7MB         071bcd5c Microsoft.Win32.SafeHandles.SafeFileHandle
+0:005> g
+(1df0.22f4): Unknown exception - code e0434f4e (first chance)
+(1df0.15c0): Break instruction exception - code 80000003 (first chance)
+eax=7efa9000 ebx=00000000 ecx=00000000 edx=772cf4e2 esi=00000000 edi=00000000
+eip=7724000c esp=0520fcb4 ebp=0520fce0 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!DbgBreakPoint:
+7724000c cc              int     3
+0:005> !DumpHeap -stat
+total 412079 objects
+Statistics:
+      MT    Count    TotalSize Class Name
+70446438        1           12 System.Collections.Generic.ObjectEqualityComparer`1[[System.IntPtr, mscorlib]]
+70446198        1           12 System.Collections.Generic.GenericEqualityComparer`1[[System.Int16, mscorlib]]
+70445768        1           12 System.Runtime.CompilerServices.TypeDependencyAttribute
+7044190c        1           12 System.Collections.Generic.GenericEqualityComparer`1[[System.String, mscorlib]]
+70440bbc        1           12 System.Security.Permissions.ReflectionPermission
+7043f8c4        1           12 System.Resources.FastResourceComparer
+7043eadc        1           12 System.Boolean
+7043e5c8        1           12 System.DefaultBinder
+7043d888        1           12 System.RuntimeTypeHandle[]
+7043cd60        1           12 System.__Filters
+7043cd10        1           12 System.Reflection.Missing
+7043cc18        1           12 System.RuntimeType+TypeCacheQueue
+70439d64        1           12 System.RuntimeTypeHandle
+7043833c        1           12 System.Text.DecoderExceptionFallback
+704382f8        1           12 System.Text.EncoderExceptionFallback
+7041c81c        1           12 System.Security.Permissions.FileDialogPermission
+7041c7e0        1           12 System.Security.PolicyManager
+7041b93c        1           12 System.Reflection.DefaultMemberAttribute
+7041ac60        1           12 System.Reflection.__Filters
+7041a078        1           12 System.DBNull
+704199b4        1           12 System.SerializableAttribute
+704191c4        1           12 System.Threading.SynchronizationContext
+70418ebc        1           12 System.Collections.Generic.ObjectEqualityComparer`1[[System.Object, mscorlib]]
+70416b18        1           12 System.Runtime.InteropServices.GuidAttribute
+70416a34        1           12 System.CLSCompliantAttribute
+70415504        1           12 System.EventArgs
+70415288        1           12 System.Collections.Hashtable+ValueCollection
+6fb6f9dc        1           12 System.ComponentModel.TypeConverterAttribute
+6fb6f964        1           12 System.ComponentModel.TypeConverter
+6fb6f44c        1           12 System.ComponentModel.WeakHashtable+WeakKeyComparer
+6fb6d614        1           12 System.ComponentModel.StringConverter
+6eeac478        1           12 System.Windows.Forms.VisualStyles.VisualStyleRenderer+ThemeHandle
+6eea7db4        1           12 System.Windows.Forms.OSFeature
+6eea557c        1           12 System.Windows.Forms.InputLanguage
+6eea525c        1           12 System.Windows.Forms.FormCollection
+6eea46c4        1           12 System.Windows.Forms.Layout.ArrangedElementCollection
+6eea460c        1           12 System.Windows.Forms.Layout.DefaultLayout
+6ba193a0        1           12 System.Configuration.ConfigurationPermission
+6ba19344        1           12 System.Configuration.ConfigurationValues+EmptyCollection+EmptyCollectionEnumerator
+6ba192f4        1           12 System.Configuration.ConfigurationValues+EmptyCollection
+6ba191a8        1           12 System.Configuration.ConfigurationElementProperty
+6ba19008        1           12 System.Configuration.ConfigurationPropertyCollection
+6ba18a54        1           12 System.Configuration.SimpleBitVector32
+6ba188b8        1           12 System.Configuration.BaseConfigurationRecord+IndirectLocationInputComparer
+6ba1862c        1           12 System.Configuration.Internal.InternalConfigHost
+7043fb48        1           16 System.Resources.ResourceReader+TypeLimitingDeserializationBinder
+7043caa8        1           16 System.Reflection.CerArrayList`1[[System.Reflection.RuntimeConstructorInfo, mscorlib]]
+70439f64        1           16 System.Globalization.GlobalizationAssembly
+6f88c3ac        1           16 System.Drawing.PointF
+6f88bd7c        1           16 System.Drawing.Point
+6f88bd1c        1           16 System.Drawing.SizeF
+6f60bf54        1           16 System.Windows.Forms.KeyEventArgs
+6eeb6d54        1           16 System.Windows.Forms.TreeViewEventArgs
+6eea5504        1           16 System.Windows.Forms.Application+ComponentManager+ComponentHashtableEntry
+6eea51ec        1           16 System.Windows.Forms.Control+FontHandleWrapper
+6eea3b00        1           16 System.Windows.Forms.ClientUtils+WeakRefCollection
+6ee98140        1           16 System.Windows.Forms.ListBox+ObjectCollection
+6ba18edc        1           16 System.Configuration.RuntimeConfigurationRecord+RuntimeConfigurationFactory
+6ba18500        1           16 System.Configuration.Internal.ConfigSystem
+70445de4        1           20 System.Random
+70445c48        1           20 System.Environment+ResourceHelper
+70441c20        1           20 System.Security.Permissions.EnvironmentPermission
+70415b48        1           20 System.Object[][]
+6fb5599c        1           20 Microsoft.Win32.SystemEvents
+6f88b7c4        1           20 System.Drawing.FontFamily
+6eea5f98        1           20 System.Windows.Forms.ApplicationContext
+6eea1594        1           20 System.Windows.Forms.WindowsFormsSynchronizationContext
+6ba19118        1           20 System.Configuration.StringValidator
+70441988        1           24 System.String[][]
+70440f00        2           24 System.OrdinalComparer
+704408ac        1           24 System.RuntimeType+ActivatorCache
+7043a4e4        1           24 System.OperatingSystem
+7041d314        2           24 System.Security.Permissions.StrongNamePublicKeyBlob
+70419314        1           24 System.Collections.Generic.List`1[[System.WeakReference, mscorlib]]
+70417c24        1           24 System.Collections.Stack
+6f88ce88        1           24 System.Drawing.Color
+6eea5454        1           24 System.Windows.Forms.NativeMethods+MSOCRINFOSTRUCT
+6eea4864        1           24 System.Windows.Forms.Form+ControlCollection
+6ee989f8        1           24 System.Windows.Forms.ListBox+ItemArray
+6ba19158        2           24 System.Configuration.DefaultValidator
+6ba18bec        2           24 System.Configuration.OverrideModeSetting
+7043c9e0        1           28 System.RuntimeType+RuntimeTypeCache+MemberInfoCache`1[[System.Reflection.RuntimeConstructorInfo, mscorlib]]
+70438f8c        1           28 System.SharedStatics
+7043841c        1           28 System.IO.Stream+NullStream
+6eea6070        1           28 System.Windows.Forms.Cursor
+6eea53c4        1           28 System.Windows.Forms.Application+ComponentManager
+6ba18074        1           28 System.Configuration.ClientConfigurationHost
+70441cd0        1           32 System.Text.UnicodeEncoding+Decoder
+70440e8c        2           32 System.CultureAwareComparer
+70440d14        2           32 System.Enum+HashEntry
+7043bab8        2           32 System.Text.DecoderReplacementFallback
+7043ba68        2           32 System.Text.EncoderReplacementFallback
+7043aed0        1           32 System.Security.PermissionTokenFactory
+70438280        1           32 System.Threading.IOCompletionCallback
+7041cc4c        1           32 System.Security.Util.Tokenizer+StringMaker
+70419f0c        2           32 System.DateTime
+70415408        1           32 System.Text.UnicodeEncoding
+70415204        1           32 System.Threading.ContextCallback
+6fb55800        1           32 Microsoft.Win32.NativeMethods+WndProc
+6fb55678        1           32 Microsoft.Win32.NativeMethods+ConHndlr
+6eeb5838        1           32 System.Windows.Forms.TreeViewEventHandler
+6ba18568        1           32 System.Configuration.Internal.InternalConfigRoot
+6ba1829c        1           32 System.Configuration.Internal.InternalConfigEventHandler
+70445d0c        1           36 System.Collections.Queue
+7043a09c        1           36 System.Int64[]
+7041d154        3           36 System.Security.Policy.AllMembershipCondition
+704180cc        1           36 System.Resources.RuntimeResourceSet
+70415c9c        1           36 System.Threading.ExecutionContext
+6eeb5168        1           36 System.Windows.Forms.SplitContainer+SplitContainerTypedControlCollection
+6eea7d1c        1           36 System.Windows.Forms.UnsafeNativeMethods+ThemingScope+ACTCTX
+6eea12b8        1           36 System.Windows.Forms.AnchorStyles[]
+6ba18004        1           36 System.Configuration.ClientConfigurationSystem
+7043fac4        1           40 System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+7043f708        1           40 System.IO.BinaryReader
+7041ee70        1           40 System.Int32[][]
+6fb6ffb4        2           40 System.Collections.Specialized.ListDictionary+DictionaryNode
+6fb6fe38        2           40 System.Collections.Specialized.HybridDictionary
+6eea5910        1           40 System.Windows.Forms.NativeMethods+MSG[]
+704393ac        1           44 System.AppDomainSetup
+70415c54        1           44 System.Threading.ReaderWriterLock
+6f88b3f4        1           44 System.Drawing.Font
+7043d850        1           48 System.Signature
+70415d88        1           48 System.Reflection.RuntimeConstructorInfo
+6fb55af8        2           48 System.Collections.Generic.List`1[[Microsoft.Win32.SystemEvents+SystemEventInvokeInfo, System]]
+6fb55738        1           48 Microsoft.Win32.NativeMethods+WNDCLASS
+6f88b358        4           48 System.Drawing.Printing.PrintingPermission
+6f88b264        2           48 System.Drawing.Rectangle
+6eea6954        2           48 System.Windows.Forms.NativeMethods+TRACKMOUSEEVENT
+6eea0d20        2           48 System.Windows.Forms.ImageList+Indexer
+6ee9d7d0        2           48 System.Windows.Forms.PropertyStore+RectangleWrapper
+6ba191f4        1           48 System.Configuration.ConfigurationValues
+6ba18198        1           48 System.Configuration.ClientConfigPaths
+7044621c        1           52 System.Collections.Generic.Dictionary`2[[System.IntPtr, mscorlib],[System.Int16, mscorlib]]
+70445f7c        1           52 System.Collections.Generic.Dictionary`2[[System.Int16, mscorlib],[System.IntPtr, mscorlib]]
+704411a0        1           52 System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]]
+7043f7c0        1           52 System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Resources.ResourceLocator, mscorlib]]
+70415388        1           52 System.Resources.ResourceManager
+6fb559e8        1           52 System.Collections.Generic.Dictionary`2[[System.Object, mscorlib],[System.Collections.Generic.List`1[[Microsoft.Win32.SystemEvents+SystemEventInvokeInfo, System]], mscorlib]]
+6ba18fc0        1           52 System.Configuration.ConfigurationProperty
+7043b964        2           56 System.Text.UTF8Encoding
+70438e94        1           56 System.Threading.Thread
+70416528        1           56 System.LogLevel[]
+6fb6fef4        2           56 System.Collections.Specialized.ListDictionary
+6ba18a98        2           56 System.Configuration.StreamInfo
+7043b77c        3           60 System.Globalization.CultureTableItem
+7042436c        1           60 System.IO.StreamReader+NullStreamReader
+70416aa0        5           60 System.Runtime.InteropServices.ComVisibleAttribute
+6fb700f8        3           60 System.ComponentModel.EventHandlerList+ListEntry
+6fb55c84        1           60 System.Collections.Generic.Dictionary`2+Entry[[System.Object, mscorlib],[System.Collections.Generic.List`1[[Microsoft.Win32.SystemEvents+SystemEventInvokeInfo, System]], mscorlib]][]
+7043a848        4           64 System.Security.Permissions.FileIOAccess
+70439fb8        1           64 System.IO.UnmanagedMemoryStream
+7041acb8        2           64 System.Reflection.TypeFilter
+70415748        2           64 System.Globalization.CompareInfo
+704156c4        2           64 System.Runtime.CompilerServices.RuntimeHelpers+CleanupCode
+70415638        2           64 System.Runtime.CompilerServices.RuntimeHelpers+TryCode
+6fb5588c        2           64 Microsoft.Win32.UserPreferenceChangedEventHandler
+6f6301bc        1           64 System.Windows.Forms.WindowsFormsSection
+6eea45d4        4           64 System.Windows.Forms.LayoutEventArgs
+7043b6e8        1           68 System.Globalization.CultureTable
+6fb6f378        1           68 System.ComponentModel.WeakHashtable
+6f88c434        1           68 System.Drawing.BufferedGraphicsContext
+704408f4        3           72 System.RuntimeType+ActivatorCacheEntry
+7043a468        3           72 System.Version
+70438c04        1           72 System.ExecutionEngineException
+70438b74        1           72 System.StackOverflowException
+70438ae4        1           72 System.OutOfMemoryException
+6ba18b0c        2           72 System.Configuration.Internal.FileVersion
+7043c370        1           76 System.RuntimeType+RuntimeTypeCache
+6ba192b0        1           76 System.Configuration.SectionInformation
+7041d394        5           80 System.Security.Policy.ZoneMembershipCondition
+7041d2a4        4           80 System.Security.Policy.PolicyStatement
+70418050        1           80 System.Resources.ResourceReader
+6fb70050        2           80 System.Diagnostics.BooleanSwitch
+6fb6aecc        2           80 System.Diagnostics.TraceSwitch
+6fb55bec        5           80 Microsoft.Win32.SystemEvents+SystemEventInvokeInfo
+6f88cddc        5           80 System.Drawing.Size
+6f88bdf0        2           80 System.Drawing.Icon
+6eea4958        4           80 System.Windows.Forms.Control+ControlCollection
+70a68cc4        3           84 System.Text.DecoderReplacementFallbackBuffer
+6eea5ff0        3           84 System.Windows.Forms.MouseEventArgs
+6eea123c        3           84 System.Windows.Forms.Padding
+6b5579c4        1           84 System.Xml.XmlTextReaderImpl+NodeData
+7043cdbc        3           96 System.Reflection.MemberFilter
+7043a890        4           96 System.Security.Util.StringExpressionSet
+704177d4        6           96 System.Security.Permissions.UIPermission
+70416cd4        4           96 System.Guid
+6fb55918        3           96 Microsoft.Win32.UserPreferenceChangingEventHandler
+7043d7ec        5          100 Microsoft.Win32.SafeHandles.SafeFileHandle
+7043ccd8        1          100 System.Reflection.MetadataArgs+SkipAddresses
+7043ae24        5          100 System.Security.PermissionToken
+704390a0        1          100 System.AppDomain
+70435e24        5          100 System.SZArrayHelper+SZGenericArrayEnumerator`1[[System.String, mscorlib]]
+6f61cfdc        5          100 System.Windows.Forms.ListControlConvertEventArgs
+6ba18910        5          100 System.Configuration.ConfigurationSchemaErrors
+6fb6f72c        2          104 System.ComponentModel.AttributeCollection+AttributeEntry[]
+6eea19d4        1          104 System.Windows.Forms.Application+MarshalingControl
+70416434        1          108 System.SwitchStructure[]
+6fb700a0        7          112 System.ComponentModel.EventHandlerList
+6eea1408        7          112 System.Windows.Forms.PropertyStore+SizeWrapper
+6eea0dbc        7          112 System.Windows.Forms.PropertyStore
+7043ab0c       10          120 System.Int32
+70416e24        2          120 System.Collections.Hashtable+SyncHashtable
+70422388        4          128 System.Collections.ArrayList+SyncArrayList
+70419408        8          128 System.Runtime.InteropServices.HandleRef
+6eea20e4        3          132 System.Windows.Forms.NativeWindow+WindowClass
+6eea164c        1          132 System.Windows.Forms.Application+ThreadContext
+70417bc0        7          140 Microsoft.Win32.SafeHandles.SafeRegistryHandle
+7043a7a0       12          144 System.Security.Permissions.SecurityPermission
+70439e0c        6          144 System.Reflection.Assembly
+70438c94        2          144 System.Threading.ThreadAbortException
+7043fc94        1          152 System.Collections.Generic.Dictionary`2+Entry[[System.String, mscorlib],[System.Resources.ResourceLocator, mscorlib]][]
+7041f0c0        3          156 System.Security.Policy.PolicyLevel
+6fb6f4b4        8          160 System.ComponentModel.ReflectTypeDescriptionProvider
+6eea4580        4          160 System.Windows.Forms.VScrollProperties
+6eea44d8        4          160 System.Windows.Forms.HScrollProperties
+6ba18990        5          160 System.Configuration.BaseConfigurationRecord+ConfigRecordStreamInfo
+6eea55b4        4          168 System.Windows.Forms.ImeMode[]
+6eea32c8        6          168 System.Windows.Forms.PropertyStore+PaddingWrapper
+7043acec        5          180 System.Security.Permissions.FileIOPermission
+7043a584        5          180 System.Security.PermissionSet
+7044156c        1          188 System.Collections.Generic.Dictionary`2+Entry[[System.String, mscorlib],[System.Int32, mscorlib]][]
+7043eca0        6          192 System.Text.UTF8Encoding+UTF8Decoder
+6fb6f520        8          192 System.ComponentModel.TypeDescriptor+TypeDescriptionNode
+6fb6f6a8       10          200 System.ComponentModel.AttributeCollection
+6fb6f57c       10          200 System.ComponentModel.TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor
+6ee96a50        1          216 System.Windows.Forms.ListBox
+00226fe4        5          220 System.Linq.Enumerable+<TakeIterator>d__3a`1[[System.String, mscorlib]]
+704179c0        7          224 Microsoft.Win32.RegistryKey
+70415bfc       14          224 System.WeakReference
+7043c2b0        5          240 System.Reflection.Module
+7043b698        5          240 System.Globalization.CultureTableRecord
+70414e30        4          240 System.Guid[]
+6eea31e0        6          252 System.Windows.Forms.PropertyStore+IntegerEntry[]
+70440c58        2          256 System.UInt64[]
+7043b824        2          256 System.Globalization.NumberFormatInfo
+6eeb7254        5          260 System.Windows.Forms.OwnerDrawPropertyBag
+7043b4bc        4          272 System.Globalization.CultureInfo
+6ee9cc44        1          276 System.Windows.Forms.TreeView
+6fb6fd90       14          280 System.UriParser+BuiltInUriParser
+6f88b6d8       10          280 System.Internal.HandleCollector+HandleType
+7043ae84        8          288 System.Security.Util.TokenBasedSet
+70415300        8          288 System.Collections.Hashtable+HashtableEnumerator
+70424280        5          300 System.IO.StreamReader
+6eea21f4       10          320 System.Windows.Forms.NativeMethods+WndProc
+00225db8        1          336 FileExplorer.MainForm
+7041ce8c       10          360 System.Security.Policy.UnionCodeGroup
+6fb6f664        9          360 System.ComponentModel.ReflectTypeDescriptionProvider+ReflectedTypeData
+6eeb3008        1          360 System.Windows.Forms.SplitContainer
+6ba18794        5          360 System.Configuration.RuntimeConfigurationRecord
+6eea154c        7          364 System.Windows.Forms.CreateParams
+6eeb4a68        2          368 System.Windows.Forms.SplitterPanel
+6ba18de4       12          384 System.Configuration.SectionInput
+6eea1980       14          392 System.Internal.HandleCollector+HandleType
+6eea0e14        7          392 System.Windows.Forms.Control+ControlNativeWindow
+70440694        5          400 System.IO.FileStream
+6eea1098        1          456 System.Windows.Forms.NativeWindow+HandleBucket[]
+6eeb71f4        7          476 System.Windows.Forms.NativeMethods+NMTVCUSTOMDRAW
+6ba18d9c       14          560 System.Configuration.SectionRecord
+7041f118       12          576 System.Security.NamedPermissionSet
+6fb70168       51          612 System.Collections.Specialized.BitVector32+Section
+6eea144c        7          664 System.Windows.Forms.PropertyStore+ObjectEntry[]
+6ba18d44       12          768 System.Configuration.SectionXmlInfo
+6ee98a50       51          816 System.Windows.Forms.ListBox+ItemArray+Entry
+7041cdb0       65         1560 System.Security.Policy.StrongNameMembershipCondition
+704384dc      170         2040 System.Object
+7043aa5c       22         2084 System.Int32[]
+7043af14       45         2520 System.Collections.Hashtable
+00226c78      157         3140 FileExplorer.MainForm+FileInformation
+70439a40      167         3340 System.RuntimeType
+6ba18c6c       95         5320 System.Configuration.FactoryRecord
+7041914c      177         5664 System.EventHandler
+7041cb5c      232         6496 System.Security.SecurityElement
+704389fc      345         6900 System.Text.StringBuilder
+7043a8f0      302         7248 System.Collections.ArrayList
+704394f0       34        12596 System.Char[]
+6eeb70a4     1219        24380 System.Windows.Forms.TreeNodeCollection
+7043b188     3823        45876 System.IntPtr
+7043b010       46       132480 System.Collections.Hashtable+bucket[]
+6eeb71a0     7634       244288 System.Windows.Forms.TreeNode+TreeNodeImageIndexer
+6eeb6da0     3818       335984 System.Windows.Forms.TreeNode
+70414eec     1829      2007312 System.Object[]
+7043b330   195259      3160512 System.Byte[]
+003016d8       74      3381132      Free
+704388c0   195758     40784352 System.String
+Total 412079 objects
+0:005> !dumpheap -type FileExplorer.MainForm+FileInformation
+ Address       MT     Size
+02634524 00226c78       20     
+02638414 00226c78       20     
+026395e8 00226c78       20     
+026397ac 00226c78       20     
+02649b24 00226c78       20     
+0264b960 00226c78       20     
+0264ec10 00226c78       20     
+0264ec78 00226c78       20     
+0264ef1c 00226c78       20     
+0264f064 00226c78       20     
+0265d8bc 00226c78       20     
+02666530 00226c78       20     
+0266ef5c 00226c78       20     
+02677438 00226c78       20     
+026807f8 00226c78       20     
+02690d0c 00226c78       20     
+0269acd8 00226c78       20     
+026a9018 00226c78       20     
+026b31f0 00226c78       20     
+026bac90 00226c78       20     
+026c4184 00226c78       20     
+026c4318 00226c78       20     
+026cddb0 00226c78       20     
+026d1244 00226c78       20     
+026d7cd8 00226c78       20     
+026e0894 00226c78       20     
+026e5cdc 00226c78       20     
+02702ba0 00226c78       20     
+0270b118 00226c78       20     
+0270cd78 00226c78       20     
+02714044 00226c78       20     
+0271c068 00226c78       20     
+0272b474 00226c78       20     
+027331c4 00226c78       20     
+02735598 00226c78       20     
+02744298 00226c78       20     
+0277a998 00226c78       20     
+0277e508 00226c78       20     
+0278f1bc 00226c78       20     
+027938ac 00226c78       20     
+02793aac 00226c78       20     
+02794160 00226c78       20     
+027b00d4 00226c78       20     
+027b8d30 00226c78       20     
+027c1d34 00226c78       20     
+027ca36c 00226c78       20     
+027d94cc 00226c78       20     
+027e263c 00226c78       20     
+0286743c 00226c78       20     
+0288dcd4 00226c78       20     
+028db8f8 00226c78       20     
+028e8848 00226c78       20     
+028f23e8 00226c78       20     
+028fb014 00226c78       20     
+0290c744 00226c78       20     
+0291088c 00226c78       20     
+02916db0 00226c78       20     
+0292536c 00226c78       20     
+0293633c 00226c78       20     
+0293b280 00226c78       20     
+02946bd4 00226c78       20     
+02948230 00226c78       20     
+0294adf4 00226c78       20     
+0294e34c 00226c78       20     
+0295d72c 00226c78       20     
+0296be88 00226c78       20     
+0297bab0 00226c78       20     
+0297ea50 00226c78       20     
+0298808c 00226c78       20     
+02988110 00226c78       20     
+0298c6cc 00226c78       20     
+02994aac 00226c78       20     
+0299a024 00226c78       20     
+0299c068 00226c78       20     
+029a3eb8 00226c78       20     
+029c3f18 00226c78       20     
+029cfe74 00226c78       20     
+029e2be4 00226c78       20     
+029e5104 00226c78       20     
+029e8b98 00226c78       20     
+029ec5fc 00226c78       20     
+029f04f0 00226c78       20     
+029f3bec 00226c78       20     
+029f7a08 00226c78       20     
+029fb42c 00226c78       20     
+029ff58c 00226c78       20     
+02a033a0 00226c78       20     
+02a06b40 00226c78       20     
+02a09aa4 00226c78       20     
+02a0d644 00226c78       20     
+02a10f04 00226c78       20     
+02a14a00 00226c78       20     
+02a18624 00226c78       20     
+02a1bf9c 00226c78       20     
+02a1f6c0 00226c78       20     
+02a1f8a8 00226c78       20     
+02a21c90 00226c78       20     
+02a2596c 00226c78       20     
+02a34fc8 00226c78       20     
+02a39cb4 00226c78       20     
+02a3e7f8 00226c78       20     
+02a43254 00226c78       20     
+02a45b98 00226c78       20     
+02a4a910 00226c78       20     
+02a4f03c 00226c78       20     
+02a5387c 00226c78       20     
+02a58270 00226c78       20     
+02a5d070 00226c78       20     
+02a6c988 00226c78       20     
+02a713bc 00226c78       20     
+02a75fc0 00226c78       20     
+02a7ad78 00226c78       20     
+02a7fa98 00226c78       20     
+02a845ec 00226c78       20     
+02a890fc 00226c78       20     
+02a988f4 00226c78       20     
+02a9d620 00226c78       20     
+02ae04ac 00226c78       20     
+02ded66c 00226c78       20     
+02dfb018 00226c78       20     
+02e2eaf0 00226c78       20     
+02e2fd84 00226c78       20     
+02e31ca0 00226c78       20     
+02e31db4 00226c78       20     
+02e45f90 00226c78       20     
+02e503dc 00226c78       20     
+02e76364 00226c78       20     
+02e77c6c 00226c78       20     
+02e7ae44 00226c78       20     
+02e961f0 00226c78       20     
+02ea4850 00226c78       20     
+02eb38f0 00226c78       20     
+02ec1ca0 00226c78       20     
+02ecce70 00226c78       20     
+02ee15fc 00226c78       20     
+02ef481c 00226c78       20     
+02efe46c 00226c78       20     
+02f08bec 00226c78       20     
+02f1a7d8 00226c78       20     
+02f285b4 00226c78       20     
+02f3ed54 00226c78       20     
+02f4c3f4 00226c78       20     
+02f660e4 00226c78       20     
+02f711a4 00226c78       20     
+02f87a7c 00226c78       20     
+02f960fc 00226c78       20     
+02f9c268 00226c78       20     
+02fba658 00226c78       20     
+02fc4dfc 00226c78       20     
+02fd0a00 00226c78       20     
+02fd0f54 00226c78       20     
+067811d0 00226c78       20     
+06782ab0 00226c78       20     
+08c1985c 00226c78       20     
+08c4c4a0 00226c78       20     
+08d76e5c 00226c78       20     
+08d790ac 00226c78       20     
+total 157 objects
+Statistics:
+      MT    Count    TotalSize Class Name
+00226c78      157         3140 FileExplorer.MainForm+FileInformation
+Total 157 objects
+0:005> .foreach (obj {!dumpheap -type FileExplorer.MainForm+FileInformation}) {!objsize obj}
+*** WARNING: Unable to verify checksum for C:\temp\dndebug\4_MemoryLeak\Binaries\FileExplorer.exe
+                                                                            ^ User interrupted operation error in '.foreach (obj {!dumpheap -type FileExplorer.MainForm+FileInformation}) {!objsize obj}'
+0:005> .foreach (obj {!dumpheap -type FileExplorer.MainForm+FileInformation -short}) {!objsize obj}
+sizeof(02634524) =         7336 (      0x1ca8) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02638414) =         4688 (      0x1250) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(026395e8) =          568 (       0x238) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(026397ac) =        66988 (     0x105ac) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02649b24) =         7852 (      0x1eac) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0264b960) =        13092 (      0x3324) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0264ec10) =        37904 (      0x9410) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0264ec78) =        40556 (      0x9e6c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0264ef1c) =          280 (       0x118) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0264f064) =        59476 (      0xe854) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0265d8bc) =        32620 (      0x7f6c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02666530) =        35512 (      0x8ab8) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0266ef5c) =        34172 (      0x857c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02677438) =        37964 (      0x944c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(026807f8) =        29348 (      0x72a4) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02690d0c) =        25560 (      0x63d8) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0269acd8) =        33336 (      0x8238) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(026a9018) =        41608 (      0xa288) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(026b31f0) =        31492 (      0x7b04) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(026bac90) =        38280 (      0x9588) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(026c4184) =        33496 (      0x82d8) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(026c4318) =        57572 (      0xe0e4) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(026cddb0) =        13600 (      0x3520) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(026d1244) =        27196 (      0x6a3c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(026d7cd8) =        35916 (      0x8c4c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(026e0894) =        21408 (      0x53a0) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(026e5cdc) =        61256 (      0xef48) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02702ba0) =        34320 (      0x8610) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0270b118) =       137080 (     0x21778) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0270cd78) =        29504 (      0x7340) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02714044) =        32952 (      0x80b8) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0271c068) =        62620 (      0xf49c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0272b474) =        31916 (      0x7cac) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(027331c4) =         8892 (      0x22bc) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02735598) =        60788 (      0xed74) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02744298) =        93388 (     0x16ccc) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0277a998) =        15324 (      0x3bdc) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0277e508) =        68928 (     0x10d40) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0278f1bc) =        18296 (      0x4778) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(027938ac) =        48184 (      0xbc38) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02793aac) =        62904 (      0xf5b8) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02794160) =        21472 (      0x53e0) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(027b00d4) =        36036 (      0x8cc4) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(027b8d30) =        37012 (      0x9094) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(027c1d34) =        34472 (      0x86a8) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(027ca36c) =        61932 (      0xf1ec) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(027d94cc) =        21468 (      0x53dc) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(027e263c) =        21452 (      0x53cc) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0286743c) =        17060 (      0x42a4) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0288dcd4) =       285548 (     0x45b6c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(028db8f8) =        51976 (      0xcb08) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(028e8848) =        39980 (      0x9c2c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(028f23e8) =        36032 (      0x8cc0) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(028fb014) =        71608 (     0x117b8) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0290c744) =        16836 (      0x41c4) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0291088c) =        25980 (      0x657c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02916db0) =        58952 (      0xe648) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0292536c) =        69732 (     0x11064) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0293633c) =        20380 (      0x4f9c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0293b280) =        47588 (      0xb9e4) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02946bd4) =         5592 (      0x15d8) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02948230) =        11348 (      0x2c54) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0294adf4) =        13732 (      0x35a4) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0294e34c) =        62572 (      0xf46c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0295d72c) =        58808 (      0xe5b8) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0296be88) =        64704 (      0xfcc0) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0297bab0) =        12300 (      0x300c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0297ea50) =        38600 (      0x96c8) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0298808c) =          252 (        0xfc) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02988110) =        17964 (      0x462c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0298c6cc) =        33900 (      0x846c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02994aac) =        22016 (      0x5600) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0299a024) =       132584 (     0x205e8) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(0299c068) =        32416 (      0x7ea0) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(029a3eb8) =       131072 (     0x20000) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(029c3f18) =        49092 (      0xbfc4) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(029cfe74) =        66308 (     0x10304) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(029e2be4) =         9732 (      0x2604) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(029e5104) =        15224 (      0x3b78) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(029e8b98) =        15176 (      0x3b48) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(029ec5fc) =        16344 (      0x3fd8) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(029f04f0) =        14304 (      0x37e0) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(029f3bec) =        16128 (      0x3f00) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(029f7a08) =        15112 (      0x3b08) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(029fb42c) =        16964 (      0x4244) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(029ff58c) =        16120 (      0x3ef8) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a033a0) =        14468 (      0x3884) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a06b40) =        12360 (      0x3048) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a09aa4) =        15492 (      0x3c84) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a0d644) =        14756 (      0x39a4) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a10f04) =        15328 (      0x3be0) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a14a00) =        15624 (      0x3d08) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a18624) =        14940 (      0x3a5c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a1bf9c) =        14328 (      0x37f8) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a1f6c0) =        24644 (      0x6044) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a1f8a8) =         9404 (      0x24bc) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a21c90) =        15792 (      0x3db0) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a2596c) =        63256 (      0xf718) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a34fc8) =       113980 (     0x1bd3c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a39cb4) =       113620 (     0x1bbd4) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a3e7f8) =       113388 (     0x1baec) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a43254) =        10752 (      0x2a00) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a45b98) =       114184 (     0x1be08) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a4a910) =       112572 (     0x1b7bc) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a4f03c) =       112848 (     0x1b8d0) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a5387c) =       113284 (     0x1ba84) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a58270) =       110032 (     0x1add0) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a5d070) =        63956 (      0xf9d4) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a6c988) =       113348 (     0x1bac4) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a713bc) =       113812 (     0x1bc94) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a75fc0) =       114248 (     0x1be48) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a7ad78) =       114096 (     0x1bdb0) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a7fa98) =       113636 (     0x1bbe4) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a845ec) =       113568 (     0x1bba0) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a890fc) =        63668 (      0xf8b4) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a988f4) =       114108 (     0x1bdbc) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02a9d620) =         1516 (       0x5ec) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02ae04ac) =        20620 (      0x508c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02ded66c) =        55936 (      0xda80) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02dfb018) =       211864 (     0x33b98) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02e2eaf0) =         4968 (      0x1368) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02e2fd84) =         8156 (      0x1fdc) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02e31ca0) =          468 (       0x1d4) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02e31db4) =        80404 (     0x13a14) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02e45f90) =        42176 (      0xa4c0) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02e503dc) =       155636 (     0x25ff4) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02e76364) =         6532 (      0x1984) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02e77c6c) =        12872 (      0x3248) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02e7ae44) =       110604 (     0x1b00c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02e961f0) =        59072 (      0xe6c0) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02ea4850) =        61700 (      0xf104) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02eb38f0) =        58384 (      0xe410) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02ec1ca0) =        45616 (      0xb230) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02ecce70) =        83948 (     0x147ec) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02ee15fc) =        78464 (     0x13280) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02ef481c) =        40124 (      0x9cbc) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02efe46c) =        42988 (      0xa7ec) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02f08bec) =        72788 (     0x11c54) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02f1a7d8) =        56888 (      0xde38) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02f285b4) =        92152 (     0x167f8) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02f3ed54) =        54380 (      0xd46c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02f4c3f4) =       105832 (     0x19d68) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02f660e4) =        45368 (      0xb138) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02f711a4) =        92480 (     0x16940) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02f87a7c) =        59108 (      0xe6e4) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02f960fc) =        24680 (      0x6068) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02f9c268) =       124024 (     0x1e478) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02fba658) =        42788 (      0xa724) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02fc4dfc) =        48244 (      0xbc74) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02fd0a00) =          460 (       0x1cc) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(02fd0f54) =         6508 (      0x196c) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(067811d0) =         6440 (      0x1928) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(06782ab0) =         7368 (      0x1cc8) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(08c1985c) =         8024 (      0x1f58) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(08c4c4a0) =         6936 (      0x1b18) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(08d76e5c) =          644 (       0x284) bytes (FileExplorer.MainForm+FileInformation)
+sizeof(08d790ac) =        11944 (      0x2ea8) bytes (FileExplorer.MainForm+FileInformation)
+0:005> .foreach (obj {!dumpheap -type FileExplorer.MainForm+FileInformation -short}) {!gcroot obj}
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02636360(System.EventHandler)->
+02634524(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+026395c8(System.EventHandler)->
+02638414(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0263978c(System.EventHandler)->
+026395e8(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+024a0b48(System.EventHandler)->
+026397ac(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0264b940(System.EventHandler)->
+02649b24(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0264ebf0(System.EventHandler)->
+0264b960(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02690cec(System.EventHandler)->
+0264ec10(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02702b80(System.EventHandler)->
+0264ec78(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0264efb8(System.EventHandler)->
+0264ef1c(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0265d818(System.EventHandler)->
+0264f064(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02665790(System.EventHandler)->
+0265d8bc(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0266ef3c(System.EventHandler)->
+02666530(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02677418(System.EventHandler)->
+0266ef5c(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+026807d8(System.EventHandler)->
+02677438(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+026879dc(System.EventHandler)->
+026807f8(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+026a8ff8(System.EventHandler)->
+02690d0c(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0264ee80(System.EventHandler)->
+0269acd8(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+026b31d0(System.EventHandler)->
+026a9018(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+026bac40(System.EventHandler)->
+026b31f0(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+026c4164(System.EventHandler)->
+026bac90(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0272b454(System.EventHandler)->
+026c4184(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+027e3f20(System.EventHandler)->
+026c4318(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+026d1224(System.EventHandler)->
+026cddb0(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+026d7bd0(System.EventHandler)->
+026d1244(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+026e0874(System.EventHandler)->
+026d7cd8(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+026e5b8c(System.EventHandler)->
+026e0894(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+026f4b6c(System.EventHandler)->
+026e5cdc(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0269acb8(System.EventHandler)->
+02702ba0(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02690f18(System.EventHandler)->
+0270b118(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02714004(System.EventHandler)->
+0270cd78(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0271c048(System.EventHandler)->
+02714044(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02733060(System.EventHandler)->
+0271c068(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0270cd58(System.EventHandler)->
+0272b474(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+027353fc(System.EventHandler)->
+027331c4(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02744278(System.EventHandler)->
+02735598(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0270b0f8(System.EventHandler)->
+02744298(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0277e4c8(System.EventHandler)->
+0277a998(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0278f19c(System.EventHandler)->
+0277e508(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0279388c(System.EventHandler)->
+0278f1bc(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0288dcb4(System.EventHandler)->
+027938ac(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+027b00b4(System.EventHandler)->
+02793aac(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+027e261c(System.EventHandler)->
+02794160(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+027b8cf0(System.EventHandler)->
+027b00d4(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+027c1d14(System.EventHandler)->
+027b8d30(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+027ca32c(System.EventHandler)->
+027c1d34(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+027d94ac(System.EventHandler)->
+027ca36c(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02794140(System.EventHandler)->
+027d94cc(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0288deb4(System.EventHandler)->
+027e263c(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02ae048c(System.EventHandler)->
+0286743c(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02793a8c(System.EventHandler)->
+0288dcd4(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+028e8350(System.EventHandler)->
+028db8f8(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+028f23c8(System.EventHandler)->
+028e8848(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+028fafd4(System.EventHandler)->
+028f23e8(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0290c724(System.EventHandler)->
+028fb014(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0291086c(System.EventHandler)->
+0290c744(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02916d60(System.EventHandler)->
+0291088c(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0292534c(System.EventHandler)->
+02916db0(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0293631c(System.EventHandler)->
+0292536c(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0293b230(System.EventHandler)->
+0293633c(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02946bb4(System.EventHandler)->
+0293b280(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02948100(System.EventHandler)->
+02946bd4(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0294add4(System.EventHandler)->
+02948230(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0294e2ec(System.EventHandler)->
+0294adf4(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0295d70c(System.EventHandler)->
+0294e34c(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0296bc38(System.EventHandler)->
+0295d72c(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0297ba90(System.EventHandler)->
+0296be88(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0297ea10(System.EventHandler)->
+0297bab0(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0298806c(System.EventHandler)->
+0297ea50(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+029880f0(System.EventHandler)->
+0298808c(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0298c68c(System.EventHandler)->
+02988110(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02994a8c(System.EventHandler)->
+0298c6cc(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0299a004(System.EventHandler)->
+02994aac(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+0299c048(System.EventHandler)->
+0299a024(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+029a3e58(System.EventHandler)->
+0299c068(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+029c3e0c(System.EventHandler)->
+029a3eb8(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+029cfe54(System.EventHandler)->
+029c3f18(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+029e00ec(System.EventHandler)->
+029cfe74(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+029e50e4(System.EventHandler)->
+029e2be4(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+029e8b78(System.EventHandler)->
+029e5104(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+029ec5dc(System.EventHandler)->
+029e8b98(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+029f04d0(System.EventHandler)->
+029ec5fc(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+029f3bcc(System.EventHandler)->
+029f04f0(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+029f79e8(System.EventHandler)->
+029f3bec(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+029fb40c(System.EventHandler)->
+029f7a08(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+029ff56c(System.EventHandler)->
+029fb42c(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a03380(System.EventHandler)->
+029ff58c(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a06b20(System.EventHandler)->
+02a033a0(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a09a84(System.EventHandler)->
+02a06b40(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a0d624(System.EventHandler)->
+02a09aa4(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a10ee4(System.EventHandler)->
+02a0d644(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a149e0(System.EventHandler)->
+02a10f04(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a18604(System.EventHandler)->
+02a14a00(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a1bf7c(System.EventHandler)->
+02a18624(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a1f690(System.EventHandler)->
+02a1bf9c(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02ded65c(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a1f6c0(FileExplorer.MainForm+FileInformation)
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02ded63c(System.EventHandler)->
+02a1f6c0(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02a21c80(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a1f8a8(FileExplorer.MainForm+FileInformation)
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a21c60(System.EventHandler)->
+02a1f8a8(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02a2595c(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a21c90(FileExplorer.MainForm+FileInformation)
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a2593c(System.EventHandler)->
+02a21c90(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02a34fb8(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a2596c(FileExplorer.MainForm+FileInformation)
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a34f98(System.EventHandler)->
+02a2596c(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02a39ca4(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a34fc8(FileExplorer.MainForm+FileInformation)
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a39c84(System.EventHandler)->
+02a34fc8(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02a3e7e8(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a39cb4(FileExplorer.MainForm+FileInformation)
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a3e7c8(System.EventHandler)->
+02a39cb4(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02a43244(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a3e7f8(FileExplorer.MainForm+FileInformation)
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a43224(System.EventHandler)->
+02a3e7f8(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02a45b88(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a43254(FileExplorer.MainForm+FileInformation)
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a45b68(System.EventHandler)->
+02a43254(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02a4a900(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a45b98(FileExplorer.MainForm+FileInformation)
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a4a8e0(System.EventHandler)->
+02a45b98(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02a4f02c(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a4a910(FileExplorer.MainForm+FileInformation)
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a4f00c(System.EventHandler)->
+02a4a910(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02a5386c(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a4f03c(FileExplorer.MainForm+FileInformation)
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a5384c(System.EventHandler)->
+02a4f03c(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02a58260(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a5387c(FileExplorer.MainForm+FileInformation)
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a58240(System.EventHandler)->
+02a5387c(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02a5d060(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a58270(FileExplorer.MainForm+FileInformation)
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a5d040(System.EventHandler)->
+02a58270(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02a6c978(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a5d070(FileExplorer.MainForm+FileInformation)
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a6c958(System.EventHandler)->
+02a5d070(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02a713ac(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a6c988(FileExplorer.MainForm+FileInformation)
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a7138c(System.EventHandler)->
+02a6c988(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02a75fb0(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a713bc(FileExplorer.MainForm+FileInformation)
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a75f90(System.EventHandler)->
+02a713bc(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02a7ad68(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a75fc0(FileExplorer.MainForm+FileInformation)
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a7ad48(System.EventHandler)->
+02a75fc0(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02a7fa88(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a7ad78(FileExplorer.MainForm+FileInformation)
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a7fa68(System.EventHandler)->
+02a7ad78(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02a845dc(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a7fa98(FileExplorer.MainForm+FileInformation)
+Scan Thread 2 OSTHread 22a4
+DOMAIN(002ECF18):HANDLE(Pinned):2013fc:Root:03471010(System.Object[])->
+08d82f6c(System.EventHandler)->
+02e95de0(System.Object[])->
+02a845bc(System.EventHandler)->
+02a7fa98(FileExplorer.MainForm+FileInformation)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 22f4
+ESP:4aeb98:Root:02489128(System.Windows.Forms.Application+ThreadContext)->
+02488250(FileExplorer.MainForm)->
+0249c264(System.Windows.Forms.ListBox)->
+02634484(System.Windows.Forms.ListBox+ObjectCollection)->
+02634494(System.Windows.Forms.ListBox+ItemArray)->
+02948120(System.Object[])->
+02a890ec(System.Windows.Forms.ListBox+ItemArray+Entry)->
+02a845ec(FileExplorer.MainForm+FileInformation)
+                                                                                   ^ User interrupted operation error in '.foreach (obj {!dumpheap -type FileExplorer.MainForm+FileInformation -short}) {!gcroot obj}'
+0:000> !do 02a845ec
+*** WARNING: Unable to verify checksum for C:\Windows\assembly\NativeImages_v2.0.50727_32\System.Windows.Forms\2e2e31c87004468796d3defa1a1df011\System.Windows.Forms.ni.dll
+Name: FileExplorer.MainForm+FileInformation
+MethodTable: 00226c78
+EEClass: 00511020
+Size: 20(0x14) bytes
+ (C:\temp\dndebug\4_MemoryLeak\Binaries\FileExplorer.exe)
+Fields:
+      MT    Field   Offset                 Type VT     Attr    Value Name
+704388c0  400000a        4        System.String  0 instance 029e219c <Path>k__BackingField
+704388c0  400000b        8        System.String  0 instance 02a84600 <Name>k__BackingField
+70414eec  400000c        c      System.Object[]  0 instance 02a8902c <FirstFewLines>k__BackingField
+7041914c  4000009       14  System.EventHandler  0   static 08d82f6c FileInformationNeedsRefresh
+0:000> !do 029e219c 
+Name: System.String
+MethodTable: 704388c0
+EEClass: 701fa498
+Size: 236(0xec) bytes
+ (C:\Windows\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll)
+String: C:\Program Files (x86)\InstallShield Installation Information\{01FB4998-33C4-4431-85ED-079E3EEFE75D}\1053.mst
+Fields:
+      MT    Field   Offset                 Type VT     Attr    Value Name
+7043ab0c  4000096        4         System.Int32  1 instance      110 m_arrayLength
+7043ab0c  4000097        8         System.Int32  1 instance      109 m_stringLength
+704395a0  4000098        c          System.Char  1 instance       43 m_firstChar
+704388c0  4000099       10        System.String  0   shared   static Empty
+    >> Domain:Value  002ecf18:02471198 <<
+704394f0  400009a       14        System.Char[]  0   shared   static WhitespaceChars
+    >> Domain:Value  002ecf18:02471750 <<
+0:000> !do 02a5387c
+Name: FileExplorer.MainForm+FileInformation
+MethodTable: 00226c78
+EEClass: 00511020
+Size: 20(0x14) bytes
+ (C:\temp\dndebug\4_MemoryLeak\Binaries\FileExplorer.exe)
+Fields:
+      MT    Field   Offset                 Type VT     Attr    Value Name
+704388c0  400000a        4        System.String  0 instance 029e1a3c <Path>k__BackingField
+704388c0  400000b        8        System.String  0 instance 02a53890 <Name>k__BackingField
+70414eec  400000c        c      System.Object[]  0 instance 02a581b4 <FirstFewLines>k__BackingField
+7041914c  4000009       14  System.EventHandler  0   static 08d82f6c FileInformationNeedsRefresh
+0:000> !do 029e1a3c 
+Name: System.String
+MethodTable: 704388c0
+EEClass: 701fa498
+Size: 236(0xec) bytes
+ (C:\Windows\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll)
+String: C:\Program Files (x86)\InstallShield Installation Information\{01FB4998-33C4-4431-85ED-079E3EEFE75D}\1040.mst
+Fields:
+      MT    Field   Offset                 Type VT     Attr    Value Name
+7043ab0c  4000096        4         System.Int32  1 instance      110 m_arrayLength
+7043ab0c  4000097        8         System.Int32  1 instance      109 m_stringLength
+704395a0  4000098        c          System.Char  1 instance       43 m_firstChar
+704388c0  4000099       10        System.String  0   shared   static Empty
+    >> Domain:Value  002ecf18:02471198 <<
+704394f0  400009a       14        System.Char[]  0   shared   static WhitespaceChars
+    >> Domain:Value  002ecf18:02471750 <<
+0:000> q
+quit:

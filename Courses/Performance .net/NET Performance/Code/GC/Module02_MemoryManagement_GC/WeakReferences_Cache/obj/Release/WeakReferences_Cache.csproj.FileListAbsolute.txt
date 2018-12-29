@@ -1,0 +1,12 @@
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\WeakReferences_Cache\bin\Release\WeakReferences_Cache.exe
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\WeakReferences_Cache\bin\Release\WeakReferences_Cache.pdb
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\WeakReferences_Cache\obj\Release\WeakReferences_Cache.exe
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\WeakReferences_Cache\obj\Release\WeakReferences_Cache.pdb
+I:\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\WeakReferences_Cache\obj\Release\WeakReferences_Cache.csprojResolveAssemblyReference.cache
+C:\Users\Ofir\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\WeakReferences_Cache\obj\Release\WeakReferences_Cache.exe
+C:\Users\Ofir\SkyDrive\Courses\Framework 4.0 - 50483A\50483A-ENU_DemoCode\Module02_MemoryManagement_GC\WeakReferences_Cache\obj\Release\WeakReferences_Cache.pdb
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\WeakReferences_Cache\obj\Release\WeakReferences_Cache.exe
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\WeakReferences_Cache\obj\Release\WeakReferences_Cache.pdb
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\WeakReferences_Cache\bin\Release\WeakReferences_Cache.exe
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\WeakReferences_Cache\bin\Release\WeakReferences_Cache.pdb
+C:\Courses\NET Performance\Code\GC\Module02_MemoryManagement_GC\WeakReferences_Cache\obj\Release\WeakReferences_Cache.csprojResolveAssemblyReference.cache

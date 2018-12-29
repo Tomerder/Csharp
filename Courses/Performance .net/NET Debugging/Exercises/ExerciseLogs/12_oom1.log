@@ -1,0 +1,115 @@
+Opened log file 'C:\temp\dndebug\12_OOM1.log'
+0:000> g
+ModLoad: 75d10000 75db0000   C:\Windows\syswow64\ADVAPI32.dll
+ModLoad: 75fe0000 7608c000   C:\Windows\syswow64\msvcrt.dll
+ModLoad: 76300000 76319000   C:\Windows\SysWOW64\sechost.dll
+ModLoad: 76130000 76220000   C:\Windows\syswow64\RPCRT4.dll
+ModLoad: 74da0000 74e00000   C:\Windows\syswow64\SspiCli.dll
+ModLoad: 74d90000 74d9c000   C:\Windows\syswow64\CRYPTBASE.dll
+ModLoad: 71310000 71376000   C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscoreei.dll
+ModLoad: 74f20000 74f77000   C:\Windows\syswow64\SHLWAPI.dll
+ModLoad: 75c80000 75d10000   C:\Windows\syswow64\GDI32.dll
+ModLoad: 76320000 76420000   C:\Windows\syswow64\USER32.dll
+ModLoad: 75c70000 75c7a000   C:\Windows\syswow64\LPK.dll
+ModLoad: 75bd0000 75c6d000   C:\Windows\syswow64\USP10.dll
+ModLoad: 76220000 76280000   C:\Windows\SysWOW64\IMM32.DLL
+ModLoad: 76c50000 76d1c000   C:\Windows\syswow64\MSCTF.dll
+ModLoad: 61f90000 625ff000   C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+ModLoad: 6d660000 6d71e000   C:\Windows\SysWOW64\MSVCR100_CLR0400.dll
+(1b50.1d18): Unknown exception - code 04242420 (first chance)
+ModLoad: 5f2e0000 600a3000   C:\Windows\assembly\NativeImages_v4.0.30319_32\mscorlib\246f1a5abb686b9dcdf22d3505b08cea\mscorlib.ni.dll
+ModLoad: 74890000 748a0000   C:\Windows\Microsoft.NET\Framework\v4.0.30319\nlssorting.dll
+ModLoad: 76800000 7695c000   C:\Windows\syswow64\ole32.dll
+ModLoad: 6d420000 6d480000   C:\Windows\Microsoft.NET\Framework\v4.0.30319\clrjit.dll
+(1b50.1d18): C++ EH exception - code e06d7363 (first chance)
+(1b50.1d18): CLR exception - code e0434352 (first chance)
+ModLoad: 74280000 74289000   C:\Windows\SysWOW64\VERSION.dll
+(1b50.1d18): CLR exception - code e0434352 (!!! second chance !!!)
+eax=003ff10c ebx=00000005 ecx=00000005 edx=00000000 esi=003ff1b8 edi=004197e0
+eip=764bb727 esp=003ff10c ebp=003ff15c iopl=0         nv up ei pl nz na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000206
+KERNELBASE!RaiseException+0x58:
+764bb727 c9              leave
+0:000> lm
+start    end        module name
+01300000 01308000   OOM1       (deferred)             
+5f2e0000 600a3000   mscorlib_ni   (deferred)             
+61f90000 625ff000   clr        (deferred)             
+6d420000 6d480000   clrjit     (deferred)             
+6d660000 6d71e000   MSVCR100_CLR0400   (deferred)             
+71310000 71376000   mscoreei   (deferred)             
+71380000 713ca000   MSCOREE    (deferred)             
+74280000 74289000   VERSION    (deferred)             
+74890000 748a0000   nlssorting   (deferred)             
+74d90000 74d9c000   CRYPTBASE   (deferred)             
+74da0000 74e00000   SspiCli    (deferred)             
+74f20000 74f77000   SHLWAPI    (deferred)             
+75bd0000 75c6d000   USP10      (deferred)             
+75c70000 75c7a000   LPK        (deferred)             
+75c80000 75d10000   GDI32      (deferred)             
+75d10000 75db0000   ADVAPI32   (deferred)             
+75fe0000 7608c000   msvcrt     (deferred)             
+76130000 76220000   RPCRT4     (deferred)             
+76220000 76280000   IMM32      (deferred)             
+76300000 76319000   sechost    (deferred)             
+76320000 76420000   USER32     (deferred)             
+764b0000 764f6000   KERNELBASE   (pdb symbols)          c:\symbols\wkernelbase.pdb\74D5C6E200BD410780AD91A62D03C8CA1\wkernelbase.pdb
+76500000 76600000   KERNEL32   (deferred)             
+76800000 7695c000   ole32      (deferred)             
+76c50000 76d1c000   MSCTF      (deferred)             
+77230000 773b0000   ntdll      (pdb symbols)          c:\symbols\wntdll.pdb\ACE318E6A2F44F23A6CC5628F10A7DDC2\wntdll.pdb
+0:000> .loadby sos clr
+0:000> !PrintException
+Exception object: 02719360
+Exception type:   System.OutOfMemoryException
+Message:          <none>
+InnerException:   <none>
+StackTrace (generated):
+    SP       IP       Function
+    003FF2EC 002A008A OOM1!OOM1.OOM1Program.Main(System.String[])+0x1a
+
+StackTraceString: <none>
+HResult: 8007000e
+0:000> !AnalyzeOOM
+Managed OOM occured after GC #17 (Requested to allocate 1551591840 bytes)
+Reason: Didn't have enough memory to allocate an LOH segment
+Detail: LOH: Failed to reserve memory (1551892480 bytes)
+0:000> !address -summary
+ TEB 7efdd000 in range 7efdb000 7efde000
+ TEB 7efda000 in range 7efd8000 7efdb000
+ TEB 7efd7000 in range 7efd5000 7efd8000
+ TEB 7efaf000 in range 7efad000 7efb0000
+ ProcessParametrs 00401a38 in range 00400000 0046b000
+ Environment 00400810 in range 00400000 0046b000
+
+-------------------- Usage SUMMARY --------------------------
+    TotSize (      KB)   Pct(Tots) Pct(Busy)   Usage
+    77b1000 (  122564) : 05.84%    75.43%    : RegionUsageIsVAD
+   76141000 ( 1934596) : 92.25%    00.00%    : RegionUsageFree
+    20be000 (   33528) : 01.60%    20.63%    : RegionUsageImage
+     3ff000 (    4092) : 00.20%    02.52%    : RegionUsageStack
+          0 (       0) : 00.00%    00.00%    : RegionUsageTeb
+     240000 (    2304) : 00.11%    01.42%    : RegionUsageHeap
+          0 (       0) : 00.00%    00.00%    : RegionUsagePageHeap
+       1000 (       4) : 00.00%    00.00%    : RegionUsagePeb
+          0 (       0) : 00.00%    00.00%    : RegionUsageProcessParametrs
+          0 (       0) : 00.00%    00.00%    : RegionUsageEnvironmentBlock
+       Tot: 7fff0000 (2097088 KB) Busy: 09eaf000 (162492 KB)
+
+-------------------- Type SUMMARY --------------------------
+    TotSize (      KB)   Pct(Tots)  Usage
+   76141000 ( 1934596) : 92.25%   : <free>
+    230d000 (   35892) : 01.71%   : MEM_IMAGE
+    1ed6000 (   31576) : 01.51%   : MEM_MAPPED
+    5ccc000 (   95024) : 04.53%   : MEM_PRIVATE
+
+-------------------- State SUMMARY --------------------------
+    TotSize (      KB)   Pct(Tots)  Usage
+    528b000 (   84524) : 04.03%   : MEM_COMMIT
+   76141000 ( 1934596) : 92.25%   : MEM_FREE
+    4c24000 (   77968) : 03.72%   : MEM_RESERVE
+
+Largest free region: Base 04ba2000 - Size 3f21e000 (1034360 KB)
+
+0:000> q
+quit:

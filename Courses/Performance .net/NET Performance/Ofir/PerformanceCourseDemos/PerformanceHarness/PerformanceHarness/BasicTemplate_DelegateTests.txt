@@ -1,0 +1,44 @@
+using System;
+using PerformanceHarness;
+using System.Runtime.CompilerServices;
+
+[assembly: MeasurableClass(typeof(DelegateTest))]
+[assembly: MeasurableClass(typeof(DelegateInvokeTest))]
+
+public class Employee
+{
+     //private static volatile bool _b = false;
+     //private static volatile int _x;
+
+     public static Employee TheEmp = new Employee();
+     public static FooDel TheFooDel = TheEmp.Foo;
+
+     [MethodImpl(MethodImplOptions.NoInlining)]
+     public void Foo() { /*if (_b) _x = 5;*/ }
+}
+
+public delegate void FooDel();
+
+public static class DelegateTest
+{
+	[MeasurableMethod]
+	static void Measure()
+	{
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+			Employee.TheFooDel();
+		}
+	}
+}
+
+public static class DelegateInvokeTest
+{
+	[MeasurableMethod]
+	static void Measure()
+	{
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+			Employee.TheFooDel.Invoke();
+		}
+	}
+}

@@ -1,0 +1,118 @@
+using System;
+using System.Runtime.InteropServices;
+using PerformanceHarness;
+
+public static class Arrays
+{
+	public static byte[] First = new byte[65536];
+	public static byte[] Second = new byte[65536];
+
+	static Arrays()
+	{
+		Random random = new Random();
+		for (int i = 0; i < First.Length; ++i)
+			First[i] = (byte) random.Next(0, 255);
+	}
+}
+
+//[MeasurableClass]
+public static class NaiveCopyTest
+{
+	[MeasurableMethod]
+	static void Measure()
+	{
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+			for (int i = 0; i < Arrays.First.Length; ++i)
+				Arrays.Second[i] = Arrays.First[i];
+		}
+	}
+}
+
+[MeasurableClass]
+public static class FixedCopyTest
+{
+	[MeasurableMethod]
+	static unsafe void Measure()
+	{
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+			fixed (byte* p1 = &Arrays.First[0])
+			fixed (byte* p2 = &Arrays.Second[0])
+			{
+				long* pSrc = (long*)p1;
+				long* pDst = (long*)p2;
+				int len = Arrays.First.Length / (sizeof(long) * 8);
+				for (int i = 0; i < len; ++i)
+				{
+					*pSrc++ = *pDst++;
+					*pSrc++ = *pDst++;
+					*pSrc++ = *pDst++;
+					*pSrc++ = *pDst++;
+					*pSrc++ = *pDst++;
+					*pSrc++ = *pDst++;
+					*pSrc++ = *pDst++;
+					*pSrc++ = *pDst++;
+				}
+			}
+		}
+	}
+}
+
+[MeasurableClass]
+public static class ArrayCopyTest
+{
+	[MeasurableMethod]
+	static void Measure()
+	{
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+			Array.Copy(Arrays.First, Arrays.Second, Arrays.First.Length);
+		}
+	}
+}
+
+[MeasurableClass]
+public static class BlockCopyTest
+{
+	[MeasurableMethod]
+	static void Measure()
+	{
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+			Buffer.BlockCopy(Arrays.First, 0, Arrays.Second, 0, Arrays.First.Length);
+		}
+	}
+}
+
+[MeasurableClass]
+public static class IntopCopyTest
+{
+	[DllImport("MSVCRT.DLL")]
+	private static extern void memcpy(byte[] pDst, byte[] pSrc, int count);
+
+	[MeasurableMethod]
+	static void Measure()
+	{
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+			memcpy(Arrays.First, Arrays.Second, Arrays.First.Length);
+		}
+	}
+}
+
+//[MeasurableClass]
+public static class Ipps5CopyTest
+{
+	[DllImport("IPPS.DLL")]
+	private static extern IntPtr ippsCopy_8u(byte[] pDst, byte[] pSrc, int count);
+
+	[MeasurableMethod]
+	static void Measure()
+	{
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+			ippsCopy_8u(Arrays.First, Arrays.Second, Arrays.First.Length);
+		}
+	}
+}

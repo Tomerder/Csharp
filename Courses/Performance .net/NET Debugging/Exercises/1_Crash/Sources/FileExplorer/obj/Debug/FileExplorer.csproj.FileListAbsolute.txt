@@ -1,0 +1,9 @@
+C:\Courses\NET Debugging\Exercises\1_Crash\Sources\FileExplorer\bin\Debug\FileExplorer.exe.config
+C:\Courses\NET Debugging\Exercises\1_Crash\Sources\FileExplorer\bin\Debug\FileExplorer.exe
+C:\Courses\NET Debugging\Exercises\1_Crash\Sources\FileExplorer\bin\Debug\FileExplorer.pdb
+C:\Courses\NET Debugging\Exercises\1_Crash\Sources\FileExplorer\obj\Debug\FileExplorer.csprojResolveAssemblyReference.cache
+C:\Courses\NET Debugging\Exercises\1_Crash\Sources\FileExplorer\obj\Debug\FileExplorer.MainForm.resources
+C:\Courses\NET Debugging\Exercises\1_Crash\Sources\FileExplorer\obj\Debug\FileExplorer.Properties.Resources.resources
+C:\Courses\NET Debugging\Exercises\1_Crash\Sources\FileExplorer\obj\Debug\FileExplorer.csproj.GenerateResource.Cache
+C:\Courses\NET Debugging\Exercises\1_Crash\Sources\FileExplorer\obj\Debug\FileExplorer.exe
+C:\Courses\NET Debugging\Exercises\1_Crash\Sources\FileExplorer\obj\Debug\FileExplorer.pdb

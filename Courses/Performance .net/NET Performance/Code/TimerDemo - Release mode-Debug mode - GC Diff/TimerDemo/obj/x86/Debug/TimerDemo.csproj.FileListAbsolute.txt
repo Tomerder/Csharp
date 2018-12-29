@@ -1,0 +1,7 @@
+C:\Users\hadrahanat\Desktop\קורס advanced.net performance 1.5.2016\Elbit\NET Performance\Code\TimerDemo\TimerDemo\bin\Debug\TimerDemo.exe
+C:\Users\hadrahanat\Desktop\קורס advanced.net performance 1.5.2016\Elbit\NET Performance\Code\TimerDemo\TimerDemo\bin\Debug\TimerDemo.pdb
+C:\Users\hadrahanat\Desktop\קורס advanced.net performance 1.5.2016\Elbit\NET Performance\Code\TimerDemo\TimerDemo\obj\x86\Debug\TimerDemo.csprojResolveAssemblyReference.cache
+C:\Users\hadrahanat\Desktop\קורס advanced.net performance 1.5.2016\Elbit\NET Performance\Code\TimerDemo\TimerDemo\obj\x86\Debug\TimerDemo.exe
+C:\Users\hadrahanat\Desktop\קורס advanced.net performance 1.5.2016\Elbit\NET Performance\Code\TimerDemo\TimerDemo\obj\x86\Debug\TimerDemo.pdb
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Code\TimerDemo - Release mode-Debug mode - GC Diff\TimerDemo\obj\x86\Debug\TimerDemo.exe
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Code\TimerDemo - Release mode-Debug mode - GC Diff\TimerDemo\obj\x86\Debug\TimerDemo.pdb

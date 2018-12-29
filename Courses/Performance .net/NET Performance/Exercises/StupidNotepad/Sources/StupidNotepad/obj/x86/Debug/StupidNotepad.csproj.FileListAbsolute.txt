@@ -1,0 +1,13 @@
+C:\Courses\NET Performance\Exercises\StupidNotepad\Sources\StupidNotepad\bin\Debug\StupidNotepad.exe.config
+C:\Courses\NET Performance\Exercises\StupidNotepad\Sources\StupidNotepad\obj\x86\Debug\StupidNotepad.csprojResolveAssemblyReference.cache
+C:\Courses\NET Performance\Exercises\StupidNotepad\Sources\StupidNotepad\obj\x86\Debug\StupidNotepad.NotepadMainForm.resources
+C:\Courses\NET Performance\Exercises\StupidNotepad\Sources\StupidNotepad\obj\x86\Debug\StupidNotepad.Properties.Resources.resources
+C:\Courses\NET Performance\Exercises\StupidNotepad\Sources\StupidNotepad\obj\x86\Debug\StupidNotepad.csproj.GenerateResource.Cache
+C:\Courses\NET Performance\Exercises\StupidNotepad\Sources\StupidNotepad\bin\Debug\StupidNotepad.exe
+C:\Courses\NET Performance\Exercises\StupidNotepad\Sources\StupidNotepad\bin\Debug\StupidNotepad.pdb
+C:\Courses\NET Performance\Exercises\StupidNotepad\Sources\StupidNotepad\bin\Debug\Microsoft.ConcurrencyVisualizer.Markers.dll
+C:\Courses\NET Performance\Exercises\StupidNotepad\Sources\StupidNotepad\obj\x86\Debug\StupidNotepad.exe
+C:\Courses\NET Performance\Exercises\StupidNotepad\Sources\StupidNotepad\obj\x86\Debug\StupidNotepad.pdb
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Exercises\StupidNotepad\Sources\StupidNotepad\bin\Debug\StupidNotepad.exe.config
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Exercises\StupidNotepad\Sources\StupidNotepad\obj\x86\Debug\StupidNotepad.exe
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Exercises\StupidNotepad\Sources\StupidNotepad\obj\x86\Debug\StupidNotepad.pdb

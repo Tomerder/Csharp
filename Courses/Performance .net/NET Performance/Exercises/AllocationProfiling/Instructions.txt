@@ -1,0 +1,16 @@
+
+In this exercise, you will use CLR Profiler to diagnose an application's memory allocation behavior and to determine whether there's room for improvement in this regard.
+
+Run the CLR Profiler and start the JackCompiler.exe application within it. You don't have to wait for the run to complete -- you can use "Kill Application" to view intermediate results.
+
+Experiment with the profiler's output, but pay specific attention to the following areas:
+
+- Histogram of allocated objects -- which objects were allocated, how many, and how big they were
+
+- Allocation graph -- which paths in the application's code are responsible for the majority of allocations
+
+- GC timeline -- when do collections occur? are they high-gen collections?
+
+Suggest how the application's performance can be improved by avoiding some allocations. Use Reflector to view the application's source.
+
+(OPTIONAL: You may also use the ANTS Performance Profiler to analyze the application's performance and suggest additional ways to improve it other than decreasing the allocation penalty.)

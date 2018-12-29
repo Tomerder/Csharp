@@ -1,0 +1,6 @@
+C:\Courses\NET Debugging\Exercises\0_IntelliTrace\Sources\JackCompiler\bin\Debug\TestProgram.jack
+C:\Courses\NET Debugging\Exercises\0_IntelliTrace\Sources\JackCompiler\bin\Debug\JackCompiler.dll
+C:\Courses\NET Debugging\Exercises\0_IntelliTrace\Sources\JackCompiler\bin\Debug\JackCompiler.pdb
+C:\Courses\NET Debugging\Exercises\0_IntelliTrace\Sources\JackCompiler\obj\x86\Debug\JackCompiler.csprojResolveAssemblyReference.cache
+C:\Courses\NET Debugging\Exercises\0_IntelliTrace\Sources\JackCompiler\obj\x86\Debug\JackCompiler.dll
+C:\Courses\NET Debugging\Exercises\0_IntelliTrace\Sources\JackCompiler\obj\x86\Debug\JackCompiler.pdb

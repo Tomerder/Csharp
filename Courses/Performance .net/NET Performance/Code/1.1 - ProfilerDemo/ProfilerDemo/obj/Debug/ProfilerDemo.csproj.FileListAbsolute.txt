@@ -1,0 +1,7 @@
+C:\Courses\NET Performance\Code\1.1 - ProfilerDemo\ProfilerDemo\bin\Debug\ProfilerDemo.exe
+C:\Courses\NET Performance\Code\1.1 - ProfilerDemo\ProfilerDemo\bin\Debug\ProfilerDemo.pdb
+C:\Courses\NET Performance\Code\1.1 - ProfilerDemo\ProfilerDemo\obj\Debug\ProfilerDemo.csprojResolveAssemblyReference.cache
+C:\Courses\NET Performance\Code\1.1 - ProfilerDemo\ProfilerDemo\obj\Debug\ProfilerDemo.exe
+C:\Courses\NET Performance\Code\1.1 - ProfilerDemo\ProfilerDemo\obj\Debug\ProfilerDemo.pdb
+C:\Users\hadrahanat\Desktop\Elbit\NET Performance\Code\1.1 - ProfilerDemo\ProfilerDemo\obj\Debug\ProfilerDemo.exe
+C:\Users\hadrahanat\Desktop\Elbit\NET Performance\Code\1.1 - ProfilerDemo\ProfilerDemo\obj\Debug\ProfilerDemo.pdb

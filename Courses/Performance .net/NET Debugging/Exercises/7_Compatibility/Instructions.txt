@@ -1,0 +1,9 @@
+
+1. Run the VeryOldProgram.exe application. It refuses to run because its configuration settings are corrupt.
+
+2. Use Process Monitor to monitor registry and file system accesses performed by the application. Locate the problematic registry or file system access.
+
+3. If you're performing this exercise on Windows XP or Windows Server 2003, create the appropriate registry or file system structure so that the application can run successfully. The instructor will provide to you a string on the whiteboard that you will have to use.
+
+4. If you're performing this exercise on Windows Vista or Windows 7, use Application Compatibility Toolkit with the appropriate shim (VirtualRegistry or CorrectFilePaths) to reroute the application's registry or file system accesses to a copy that you configured separately. Make sure that the application runs successfully. The instructor will provide to you a string on the whiteboard that you will have to use.
+(Note: After creating a compatibility database in ACT, save it and then pass it to the command-line "sdbinst" utility on an Administrative command prompt. If you're stuck, use the VeryOldProgramFix.sdb file provided by the instructor. You may open it in ACT to see the fix applied by it.)

@@ -1,0 +1,3 @@
+1. Run the FileAccessEmulation.exe application. It crashes.
+
+2. Inspect the exception and the application's source code to detect the source of the bug. Refer to the slides of the GC module, specifically those on GC roots and on finalization.

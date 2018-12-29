@@ -1,0 +1,1 @@
+C:\Courses\NET Debugging\Exercises\2_PostmortemCrash\Sources\FileExplorer\bin\Debug\FileExplorer.exe.config

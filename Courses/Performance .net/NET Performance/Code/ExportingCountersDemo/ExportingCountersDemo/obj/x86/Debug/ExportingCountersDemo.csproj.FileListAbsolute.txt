@@ -1,0 +1,10 @@
+C:\Courses\NET Performance\Code\ExportingCountersDemo\ExportingCountersDemo\bin\Debug\ExportingCountersDemo.exe
+C:\Courses\NET Performance\Code\ExportingCountersDemo\ExportingCountersDemo\bin\Debug\ExportingCountersDemo.pdb
+C:\Courses\NET Performance\Code\ExportingCountersDemo\ExportingCountersDemo\obj\x86\Debug\ExportingCountersDemo.csprojResolveAssemblyReference.cache
+C:\Courses\NET Performance\Code\ExportingCountersDemo\ExportingCountersDemo\obj\x86\Debug\ExportingCountersDemo.Form1.resources
+C:\Courses\NET Performance\Code\ExportingCountersDemo\ExportingCountersDemo\obj\x86\Debug\ExportingCountersDemo.Properties.Resources.resources
+C:\Courses\NET Performance\Code\ExportingCountersDemo\ExportingCountersDemo\obj\x86\Debug\ExportingCountersDemo.csproj.GenerateResource.Cache
+C:\Courses\NET Performance\Code\ExportingCountersDemo\ExportingCountersDemo\obj\x86\Debug\ExportingCountersDemo.exe
+C:\Courses\NET Performance\Code\ExportingCountersDemo\ExportingCountersDemo\obj\x86\Debug\ExportingCountersDemo.pdb
+C:\Users\hadrahanat\Desktop\קורס advanced.net performance 1.5.2016\Elbit\NET Performance\Code\ExportingCountersDemo\ExportingCountersDemo\obj\x86\Debug\ExportingCountersDemo.exe
+C:\Users\hadrahanat\Desktop\קורס advanced.net performance 1.5.2016\Elbit\NET Performance\Code\ExportingCountersDemo\ExportingCountersDemo\obj\x86\Debug\ExportingCountersDemo.pdb

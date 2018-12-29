@@ -1,0 +1,5 @@
+C:\Users\hadrahanat\Desktop\קורס advanced.net performance 1.5.2016\Elbit\NET Debugging\Code\3 - SmartBreakpoints\SmartBreakpoints\bin\Debug\SmartBreakpoints.exe
+C:\Users\hadrahanat\Desktop\קורס advanced.net performance 1.5.2016\Elbit\NET Debugging\Code\3 - SmartBreakpoints\SmartBreakpoints\bin\Debug\SmartBreakpoints.pdb
+C:\Users\hadrahanat\Desktop\קורס advanced.net performance 1.5.2016\Elbit\NET Debugging\Code\3 - SmartBreakpoints\SmartBreakpoints\obj\Debug\SmartBreakpoints.csprojResolveAssemblyReference.cache
+C:\Users\hadrahanat\Desktop\קורס advanced.net performance 1.5.2016\Elbit\NET Debugging\Code\3 - SmartBreakpoints\SmartBreakpoints\obj\Debug\SmartBreakpoints.exe
+C:\Users\hadrahanat\Desktop\קורס advanced.net performance 1.5.2016\Elbit\NET Debugging\Code\3 - SmartBreakpoints\SmartBreakpoints\obj\Debug\SmartBreakpoints.pdb

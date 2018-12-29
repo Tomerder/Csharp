@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using PerformanceHarness;
+
+[assembly: MeasurableClass(typeof(EqualsOverride))]
+
+public static class EqualsOverride
+{
+	private struct MyValueType
+	{
+		public int X;
+		public float Y;
+		public MyValueType(int x, float y) { X = x; Y = y; }
+		public override bool Equals(object other)
+		{
+			if (!(other is MyValueType))
+				throw new ArgumentException();
+
+			MyValueType mvt = (MyValueType) other;
+			return X == mvt.X && Y == mvt.Y;
+		}
+		public override int GetHashCode() { return 0; }
+	}
+
+	private static volatile bool _x;
+
+	[MeasurableMethod]
+	static void Measure()
+	{
+		MyValueType mvt1 = new MyValueType(5, 3.2f);
+		MyValueType mvt2 = new MyValueType(5, 3.3f);
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+			_x = mvt1.Equals(mvt2);
+		}
+	}
+}

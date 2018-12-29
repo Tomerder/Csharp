@@ -1,0 +1,5 @@
+C:\Courses\NET Performance\Code\1.3 - CLRProfilerDemo\CLRProfilerDemo\bin\Debug\CLRProfilerDemo.exe
+C:\Courses\NET Performance\Code\1.3 - CLRProfilerDemo\CLRProfilerDemo\bin\Debug\CLRProfilerDemo.pdb
+C:\Courses\NET Performance\Code\1.3 - CLRProfilerDemo\CLRProfilerDemo\obj\Debug\CLRProfilerDemo.csprojResolveAssemblyReference.cache
+C:\Courses\NET Performance\Code\1.3 - CLRProfilerDemo\CLRProfilerDemo\obj\Debug\CLRProfilerDemo.exe
+C:\Courses\NET Performance\Code\1.3 - CLRProfilerDemo\CLRProfilerDemo\obj\Debug\CLRProfilerDemo.pdb

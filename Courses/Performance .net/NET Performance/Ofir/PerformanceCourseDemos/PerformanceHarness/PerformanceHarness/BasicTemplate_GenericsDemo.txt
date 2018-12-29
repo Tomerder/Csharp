@@ -1,0 +1,67 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using PerformanceHarness;
+
+[assembly: MeasurableClass(typeof(CollectionTest))]
+[assembly: MeasurableClass(typeof(GenericCollectionTest))]
+
+public static class CollectionTest
+{
+	private static volatile int _x;
+	private static ArrayList _list;
+
+	[SetupMethod]
+	static void Setup()
+	{
+		_list = new ArrayList();
+	}
+
+	[MeasurableMethod]
+	static void Measure()
+	{
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+			_list.Add(__i);
+			_x = (int)_list[0];
+		}
+	}
+	
+	[TeardownMethod]
+	static void Teardown()
+	{
+		_list.Clear();
+		_list = null;
+		GC.Collect();
+	}
+}
+
+public static class GenericCollectionTest
+{
+	private static volatile int _x;
+	private static List<int> _list;
+
+	[SetupMethod]
+	static void Setup()
+	{
+		_list = new List<int>();
+	}
+
+	[MeasurableMethod]
+	static void Measure()
+	{
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+			_list.Add(__i);
+			_x = _list[0];
+		}
+	}
+	
+	[TeardownMethod]
+	static void Teardown()
+	{
+		_list.Clear();
+		_list = null;
+		GC.Collect();
+	}
+}

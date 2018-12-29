@@ -1,0 +1,1162 @@
+Opened log file 'C:\temp\dndebug\11_StrangeLeak.log'
+0:008> lm
+start    end        module name
+013e0000 013e8000   StrangeLeak   (deferred)             
+541e0000 5422d000   wbemcntl   (deferred)             
+5f2e0000 600a3000   mscorlib_ni   (deferred)             
+61f90000 625ff000   clr        (deferred)             
+6d420000 6d480000   clrjit     (deferred)             
+6d660000 6d71e000   MSVCR100_CLR0400   (deferred)             
+71310000 71376000   mscoreei   (deferred)             
+71380000 713ca000   MSCOREE    (deferred)             
+714a0000 714ae000   RpcRtRemote   (deferred)             
+71de0000 71e60000   uxtheme    (deferred)             
+73fa0000 73fdb000   rsaenh     (deferred)             
+73fe0000 73ff6000   CRYPTSP    (deferred)             
+74000000 74014000   ATL        (deferred)             
+74890000 748a0000   nlssorting   (deferred)             
+74d90000 74d9c000   CRYPTBASE   (deferred)             
+74da0000 74e00000   SspiCli    (deferred)             
+74f20000 74f77000   SHLWAPI    (deferred)             
+75bd0000 75c6d000   USP10      (deferred)             
+75c70000 75c7a000   LPK        (deferred)             
+75c80000 75d10000   GDI32      (deferred)             
+75d10000 75db0000   ADVAPI32   (deferred)             
+75f30000 75fbf000   OLEAUT32   (deferred)             
+75fe0000 7608c000   msvcrt     (deferred)             
+76130000 76220000   RPCRT4     (deferred)             
+76220000 76280000   IMM32      (deferred)             
+76300000 76319000   sechost    (deferred)             
+76320000 76420000   USER32     (deferred)             
+76420000 764a3000   CLBCatQ    (deferred)             
+764b0000 764f6000   KERNELBASE   (deferred)             
+76500000 76600000   KERNEL32   (deferred)             
+76800000 7695c000   ole32      (deferred)             
+76c50000 76d1c000   MSCTF      (deferred)             
+77230000 773b0000   ntdll      (pdb symbols)          c:\symbols\wntdll.pdb\ACE318E6A2F44F23A6CC5628F10A7DDC2\wntdll.pdb
+0:008> .loadby sos clr
+0:008> !DumpHeap -stat
+total 0 objects
+Statistics:
+      MT    Count    TotalSize Class Name
+5f6065a4        1           12 System.Nullable`1[[System.Boolean, mscorlib]]
+5f6059b8        1           12 System.Collections.Generic.ObjectEqualityComparer`1[[System.Type, mscorlib]]
+5f604bc4        1           12 System.Security.Permissions.ReflectionPermission
+5f604ae0        1           12 System.Security.Permissions.FileDialogPermission
+5f604a00        1           12 System.Security.PolicyManager
+5f602978        1           12 System.Int32
+5f60287c        1           12 System.Collections.Generic.GenericEqualityComparer`1[[System.String, mscorlib]]
+5f604c74        1           16 System.Security.Permissions.UIPermission
+5f604130        1           16 System.Collections.ObjectModel.ReadOnlyCollection`1[[System.Security.Policy.StrongName, mscorlib]]
+5f5ff590        1           16 System.Security.Policy.AssemblyEvidenceFactory
+00203f58        1           16 WMICNTLLib.WMISnapinClass
+5f6073c4        1           20 Microsoft.Win32.SafeHandles.SafeFileMappingHandle
+5f60736c        1           20 Microsoft.Win32.SafeHandles.SafeViewOfFileHandle
+5f6072d8        1           20 System.Text.InternalEncoderBestFitFallback
+5f606034        1           20 Microsoft.Win32.SafeHandles.SafeFileHandle
+5f6052a0        1           20 System.Security.PermissionToken
+5f604a88        1           20 System.Security.Permissions.EnvironmentPermission
+5f603c54        1           20 System.Security.Policy.PolicyStatement
+5f5ff4d0        1           20 Microsoft.Win32.SafeHandles.SafePEFileHandle
+5f5b9a30        1           20 System.Threading.ThreadHelper
+5f6074d8        1           24 System.IO.TextWriter+SyncTextWriter
+5f607328        1           24 System.Text.InternalDecoderBestFitFallback
+5f603cf4        1           24 System.Collections.Generic.List`1[[System.Security.Policy.StrongName, mscorlib]]
+5f603010        1           24 System.Version
+5f607490        1           28 Microsoft.Win32.Win32Native+InputRecord
+5f607020        1           28 System.Text.EncoderNLS
+5f606dc0        1           28 System.IO.Stream+NullStream
+5f601b18        1           28 System.SharedStatics
+5f605344        1           32 System.Security.PermissionTokenFactory
+5f604730        1           32 System.Security.Util.Tokenizer+StringMaker
+5f5ff534        1           32 System.Security.Policy.PEFileEvidenceFactory
+5f5f26b4        1           32 System.Threading.ContextCallback
+5f606f40        1           36 System.IO.__ConsoleStream
+5f605304        1           36 System.Security.Util.TokenBasedSet
+5f604c1c        3           36 System.Security.Permissions.SecurityPermission
+5f604b44        1           36 System.Security.Permissions.FileIOPermission
+5f6037e8        1           36 System.Security.Policy.ApplicationTrust
+5f5b60b0        1           36 System.Runtime.Remoting.Messaging.LogicalCallContext
+5f604a3c        1           40 System.Int32[][]
+5f603570        1           40 System.Security.Policy.Evidence
+5f605efc        1           44 System.Threading.ReaderWriterLock
+5f601fa0        1           48 System.Globalization.TextInfo
+5f606720        1           52 System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Globalization.CultureData, mscorlib]]
+5f6057d8        1           52 System.Collections.Generic.Dictionary`2[[System.Type, mscorlib],[System.Security.Policy.EvidenceTypeDescriptor, mscorlib]]
+5f6034f8        1           52 System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]]
+5f602438        1           52 System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]]
+5f606a94        1           56 System.IO.StreamWriter
+5f6067e0        1           60 System.Collections.Generic.Dictionary`2+Entry[[System.String, mscorlib],[System.Globalization.CultureData, mscorlib]][]
+5f601c14        1           60 System.AppDomainSetup
+5f5f2820        2           64 System.Threading.ThreadStart
+5f6071cc        1           72 System.Text.SBCSCodePageEncoding
+5f601508        3           72 System.Reflection.RuntimeAssembly
+5f5ff5e8        6           72 System.Object
+5f5fa81c        3           72 System.Guid
+5f6030b4        1           84 System.Globalization.CalendarData
+5f5ffde8        1           84 System.ExecutionEngineException
+5f5ffd9c        1           84 System.StackOverflowException
+5f5ffd50        1           84 System.OutOfMemoryException
+5f5ffc0c        1           84 System.Exception
+5f5fffcc        2           96 System.Threading.Thread
+5f603670        3          108 System.Security.PermissionSet
+5f5fb468        3          108 System.Threading.ExecutionContext
+5f600ec8        1          112 System.AppDomain
+5f606958        1          132 System.Globalization.NumberFormatInfo
+5f6063a4        2          144 System.Globalization.CultureInfo
+5f60537c        3          168 System.Collections.Hashtable
+5f5ffe34        2          168 System.Threading.ThreadAbortException
+5f60547c        3          240 System.Collections.Hashtable+bucket[]
+5f605e88        1          284 System.Collections.Generic.Dictionary`2+Entry[[System.Type, mscorlib],[System.Security.Policy.EvidenceTypeDescriptor, mscorlib]][]
+5f6020c4        2          608 System.Globalization.CultureData
+5f5ff640       27          648 System.RuntimeType
+002038c8       85         1020 StrangeLeak.ExpensiveResource
+5f602938       13         1372 System.Int32[]
+5f602f20        1         3164 System.Collections.Generic.Dictionary`2+Entry[[System.String, mscorlib],[System.String, mscorlib]][]
+5f601d88       56         4088 System.Char[]
+5f5ff9ac      471        12876 System.String
+5f5b6c28       30        26120 System.Object[]
+00522c38      211        39260      Free
+5f604944       87      8501644 System.Byte[]
+Total 1075 objects
+0:008> g
+(20b4.1f08): Break instruction exception - code 80000003 (first chance)
+eax=7efa0000 ebx=00000000 ecx=00000000 edx=772cf4e2 esi=00000000 edi=00000000
+eip=7724000c esp=0554fa90 ebp=0554fabc iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!DbgBreakPoint:
+7724000c cc              int     3
+0:009> !DumpHeap -stat
+total 0 objects
+Statistics:
+      MT    Count    TotalSize Class Name
+5f6065a4        1           12 System.Nullable`1[[System.Boolean, mscorlib]]
+5f6059b8        1           12 System.Collections.Generic.ObjectEqualityComparer`1[[System.Type, mscorlib]]
+5f604bc4        1           12 System.Security.Permissions.ReflectionPermission
+5f604ae0        1           12 System.Security.Permissions.FileDialogPermission
+5f604a00        1           12 System.Security.PolicyManager
+5f602978        1           12 System.Int32
+5f60287c        1           12 System.Collections.Generic.GenericEqualityComparer`1[[System.String, mscorlib]]
+5f604c74        1           16 System.Security.Permissions.UIPermission
+5f604130        1           16 System.Collections.ObjectModel.ReadOnlyCollection`1[[System.Security.Policy.StrongName, mscorlib]]
+5f5ff590        1           16 System.Security.Policy.AssemblyEvidenceFactory
+00203f58        1           16 WMICNTLLib.WMISnapinClass
+5f6073c4        1           20 Microsoft.Win32.SafeHandles.SafeFileMappingHandle
+5f60736c        1           20 Microsoft.Win32.SafeHandles.SafeViewOfFileHandle
+5f6072d8        1           20 System.Text.InternalEncoderBestFitFallback
+5f606034        1           20 Microsoft.Win32.SafeHandles.SafeFileHandle
+5f6052a0        1           20 System.Security.PermissionToken
+5f604a88        1           20 System.Security.Permissions.EnvironmentPermission
+5f603c54        1           20 System.Security.Policy.PolicyStatement
+5f5ff4d0        1           20 Microsoft.Win32.SafeHandles.SafePEFileHandle
+5f5b9a30        1           20 System.Threading.ThreadHelper
+5f6074d8        1           24 System.IO.TextWriter+SyncTextWriter
+5f607328        1           24 System.Text.InternalDecoderBestFitFallback
+5f603cf4        1           24 System.Collections.Generic.List`1[[System.Security.Policy.StrongName, mscorlib]]
+5f603010        1           24 System.Version
+5f607490        1           28 Microsoft.Win32.Win32Native+InputRecord
+5f607020        1           28 System.Text.EncoderNLS
+5f606dc0        1           28 System.IO.Stream+NullStream
+5f601b18        1           28 System.SharedStatics
+5f605344        1           32 System.Security.PermissionTokenFactory
+5f604730        1           32 System.Security.Util.Tokenizer+StringMaker
+5f5ff534        1           32 System.Security.Policy.PEFileEvidenceFactory
+5f5f26b4        1           32 System.Threading.ContextCallback
+5f606f40        1           36 System.IO.__ConsoleStream
+5f605304        1           36 System.Security.Util.TokenBasedSet
+5f604c1c        3           36 System.Security.Permissions.SecurityPermission
+5f604b44        1           36 System.Security.Permissions.FileIOPermission
+5f6037e8        1           36 System.Security.Policy.ApplicationTrust
+5f5b60b0        1           36 System.Runtime.Remoting.Messaging.LogicalCallContext
+5f604a3c        1           40 System.Int32[][]
+5f603570        1           40 System.Security.Policy.Evidence
+5f605efc        1           44 System.Threading.ReaderWriterLock
+5f601fa0        1           48 System.Globalization.TextInfo
+5f606720        1           52 System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Globalization.CultureData, mscorlib]]
+5f6057d8        1           52 System.Collections.Generic.Dictionary`2[[System.Type, mscorlib],[System.Security.Policy.EvidenceTypeDescriptor, mscorlib]]
+5f6034f8        1           52 System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]]
+5f602438        1           52 System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]]
+5f606a94        1           56 System.IO.StreamWriter
+5f6067e0        1           60 System.Collections.Generic.Dictionary`2+Entry[[System.String, mscorlib],[System.Globalization.CultureData, mscorlib]][]
+5f601c14        1           60 System.AppDomainSetup
+5f5f2820        2           64 System.Threading.ThreadStart
+5f6071cc        1           72 System.Text.SBCSCodePageEncoding
+5f601508        3           72 System.Reflection.RuntimeAssembly
+5f5ff5e8        6           72 System.Object
+5f5fa81c        3           72 System.Guid
+5f6030b4        1           84 System.Globalization.CalendarData
+5f5ffde8        1           84 System.ExecutionEngineException
+5f5ffd9c        1           84 System.StackOverflowException
+5f5ffd50        1           84 System.OutOfMemoryException
+5f5ffc0c        1           84 System.Exception
+5f5fffcc        2           96 System.Threading.Thread
+5f603670        3          108 System.Security.PermissionSet
+5f5fb468        3          108 System.Threading.ExecutionContext
+5f600ec8        1          112 System.AppDomain
+5f606958        1          132 System.Globalization.NumberFormatInfo
+5f6063a4        2          144 System.Globalization.CultureInfo
+5f60537c        3          168 System.Collections.Hashtable
+5f5ffe34        2          168 System.Threading.ThreadAbortException
+5f60547c        3          240 System.Collections.Hashtable+bucket[]
+5f605e88        1          284 System.Collections.Generic.Dictionary`2+Entry[[System.Type, mscorlib],[System.Security.Policy.EvidenceTypeDescriptor, mscorlib]][]
+5f6020c4        2          608 System.Globalization.CultureData
+5f5ff640       27          648 System.RuntimeType
+5f602938       13         1372 System.Int32[]
+002038c8      120         1440 StrangeLeak.ExpensiveResource
+5f602f20        1         3164 System.Collections.Generic.Dictionary`2+Entry[[System.String, mscorlib],[System.String, mscorlib]][]
+5f601d88      125         7560 System.Char[]
+5f5ff9ac      471        12876 System.String
+5f5b6c28       30        26120 System.Object[]
+00522c38      246        39820      Free
+5f604944      122     12002204 System.Byte[]
+Total 1249 objects
+0:009> .foreach (obj {!dumpheap -mt 002038c8 -short}) {!objsize obj}
+sizeof(027fb4c0) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ff270) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ff2ec) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ff35c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ff3cc) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ff43c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ff4ac) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ff51c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ff58c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ff5fc) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ff66c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ff6dc) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ff74c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ff7bc) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ff82c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ff89c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ff90c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ff97c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ff9ec) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ffa5c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ffacc) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ffb3c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ffbac) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ffc1c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ffc8c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ffcfc) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ffd6c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ffddc) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ffe4c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027ffebc) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027fff2c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(027fff9c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(0280000c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(0280007c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02801e4c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02801ebc) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02801f2c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02801f9c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(0280200c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(0280207c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028020ec) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(0280215c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028021cc) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(0280223c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028022ac) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(0280231c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(0280238c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028023fc) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(0280246c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028024dc) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(0280254c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028025bc) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(0280262c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(0280269c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(0280270c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(0280277c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028027ec) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(0280285c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028028cc) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(0280293c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028029ac) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02802a1c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02802a8c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02802afc) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02802b6c) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02802bdc) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02802c58) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02802cc8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02802d38) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02802da8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02802e18) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02802e88) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02802ef8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02802f68) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02802fd8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803048) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028030b8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803128) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803198) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803208) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803278) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028032e8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803358) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028033c8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803438) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028034a8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803518) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803588) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028035f8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803668) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028036d8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803748) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028037b8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803828) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803898) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803908) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803978) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028039e8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803a58) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803ac8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803b38) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803ba8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803c18) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803c88) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803cf8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803d68) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803dd8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803e48) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803eb8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803f28) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02803f98) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02804008) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02804078) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028040e8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02804158) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028041c8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02804238) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(028042a8) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02804318) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+sizeof(02804388) =       100024 (     0x186b8) bytes (StrangeLeak.ExpensiveResource)
+0:009> .foreach (obj {!dumpheap -mt 002038c8 -short}) {!gcroot obj}
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027fb4c0(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ff270(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ff2ec(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ff35c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ff3cc(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ff43c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ff4ac(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ff51c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ff58c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ff5fc(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ff66c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ff6dc(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ff74c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ff7bc(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ff82c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ff89c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ff90c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ff97c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ff9ec(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ffa5c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ffacc(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ffb3c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ffbac(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ffc1c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ffc8c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ffcfc(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ffd6c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ffddc(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ffe4c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027ffebc(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027fff2c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  027fff9c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  0280000c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  0280007c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  02801e4c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  02801ebc(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  02801f2c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  02801f9c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  0280200c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  0280207c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  028020ec(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  0280215c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  028021cc(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  0280223c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  028022ac(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  0280231c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  0280238c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  028023fc(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  0280246c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  028024dc(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  0280254c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  028025bc(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  0280262c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  0280269c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  0280270c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  0280277c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  028027ec(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  0280285c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  028028cc(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  0280293c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  028029ac(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  02802a1c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  02802a8c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  02802afc(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Finalizer queue:Root:  02802b6c(StrangeLeak.ExpensiveResource)
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+Note: Roots found on stacks may be false positives. Run "!help gcroot" for
+more info.
+Scan Thread 0 OSTHread 294
+ESP:45eedc:Root:  02804388(StrangeLeak.ExpensiveResource)
+Scan Thread 2 OSTHread 1fc4
+Scan Thread 4 OSTHread 1404
+0:009> !FinalizeQueue
+SyncBlocks to be cleaned up: 0
+MTA Interfaces to be released: 0
+STA Interfaces to be released: 0
+----------------------------------
+generation 0 has 54 finalizable objects (005a6640->005a6718)
+generation 1 has 1 finalizable objects (005a663c->005a6640)
+generation 2 has 7 finalizable objects (005a6620->005a663c)
+Ready for finalization 65 objects (005a6718->005a681c)
+Statistics for all finalizable objects (including all objects ready for finalization):
+      MT    Count    TotalSize Class Name
+5f6073c4        1           20 Microsoft.Win32.SafeHandles.SafeFileMappingHandle
+5f60736c        1           20 Microsoft.Win32.SafeHandles.SafeViewOfFileHandle
+5f606034        1           20 Microsoft.Win32.SafeHandles.SafeFileHandle
+5f5ff4d0        1           20 Microsoft.Win32.SafeHandles.SafePEFileHandle
+5f605efc        1           44 System.Threading.ReaderWriterLock
+5f5fffcc        2           96 System.Threading.Thread
+002038c8      120         1440 StrangeLeak.ExpensiveResource
+Total 127 objects
+0:009> !Threads
+ThreadCount:      3
+UnstartedThread:  0
+BackgroundThread: 1
+PendingThread:    0
+DeadThread:       0
+Hosted Runtime:   no
+                                   PreEmptive   GC Alloc                Lock
+       ID  OSID ThreadOBJ    State GC           Context       Domain   Count APT Exception
+   0    1   294 005486c0   200a020 Enabled  028043dc:02804be8 0050f8d0     0 MTA
+   2    2  1fc4 00517858      b220 Enabled  00000000:00000000 0050f8d0     0 MTA (Finalizer)
+   4    3  1404 00566ed8   2007020 Enabled  00000000:00000000 0050f8d0     0 STA
+0:009> ~2s
+eax=00000001 ebx=00000000 ecx=00000000 edx=00000000 esi=0000027c edi=00000000
+eip=7724f861 esp=00def11c ebp=00def188 iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+ntdll!ZwWaitForSingleObject+0x15:
+7724f861 83c404          add     esp,4
+0:002> !CLRStack
+OS Thread Id: 0x1fc4 (2)
+Child SP IP       Call Site
+00defb14 7724f861 [HelperMethodFrame_1OBJ: 00defb14] System.Runtime.InteropServices.Marshal.InternalFinalReleaseComObject(System.Object)
+00defb68 5f55d2f1 System.__ComObject.FinalReleaseSelf()*** WARNING: Unable to verify checksum for C:\Windows\assembly\NativeImages_v4.0.30319_32\mscorlib\246f1a5abb686b9dcdf22d3505b08cea\mscorlib.ni.dll
+
+00defb6c 5f578ab2 System.Runtime.InteropServices.Marshal.FinalReleaseComObject(System.Object)
+00defb98 002a0278 StrangeLeak.SnapinWrapper.Finalize()*** WARNING: Unable to verify checksum for C:\temp\dndebug\11_StrangeLeak\Binaries\StrangeLeak.exe
+ [D:\courses\NET Debugging\Exercises\11_StrangeLeak\StrangeLeak\Program.cs @ 44]
+00defdd8 62044b01 [DebuggerU2MCatchHandlerFrame: 00defdd8] 
+0:002> kb
+ChildEBP RetAddr  Args to Child              
+00def11c 764c0816 0000027c 00000000 00000000 ntdll!ZwWaitForSingleObject+0x15
+00def188 76511184 0000027c ffffffff 00000000 KERNELBASE!WaitForSingleObjectEx+0x98
+00def1a0 76511138 0000027c ffffffff 00000000 KERNEL32!WaitForSingleObjectExImplementation+0x75
+00def1b4 768188df 0000027c ffffffff 00599ca8 KERNEL32!WaitForSingleObject+0x12
+00def1d8 7693a819 0056fdc8 005a6288 00def2e4 ole32!GetToSTA+0xad
+00def208 7693c05f 00def2d0 00def3f8 00599ca8 ole32!CRpcChannelBuffer::SwitchAptAndDispatchCall+0x140
+00def2e8 7682d0e5 00599ca8 00def3f8 00def3e0 ole32!CRpcChannelBuffer::SendReceive2+0xef
+00def364 76817fab 00599ca8 00def3f8 00def3e0 ole32!CAptRpcChnl::SendReceive+0xaf
+00def3b8 7693bf75 00000001 005a4b10 00def3e0 ole32!CCtxComChnl::SendReceive+0x95
+00def3d4 7616414b 0055ee74 00def424 761e0149 ole32!NdrExtpProxySendReceive+0x49
+00def3e0 761e0149 8a53f124 00def82c 0700022b RPCRT4!NdrpProxySendReceive+0xe
+00def7f4 7693ba02 7684d338 7684c120 00def82c RPCRT4!NdrClientCall2+0x1a6
+00def814 7682c8b5 0000000c 00000008 00def8ac ole32!ObjectStublessClient+0xa2
+00def824 76818bb0 0055ee74 00def860 00000001 ole32!ObjectStubless+0xf
+00def8ac 7680d02c 00561920 62018272 00def9b8 ole32!CObjectContext::InternalContextCallback+0x128
+00def8fc 62017936 00561930 62018272 00def9b8 ole32!CObjectContext::ContextCallback+0x92
+00defa14 621e0d71 62018039 00574f48 8a52ad9a clr!CtxEntry::EnterContext+0x312
+00defa4c 62018092 00574f48 8a52ad56 00000001 clr!RCW::ReleaseAllInterfacesCallBack+0x5f
+00defa80 621e19b3 8a52ad16 622294f4 00517858 clr!RCW::Cleanup+0x22
+00defac0 622295fc 00574f48 8a52acb6 00defbc0 clr!RCW::FinalExternalRelease+0x14f
+0:002> dd 00599ca8 
+00599ca8  7684f3b8 768280dc 00000003 0000002a
+00599cb8  00521540 00000000 0056fdc8 00570d08
+00599cc8  0051d0f0 005a29f8 76848638 00070005
+00599cd8  00000003 00001404 00000000 00000000
+00599ce8  00599d28 f1eef1ee 00000000 00000000
+00599cf8  00000000 00000000 00000000 00000038
+00599d08  00000014 00000040 00000000 00000000
+00599d18  00000000 00000000 00000000 00000000
+0:002> dd 0056fdc8 
+0056fdc8  0056fe48 769468f8 000020b4 00001404
+0056fdd8  9899ba85 f49b72f2 5a5e9c1a e0d54700
+0056fde8  5a5e9c1a e0d54700 0000cc00 140420b4
+0056fdf8  e8a1aef5 57ff41b4 00000303 004b00f6
+0056fe08  005688c8 00000000 00000000 00000000
+0056fe18  00000001 ffffffff 005999c8 0055ee74
+0056fe28  00000003 00000000 00000000 00000000
+0056fe38  00650074 00070005 00000000 00000000
+0:002> ~*
+   0  Id: 20b4.294 Suspend: 1 Teb: 7efdd000 Unfrozen
+      Start: StrangeLeak!COM+_Entry_Point <PERF> (StrangeLeak+0x2bce) (013e2bce) 
+      Priority: 0  Priority class: 32  Affinity: ff
+   1  Id: 20b4.c54 Suspend: 1 Teb: 7efda000 Unfrozen
+      Start: clr!DebuggerRCThread::ThreadProcStatic (620f741c) 
+      Priority: 0  Priority class: 32  Affinity: ff
+.  2  Id: 20b4.1fc4 Suspend: 1 Teb: 7efd7000 Unfrozen
+      Start: clr!Thread::intermediateThreadProc (620459c0) 
+      Priority: 2  Priority class: 32  Affinity: ff
+   3  Id: 20b4.1158 Suspend: 1 Teb: 7efaf000 Unfrozen
+      Start: ntdll!TppWaiterpThread (77291c66) 
+      Priority: 0  Priority class: 32  Affinity: ff
+   4  Id: 20b4.1404 Suspend: 1 Teb: 7efac000 Unfrozen
+      Start: clr!Thread::intermediateThreadProc (620459c0) 
+      Priority: 0  Priority class: 32  Affinity: ff
+   5  Id: 20b4.1be8 Suspend: 1 Teb: 7efa9000 Unfrozen
+      Start: ntdll!TppWorkerThread (77292c81) 
+      Priority: 0  Priority class: 32  Affinity: ff
+   6  Id: 20b4.2374 Suspend: 1 Teb: 7efa6000 Unfrozen
+      Start: ntdll!TppWorkerThread (77292c81) 
+      Priority: 0  Priority class: 32  Affinity: ff
+   7  Id: 20b4.8b8 Suspend: 1 Teb: 7efa3000 Unfrozen
+      Start: ole32!CRpcThreadCache::RpcWorkerThreadEntry (7682c7f5) 
+      Priority: 0  Priority class: 32  Affinity: ff
+   8  Id: 20b4.204c Suspend: 1 Teb: 7ef9d000 Unfrozen
+      Start: ntdll!TppWorkerThread (77292c81) 
+      Priority: 0  Priority class: 32  Affinity: ff
+#  9  Id: 20b4.1f08 Suspend: 1 Teb: 7efa0000 Unfrozen
+      Start: ntdll!DbgUiRemoteBreakin (772cf4e2) 
+      Priority: 0  Priority class: 32  Affinity: ff
+0:002> ~4s
+eax=00000000 ebx=00000001 ecx=00000000 edx=00000000 esi=04dbf698 edi=00000000
+eip=7724fd21 esp=04dbf654 ebp=04dbf6bc iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+ntdll!NtDelayExecution+0x15:
+7724fd21 83c404          add     esp,4
+0:004> !CLRStack
+OS Thread Id: 0x1404 (4)
+Child SP IP       Call Site
+04dbf77c 7724fd21 [HelperMethodFrame: 04dbf77c] System.Threading.Thread.SleepInternal(Int32)
+04dbf7c8 002a01e4 StrangeLeak.Program.<Main>b__0() [D:\courses\NET Debugging\Exercises\11_StrangeLeak\StrangeLeak\Program.cs @ 52]
+04dbf7d8 5f58ae5b System.Threading.ThreadHelper.ThreadStart_Context(System.Object)
+04dbf7e8 5f517ff4 System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+04dbf80c 5f517f34 System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object)
+04dbf828 5f58ade8 System.Threading.ThreadHelper.ThreadStart()
+04dbfa4c 61f921db [GCFrame: 04dbfa4c] 
+04dbfd10 61f921db [DebuggerU2MCatchHandlerFrame: 04dbfd10] 
+0:004> kb
+ChildEBP RetAddr  Args to Child              
+04dbf654 764c2c50 00000001 04dbf698 8e5ebaa6 ntdll!NtDelayExecution+0x15
+04dbf6bc 620460f9 ffffffff 00000001 04dbf6e0 KERNELBASE!SleepEx+0x65
+04dbf6cc 620460e5 625834a8 ffffffff 00000001 clr!CExecutionEngine::ClrSleepEx+0x10
+04dbf6e0 620416ea ffffffff 00000001 8e57a0fe clr!ClrSleepEx+0x16
+04dbf728 620417c4 ffffffff 8e57a016 027fcc64 clr!Thread::UserSleep+0x74
+04dbf7c0 002a01e4 027fb3d0 037f101c 04dbf7e0 clr!ThreadNative::Sleep+0xee
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+04dbf7d0 5f58ae5b 027fb454 037f101c 04dbf7fc 0x2a01e4
+04dbf7e0 5f517ff4 027fc010 00000000 027fb420 mscorlib_ni+0x2aae5b
+04dbf7fc 5f517f34 00000000 027fb420 00000000 mscorlib_ni+0x237ff4
+04dbf81c 5f58ade8 027fb420 00000000 00566ed8 mscorlib_ni+0x237f34
+04dbf834 61f921db 04dbf84c 00000000 04dbf8c0 mscorlib_ni+0x2aade8
+04dbf844 61fb4a2a 04dbf910 00000000 04dbf8e0 clr!CallDescrWorker+0x33
+04dbf8c0 61fb4bcc 04dbf910 00000000 04dbf8e0 clr!CallDescrWorkerWithHandler+0x8e
+04dbfa04 61fb4c01 5f4b7c90 04dbfb6c 04dbfa88 clr!MethodDesc::CallDescr+0x194
+04dbfa20 6212b512 5f4b7c90 04dbfb6c 04dbfa88 clr!MethodDesc::CallTargetWorker+0x21
+04dbfc2c 62045c05 04dbfde4 04dbfd10 00566ed8 clr!ThreadNative::KickOffThread_Worker+0x1e1
+04dbfc40 62045c87 04dbfd58 8e57ab26 04dbfd58 clr!Thread::DoExtraWorkForFinalizer+0x114
+04dbfcf0 62045d42 04dbfd58 8e57aa86 00000000 clr!Thread::ShouldChangeAbortToUnload+0x101
+04dbfd50 62045dd9 00000001 00000000 00000001 clr!Thread::ShouldChangeAbortToUnload+0x399
+04dbfd74 6212b3e5 00000001 6212b3e9 04dbfde4 clr!Thread::ShouldChangeAbortToUnload+0x43a
+0:004> ? ffffffff
+Evaluate expression: -1 = ffffffff
+0:004> q
+quit:

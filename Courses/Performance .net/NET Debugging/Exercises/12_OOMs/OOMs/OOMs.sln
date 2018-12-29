@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOM1", "OOM1\OOM1.csproj", "{0BD5E7F7-9AEB-4C14-BA64-BF54E8F87F31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOM2", "OOM2\OOM2.csproj", "{0353D5BC-0BC8-4141-A3C0-19089C449857}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOM3", "OOM3\OOM3.csproj", "{5DE32F2D-425A-422A-A70A-02B070AA39AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOM4", "OOM4\OOM4.csproj", "{0BA08723-824D-4030-8B90-E01782F911AA}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://212.179.51.73:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = OOM1\\OOM1.csproj
+		SccProjectName1 = OOM1
+		SccLocalPath1 = OOM1
+		SccProjectUniqueName2 = OOM2\\OOM2.csproj
+		SccProjectName2 = OOM2
+		SccLocalPath2 = OOM2
+		SccProjectUniqueName3 = OOM3\\OOM3.csproj
+		SccProjectName3 = OOM3
+		SccLocalPath3 = OOM3
+		SccProjectUniqueName4 = OOM4\\OOM4.csproj
+		SccProjectName4 = OOM4
+		SccLocalPath4 = OOM4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BD5E7F7-9AEB-4C14-BA64-BF54E8F87F31}.Debug|x86.ActiveCfg = Debug|x86
+		{0BD5E7F7-9AEB-4C14-BA64-BF54E8F87F31}.Debug|x86.Build.0 = Debug|x86
+		{0BD5E7F7-9AEB-4C14-BA64-BF54E8F87F31}.Release|x86.ActiveCfg = Release|x86
+		{0BD5E7F7-9AEB-4C14-BA64-BF54E8F87F31}.Release|x86.Build.0 = Release|x86
+		{0353D5BC-0BC8-4141-A3C0-19089C449857}.Debug|x86.ActiveCfg = Debug|x86
+		{0353D5BC-0BC8-4141-A3C0-19089C449857}.Debug|x86.Build.0 = Debug|x86
+		{0353D5BC-0BC8-4141-A3C0-19089C449857}.Release|x86.ActiveCfg = Release|x86
+		{0353D5BC-0BC8-4141-A3C0-19089C449857}.Release|x86.Build.0 = Release|x86
+		{5DE32F2D-425A-422A-A70A-02B070AA39AB}.Debug|x86.ActiveCfg = Debug|x86
+		{5DE32F2D-425A-422A-A70A-02B070AA39AB}.Debug|x86.Build.0 = Debug|x86
+		{5DE32F2D-425A-422A-A70A-02B070AA39AB}.Release|x86.ActiveCfg = Release|x86
+		{5DE32F2D-425A-422A-A70A-02B070AA39AB}.Release|x86.Build.0 = Release|x86
+		{0BA08723-824D-4030-8B90-E01782F911AA}.Debug|x86.ActiveCfg = Debug|x86
+		{0BA08723-824D-4030-8B90-E01782F911AA}.Debug|x86.Build.0 = Debug|x86
+		{0BA08723-824D-4030-8B90-E01782F911AA}.Release|x86.ActiveCfg = Release|x86
+		{0BA08723-824D-4030-8B90-E01782F911AA}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

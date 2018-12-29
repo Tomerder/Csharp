@@ -1,0 +1,5 @@
+C:\Courses\NET Debugging\Exercises\9_StrangeBug\Sources\bin\Debug\FileAccessEmulation.exe
+C:\Courses\NET Debugging\Exercises\9_StrangeBug\Sources\bin\Debug\FileAccessEmulation.pdb
+C:\Courses\NET Debugging\Exercises\9_StrangeBug\Sources\obj\x86\Debug\FileAccessEmulation.csprojResolveAssemblyReference.cache
+C:\Courses\NET Debugging\Exercises\9_StrangeBug\Sources\obj\x86\Debug\FileAccessEmulation.exe
+C:\Courses\NET Debugging\Exercises\9_StrangeBug\Sources\obj\x86\Debug\FileAccessEmulation.pdb

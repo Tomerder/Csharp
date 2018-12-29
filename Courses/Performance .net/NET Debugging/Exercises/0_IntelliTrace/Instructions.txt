@@ -1,0 +1,15 @@
+
+Instructions for IntelliTrace Exercise
+--------------------------------------
+
+1. Open the JackCompiler.sln solution from the Sources folder.
+
+2. Use File-->Open to open the .iTrace file in the exercise folder.
+
+3. In the IntelliTrace summary view, click the JackCompiler.CompilatonException exception and then click the Start Debugging button.
+
+4. If the IntelliTrace window is not visible, use Debug-->IntelliTrace-->Events to display it.
+
+5. If the Events view is displayed, navigate to the appropriate exception and then click "Switch to IntelliTrace Calls View".
+
+6. Note the line number, the exception message, and any other details required to determine the precise location where the error occurred.

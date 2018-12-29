@@ -1,0 +1,5 @@
+C:\Courses\NET Performance\Exercises\ParallelMatrix\ParallelMatrix\bin\Debug\ParallelMatrix.exe
+C:\Courses\NET Performance\Exercises\ParallelMatrix\ParallelMatrix\bin\Debug\ParallelMatrix.pdb
+C:\Courses\NET Performance\Exercises\ParallelMatrix\ParallelMatrix\obj\x86\Debug\ParallelMatrix.csprojResolveAssemblyReference.cache
+C:\Courses\NET Performance\Exercises\ParallelMatrix\ParallelMatrix\obj\x86\Debug\ParallelMatrix.exe
+C:\Courses\NET Performance\Exercises\ParallelMatrix\ParallelMatrix\obj\x86\Debug\ParallelMatrix.pdb

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AweClrHost", "AweClrHost\AweClrHost.vcproj", "{F56466A4-5DE0-405F-85F7-874114400E88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication", "TestApplication\TestApplication.csproj", "{A4D06E61-8EE8-47A4-A87D-FC3BF076CA24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F56466A4-5DE0-405F-85F7-874114400E88}.Debug|x64.ActiveCfg = Debug|x64
+		{F56466A4-5DE0-405F-85F7-874114400E88}.Debug|x64.Build.0 = Debug|x64
+		{F56466A4-5DE0-405F-85F7-874114400E88}.Debug|x86.ActiveCfg = Debug|Win32
+		{F56466A4-5DE0-405F-85F7-874114400E88}.Debug|x86.Build.0 = Debug|Win32
+		{F56466A4-5DE0-405F-85F7-874114400E88}.Release|x64.ActiveCfg = Release|x64
+		{F56466A4-5DE0-405F-85F7-874114400E88}.Release|x64.Build.0 = Release|x64
+		{F56466A4-5DE0-405F-85F7-874114400E88}.Release|x86.ActiveCfg = Release|Win32
+		{F56466A4-5DE0-405F-85F7-874114400E88}.Release|x86.Build.0 = Release|Win32
+		{A4D06E61-8EE8-47A4-A87D-FC3BF076CA24}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A4D06E61-8EE8-47A4-A87D-FC3BF076CA24}.Debug|x64.Build.0 = Debug|Any CPU
+		{A4D06E61-8EE8-47A4-A87D-FC3BF076CA24}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A4D06E61-8EE8-47A4-A87D-FC3BF076CA24}.Debug|x86.Build.0 = Debug|Any CPU
+		{A4D06E61-8EE8-47A4-A87D-FC3BF076CA24}.Release|x64.ActiveCfg = Release|Any CPU
+		{A4D06E61-8EE8-47A4-A87D-FC3BF076CA24}.Release|x64.Build.0 = Release|Any CPU
+		{A4D06E61-8EE8-47A4-A87D-FC3BF076CA24}.Release|x86.ActiveCfg = Release|Any CPU
+		{A4D06E61-8EE8-47A4-A87D-FC3BF076CA24}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

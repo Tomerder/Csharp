@@ -1,0 +1,12 @@
+
+In this exercise, you will analyze a memory leak using the ANTS Memory Profiler. You are given a ready-made profiler results file, and you should analyze it and determine the cause of the memory leak. The application's source code is provided so that you can verify your hypothesis; DO NOT look at the source code before you have some idea where the leak is coming from.
+
+Some (helpful?) ideas:
+
+- Compare the first and last snapshots, but also compare intermediate snapshots.
+
+- Use the Class Reference Explorer to figure out which objects are keeping other objects alive. (For example, starting with strings you might have some difficulty looking at individual instances -- there are too many of them!)
+
+- Use the Instance List + Object Retention Graph to determine why an individual object is referenced.
+
+- Use filters (on the left side of the UI) to filter out objects that are referenced only for a specific reason, or only by a specific type (advanced filters).

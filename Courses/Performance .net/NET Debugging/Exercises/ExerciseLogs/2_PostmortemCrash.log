@@ -1,0 +1,181 @@
+Opened log file 'c:\temp\dndebug\2_PostmortemCrash.log'
+0:005> lm
+start    end        module name
+01360000 01368000   FileExplorer   (deferred)             
+55570000 5614e000   System_Windows_Forms_ni   (deferred)             
+5dea0000 5e027000   System_Drawing_ni   (deferred)             
+67d50000 67e41000   System_Configuration_ni   (deferred)             
+6ce30000 6d366000   System_Xml_ni   (deferred)             
+6d370000 6d375000   shfolder   (deferred)             
+6d400000 6db99000   System_ni   (deferred)             
+6dba0000 6dbfb000   mscorjit   (deferred)             
+6dc00000 6e6f8000   mscorlib_ni   (deferred)             
+6e8f0000 6ee81000   mscorwks   (deferred)             
+6f950000 6f9b6000   mscoreei   (deferred)             
+71660000 716fb000   msvcr80    (deferred)             
+719d0000 71a1a000   mscoree    (deferred)             
+74510000 74523000   dwmapi     (deferred)             
+747b0000 74940000   GdiPlus    (deferred)             
+74940000 74980000   uxtheme    (deferred)             
+74980000 74b1e000   comctl32   (deferred)             
+759f0000 759fc000   CRYPTBASE   (deferred)             
+75a70000 75a7b000   profapi    (deferred)             
+75d20000 75d6a000   KERNELBASE   (deferred)             
+75d70000 75e3c000   msctf      (deferred)             
+75f30000 75ff9000   user32     (deferred)             
+76000000 7600a000   lpk        (deferred)             
+76010000 7602f000   imm32      (deferred)             
+76030000 760d1000   rpcrt4     (deferred)             
+760e0000 7616f000   oleaut32   (deferred)             
+76170000 76189000   sechost    (deferred)             
+761c0000 76e09000   shell32    (deferred)             
+76e10000 76f6c000   ole32      (deferred)             
+77070000 7711c000   msvcrt     (deferred)             
+77260000 772ae000   gdi32      (deferred)             
+774b0000 7754d000   usp10      (deferred)             
+77740000 777e0000   advapi32   (deferred)             
+777e0000 77837000   shlwapi    (deferred)             
+77840000 77914000   kernel32   (deferred)             
+77920000 77a5c000   ntdll      (deferred)             
+77ac0000 77b43000   clbcatq    (deferred)             
+
+Unloaded modules:
+60340000 60348000   culture.dll
+0:005> .loadby sos mscorwks
+0:005> !PrintException
+Exception object: 0242c024
+Exception type: System.NullReferenceException
+Message: Object reference not set to an instance of an object.
+InnerException: <none>
+StackTrace (generated):
+    SP       IP       Function
+    0599F874 003F0A31 FileExplorer!FileExplorer.MainForm+<>c__DisplayClass1.<treeView1_AfterSelect>b__0(System.Object)+0x39
+    0599F8A4 6DE09F4F mscorlib_ni!System.Threading._ThreadPoolWaitCallback.WaitCallback_Context(System.Object)+0x2f
+    0599F8AC 6DE2027F mscorlib_ni!System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object)+0x6f
+    0599F8C4 6DE0A4B3 mscorlib_ni!System.Threading._ThreadPoolWaitCallback.PerformWaitCallbackInternal(System.Threading._ThreadPoolWaitCallback)+0x53
+    0599F8D8 6DE0A349 mscorlib_ni!System.Threading._ThreadPoolWaitCallback.PerformWaitCallback(System.Object)+0x59
+
+StackTraceString: <none>
+HResult: 80004003
+0:005> !Threads
+ThreadCount: 3
+UnstartedThread: 0
+BackgroundThread: 2
+PendingThread: 0
+DeadThread: 0
+Hosted Runtime: no
+                                      PreEmptive   GC Alloc           Lock
+       ID OSID ThreadOBJ    State     GC       Context       Domain   Count APT Exception
+   0    1 10a4 00327748      6020 Enabled  0242b560:0242bfc0 002f2028     0 STA
+   2    2 1b90 003328a0      b220 Enabled  00000000:00000000 002f2028     0 MTA (Finalizer)
+   5    3 1d9c 050f60e8   180b220 Enabled  0242c254:0242dfc0 002f2028     0 MTA (Threadpool Worker) System.NullReferenceException (0242c024)
+0:005> ~0s
+*** ERROR: Symbol file could not be found.  Defaulted to export symbols for ntdll.dll - 
+*** ERROR: Symbol file could not be found.  Defaulted to export symbols for user32.dll - 
+eax=00000080 ebx=00000000 ecx=000000cc edx=00000063 esi=0000031f edi=001ff04c
+eip=75f4798e esp=001ff018 ebp=001ff074 iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000202
+user32!MapWindowPoints+0x79:
+75f4798e 8d45d8          lea     eax,[ebp-28h]
+0:000> !CLRStack
+OS Thread Id: 0x10a4 (0)
+ESP       EIP     
+001ff118 75f4798e [NDirectMethodFrameStandalone: 001ff118] System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG ByRef)
+001ff128 55778aee System.Windows.Forms.Application+ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32, Int32, Int32)
+001ff12c 55778757 [InlinedCallFrame: 001ff12c] 
+001ff21c 557785a1 System.Windows.Forms.Application+ThreadContext.RunMessageLoop(Int32, System.Windows.Forms.ApplicationContext)
+001ff248 55735911 System.Windows.Forms.Application.Run(System.Windows.Forms.Form)
+001ff25c 003f00ae FileExplorer.Program.Main()
+001ff480 6e8f1b6c [GCFrame: 001ff480] 
+0:000> ~5s
+*** WARNING: Unable to verify checksum for mscorlib.ni.dll
+eax=0242a558 ebx=0242bfcc ecx=00000000 edx=00000000 esi=0242a5b0 edi=00000000
+eip=003f0a30 esp=0599f874 ebp=0599f89c iopl=0         nv up ei pl zr na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00010246
+003f0a30 3909            cmp     dword ptr [ecx],ecx  ds:0023:00000000=????????
+0:005> !CLRStack
+OS Thread Id: 0x1d9c (5)
+ESP       EIP     
+0599f874 003f0a30 FileExplorer.MainForm+<>c__DisplayClass1.<treeView1_AfterSelect>b__0(System.Object)
+0599f8a4 6de09f4f System.Threading._ThreadPoolWaitCallback.WaitCallback_Context(System.Object)
+0599f8ac 6de2027f System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object)
+0599f8c4 6de0a4b3 System.Threading._ThreadPoolWaitCallback.PerformWaitCallbackInternal(System.Threading._ThreadPoolWaitCallback)
+0599f8d8 6de0a349 System.Threading._ThreadPoolWaitCallback.PerformWaitCallback(System.Object)
+0599fa68 6e8f1b6c [GCFrame: 0599fa68] 
+0:005> !u 003F0A31 
+Normal JIT generated code
+FileExplorer.MainForm+<>c__DisplayClass1.<treeView1_AfterSelect>b__0(System.Object)
+Begin 003f09f8, size c9
+003f09f8 55              push    ebp
+003f09f9 8bec            mov     ebp,esp
+003f09fb 83ec28          sub     esp,28h
+003f09fe 894df0          mov     dword ptr [ebp-10h],ecx
+003f0a01 8955fc          mov     dword ptr [ebp-4],edx
+003f0a04 833de430230000  cmp     dword ptr ds:[2330E4h],0
+003f0a0b 7405            je      003f0a12
+003f0a0d e817a9756e      call    mscorwks!JIT_DbgIsJustMyCode (6eb4b329)
+003f0a12 33d2            xor     edx,edx
+003f0a14 8955f8          mov     dword ptr [ebp-8],edx
+003f0a17 33d2            xor     edx,edx
+003f0a19 8955e8          mov     dword ptr [ebp-18h],edx
+003f0a1c 33d2            xor     edx,edx
+003f0a1e 8955ec          mov     dword ptr [ebp-14h],edx
+003f0a21 c745f400000000  mov     dword ptr [ebp-0Ch],0
+003f0a28 90              nop
+003f0a29 90              nop
+003f0a2a 8b45f0          mov     eax,dword ptr [ebp-10h]
+003f0a2d 8b4804          mov     ecx,dword ptr [eax+4]
+003f0a30 3909            cmp     dword ptr [ecx],ecx
+*** WARNING: Unable to verify checksum for System.Windows.Forms.ni.dll
+003f0a32 e8d9113155      call    System_Windows_Forms_ni+0x191c10 (55701c10) (System.Windows.Forms.TreeNode.get_Name(), mdToken: 06005efa)
+003f0a37 8945e4          mov     dword ptr [ebp-1Ch],eax
+003f0a3a 8b4de4          mov     ecx,dword ptr [ebp-1Ch]
+003f0a3d e8c6649a6d      call    mscorlib_ni+0x196f08 (6dd96f08) (System.IO.Directory.GetFiles(System.String), mdToken: 060034b4)
+003f0a42 8945e0          mov     dword ptr [ebp-20h],eax
+003f0a45 8b45e0          mov     eax,dword ptr [ebp-20h]
+003f0a48 8945e8          mov     dword ptr [ebp-18h],eax
+003f0a4b 33d2            xor     edx,edx
+003f0a4d 8955f8          mov     dword ptr [ebp-8],edx
+003f0a50 90              nop
+003f0a51 eb51            jmp     003f0aa4
+003f0a53 8b45f8          mov     eax,dword ptr [ebp-8]
+003f0a56 8b55e8          mov     edx,dword ptr [ebp-18h]
+003f0a59 3b4204          cmp     eax,dword ptr [edx+4]
+003f0a5c 7205            jb      003f0a63
+003f0a5e e801c5756e      call    mscorwks!JIT_RngChkFail (6eb4cf64)
+003f0a63 8b44820c        mov     eax,dword ptr [edx+eax*4+0Ch]
+003f0a67 8945ec          mov     dword ptr [ebp-14h],eax
+003f0a6a 90              nop
+003f0a6b 8b45f0          mov     eax,dword ptr [ebp-10h]
+003f0a6e 8b4808          mov     ecx,dword ptr [eax+8]
+003f0a71 bae85c2300      mov     edx,235CE8h (Object: FileExplorer.MainForm)
+003f0a76 e87b78556e      call    mscorwks!JIT_GetFieldObj (6e9482f6)
+003f0a7b 8bc8            mov     ecx,eax
+003f0a7d 3909            cmp     dword ptr [ecx],ecx
+003f0a7f e8c88c2f55      call    System_Windows_Forms_ni+0x17974c (556e974c) (System.Windows.Forms.ListBox.get_Items(), mdToken: 06002078)
+003f0a84 8945dc          mov     dword ptr [ebp-24h],eax
+003f0a87 8b4dec          mov     ecx,dword ptr [ebp-14h]
+003f0a8a e8d18e9c6d      call    mscorlib_ni+0x1b9960 (6ddb9960) (System.IO.Path.GetFileName(System.String), mdToken: 06003609)
+003f0a8f 8945d8          mov     dword ptr [ebp-28h],eax
+003f0a92 8b55d8          mov     edx,dword ptr [ebp-28h]
+003f0a95 8b4ddc          mov     ecx,dword ptr [ebp-24h]
+003f0a98 3909            cmp     dword ptr [ecx],ecx
+003f0a9a e8418e9155      call    System_Windows_Forms_ni+0x7998e0 (55d098e0) (System.Windows.Forms.ListBox+ObjectCollection.Add(System.Object), mdToken: 0600210c)
+003f0a9f 90              nop
+003f0aa0 90              nop
+003f0aa1 ff45f8          inc     dword ptr [ebp-8]
+003f0aa4 8b45f8          mov     eax,dword ptr [ebp-8]
+003f0aa7 8b55e8          mov     edx,dword ptr [ebp-18h]
+003f0aaa 3b4204          cmp     eax,dword ptr [edx+4]
+003f0aad 0f9cc0          setl    al
+003f0ab0 0fb6c0          movzx   eax,al
+003f0ab3 8945f4          mov     dword ptr [ebp-0Ch],eax
+003f0ab6 837df400        cmp     dword ptr [ebp-0Ch],0
+003f0aba 7597            jne     003f0a53
+003f0abc 90              nop
+003f0abd 8be5            mov     esp,ebp
+003f0abf 5d              pop     ebp
+003f0ac0 c3              ret
+0:005> q
+quit:
+Closing open log file c:\temp\dndebug\2_PostmortemCrash.log

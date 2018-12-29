@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using PerformanceHarness;
+
+[assembly: MeasurableClass(typeof(LinkedListTest))]
+
+public static class LinkedListTest
+{
+	private static volatile int _x;
+     private static LinkedList<int> _linkedList;
+
+     [SetupMethod]
+     static void Setup()
+     {
+          _linkedList = new LinkedList<int>();
+          for (int i = 0; i < 10000; ++i)
+               _linkedList.AddLast(i);
+     }
+
+//     [TeardownMethod]
+//     static void Teardown() { GC.Collect(); }
+
+	[MeasurableMethod]
+	static void Measure()
+	{
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+			foreach (int i in _linkedList)
+                    _x += i;
+		}
+          _linkedList = null;
+	}
+}

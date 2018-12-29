@@ -1,0 +1,8 @@
+C:\Courses\NET Debugging\Exercises\11_StrangeLeak\Sources\obj\x86\Debug\Interop.WMICNTLLib.dll
+C:\Courses\NET Debugging\Exercises\11_StrangeLeak\Sources\obj\x86\Debug\StrangeLeak.csproj.ResolveComReference.cache
+C:\Courses\NET Debugging\Exercises\11_StrangeLeak\Sources\bin\Debug\StrangeLeak.exe
+C:\Courses\NET Debugging\Exercises\11_StrangeLeak\Sources\bin\Debug\StrangeLeak.pdb
+C:\Courses\NET Debugging\Exercises\11_StrangeLeak\Sources\bin\Debug\Interop.WMICNTLLib.dll
+C:\Courses\NET Debugging\Exercises\11_StrangeLeak\Sources\obj\x86\Debug\StrangeLeak.csprojResolveAssemblyReference.cache
+C:\Courses\NET Debugging\Exercises\11_StrangeLeak\Sources\obj\x86\Debug\StrangeLeak.exe
+C:\Courses\NET Debugging\Exercises\11_StrangeLeak\Sources\obj\x86\Debug\StrangeLeak.pdb

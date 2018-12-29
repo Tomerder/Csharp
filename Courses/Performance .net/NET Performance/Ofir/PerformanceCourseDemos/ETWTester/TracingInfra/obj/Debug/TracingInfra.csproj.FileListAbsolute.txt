@@ -1,0 +1,15 @@
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TracingInfra\obj\Debug\TracingInfra.csprojResolveAssemblyReference.cache
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TracingInfra\bin\Debug\R10Tracing.dll
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TracingInfra\bin\Debug\R10Tracing.pdb
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TracingInfra\obj\Debug\R10Tracing.dll
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TracingInfra\obj\Debug\R10Tracing.pdb
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TracingInfra\bin\Debug\R10Tracing.dll
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TracingInfra\bin\Debug\R10Tracing.pdb
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TracingInfra\obj\Debug\TracingInfra.csprojResolveAssemblyReference.cache
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TracingInfra\obj\Debug\R10Tracing.dll
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TracingInfra\obj\Debug\R10Tracing.pdb
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TracingInfra\bin\Debug\R10Tracing.dll
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TracingInfra\bin\Debug\R10Tracing.pdb
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TracingInfra\obj\Debug\TracingInfra.csprojResolveAssemblyReference.cache
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TracingInfra\obj\Debug\R10Tracing.dll
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TracingInfra\obj\Debug\R10Tracing.pdb

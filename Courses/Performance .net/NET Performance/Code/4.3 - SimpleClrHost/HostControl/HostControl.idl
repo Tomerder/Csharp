@@ -1,0 +1,36 @@
+// HostControl.idl : IDL source for HostControl
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (HostControl.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(25909038-2C1D-4C2A-92CF-D512F8D31D3F),
+	dual,
+	nonextensible,
+	helpstring("ISimpleHostControl Interface"),
+	pointer_default(unique)
+]
+interface ISimpleHostControl : IDispatch{
+};
+[
+	uuid(3B31020A-2973-4982-A0A4-FD3C40BFC36D),
+	version(1.0),
+	helpstring("HostControl 1.0 Type Library")
+]
+library HostControlLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(43BDF965-5383-44E8-8F09-EEF75192170A),
+		helpstring("SimpleHostControl Class")
+	]
+	coclass SimpleHostControl
+	{
+		[default] interface ISimpleHostControl;
+	};
+};

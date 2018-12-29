@@ -1,0 +1,231 @@
+Opened log file 'C:\temp\dndebug\12_OOM3.log'
+0:000> g
+ModLoad: 75d10000 75db0000   C:\Windows\syswow64\ADVAPI32.dll
+ModLoad: 75fe0000 7608c000   C:\Windows\syswow64\msvcrt.dll
+ModLoad: 76300000 76319000   C:\Windows\SysWOW64\sechost.dll
+ModLoad: 76130000 76220000   C:\Windows\syswow64\RPCRT4.dll
+ModLoad: 74da0000 74e00000   C:\Windows\syswow64\SspiCli.dll
+ModLoad: 74d90000 74d9c000   C:\Windows\syswow64\CRYPTBASE.dll
+ModLoad: 71310000 71376000   C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscoreei.dll
+ModLoad: 74f20000 74f77000   C:\Windows\syswow64\SHLWAPI.dll
+ModLoad: 75c80000 75d10000   C:\Windows\syswow64\GDI32.dll
+ModLoad: 76320000 76420000   C:\Windows\syswow64\USER32.dll
+ModLoad: 75c70000 75c7a000   C:\Windows\syswow64\LPK.dll
+ModLoad: 75bd0000 75c6d000   C:\Windows\syswow64\USP10.dll
+ModLoad: 76220000 76280000   C:\Windows\SysWOW64\IMM32.DLL
+ModLoad: 76c50000 76d1c000   C:\Windows\syswow64\MSCTF.dll
+ModLoad: 61f90000 625ff000   C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+ModLoad: 6d660000 6d71e000   C:\Windows\SysWOW64\MSVCR100_CLR0400.dll
+(f50.225c): Unknown exception - code 04242420 (first chance)
+ModLoad: 5f2e0000 600a3000   C:\Windows\assembly\NativeImages_v4.0.30319_32\mscorlib\246f1a5abb686b9dcdf22d3505b08cea\mscorlib.ni.dll
+ModLoad: 74890000 748a0000   C:\Windows\Microsoft.NET\Framework\v4.0.30319\nlssorting.dll
+ModLoad: 76800000 7695c000   C:\Windows\syswow64\ole32.dll
+ModLoad: 6d420000 6d480000   C:\Windows\Microsoft.NET\Framework\v4.0.30319\clrjit.dll
+(f50.9f4): Break instruction exception - code 80000003 (first chance)
+eax=7efa3000 ebx=00000000 ecx=00000000 edx=772cf4e2 esi=00000000 edi=00000000
+eip=7724000c esp=63c6fa34 ebp=63c6fa60 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!DbgBreakPoint:
+7724000c cc              int     3
+0:007> .loadby sos clr
+0:007> !AnalyzeOOM
+There was no managed OOM due to allocations on the GC heap
+0:007> !address -summary
+ TEB 7efdd000 in range 7efdb000 7efde000
+ TEB 7efda000 in range 7efd8000 7efdb000
+ TEB 7efd7000 in range 7efd5000 7efd8000
+ TEB 7efaf000 in range 7efad000 7efb0000
+ TEB 7efac000 in range 7efaa000 7efad000
+ TEB 7efa9000 in range 7efa7000 7efaa000
+ TEB 7efa6000 in range 7efa4000 7efa7000
+ TEB 7efa3000 in range 7efa1000 7efa4000
+ ProcessParametrs 00571a38 in range 00570000 005d9000
+ Environment 00570810 in range 00570000 005d9000
+
+-------------------- Usage SUMMARY --------------------------
+    TotSize (      KB)   Pct(Tots) Pct(Busy)   Usage
+   35b72000 (  880072) : 41.97%    54.29%    : RegionUsageIsVAD
+   1d0e3000 (  476044) : 22.70%    00.00%    : RegionUsageFree
+    20b5000 (   33492) : 01.60%    02.07%    : RegionUsageImage
+     7ff000 (    8188) : 00.39%    00.51%    : RegionUsageStack
+          0 (       0) : 00.00%    00.00%    : RegionUsageTeb
+   2aae6000 (  699288) : 33.35%    43.14%    : RegionUsageHeap
+          0 (       0) : 00.00%    00.00%    : RegionUsagePageHeap
+       1000 (       4) : 00.00%    00.00%    : RegionUsagePeb
+          0 (       0) : 00.00%    00.00%    : RegionUsageProcessParametrs
+          0 (       0) : 00.00%    00.00%    : RegionUsageEnvironmentBlock
+       Tot: 7fff0000 (2097088 KB) Busy: 62f0d000 (1621044 KB)
+
+-------------------- Type SUMMARY --------------------------
+    TotSize (      KB)   Pct(Tots)  Usage
+   1d0e3000 (  476044) : 22.70%   : <free>
+    2304000 (   35856) : 01.71%   : MEM_IMAGE
+    1e7b000 (   31212) : 01.49%   : MEM_MAPPED
+   5ed8e000 ( 1553976) : 74.10%   : MEM_PRIVATE
+
+-------------------- State SUMMARY --------------------------
+    TotSize (      KB)   Pct(Tots)  Usage
+   5b42d000 ( 1495220) : 71.30%   : MEM_COMMIT
+   1d0e3000 (  476044) : 22.70%   : MEM_FREE
+    7ae0000 (  125824) : 06.00%   : MEM_RESERVE
+
+Largest free region: Base 63c70000 - Size 097b0000 (155328 KB)
+
+0:007> g
+(f50.225c): C++ EH exception - code e06d7363 (first chance)
+(f50.225c): CLR exception - code e0434352 (first chance)
+ModLoad: 00410000 00419000   C:\Windows\SysWOW64\VERSION.dll
+(f50.225c): CLR exception - code e0434352 (!!! second chance !!!)
+eax=0020f0b0 ebx=00000005 ecx=00000005 edx=00000000 esi=0020f15c edi=005897e0
+eip=764bb727 esp=0020f0b0 ebp=0020f100 iopl=0         nv up ei pl nz ac po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000212
+KERNELBASE!RaiseException+0x58:
+764bb727 c9              leave
+0:000> !PrintException
+Exception object: 0278a320
+Exception type:   System.OutOfMemoryException
+Message:          <none>
+InnerException:   <none>
+StackTrace (generated):
+    SP       IP       Function
+    0020F290 004000A6 OOM3!OOM3.OOM3Program.Main(System.String[])+0x36
+
+StackTraceString: <none>
+HResult: 8007000e
+0:000> !AnalyzeOOM
+Managed OOM occured after GC #6 (Requested to allocate 1048592 bytes)
+Reason: Didn't have enough memory to allocate an LOH segment
+Detail: LOH: Failed to reserve memory (16777216 bytes)
+0:000> !address -summary
+ TEB 7efdd000 in range 7efdb000 7efde000
+ TEB 7efda000 in range 7efd8000 7efdb000
+ TEB 7efd7000 in range 7efd5000 7efd8000
+ TEB 7efaf000 in range 7efad000 7efb0000
+ TEB 7efac000 in range 7efaa000 7efad000
+ TEB 7efa9000 in range 7efa7000 7efaa000
+ TEB 7efa6000 in range 7efa4000 7efa7000
+ ProcessParametrs 00571a38 in range 00570000 005db000
+ Environment 00570810 in range 00570000 005db000
+
+-------------------- Usage SUMMARY --------------------------
+    TotSize (      KB)   Pct(Tots) Pct(Busy)   Usage
+   41b8a000 ( 1076776) : 51.35%    53.43%    : RegionUsageIsVAD
+    5001000 (   81924) : 03.91%    00.00%    : RegionUsageFree
+    20be000 (   33528) : 01.60%    01.66%    : RegionUsageImage
+     6ff000 (    7164) : 00.34%    00.36%    : RegionUsageStack
+          0 (       0) : 00.00%    00.00%    : RegionUsageTeb
+   36ca7000 (  897692) : 42.81%    44.55%    : RegionUsageHeap
+          0 (       0) : 00.00%    00.00%    : RegionUsagePageHeap
+       1000 (       4) : 00.00%    00.00%    : RegionUsagePeb
+          0 (       0) : 00.00%    00.00%    : RegionUsageProcessParametrs
+          0 (       0) : 00.00%    00.00%    : RegionUsageEnvironmentBlock
+       Tot: 7fff0000 (2097088 KB) Busy: 7afef000 (2015164 KB)
+
+-------------------- Type SUMMARY --------------------------
+    TotSize (      KB)   Pct(Tots)  Usage
+    5001000 (   81924) : 03.91%   : <free>
+    230d000 (   35892) : 01.71%   : MEM_IMAGE
+    1ed6000 (   31576) : 01.51%   : MEM_MAPPED
+   76e0c000 ( 1947696) : 92.88%   : MEM_PRIVATE
+
+-------------------- State SUMMARY --------------------------
+    TotSize (      KB)   Pct(Tots)  Usage
+   7365d000 ( 1890676) : 90.16%   : MEM_COMMIT
+    5001000 (   81924) : 03.91%   : MEM_FREE
+    7992000 (  124488) : 05.94%   : MEM_RESERVE
+
+Largest free region: Base 7e151000 - Size 00e53000 (14668 KB)
+
+0:000> !eeheap -gc
+Number of GC Heaps: 1
+generation 0 starts at 0x0278a314
+generation 1 starts at 0x0278a308
+generation 2 starts at 0x02781000
+ephemeral segment allocation context: none
+ segment     begin allocated  size
+02780000  02781000  0278c320  0xb320(45856)
+Large object heap starts at 0x03781000
+ segment     begin allocated  size
+03780000  03781000  04683400  0xf02400(15737856)
+05b60000  05b61000  06a611c0  0xf001c0(15729088)
+07c90000  07c91000  08b911d0  0xf001d0(15729104)
+09ef0000  09ef1000  0adf11d0  0xf001d0(15729104)
+0bee0000  0bee1000  0cde11d0  0xf001d0(15729104)
+0e3a0000  0e3a1000  0f2a11d0  0xf001d0(15729104)
+10390000  10391000  112911d0  0xf001d0(15729104)
+12380000  12381000  132811d0  0xf001d0(15729104)
+14370000  14371000  152711c0  0xf001c0(15729088)
+16be0000  16be1000  17ae11d0  0xf001d0(15729104)
+18bd0000  18bd1000  19ad11d0  0xf001d0(15729104)
+1abc0000  1abc1000  1bac11d0  0xf001d0(15729104)
+1cbb0000  1cbb1000  1dab11d0  0xf001d0(15729104)
+1eba0000  1eba1000  1faa11d0  0xf001d0(15729104)
+20b90000  20b91000  21a911d0  0xf001d0(15729104)
+22b80000  22b81000  23a811d0  0xf001d0(15729104)
+24b70000  24b71000  25a711d0  0xf001d0(15729104)
+27e80000  27e81000  28d811d0  0xf001d0(15729104)
+29e70000  29e71000  2ad711d0  0xf001d0(15729104)
+2be60000  2be61000  2cd611d0  0xf001d0(15729104)
+2de50000  2de51000  2ed511d0  0xf001d0(15729104)
+2fe40000  2fe41000  30d411d0  0xf001d0(15729104)
+31e30000  31e31000  32d311d0  0xf001d0(15729104)
+33e20000  33e21000  34d211d0  0xf001d0(15729104)
+35e10000  35e11000  36d111d0  0xf001d0(15729104)
+37e00000  37e01000  38d011d0  0xf001d0(15729104)
+39df0000  39df1000  3acf11d0  0xf001d0(15729104)
+3bde0000  3bde1000  3cce11d0  0xf001d0(15729104)
+3ddd0000  3ddd1000  3ecd11d0  0xf001d0(15729104)
+3fdc0000  3fdc1000  40cc11d0  0xf001d0(15729104)
+41db0000  41db1000  42cb11d0  0xf001d0(15729104)
+43da0000  43da1000  44ca11d0  0xf001d0(15729104)
+45d90000  45d91000  46c911d0  0xf001d0(15729104)
+4a0d0000  4a0d1000  4afd11d0  0xf001d0(15729104)
+4c0c0000  4c0c1000  4cfc11d0  0xf001d0(15729104)
+4e0b0000  4e0b1000  4efb11d0  0xf001d0(15729104)
+500a0000  500a1000  50fa11d0  0xf001d0(15729104)
+52090000  52091000  52f911d0  0xf001d0(15729104)
+54080000  54081000  54f811c0  0xf001c0(15729088)
+552a0000  552a1000  561a11d0  0xf001d0(15729104)
+574f0000  574f1000  583f11d0  0xf001d0(15729104)
+594e0000  594e1000  5a3e11d0  0xf001d0(15729104)
+5b4d0000  5b4d1000  5c3d11d0  0xf001d0(15729104)
+5d4c0000  5d4c1000  5e3c11d0  0xf001d0(15729104)
+602d0000  602d1000  611d11d0  0xf001d0(15729104)
+62930000  62931000  638311d0  0xf001d0(15729104)
+64920000  64921000  658211d0  0xf001d0(15729104)
+66910000  66911000  678111d0  0xf001d0(15729104)
+68900000  68901000  698011d0  0xf001d0(15729104)
+6a8f0000  6a8f1000  6b7f11d0  0xf001d0(15729104)
+6d720000  6d721000  6e6211d0  0xf001d0(15729104)
+6eb60000  6eb61000  6fa611d0  0xf001d0(15729104)
+713d0000  713d1000  722d11d0  0xf001d0(15729104)
+72c50000  72c51000  73b511d0  0xf001d0(15729104)
+773b0000  773b1000  782b11d0  0xf001d0(15729104)
+783b0000  783b1000  792b11d0  0xf001d0(15729104)
+7a180000  7a181000  7b0811d0  0xf001d0(15729104)
+7c170000  7c171000  7d0711d0  0xf001d0(15729104)
+Total Size:              Size: 0x36613e40 (912342592) bytes.
+------------------------------
+GC Heap Size:            Size: 0x36613e40 (912342592) bytes.
+0:000> !heap 0
+Index   Address  Name      Debugging options enabled
+  1:   00570000 
+    Segment at 00570000 to 00670000 (0006b000 bytes committed)
+  2:   00370000 
+    Segment at 00370000 to 00380000 (00004000 bytes committed)
+  3:   000d0000 
+    Segment at 000d0000 to 00110000 (00001000 bytes committed)
+  4:   00500000 
+    Segment at 00500000 to 00510000 (00004000 bytes committed)
+  5:   002d0000 
+    Segment at 002d0000 to 002e0000 (00004000 bytes committed)
+  6:   00750000 
+    Segment at 00750000 to 00790000 (00001000 bytes committed)
+  7:   00c50000 
+    Segment at 00c50000 to 00c60000 (00004000 bytes committed)
+  8:   00300000 
+    Segment at 00300000 to 00340000 (00001000 bytes committed)
+  9:   00470000 
+    Segment at 00470000 to 004b0000 (00002000 bytes committed)
+0:000> q
+quit:

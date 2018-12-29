@@ -1,0 +1,48 @@
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TesterConsole\bin\Debug\WpfApplication1.exe.config
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TesterConsole\obj\x86\Debug\TesterConsole.csprojResolveAssemblyReference.cache
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TesterConsole\obj\x86\Debug\MainWindow.baml
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TesterConsole\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TesterConsole\obj\x86\Debug\App.g.cs
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TesterConsole\obj\x86\Debug\WpfApplication1_MarkupCompile.cache
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TesterConsole\obj\x86\Debug\WpfApplication1.g.resources
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TesterConsole\obj\x86\Debug\WpfApplication1.Properties.Resources.resources
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TesterConsole\obj\x86\Debug\TesterConsole.csproj.GenerateResource.Cache
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TesterConsole\bin\Debug\WpfApplication1.exe
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TesterConsole\bin\Debug\WpfApplication1.pdb
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TesterConsole\bin\Debug\R10Tracing.dll
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TesterConsole\bin\Debug\R10Tracing.pdb
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TesterConsole\obj\x86\Debug\WpfApplication1.exe
+C:\Users\Ofir\SkyDrive\Projects\ETWTester\TesterConsole\obj\x86\Debug\WpfApplication1.pdb
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\bin\Debug\WpfApplication1.exe.config
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\WpfApplication1.exe
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\WpfApplication1.pdb
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\bin\Debug\WpfApplication1.exe
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\bin\Debug\WpfApplication1.pdb
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\bin\Debug\R10Tracing.dll
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\bin\Debug\R10Tracing.pdb
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\TesterConsole.csprojResolveAssemblyReference.cache
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\MainWindow.baml
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\MainWindow.g.cs
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\App.g.cs
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\WpfApplication1_MarkupCompile.cache
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\WpfApplication1.g.resources
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\WpfApplication1.Properties.Resources.resources
+C:\Courses\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\TesterConsole.csproj.GenerateResource.Cache
+C:\Users\hadrahanat\Desktop\קורס advanced.net performance 1.5.2016\Elbit\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\bin\Debug\WpfApplication1.exe.config
+C:\Users\hadrahanat\Desktop\קורס advanced.net performance 1.5.2016\Elbit\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\WpfApplication1.exe
+C:\Users\hadrahanat\Desktop\קורס advanced.net performance 1.5.2016\Elbit\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\WpfApplication1.pdb
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\bin\Debug\WpfApplication1.exe.config
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\WpfApplication1.exe
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\WpfApplication1.pdb
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\bin\Debug\WpfApplication1.exe
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\bin\Debug\WpfApplication1.pdb
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\bin\Debug\R10Tracing.dll
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\bin\Debug\R10Tracing.pdb
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\TesterConsole.csprojResolveAssemblyReference.cache
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\MainWindow.baml
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\MainWindow.g.cs
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\App.g.cs
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\WpfApplication1_MarkupCompile.cache
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\WpfApplication1.g.resources
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\WpfApplication1.Properties.Resources.resources
+C:\Users\DP27813\Desktop\Performance .net\NET Performance\Ofir\PerformanceCourseDemos\ETWTester\TesterConsole\obj\x86\Debug\TesterConsole.csproj.GenerateResource.Cache

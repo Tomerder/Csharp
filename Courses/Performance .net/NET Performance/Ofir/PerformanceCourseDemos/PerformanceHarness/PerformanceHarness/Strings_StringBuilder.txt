@@ -1,0 +1,27 @@
+using System;
+using System.Text;
+using PerformanceHarness;
+
+[MeasurableClass]
+public static class StringBuilderTest
+{
+	[SetupMethod]
+	static void Setup()
+	{
+	}
+
+	[TeardownMethod]
+	static void Teardown()
+	{
+	}
+
+	[MeasurableMethod]
+	static void Measure()
+	{
+          StringBuilder sb = new StringBuilder();
+		for (int __i = 0; __i < %NUMBER_OF_ITERATIONS%; ++__i)
+		{
+                sb.Append("a");
+		}
+	}
+}
