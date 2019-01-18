@@ -1,0 +1,65 @@
+<html>
+<body>
+<input type="file">
+<button id="myBtn">Try it</button>
+<pre id="file"></pre>
+<pre id="file_loaded"></pre>
+
+<script>
+var a;
+document.getElementById("myBtn").addEventListener("click", function() {
+
+  var reader = new FileReader();
+  reader.addEventListener('load', function() {
+	var i;
+	//read from files
+    var prev = new Date().getTime();
+	a = this.result;
+	var time_new = new Date().getTime();
+	var diff=time_new - prev;
+	console.log("time in milli: ", time_new,prev,diff);
+	
+	//parser into matrix
+	prev = new Date().getTime();
+	a= a.replace(/[\r\n]+/g, '\n');
+	var arRow = a.split(',\n');
+	var array = new Array(arRow.length-1); 
+	for(i = 0; i < arRow.length-1; i++) 
+	{
+		var tempArray = JSON.parse("[" + arRow[i] + "]")
+		array[i] = new Array(tempArray.length);
+		array[i] = tempArray;
+	}
+	time_new = new Date().getTime();
+	diff=time_new - prev;
+	console.log("parser into matrix time in milli: ", time_new,prev,diff);
+	
+	//sum of the matrix
+	prev = new Date().getTime();
+	var sum = 0;
+	var j=0;
+	console.log(array);
+	for(i = 0; i < array.length; i++) 
+	{
+		for(j = 0; j<array[i].length; j++)
+		{
+			sum+=array[i][j];
+		}
+	}
+	console.log("sum:" + sum);
+
+	time_new = new Date().getTime();
+	diff=time_new - prev;
+	console.log("sum of the matrix time in milli: ", time_new,prev,diff);
+		
+  });
+  reader.readAsText(document.querySelector('input').files[0]);
+});
+
+
+
+ 
+</script> 
+
+</body>
+</html>

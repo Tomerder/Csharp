@@ -1,0 +1,31 @@
+<html>
+<body>
+<input type="file">
+<button id="myBtn">Try it</button>
+<pre id="file"></pre>
+<pre id="file_loaded"></pre>
+
+<script>
+var a;
+document.getElementById("myBtn").addEventListener("click", function() {
+  
+  console.log("Start...");
+  var arr = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10); 
+   
+   console.log("Before : " + arr);
+  
+   var result = arr.map((n) => n *2)
+				.filter((n) => 10 % n == 0)
+				.reduce((sum, n) => (sum += n), 0);
+				
+	console.log("Result : " + result);
+  
+});
+
+
+
+ 
+</script> 
+
+</body>
+</html>
