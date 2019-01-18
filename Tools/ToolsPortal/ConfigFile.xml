@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<root>
+		
+	<GENERAL_CONFIGURATIONS>
+		
+	</GENERAL_CONFIGURATIONS>
+
+	
+	<TOOLS>
+
+		<TOOL>
+		  <Name>GDT</Name>
+		  <Exe_File_Path>J:\Tools\GDT\ESL.GDT\GDTDesigner.exe</Exe_File_Path>
+		  <Icon_File_Path>J:\Tools\GDT\logo.ico</Icon_File_Path>
+		  <Readme_File_Path>J:\Tools\GDT\ESL.GDT\GDT_UserGuide.pdf</Readme_File_Path>
+		  <Author>Jonathan Hess</Author>
+		</TOOL>
+		
+		<TOOL>
+		  <Name>GLoader</Name>
+		  <Exe_File_Path>J:\Tools\GLoader\GenereicLoader\bin\Debug\GenereicLoader.exe</Exe_File_Path>
+		  <Icon_File_Path>J:\Tools\GLoader\GenereicLoader\if_Inkcontober_Jellyfish_2730374.ico</Icon_File_Path>
+		  <Readme_File_Path>J:\Tools\GLoader\UserManualForTheGLoader.pdf</Readme_File_Path>
+		  <Author>Erez Frydman</Author>
+		</TOOL>
+		
+		<TOOL>
+		  <Name>Genetic Simulation Tool</Name>
+		  <Exe_File_Path>J:\Tools\WcetGeneticAlgo\GeneticEngine\GeneticAlgoTool\bin\Debug\GeneticAlgoTool.exe</Exe_File_Path>
+		  <Icon_File_Path>J:\Tools\WcetGeneticAlgo\GeneticEngine\GeneticAlgoTool\Gen.ico</Icon_File_Path>
+		  <Readme_File_Path>J:\Tools\WcetGeneticAlgo\GeneticEngine\GeneticAlgoTool\ConfigFile.xml</Readme_File_Path>
+		  <Author>Tomer Dery</Author>
+		</TOOL>
+
+		<TOOL>
+		  <Name>A-Team</Name>
+		  <Exe_File_Path>C:\Program Files\Elbit Systems ATEAM\ATeam.exe</Exe_File_Path>
+		  <Icon_File_Path>J:\Tools\ToolsPortal\ateam.ico</Icon_File_Path>
+		  <Readme_File_Path>C:\Program Files (x86)\Elbit Systems ATEAM\Resources\Help\ATEAMGuide.pdf</Readme_File_Path>
+		  <Author>Sapir Levi</Author>
+		</TOOL>
+
+		<TOOL>
+		  <Name>BLG</Name>
+		  <Exe_File_Path>C:\Program Files\Elbit Systems BLG\ESL.BLG.exe</Exe_File_Path>
+		  <Icon_File_Path>J:\Tools\ToolsPortal\BlgLogoCube.ico</Icon_File_Path>
+		  <Readme_File_Path></Readme_File_Path>
+		  <Author>Tali Hausner</Author>
+		</TOOL>
+	 
+		<TOOL>
+		  <Name>Gaps Alerts Tool</Name>
+		  <Exe_File_Path>J:\Tools\GapsAlertsTool\GapsAlertsTool\bin\Debug\GapsAlertsTool.exe</Exe_File_Path>
+		  <Icon_File_Path>J:\Tools\GapsAlertsTool\symbol_check.ico</Icon_File_Path>
+		  <Readme_File_Path>J:\Tools\GapsAlertsTool\Gaps_Alerts_Tool-Operating Instructions.doc</Readme_File_Path>
+		  <Author>Tomer Dery</Author>
+		</TOOL>
+	 	 
+		<TOOL>
+		  <Name>Auto Version Release</Name>
+		  <Exe_File_Path>C:\AutoRelease\Tool\AutoVersionRelease\bin\Debug\AutoVersionRelease.exe</Exe_File_Path>
+		  <Icon_File_Path>C:\AutoRelease\Tool\AutoVersionRelease\log_target.ico</Icon_File_Path>
+		  <Readme_File_Path>C:\AutoRelease\Tool\readme.docx</Readme_File_Path>
+		  <Author>Tomer Dery</Author>
+		</TOOL>
+	 
+		<TOOL>
+		  <Name>LDR615 Host</Name>
+		  <Exe_File_Path>J:\Tools\LoaderHost\x86\Release_32bit\615ADataLoader.exe</Exe_File_Path>
+		  <Icon_File_Path>J:\Tools\LoaderHost\burn.ico</Icon_File_Path>
+		  <Readme_File_Path></Readme_File_Path>
+		  <Author>Adi Greenshpan</Author>
+		</TOOL>
+	  
+	  	<TOOL>
+		  <Name>LDR615 CRC Calculator</Name>
+		  <Exe_File_Path>J:\Tools\LDR615_CRC </Exe_File_Path>
+		  <Icon_File_Path>J:\Tools\LDR615_CRC\binary.ico</Icon_File_Path>
+		  <Readme_File_Path></Readme_File_Path>
+		  <Author>Tomer Dery</Author>
+		</TOOL>
+		
+		<TOOL>
+		  <Name>File details tool</Name>
+		  <Exe_File_Path>J:\Tools\FileDetailsTool\FileDetailsTool\FileDetailsTool\bin\Debug\FileDetailsTool.exe</Exe_File_Path>
+		  <Icon_File_Path>J:\Tools\FileDetailsTool\fileDetails.ico</Icon_File_Path>
+		  <Readme_File_Path></Readme_File_Path>
+		  <Author>Tomer Dery</Author>
+		</TOOL>
+		
+		<TOOL>
+		  <Name>Build instruction executer</Name>
+		  <Exe_File_Path>J:\Tools\BuildInstructionsExecuter</Exe_File_Path>
+		  <Icon_File_Path>J:\Tools\BuildInstructionsExecuter\build.ico</Icon_File_Path>
+		  <Readme_File_Path></Readme_File_Path>
+		  <Author>Tomer Dery</Author>
+		</TOOL>
+	  
+	  	<TOOL>
+		  <Name>CRC32 Calculator</Name>
+		  <Exe_File_Path>J:\Tools\CRC32Calculator\GenericCRC32Calculator\bin\Debug\GenericCRC32Calculator.exe</Exe_File_Path>
+		  <Icon_File_Path>J:\Tools\CRC32Calculator\calculator.ico</Icon_File_Path>
+		  <Readme_File_Path></Readme_File_Path>
+		  <Author>Tomer Dery</Author>
+		</TOOL>
+		
+		<TOOL>
+		  <Name>MiniLogger Download</Name>
+		  <Exe_File_Path>J:\Tools\MiniLogger\DownloadMiniLogAndParse.bat</Exe_File_Path>
+		  <Icon_File_Path>J:\Tools\MiniLogger\download.ico</Icon_File_Path>
+		  <Readme_File_Path></Readme_File_Path>
+		  <Author>Yossi Kligun</Author>
+		</TOOL>
+		
+		<TOOL>
+		  <Name>MiniLogger Erase</Name>
+		  <Exe_File_Path>J:\Tools\MiniLogger\EraseMiniLog.bat</Exe_File_Path>
+		  <Icon_File_Path>J:\Tools\MiniLogger\erase.ico</Icon_File_Path>
+		  <Readme_File_Path></Readme_File_Path>
+		  <Author>Yossi Kligun</Author>
+		</TOOL>	 
+		
+		<TOOL>
+		  <Name>BIT Parser</Name>
+		  <Exe_File_Path>J:\Tools\BIT Parser\BITParser.py</Exe_File_Path>
+		  <Icon_File_Path>J:\Tools\BIT Parser\xml.ico</Icon_File_Path>
+		  <Readme_File_Path>J:\Tools\BIT Parser\ReadMe.txt</Readme_File_Path>
+		  <Author>Sharon Levy</Author>
+		</TOOL>
+		
+		<TOOL>
+		  <Name>Send UDP Message</Name>
+		  <Exe_File_Path>J:\Tools\SendUdpMsg\SendEthernetMsg\bin\Debug\SendEthernetMsg.exe</Exe_File_Path>
+		  <Icon_File_Path>J:\Tools\SendUdpMsg\communication.ico</Icon_File_Path>
+		  <Readme_File_Path></Readme_File_Path>
+		  <Author>Tomer Dery</Author>
+		</TOOL>
+	
+	</TOOLS>	
+
+</root>

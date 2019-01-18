@@ -1,0 +1,14 @@
+C:\Users\DP91930\Documents\Visual Studio 2013\Projects\ExcelFileLib\ExcelFileLib\bin\Debug\ExcelFileLib.dll
+C:\Users\DP91930\Documents\Visual Studio 2013\Projects\ExcelFileLib\ExcelFileLib\bin\Debug\ExcelFileLib.pdb
+C:\Users\DP91930\Documents\Visual Studio 2013\Projects\ExcelFileLib\ExcelFileLib\obj\Debug\ExcelFileLib.dll
+C:\Users\DP91930\Documents\Visual Studio 2013\Projects\ExcelFileLib\ExcelFileLib\obj\Debug\ExcelFileLib.pdb
+I:\EFVS\Software\Tools\ToolsDlls\ExcelFileLib\ExcelFileLib\bin\Debug\ExcelFileLib.dll
+I:\EFVS\Software\Tools\ToolsDlls\ExcelFileLib\ExcelFileLib\bin\Debug\ExcelFileLib.pdb
+I:\EFVS\Software\Tools\ToolsDlls\ExcelFileLib\ExcelFileLib\obj\Debug\ExcelFileLib.csprojResolveAssemblyReference.cache
+I:\EFVS\Software\Tools\ToolsDlls\ExcelFileLib\ExcelFileLib\obj\Debug\ExcelFileLib.dll
+I:\EFVS\Software\Tools\ToolsDlls\ExcelFileLib\ExcelFileLib\obj\Debug\ExcelFileLib.pdb
+J:\Tools\ToolsDlls\ExcelFileLib\ExcelFileLib\bin\Debug\ExcelFileLib.dll
+J:\Tools\ToolsDlls\ExcelFileLib\ExcelFileLib\bin\Debug\ExcelFileLib.pdb
+J:\Tools\ToolsDlls\ExcelFileLib\ExcelFileLib\obj\Debug\ExcelFileLib.dll
+J:\Tools\ToolsDlls\ExcelFileLib\ExcelFileLib\obj\Debug\ExcelFileLib.pdb
+J:\Tools\ToolsDlls\ExcelFileLib\ExcelFileLib\obj\Debug\ExcelFileLib.csprojResolveAssemblyReference.cache

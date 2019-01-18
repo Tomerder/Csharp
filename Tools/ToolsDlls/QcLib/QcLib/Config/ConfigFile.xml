@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<root>
+	
+	<DefectFilter>
+		<DefectFilterField>
+			<Key>Id</key>
+			<Value>BG_BUG_ID</Value>
+		</DefectFilterField>
+		<DefectFilterField>
+			<Key>Summery</key>
+			<Value>BG_SUMMARY</Value>
+		</DefectFilterField>
+		<DefectFilterField>
+			<Key>Description</key>
+			<Value>BG_DESCRIPTION</Value>
+		</DefectFilterField>
+		<DefectFilterField>
+			<Key>Type</key>
+			<Value>BG_USER_07</Value>
+			<Options>0,1A,1B,2,3A,3B</Options>
+		</DefectFilterField>
+		<DefectFilterField>
+			<Key>Domain</key>
+			<Value>BG_USER_12</Value>
+			<Options>SW,BSP,EVS,System,Simulation,OHU</Options>
+		</DefectFilterField>
+		<DefectFilterField>
+			<Key>Status</key>
+			<Value>BG_USER_32</Value>
+			<Options>Cancelled,"Candidate for Descope",Closed,De-scoped,Handled,Open,Open-New,Postponed</Options>
+		</DefectFilterField>
+		<DefectFilterField>
+			<Key>CSCI</key>
+			<Value>BG_USER_34</Value>
+			<Options>CLAWS,"CLAWS CF",COMMON,DISPLAY,"OFP SR1","OFP SR2",MONITORING,"MONITORING CF",VIDEO,"VIDEO CF","SYS INT SR1","SYS INT SR2","SYS INT SR3",SVS</Options>
+		</DefectFilterField>
+		<DefectFilterField>
+			<Key>Project</key>
+			<Value>BG_USER_35</Value>
+			<Options>DA,ATR,KC,"DA & KC"</options>
+		</DefectFilterField>
+		<DefectFilterField>
+			<Key>ItemEffected</key>
+			<Value>BG_USER_59</Value>
+			<Options>CLAWS,CLAWS_CF,COMMON,COMMON_SR1,COMMON_SR1_SR2,DISPLAY,OFP_SR1,OFP_SR2,MONITORING,MONITORING_CF,VIDEO,VIDEO_CF,SI_SR1,SI_SR2,SVS</Options>
+		</DefectFilterField>
+		<DefectFilterField>
+			<Key></key>
+			<Value></Value>
+		</DefectFilterField>
+	</DefectFilter>
+	
+	<RequirementFilter>
+		<RequirementFilterField>
+			<Key>Id</key>
+			<Value>RQ_USER_02</Value>
+		</RequirementFilterField>
+		<RequirementFilterField>
+			<Key>Type</key>
+			<Value>RQ_USER_15</Value>
+		</RequirementFilterField>
+		<RequirementFilterField>
+			<Key>Project</key>
+			<Value>RQ_USER_16</Value>
+		</RequirementFilterField>
+		<RequirementFilterField>
+			<Key>CertTarget</key>
+			<Value>RQ_USER_17</Value>
+		</RequirementFilterField>
+		<RequirementFilterField>
+			<Key>Traced</key>
+			<Value>RQ_USER_59</Value>
+		</RequirementFilterField>
+		<RequirementFilterField>
+			<Key>BaseLine</key>
+			<Value>RQ_USER_39</Value>
+		</RequirementFilterField>
+	</RequirementFilter>
+	
+	<TestFilter>
+		<TestFilterField>
+			<Key></key>
+			<Value></Value>
+		</TestFilterField>
+	</TestFilter>
+	
+</root>

@@ -1,0 +1,4 @@
+J:\Tools\ToolsDlls\UtilsLib\bin\Release\UtilsLib.dll
+J:\Tools\ToolsDlls\UtilsLib\bin\Release\UtilsLib.pdb
+J:\Tools\ToolsDlls\UtilsLib\obj\Release\UtilsLib.dll
+J:\Tools\ToolsDlls\UtilsLib\obj\Release\UtilsLib.pdb

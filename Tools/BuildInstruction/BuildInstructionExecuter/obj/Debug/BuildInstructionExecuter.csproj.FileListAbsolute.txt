@@ -1,0 +1,13 @@
+c:\users\dp27813\documents\visual studio 2015\Projects\BuildInstructionExecuter\BuildInstructionExecuter\bin\Debug\BuildInstructionExecuter.exe.config
+c:\users\dp27813\documents\visual studio 2015\Projects\BuildInstructionExecuter\BuildInstructionExecuter\obj\Debug\BuildInstructionExecuter.csprojResolveAssemblyReference.cache
+c:\users\dp27813\documents\visual studio 2015\Projects\BuildInstructionExecuter\BuildInstructionExecuter\bin\Debug\BuildInstructionExecuter.exe
+c:\users\dp27813\documents\visual studio 2015\Projects\BuildInstructionExecuter\BuildInstructionExecuter\bin\Debug\BuildInstructionExecuter.pdb
+c:\users\dp27813\documents\visual studio 2015\Projects\BuildInstructionExecuter\BuildInstructionExecuter\bin\Debug\ExcelFileLib.dll
+c:\users\dp27813\documents\visual studio 2015\Projects\BuildInstructionExecuter\BuildInstructionExecuter\bin\Debug\UtilsLib.dll
+c:\users\dp27813\documents\visual studio 2015\Projects\BuildInstructionExecuter\BuildInstructionExecuter\bin\Debug\ExcelFileLib.pdb
+c:\users\dp27813\documents\visual studio 2015\Projects\BuildInstructionExecuter\BuildInstructionExecuter\bin\Debug\UtilsLib.pdb
+c:\users\dp27813\documents\visual studio 2015\Projects\BuildInstructionExecuter\BuildInstructionExecuter\obj\Debug\BuildInstructionExecuter.exe
+c:\users\dp27813\documents\visual studio 2015\Projects\BuildInstructionExecuter\BuildInstructionExecuter\obj\Debug\BuildInstructionExecuter.pdb
+J:\Tools\BuildInstructionsExecuter\BuildInstructionExecuter\bin\Debug\BuildInstructionExecuter.exe.config
+J:\Tools\BuildInstructionsExecuter\BuildInstructionExecuter\obj\Debug\BuildInstructionExecuter.exe
+J:\Tools\BuildInstructionsExecuter\BuildInstructionExecuter\obj\Debug\BuildInstructionExecuter.pdb

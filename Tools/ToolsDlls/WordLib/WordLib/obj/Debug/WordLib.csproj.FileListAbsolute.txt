@@ -1,0 +1,13 @@
+J:\Tools\ToolsDlls\WordLib\WordLib\bin\Debug\WordLib.dll
+J:\Tools\ToolsDlls\WordLib\WordLib\bin\Debug\WordLib.pdb
+J:\Tools\ToolsDlls\WordLib\WordLib\bin\Debug\DocumentFormat.OpenXml.dll
+J:\Tools\ToolsDlls\WordLib\WordLib\bin\Debug\DocumentFormat.OpenXml.xml
+J:\Tools\ToolsDlls\WordLib\WordLib\obj\Debug\WordLib.csprojResolveAssemblyReference.cache
+J:\Tools\ToolsDlls\WordLib\WordLib\obj\Debug\WordLib.dll
+J:\Tools\ToolsDlls\WordLib\WordLib\obj\Debug\WordLib.pdb
+C:\AutoRelease\Tool\WordLib\WordLib\bin\Debug\WordLib.dll
+C:\AutoRelease\Tool\WordLib\WordLib\bin\Debug\WordLib.pdb
+C:\AutoRelease\Tool\WordLib\WordLib\bin\Debug\DocumentFormat.OpenXml.dll
+C:\AutoRelease\Tool\WordLib\WordLib\bin\Debug\DocumentFormat.OpenXml.xml
+C:\AutoRelease\Tool\WordLib\WordLib\obj\Debug\WordLib.dll
+C:\AutoRelease\Tool\WordLib\WordLib\obj\Debug\WordLib.pdb

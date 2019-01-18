@@ -1,0 +1,4 @@
+J:\Tools\ToolsDlls\ConfigFileLib\bin\Release\ConfigFileLib.dll
+J:\Tools\ToolsDlls\ConfigFileLib\bin\Release\ConfigFileLib.pdb
+J:\Tools\ToolsDlls\ConfigFileLib\obj\Release\ConfigFileLib.dll
+J:\Tools\ToolsDlls\ConfigFileLib\obj\Release\ConfigFileLib.pdb

@@ -1,0 +1,36 @@
+c:\users\dp27813\documents\visual studio 2015\Projects\FileDetailsTool\FileDetailsTool\bin\Debug\FileDetailsTool.exe.config
+c:\users\dp27813\documents\visual studio 2015\Projects\FileDetailsTool\FileDetailsTool\bin\Debug\FileDetailsTool.exe
+c:\users\dp27813\documents\visual studio 2015\Projects\FileDetailsTool\FileDetailsTool\bin\Debug\FileDetailsTool.pdb
+c:\users\dp27813\documents\visual studio 2015\Projects\FileDetailsTool\FileDetailsTool\obj\Debug\FileDetailsTool.csprojResolveAssemblyReference.cache
+c:\users\dp27813\documents\visual studio 2015\Projects\FileDetailsTool\FileDetailsTool\obj\Debug\MainWindow.g.cs
+c:\users\dp27813\documents\visual studio 2015\Projects\FileDetailsTool\FileDetailsTool\obj\Debug\App.g.cs
+c:\users\dp27813\documents\visual studio 2015\Projects\FileDetailsTool\FileDetailsTool\obj\Debug\FileDetailsTool_MarkupCompile.cache
+c:\users\dp27813\documents\visual studio 2015\Projects\FileDetailsTool\FileDetailsTool\obj\Debug\FileDetailsTool_MarkupCompile.lref
+c:\users\dp27813\documents\visual studio 2015\Projects\FileDetailsTool\FileDetailsTool\obj\Debug\MainWindow.baml
+c:\users\dp27813\documents\visual studio 2015\Projects\FileDetailsTool\FileDetailsTool\obj\Debug\FileDetailsTool.g.resources
+c:\users\dp27813\documents\visual studio 2015\Projects\FileDetailsTool\FileDetailsTool\obj\Debug\FileDetailsTool.Properties.Resources.resources
+c:\users\dp27813\documents\visual studio 2015\Projects\FileDetailsTool\FileDetailsTool\obj\Debug\FileDetailsTool.csproj.GenerateResource.Cache
+c:\users\dp27813\documents\visual studio 2015\Projects\FileDetailsTool\FileDetailsTool\obj\Debug\FileDetailsTool.exe
+c:\users\dp27813\documents\visual studio 2015\Projects\FileDetailsTool\FileDetailsTool\obj\Debug\FileDetailsTool.pdb
+c:\users\dp27813\documents\visual studio 2015\Projects\FileDetailsTool\FileDetailsTool\bin\Debug\UtilsLib.dll
+c:\users\dp27813\documents\visual studio 2015\Projects\FileDetailsTool\FileDetailsTool\bin\Debug\UtilsLib.pdb
+c:\users\dp27813\documents\visual studio 2015\Projects\FileDetailsTool\FileDetailsTool\bin\Debug\CsvLib.dll
+c:\users\dp27813\documents\visual studio 2015\Projects\FileDetailsTool\FileDetailsTool\bin\Debug\CsvLib.pdb
+J:\Tools\FileDetailsTool\FileDetailsTool\FileDetailsTool\bin\Debug\FileDetailsTool.exe.config
+J:\Tools\FileDetailsTool\FileDetailsTool\FileDetailsTool\obj\Debug\FileDetailsTool.exe
+J:\Tools\FileDetailsTool\FileDetailsTool\FileDetailsTool\obj\Debug\FileDetailsTool.pdb
+J:\Tools\FileDetailsTool\FileDetailsTool\FileDetailsTool\bin\Debug\FileDetailsTool.exe
+J:\Tools\FileDetailsTool\FileDetailsTool\FileDetailsTool\bin\Debug\FileDetailsTool.pdb
+J:\Tools\FileDetailsTool\FileDetailsTool\FileDetailsTool\bin\Debug\CsvLib.dll
+J:\Tools\FileDetailsTool\FileDetailsTool\FileDetailsTool\bin\Debug\UtilsLib.dll
+J:\Tools\FileDetailsTool\FileDetailsTool\FileDetailsTool\bin\Debug\CsvLib.pdb
+J:\Tools\FileDetailsTool\FileDetailsTool\FileDetailsTool\bin\Debug\UtilsLib.pdb
+J:\Tools\FileDetailsTool\FileDetailsTool\FileDetailsTool\obj\Debug\FileDetailsTool.csprojResolveAssemblyReference.cache
+J:\Tools\FileDetailsTool\FileDetailsTool\FileDetailsTool\obj\Debug\MainWindow.g.cs
+J:\Tools\FileDetailsTool\FileDetailsTool\FileDetailsTool\obj\Debug\App.g.cs
+J:\Tools\FileDetailsTool\FileDetailsTool\FileDetailsTool\obj\Debug\FileDetailsTool_MarkupCompile.cache
+J:\Tools\FileDetailsTool\FileDetailsTool\FileDetailsTool\obj\Debug\FileDetailsTool_MarkupCompile.lref
+J:\Tools\FileDetailsTool\FileDetailsTool\FileDetailsTool\obj\Debug\MainWindow.baml
+J:\Tools\FileDetailsTool\FileDetailsTool\FileDetailsTool\obj\Debug\FileDetailsTool.g.resources
+J:\Tools\FileDetailsTool\FileDetailsTool\FileDetailsTool\obj\Debug\FileDetailsTool.Properties.Resources.resources
+J:\Tools\FileDetailsTool\FileDetailsTool\FileDetailsTool\obj\Debug\FileDetailsTool.csproj.GenerateResource.Cache

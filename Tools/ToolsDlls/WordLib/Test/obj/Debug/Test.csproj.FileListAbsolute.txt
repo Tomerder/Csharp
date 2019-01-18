@@ -1,0 +1,10 @@
+J:\Tools\ToolsDlls\WordLib\Test\bin\Debug\Test.exe.config
+J:\Tools\ToolsDlls\WordLib\Test\bin\Debug\Test.exe
+J:\Tools\ToolsDlls\WordLib\Test\bin\Debug\Test.pdb
+J:\Tools\ToolsDlls\WordLib\Test\bin\Debug\WordLib.dll
+J:\Tools\ToolsDlls\WordLib\Test\bin\Debug\DocumentFormat.OpenXml.dll
+J:\Tools\ToolsDlls\WordLib\Test\bin\Debug\WordLib.pdb
+J:\Tools\ToolsDlls\WordLib\Test\bin\Debug\DocumentFormat.OpenXml.xml
+J:\Tools\ToolsDlls\WordLib\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+J:\Tools\ToolsDlls\WordLib\Test\obj\Debug\Test.exe
+J:\Tools\ToolsDlls\WordLib\Test\obj\Debug\Test.pdb

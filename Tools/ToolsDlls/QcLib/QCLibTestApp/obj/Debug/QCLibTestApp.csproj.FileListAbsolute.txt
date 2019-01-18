@@ -1,0 +1,9 @@
+C:\AutoRelease\Tool\QcLib\QCLibTestApp\bin\Debug\QCLibTestApp.exe.config
+C:\AutoRelease\Tool\QcLib\QCLibTestApp\bin\Debug\QCLibTestApp.exe
+C:\AutoRelease\Tool\QcLib\QCLibTestApp\bin\Debug\QCLibTestApp.pdb
+C:\AutoRelease\Tool\QcLib\QCLibTestApp\bin\Debug\QcLib.dll
+C:\AutoRelease\Tool\QcLib\QCLibTestApp\bin\Debug\GeneralLib.dll
+C:\AutoRelease\Tool\QcLib\QCLibTestApp\bin\Debug\QcLib.pdb
+C:\AutoRelease\Tool\QcLib\QCLibTestApp\obj\Debug\QCLibTestApp.csprojResolveAssemblyReference.cache
+C:\AutoRelease\Tool\QcLib\QCLibTestApp\obj\Debug\QCLibTestApp.exe
+C:\AutoRelease\Tool\QcLib\QCLibTestApp\obj\Debug\QCLibTestApp.pdb

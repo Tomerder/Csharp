@@ -1,0 +1,9 @@
+c:\users\dp27813\documents\visual studio 2015\Projects\RegistryLib\RegistryLib\bin\Debug\RegistryLib.dll
+c:\users\dp27813\documents\visual studio 2015\Projects\RegistryLib\RegistryLib\bin\Debug\RegistryLib.pdb
+c:\users\dp27813\documents\visual studio 2015\Projects\RegistryLib\RegistryLib\obj\Debug\RegistryLib.csprojResolveAssemblyReference.cache
+c:\users\dp27813\documents\visual studio 2015\Projects\RegistryLib\RegistryLib\obj\Debug\RegistryLib.dll
+c:\users\dp27813\documents\visual studio 2015\Projects\RegistryLib\RegistryLib\obj\Debug\RegistryLib.pdb
+C:\AutoRelease\Tool\RegistryLib\bin\Debug\RegistryLib.dll
+C:\AutoRelease\Tool\RegistryLib\bin\Debug\RegistryLib.pdb
+C:\AutoRelease\Tool\RegistryLib\obj\Debug\RegistryLib.dll
+C:\AutoRelease\Tool\RegistryLib\obj\Debug\RegistryLib.pdb

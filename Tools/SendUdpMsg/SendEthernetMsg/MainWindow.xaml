@@ -1,0 +1,18 @@
+﻿<Window x:Class="SendEthernetMsg.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Send Ethernet Udp Message" Height="350" Width="525" Background="Cyan">
+    <Grid Background="#FF83C9D0">
+        <Button Content="Send" Height="23" HorizontalAlignment="Left" Margin="206,267,0,0" Name="buttonSend" VerticalAlignment="Top" Width="75" Click="buttonSend_Click" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="332,22,0,0" Name="textBoxToIP" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="332,61,0,0" Name="textBoxToPort" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="95,61,0,0" Name="textBoxFromPort" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="95,22,0,0" Name="textBoxMyIP" VerticalAlignment="Top" Width="120" IsEnabled="False" IsReadOnly="True" />
+        <TextBox Height="125" HorizontalAlignment="Left" Margin="12,136,0,0" Name="textBoxMsgToSend" VerticalAlignment="Top" Width="479" />
+        <Label Content="Send to IP :" Height="28" HorizontalAlignment="Left" Margin="254,20,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Send to Port :" Height="28" HorizontalAlignment="Left" Margin="242,56,0,0" Name="label2" VerticalAlignment="Top" />
+        <Label Content="Message to send :" Height="28" HorizontalAlignment="Left" Margin="12,111,0,0" Name="label3" VerticalAlignment="Top" />
+        <Label Content="Send from Port :" Height="28" HorizontalAlignment="Left" Margin="0,56,0,0" Name="label4" VerticalAlignment="Top" />
+        <Label Content="My IP :" Height="28" HorizontalAlignment="Left" Margin="50,22,0,0" Name="label5" VerticalAlignment="Top" />
+    </Grid>
+</Window>

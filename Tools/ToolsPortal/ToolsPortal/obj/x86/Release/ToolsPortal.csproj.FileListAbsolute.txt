@@ -1,0 +1,16 @@
+J:\Tools\ToolsPortal\ToolsPortal\obj\x86\Release\ToolsPortal.csprojResolveAssemblyReference.cache
+J:\Tools\ToolsPortal\ToolsPortal\obj\x86\Release\MainWindow.baml
+J:\Tools\ToolsPortal\ToolsPortal\obj\x86\Release\MainWindow.g.cs
+J:\Tools\ToolsPortal\ToolsPortal\obj\x86\Release\App.g.cs
+J:\Tools\ToolsPortal\ToolsPortal\obj\x86\Release\ToolsPortal_MarkupCompile.cache
+J:\Tools\ToolsPortal\ToolsPortal\obj\x86\Release\ToolsPortal.g.resources
+J:\Tools\ToolsPortal\ToolsPortal\obj\x86\Release\ToolsPortal.Properties.Resources.resources
+J:\Tools\ToolsPortal\ToolsPortal\obj\x86\Release\ToolsPortal.csproj.GenerateResource.Cache
+J:\Tools\ToolsPortal\ToolsPortal\bin\Release\ToolsPortal.exe
+J:\Tools\ToolsPortal\ToolsPortal\bin\Release\ToolsPortal.pdb
+J:\Tools\ToolsPortal\ToolsPortal\bin\Release\ConfigFileLib.dll
+J:\Tools\ToolsPortal\ToolsPortal\bin\Release\UtilsLib.dll
+J:\Tools\ToolsPortal\ToolsPortal\bin\Release\ConfigFileLib.pdb
+J:\Tools\ToolsPortal\ToolsPortal\bin\Release\UtilsLib.pdb
+J:\Tools\ToolsPortal\ToolsPortal\obj\x86\Release\ToolsPortal.exe
+J:\Tools\ToolsPortal\ToolsPortal\obj\x86\Release\ToolsPortal.pdb
