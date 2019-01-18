@@ -1,0 +1,6 @@
+C:\Users\DP27813\documents\visual studio 2015\Projects\CsharpTest\CsharpTest\bin\Debug\CsharpTest.exe.config
+C:\Users\DP27813\documents\visual studio 2015\Projects\CsharpTest\CsharpTest\bin\Debug\CsharpTest.exe
+C:\Users\DP27813\documents\visual studio 2015\Projects\CsharpTest\CsharpTest\bin\Debug\CsharpTest.pdb
+C:\Users\DP27813\documents\visual studio 2015\Projects\CsharpTest\CsharpTest\obj\Debug\MultiThreadStack.csprojResolveAssemblyReference.cache
+C:\Users\DP27813\documents\visual studio 2015\Projects\CsharpTest\CsharpTest\obj\Debug\CsharpTest.exe
+C:\Users\DP27813\documents\visual studio 2015\Projects\CsharpTest\CsharpTest\obj\Debug\CsharpTest.pdb

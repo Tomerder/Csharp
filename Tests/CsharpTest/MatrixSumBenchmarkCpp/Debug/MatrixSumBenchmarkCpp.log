@@ -1,0 +1,8 @@
+﻿  stdafx.cpp
+  MatrixSumBenchmarkCpp.cpp
+  MatrixSum.cpp
+c:\users\dp27813\documents\visual studio 2015\projects\csharptest\matrixsumbenchmarkcpp\matrixsum.cpp(30): warning C4018: '<': signed/unsigned mismatch
+c:\users\dp27813\documents\visual studio 2015\projects\csharptest\matrixsumbenchmarkcpp\matrixsum.cpp(34): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  MatrixSumBenchmarkCpp.vcxproj -> C:\Users\DP27813\documents\visual studio 2015\Projects\CsharpTest\Debug\MatrixSumBenchmarkCpp.exe
+  MatrixSumBenchmarkCpp.vcxproj -> C:\Users\DP27813\documents\visual studio 2015\Projects\CsharpTest\Debug\MatrixSumBenchmarkCpp.pdb (Full PDB)
