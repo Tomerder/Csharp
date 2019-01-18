@@ -7,186 +7,111 @@ namespace VersionControlLib
 {
     class Csci
     {
-        private string sCsciName;
-        private string sLuhName;
-        private string sVerFilePath;
-        private string sVersion;
-        private bool bInVdd;
-        private VersionFile stVerFileType;
+        /*----------------------------------------------------------------------------*/
 
-        //====================================================================================
-        // Name: SetVersionFileType
-        // Description:  recieve type and create versionFile
-        // Input:  _sType - TypeA/ TypeB to create versionFile
-        // Output: bool - success/failed
-        //====================================================================================
-        private void SetVersionFileType(string _sType)
+        public enum VersionFileTypeEnum
         {
-            switch (_sType)
+            TYPE_A,
+            TYPE_B,
+            TYPE_C,
+            TYPE_D,
+            TYPE_E
+        };
+
+        /*----------------------------------------------------------------------------*/
+
+        private string m_CsciName;
+        private string m_VersionFilePath;
+        private VersionFileTypeEnum m_versionFileType;
+        private List<string> m_NamesOnLuh;
+        private string m_LuhFilePath;
+        private string m_luhToupdateVersionOn;
+        private bool m_isSysint;
+
+        private VersionFileHandler m_versionFileHandler;
+
+        /*----------------------------------------------------------------------------*/
+      
+        public Csci()
+        {
+            m_NamesOnLuh = new List<string>();
+        }
+
+        /*----------------------------------------------------------------------------*/
+
+        public bool IsSysint
+        {
+            get { return m_isSysint; }
+            set { m_isSysint = value; }
+        }
+
+        public string LuhToUpdateVersionOn
+        {
+            get { return m_luhToupdateVersionOn; }
+            set { m_luhToupdateVersionOn = value; }
+        }
+
+        public VersionFileHandler VersionFileHandler
+        {
+            get { return m_versionFileHandler; }
+            set { m_versionFileHandler = value; }
+        }
+
+        public string CsciName
+        {
+            get { return m_CsciName; }
+            set { m_CsciName = value; }
+        }
+
+        public string VersionFilePath
+        {
+            get { return m_VersionFilePath; }
+            set { m_VersionFilePath = value; }
+        }
+
+        internal VersionFileTypeEnum VersionFileType
+        {
+            get { return m_versionFileType; }
+            set 
             {
-                case "TypeA":
-                    stVerFileType = new VersionFileA();
-                    break;
-                case "TypeB":
-                    stVerFileType = new VersionFileB();
-                    break;
-                default:
-                    break;
-            }
-
-        }
-
-        //====================================================================================
-        // Name: sgVerFileType
-        // Description:  set/get for ersion file type
-        // Input:  --
-        // Output: --
-        //====================================================================================
-        internal VersionFile sgVerFileType
-        {
-            get { return stVerFileType; }
-            set { stVerFileType = value; }
-        }
-
-        //====================================================================================
-        // Name: Csci
-        // Description:  constarctor for csci class
-        // Input:  --
-        // Output: --
-        //====================================================================================
-        public Csci(string _sLuhCsci, string _sPath, string _sVddName, string _sType)
-        {
-            if (_sVddName.Length != 0)
-            {
-                sCsciName = _sVddName;
-                bInVdd = true;
-            }
-            else
-            {
-                sCsciName = _sLuhCsci;
-                bInVdd = false;
-            }
-            sVerFilePath = _sPath;
-            sLuhName = _sLuhCsci;
-            SetVersionFileType(_sType);
-        }
-
-        //====================================================================================
-        // Name: sgCsciName
-        // Description:  set/get csci name
-        // Input:  --
-        // Output: --
-        //====================================================================================
-        public string sgCsciName
-        {
-            get { return sCsciName; }
-            set { sCsciName = value; }
-        }
-
-        //====================================================================================
-        // Name: sgVerFilePath
-        // Description:  set/get version file path
-        // Input:  --
-        // Output: --
-        //====================================================================================
-        public string sgVerFilePath
-        {
-            get { return sVerFilePath; }
-            set { sVerFilePath = value; }
-        }
-
-        //====================================================================================
-        // Name: sgVersion
-        // Description:  set/get for version of csci
-        // Input:  --
-        // Output: --
-        //====================================================================================
-        public string sgVersion
-        {
-            get { return sVersion; }
-            set { sVersion = value; }
-        }
-
-        //====================================================================================
-        // Name: sgLuhName
-        // Description:  set/get csci name as defined in LUG
-        // Input:  --
-        // Output: --
-        //====================================================================================
-        public string sgLuhName
-        {
-            get { return sLuhName; }
-            set { sLuhName = value; }
-        }
-
-        //====================================================================================
-        // Name: sgInVdd
-        // Description:  set/get if csci should be in vdd
-        // Input:  --
-        // Output: --
-        //====================================================================================
-        public bool sgInVdd
-        {
-            get { return bInVdd; }
-            set { bInVdd = value; }
-        }
-
-        //====================================================================================
-        // Name: GetVersion
-        // Description:  provide version of csci according to version file type
-        // Input:  --
-        // Output: bool - success/failed
-        //====================================================================================
-        public bool GetVersion()
-        {
-            bool bSucess = false;
-            try
-            {
-                if (sVerFilePath.Length != 0)
+                m_versionFileType = value;
+                switch (m_versionFileType)
                 {
-                    bSucess = stVerFileType.GetVersion(sVerFilePath, out sVersion);
-                }
-                else
-                {
-                    Console.WriteLine("The CSCI " + sCsciName + " doesn't have defined path in config.xml");
-                }
-                bSucess = true;
-
+                    case VersionFileTypeEnum.TYPE_A:
+                        m_versionFileHandler = new VersionFileA(VersionFilePath);
+                        break;
+                    case VersionFileTypeEnum.TYPE_B:
+                        m_versionFileHandler = new VersionFileB(VersionFilePath);
+                        break;
+                    case VersionFileTypeEnum.TYPE_C:
+                        m_versionFileHandler = new VersionFileC(VersionFilePath);
+                        break;
+                    case VersionFileTypeEnum.TYPE_D:
+                        m_versionFileHandler = new VersionFileD(VersionFilePath);
+                        break;
+                    case VersionFileTypeEnum.TYPE_E:
+                        m_versionFileHandler = new VersionFileE(VersionFilePath);
+                        break;
+                    default:
+                        break;
+                }    
             }
-            catch (Exception exp)
-            {
-                Console.WriteLine("Exception: " + exp.Message);
-            }
-            return bSucess;       
         }
 
-        //====================================================================================
-        // Name: UpdateVersion
-        // Description:  increase version of csci according to version file type
-        // Input:  --
-        // Output: bool - success/failed
-        //====================================================================================
-        public bool UpdateVersion(string _sNewVersion)
+        /*----------------------------------------------------------------------------*/
+
+        public List<string> NamesOnLuh
         {
-            bool bSucess = false;
-            try
-            {
-                if (sVerFilePath.Length != 0)
-                {
-                    bSucess = stVerFileType.UpdateVersion(sVerFilePath, out sVersion, _sNewVersion);
-                }
-                else
-                {
-                    Console.WriteLine("The CSCI " + sCsciName + " doesn't have defined path in config.xml");
-                }
-                bSucess = true;
-
-            }
-            catch (Exception exp)
-            {
-                Console.WriteLine("Exception: " + exp.Message);
-            }
-            return bSucess; 
+            get { return m_NamesOnLuh; }
+            set { m_NamesOnLuh = value; }
         }
+
+        public string LuhFilePath
+        {
+            get { return m_LuhFilePath; }
+            set { m_LuhFilePath = value; }
+        }
+
+        /*----------------------------------------------------------------------------*/
     }
 }

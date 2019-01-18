@@ -1,6 +1,0 @@
-ERROR  ***  08/09/2014  ***  10:32:55  ***  1     ***  CommTargetAbstractLayer::GetRegValueFromTarget  ***  Error taken out reg value from receive answer
-ERROR  ***  11/09/2014  ***  17:14:33  ***  1     ***  CommTargetAbstractLayer::GetResultsFromTarget  ***  IsHandshake - failed
-ERROR  ***  9/21/2014  ***  5:55 PM  ***  9     ***  CommTargetAbstractLayer::GetRegValueFromTarget  ***  Error taken out reg value from receive answer
-ERROR  ***  9/21/2014  ***  5:55 PM  ***  9     ***  CommTargetAbstractLayer::GetResultsFromTarget  ***  GetRegValueFromTarget failed
-ERROR  ***  9/21/2014  ***  6:03 PM  ***  10    ***  CommTargetAbstractLayer::GetValuesFromTargetBaseAddress  ***  Error taken out reg value from receive answer
-ERROR  ***  9/21/2014  ***  6:04 PM  ***  10    ***  CommTargetAbstractLayer::GetValuesFromTargetBaseAddress  ***  Error taken out reg value from receive answer

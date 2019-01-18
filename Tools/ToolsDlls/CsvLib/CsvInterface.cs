@@ -41,38 +41,6 @@ namespace CsvLib
                     }
                 }
             }
-            catch(Exception e)
-            {
-                return false;
-            }
-
-            return true;
-        }
-
-        /*--------------------------------------------------------------------------*/
-
-        static public bool WriteMapToCsv(string _fileName, Dictionary<string, string> _mapToExport, string _headerKey, string _headerValue)
-        {
-            try
-            {
-                using (CsvFileWriter writer = new CsvFileWriter(_fileName))
-                {
-                    //write header row
-                    CsvRow csvTitleRow = new CsvRow();
-                    csvTitleRow.Add(_headerKey);
-                    csvTitleRow.Add(_headerValue);
-                    writer.WriteRow(csvTitleRow);
-
-                    //write rows
-                    foreach (KeyValuePair<string, string> pair in _mapToExport)
-                    {
-                        CsvRow csvRow = new CsvRow();
-                        csvRow.Add(pair.Key);
-                        csvRow.Add(pair.Value);
-                        writer.WriteRow(csvRow);
-                    }
-                }
-            }
             catch
             {
                 return false;
@@ -80,7 +48,6 @@ namespace CsvLib
 
             return true;
         }
-
         /*--------------------------------------------------------------------------*/
     } //CsvInterface
     /*--------------------------------------------------------------------------*/

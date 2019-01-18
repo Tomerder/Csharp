@@ -39,9 +39,6 @@
     <ApplicationIcon>Tools.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ConfigFileLib">
-      <HintPath>..\ConfigFileLib\bin\Debug\ConfigFileLib.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -101,14 +98,15 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="ConfigFile.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Tools.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ToolsDlls\UtilsLib\UtilsLib.csproj">
-      <Project>{14C42471-8456-44F1-8BAC-9F612B9290A2}</Project>
+    <ProjectReference Include="..\..\ToolsDlls\ConfigFileLib\ConfigFileLib.csproj">
+      <Project>{5aa0477c-43ac-495f-843a-ca07b4d07734}</Project>
+      <Name>ConfigFileLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="J:\Tools\ToolsDlls\UtilsLib\UtilsLib.csproj">
+      <Project>{14c42471-8456-44f1-8bac-9f612b9290a2}</Project>
       <Name>UtilsLib</Name>
     </ProjectReference>
   </ItemGroup>

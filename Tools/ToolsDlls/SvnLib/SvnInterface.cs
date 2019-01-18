@@ -3,29 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using SharpSvn;
-using System.Collections.ObjectModel;
+using System.IO;
 
 namespace SvnLib
 {
     public class SvnInterface
     {
-		/*--------------------------------------------------------------------------*/
-		
         public enum PathTypeEnum { WORKING_COPY_LOCAL_PATH, SVN_URL_PATH };
 
-		public struct stLocksInfo
-        {
-            public stLocksInfo(string Owner, string FileFullPath, string Date)
-            {
-                _Owner = Owner;
-                _FileFullPath = FileFullPath;
-                _Date = Date;
-            }
-            public string _Owner;
-            public string _FileFullPath;
-            public string _Date;
-        }
-		
         /*--------------------------------------------------------------------------*/
 
         public bool Checkout(string _svnUrl, string _pathToCheckoutTo, out long _revisionCheckedOut)
@@ -35,26 +20,18 @@ namespace SvnLib
             //checkout
             try
             {
-                //string cmd = SVN_CHECKOUT + _svnUrl + " " + _pathToCheckoutTo;
-                //System.Diagnostics.Process.Start(SVN_EXE, cmd);
-
                 SvnUpdateResult result;
                 long revision;
                 SvnCheckOutArgs args = new SvnCheckOutArgs();
-            
+
                 using (SvnClient client = new SvnClient())
                 {
                     try
-                    {                                      
+                    {
                         SvnUriTarget SvnPath = new SvnUriTarget(_svnUrl);
 
                         //this is the where 'svn checkout' actually happens.
-                        if (client.CheckOut(SvnPath, _pathToCheckoutTo, args, out result))
-                        {
-                            //BASE revisiom
-                            //_revision = result.Revision;
-                        }
-                        else
+                        if (!client.CheckOut(SvnPath, _pathToCheckoutTo, args, out result))
                         {
                             return false;
                         }
@@ -62,10 +39,34 @@ namespace SvnLib
                         //get base revision
                         long baseRevision;
                         bool success = GetRevision(_pathToCheckoutTo, PathTypeEnum.WORKING_COPY_LOCAL_PATH, 0, out baseRevision);
-                        _revisionCheckedOut = baseRevision;                                 
+                        _revisionCheckedOut = baseRevision;
                     }
                     catch (SvnException se)
                     {
+                        //in case of exception - try to checkout ***FILE***
+                        //if(se.Message.Contains("refers to a file, not a directory"))
+                        //{                       
+                        //    try
+                        //    {
+                        //        Uri SvnPath = new Uri(_svnUrl);
+                        //        string fileName = Path.GetFileName(SvnPath.LocalPath);
+                        //        if (!String.IsNullOrEmpty(fileName))
+                        //        {
+                        //            using (var fileStream = File.Create(fileName))
+                        //            {
+                        //                client.Write(SvnTarget.FromUri(SvnPath), fileStream);
+                        //            }
+                        //        }
+                        //    }
+                        //    catch (Exception e)
+                        //    {
+                        //        return false;
+                        //    }      
+                        //}
+                        //else
+                        //{
+                        //    return false;
+                        //}
                         return false;
                     }
                     catch (UriFormatException ufe)
@@ -79,6 +80,44 @@ namespace SvnLib
                 return false;
             }
 
+            return true;
+        }
+
+        /*--------------------------------------------------------------------------*/
+
+        public bool Lock(string _pathToLock, string comment)
+        {
+            using (SvnClient client = new SvnClient())
+            {
+                SvnLockArgs svnLockArgs = new SvnLockArgs();
+
+                try
+                {
+                    client.Lock(_pathToLock, comment);
+                }
+                catch
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        /*--------------------------------------------------------------------------*/
+
+        public bool Unlock(string _pathToLock)
+        {
+            using (SvnClient client = new SvnClient())
+            {
+                try
+                {
+                    client.Unlock(_pathToLock);
+                }
+                catch
+                {
+                    return false;
+                }
+            }
             return true;
         }
 
@@ -119,176 +158,9 @@ namespace SvnLib
             return true;
         }
 
-		/*--------------------------------------------------------------------------*/
-
-        public bool GetLocBetweenPathes(string _pathToLocFrom, string _pathToLocTo, out Dictionary<string, string> _loc)
-        {
-            _loc = new Dictionary<string, string>();
-
-            using (SvnClient client = new SvnClient())
-            {
-                try
-                {
-                    SvnLogArgs svnLogArgs = new SvnLogArgs();
-                    SvnTarget from = new SvnUriTarget(_pathToLocFrom, SvnRevision.Head);
-                    SvnTarget to = new SvnUriTarget(_pathToLocTo, SvnRevision.Head);
-                    System.Collections.ObjectModel.Collection<SvnDiffSummaryEventArgs> summary = new System.Collections.ObjectModel.Collection<SvnDiffSummaryEventArgs>();
-
-                    //get loc from svn
-                    client.GetDiffSummary(from, to, out summary);
-
-                    //set output : Dictionary<string, string> _loc 
-                    foreach (SvnDiffSummaryEventArgs change in summary)
-                    {
-                        string diffKind = "";
-                        switch (change.DiffKind)
-                        {
-                            case(SvnDiffKind.Added):
-                                diffKind = "Added";
-                                break;
-                            case(SvnDiffKind.Deleted):
-                                diffKind = "Deleted";
-                                break;
-                            case(SvnDiffKind.Modified):
-                                diffKind = "Modified";
-                                break;
-                            case(SvnDiffKind.Normal):
-                                diffKind = "Normal";
-                                break;
-                        }
-
-                        _loc[change.Path] = diffKind;
-                    }
-                }
-                catch
-                {
-                    return false;
-                }
-            }
-
-            return true;
-        }
-
         /*--------------------------------------------------------------------------*/
 
-        public bool GetHistory(string _rootPath, bool _isDepthInfinity, bool _isOnlyFiles, out Dictionary<string, HistoryDataItem> _historyMap)
-        {
-            _historyMap = new Dictionary<string, HistoryDataItem>();
-
-            using (SvnClient client = new SvnClient())
-            {
-                try
-                {
-                    SvnLogArgs svnLogArgs = new SvnLogArgs();
-                    System.Collections.ObjectModel.Collection<SvnDiffSummaryEventArgs> summary = new System.Collections.ObjectModel.Collection<SvnDiffSummaryEventArgs>();
-                    //uri
-                    SvnTarget svnPath = new SvnUriTarget(_rootPath, SvnRevision.Head);
-
-                    //parameters
-                    SvnListArgs listArgs = new SvnListArgs();
-                    listArgs.Revision = SvnRevision.Head;
-                    if (_isDepthInfinity)
-                    {
-                        listArgs.Depth = SvnDepth.Infinity; 
-                    }
-                    listArgs.RetrieveEntries = SvnDirEntryItems.AllFieldsV15;
-
-                    //get loc from svn
-                    Collection<SvnListEventArgs> outputList;
-                    client.GetList(svnPath, listArgs, out outputList);
-
-                    //fill output history map
-                    FillHistoryMap(outputList, _isOnlyFiles, _historyMap);
-                }
-                catch(Exception e)
-                {
-                    return false;
-                }
-            }
-
-            return true;
-        }
-
-        /*--------------------------------------------------------------------------*/
-
-        private void FillHistoryMap(Collection<SvnListEventArgs> _svnHistoryDataList, bool _isOnlyFiles, Dictionary<string, HistoryDataItem> _historyMap)
-        {
-            foreach (SvnListEventArgs svnItem in _svnHistoryDataList)
-            {
-                if (!_isOnlyFiles || svnItem.Entry.NodeKind == SvnNodeKind.File)
-                {
-                    HistoryDataItem historyItem = new HistoryDataItem();
-                    historyItem.ItemName = svnItem.Path;
-                    historyItem.ItemRevision = svnItem.Entry.Revision;
-                    historyItem.ItemSize = svnItem.Entry.FileSize;
-                    historyItem.ItemTime = svnItem.Entry.Time;
-                    historyItem.ChangedBy = svnItem.Entry.Author;
-
-                    _historyMap[historyItem.ItemName] = historyItem;
-                }
-            }
-        }
-
-        /*--------------------------------------------------------------------------*/
-		
-		  //returns a List of stLocksInfo objects or null for failure
-        // 1st input - SvnUrl, the svn path to look for locks
-        // 2nd input - BreakLockUsersLst, list of users that their lock can be break (or null)
-        public List<stLocksInfo> CollectLockers(string SvnUrl, List<string> BreakLockUsersLst)
-        {
-            List<stLocksInfo> LocksLst = null;
-            SvnListArgs Args = new SvnListArgs();
-            Args.Depth = SvnDepth.Infinity;
-            Args.RetrieveLocks = true;
-
-            SvnClient client = new SvnClient();
-
-            Collection<SvnListEventArgs> col;
-
-            try
-            {
-                client.GetList(new Uri(SvnUrl), Args, out col);
-
-                LocksLst = new List<stLocksInfo>();
-                foreach (SvnListEventArgs svnListEventArg in col)
-                {
-
-                    if (!(svnListEventArg.Lock == null))
-                    {
-                        string owner = svnListEventArg.Lock.Owner.ToString();
-
-                        //Enforce "break lock" argument
-                        SvnUnlockArgs ar = new SvnUnlockArgs();
-                        ar.BreakLock = true;
-
-                        if (!(BreakLockUsersLst == null))
-                        {
-                            //Break the lock in case locker name is equal to one of the input "BreakLockUsersLst" elements
-                            if (BreakLockUsersLst.Any(owner.Contains))
-                            {
-                                client.RemoteUnlock(svnListEventArg.Uri, ar);
-                            }
-                        }
-
-                        string Path = svnListEventArg.Path;
-                        string date = svnListEventArg.Lock.CreationTime.ToShortDateString();
-
-                        stLocksInfo LockInfo = new stLocksInfo(owner, Path, date);
-                        LocksLst.Add(LockInfo);
-                    }
-                }
-            }
-            catch (Exception)
-            {
-                LocksLst = null;
-            }
-
-            return LocksLst;
-        }
-
-        /*--------------------------------------------------------------------------*/
-
-        public bool Commit(string _pathToCommit, string _comment, out long _revisionCommited)
+        public bool Commit(string _pathToCommit, string _comment, out long _revisionCommited, bool _isCommitFile = false)
         {
             bool success = false;
             _revisionCommited = 0;
@@ -301,6 +173,11 @@ namespace SvnLib
                 args.LogMessage = _comment;
                 args.ThrowOnError = true;
                 args.ThrowOnCancel = true;
+
+                if (_isCommitFile)
+                {
+                    args.Depth = SvnDepth.Files;
+                }
 
                 try
                 {
@@ -326,7 +203,7 @@ namespace SvnLib
 
         /*--------------------------------------------------------------------------*/
 
-        public bool Tag(string _svnPathToMakeTagFrom, string _tagNameToCreate, string _comment, out long _revisionTagged)
+        public bool Tag(string _pathToMakeTagFrom, string _tagNameToCreate, string _comment, out long _revisionTagged, bool _isTagFromWorkingCopy = false)
         {
             bool success = false;
             _revisionTagged = 0;
@@ -342,12 +219,19 @@ namespace SvnLib
 
                 try
                 {
-                    SvnCommitResult result;
-
-                    Uri svnPathToMakeTagFrom = new Uri(_svnPathToMakeTagFrom);
+                    SvnCommitResult result = null;
+                  
+                    Uri svnPathToMakeTagFrom = new Uri(_pathToMakeTagFrom);
                     Uri svnTagToCreate = new Uri(_tagNameToCreate);
                     //TAG
-                    success = client.RemoteCopy(svnPathToMakeTagFrom, svnTagToCreate, args, out result);
+                    if (_isTagFromWorkingCopy)
+                    {
+                        success = client.RemoteCopy(_pathToMakeTagFrom, svnTagToCreate, args, out result);
+                    }
+                    else
+                    {
+                        success = client.RemoteCopy(svnPathToMakeTagFrom, svnTagToCreate, args, out result);
+                    }                   
                     if (result != null && success)
                     {
                         _revisionTagged = result.Revision;
@@ -368,8 +252,230 @@ namespace SvnLib
 
         /*--------------------------------------------------------------------------*/
 
+        public bool Import(string _pathToImport, string _tagNameToCreate, string _comment, out long _revisionTagged)
+        {
+            bool success = false;
+            _revisionTagged = 0;
+
+            //Import
+            using (SvnClient client = new SvnClient())
+            {
+                SvnImportArgs args = new SvnImportArgs();
+
+                args.LogMessage = _comment;
+                args.ThrowOnError = true;
+                args.ThrowOnCancel = true;
+
+                try
+                {
+                    SvnCommitResult result;
+
+                    Uri svnTagToCreate = new Uri(_tagNameToCreate);
+                    //Import
+                    success = client.Import(_pathToImport, svnTagToCreate, args, out result);
+                    //success = client.RemoteImport(_pathToImport, svnTagToCreate, args, out result);
+                    if (result != null && success)
+                    {
+                        _revisionTagged = result.Revision;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                catch (Exception e)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        /*--------------------------------------------------------------------------*/
+
+        public bool Switch(string _localWorkingCopyPathToSwitch, string _svnPathToSwitchTo)
+        {
+            bool success = false;
+
+            //Switch
+            using (SvnClient client = new SvnClient())
+            {
+                try
+                {
+                    SvnUpdateResult result;
+                    Uri svnTagToToSwitchTo = new Uri(_svnPathToSwitchTo);
+                    //Switch
+                    success = client.Switch(_localWorkingCopyPathToSwitch, svnTagToToSwitchTo, out result);
+                }
+                catch (Exception e)
+                {
+                    return false;
+                }
+
+                return success;
+            }
+
+        }
+
+        /*--------------------------------------------------------------------------*/
+
+        public bool SetExteranlPropertyByReplacing(string _localPathToChangeProperty, string _oldPathExteranlToReplace, string _newPathExteranl)
+        {
+            bool success;      
+
+            try
+            {
+                using (SvnClient client = new SvnClient())
+                {
+                    //get (out) old property value 
+                    string oldExternalValue;
+                    success = client.GetProperty(_localPathToChangeProperty, "svn:externals", out oldExternalValue);
+                    if (!success)
+                    {
+                        //failed getting current exteranl for working copy
+                        return false;
+                    }
+
+                    bool isExternalAlreadyUpdated = oldExternalValue.Contains(_newPathExteranl);
+                    if (success && !isExternalAlreadyUpdated)
+                    {
+                        //check legal - verify path to replace exist on current exteranl value
+                        if (!oldExternalValue.Contains(_oldPathExteranlToReplace))
+                        {
+                            return false;
+                        }
+
+                        //create new exteranl value
+                        string newExternalValue = oldExternalValue.Replace(_oldPathExteranlToReplace, _newPathExteranl);
+
+                        success = client.SetProperty(_localPathToChangeProperty, "svn:externals", newExternalValue);
+                        if (!success)
+                        {
+                            return false;
+                        }
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+
+            return success;       
+        }
+
+        /*--------------------------------------------------------------------------*/
+
+        public bool SetLocalFolderProperty(string _localPathToChangeProperty, string _propertyToChange, string _newPropertyValue, out string _oldExternalValue)
+        {
+            bool success;
+            _oldExternalValue = "";         
+
+            try
+            {
+                using (SvnClient client = new SvnClient())
+                {
+                    //get (out) old property value 
+                    success = client.GetProperty(_localPathToChangeProperty, _propertyToChange, out _oldExternalValue);
+                    bool isExternalAlreadyUpdated = _oldExternalValue.Contains(_newPropertyValue);
+                    if (success && !isExternalAlreadyUpdated)
+                    {
+                        success = client.SetProperty(_localPathToChangeProperty, _propertyToChange, _newPropertyValue);
+                        if (!success)
+                        {
+                            return false;
+                        }
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+
+            return success;
+        }
+
+        /*--------------------------------------------------------------------------*/
+
+        public bool GetSvnUrlForWorkingCopy(string _localPathToGetSvnUrlFor, out string _svnUrl)
+        {
+            _svnUrl = "";
+
+            try
+            {
+                using (SvnClient client = new SvnClient())
+                {
+                    Uri uri = client.GetUriFromWorkingCopy(_localPathToGetSvnUrlFor);
+                    if (uri == null)
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        _svnUrl = uri.ToString(); 
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+
+            return true; ;
+        }
+
+        /*--------------------------------------------------------------------------*/
+
+        public bool DeleteFolder(string _localPathToDelete)
+        {
+            bool success = false;
+
+            try
+            {
+                using (SvnClient client = new SvnClient())
+                {
+                    success = client.Delete(_localPathToDelete);
+                }
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+
+            return success; 
+        }
+
+        /*--------------------------------------------------------------------------*/
+
+        public bool AddFolder(string _localPathToAdd)
+        {
+            bool success = false;
+
+            try
+            {
+                using (SvnClient client = new SvnClient())
+                {
+                    success = client.Add(_localPathToAdd);
+                }
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+
+            return success;
+        }
 
         /*--------------------------------------------------------------------------*/
     }
-   
 }

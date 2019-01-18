@@ -1,8 +1,8 @@
 ﻿<Window x:Class="ToolsPortal.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Tools Portal" Height="350" Width="525" ResizeMode="CanMinimize" Background="#FFA4D9D9">
-    <ScrollViewer Height="312" Name="scrollViewer1" Width="512">
+        Title="Tools Portal" Height="439.883" Width="540" ResizeMode="CanMinimize" Background="#FFA4D9D9">
+    <ScrollViewer Name="scrollViewer1" Width="512" Margin="3,10,3.4,0" Height="398" VerticalAlignment="Top">
         <Grid Height="Auto" Name="grid1" Width="462" VerticalAlignment="Center" HorizontalAlignment="Center" Background="#FFA4D9D9">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="39*" />

@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -41,9 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Csci.cs" />
-    <Compile Include="LUHConfig.cs" />
+    <Compile Include="VersionControl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VersionFile.cs" />
+    <Compile Include="VersionFileHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="Microsoft.Office.Core">
@@ -73,6 +74,12 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ConfigFileLib\ConfigFileLib.csproj">
+      <Project>{5AA0477C-43AC-495F-843A-CA07B4D07734}</Project>
+      <Name>ConfigFileLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -9,7 +9,7 @@ namespace ToolsPortal
 {
     static class ConfigFileLogic
     {
-        private const string CONFIG_FILE_PATH = "../../ConfigFile.xml";
+        private const string CONFIG_FILE_PATH = "../../../ConfigFile.xml";
         private const string NODES_NAME_TO_ITERATE_TOOLS = "TOOL";
 
         /*----------------------------------------------------------------------------*/
@@ -19,28 +19,37 @@ namespace ToolsPortal
             _toolsMap = null;
 
             //read xml config file
-            bool success;
-            ConfigFile configFile = new ConfigFile(CONFIG_FILE_PATH, out success);
-            if (!success)
-            {
-                MessageBox.Show("Error opening Config file : " + CONFIG_FILE_PATH);
-                return false;
-            }
+            bool success = false;
 
-            //get <TOOLS> data from xml config file to maps
-            List<Dictionary<string, string>> toolsAttributesList;
-            success = configFile.GetNodesAttributesToListOfMaps(NODES_NAME_TO_ITERATE_TOOLS, out toolsAttributesList);
-            if (!success)
+            try
             {
-                MessageBox.Show("Error parsing <" + NODES_NAME_TO_ITERATE_TOOLS + "> data on Config file");
-                return false;
-            }
+                string exp;
+                ConfigFile configFile = new ConfigFile(CONFIG_FILE_PATH, out success, out exp);
+                if (!success)
+                {
+                    MessageBox.Show("Error opening Config file : " + CONFIG_FILE_PATH + "\n" + exp);
+                    return false;
+                }
 
-            //fill CSCI map from maps (parsed xml file)          
-            success = FillToolsMap(toolsAttributesList, out _toolsMap);
-            if (!success)
+                //get <TOOLS> data from xml config file to maps
+                List<Dictionary<string, string>> toolsAttributesList;
+                success = configFile.GetNodesAttributesToListOfMaps(NODES_NAME_TO_ITERATE_TOOLS, out toolsAttributesList);
+                if (!success)
+                {
+                    MessageBox.Show("Error parsing <" + NODES_NAME_TO_ITERATE_TOOLS + "> data on Config file");
+                    return false;
+                }
+
+                //fill CSCI map from maps (parsed xml file)          
+                success = FillToolsMap(toolsAttributesList, out _toolsMap);
+                if (!success)
+                {
+                    MessageBox.Show("Error filling CSCIs list from parsed xml");
+                    return false;
+                }
+            }
+            catch(Exception e)
             {
-                MessageBox.Show("Error filling CSCIs list from parsed xml");
                 return false;
             }
 

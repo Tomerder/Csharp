@@ -15,15 +15,18 @@ namespace ConfigFileLib
 
         //----------------------------------------------------------------------------------------------------
 
-        public ConfigFile(string _fileName, out bool _success) 
+        public ConfigFile(string _fileName, out bool _success, out string _expStr) 
         {
+            _expStr = "";
+
             try
             {
                 m_xml = new XmlDocument();
                 m_xml.Load(_fileName);
             }
-            catch
+            catch (Exception e)
             {
+                _expStr = e.ToString();
                 _success = false;
                 return;
             }

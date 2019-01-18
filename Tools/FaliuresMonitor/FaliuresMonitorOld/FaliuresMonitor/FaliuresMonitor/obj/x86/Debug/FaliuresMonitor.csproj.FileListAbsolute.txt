@@ -1,9 +1,0 @@
-c:\users\dp90671\documents\visual studio 2010\Projects\FaliuresMonitor\FaliuresMonitor\obj\x86\Debug\FaliuresMonitor.FailuresMonitorForm.resources
-c:\users\dp90671\documents\visual studio 2010\Projects\FaliuresMonitor\FaliuresMonitor\obj\x86\Debug\FailuresMonitor.FormInitComm.resources
-c:\users\dp90671\documents\visual studio 2010\Projects\FaliuresMonitor\FaliuresMonitor\obj\x86\Debug\FaliuresMonitor.Properties.Resources.resources
-c:\users\dp90671\documents\visual studio 2010\Projects\FaliuresMonitor\FaliuresMonitor\obj\x86\Debug\FaliuresMonitor.csproj.GenerateResource.Cache
-c:\users\dp90671\documents\visual studio 2010\Projects\FaliuresMonitor\FaliuresMonitor\bin\Debug\FaliuresMonitor.exe
-c:\users\dp90671\documents\visual studio 2010\Projects\FaliuresMonitor\FaliuresMonitor\bin\Debug\FaliuresMonitor.pdb
-c:\users\dp90671\documents\visual studio 2010\Projects\FaliuresMonitor\FaliuresMonitor\obj\x86\Debug\FaliuresMonitor.exe
-c:\users\dp90671\documents\visual studio 2010\Projects\FaliuresMonitor\FaliuresMonitor\obj\x86\Debug\FaliuresMonitor.pdb
-C:\Users\DP90671\Documents\Visual Studio 2010\Projects\FaliuresMonitor\FaliuresMonitor\obj\x86\Debug\FaliuresMonitor.csprojResolveAssemblyReference.cache
